@@ -530,16 +530,6 @@
     "link": "https://www.unlv.edu/event/sport-tuesday?delta=9"
   },
   {
-    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
-    "startDate": "2026-04-07",
-    "startTime": "5pm",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Online",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=26"
-  },
-  {
     "name": "Financial Aid Lab",
     "startDate": "2026-04-07",
     "startTime": "5pm",
@@ -548,6 +538,16 @@
     "location": "Carol C. Harter Classroom Building Complex - Building C\n        CHB C311",
     "category": "Career",
     "link": "https://www.unlv.edu/event/financial-aid-lab-11"
+  },
+  {
+    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
+    "startDate": "2026-04-07",
+    "startTime": "5pm",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Online",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=26"
   },
   {
     "name": "2026 Corporate Challenge: Indoor Volleyball (A)",
@@ -1050,16 +1050,6 @@
     "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=34"
   },
   {
-    "name": "Breathing Break - Hosted by UNLV PRACTICE",
-    "startDate": "2026-04-09",
-    "startTime": "10am",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Virtual",
-    "category": "Sports",
-    "link": "https://www.unlv.edu/event/breathing-break-hosted-unlv-practice?delta=13"
-  },
-  {
     "name": "On Campus Employer Visit: Target Hospitality - Day 2",
     "startDate": "2026-04-09",
     "startTime": "10am",
@@ -1068,6 +1058,16 @@
     "location": "Hospitality Hall\n        Hospitality Hall Grand Lobby",
     "category": "Career",
     "link": "https://www.unlv.edu/event/campus-employer-visit-target-hospitality-day-2"
+  },
+  {
+    "name": "Breathing Break - Hosted by UNLV PRACTICE",
+    "startDate": "2026-04-09",
+    "startTime": "10am",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Virtual",
+    "category": "Sports",
+    "link": "https://www.unlv.edu/event/breathing-break-hosted-unlv-practice?delta=13"
   },
   {
     "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
@@ -1160,16 +1160,6 @@
     "link": "https://www.unlv.edu/event/celebrating-your-latinidad-identities-through-connection-and-healing"
   },
   {
-    "name": "Beyond the Deficit: Relationships and Rigor: Syllabus Audit",
-    "startDate": "2026-04-09",
-    "startTime": "1pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Online",
-    "category": null,
-    "link": "https://www.unlv.edu/event/beyond-deficit-relationships-and-rigor-syllabus-audit"
-  },
-  {
     "name": "Supporting Victim-Survivors of Sexual Violence Training for UNLV Staff & Faculty",
     "startDate": "2026-04-09",
     "startTime": "1pm",
@@ -1178,6 +1168,16 @@
     "location": "Student Recreation & Wellness Center\n        Hybrid Session:\r\n- In-person: Health Education Room in the Student Recreation and Wellness Center, located on the 1st Floor\r\n- Zoom Link will be sent via email after RSVP",
     "category": "Academics",
     "link": "https://www.unlv.edu/event/supporting-victim-survivors-sexual-violence-training-unlv-staff-faculty"
+  },
+  {
+    "name": "Beyond the Deficit: Relationships and Rigor: Syllabus Audit",
+    "startDate": "2026-04-09",
+    "startTime": "1pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Online",
+    "category": null,
+    "link": "https://www.unlv.edu/event/beyond-deficit-relationships-and-rigor-syllabus-audit"
   },
   {
     "name": "DIY Fidget & Stim Tools Workshop",
