@@ -1,1 +1,163 @@
-[]
+[
+  {
+    "name": "Fall Registration Begins",
+    "startDate": "2026-04-13",
+    "startTime": "",
+    "endDate": "2026-04-13",
+    "endTime": ""
+  },
+  {
+    "name": "Study Week Begins",
+    "startDate": "2026-05-04",
+    "startTime": "",
+    "endDate": "2026-05-04",
+    "endTime": ""
+  },
+  {
+    "name": "Instruction Ends",
+    "startDate": "2026-05-09",
+    "startTime": "",
+    "endDate": "2026-05-09",
+    "endTime": ""
+  },
+  {
+    "name": "Final Examinations Begin",
+    "startDate": "2026-05-11",
+    "startTime": "",
+    "endDate": "2026-05-11",
+    "endTime": ""
+  },
+  {
+    "name": "Spring 2026 Commencement: Graduate Degree Candidates",
+    "startDate": "2026-05-15",
+    "startTime": "",
+    "endDate": "2026-05-15",
+    "endTime": ""
+  },
+  {
+    "name": "Spring 2026 Semester Ends",
+    "startDate": "2026-05-16",
+    "startTime": "",
+    "endDate": "2026-05-16",
+    "endTime": ""
+  },
+  {
+    "name": "Spring 2026 Commencement: Undergraduate Degree Candidates",
+    "startDate": "2026-05-16",
+    "startTime": "",
+    "endDate": "2026-05-16",
+    "endTime": ""
+  },
+  {
+    "name": "Summer Session I Instruction Begins",
+    "startDate": "2026-05-18",
+    "startTime": "",
+    "endDate": "2026-05-18",
+    "endTime": ""
+  },
+  {
+    "name": "Spring Grades Due",
+    "startDate": "2026-05-19",
+    "startTime": "",
+    "endDate": "2026-05-19",
+    "endTime": ""
+  },
+  {
+    "name": "Memorial Day Recess",
+    "startDate": "2026-05-25",
+    "startTime": "",
+    "endDate": "2026-05-25",
+    "endTime": ""
+  },
+  {
+    "name": "Instruction Ends for Summer Session I",
+    "startDate": "2026-06-05",
+    "startTime": "",
+    "endDate": "2026-06-05",
+    "endTime": ""
+  },
+  {
+    "name": "Summer Session II Instruction Begins",
+    "startDate": "2026-06-08",
+    "startTime": "",
+    "endDate": "2026-06-08",
+    "endTime": ""
+  },
+  {
+    "name": "Summer Session I Grades Due",
+    "startDate": "2026-06-09",
+    "startTime": "",
+    "endDate": "2026-06-09",
+    "endTime": ""
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": ""
+  },
+  {
+    "name": "Juneteenth Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": ""
+  },
+  {
+    "name": "Independence Day Recess",
+    "startDate": "2026-07-03",
+    "startTime": "",
+    "endDate": "2026-07-03",
+    "endTime": ""
+  },
+  {
+    "name": "Instruction Ends for Summer Session II",
+    "startDate": "2026-07-10",
+    "startTime": "",
+    "endDate": "2026-07-10",
+    "endTime": ""
+  },
+  {
+    "name": "Summer Session III Instruction Begins",
+    "startDate": "2026-07-13",
+    "startTime": "",
+    "endDate": "2026-07-13",
+    "endTime": ""
+  },
+  {
+    "name": "Grades Due for Summer Session II Classes",
+    "startDate": "2026-07-14",
+    "startTime": "",
+    "endDate": "2026-07-14",
+    "endTime": ""
+  },
+  {
+    "name": "Instruction Ends for Summer Session III",
+    "startDate": "2026-08-14",
+    "startTime": "",
+    "endDate": "2026-08-14",
+    "endTime": ""
+  },
+  {
+    "name": "Grades Due for Summer Session III Classes",
+    "startDate": "2026-08-18",
+    "startTime": "",
+    "endDate": "2026-08-18",
+    "endTime": ""
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2027-06-18",
+    "startTime": "",
+    "endDate": "2027-06-18",
+    "endTime": ""
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2027-06-19",
+    "startTime": "",
+    "endDate": "2027-06-19",
+    "endTime": ""
+  }
+]
