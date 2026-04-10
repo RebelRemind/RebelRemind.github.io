@@ -88,5 +88,35 @@
     "location": "",
     "sport": "Baseball",
     "link": "https://www.espn.com/watch/player/_/id/c7c53048-6c4d-4387-9d57-f1bac7856404"
+  },
+  {
+    "name": " Women's Tennis vs UNR ",
+    "startDate": "2026-04-17",
+    "startTime": "10:00 AM PT",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "",
+    "sport": "Women's Tennis",
+    "link": "https://swing.vision/teams/unlv-w/stream"
+  },
+  {
+    "name": " Softball at Boise State ",
+    "startDate": "2026-04-17",
+    "startTime": "5 p.m. PT",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "",
+    "sport": "Softball",
+    "link": null
+  },
+  {
+    "name": " Baseball vs Washington State ",
+    "startDate": "2026-04-17",
+    "startTime": "6:05 PM PT",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-2/"
   }
 ]
