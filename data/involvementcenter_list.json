@@ -1,35 +1,5 @@
 [
   {
-    "name": "Paper Roulette",
-    "startDate": "2026-04-10",
-    "startTime": "12:00 PM",
-    "endDate": "2026-04-10",
-    "endTime": "1:00 PM",
-    "location": "BPB 217 (Bigelow Physics Building)",
-    "organization": "Society of Physics Students",
-    "link": "https://involvementcenter.unlv.edu/event/12410495"
-  },
-  {
-    "name": "Breathe in with Obodo",
-    "startDate": "2026-04-10",
-    "startTime": "9:00 AM",
-    "endDate": "2026-04-10",
-    "endTime": "1:00 PM",
-    "location": "Student Union",
-    "organization": "UNLVolunteers",
-    "link": "https://involvementcenter.unlv.edu/event/12371775"
-  },
-  {
-    "name": "Serve & Lead Mini-Con 2026: Taking Flight",
-    "startDate": "2026-04-10",
-    "startTime": "9:00 AM",
-    "endDate": "2026-04-10",
-    "endTime": "2:00 PM",
-    "location": "Student Union, Room 208",
-    "organization": "Service Learning & Leadership",
-    "link": "https://involvementcenter.unlv.edu/event/11997970"
-  },
-  {
     "name": "Panel Discussion: Racial Equity and  Social Justice research  in  the Age of Retrenchment",
     "startDate": "2026-04-10",
     "startTime": "5:00 PM",
@@ -445,7 +415,7 @@
     "startTime": "3:00 PM",
     "endDate": "2026-04-17",
     "endTime": "5:00 PM",
-    "location": "Student Recreation and Wellness Center (Room 2025)",
+    "location": "Student Recreation and Wellness Center (Room 2040)",
     "organization": "Asian Pacific Islander Alliance",
     "link": "https://involvementcenter.unlv.edu/event/12389344"
   },
