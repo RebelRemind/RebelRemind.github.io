@@ -246,30 +246,17 @@ function formatUserEventDate(event) {
     return "No date";
   }
 
-  const baseDate = new Date(`${event.startDate}T00:00:00`);
-  if (Number.isNaN(baseDate.getTime())) {
-    return event.startDate;
-  }
-
-  const dateLabel = baseDate.toLocaleDateString(undefined, {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-  });
-
   if (event.allDay || !event.startTime) {
-    return `${dateLabel} · All day`;
+    return formatEventDate({
+      startDate: event.startDate,
+      startTime: "(ALL DAY)",
+    });
   }
 
-  const timedDate = new Date(`${event.startDate}T${event.startTime}`);
-  if (Number.isNaN(timedDate.getTime())) {
-    return `${dateLabel} · ${event.startTime}`;
-  }
-
-  return `${dateLabel} · ${timedDate.toLocaleTimeString(undefined, {
-    hour: "numeric",
-    minute: "2-digit",
-  })}`;
+  return formatEventDate({
+    startDate: event.startDate,
+    startTime: event.startTime,
+  });
 }
 
 function formatCombinedHomeEventDate(event) {
@@ -456,6 +443,19 @@ function ConnectedPulse({ active }) {
   );
 }
 
+function isBridgeSupportedBrowser() {
+  if (typeof navigator === "undefined") {
+    return true;
+  }
+
+  const brands = navigator.userAgentData?.brands?.map((entry) => entry.brand) || [];
+  if (brands.some((brand) => /chrome|chromium|edge/i.test(brand))) {
+    return true;
+  }
+
+  return /(Chrome|Chromium|Edg)\//.test(navigator.userAgent || "");
+}
+
 function Navbar({ visible }) {
   const location = useLocation();
   const datasetKey = location.pathname.startsWith("/datasets/")
@@ -463,7 +463,7 @@ function Navbar({ visible }) {
     : null;
   const activeDatasetLabel = datasetKey ? DATA_FILE_MAP[datasetKey]?.label : null;
   const isHomePage = location.pathname === "/";
-  const isContributorsPage = location.pathname === "/contributors";
+  const isContributorsPage = location.pathname === "/contributors" || location.pathname.startsWith("/contributors/");
   const pageLabel = isHomePage ? "Home" : isContributorsPage ? "Contributors" : "Dataset Explorer";
   const showHomeActions = !activeDatasetLabel && !isContributorsPage;
 
@@ -521,6 +521,9 @@ function Navbar({ visible }) {
 }
 
 function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
+  const bridgeIsConnected = bridgeStatus === "connected";
+  const bridgeIsUnsupported = bridgeStatus === "unsupported";
+
   return (
     <header className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-6 shadow-2xl backdrop-blur-md">
       <div className="flex flex-col gap-6">
@@ -550,22 +553,22 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <div className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
-          <ConnectedPulse active={bridgeStatus === "connected"} />
+          <ConnectedPulse active={bridgeIsConnected} />
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
-            {bridgeStatus === "connected" ? "Bridge Live" : "Bridge Waiting"}
+            {bridgeIsConnected ? "Bridge Live" : bridgeIsUnsupported ? "Bridge Unavailable" : "Bridge Waiting"}
           </span>
         </div>
         <StatusPill
-          active={bridgeStatus === "connected"}
+          active={bridgeIsConnected}
           inactiveClassName="border-white/20 bg-white/10 text-white"
         >
-          {bridgeStatus === "connected" ? "Extension Connected" : "Bridge Not Detected"}
+          {bridgeIsConnected ? "Extension Connected" : bridgeIsUnsupported ? "Bridge Not Available" : "Bridge Not Detected"}
         </StatusPill>
         <StatusPill
           active={Boolean(bridgeState?.user)}
           inactiveClassName="border-white/20 bg-white/10 text-white"
         >
-          {bridgeState?.user ? `Signed In: ${bridgeState.user.name}` : "No Synced Extension Data"}
+          {bridgeState?.user ? `Signed In: ${bridgeState.user.name}` : bridgeIsUnsupported ? "Chrome Browser Required" : "No Synced Extension Data"}
         </StatusPill>
       </div>
 
@@ -608,8 +611,9 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
                 featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
               ) : (
                 <p className="text-sm text-white/75">
-                  No synced extension preferences yet. Install the extension and open this page in Chrome to pull
-                  them in.
+                  {bridgeIsUnsupported
+                    ? "Bridge sync is only available in Chrome-compatible browsers with the Rebel Remind extension installed."
+                    : "No synced extension preferences yet. Install the extension and open this page in Chrome to pull them in."}
                 </p>
               )}
             </div>
@@ -640,7 +644,9 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
               <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
                 {bridgeStatus === "connected"
                   ? "No upcoming Canvas assignments are available right now."
-                  : "Sync not available. Turn on the extension to preview upcoming assignments here."}
+                  : bridgeIsUnsupported
+                    ? "Bridge sync is not available in this browser."
+                    : "Sync not available. Turn on the extension to preview upcoming assignments here."}
               </div>
             )}
           </div>
@@ -651,6 +657,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
 }
 
 function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
+  const [collapsedEvents, setCollapsedEvents] = useState({});
   const featuredPreferences = toTitleList(bridgeState?.preferences);
   const upcomingEvents = DATA_FILES.flatMap(({ key }) => {
     const items = Array.isArray(datasets[key]) ? datasets[key] : [];
@@ -687,6 +694,13 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
     return leftTime - rightTime;
   });
 
+  const toggleCollapsedEvent = (eventKey) => {
+    setCollapsedEvents((current) => ({
+      ...current,
+      [eventKey]: !current[eventKey],
+    }));
+  };
+
   return (
     <>
       <Hero
@@ -710,17 +724,38 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
           </div>
           <div className="mt-5 max-h-[21rem] space-y-3 overflow-y-auto pr-1">
             {syncedUserEvents.length ? (
-              syncedUserEvents.map((event, index) => (
+              syncedUserEvents.map((event, index) => {
+                const eventKey = `${event.displayTitle}-${event.startDate}-${index}`;
+                const isCollapsed = Boolean(collapsedEvents[eventKey]);
+                const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
+
+                return (
                 <article
-                  key={`${event.displayTitle}-${event.startDate}-${index}`}
+                  key={eventKey}
                   className="rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm"
                 >
-                  <p className="font-semibold">{event.displayTitle}</p>
-                  <p className="mt-1 text-sm text-white/75">{formatCombinedHomeEventDate(event)}</p>
-                  {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
-                  {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
+                  <div className="flex items-start justify-between gap-4">
+                    <p className="font-semibold">{event.displayTitle}</p>
+                    {hasExtraDetails ? (
+                      <button
+                        type="button"
+                        onClick={() => toggleCollapsedEvent(eventKey)}
+                        className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
+                      >
+                        {isCollapsed ? "Show Details" : "Hide Details"}
+                      </button>
+                    ) : null}
+                  </div>
+                  <p className="mt-1 text-sm font-semibold text-white/85">{formatCombinedHomeEventDate(event)}</p>
+                  {!isCollapsed && hasExtraDetails ? (
+                    <>
+                      {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
+                      {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
+                    </>
+                  ) : null}
                 </article>
-              ))
+                );
+              })
             ) : (
               <div className="rounded-[1.25rem] border border-dashed border-white/20 bg-white/5 px-4 py-6 text-sm text-white/75">
                 No upcoming custom events are synced right now.
@@ -771,8 +806,9 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
                   <p className="mt-2 text-sm text-stone-600">Open the full page for this feed.</p>
                 </div>
                 <div className="text-right">
-                  <span className="rounded-full bg-stone-900 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
-                    {datasets[source.key]?.length || 0} loaded
+                  <span className="inline-flex max-w-[5.5rem] flex-col items-center rounded-2xl bg-stone-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] leading-tight text-white sm:max-w-none sm:flex-row sm:gap-1 sm:rounded-full sm:px-3 sm:py-1 sm:text-xs">
+                    <span>{datasets[source.key]?.length || 0}</span>
+                    <span>loaded</span>
                   </span>
                   <p className="mt-3 text-sm font-semibold text-stone-700 transition-transform duration-300 group-hover:translate-x-1">
                     View page →
@@ -1417,6 +1453,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (!isBridgeSupportedBrowser()) {
+      setBridgeStatus("unsupported");
+      setBridgeState(null);
+      setBridgeError("");
+      return undefined;
+    }
+
     let seenPong = false;
     let seenState = false;
 
