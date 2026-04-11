@@ -390,16 +390,6 @@
     "link": "https://www.unlv.edu/event/queer-mini-con-queer-futurism-radical-hope"
   },
   {
-    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
-    "startDate": "2026-04-07",
-    "startTime": "10am",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=32"
-  },
-  {
     "name": "Art Exhibition: El camino se traza al andar (The Path is Traced by Walking)",
     "startDate": "2026-04-07",
     "startTime": "10am",
@@ -408,6 +398,16 @@
     "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art West Gallery",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=32"
+  },
+  {
+    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
+    "startDate": "2026-04-07",
+    "startTime": "10am",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=32"
   },
   {
     "name": "International Faculty Community of Practice (CoP)",
@@ -530,16 +530,6 @@
     "link": "https://www.unlv.edu/event/sport-tuesday?delta=9"
   },
   {
-    "name": "Financial Aid Lab",
-    "startDate": "2026-04-07",
-    "startTime": "5pm",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Carol C. Harter Classroom Building Complex - Building C\n        CHB C311",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/financial-aid-lab-11"
-  },
-  {
     "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
     "startDate": "2026-04-07",
     "startTime": "5pm",
@@ -548,6 +538,16 @@
     "location": "Online",
     "category": "Career",
     "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=26"
+  },
+  {
+    "name": "Financial Aid Lab",
+    "startDate": "2026-04-07",
+    "startTime": "5pm",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Carol C. Harter Classroom Building Complex - Building C\n        CHB C311",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/financial-aid-lab-11"
   },
   {
     "name": "2026 Corporate Challenge: Indoor Volleyball (A)",
@@ -700,16 +700,6 @@
     "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=33"
   },
   {
-    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
-    "startDate": "2026-04-08",
-    "startTime": "10am",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=33"
-  },
-  {
     "name": "Art Exhibition: El camino se traza al andar (The Path is Traced by Walking)",
     "startDate": "2026-04-08",
     "startTime": "10am",
@@ -718,6 +708,16 @@
     "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art West Gallery",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=33"
+  },
+  {
+    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
+    "startDate": "2026-04-08",
+    "startTime": "10am",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=33"
   },
   {
     "name": "Narcan Training",
@@ -1050,16 +1050,6 @@
     "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=34"
   },
   {
-    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
-    "startDate": "2026-04-09",
-    "startTime": "10am",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=34"
-  },
-  {
     "name": "Art Exhibition: El camino se traza al andar (The Path is Traced by Walking)",
     "startDate": "2026-04-09",
     "startTime": "10am",
@@ -1068,6 +1058,16 @@
     "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art West Gallery",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=34"
+  },
+  {
+    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
+    "startDate": "2026-04-09",
+    "startTime": "10am",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=34"
   },
   {
     "name": "Graduate College: Grad Student Financial Wellness",
@@ -1140,16 +1140,6 @@
     "link": "https://www.unlv.edu/event/lunch-and-learn-student-survival-guide-how-own-your-college-budget"
   },
   {
-    "name": "Supporting Victim-Survivors of Sexual Violence Training for UNLV Staff & Faculty",
-    "startDate": "2026-04-09",
-    "startTime": "1pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Student Recreation & Wellness Center\n        Hybrid Session:\r\n- In-person: Health Education Room in the Student Recreation and Wellness Center, located on the 1st Floor\r\n- Zoom Link will be sent via email after RSVP",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/supporting-victim-survivors-sexual-violence-training-unlv-staff-faculty"
-  },
-  {
     "name": "Beyond the Deficit: Relationships and Rigor: Syllabus Audit",
     "startDate": "2026-04-09",
     "startTime": "1pm",
@@ -1158,6 +1148,16 @@
     "location": "Online",
     "category": null,
     "link": "https://www.unlv.edu/event/beyond-deficit-relationships-and-rigor-syllabus-audit"
+  },
+  {
+    "name": "Supporting Victim-Survivors of Sexual Violence Training for UNLV Staff & Faculty",
+    "startDate": "2026-04-09",
+    "startTime": "1pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Student Recreation & Wellness Center\n        Hybrid Session:\r\n- In-person: Health Education Room in the Student Recreation and Wellness Center, located on the 1st Floor\r\n- Zoom Link will be sent via email after RSVP",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/supporting-victim-survivors-sexual-violence-training-unlv-staff-faculty"
   },
   {
     "name": "DIY Fidget & Stim Tools Workshop",
@@ -1180,16 +1180,6 @@
     "link": "https://www.unlv.edu/event/thesis-defense-jelena-grave-de-peralta"
   },
   {
-    "name": "Intro to Pre-Health Workshop",
-    "startDate": "2026-04-09",
-    "startTime": "1pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Virtual",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/intro-pre-health-workshop-3"
-  },
-  {
     "name": "Celebrating Your Latinidad Identities Through Connection and Healing",
     "startDate": "2026-04-09",
     "startTime": "1pm",
@@ -1198,6 +1188,16 @@
     "location": "Frank and Estella Beam Hall\n        Room 240",
     "category": "Diversity",
     "link": "https://www.unlv.edu/event/celebrating-your-latinidad-identities-through-connection-and-healing"
+  },
+  {
+    "name": "Intro to Pre-Health Workshop",
+    "startDate": "2026-04-09",
+    "startTime": "1pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Virtual",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/intro-pre-health-workshop-3"
   },
   {
     "name": "Plan Year 2027 Plan Design and Rate Changes",
@@ -1390,16 +1390,6 @@
     "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=35"
   },
   {
-    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
-    "startDate": "2026-04-10",
-    "startTime": "10am",
-    "endDate": "2026-04-10",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=35"
-  },
-  {
     "name": "Art Exhibition: El camino se traza al andar (The Path is Traced by Walking)",
     "startDate": "2026-04-10",
     "startTime": "10am",
@@ -1408,6 +1398,16 @@
     "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art West Gallery",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=35"
+  },
+  {
+    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
+    "startDate": "2026-04-10",
+    "startTime": "10am",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=35"
   },
   {
     "name": "Art Exhibition: Moth Ball",
@@ -1590,16 +1590,6 @@
     "link": "https://www.unlv.edu/event/yankee-doodle-canyon-expedition"
   },
   {
-    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
-    "startDate": "2026-04-11",
-    "startTime": "10am",
-    "endDate": "2026-04-11",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=36"
-  },
-  {
     "name": "Art Exhibition: El camino se traza al andar (The Path is Traced by Walking)",
     "startDate": "2026-04-11",
     "startTime": "10am",
@@ -1608,6 +1598,16 @@
     "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art West Gallery",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=36"
+  },
+  {
+    "name": "Art Exhibition: Mourning Songs of Salt and Silt",
+    "startDate": "2026-04-11",
+    "startTime": "10am",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Center Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-mourning-songs-salt-and-silt?delta=36"
   },
   {
     "name": "APIME-FSA Filipino Town 1st Anniversary Celebration",
