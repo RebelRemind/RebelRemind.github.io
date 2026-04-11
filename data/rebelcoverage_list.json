@@ -98,5 +98,35 @@
     "location": "",
     "sport": "Baseball",
     "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-2/"
+  },
+  {
+    "name": " Men's Tennis at Boise State ",
+    "startDate": "2026-04-18",
+    "startTime": "10:00 AM PT",
+    "endDate": "2026-04-18",
+    "endTime": "",
+    "location": "",
+    "sport": "Men's Tennis",
+    "link": "https://ioncourt.com/ties/696136c036cd30e2cce23e39?source=my-teams"
+  },
+  {
+    "name": " Softball at Boise State ",
+    "startDate": "2026-04-18",
+    "startTime": "1 p.m. PT",
+    "endDate": "2026-04-18",
+    "endTime": "",
+    "location": "",
+    "sport": "Softball",
+    "link": null
+  },
+  {
+    "name": " Baseball vs Washington State ",
+    "startDate": "2026-04-18",
+    "startTime": "6:05 PM PT",
+    "endDate": "2026-04-18",
+    "endTime": "",
+    "location": "",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-3/"
   }
 ]
