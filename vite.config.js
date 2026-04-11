@@ -29,6 +29,13 @@ function rebelRemindDataPlugin() {
         fs.mkdirSync(path.dirname(distDir), { recursive: true });
         fs.cpSync(dataDir, distDir, { recursive: true, force: true });
       }
+
+      const distIndex = path.resolve(process.cwd(), "dist", "index.html");
+      const dist404 = path.resolve(process.cwd(), "dist", "404.html");
+
+      if (fs.existsSync(distIndex)) {
+        fs.copyFileSync(distIndex, dist404);
+      }
     },
   };
 }
