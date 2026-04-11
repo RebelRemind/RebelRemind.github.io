@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #f5f5f5;
+  background: linear-gradient(135deg, #bb0000 0%, #f3d2d7 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: linear-gradient(135deg, #bb0000 0%, #f3d2d7 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
