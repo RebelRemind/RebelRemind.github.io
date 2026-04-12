@@ -1,5 +1,15 @@
 [
   {
+    "name": "UNLV Dance: Universal Motions (Streaming)",
+    "startDate": "2026-04-06",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-06",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=34"
+  },
+  {
     "name": "UNLV Dance: Gravitational Pulls (Streaming)",
     "startDate": "2026-04-06",
     "startTime": "(ALL DAY)",
@@ -28,16 +38,6 @@
     "location": "Judy Bayley Theatre",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=181"
-  },
-  {
-    "name": "UNLV Dance: Universal Motions (Streaming)",
-    "startDate": "2026-04-06",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-06",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=34"
   },
   {
     "name": "UNLV Future Rebels in STEM Day",
@@ -100,6 +100,16 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-mary-underwood-hood"
   },
   {
+    "name": "Dissertation Defense: Yuanhong Qu",
+    "startDate": "2026-04-06",
+    "startTime": "11am",
+    "endDate": "2026-04-06",
+    "endTime": "",
+    "location": "Robert L. Bigelow Physics\n        217",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/dissertation-defense-yuanhong-qu"
+  },
+  {
     "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-06",
     "startTime": "11am",
@@ -120,14 +130,14 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-dante-miller"
   },
   {
-    "name": "Dissertation Defense: Yuanhong Qu",
+    "name": "You Graduated, Now What?: Next Steps in Post-Graduate Careers",
     "startDate": "2026-04-06",
-    "startTime": "11am",
+    "startTime": "11:30am",
     "endDate": "2026-04-06",
     "endTime": "",
-    "location": "Robert L. Bigelow Physics\n        217",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/dissertation-defense-yuanhong-qu"
+    "location": "Frank and Estella Beam Hall\n        212",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/you-graduated-now-what-next-steps-post-graduate-careers"
   },
   {
     "name": "Bingo & Bites: A Grad Rebel Appreciation Kick-Off",
@@ -138,16 +148,6 @@
     "location": "University Gateway Building\n        2nd Floor, Gather Conference Room",
     "category": "Social",
     "link": "https://www.unlv.edu/event/bingo-bites-grad-rebel-appreciation-kick-0"
-  },
-  {
-    "name": "You Graduated, Now What?: Next Steps in Post-Graduate Careers",
-    "startDate": "2026-04-06",
-    "startTime": "11:30am",
-    "endDate": "2026-04-06",
-    "endTime": "",
-    "location": "Frank and Estella Beam Hall\n        212",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/you-graduated-now-what-next-steps-post-graduate-careers"
   },
   {
     "name": "Dissertation Defense: Weijing Li",
@@ -190,16 +190,6 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-brandon-moeller"
   },
   {
-    "name": "Monday Moves: Functional Fitness at Your Desk",
-    "startDate": "2026-04-06",
-    "startTime": "1pm",
-    "endDate": "2026-04-06",
-    "endTime": "",
-    "location": "Virtual",
-    "category": "Health",
-    "link": "https://www.unlv.edu/event/monday-moves-functional-fitness-your-desk-0?delta=13"
-  },
-  {
     "name": "Dissertation Defense: Fangyu Hsu",
     "startDate": "2026-04-06",
     "startTime": "1pm",
@@ -228,6 +218,16 @@
     "location": "John S. Wright Hall - Building B\n        114",
     "category": "Academics",
     "link": "https://www.unlv.edu/event/dissertation-defense-dayanira-lopez"
+  },
+  {
+    "name": "Monday Moves: Functional Fitness at Your Desk",
+    "startDate": "2026-04-06",
+    "startTime": "1pm",
+    "endDate": "2026-04-06",
+    "endTime": "",
+    "location": "Virtual",
+    "category": "Health",
+    "link": "https://www.unlv.edu/event/monday-moves-functional-fitness-your-desk-0?delta=13"
   },
   {
     "name": "UNLV Global Success Series: Online Safety",
@@ -260,16 +260,6 @@
     "link": "https://www.unlv.edu/event/thesis-defense-catalin-sabou"
   },
   {
-    "name": "Thesis Defense: Beatriz Avila-Marquez",
-    "startDate": "2026-04-06",
-    "startTime": "2:30pm",
-    "endDate": "2026-04-06",
-    "endTime": "",
-    "location": "John S. Wright Hall - Building B\n        Room 326",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/thesis-defense-beatriz-avila-marquez"
-  },
-  {
     "name": "Undoing and Reclaiming: Filipino Americans and Colonial Mentality",
     "startDate": "2026-04-06",
     "startTime": "2:30pm",
@@ -290,6 +280,16 @@
     "link": "https://www.unlv.edu/event/thesis-defense-joanna-joseph"
   },
   {
+    "name": "Thesis Defense: Beatriz Avila-Marquez",
+    "startDate": "2026-04-06",
+    "startTime": "2:30pm",
+    "endDate": "2026-04-06",
+    "endTime": "",
+    "location": "John S. Wright Hall - Building B\n        Room 326",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/thesis-defense-beatriz-avila-marquez"
+  },
+  {
     "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
     "startDate": "2026-04-06",
     "startTime": "5pm",
@@ -308,16 +308,6 @@
     "location": "Lazy Dog Restaurant & Bar in Town Square\r\n6509 S Las Vegas Blvd\r\nLas Vegas, NV 89119",
     "category": "Social",
     "link": "https://www.unlv.edu/event/unlv-womens-council-happy-hour"
-  },
-  {
-    "name": "UNLV Dance: Orbits (Streaming)",
-    "startDate": "2026-04-07",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Judy Bayley Theatre",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=182"
   },
   {
     "name": "UNLV Dance: Universal Motions (Streaming)",
@@ -350,6 +340,16 @@
     "link": "https://www.unlv.edu/event/unlv-dance-cfacolab-show-about-hot-dog-streaming?delta=147"
   },
   {
+    "name": "UNLV Dance: Orbits (Streaming)",
+    "startDate": "2026-04-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Judy Bayley Theatre",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=182"
+  },
+  {
     "name": "Gratitude Brief Practice",
     "startDate": "2026-04-07",
     "startTime": "7am",
@@ -358,6 +358,16 @@
     "location": "Virtual",
     "category": "Sports",
     "link": "https://www.unlv.edu/event/gratitude-brief-practice-6"
+  },
+  {
+    "name": "Art Exhibition: Moth Ball",
+    "startDate": "2026-04-07",
+    "startTime": "10am",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=32"
   },
   {
     "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
@@ -420,16 +430,6 @@
     "link": "https://www.unlv.edu/event/international-faculty-community-practice-cop-0"
   },
   {
-    "name": "Art Exhibition: Moth Ball",
-    "startDate": "2026-04-07",
-    "startTime": "10am",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=32"
-  },
-  {
     "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-07",
     "startTime": "11am",
@@ -450,16 +450,6 @@
     "link": "https://www.unlv.edu/event/grad-rebel-appreciation-self-care-sessions"
   },
   {
-    "name": "Traditional Chinese Medicine Week Day 1",
-    "startDate": "2026-04-07",
-    "startTime": "12pm",
-    "endDate": "2026-04-07",
-    "endTime": "",
-    "location": "Student Union\n        Lecture Location: SU Room 211\r\nExercise and Activities: Pida Plaza",
-    "category": "Culture",
-    "link": "https://www.unlv.edu/event/traditional-chinese-medicine-week-day-1"
-  },
-  {
     "name": "Grounding and Centering Breath",
     "startDate": "2026-04-07",
     "startTime": "12pm",
@@ -468,6 +458,16 @@
     "location": "Virtual",
     "category": "Health",
     "link": "https://www.unlv.edu/event/grounding-and-centering-breath?delta=13"
+  },
+  {
+    "name": "Traditional Chinese Medicine Week Day 1",
+    "startDate": "2026-04-07",
+    "startTime": "12pm",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Student Union\n        Lecture Location: SU Room 211\r\nExercise and Activities: Pida Plaza",
+    "category": "Culture",
+    "link": "https://www.unlv.edu/event/traditional-chinese-medicine-week-day-1"
   },
   {
     "name": "Yoga Fitness Class",
@@ -570,26 +570,6 @@
     "link": "https://www.unlv.edu/event/reb-general-member-meetings-0?delta=10"
   },
   {
-    "name": "UNLV Dance: Universal Motions (Streaming)",
-    "startDate": "2026-04-08",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=36"
-  },
-  {
-    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
-    "startDate": "2026-04-08",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=141"
-  },
-  {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
     "startDate": "2026-04-08",
     "startTime": "(ALL DAY)",
@@ -608,6 +588,26 @@
     "location": "Judy Bayley Theatre",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=183"
+  },
+  {
+    "name": "UNLV Dance: Universal Motions (Streaming)",
+    "startDate": "2026-04-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=36"
+  },
+  {
+    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
+    "startDate": "2026-04-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=141"
   },
   {
     "name": "Meet with a TIAA Representative on Campus",
@@ -638,26 +638,6 @@
     "location": "Medical Education Building",
     "category": "Health",
     "link": "https://www.unlv.edu/event/medical-district-blood-drive"
-  },
-  {
-    "name": "Journalism & Media Studies Internship and Career Fair",
-    "startDate": "2026-04-08",
-    "startTime": "10am",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Greenspun Hall\n        Main Lobby",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/journalism-media-studies-internship-and-career-fair-0"
-  },
-  {
-    "name": "Art Exhibition: Moth Ball",
-    "startDate": "2026-04-08",
-    "startTime": "10am",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=33"
   },
   {
     "name": "On Campus Employer Visit: Target Hospitality - Day 1",
@@ -720,24 +700,24 @@
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=33"
   },
   {
-    "name": "Narcan Training",
+    "name": "Journalism & Media Studies Internship and Career Fair",
     "startDate": "2026-04-08",
-    "startTime": "11am",
+    "startTime": "10am",
     "endDate": "2026-04-08",
     "endTime": "",
-    "location": "Student Union\n        213",
-    "category": null,
-    "link": "https://www.unlv.edu/event/narcan-training-1"
+    "location": "Greenspun Hall\n        Main Lobby",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/journalism-media-studies-internship-and-career-fair-0"
   },
   {
-    "name": "American Red Cross CPR/AED/First Aid Certification Course",
+    "name": "Art Exhibition: Moth Ball",
     "startDate": "2026-04-08",
-    "startTime": "11am",
+    "startTime": "10am",
     "endDate": "2026-04-08",
     "endTime": "",
-    "location": "1210 Wet Classroom",
-    "category": "Health",
-    "link": "https://www.unlv.edu/event/american-red-cross-cpraedfirst-aid-certification-course?delta=11"
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=33"
   },
   {
     "name": "Botanical Prints: A Gelli Printmaking Workshop",
@@ -770,24 +750,24 @@
     "link": "https://www.unlv.edu/event/beginners-idea-bridge-workshop-series-viability-trademark-0"
   },
   {
-    "name": "Lied Playback Lounge",
+    "name": "Narcan Training",
     "startDate": "2026-04-08",
-    "startTime": "12pm",
+    "startTime": "11am",
     "endDate": "2026-04-08",
     "endTime": "",
-    "location": "Lied Library\n        Amargosa Room",
+    "location": "Student Union\n        213",
     "category": null,
-    "link": "https://www.unlv.edu/event/lied-playback-lounge"
+    "link": "https://www.unlv.edu/event/narcan-training-1"
   },
   {
-    "name": "Relaxing Your Mind: Coping With Anxiety",
+    "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-08",
-    "startTime": "12pm",
+    "startTime": "11am",
     "endDate": "2026-04-08",
     "endTime": "",
-    "location": "Virtual",
-    "category": null,
-    "link": "https://www.unlv.edu/event/relaxing-your-mind-coping-anxiety-7"
+    "location": "1210 Wet Classroom",
+    "category": "Health",
+    "link": "https://www.unlv.edu/event/american-red-cross-cpraedfirst-aid-certification-course?delta=11"
   },
   {
     "name": "Satisfactory Academic (SAP) Workshop",
@@ -820,6 +800,36 @@
     "link": "https://www.unlv.edu/event/realign-palestine-pragmatic-palestinian-perspective-future-gaza-israel-middle-east"
   },
   {
+    "name": "Lied Playback Lounge",
+    "startDate": "2026-04-08",
+    "startTime": "12pm",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Lied Library\n        Amargosa Room",
+    "category": null,
+    "link": "https://www.unlv.edu/event/lied-playback-lounge"
+  },
+  {
+    "name": "Relaxing Your Mind: Coping With Anxiety",
+    "startDate": "2026-04-08",
+    "startTime": "12pm",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Virtual",
+    "category": null,
+    "link": "https://www.unlv.edu/event/relaxing-your-mind-coping-anxiety-7"
+  },
+  {
+    "name": "Palaspas and Pasalubong",
+    "startDate": "2026-04-08",
+    "startTime": "1pm",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Lied Library\n        Goldfield Room",
+    "category": null,
+    "link": "https://www.unlv.edu/event/palaspas-and-pasalubong"
+  },
+  {
     "name": "Recovery Curious",
     "startDate": "2026-04-08",
     "startTime": "1pm",
@@ -838,16 +848,6 @@
     "location": "Online",
     "category": "Academics",
     "link": "https://www.unlv.edu/event/rsi-workshop-feedback-feedback-using-multiple-methods-provide-meaningful-feedback"
-  },
-  {
-    "name": "Palaspas and Pasalubong",
-    "startDate": "2026-04-08",
-    "startTime": "1pm",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Lied Library\n        Goldfield Room",
-    "category": null,
-    "link": "https://www.unlv.edu/event/palaspas-and-pasalubong"
   },
   {
     "name": "Traditional Chinese Medicine Week Day 2",
@@ -900,6 +900,16 @@
     "link": "https://www.unlv.edu/event/game-time-3?delta=9"
   },
   {
+    "name": "Hula H\u0101l\u0101wai",
+    "startDate": "2026-04-08",
+    "startTime": "5pm",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Student Recreation & Wellness Center\n        Rooms 1020 and 2025",
+    "category": null,
+    "link": "https://www.unlv.edu/event/hula-halawai-0"
+  },
+  {
     "name": "Hula & Halawai",
     "startDate": "2026-04-08",
     "startTime": "5pm",
@@ -920,14 +930,14 @@
     "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=27"
   },
   {
-    "name": "Hula H\u0101l\u0101wai",
+    "name": "Network & Create: Grad Rebel Appreciation Zine Mixer",
     "startDate": "2026-04-08",
-    "startTime": "5pm",
+    "startTime": "5:30pm",
     "endDate": "2026-04-08",
     "endTime": "",
-    "location": "Student Recreation & Wellness Center\n        Rooms 1020 and 2025",
-    "category": null,
-    "link": "https://www.unlv.edu/event/hula-halawai-0"
+    "location": "University Gateway Building\n        2nd Floor, Gather Conference Room",
+    "category": "Social",
+    "link": "https://www.unlv.edu/event/network-create-grad-rebel-appreciation-zine-mixer-0"
   },
   {
     "name": "College of Hospitality - April Alumni Mixer",
@@ -960,16 +970,6 @@
     "link": "https://www.unlv.edu/event/learn-kayak"
   },
   {
-    "name": "Network & Create: Grad Rebel Appreciation Zine Mixer",
-    "startDate": "2026-04-08",
-    "startTime": "5:30pm",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "University Gateway Building\n        2nd Floor, Gather Conference Room",
-    "category": "Social",
-    "link": "https://www.unlv.edu/event/network-create-grad-rebel-appreciation-zine-mixer-0"
-  },
-  {
     "name": "Tools for Creating and Delivering Presentations in Online Classes",
     "startDate": "2026-04-08",
     "startTime": "6pm",
@@ -978,6 +978,16 @@
     "location": "Online",
     "category": "Academics",
     "link": "https://www.unlv.edu/event/tools-creating-and-delivering-presentations-online-classes-0"
+  },
+  {
+    "name": "UNLV Dance: Universal Motions (Streaming)",
+    "startDate": "2026-04-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=37"
   },
   {
     "name": "UNLV Dance: Gravitational Pulls (Streaming)",
@@ -1008,46 +1018,6 @@
     "location": "Judy Bayley Theatre",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=184"
-  },
-  {
-    "name": "UNLV Dance: Universal Motions (Streaming)",
-    "startDate": "2026-04-09",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=37"
-  },
-  {
-    "name": "Breathing Break - Hosted by UNLV PRACTICE",
-    "startDate": "2026-04-09",
-    "startTime": "10am",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Virtual",
-    "category": "Sports",
-    "link": "https://www.unlv.edu/event/breathing-break-hosted-unlv-practice?delta=13"
-  },
-  {
-    "name": "On Campus Employer Visit: Target Hospitality - Day 2",
-    "startDate": "2026-04-09",
-    "startTime": "10am",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Hospitality Hall\n        Hospitality Hall Grand Lobby",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/campus-employer-visit-target-hospitality-day-2"
-  },
-  {
-    "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
-    "startDate": "2026-04-09",
-    "startTime": "10am",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art, East Gallery and WorkShop Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=34"
   },
   {
     "name": "Art Exhibition: Mourning Songs of Salt and Silt",
@@ -1100,6 +1070,36 @@
     "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=34"
   },
   {
+    "name": "On Campus Employer Visit: Target Hospitality - Day 2",
+    "startDate": "2026-04-09",
+    "startTime": "10am",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Hospitality Hall\n        Hospitality Hall Grand Lobby",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/campus-employer-visit-target-hospitality-day-2"
+  },
+  {
+    "name": "Breathing Break - Hosted by UNLV PRACTICE",
+    "startDate": "2026-04-09",
+    "startTime": "10am",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Virtual",
+    "category": "Sports",
+    "link": "https://www.unlv.edu/event/breathing-break-hosted-unlv-practice?delta=13"
+  },
+  {
+    "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
+    "startDate": "2026-04-09",
+    "startTime": "10am",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art, East Gallery and WorkShop Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=34"
+  },
+  {
     "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-09",
     "startTime": "11am",
@@ -1120,16 +1120,6 @@
     "link": "https://www.unlv.edu/event/mindful-moments-weekly-guided-meditation-0?delta=9"
   },
   {
-    "name": "MGM Resorts Roundtable | Finance Operations",
-    "startDate": "2026-04-09",
-    "startTime": "12pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Hospitality Hall\n        234",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/mgm-resorts-roundtable-finance-operations"
-  },
-  {
     "name": "Lunch and Learn \u2013 The Student Survival Guide: How to Own Your College Budget",
     "startDate": "2026-04-09",
     "startTime": "12pm",
@@ -1140,24 +1130,14 @@
     "link": "https://www.unlv.edu/event/lunch-and-learn-student-survival-guide-how-own-your-college-budget"
   },
   {
-    "name": "Beyond the Deficit: Relationships and Rigor: Syllabus Audit",
+    "name": "MGM Resorts Roundtable | Finance Operations",
     "startDate": "2026-04-09",
-    "startTime": "1pm",
+    "startTime": "12pm",
     "endDate": "2026-04-09",
     "endTime": "",
-    "location": "Online",
-    "category": null,
-    "link": "https://www.unlv.edu/event/beyond-deficit-relationships-and-rigor-syllabus-audit"
-  },
-  {
-    "name": "Supporting Victim-Survivors of Sexual Violence Training for UNLV Staff & Faculty",
-    "startDate": "2026-04-09",
-    "startTime": "1pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Student Recreation & Wellness Center\n        Hybrid Session:\r\n- In-person: Health Education Room in the Student Recreation and Wellness Center, located on the 1st Floor\r\n- Zoom Link will be sent via email after RSVP",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/supporting-victim-survivors-sexual-violence-training-unlv-staff-faculty"
+    "location": "Hospitality Hall\n        234",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/mgm-resorts-roundtable-finance-operations"
   },
   {
     "name": "DIY Fidget & Stim Tools Workshop",
@@ -1200,6 +1180,26 @@
     "link": "https://www.unlv.edu/event/celebrating-your-latinidad-identities-through-connection-and-healing"
   },
   {
+    "name": "Beyond the Deficit: Relationships and Rigor: Syllabus Audit",
+    "startDate": "2026-04-09",
+    "startTime": "1pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Online",
+    "category": null,
+    "link": "https://www.unlv.edu/event/beyond-deficit-relationships-and-rigor-syllabus-audit"
+  },
+  {
+    "name": "Supporting Victim-Survivors of Sexual Violence Training for UNLV Staff & Faculty",
+    "startDate": "2026-04-09",
+    "startTime": "1pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Student Recreation & Wellness Center\n        Hybrid Session:\r\n- In-person: Health Education Room in the Student Recreation and Wellness Center, located on the 1st Floor\r\n- Zoom Link will be sent via email after RSVP",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/supporting-victim-survivors-sexual-violence-training-unlv-staff-faculty"
+  },
+  {
     "name": "Plan Year 2027 Plan Design and Rate Changes",
     "startDate": "2026-04-09",
     "startTime": "2pm",
@@ -1240,16 +1240,6 @@
     "link": "https://www.unlv.edu/event/3d-printing-workshop-10"
   },
   {
-    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
-    "startDate": "2026-04-09",
-    "startTime": "5pm",
-    "endDate": "2026-04-09",
-    "endTime": "",
-    "location": "Online",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=28"
-  },
-  {
     "name": "Technology Entrepreneurship Evening \u2014 Unlock the Potential (TEE-UP)",
     "startDate": "2026-04-09",
     "startTime": "5pm",
@@ -1258,6 +1248,16 @@
     "location": "Advanced Engineering Building\n        Flexatorium",
     "category": "Career",
     "link": "https://www.unlv.edu/event/technology-entrepreneurship-evening-unlock-potential-tee?delta=2"
+  },
+  {
+    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
+    "startDate": "2026-04-09",
+    "startTime": "5pm",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Online",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=28"
   },
   {
     "name": "University Forum Lecture: Staying Decent In A Criminal State: Berlin Under The Nazis And Other Places Since",
@@ -1278,16 +1278,6 @@
     "location": "Lee and Thomas Beam Music Center\n        Dr. Arturo Rando-Grillot Hall",
     "category": "Arts",
     "link": "https://www.unlv.edu/event/caritas-love-song-master-music-choral-conducting-recital"
-  },
-  {
-    "name": "UNLV Dance: Orbits (Streaming)",
-    "startDate": "2026-04-10",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-10",
-    "endTime": "",
-    "location": "Judy Bayley Theatre",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=185"
   },
   {
     "name": "UNLV Dance: Universal Motions (Streaming)",
@@ -1320,6 +1310,16 @@
     "link": "https://www.unlv.edu/event/unlv-dance-cfacolab-show-about-hot-dog-streaming?delta=150"
   },
   {
+    "name": "UNLV Dance: Orbits (Streaming)",
+    "startDate": "2026-04-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Judy Bayley Theatre",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=185"
+  },
+  {
     "name": "Posture Reset Practice",
     "startDate": "2026-04-10",
     "startTime": "7am",
@@ -1338,6 +1338,26 @@
     "location": "Campus Services Building\n        Room 132",
     "category": "Career",
     "link": "https://www.unlv.edu/event/meet-tiaa-representative-campus-23"
+  },
+  {
+    "name": "Chemical Hygiene and Laboratory Safety Training",
+    "startDate": "2026-04-10",
+    "startTime": "9am",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Campus Services Building\n        Room 223",
+    "category": null,
+    "link": "https://www.unlv.edu/event/chemical-hygiene-and-laboratory-safety-training-15"
+  },
+  {
+    "name": "UNLVolunteers Breathe in with Obodo",
+    "startDate": "2026-04-10",
+    "startTime": "9am",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Student Union\n        Room 316",
+    "category": null,
+    "link": "https://www.unlv.edu/event/unlvolunteers-breathe-obodo"
   },
   {
     "name": "Serve & Lead Mini-Con 2026: Taking Flight",
@@ -1360,24 +1380,24 @@
     "link": "https://www.unlv.edu/event/rebelperform-evaluation-training-35"
   },
   {
-    "name": "Chemical Hygiene and Laboratory Safety Training",
+    "name": "Art Exhibition: Moth Ball",
     "startDate": "2026-04-10",
-    "startTime": "9am",
+    "startTime": "10am",
     "endDate": "2026-04-10",
     "endTime": "",
-    "location": "Campus Services Building\n        Room 223",
-    "category": null,
-    "link": "https://www.unlv.edu/event/chemical-hygiene-and-laboratory-safety-training-15"
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=35"
   },
   {
-    "name": "UNLVolunteers Breathe in with Obodo",
+    "name": "New Faculty Academy: Managing Stress and Rejection",
     "startDate": "2026-04-10",
-    "startTime": "9am",
+    "startTime": "10am",
     "endDate": "2026-04-10",
     "endTime": "",
-    "location": "Student Union\n        Room 316",
-    "category": null,
-    "link": "https://www.unlv.edu/event/unlvolunteers-breathe-obodo"
+    "location": "Frank and Estella Beam Hall\n        Room 240",
+    "category": "Academics",
+    "link": "https://www.unlv.edu/event/new-faculty-academy-managing-stress-and-rejection"
   },
   {
     "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
@@ -1410,24 +1430,14 @@
     "link": "https://www.unlv.edu/event/art-exhibition-el-camino-se-traza-al-andar-path-traced-walking?delta=35"
   },
   {
-    "name": "Art Exhibition: Moth Ball",
+    "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-10",
-    "startTime": "10am",
+    "startTime": "11am",
     "endDate": "2026-04-10",
     "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Window Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=35"
-  },
-  {
-    "name": "New Faculty Academy: Managing Stress and Rejection",
-    "startDate": "2026-04-10",
-    "startTime": "10am",
-    "endDate": "2026-04-10",
-    "endTime": "",
-    "location": "Frank and Estella Beam Hall\n        Room 240",
-    "category": "Academics",
-    "link": "https://www.unlv.edu/event/new-faculty-academy-managing-stress-and-rejection"
+    "location": "1210 Wet Classroom",
+    "category": "Health",
+    "link": "https://www.unlv.edu/event/american-red-cross-cpraedfirst-aid-certification-course?delta=13"
   },
   {
     "name": "UNLV Women's Council Fellowship Lunch",
@@ -1448,16 +1458,6 @@
     "location": "Hazel M. Wilson Dining Commons",
     "category": "Academics",
     "link": "https://www.unlv.edu/event/grad-rebel-appreciation-day-unlv-dining-commons-14"
-  },
-  {
-    "name": "American Red Cross CPR/AED/First Aid Certification Course",
-    "startDate": "2026-04-10",
-    "startTime": "11am",
-    "endDate": "2026-04-10",
-    "endTime": "",
-    "location": "1210 Wet Classroom",
-    "category": "Health",
-    "link": "https://www.unlv.edu/event/american-red-cross-cpraedfirst-aid-certification-course?delta=13"
   },
   {
     "name": "Non-Tenure Track Group: Should I Become an Undergrad Coordinator?",
@@ -1500,6 +1500,16 @@
     "link": "https://www.unlv.edu/event/family-swim-fridays-srwc-pool-1?delta=3"
   },
   {
+    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
+    "startDate": "2026-04-10",
+    "startTime": "5pm",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Online",
+    "category": "Career",
+    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=29"
+  },
+  {
     "name": "Know Your Rights : Collaboration with ACLU",
     "startDate": "2026-04-10",
     "startTime": "5pm",
@@ -1520,16 +1530,6 @@
     "link": "https://www.unlv.edu/event/racial-equity-social-justice-research-age-retrenchment"
   },
   {
-    "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
-    "startDate": "2026-04-10",
-    "startTime": "5pm",
-    "endDate": "2026-04-10",
-    "endTime": "",
-    "location": "Online",
-    "category": "Career",
-    "link": "https://www.unlv.edu/event/beyond-dual-enrollment-reframing-early-college-pathway-identity-development-opportunity-and?delta=29"
-  },
-  {
     "name": "91.5 Jazz and More Live Broadcast - Tap & Ash",
     "startDate": "2026-04-10",
     "startTime": "8pm",
@@ -1538,26 +1538,6 @@
     "location": "Tap N Ash Social Club\r\n1606 S Commerce St, Las Vegas, NV, USA\r\nLas Vegas, NV 89102",
     "category": null,
     "link": "https://www.unlv.edu/event/915-jazz-and-more-live-broadcast-tap-ash?delta=33"
-  },
-  {
-    "name": "UNLV Dance: Universal Motions (Streaming)",
-    "startDate": "2026-04-11",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-11",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=39"
-  },
-  {
-    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
-    "startDate": "2026-04-11",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-11",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=144"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
@@ -1580,6 +1560,26 @@
     "link": "https://www.unlv.edu/event/unlv-dance-orbits-streaming?delta=186"
   },
   {
+    "name": "UNLV Dance: Universal Motions (Streaming)",
+    "startDate": "2026-04-11",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=39"
+  },
+  {
+    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
+    "startDate": "2026-04-11",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=144"
+  },
+  {
     "name": "Yankee Doodle Canyon Expedition",
     "startDate": "2026-04-11",
     "startTime": "7:30am",
@@ -1588,6 +1588,16 @@
     "location": "Houssels House",
     "category": null,
     "link": "https://www.unlv.edu/event/yankee-doodle-canyon-expedition"
+  },
+  {
+    "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
+    "startDate": "2026-04-11",
+    "startTime": "10am",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art, East Gallery and WorkShop Gallery",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=36"
   },
   {
     "name": "Art Exhibition: Mourning Songs of Salt and Silt",
@@ -1630,16 +1640,6 @@
     "link": "https://www.unlv.edu/event/art-exhibition-moth-ball?delta=36"
   },
   {
-    "name": "Art Exhibition: Actions for the Earth: Art, Care & Ecology",
-    "startDate": "2026-04-11",
-    "startTime": "10am",
-    "endDate": "2026-04-11",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art, East Gallery and WorkShop Gallery",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-exhibition-actions-earth-art-care-ecology?delta=36"
-  },
-  {
     "name": "American Red Cross CPR/AED/First Aid Certification Course",
     "startDate": "2026-04-11",
     "startTime": "11am",
@@ -1650,16 +1650,6 @@
     "link": "https://www.unlv.edu/event/american-red-cross-cpraedfirst-aid-certification-course?delta=14"
   },
   {
-    "name": "Art Workshop: Slow Art Day 2026",
-    "startDate": "2026-04-11",
-    "startTime": "1pm",
-    "endDate": "2026-04-11",
-    "endTime": "",
-    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Galleries",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/art-workshop-slow-art-day-2026"
-  },
-  {
     "name": "2026 Corporate Challenge: Bocce (A)",
     "startDate": "2026-04-11",
     "startTime": "1pm",
@@ -1668,6 +1658,16 @@
     "location": "Leavitt Family Park\r\n2100 E St Louis Ave\r\nLas Vegas, NV 89104",
     "category": null,
     "link": "https://www.unlv.edu/event/2026-corporate-challenge-bocce"
+  },
+  {
+    "name": "Art Workshop: Slow Art Day 2026",
+    "startDate": "2026-04-11",
+    "startTime": "1pm",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Marjorie Barrick Museum of Art / Harry Reid Center\n        Marjorie Barrick Museum of Art Galleries",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/art-workshop-slow-art-day-2026"
   },
   {
     "name": "Beyond Dual Enrollment: Reframing Early College as a Pathway to Identity Development, Opportunity, and Workforce Readiness",
@@ -1700,26 +1700,6 @@
     "link": "https://www.unlv.edu/event/los-angeles-regional-alumni-reception"
   },
   {
-    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
-    "startDate": "2026-04-12",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-12",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=145"
-  },
-  {
-    "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
-    "startDate": "2026-04-12",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-12",
-    "endTime": "",
-    "location": "Online",
-    "category": "Arts",
-    "link": "https://www.unlv.edu/event/unlv-dance-cfacolab-show-about-hot-dog-streaming?delta=152"
-  },
-  {
     "name": "UNLV Dance: Orbits (Streaming)",
     "startDate": "2026-04-12",
     "startTime": "(ALL DAY)",
@@ -1740,6 +1720,26 @@
     "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=40"
   },
   {
+    "name": "UNLV Dance: Gravitational Pulls (Streaming)",
+    "startDate": "2026-04-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-12",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-gravitational-pulls-streaming?delta=145"
+  },
+  {
+    "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
+    "startDate": "2026-04-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-12",
+    "endTime": "",
+    "location": "Online",
+    "category": "Arts",
+    "link": "https://www.unlv.edu/event/unlv-dance-cfacolab-show-about-hot-dog-streaming?delta=152"
+  },
+  {
     "name": "2026 Corporate Challenge: Trap and Skeet Shooting (All teams)",
     "startDate": "2026-04-12",
     "startTime": "9am",
@@ -1750,16 +1750,6 @@
     "link": "https://www.unlv.edu/event/2026-corporate-challenge-trap-and-skeet-shooting-all-teams"
   },
   {
-    "name": "Family Swim at SRWC Pool",
-    "startDate": "2026-04-12",
-    "startTime": "10am",
-    "endDate": "2026-04-12",
-    "endTime": "",
-    "location": "Student Recreation & Wellness Center\n        Natatorium 1190",
-    "category": null,
-    "link": "https://www.unlv.edu/event/family-swim-srwc-pool-2?delta=8"
-  },
-  {
     "name": "Mindfulness Brief Practice",
     "startDate": "2026-04-12",
     "startTime": "10am",
@@ -1768,6 +1758,16 @@
     "location": "Virtual",
     "category": "Health",
     "link": "https://www.unlv.edu/event/mindfulness-brief-practice-4"
+  },
+  {
+    "name": "Family Swim at SRWC Pool",
+    "startDate": "2026-04-12",
+    "startTime": "10am",
+    "endDate": "2026-04-12",
+    "endTime": "",
+    "location": "Student Recreation & Wellness Center\n        Natatorium 1190",
+    "category": null,
+    "link": "https://www.unlv.edu/event/family-swim-srwc-pool-2?delta=8"
   },
   {
     "name": "American Red Cross CPR/AED/First Aid Certification Course",

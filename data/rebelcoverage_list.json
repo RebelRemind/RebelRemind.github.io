@@ -1,13 +1,13 @@
 [
   {
-    "name": " Baseball at Grand Canyon ",
-    "startDate": "2026-04-11",
-    "startTime": "6:00 PM PT",
-    "endDate": "2026-04-11",
+    "name": " Softball vs Utah State ",
+    "startDate": "2026-04-12",
+    "startTime": "12 p.m. PT",
+    "endDate": "2026-04-12",
     "endTime": "",
     "location": "",
-    "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-grand-canyon-3/"
+    "sport": "Softball",
+    "link": "https://themw.com/news/2026/03/24/utah-state-at-unlv-16/?_gl=1*1a4w9fn*_up*MQ..*_ga*OTMwNzE4NDM3LjE3NzU4NTc1NjE.*_ga_SC44RH1YQ6*czE3NzU4NTc1NjAkbzEkZzAkdDE3NzU4NTc1NjAkajYwJGwwJGgw"
   },
   {
     "name": " Baseball at Grand Canyon ",
@@ -18,16 +18,6 @@
     "location": "",
     "sport": "Baseball",
     "link": "https://themw.com/watch/?sport=3&school=812"
-  },
-  {
-    "name": " Softball vs Utah State ",
-    "startDate": "2026-04-12",
-    "startTime": "12 p.m. PT",
-    "endDate": "2026-04-12",
-    "endTime": "",
-    "location": "",
-    "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/utah-state-at-unlv-16/?_gl=1*1a4w9fn*_up*MQ..*_ga*OTMwNzE4NDM3LjE3NzU4NTc1NjE.*_ga_SC44RH1YQ6*czE3NzU4NTc1NjAkbzEkZzAkdDE3NzU4NTc1NjAkajYwJGwwJGgw"
   },
   {
     "name": " Women's Tennis at Fresno State ",
@@ -108,5 +98,25 @@
     "location": "",
     "sport": "Baseball",
     "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-3/"
+  },
+  {
+    "name": " Softball at Boise State ",
+    "startDate": "2026-04-19",
+    "startTime": "11 a.m. PT",
+    "endDate": "2026-04-19",
+    "endTime": "",
+    "location": "",
+    "sport": "Softball",
+    "link": null
+  },
+  {
+    "name": " Baseball vs Washington State ",
+    "startDate": "2026-04-19",
+    "startTime": "12:05 PM PT",
+    "endDate": "2026-04-19",
+    "endTime": "",
+    "location": "",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-4/"
   }
 ]
