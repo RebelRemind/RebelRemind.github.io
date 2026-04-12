@@ -1,122 +1,3732 @@
 [
   {
-    "name": " Softball vs Utah State ",
-    "startDate": "2026-04-12",
-    "startTime": "12 p.m. PT",
-    "endDate": "2026-04-12",
+    "name": "Boise State",
+    "startDate": "2026-01-13",
+    "startTime": "8:00 PM",
+    "endDate": "2026-01-13",
     "endTime": "",
-    "location": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/boise-state/boxscore/17615"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-01-14",
+    "startTime": "",
+    "endDate": "2026-01-14",
+    "endTime": "",
+    "location": "San Jose, CA",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-jose-state/boxscore/17647"
+  },
+  {
+    "name": "UNR Invitational",
+    "startDate": "2026-01-16",
+    "startTime": "",
+    "endDate": "2026-01-16",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/1/17/womens-track-field-track-field-wraps-up-unr-invitational.aspx"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-01-17",
+    "startTime": "",
+    "endDate": "2026-01-17",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-diego-state/boxscore/17648"
+  },
+  {
+    "name": "Wichita State",
+    "startDate": "2026-01-17",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-17",
+    "endTime": "",
+    "location": "Chandler, AZ",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/17/mens-tennis-opens-2026-with-win-over-wichita-state.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-01-17",
+    "startTime": "2:00 PM",
+    "endDate": "2026-01-17",
+    "endTime": "",
+    "location": "San Jose, California",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-jose-state/boxscore/17616"
+  },
+  {
+    "name": "Arizona State",
+    "startDate": "2026-01-18",
+    "startTime": "9:00 AM",
+    "endDate": "2026-01-18",
+    "endTime": "",
+    "location": "Chandler, AZ",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/18/mens-tennis-rebel-tennis-blanked-by-sun-devils.aspx"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-01-20",
+    "startTime": "8:00 PM",
+    "endDate": "2026-01-20",
+    "endTime": "",
+    "location": "Logan, Utah",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/utah-state/boxscore/17617"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-01-21",
+    "startTime": "",
+    "endDate": "2026-01-21",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/air-force/boxscore/17649"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-01-23",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-23",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/23/mens-tennis-netters-blank-ucr-to-kick-off-home-slate.aspx"
+  },
+  {
+    "name": "UNR (Women Only)",
+    "startDate": "2026-01-23",
+    "startTime": "1:15 PM",
+    "endDate": "2026-01-23",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/1/23/swimming-diving-rebel-women-earn-dominant-silver-state-series-win-over-unr.aspx"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-01-24",
+    "startTime": "",
+    "endDate": "2026-01-24",
+    "endTime": "",
+    "location": "Reno, NV",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/unr/boxscore/17650"
+  },
+  {
+    "name": "Fresno Pacific",
+    "startDate": "2026-01-24",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-24",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/1/24/swimming-diving-rebels-sweep-fresno-pacific-on-senior-day.aspx"
+  },
+  {
+    "name": "New Mexico State",
+    "startDate": "2026-01-24",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-24",
+    "endTime": "",
+    "location": "Las Vegas. NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/24/mens-tennis-unlv-men-post-second-straight-shutout.aspx"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-01-24",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-24",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-diego-state/boxscore/17618"
+  },
+  {
+    "name": "Weber State",
+    "startDate": "2026-01-25",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-25",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/25/mens-tennis-rebs-hold-on-to-complete-weekend-sweep.aspx"
+  },
+  {
+    "name": "Southwestern Invitational",
+    "startDate": "2026-01-26",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-01-26",
+    "endTime": "",
+    "location": "Malibu, CA",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/1/26/mens-golf-lewis-leads-rebels-in-second-after-day-one-at-southwestern-invitational.aspx"
+  },
+  {
+    "name": "Southwestern Invitational",
+    "startDate": "2026-01-27",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-01-27",
+    "endTime": "",
+    "location": "Malibu, CA",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/1/27/mens-golf-two-rebels-in-top-20-after-second-round-at-southwestern-invitational.aspx"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-01-27",
+    "startTime": "8:00 PM",
+    "endDate": "2026-01-27",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/new-mexico/boxscore/17620"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-01-28",
+    "startTime": "",
+    "endDate": "2026-01-28",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/new-mexico/boxscore/17651"
+  },
+  {
+    "name": "Southwestern Invitational",
+    "startDate": "2026-01-28",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-01-28",
+    "endTime": "",
+    "location": "Malibu, CA",
+    "sport": "Men's Golf",
+    "link": "https://scoreboard.clippd.com/tournaments/239402/scoring/participants"
+  },
+  {
+    "name": "Lumberjack Diving Invite",
+    "startDate": "2026-01-29",
+    "startTime": "10:30 AM",
+    "endDate": "2026-01-29",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/1/29/swimming-diving-rebels-grab-two-top-10-finishes-to-open-lumberjack-invite.aspx"
+  },
+  {
+    "name": "New Mexico Team Open",
+    "startDate": "2026-01-30",
+    "startTime": "",
+    "endDate": "2026-01-30",
+    "endTime": "",
+    "location": "Albuquerque, N.M.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/1/31/womens-track-field-rebels-post-strong-showing-at-new-mexico-team-open.aspx"
+  },
+  {
+    "name": "Weber State",
+    "startDate": "2026-01-30",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-30",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/30/womens-tennis-opens-with-shutout.aspx"
+  },
+  {
+    "name": "Lumberjack Diving Invite",
+    "startDate": "2026-01-30",
+    "startTime": "10:30 AM",
+    "endDate": "2026-01-30",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/1/30/swimming-diving-rebels-complete-day-two-of-lumberjack-invite.aspx"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-01-30",
+    "startTime": "7:00 PM",
+    "endDate": "2026-01-30",
+    "endTime": "",
+    "location": "Reno, Nevada",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/unr/boxscore/17621"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-01-31",
+    "startTime": "",
+    "endDate": "2026-01-31",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/colorado-state/boxscore/17652"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-01-31",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-31",
+    "endTime": "",
+    "location": "Las Vegas. NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/1/31/womens-tennis-stays-perfect-with-another-7-0-win.aspx"
+  },
+  {
+    "name": "Lumberjack Diving Invite",
+    "startDate": "2026-01-31",
+    "startTime": "10:30 AM",
+    "endDate": "2026-01-31",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/1/31/swimming-diving-rebels-conclude-lumberjack-invite.aspx"
+  },
+  {
+    "name": "GCU",
+    "startDate": "2026-01-31",
+    "startTime": "11:00 AM",
+    "endDate": "2026-01-31",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/1/swimming-diving-rebels-win-16-events-in-defeat-at-grand-canyon.aspx"
+  },
+  {
+    "name": "Therese Hession Regional Challenge",
+    "startDate": "2026-02-01",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-01",
+    "endTime": "",
+    "location": "Palos Verdes Estates, CA",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/1/womens-golf-yamagata-in-top-10-after-day-one-in-palos-verdes.aspx"
+  },
+  {
+    "name": "Youngstown State",
+    "startDate": "2026-02-01",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-01",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/1/womens-tennis-netters-turn-in-spotless-weekend.aspx"
+  },
+  {
+    "name": "Therese Hession Regional Challenge",
+    "startDate": "2026-02-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-02",
+    "endTime": "",
+    "location": "Palos Verdes Estates, CA",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/2/womens-golf-foong-moves-into-top-20-after-two-rounds-in-palos-verdes.aspx"
+  },
+  {
+    "name": "Therese Hession Regional Challenge",
+    "startDate": "2026-02-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-03",
+    "endTime": "",
+    "location": "Palos Verdes Estates, CA",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/3/womens-golf-rebels-conclude-spring-opener-in-palos-verdes.aspx"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-02-03",
+    "startTime": "8:00 PM",
+    "endDate": "2026-02-03",
+    "endTime": "",
+    "location": "Fresno, California",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/fresno-state/boxscore/17622"
+  },
+  {
+    "name": "CBU",
+    "startDate": "2026-02-05",
+    "startTime": "",
+    "endDate": "2026-02-05",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/utah-state-at-unlv-16/?_gl=1*1a4w9fn*_up*MQ..*_ga*OTMwNzE4NDM3LjE3NzU4NTc1NjE.*_ga_SC44RH1YQ6*czE3NzU4NTc1NjAkbzEkZzAkdDE3NzU4NTc1NjAkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/cbu/boxscore/17731"
   },
   {
-    "name": " Baseball at Grand Canyon ",
+    "name": "UIC",
+    "startDate": "2026-02-06",
+    "startTime": "",
+    "endDate": "2026-02-06",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uic/boxscore/17798"
+  },
+  {
+    "name": "Iowa State",
+    "startDate": "2026-02-06",
+    "startTime": "10:30 AM",
+    "endDate": "2026-02-06",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/6/womens-tennis-doubles-domination-not-enough-to-fend-off-cyclones.aspx"
+  },
+  {
+    "name": "USC (Men Only)",
+    "startDate": "2026-02-06",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-06",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/6/swimming-diving-rebel-men-drop-regular-season-finale-to-no-15-usc.aspx"
+  },
+  {
+    "name": "CBU",
+    "startDate": "2026-02-07",
+    "startTime": "",
+    "endDate": "2026-02-07",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/cbu/boxscore/17799"
+  },
+  {
+    "name": "UIC",
+    "startDate": "2026-02-07",
+    "startTime": "",
+    "endDate": "2026-02-07",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uic/boxscore/17800"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-02-07",
+    "startTime": "",
+    "endDate": "2026-02-07",
+    "endTime": "",
+    "location": "Logan, UT",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/utah-state/boxscore/17653"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-02-07",
+    "startTime": "1:30 PM",
+    "endDate": "2026-02-07",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/grand-canyon/boxscore/17623"
+  },
+  {
+    "name": "Purdue",
+    "startDate": "2026-02-08",
+    "startTime": "",
+    "endDate": "2026-02-08",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/purdue/boxscore/17801"
+  },
+  {
+    "name": "#21 USC",
+    "startDate": "2026-02-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-08",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/8/mens-tennis-falls-just-short-of-stunner-at-no-21-usc.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-02-10",
+    "startTime": "8:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-jose-state/boxscore/17624"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-02-11",
+    "startTime": "",
+    "endDate": "2026-02-11",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/wyoming/boxscore/17654"
+  },
+  {
+    "name": "John A. Burns Intercollegiate",
+    "startDate": "2026-02-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-12",
+    "endTime": "",
+    "location": "Lihue, Kauai, HI",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/12/mens-golf-rebels-in-top-5-after-first-round-in-hawai-i.aspx"
+  },
+  {
+    "name": "Don Kirby Elite Invitational",
+    "startDate": "2026-02-13",
+    "startTime": "",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Albuquerque, N.M.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/2/14/womens-track-field-rebels-wrap-up-regular-season-at-don-kirby-elite-invitational.aspx"
+  },
+  {
+    "name": "Quinnipiac",
+    "startDate": "2026-02-13",
+    "startTime": "",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/quinnipiac/boxscore/17802"
+  },
+  {
+    "name": "UC Davis",
+    "startDate": "2026-02-13",
+    "startTime": "",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-davis/boxscore/17732"
+  },
+  {
+    "name": "John A. Burns Intercollegiate",
+    "startDate": "2026-02-13",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Lihue, Kauai, HI",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/13/mens-golf-big-second-round-moves-rebels-into-top-3-in-hawai-i.aspx"
+  },
+  {
+    "name": "Idaho State",
+    "startDate": "2026-02-13",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/13/mens-tennis-posts-third-shutout-of-season.aspx"
+  },
+  {
+    "name": "UNLV First Chance Invitational",
+    "startDate": "2026-02-13",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": ""
+  },
+  {
+    "name": "Austin Peay",
+    "startDate": "2026-02-13",
+    "startTime": "6:05 PM",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay/boxscore/17735"
+  },
+  {
+    "name": "Boise State",
+    "startDate": "2026-02-13",
+    "startTime": "7:00 PM",
+    "endDate": "2026-02-13",
+    "endTime": "",
+    "location": "Boise, Idaho",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/boise-state/boxscore/17625"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-02-14",
+    "startTime": "",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/grand-canyon/boxscore/17655"
+  },
+  {
+    "name": "Quinnipiac",
+    "startDate": "2026-02-14",
+    "startTime": "",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/quinnipiac/boxscore/17804"
+  },
+  {
+    "name": "Seattle U",
+    "startDate": "2026-02-14",
+    "startTime": "",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/seattle-u/boxscore/17803"
+  },
+  {
+    "name": "John A. Burns Intercollegiate",
+    "startDate": "2026-02-14",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Lihue, Kauai, HI",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/14/mens-golf-rebels-secure-second-place-finish-in-hawai-i.aspx"
+  },
+  {
+    "name": "UNLV First Chance Invitational",
+    "startDate": "2026-02-14",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": ""
+  },
+  {
+    "name": "Austin Peay (DH)",
+    "startDate": "2026-02-14",
+    "startTime": "12:05 PM",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay-dh-/boxscore/17737"
+  },
+  {
+    "name": "Austin Peay (DH)",
+    "startDate": "2026-02-14",
+    "startTime": "3:05 PM",
+    "endDate": "2026-02-14",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay-dh-/boxscore/17738"
+  },
+  {
+    "name": "UC Davis",
+    "startDate": "2026-02-15",
+    "startTime": "",
+    "endDate": "2026-02-15",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-davis/boxscore/17805"
+  },
+  {
+    "name": "Austin Peay",
+    "startDate": "2026-02-15",
+    "startTime": "12:05 PM",
+    "endDate": "2026-02-15",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay/boxscore/17739"
+  },
+  {
+    "name": "#15 UCLA",
+    "startDate": "2026-02-15",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-15",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/15/mens-tennis-snitari-streak-ends-as-bruins-blank-rebels.aspx"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-02-17",
+    "startTime": "2:05 PM",
+    "endDate": "2026-02-17",
+    "endTime": "",
+    "location": "Riverside, Calif.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/news/2026/2/16/baseball-tuesdays-game-postponed-due-to-weather.aspx"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-02-18",
+    "startTime": "",
+    "endDate": "2026-02-18",
+    "endTime": "",
+    "location": "San Diego, CA",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-diego-state/boxscore/17656"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-02-18",
+    "startTime": "8:00 PM",
+    "endDate": "2026-02-18",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/colorado-state/boxscore/17626"
+  },
+  {
+    "name": "Mountain West Championships",
+    "startDate": "2026-02-18",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-18",
+    "endTime": "",
+    "location": "Houston, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/18/swimming-diving-olson-wins-500-free-title-on-opening-night-of-mw-championships.aspx"
+  },
+  {
+    "name": "Valparaiso",
+    "startDate": "2026-02-19",
+    "startTime": "",
+    "endDate": "2026-02-19",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/valparaiso/boxscore/17733"
+  },
+  {
+    "name": "Mountain West Championships",
+    "startDate": "2026-02-19",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-19",
+    "endTime": "",
+    "location": "Houston, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/19/swimming-diving-rebels-grab-three-medals-on-day-two-of-mw-championships.aspx"
+  },
+  {
+    "name": "Utah Valley",
+    "startDate": "2026-02-20",
+    "startTime": "",
+    "endDate": "2026-02-20",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-valley/boxscore/17806"
+  },
+  {
+    "name": "Colorado",
+    "startDate": "2026-02-20",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-20",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/20/womens-tennis-rebs-can-t-close-out-colorado.aspx"
+  },
+  {
+    "name": "#75 Pacific",
+    "startDate": "2026-02-20",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-20",
+    "endTime": "",
+    "location": "Stockton, CA",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/20/mens-tennis-tames-ranked-tigers.aspx"
+  },
+  {
+    "name": "Bradley",
+    "startDate": "2026-02-20",
+    "startTime": "6:05 PM",
+    "endDate": "2026-02-20",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17741"
+  },
+  {
+    "name": "Mountain West Championships",
+    "startDate": "2026-02-20",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-20",
+    "endTime": "",
+    "location": "Houston, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/20/swimming-diving-wigginton-takes-200-fly-title-on-day-three-of-mw-championships.aspx"
+  },
+  {
+    "name": "Idaho State",
+    "startDate": "2026-02-21",
+    "startTime": "",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/idaho-state/boxscore/17807"
+  },
+  {
+    "name": "Merrimack",
+    "startDate": "2026-02-21",
+    "startTime": "",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/merrimack/boxscore/17808"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-02-21",
+    "startTime": "",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/unr/boxscore/17657"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-02-21",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Colorado Springs, Colorado",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/air-force/boxscore/17627"
+  },
+  {
+    "name": "Bradley",
+    "startDate": "2026-02-21",
+    "startTime": "4:05 PM",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17742"
+  },
+  {
+    "name": "Mountain West Championships",
+    "startDate": "2026-02-21",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-21",
+    "endTime": "",
+    "location": "Houston, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/21/swimming-diving-rebels-earn-three-medals-in-mw-championship-finale.aspx"
+  },
+  {
+    "name": "Merrimack",
+    "startDate": "2026-02-22",
+    "startTime": "",
+    "endDate": "2026-02-22",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/merrimack/boxscore/17809"
+  },
+  {
+    "name": "Westbrook Invitational",
+    "startDate": "2026-02-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-22",
+    "endTime": "",
+    "location": "Peoria, AZ",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/22/womens-golf-rebels-in-top-10-after-day-one-at-westbrook-invitational.aspx"
+  },
+  {
+    "name": "Gonzaga",
+    "startDate": "2026-02-22",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-22",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/22/womens-tennis-earns-sunday-win-over-zags.aspx"
+  },
+  {
+    "name": "#40 Santa Clara",
+    "startDate": "2026-02-22",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-22",
+    "endTime": "",
+    "location": "Santa Clara, CA",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/22/mens-tennis-rebel-tennis-falls-at-no-40-santa-clara.aspx"
+  },
+  {
+    "name": "Bradley",
+    "startDate": "2026-02-22",
+    "startTime": "11:05 AM",
+    "endDate": "2026-02-22",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17743"
+  },
+  {
+    "name": "Westbrook Invitational",
+    "startDate": "2026-02-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-23",
+    "endTime": "",
+    "location": "Peoria, AZ",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/2/23/womens-golf-rebels-place-seventh-with-season-best-scores-at-westbrook-invitational.aspx"
+  },
+  {
+    "name": "Western Michigan",
+    "startDate": "2026-02-24",
+    "startTime": "6:05 PM",
+    "endDate": "2026-02-24",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/western-michigan/boxscore/17744"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-02-25",
+    "startTime": "",
+    "endDate": "2026-02-25",
+    "endTime": "",
+    "location": "Fort Collins, CO",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/colorado-state/boxscore/17658"
+  },
+  {
+    "name": "MPSF Championships",
+    "startDate": "2026-02-25",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-25",
+    "endTime": "",
+    "location": "Pharr, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/25/swimming-diving-rebels-200-medley-relay-team-takes-gold-on-day-one-of-mpsf-championships.aspx"
+  },
+  {
+    "name": "Western Michigan",
+    "startDate": "2026-02-25",
+    "startTime": "12:05 PM",
+    "endDate": "2026-02-25",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/western-michigan/boxscore/17745"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-02-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "",
+    "location": "Phoenix, Arizona",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/grand-canyon/boxscore/17628"
+  },
+  {
+    "name": "Mountain West Indoor Championships",
+    "startDate": "2026-02-26",
+    "startTime": "",
+    "endDate": "2026-02-26",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/2/28/womens-track-field-rebels-record-four-podium-performances-at-the-cu1-mw-indoor-track-field-championships.aspx"
+  },
+  {
+    "name": "MPSF Championships",
+    "startDate": "2026-02-26",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-26",
+    "endTime": "",
+    "location": "Pharr, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/26/swimming-diving-rebels-grab-two-gold-medals-on-night-two-of-mpsf-championships.aspx"
+  },
+  {
+    "name": "No. 23 Arizona State",
+    "startDate": "2026-02-27",
+    "startTime": "",
+    "endDate": "2026-02-27",
+    "endTime": "",
+    "location": "Tempe, AZ",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/arizona-state/boxscore/17810"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-02-27",
+    "startTime": "",
+    "endDate": "2026-02-27",
+    "endTime": "",
+    "location": "Tempe, AZ",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-riverside/boxscore/17734"
+  },
+  {
+    "name": "MPSF Championships",
+    "startDate": "2026-02-27",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-27",
+    "endTime": "",
+    "location": "Pharr, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/27/swimming-diving-rebels-claim-two-event-titles-on-day-three-of-mpsf-championships.aspx"
+  },
+  {
+    "name": "#54 Grand Canyon",
+    "startDate": "2026-02-27",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-27",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/2/27/mens-tennis-hot-start-rebels-run-past-lopes-in-conference-kickoff.aspx"
+  },
+  {
+    "name": "Santa Clara",
+    "startDate": "2026-02-27",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-27",
+    "endTime": "",
+    "location": "Santa Clara, Calif.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17746"
+  },
+  {
+    "name": "Eastern Illinois",
+    "startDate": "2026-02-28",
+    "startTime": "",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/eastern-illinois/boxscore/17811"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-02-28",
+    "startTime": "",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Fresno, CA",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/fresno-state/boxscore/17659"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-02-28",
+    "startTime": "",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-riverside/boxscore/17812"
+  },
+  {
+    "name": "MPSF Championships",
+    "startDate": "2026-02-28",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Pharr, TX",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/2/28/swimming-diving-rebels-earn-six-medals-to-close-out-mpsf-championships.aspx"
+  },
+  {
+    "name": "Santa Clara",
+    "startDate": "2026-02-28",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Santa Clara, Calif.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17747"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-02-28",
+    "startTime": "7:00 PM",
+    "endDate": "2026-02-28",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/unr/boxscore/17629"
+  },
+  {
+    "name": "Wisconsin",
+    "startDate": "2026-03-01",
+    "startTime": "",
+    "endDate": "2026-03-01",
+    "endTime": "",
+    "location": "Tempe, AZ",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/wisconsin/boxscore/17813"
+  },
+  {
+    "name": "Southern Highlands Collegiate",
+    "startDate": "2026-03-01",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-01",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/1/mens-golf-three-rebels-in-top-20-after-first-round-at-southern-highlands.aspx"
+  },
+  {
+    "name": "Santa Clara",
+    "startDate": "2026-03-01",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-01",
+    "endTime": "",
+    "location": "Santa Clara, Calif.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17748"
+  },
+  {
+    "name": "Utah",
+    "startDate": "2026-03-01",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-01",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/1/mens-tennis-rebel-netters-remain-perfect-at-home-in-2026.aspx"
+  },
+  {
+    "name": "Lady Luck Invitational",
+    "startDate": "2026-03-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-02",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/2/womens-golf-foong-holds-day-one-lead-at-lady-luck-invitational.aspx"
+  },
+  {
+    "name": "Southern Highlands Collegiate",
+    "startDate": "2026-03-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-02",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/2/mens-golf-three-rebels-in-top-30-after-two-rounds-at-southern-highlands.aspx"
+  },
+  {
+    "name": "Lady Luck Invitational",
+    "startDate": "2026-03-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-03",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/3/womens-golf-foong-takes-second-rebels-finish-fourth-in-home-event.aspx"
+  },
+  {
+    "name": "Southern Highlands Collegiate",
+    "startDate": "2026-03-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-03",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/3/mens-golf-little-finishes-11th-at-southern-highlands-collegiate.aspx"
+  },
+  {
+    "name": "Northern Colorado",
+    "startDate": "2026-03-03",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-03",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northern-colorado/boxscore/17749"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-03-03",
+    "startTime": "8:00 PM",
+    "endDate": "2026-03-03",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/utah-state/boxscore/17630"
+  },
+  {
+    "name": "Boise State",
+    "startDate": "2026-03-04",
+    "startTime": "",
+    "endDate": "2026-03-04",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/boise-state/boxscore/17660"
+  },
+  {
+    "name": "Northern Colorado",
+    "startDate": "2026-03-04",
+    "startTime": "12:05 PM",
+    "endDate": "2026-03-04",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northern-colorado/boxscore/17750"
+  },
+  {
+    "name": "Last Chance Invitational",
+    "startDate": "2026-03-05",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": ""
+  },
+  {
+    "name": "North Dakota State",
+    "startDate": "2026-03-06",
+    "startTime": "",
+    "endDate": "2026-03-06",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/north-dakota-state/boxscore/17814"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-03-06",
+    "startTime": "",
+    "endDate": "2026-03-06",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-tech/boxscore/17736"
+  },
+  {
+    "name": "Seattle",
+    "startDate": "2026-03-06",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-06",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/6/womens-tennis-shuts-out-seattle.aspx"
+  },
+  {
+    "name": "Minnesota",
+    "startDate": "2026-03-06",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-06",
+    "endTime": "",
+    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/minnesota/boxscore/17751"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-03-06",
+    "startTime": "7:00 PM",
+    "endDate": "2026-03-06",
+    "endTime": "",
+    "location": "San Diego, California",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-diego-state/boxscore/17631"
+  },
+  {
+    "name": "LMU",
+    "startDate": "2026-03-07",
+    "startTime": "",
+    "endDate": "2026-03-07",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/lmu/boxscore/17815"
+  },
+  {
+    "name": "North Dakota State",
+    "startDate": "2026-03-07",
+    "startTime": "",
+    "endDate": "2026-03-07",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/north-dakota-state/boxscore/17816"
+  },
+  {
+    "name": "Beach Opener",
+    "startDate": "2026-03-07",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-07",
+    "endTime": "",
+    "location": "Long Beach, Calif.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/3/7/womens-track-field-rebel-dup-performs-well-in-long-beach.aspx"
+  },
+  {
+    "name": "Northern Arizona",
+    "startDate": "2026-03-07",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-07",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/7/womens-tennis-netters-notch-another-7-0-blanking.aspx"
+  },
+  {
+    "name": "Southern Illinois",
+    "startDate": "2026-03-07",
+    "startTime": "9:00 AM",
+    "endDate": "2026-03-07",
+    "endTime": "",
+    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/southern-illinois/boxscore/17752"
+  },
+  {
+    "name": "LMU",
+    "startDate": "2026-03-08",
+    "startTime": "",
+    "endDate": "2026-03-08",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/lmu/boxscore/17817"
+  },
+  {
+    "name": "No. 7 Fresno State",
+    "startDate": "2026-03-08",
+    "startTime": "",
+    "endDate": "2026-03-08",
+    "endTime": "",
+    "location": "Las Vegas Thomas & Mack Center",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/no-7-fresno-state/boxscore/17661"
+  },
+  {
+    "name": "New Mexico State",
+    "startDate": "2026-03-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-08",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/8/womens-tennis-finishes-off-perfect-weekend.aspx"
+  },
+  {
+    "name": "Northwestern",
+    "startDate": "2026-03-08",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-08",
+    "endTime": "",
+    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northwestern/boxscore/17753"
+  },
+  {
+    "name": "No. 3 Colorado State",
+    "startDate": "2026-03-09",
+    "startTime": "",
+    "endDate": "2026-03-09",
+    "endTime": "",
+    "location": "Las Vegas Thomas & Mack Center",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/no-3-colorado-state/boxscore/17824"
+  },
+  {
+    "name": "Juli Inkster at TPC Harding Park",
+    "startDate": "2026-03-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-09",
+    "endTime": "",
+    "location": "San Francisco, CA",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/9/womens-golf-rebel-trio-in-top-30-at-tpc-harding-park.aspx"
+  },
+  {
+    "name": "NCAA Zone E Diving Championships",
+    "startDate": "2026-03-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-09",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/3/9/swimming-diving-rebels-complete-day-one-of-ncaa-zone-e-championships.aspx"
+  },
+  {
+    "name": "Juli Inkster at TPC Harding Park",
+    "startDate": "2026-03-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-10",
+    "endTime": "",
+    "location": "San Francisco, CA",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/10/womens-golf-four-rebels-finish-in-top-30-at-juli-inkster-invitational.aspx"
+  },
+  {
+    "name": "NCAA Zone E Diving Championships",
+    "startDate": "2026-03-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-10",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/3/11/swimming-diving-stingley-finishes-day-two-of-ncaa-zone-e-championships.aspx"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-03-10",
+    "startTime": "2:05 PM",
+    "endDate": "2026-03-10",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/uc-riverside/boxscore/17755"
+  },
+  {
+    "name": "NCAA Zone E Diving Championships",
+    "startDate": "2026-03-11",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-11",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2026/3/11/swimming-diving-rebels-close-out-ncaa-zone-e-championships.aspx"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-03-11",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/wyoming/boxscore/17632"
+  },
+  {
+    "name": "Gonzaga",
+    "startDate": "2026-03-11",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "",
+    "location": "Las Vegas Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/11/mens-tennis-rebs-roll-past-zags-to-stay-perfect-at-home.aspx"
+  },
+  {
+    "name": "Ben Brown Invite",
+    "startDate": "2026-03-12",
+    "startTime": "",
+    "endDate": "2026-03-12",
+    "endTime": "",
+    "location": "Fullerton, Calif.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/3/13/womens-track-field-rebels-capture-three-titles-at-ben-brown-invite.aspx"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-03-12",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/utah-state/boxscore/17838"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-13",
+    "startTime": "",
+    "endDate": "2026-03-13",
+    "endTime": "",
+    "location": "San Jose, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-jose-state/boxscore/17683"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-03-13",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-13",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/13/womens-tennis-friday-the-13th-fun-for-road-running-rebels-4-1.aspx"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-03-13",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-13",
+    "endTime": "",
+    "location": "USAF Academy, Colo.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/air-force/boxscore/17756"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-14",
+    "startTime": "",
+    "endDate": "2026-03-14",
+    "endTime": "",
+    "location": "San Jose, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-jose-state/boxscore/17684"
+  },
+  {
+    "name": "NCAA Indoor Championships",
+    "startDate": "2026-03-14",
+    "startTime": "12:45 PM",
+    "endDate": "2026-03-14",
+    "endTime": "",
+    "location": "Fayetteville, Ark.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/3/14/womens-track-field-jayasankar-ends-rebel-career-with-second-team-all-american-honors-at-ncaa-indoor-track-field-championships.aspx"
+  },
+  {
+    "name": "Air Force (DH)",
+    "startDate": "2026-03-14",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-14",
+    "endTime": "",
+    "location": "USAF Academy, Colo.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/air-force-dh-/boxscore/17758"
+  },
+  {
+    "name": "Air Force (DH)",
+    "startDate": "2026-03-14",
+    "startTime": "9:00 AM",
+    "endDate": "2026-03-14",
+    "endTime": "",
+    "location": "USAF Academy, Colo.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/air-force-dh-/boxscore/17757"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-15",
+    "startTime": "",
+    "endDate": "2026-03-15",
+    "endTime": "",
+    "location": "San Jose, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-jose-state/boxscore/17685"
+  },
+  {
+    "name": "The Michael A. Marino",
+    "startDate": "2026-03-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-15",
+    "endTime": "",
+    "location": "Myrtle Beach, SC",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/15/mens-golf-little-lewis-in-top-20-after-day-one-in-myrtle-beach.aspx"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-03-15",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-15",
+    "endTime": "",
+    "location": "Colorado Springs, CO",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/15/womens-tennis-rebel-netters-win-sixth-straight-4-1-at-air-force.aspx"
+  },
+  {
+    "name": "Jackrabbits Invitational",
+    "startDate": "2026-03-16",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-16",
+    "endTime": "",
+    "location": "Boulder City, NV",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/16/womens-golf-rebels-sit-atop-day-one-leaderboard-at-jackrabbits-invitational.aspx"
+  },
+  {
+    "name": "The Michael A. Marino",
+    "startDate": "2026-03-16",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-16",
+    "endTime": "",
+    "location": "Myrtle Beach, SC",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/15/mens-golf-little-lewis-in-top-20-after-day-one-in-myrtle-beach.aspx"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-03-17",
+    "startTime": "",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-tech/boxscore/17818"
+  },
+  {
+    "name": "Jackrabbits Invitational",
+    "startDate": "2026-03-17",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Boulder City, NV",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/17/womens-golf-rebels-sweep-team-individual-titles-at-jackrabbits-invitational.aspx"
+  },
+  {
+    "name": "The Michael A. Marino",
+    "startDate": "2026-03-17",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Myrtle Beach, SC",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/17/mens-golf-little-comes-away-with-top-15-finish-in-myrtle-beach.aspx"
+  },
+  {
+    "name": "Hawai'i",
+    "startDate": "2026-03-17",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/17/mens-tennis-shamrock-bake-rebs-beats-holiday-heat-by-doubling-up-bows.aspx"
+  },
+  {
+    "name": "Cal State Fullerton",
+    "startDate": "2026-03-17",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/cal-state-fullerton/boxscore/17759"
+  },
+  {
+    "name": "UC Irvine",
+    "startDate": "2026-03-17",
+    "startTime": "8:00 PM",
+    "endDate": "2026-03-17",
+    "endTime": "",
+    "location": "Irvine, CA",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/uc-irvine/boxscore/17839"
+  },
+  {
+    "name": "NCAA Championships (Women)",
+    "startDate": "2026-03-18",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-18",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "NCAA Championships (Women)",
+    "startDate": "2026-03-19",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-19",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-03-20",
+    "startTime": "",
+    "endDate": "2026-03-20",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-diego-state/boxscore/17687"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-03-20",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-20",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/20/womens-tennis-unlv-nets-seventh-straight-win.aspx"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-03-20",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-20",
+    "endTime": "",
+    "location": "Logan, UT",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/20/mens-tennis-mens-netters-fall-at-utah-state.aspx"
+  },
+  {
+    "name": "NCAA Championships (Women)",
+    "startDate": "2026-03-20",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-20",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-03-21",
+    "startTime": "",
+    "endDate": "2026-03-21",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-diego-state/boxscore/17688"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-03-21",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-21",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/utah-tech/boxscore/17760"
+  },
+  {
+    "name": "NCAA Championships (Women)",
+    "startDate": "2026-03-21",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-21",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-03-22",
+    "startTime": "",
+    "endDate": "2026-03-22",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-diego-state/boxscore/17689"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-03-22",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-22",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/22/sunday-heat-womens-tennis-wins-eighth-straight.aspx"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-03-22",
+    "startTime": "12:05 PM",
+    "endDate": "2026-03-22",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/utah-tech/boxscore/17761"
+  },
+  {
+    "name": "Tulsa",
+    "startDate": "2026-03-22",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-22",
+    "endTime": "",
+    "location": "Tulsa, Oklahoma",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/tulsa/boxscore/17840"
+  },
+  {
+    "name": "#22 Arizona State",
+    "startDate": "2026-03-23",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-23",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Las Vegas Ballpark",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/-22-arizona-state/boxscore/17762"
+  },
+  {
+    "name": "NCAA Championships (Men)",
+    "startDate": "2026-03-25",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-25",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "NCAA Championships (Men)",
+    "startDate": "2026-03-26",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-26",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "Bob Larsen Distance Carnival/Jim Bush Legends Meet",
+    "startDate": "2026-03-27",
+    "startTime": "",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Los Angeles, Calif.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/3/28/womens-track-field-rebels-collect-a-pair-of-wins-in-los-angeles.aspx"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-03-27",
+    "startTime": "",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Fresno, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/fresno-state/boxscore/17690"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-03-27",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Logan, UT",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/27/untitled-story.aspx"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-03-27",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/27/mens-tennis-rebel-netters-suffer-first-home-defeat.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-27",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-jose-state/boxscore/17763"
+  },
+  {
+    "name": "NCAA Championships (Men)",
+    "startDate": "2026-03-27",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-27",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-03-28",
+    "startTime": "",
+    "endDate": "2026-03-28",
+    "endTime": "",
+    "location": "Fresno, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/fresno-state/boxscore/17691"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-28",
+    "startTime": "6:05 PM",
+    "endDate": "2026-03-28",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-jose-state/boxscore/17764"
+  },
+  {
+    "name": "NCAA Championships (Men)",
+    "startDate": "2026-03-28",
+    "startTime": "7:00 AM",
+    "endDate": "2026-03-28",
+    "endTime": "",
+    "location": "Atlanta, GA",
+    "sport": "Swimming & Diving",
+    "link": "https://plus.espn.com"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-03-29",
+    "startTime": "",
+    "endDate": "2026-03-29",
+    "endTime": "",
+    "location": "Fresno, CA",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/fresno-state/boxscore/17692"
+  },
+  {
+    "name": "#49 Boise State",
+    "startDate": "2026-03-29",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-29",
+    "endTime": "",
+    "location": "Boise, ID",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/3/29/broc-busting-womens-tennis-takes-control-of-first-place-with-win-in-boise.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-03-29",
+    "startTime": "12:05 PM",
+    "endDate": "2026-03-29",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-jose-state/boxscore/17765"
+  },
+  {
+    "name": "CSU Bakersfield",
+    "startDate": "2026-03-30",
+    "startTime": "2:05 PM",
+    "endDate": "2026-03-30",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/csu-bakersfield/boxscore/17766"
+  },
+  {
+    "name": "Wyoming Cowboy Classic",
+    "startDate": "2026-03-31",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-03-31",
+    "endTime": "",
+    "location": "Maricopa, AZ",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/3/31/mens-golf-rebels-tied-for-sixth-after-day-one-at-cowboy-classic.aspx"
+  },
+  {
+    "name": "Wyoming Cowboy Classic",
+    "startDate": "2026-04-01",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-01",
+    "endTime": "",
+    "location": "Maricopa, AZ",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2026/4/1/mens-golf-rebels-lasso-fourth-place-finish-at-cowboy-classic.aspx"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-04-02",
+    "startTime": "",
+    "endDate": "2026-04-02",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/colorado-state/boxscore/17693"
+  },
+  {
+    "name": "#43 San Diego State",
+    "startDate": "2026-04-02",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-02",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/2/womens-tennis-rebels-suffer-first-conference-loss-of-season.aspx"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-04-02",
+    "startTime": "6:05 PM",
+    "endDate": "2026-04-02",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/new-mexico/boxscore/17767"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-04-03",
+    "startTime": "",
+    "endDate": "2026-04-03",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/colorado-state/boxscore/17694"
+  },
+  {
+    "name": "UNLV Rebel ELITE",
+    "startDate": "2026-04-03",
+    "startTime": "",
+    "endDate": "2026-04-03",
+    "endTime": "",
+    "location": "Las Vegas, Nev.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2026/4/4/womens-track-field-rebels-wrap-up-unlv-rebel-elite.aspx"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-04-03",
+    "startTime": "6:05 PM",
+    "endDate": "2026-04-03",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/new-mexico/boxscore/17768"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-04-04",
+    "startTime": "",
+    "endDate": "2026-04-04",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/colorado-state/boxscore/17695"
+  },
+  {
+    "name": "#70 Grand Canyon",
+    "startDate": "2026-04-04",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/4/womens-tennis-ain-t-that-grand-unlv-downs-gcu-to-remain-in-first-place.aspx"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-04-04",
+    "startTime": "12:05 PM",
+    "endDate": "2026-04-04",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/new-mexico/boxscore/17769"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-04",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/4/untitled-story.aspx"
+  },
+  {
+    "name": "Wyoming Cowgirl Classic",
+    "startDate": "2026-04-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-07",
+    "endTime": "",
+    "location": "Maricopa, AZ",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/documents/2026/4/7/Cowgirl_Classic_Day_1.pdf"
+  },
+  {
+    "name": "New Mexico (DH)",
+    "startDate": "2026-04-08",
+    "startTime": "",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/new-mexico/boxscore/17718"
+  },
+  {
+    "name": "Wyoming Cowgirl Classic",
+    "startDate": "2026-04-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Maricopa, AZ",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2026/4/8/rebels-close-regular-season-top-5-cowgirl-classic.aspx"
+  },
+  {
+    "name": "#20 Arizona State",
+    "startDate": "2026-04-08",
+    "startTime": "6:35 PM",
+    "endDate": "2026-04-08",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/-20-arizona-state/boxscore/17770"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-04-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/9/mens-tennis-celebrates-senior-day-with-win-over-air-force.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-04-10",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/10/womens-tennis-first-place-rebels-improve-to-15-3-with-win-over-spartans.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-04-10",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-10",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/grand-canyon/boxscore/17771"
+  },
+  {
+    "name": "Utah State",
+    "startDate": "2026-04-11",
+    "startTime": "",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-state/boxscore/17720"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-04-11",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2026/4/11/mens-tennis-snitari-snaps-lobos-streak-during-rebels-win.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-04-11",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-11",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/grand-canyon/boxscore/17772"
+  },
+  {
+    "name": "Utah State",
     "startDate": "2026-04-12",
-    "startTime": "12:00 PM PT",
+    "startTime": "",
     "endDate": "2026-04-12",
     "endTime": "",
-    "location": "",
-    "sport": "Baseball",
-    "link": "https://themw.com/watch/?sport=3&school=812"
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-state/boxscore/17721"
   },
   {
-    "name": " Women's Tennis at Fresno State ",
+    "name": "Grand Canyon",
+    "startDate": "2026-04-12",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-12",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Baseball",
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/grand-canyon/boxscore/17773"
+  },
+  {
+    "name": "Western Intercollegiate",
     "startDate": "2026-04-13",
-    "startTime": "11:00 AM PT",
+    "startTime": "(ALL DAY)",
     "endDate": "2026-04-13",
     "endTime": "",
-    "location": "",
+    "location": "Santa Cruz, CA",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-04-13",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-13",
+    "endTime": "",
+    "location": "Fresno, CA",
     "sport": "Women's Tennis",
     "link": "https://www.statbroadcast.com/events/statmonitr.php?gid=fres"
   },
   {
-    "name": " Baseball at Utah Tech ",
+    "name": "Western Intercollegiate",
     "startDate": "2026-04-14",
-    "startTime": "5:05 PM PT",
+    "startTime": "(ALL DAY)",
     "endDate": "2026-04-14",
     "endTime": "",
-    "location": "",
+    "location": "Santa Cruz, CA",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-04-14",
+    "startTime": "5:05 PM",
+    "endDate": "2026-04-14",
+    "endTime": "",
+    "location": "St. George, Utah",
     "sport": "Baseball",
     "link": "https://www.espn.com/watch/player/_/id/c7c53048-6c4d-4387-9d57-f1bac7856404"
   },
   {
-    "name": " Women's Tennis vs UNR ",
+    "name": "Western Intercollegiate",
+    "startDate": "2026-04-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-15",
+    "endTime": "",
+    "location": "Santa Cruz, CA",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Beach Invitational",
     "startDate": "2026-04-17",
-    "startTime": "10:00 AM PT",
+    "startTime": "",
     "endDate": "2026-04-17",
     "endTime": "",
-    "location": "",
+    "location": "Long Beach, Calif.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "Boise State",
+    "startDate": "2026-04-17",
+    "startTime": "",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "Boise, ID",
+    "sport": "Softball",
+    "link": ""
+  },
+  {
+    "name": "Bryan Clay Invitational",
+    "startDate": "2026-04-17",
+    "startTime": "",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "Azusa, Calif.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-17",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-17",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
     "sport": "Women's Tennis",
     "link": "https://swing.vision/teams/unlv-w/stream"
   },
   {
-    "name": " Softball at Boise State ",
+    "name": "Washington State",
     "startDate": "2026-04-17",
-    "startTime": "5 p.m. PT",
+    "startTime": "6:05 PM",
     "endDate": "2026-04-17",
     "endTime": "",
-    "location": "",
-    "sport": "Softball",
-    "link": null
-  },
-  {
-    "name": " Baseball vs Washington State ",
-    "startDate": "2026-04-17",
-    "startTime": "6:05 PM PT",
-    "endDate": "2026-04-17",
-    "endTime": "",
-    "location": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
     "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-2/"
   },
   {
-    "name": " Men's Tennis at Boise State ",
+    "name": "Boise State",
     "startDate": "2026-04-18",
-    "startTime": "10:00 AM PT",
+    "startTime": "",
     "endDate": "2026-04-18",
     "endTime": "",
-    "location": "",
+    "location": "Boise, ID",
+    "sport": "Softball",
+    "link": ""
+  },
+  {
+    "name": "Boise State",
+    "startDate": "2026-04-18",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-18",
+    "endTime": "",
+    "location": "Boise, ID",
     "sport": "Men's Tennis",
     "link": "https://ioncourt.com/ties/696136c036cd30e2cce23e39?source=my-teams"
   },
   {
-    "name": " Softball at Boise State ",
+    "name": "Washington State",
     "startDate": "2026-04-18",
-    "startTime": "1 p.m. PT",
+    "startTime": "6:05 PM",
     "endDate": "2026-04-18",
     "endTime": "",
-    "location": "",
-    "sport": "Softball",
-    "link": null
-  },
-  {
-    "name": " Baseball vs Washington State ",
-    "startDate": "2026-04-18",
-    "startTime": "6:05 PM PT",
-    "endDate": "2026-04-18",
-    "endTime": "",
-    "location": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
     "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-3/"
   },
   {
-    "name": " Softball at Boise State ",
+    "name": "Boise State",
     "startDate": "2026-04-19",
-    "startTime": "11 a.m. PT",
+    "startTime": "",
     "endDate": "2026-04-19",
     "endTime": "",
-    "location": "",
+    "location": "Boise, ID",
     "sport": "Softball",
-    "link": null
+    "link": ""
   },
   {
-    "name": " Baseball vs Washington State ",
+    "name": "Washington State",
     "startDate": "2026-04-19",
-    "startTime": "12:05 PM PT",
+    "startTime": "12:05 PM",
     "endDate": "2026-04-19",
     "endTime": "",
-    "location": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
     "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-4/"
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-04-21",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-21",
+    "endTime": "",
+    "location": "Rancho Mirage, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-04-22",
+    "startTime": "",
+    "endDate": "2026-04-22",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-04-22",
+    "startTime": "",
+    "endDate": "2026-04-22",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-04-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-22",
+    "endTime": "",
+    "location": "Rancho Mirage, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-04-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-04-23",
+    "endTime": "",
+    "location": "Rancho Mirage, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-04-24",
+    "startTime": "",
+    "endDate": "2026-04-24",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=657126"
+  },
+  {
+    "name": "Penn Relays",
+    "startDate": "2026-04-24",
+    "startTime": "",
+    "endDate": "2026-04-24",
+    "endTime": "",
+    "location": "Philadelphia, Pa.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-24",
+    "startTime": "6:05 PM",
+    "endDate": "2026-04-24",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-23/"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-04-25",
+    "startTime": "",
+    "endDate": "2026-04-25",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=657127"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-25",
+    "startTime": "2:05 PM",
+    "endDate": "2026-04-25",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-24/"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-04-26",
+    "startTime": "",
+    "endDate": "2026-04-26",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=657128"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-26",
+    "startTime": "12:05 PM",
+    "endDate": "2026-04-26",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-25/"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-04-28",
+    "startTime": "5:05 PM",
+    "endDate": "2026-04-28",
+    "endTime": "",
+    "location": "St. George, Utah",
+    "sport": "Baseball",
+    "link": "https://www.espn.com/watch/player/_/id/c68f9712-b168-4d4a-a133-0304b87af431"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-04-30",
+    "startTime": "",
+    "endDate": "2026-04-30",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=656239"
+  },
+  {
+    "name": "Desert Heat Classic",
+    "startDate": "2026-05-01",
+    "startTime": "",
+    "endDate": "2026-05-01",
+    "endTime": "",
+    "location": "Tucson, Ariz.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "NCAA First & Second Rounds",
+    "startDate": "2026-05-01",
+    "startTime": "",
+    "endDate": "2026-05-01",
+    "endTime": "",
+    "location": "TBA",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-05-01",
+    "startTime": "",
+    "endDate": "2026-05-01",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=656240"
+  },
+  {
+    "name": "Milwaukee",
+    "startDate": "2026-05-01",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-01",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://youtube.com/live/sBmfEjOR_oI?feature=share"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-05-02",
+    "startTime": "",
+    "endDate": "2026-05-02",
+    "endTime": "",
+    "location": "Las Vegas Eller Media Stadium",
+    "sport": "Softball",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=656241"
+  },
+  {
+    "name": "Milwaukee",
+    "startDate": "2026-05-02",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-02",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://youtube.com/live/eSPIo8KDK1g?feature=share"
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-05-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-03",
+    "endTime": "",
+    "location": "Tucson, AZ",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Milwaukee",
+    "startDate": "2026-05-03",
+    "startTime": "12:05 PM",
+    "endDate": "2026-05-03",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://youtube.com/live/330Vr68_PsQ?feature=share"
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-05-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-04",
+    "endTime": "",
+    "location": "Tucson, AZ",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Championship",
+    "startDate": "2026-05-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-05",
+    "endTime": "",
+    "location": "Tucson, AZ",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "BYU",
+    "startDate": "2026-05-05",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-05",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/byu-at-unlv-2/"
+  },
+  {
+    "name": "TBA",
+    "startDate": "2026-05-06",
+    "startTime": "",
+    "endDate": "2026-05-06",
+    "endTime": "",
+    "location": "Reno, NV",
+    "sport": "Softball",
+    "link": ""
+  },
+  {
+    "name": "NCAA Super Regionals",
+    "startDate": "2026-05-08",
+    "startTime": "",
+    "endDate": "2026-05-08",
+    "endTime": "",
+    "location": "TBA",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-05-08",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-08",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-33/"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-05-09",
+    "startTime": "3:05 PM",
+    "endDate": "2026-05-09",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-31/"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-05-10",
+    "startTime": "12:05 PM",
+    "endDate": "2026-05-10",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-32/"
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-11",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-11",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-12",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championships",
+    "startDate": "2026-05-13",
+    "startTime": "",
+    "endDate": "2026-05-13",
+    "endTime": "",
+    "location": "Athens, GA",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-13",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-13",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "Mountain West Outdoor Championships",
+    "startDate": "2026-05-14",
+    "startTime": "",
+    "endDate": "2026-05-14",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-05-14",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-14",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-26/"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-05-15",
+    "startTime": "6:05 PM",
+    "endDate": "2026-05-15",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-27/"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-05-16",
+    "startTime": "12:05 PM",
+    "endDate": "2026-05-16",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
+    "sport": "Baseball",
+    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-28/"
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-18",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-18",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-20",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "Mountain West",
+    "startDate": "2026-05-21",
+    "startTime": "",
+    "endDate": "2026-05-21",
+    "endTime": "",
+    "location": "Mesa, Ariz. / Sloan Park",
+    "sport": "Baseball",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-22",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-23",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-24",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-24",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-25",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-25",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-26",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-26",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-27",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-27",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Women's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA West Regionals",
+    "startDate": "2026-05-28",
+    "startTime": "",
+    "endDate": "2026-05-28",
+    "endTime": "",
+    "location": "Fayetteville, Ark.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "NCAA Championship",
+    "startDate": "2026-05-29",
+    "startTime": "",
+    "endDate": "2026-05-29",
+    "endTime": "",
+    "location": "Carlsbad, CA",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Outdoor Championships",
+    "startDate": "2026-06-10",
+    "startTime": "",
+    "endDate": "2026-06-10",
+    "endTime": "",
+    "location": "Eugene, Ore.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
+    "name": "Scarlet & Gray Intrasquad Scrimmage",
+    "startDate": "2026-08-07",
+    "startTime": "6:00 PM",
+    "endDate": "2026-08-07",
+    "endTime": "",
+    "location": "Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": ""
+  },
+  {
+    "name": "The College of Idaho (Exhibition)",
+    "startDate": "2026-08-08",
+    "startTime": "7:30 PM",
+    "endDate": "2026-08-08",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": ""
+  },
+  {
+    "name": "Cal State Fullerton (Exhibition)",
+    "startDate": "2026-08-11",
+    "startTime": "5:00 PM",
+    "endDate": "2026-08-11",
+    "endTime": "",
+    "location": "Fullerton, CA",
+    "sport": "Men's Soccer",
+    "link": ""
+  },
+  {
+    "name": "Arizona",
+    "startDate": "2026-08-14",
+    "startTime": "7:00 PM",
+    "endDate": "2026-08-14",
+    "endTime": "",
+    "location": "Tucson, AZ",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/arizona/boxscore/17289"
+  },
+  {
+    "name": "San Diego (Exhibition)",
+    "startDate": "2026-08-15",
+    "startTime": "7:00 PM",
+    "endDate": "2026-08-15",
+    "endTime": "",
+    "location": "San Diego, CA",
+    "sport": "Men's Soccer",
+    "link": ""
+  },
+  {
+    "name": "Scarlet & Gray Scrimmage",
+    "startDate": "2026-08-16",
+    "startTime": "6:30 PM",
+    "endDate": "2026-08-16",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion Practice Gym",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-08-21",
+    "startTime": "5:30 PM",
+    "endDate": "2026-08-21",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/utah-tech/boxscore/17290"
+  },
+  {
+    "name": "LMU",
+    "startDate": "2026-08-21",
+    "startTime": "8:00 PM",
+    "endDate": "2026-08-21",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/lmu/boxscore/17338"
+  },
+  {
+    "name": "Arizona State",
+    "startDate": "2026-08-23",
+    "startTime": "1:00 PM",
+    "endDate": "2026-08-23",
+    "endTime": "",
+    "location": "Lake Havasu, Ariz.",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "UC San Diego",
+    "startDate": "2026-08-24",
+    "startTime": "2:00 PM",
+    "endDate": "2026-08-24",
+    "endTime": "",
+    "location": "La Jolla, CA",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/uc-san-diego/boxscore/17291"
+  },
+  {
+    "name": "Seattle",
+    "startDate": "2026-08-28",
+    "startTime": "4:00 PM",
+    "endDate": "2026-08-28",
+    "endTime": "",
+    "location": "Seattle, WA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/seattle/boxscore/17339"
+  },
+  {
+    "name": "Arizona State",
+    "startDate": "2026-08-28",
+    "startTime": "7:00 PM",
+    "endDate": "2026-08-28",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/arizona-state/boxscore/17292"
+  },
+  {
+    "name": "Memphis",
+    "startDate": "2026-08-29",
+    "startTime": "",
+    "endDate": "2026-08-29",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
+  },
+  {
+    "name": "CSU Bakersfield vs. Utah Tech",
+    "startDate": "2026-08-29",
+    "startTime": "4:00 PM",
+    "endDate": "2026-08-29",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Iowa",
+    "startDate": "2026-08-29",
+    "startTime": "6:30 PM",
+    "endDate": "2026-08-29",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/iowa/boxscore/17259"
+  },
+  {
+    "name": "Utah Tech vs. Iowa",
+    "startDate": "2026-08-30",
+    "startTime": "4:00 PM",
+    "endDate": "2026-08-30",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "CSU Bakersfield",
+    "startDate": "2026-08-30",
+    "startTime": "6:30 PM",
+    "endDate": "2026-08-30",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/csu-bakersfield/boxscore/17260"
+  },
+  {
+    "name": "Mark Covert Classic",
+    "startDate": "2026-08-30",
+    "startTime": "9:00 AM",
+    "endDate": "2026-08-30",
+    "endTime": "",
+    "location": "Fullerton, Calif.",
+    "sport": "Women's Cross Country",
+    "link": "https://unlvrebels.com/news/2025/8/30/womens-cross-country-boskovich-paces-rebels-in-opening-meet.aspx"
+  },
+  {
+    "name": "Cal Poly",
+    "startDate": "2026-08-31",
+    "startTime": "11:00 AM",
+    "endDate": "2026-08-31",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/cal-poly/boxscore/17293"
+  },
+  {
+    "name": "Iowa vs. CSU Bakersfield",
+    "startDate": "2026-08-31",
+    "startTime": "2:00 PM",
+    "endDate": "2026-08-31",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-08-31",
+    "startTime": "4:30 PM",
+    "endDate": "2026-08-31",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/utah-tech/boxscore/17261"
+  },
+  {
+    "name": "Washington",
+    "startDate": "2026-08-31",
+    "startTime": "7:30 PM",
+    "endDate": "2026-08-31",
+    "endTime": "",
+    "location": "Seattle, WA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/washington/boxscore/17340"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-09-04",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/uc-riverside/boxscore/17294"
+  },
+  {
+    "name": "Hawai'i",
+    "startDate": "2026-09-05",
+    "startTime": "",
+    "endDate": "2026-09-05",
+    "endTime": "",
+    "location": "Honolulu, HI Clarence T. C. Ching Athletics Complex",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "California Baptist",
+    "startDate": "2026-09-05",
+    "startTime": "2:00 PM",
+    "endDate": "2026-09-05",
+    "endTime": "",
+    "location": "Santa Clara, Calif.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/california-baptist/boxscore/17262"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-09-05",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-05",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-riverside/boxscore/17335"
+  },
+  {
+    "name": "Santa Clara",
+    "startDate": "2026-09-06",
+    "startTime": "3:00 PM",
+    "endDate": "2026-09-06",
+    "endTime": "",
+    "location": "Santa Clara, Calif.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/santa-clara/boxscore/17263"
+  },
+  {
+    "name": "Southern Utah",
+    "startDate": "2026-09-07",
+    "startTime": "12:00 PM",
+    "endDate": "2026-09-07",
+    "endTime": "",
+    "location": "Cedar City, UT",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/southern-utah/boxscore/17295"
+  },
+  {
+    "name": "Dick McGuire Invitational",
+    "startDate": "2026-09-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-08",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Women's Golf",
+    "link": "https://scoreboard.clippd.com/tournaments/239014/scoring/team"
+  },
+  {
+    "name": "Dick McGuire Invitational",
+    "startDate": "2026-09-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-09",
+    "endTime": "",
+    "location": "Albuquerque, NM",
+    "sport": "Women's Golf",
+    "link": "https://scoreboard.clippd.com/tournaments/239014/scoring/team"
+  },
+  {
+    "name": "CSU Bakersfield",
+    "startDate": "2026-09-09",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-09",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/csu-bakersfield/boxscore/17336"
+  },
+  {
+    "name": "UC Irvine",
+    "startDate": "2026-09-11",
+    "startTime": "3:00 PM",
+    "endDate": "2026-09-11",
+    "endTime": "",
+    "location": "Corvallis, Ore.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/uc-irvine/boxscore/17264"
+  },
+  {
+    "name": "Seattle",
+    "startDate": "2026-09-11",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-11",
+    "endTime": "",
+    "location": "Seattle, WA",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/seattle/boxscore/17296"
+  },
+  {
+    "name": "North Texas",
+    "startDate": "2026-09-12",
+    "startTime": "",
+    "endDate": "2026-09-12",
+    "endTime": "",
+    "location": "Denton, TX DATCU Stadium",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "Wildcat Invite",
+    "startDate": "2026-09-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-12",
+    "endTime": "",
+    "location": "Tuscon, AZ",
+    "sport": "Men's Tennis",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=608017"
+  },
+  {
+    "name": "Montana State",
+    "startDate": "2026-09-12",
+    "startTime": "3:00 PM",
+    "endDate": "2026-09-12",
+    "endTime": "",
+    "location": "Corvallis, Ore.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/montana-state/boxscore/17265"
+  },
+  {
+    "name": "Wildcat Invite",
+    "startDate": "2026-09-13",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-13",
+    "endTime": "",
+    "location": "Tuscon, AZ",
+    "sport": "Men's Tennis",
+    "link": "https://stats.statbroadcast.com/broadcast/?id=608017"
+  },
+  {
+    "name": "Oregon State",
+    "startDate": "2026-09-13",
+    "startTime": "3:00 PM",
+    "endDate": "2026-09-13",
+    "endTime": "",
+    "location": "Corvallis, Ore.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/oregon-state/boxscore/17266"
+  },
+  {
+    "name": "Wildcat Invite",
+    "startDate": "2026-09-14",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-14",
+    "endTime": "",
+    "location": "Tuscon, AZ",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/9/14/mens-tennis-takes-two-tourney-crowns-to-start-fall-play.aspx"
+  },
+  {
+    "name": "Santa Clara",
+    "startDate": "2026-09-14",
+    "startTime": "7:30 PM",
+    "endDate": "2026-09-14",
+    "endTime": "",
+    "location": "Santa Clara, CA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/santa-clara/boxscore/17337"
+  },
+  {
+    "name": "The Wohali Classic",
+    "startDate": "2026-09-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-15",
+    "endTime": "",
+    "location": "Coalville, UT",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/15/mens-golf-abuan-tied-for-second-after-two-rounds-in-utah.aspx"
+  },
+  {
+    "name": "The Wohali Classic",
+    "startDate": "2026-09-16",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-16",
+    "endTime": "",
+    "location": "Coalville, UT",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/16/mens-golf-abuan-finishes-tied-for-fifth-at-the-wohali-classic.aspx"
+  },
+  {
+    "name": "Idaho State",
+    "startDate": "2026-09-18",
+    "startTime": "5:30 PM",
+    "endDate": "2026-09-18",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/idaho-state/boxscore/17297"
+  },
+  {
+    "name": "UC Riverside",
+    "startDate": "2026-09-18",
+    "startTime": "6:00 PM",
+    "endDate": "2026-09-18",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/uc-riverside/boxscore/17267"
+  },
+  {
+    "name": "UC Santa Barbara",
+    "startDate": "2026-09-18",
+    "startTime": "8:00 PM",
+    "endDate": "2026-09-18",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-santa-barbara/boxscore/17341"
+  },
+  {
+    "name": "UC Riverside vs. Southern Utah",
+    "startDate": "2026-09-19",
+    "startTime": "4:00 PM",
+    "endDate": "2026-09-19",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "ITA All-American Championships",
+    "startDate": "2026-09-20",
+    "startTime": "",
+    "endDate": "2026-09-20",
+    "endTime": "",
+    "location": "Tulsa, OK",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "NAU Lumberjack Classic",
+    "startDate": "2026-09-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-20",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Women's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Southern Utah",
+    "startDate": "2026-09-20",
+    "startTime": "2:00 PM",
+    "endDate": "2026-09-20",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/southern-utah/boxscore/17268"
+  },
+  {
+    "name": "NAU Lumberjack Classic",
+    "startDate": "2026-09-21",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-21",
+    "endTime": "",
+    "location": "Flagstaff, AZ",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/9/22/womens-tennis-rebels-open-fall-play-in-flagstaff.aspx"
+  },
+  {
+    "name": "CSUN",
+    "startDate": "2026-09-21",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-21",
+    "endTime": "",
+    "location": "Northridge, CA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/csun/boxscore/17342"
+  },
+  {
+    "name": "Colonel Wollenberg Ptarmigan Ram Classic",
+    "startDate": "2026-09-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-22",
+    "endTime": "",
+    "location": "Fort Collins, CO",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/22/womens-golf-rebels-in-sixth-as-second-round-halted-in-colorado.aspx"
+  },
+  {
+    "name": "The Tindall",
+    "startDate": "2026-09-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-22",
+    "endTime": "",
+    "location": "Bremerton, WA",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/23/mens-golf-rebel-trio-in-top-30-after-second-round-suspended-in-washington.aspx"
+  },
+  {
+    "name": "Colonel Wollenberg Ptarmingan Ram Classic",
+    "startDate": "2026-09-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-23",
+    "endTime": "",
+    "location": "Fort Collins, CO",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/23/womens-golf-foong-claims-co-champion-honors-at-csu-event.aspx"
+  },
+  {
+    "name": "The Tindall",
+    "startDate": "2026-09-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-23",
+    "endTime": "",
+    "location": "Bremerton, WA",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/9/23/mens-golf-lewis-little-place-in-top-30-at-the-tindall.aspx"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-09-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-09-25",
+    "endTime": "",
+    "location": "San Jose, Calif.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/san-jose-state/boxscore/17270"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-09-25",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-25",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/san-jose-state/boxscore/17298"
+  },
+  {
+    "name": "Akron",
+    "startDate": "2026-09-26",
+    "startTime": "",
+    "endDate": "2026-09-26",
+    "endTime": "",
+    "location": "Akron, OH InfoCision Stadium",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "Scarlet & Gray Intrasquad",
+    "startDate": "2026-09-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-09-26",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": ""
+  },
+  {
+    "name": "UC Irvine",
+    "startDate": "2026-09-26",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-26",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-irvine/boxscore/17343"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-09-27",
+    "startTime": "11:00 AM",
+    "endDate": "2026-09-27",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/fresno-state/boxscore/17271"
+  },
+  {
+    "name": "UC Riverside Invitational",
+    "startDate": "2026-09-27",
+    "startTime": "8:25 AM",
+    "endDate": "2026-09-27",
+    "endTime": "",
+    "location": "Riverside, Calif.",
+    "sport": "Women's Cross Country",
+    "link": "https://unlvrebels.com/news/2025/9/27/womens-cross-country-rebels-finish-ninth-riverside-invitational.aspx"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-09-28",
+    "startTime": "12:00 PM",
+    "endDate": "2026-09-28",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/fresno-state/boxscore/17301"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-02",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/2/womens-tennis-trio-of-rebels-advance-at-womens-mw-qualifier.aspx"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-10-02",
+    "startTime": "3:00 PM",
+    "endDate": "2026-10-02",
+    "endTime": "",
+    "location": "Laramie, WY",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/wyoming/boxscore/17299"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-10-02",
+    "startTime": "6:00 PM",
+    "endDate": "2026-10-02",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/unr/boxscore/17272"
+  },
+  {
+    "name": "Cal",
+    "startDate": "2026-10-03",
+    "startTime": "",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/3/mens-tennis-rebel-pair-advance-to-quarters-of-qualifier.aspx"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/3/womens-tennis-unlv-entries-ousted-in-quarterfinals.aspx"
+  },
+  {
+    "name": "Ron Moore Intercollegiate",
+    "startDate": "2026-10-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Denver, CO",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/3/womens-golf-du-in-top-35-after-first-round-at-denver-event.aspx"
+  },
+  {
+    "name": "Arizona State",
+    "startDate": "2026-10-03",
+    "startTime": "6:00 PM",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Tempe, AZ",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/10/3/swimming-diving-rebels-drop-season-opener-at-arizona-state.aspx"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://ioncourt.com/tournaments/68db344036cd30e2cc6f243a/live-score"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://ioncourt.com/tournaments/68db344036cd30e2cc6f243a/live-score"
+  },
+  {
+    "name": "Ron Moore Intercollegiate",
+    "startDate": "2026-10-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-04",
+    "endTime": "",
+    "location": "Denver, CO",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/4/womens-golf-liu-leads-rebels-in-second-round-at-denver-event.aspx"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-10-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-10-04",
+    "endTime": "",
+    "location": "USAF Academy, Colo.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/air-force/boxscore/17273"
+  },
+  {
+    "name": "Utah Tech",
+    "startDate": "2026-10-04",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/utah-tech/boxscore/17232"
+  },
+  {
+    "name": "Mountain West Fall Qualifer",
+    "startDate": "2026-10-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-05",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/5/mens-tennis-snitari-heads-to-mw-final.aspx"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-05",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://ioncourt.com/tournaments/68db344036cd30e2cc6f243a/live-score"
+  },
+  {
+    "name": "Ron Moore Intercollegiate",
+    "startDate": "2026-10-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-05",
+    "endTime": "",
+    "location": "Denver, CO",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/5/womens-golf-rebels-complete-play-at-denver-tournament.aspx"
+  },
+  {
+    "name": "Colorado State",
+    "startDate": "2026-10-05",
+    "startTime": "11:00 AM",
+    "endDate": "2026-10-05",
+    "endTime": "",
+    "location": "Fort Collins, CO",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/colorado-state/boxscore/17300"
+  },
+  {
+    "name": "Mountain West Fall Qualifier",
+    "startDate": "2026-10-06",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-06",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/6/mens-tennis-sintari-stays-perfect-with-mw-fall-title.aspx"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-07",
+    "endTime": "",
+    "location": "Provo, UT",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/7/womens-tennis-pair-of-rebels-wins-way-into-main-draw-at-ita-regional.aspx"
+  },
+  {
+    "name": "NB3 Matchplay at Twin Warriors",
+    "startDate": "2026-10-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-07",
+    "endTime": "",
+    "location": "Santa Ana Pueblo, NM",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/7/mens-golf-opening-day-wins-put-rebels-in-lead-at-nb3-match-play.aspx"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-08",
+    "endTime": "",
+    "location": "Provo, UT",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/8/womens-tennis-rebel-trio-remains-alive-at-regional.aspx"
+  },
+  {
+    "name": "NB3 Matchplay at Twin Warriors",
+    "startDate": "2026-10-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-08",
+    "endTime": "",
+    "location": "Santa Ana Pueblo, NM",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/8/mens-golf-rebels-secure-nb3-match-play-victory.aspx"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-09",
+    "endTime": "",
+    "location": "Provo, UT",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/9/womens-tennis-mircheva-marches-on-in-provo.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-09",
+    "startTime": "6:30 PM",
+    "endDate": "2026-10-09",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/grand-canyon/boxscore/17326"
+  },
+  {
+    "name": "California Baptist",
+    "startDate": "2026-10-09",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-09",
+    "endTime": "",
+    "location": "Riverside, CA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/california-baptist/boxscore/17344"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-10-09",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-09",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/san-diego-state/boxscore/17302"
+  },
+  {
+    "name": "NDSU",
+    "startDate": "2026-10-10",
+    "startTime": "",
+    "endDate": "2026-10-10",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-10",
+    "endTime": "",
+    "location": "Provo, UT",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/10/womens-tennis-mirchevas-run-ends-in-semfinals.aspx"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-10-11",
+    "startTime": "12:00 PM",
+    "endDate": "2026-10-11",
+    "endTime": "",
+    "location": "San Diego, Calif.",
+    "sport": "Women's Volleyball",
+    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/san-diego-state/boxscore/17275"
   }
 ]

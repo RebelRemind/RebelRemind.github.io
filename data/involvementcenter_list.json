@@ -1,5 +1,4465 @@
 [
   {
+    "name": "Tuesday kick!",
+    "startDate": "2026-01-20",
+    "startTime": "6:30 PM",
+    "endDate": "2026-01-20",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063307"
+  },
+  {
+    "name": "What is a Furry?",
+    "startDate": "2026-01-21",
+    "startTime": "5:00 PM",
+    "endDate": "2026-01-21",
+    "endTime": "7:00 PM",
+    "location": "SU 222",
+    "organization": "Rebel Anthropomorphic Works and Recreation",
+    "link": "https://involvementcenter.unlv.edu/event/12077134"
+  },
+  {
+    "name": "Game Night w/ a Treat!",
+    "startDate": "2026-01-21",
+    "startTime": "6:00 PM",
+    "endDate": "2026-01-21",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834662"
+  },
+  {
+    "name": "Spring Welcome Back Event: Rebel Grand Prix",
+    "startDate": "2026-01-22",
+    "startTime": "11:00 AM",
+    "endDate": "2026-01-22",
+    "endTime": "2:00 PM",
+    "location": "Pida Plaza ",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/11316326"
+  },
+  {
+    "name": "Becoming an Adaptive Perfectionist",
+    "startDate": "2026-01-22",
+    "startTime": "3:30 PM",
+    "endDate": "2026-01-22",
+    "endTime": "4:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12057031"
+  },
+  {
+    "name": "Chapter Meeting",
+    "startDate": "2026-01-23",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-23",
+    "endTime": "2:00 PM",
+    "location": "ASC Room 146",
+    "organization": "Student Support Club for Academic Success",
+    "link": "https://involvementcenter.unlv.edu/event/11948280"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-01-23",
+    "startTime": "6:30 PM",
+    "endDate": "2026-01-23",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063317"
+  },
+  {
+    "name": "UNLV College of Education Student Mixer - Session 1 - Let's Get It Started!",
+    "startDate": "2026-01-26",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-26",
+    "endTime": "11:30 AM",
+    "location": "university of nevada las vegas, student union",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/11935937"
+  },
+  {
+    "name": "Starting Strong - Spring 26 Success Series ",
+    "startDate": "2026-01-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-01-26",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12046559"
+  },
+  {
+    "name": "Hospitality: A Career with Possibilities with the Vice President of Operations for the Mountain West at Caesars Entertainment",
+    "startDate": "2026-01-26",
+    "startTime": "4:00 PM",
+    "endDate": "2026-01-26",
+    "endTime": "5:00 PM",
+    "location": "Hospitality Hall",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12063331"
+  },
+  {
+    "name": "UNLV College of Education Student Mixer - Session 2 - Let's Get It Started!",
+    "startDate": "2026-01-26",
+    "startTime": "3:30 PM",
+    "endDate": "2026-01-26",
+    "endTime": "5:00 PM",
+    "location": "university of nevada las vegas, student union",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/11938966"
+  },
+  {
+    "name": "Involvement Fair Spring 2026: RSO Sign-ups",
+    "startDate": "2026-01-02",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-26",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/11964162"
+  },
+  {
+    "name": "Personal Growth Series 1: Overcoming Academic Shame & Building Confidence ",
+    "startDate": "2026-01-27",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-27",
+    "endTime": "2:00 PM",
+    "location": "UNLV SU 205",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025197"
+  },
+  {
+    "name": "Writing Impactful Scholarship Essays ",
+    "startDate": "2026-01-27",
+    "startTime": "2:00 PM",
+    "endDate": "2026-01-27",
+    "endTime": "3:00 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025249"
+  },
+  {
+    "name": "Mindfulness Arts and Crafts Corner",
+    "startDate": "2026-01-27",
+    "startTime": "2:00 PM",
+    "endDate": "2026-01-27",
+    "endTime": "3:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131495"
+  },
+  {
+    "name": "ALPFA 101",
+    "startDate": "2026-01-27",
+    "startTime": "6:00 PM",
+    "endDate": "2026-01-27",
+    "endTime": "8:00 PM",
+    "location": "SU 219",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12090739"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-01-27",
+    "startTime": "6:30 PM",
+    "endDate": "2026-01-27",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063308"
+  },
+  {
+    "name": "Time Management #1 - Spring 26 Success Series ",
+    "startDate": "2026-01-28",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12047779"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-01-28",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054644"
+  },
+  {
+    "name": "Involvement Fair",
+    "startDate": "2026-01-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "UNLV Pida Plaza",
+    "organization": "Student Support Club for Academic Success",
+    "link": "https://involvementcenter.unlv.edu/event/12002326"
+  },
+  {
+    "name": "Spring Involvement Fair 2026",
+    "startDate": "2026-01-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "Pida Plaza",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/11963995"
+  },
+  {
+    "name": "Involvement Fair kick!",
+    "startDate": "2026-01-28",
+    "startTime": "1:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "Near the Student Union",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063328"
+  },
+  {
+    "name": "PRSSA Involvement Fair Table",
+    "startDate": "2026-01-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "Alumni Amphitheater",
+    "organization": "Public Relations Student Society of America, University of Nevada Las Vegas Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12121998"
+  },
+  {
+    "name": "Spring Involvement Fair",
+    "startDate": "2026-01-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-28",
+    "endTime": "2:00 PM",
+    "location": "Academic Mall A",
+    "organization": "Ultimate Frisbee",
+    "link": "https://involvementcenter.unlv.edu/event/12121999"
+  },
+  {
+    "name": "Rebels CU Pizza Party",
+    "startDate": "2026-01-28",
+    "startTime": "3:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "4:00 PM",
+    "location": "Philip J. Cohen Theatre",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12142319"
+  },
+  {
+    "name": "AIGA UNLV Presents: Work Session",
+    "startDate": "2026-01-28",
+    "startTime": "4:30 PM",
+    "endDate": "2026-01-28",
+    "endTime": "6:30 PM",
+    "location": "GRA 239-A (Alta Ham Fine Arts Building)",
+    "organization": "American Institute of Graphic Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12111796"
+  },
+  {
+    "name": "Fursona Talk Roundtable",
+    "startDate": "2026-01-28",
+    "startTime": "5:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "7:00 PM",
+    "location": "SU 222",
+    "organization": "Rebel Anthropomorphic Works and Recreation",
+    "link": "https://involvementcenter.unlv.edu/event/12127156"
+  },
+  {
+    "name": "Game Night",
+    "startDate": "2026-01-28",
+    "startTime": "5:30 PM",
+    "endDate": "2026-01-28",
+    "endTime": "7:30 PM",
+    "location": "RLL 101",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12077141"
+  },
+  {
+    "name": "What\u2019s up, Whats Up, What\u2019s Up?",
+    "startDate": "2026-01-28",
+    "startTime": "6:00 PM",
+    "endDate": "2026-01-28",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834663"
+  },
+  {
+    "name": "It's Just Coffee: Public vs. Private Education",
+    "startDate": "2026-01-29",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-29",
+    "endTime": "11:00 AM",
+    "location": "Student Union Room 316",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11949184"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-01-29",
+    "startTime": "11:30 AM",
+    "endDate": "2026-01-29",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131432"
+  },
+  {
+    "name": "Black & Brown Queer Connection Presents: The Space \ud83d\udda4\ud83e\udd0e\ud83c\udff3\ufe0f\u200d\ud83c\udf08",
+    "startDate": "2026-01-29",
+    "startTime": "11:00 AM",
+    "endDate": "2026-01-29",
+    "endTime": "1:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12095643"
+  },
+  {
+    "name": "Becoming an Adaptive Perfectionist",
+    "startDate": "2026-01-29",
+    "startTime": "3:30 PM",
+    "endDate": "2026-01-29",
+    "endTime": "4:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12057032"
+  },
+  {
+    "name": "FYE -  Campus Kick Off: Spring Edition",
+    "startDate": "2026-01-29",
+    "startTime": "4:00 PM",
+    "endDate": "2026-01-29",
+    "endTime": "5:00 PM",
+    "location": "SU Ballroom A",
+    "organization": "First-Year Experience",
+    "link": "https://involvementcenter.unlv.edu/event/11284055"
+  },
+  {
+    "name": "Welcome to the Club - Lantern Making",
+    "startDate": "2026-01-29",
+    "startTime": "4:00 PM",
+    "endDate": "2026-01-29",
+    "endTime": "5:30 PM",
+    "location": "MAB2 Room 141",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12063296"
+  },
+  {
+    "name": "AIAA Meetings",
+    "startDate": "2026-01-30",
+    "startTime": "3:00 PM",
+    "endDate": "2026-01-30",
+    "endTime": "6:00 PM",
+    "location": "TBE B 162",
+    "organization": "American Institute of Aeronautics and Astronautics",
+    "link": "https://involvementcenter.unlv.edu/event/12147287"
+  },
+  {
+    "name": "Rebels RISE Scholar Program \u2013 Spring 2026 | Applications Now Open",
+    "startDate": "2025-12-29",
+    "startTime": "12:00 PM",
+    "endDate": "2026-01-30",
+    "endTime": "7:00 PM",
+    "location": "SSC-A, 2nd floor, RM 254",
+    "organization": "Rebels R.I.S.E.",
+    "link": "https://involvementcenter.unlv.edu/event/11964438"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-01-30",
+    "startTime": "6:30 PM",
+    "endDate": "2026-01-30",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063318"
+  },
+  {
+    "name": "AB Immersion: Artivism",
+    "startDate": "2026-01-31",
+    "startTime": "10:00 AM",
+    "endDate": "2026-01-31",
+    "endTime": "3:00 PM",
+    "location": "UNLV",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11325772"
+  },
+  {
+    "name": " Study Abroad Scholarships: Part 1 - Freeman Asia & Gilman Information Session (Financial Need Awards)",
+    "startDate": "2026-02-02",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-02",
+    "endTime": "2:00 PM",
+    "location": "BEH - 240",
+    "organization": "Office of Study Abroad Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12108700"
+  },
+  {
+    "name": "PHSA First General Meeting",
+    "startDate": "2026-02-02",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-02",
+    "endTime": "6:00 PM",
+    "location": "Online",
+    "organization": "Public Health Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12175927"
+  },
+  {
+    "name": "New Member General Meeting",
+    "startDate": "2026-02-02",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-02",
+    "endTime": "9:00 PM",
+    "location": "UNLV Student Union - 211, University of Nevada Las Vegas",
+    "organization": "College Republicans",
+    "link": "https://involvementcenter.unlv.edu/event/11983072"
+  },
+  {
+    "name": "Building Your Blueprint #1 - Spring 26 Success Series ",
+    "startDate": "2026-02-03",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-03",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12048097"
+  },
+  {
+    "name": "VIRTUAL Rebels R.I.S.E - Initial Cohort Meeting ",
+    "startDate": "2026-02-03",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-03",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "Rebels R.I.S.E.",
+    "link": "https://involvementcenter.unlv.edu/event/12052578"
+  },
+  {
+    "name": "Monthly General Meeting!",
+    "startDate": "2026-02-03",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-03",
+    "endTime": "5:00 PM",
+    "location": "Student Union 222",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063300"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-03",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-03",
+    "endTime": "5:00 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131457"
+  },
+  {
+    "name": "JSA Japanese New Year's Meeting",
+    "startDate": "2026-02-03",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-03",
+    "endTime": "7:00 PM",
+    "location": "Student Union 208C",
+    "organization": "Japanese Students Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12173937"
+  },
+  {
+    "name": "Spring Open House 2026",
+    "startDate": "2026-02-03",
+    "startTime": "4:45 PM",
+    "endDate": "2026-02-03",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Lee Women in Business",
+    "link": "https://involvementcenter.unlv.edu/event/12175918"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-02-03",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-03",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063309"
+  },
+  {
+    "name": "IN PERSON Rebels R.I.S.E - Initial Cohort Meeting",
+    "startDate": "2026-02-04",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-04",
+    "endTime": "12:00 PM",
+    "location": "SSC-A, 2nd floor, RM 254 - The Coaching Spot",
+    "organization": "Rebels R.I.S.E.",
+    "link": "https://involvementcenter.unlv.edu/event/12052656"
+  },
+  {
+    "name": "Hospitality Involvement Fair: Spring Sememster",
+    "startDate": "2026-02-04",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-04",
+    "endTime": "1:00 PM",
+    "location": "Hospitality Hall Lobby",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12063332"
+  },
+  {
+    "name": "Rebel Vets General Body Meeting - Wednesday, February 4, 2026 - SU 209",
+    "startDate": "2026-02-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "2:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "Rebel Vets Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12147304"
+  },
+  {
+    "name": "First General Meeting!",
+    "startDate": "2026-02-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "3:00 PM",
+    "location": "CHB-C146",
+    "organization": "Origami Club",
+    "link": "https://involvementcenter.unlv.edu/event/12175928"
+  },
+  {
+    "name": "EWB General Meeting",
+    "startDate": "2026-02-04",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-04",
+    "endTime": "5:30 PM",
+    "location": "AEB 150",
+    "organization": "Engineers Without Borders",
+    "link": "https://involvementcenter.unlv.edu/event/12172209"
+  },
+  {
+    "name": "EWB UNLV General Meeting, Spring 2026 Kickoff",
+    "startDate": "2026-02-04",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-04",
+    "endTime": "6:30 PM",
+    "location": "AEB 150",
+    "organization": "Engineers Without Borders",
+    "link": "https://involvementcenter.unlv.edu/event/12173925"
+  },
+  {
+    "name": "Drawing Class",
+    "startDate": "2026-02-04",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "7:00 PM",
+    "location": "SU 222",
+    "organization": "Rebel Anthropomorphic Works and Recreation",
+    "link": "https://involvementcenter.unlv.edu/event/12173782"
+  },
+  {
+    "name": "Week 2 - UNLV Collegiate 100 Professional Development Workshop Series - Craig A. Hancock II, MPA",
+    "startDate": "2026-02-04",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "7:00 PM",
+    "location": "UNLV Student Union, Room 228",
+    "organization": "UNLV Collegiate 100",
+    "link": "https://involvementcenter.unlv.edu/event/12172119"
+  },
+  {
+    "name": "UNLV Scientista First General Meeting",
+    "startDate": "2026-02-04",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-04",
+    "endTime": "7:00 PM",
+    "location": "UNLV Campus: HOS 282",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12172191"
+  },
+  {
+    "name": "Spring 2026 Mixer",
+    "startDate": "2026-02-04",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-04",
+    "endTime": "7:00 PM",
+    "location": "RLL 101",
+    "organization": "Psychology Club",
+    "link": "https://involvementcenter.unlv.edu/event/12173914"
+  },
+  {
+    "name": "Open Mic Night",
+    "startDate": "2026-02-04",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "7:00 PM",
+    "location": "Pida Plaza ",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/11316332"
+  },
+  {
+    "name": "Scrub Away Your Oppression w/ Perfume Club",
+    "startDate": "2026-02-04",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-04",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834664"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-05",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-05",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131433"
+  },
+  {
+    "name": "\"Working with Challenging Individuals\"",
+    "startDate": "2026-02-05",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "3:00 PM",
+    "location": "BEH 240",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12089216"
+  },
+  {
+    "name": "Time Management #2 - Spring 26 Success Series ",
+    "startDate": "2026-02-05",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12048368"
+  },
+  {
+    "name": "Becoming an Adaptive Perfectionist",
+    "startDate": "2026-02-05",
+    "startTime": "3:30 PM",
+    "endDate": "2026-02-05",
+    "endTime": "4:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12057033"
+  },
+  {
+    "name": "Human Trafficking Prevention Club Meeting",
+    "startDate": "2026-02-05",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "6:00 PM",
+    "location": "Student Union Room 222",
+    "organization": "Human Trafficking Prevention Club",
+    "link": "https://involvementcenter.unlv.edu/event/12147306"
+  },
+  {
+    "name": "Human Trafficking Prevention Club Meeting",
+    "startDate": "2026-02-05",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "6:00 PM",
+    "location": "UNLV Student Union 222",
+    "organization": "Human Trafficking Prevention Club",
+    "link": "https://involvementcenter.unlv.edu/event/12147309"
+  },
+  {
+    "name": "Black History Month Kickoff \ud83d\udda4\ud83c\udfb6\u2728",
+    "startDate": "2026-02-05",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "7:30 PM",
+    "location": "Richard Tam Alumni Center",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129022"
+  },
+  {
+    "name": "Game Night w/ RSM",
+    "startDate": "2026-02-05",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "7:30 PM",
+    "location": "SU 209",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12147288"
+  },
+  {
+    "name": "FIrst General Meeting S2026",
+    "startDate": "2026-02-05",
+    "startTime": "7:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "8:00 PM",
+    "location": "AEB Flexatorium",
+    "organization": "UNLV Formula Racing",
+    "link": "https://involvementcenter.unlv.edu/event/12173886"
+  },
+  {
+    "name": "Free Korean Fried Chicken at Korean Social Club's First Meeting!",
+    "startDate": "2026-02-05",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-05",
+    "endTime": "8:00 PM",
+    "location": "UNLV Student Union Room 224",
+    "organization": "Korean Social Club",
+    "link": "https://involvementcenter.unlv.edu/event/12173800"
+  },
+  {
+    "name": " Study Abroad Scholarships: Part 1 - Freeman Asia & Gilman Information Session (Financial Need Awards)",
+    "startDate": "2026-02-06",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-06",
+    "endTime": "12:30 PM",
+    "location": "Virtual",
+    "organization": "Office of Study Abroad Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12108778"
+  },
+  {
+    "name": "Spring Social",
+    "startDate": "2026-02-06",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-06",
+    "endTime": "1:00 PM",
+    "location": "Bigelow Physics Building BPB 217 ",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12175926"
+  },
+  {
+    "name": "Depression 101: Mood Boosting Tips and Tricks",
+    "startDate": "2026-02-06",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-06",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12071413"
+  },
+  {
+    "name": "Spring 2026 Service Day: Opportunity Village",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "1:30 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12090737"
+  },
+  {
+    "name": "Chapter Meeting",
+    "startDate": "2026-02-06",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-06",
+    "endTime": "1:30 PM",
+    "location": "ASC Room 146",
+    "organization": "Student Support Club for Academic Success",
+    "link": "https://involvementcenter.unlv.edu/event/11948281"
+  },
+  {
+    "name": "Spring 2026 Service Day: Lake Mead",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12090734"
+  },
+  {
+    "name": "Spring 2026 Service Day: Project 150",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12090735"
+  },
+  {
+    "name": "Spring 2026 Service Day: Cure 4 The Kids",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/11959186"
+  },
+  {
+    "name": "Spring 2026 Service Day: Project Marilyn",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12090738"
+  },
+  {
+    "name": "Spring 2026 Service Day: Three Square Food Bank",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/11959185"
+  },
+  {
+    "name": "Spring 2026 Service Day: Center for Urban Water Conservation",
+    "startDate": "2026-02-06",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/11959184"
+  },
+  {
+    "name": "Lunar New Year Mahjong Tournament ",
+    "startDate": "2026-02-06",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-06",
+    "endTime": "4:00 PM",
+    "location": "Mab - 2 rm 141",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12077133"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-02-06",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-06",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063319"
+  },
+  {
+    "name": "The Benedicts: Non-Traditional Life-Long Learners   Zoom Seminar Feb 7th 12:30pm ",
+    "startDate": "2026-02-07",
+    "startTime": "12:30 PM",
+    "endDate": "2026-02-07",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "Alliance of Non-Traditional Students",
+    "link": "https://involvementcenter.unlv.edu/event/11951826"
+  },
+  {
+    "name": "Burrowing Owl Den Clean Up!",
+    "startDate": "2026-02-08",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-08",
+    "endTime": "1:00 PM",
+    "location": "Rainbow Owl Preserve",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063299"
+  },
+  {
+    "name": "Feed My Sheep",
+    "startDate": "2026-02-08",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-08",
+    "endTime": "6:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/11729306"
+  },
+  {
+    "name": "Rebel Vets/VSC Big Game Watch Party, Sunday, Feb 8th: Doors Open at Noon",
+    "startDate": "2026-02-08",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-08",
+    "endTime": "7:30 PM",
+    "location": "Mackenzie River Pizza, Grill & Pub",
+    "organization": "Rebel Vets Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12147302"
+  },
+  {
+    "name": "UNLV Scientista Valentine's Day Bake Sale",
+    "startDate": "2026-02-09",
+    "startTime": "10:30 AM",
+    "endDate": "2026-02-09",
+    "endTime": "2:00 PM",
+    "location": "UNLV Free Speech Walkway",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12172171"
+  },
+  {
+    "name": "Queer Sex Ed",
+    "startDate": "2026-02-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-09",
+    "endTime": "2:00 PM",
+    "location": "Student Union Room 228",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12179505"
+  },
+  {
+    "name": "Building Your Blueprint #2 - Spring 26 Success Series ",
+    "startDate": "2026-02-09",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-09",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12048388"
+  },
+  {
+    "name": "Valentine's Art & Crafts",
+    "startDate": "2026-02-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-09",
+    "endTime": "4:00 PM",
+    "location": "Frank and Estella Beam Hall (Room BEH 239)",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12173824"
+  },
+  {
+    "name": "The Hospitality Collective General Meeting",
+    "startDate": "2026-02-09",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-09",
+    "endTime": "4:45 PM",
+    "location": "Hospitality Hall",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12063294"
+  },
+  {
+    "name": "It's Just Coffee: Evolving World of Work",
+    "startDate": "2026-02-10",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-10",
+    "endTime": "11:00 AM",
+    "location": "Student Union Room 316",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/11380689"
+  },
+  {
+    "name": "SORCE Workshop: Recruitment 101",
+    "startDate": "2026-02-10",
+    "startTime": "12:30 PM",
+    "endDate": "2026-02-10",
+    "endTime": "1:30 PM",
+    "location": "SU 305",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12217502"
+  },
+  {
+    "name": "Between the Lines: Black History Month Crochet-a-Thon \ud83d\udcd6\u2728",
+    "startDate": "2026-02-10",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "3:00 PM",
+    "location": "SU 208A",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129267"
+  },
+  {
+    "name": "Between the Lines: Black History Month Crochet-a-Thon",
+    "startDate": "2026-02-10",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "3:00 PM",
+    "location": "SU 208A",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12035732"
+  },
+  {
+    "name": "\ud83c\udf38 Welcome Spring 2026 General Meeting | International Student Organization \ud83c\udf38",
+    "startDate": "2026-02-10",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "3:00 PM",
+    "location": "Starbucks",
+    "organization": "International Student Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12175929"
+  },
+  {
+    "name": "The Peer Mentor Experience: Insights and Opportunities",
+    "startDate": "2026-02-10",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "4:00 PM",
+    "location": "Student Union Rm. 205",
+    "organization": "First-Year Experience",
+    "link": "https://involvementcenter.unlv.edu/event/11284066"
+  },
+  {
+    "name": "Leadership Link Up : Jimmy Neutron \u2013 \u201cThink, Don\u2019t Panic!\u201d",
+    "startDate": "2026-02-10",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-10",
+    "endTime": "5:30 PM",
+    "location": "SU 219",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11227697"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-10",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-10",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131458"
+  },
+  {
+    "name": "JSA Rock Paper Scissors Tournament Meeting",
+    "startDate": "2026-02-10",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "7:00 PM",
+    "location": "Student Union SU207",
+    "organization": "Japanese Students Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12201512"
+  },
+  {
+    "name": "Student Town Hall",
+    "startDate": "2026-02-10",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-10",
+    "endTime": "7:00 PM",
+    "location": "SU 222",
+    "organization": "Young Democratic Socialists of America, University of Nevada Las Vegas Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12222859"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-02-10",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-10",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063310"
+  },
+  {
+    "name": "New Student Orientation Leader Hiring ",
+    "startDate": "2026-02-02",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "1:00 PM",
+    "location": "Handshake",
+    "organization": "UNLV Orientation",
+    "link": "https://involvementcenter.unlv.edu/event/12170121"
+  },
+  {
+    "name": "Effective Communication #1 - Spring 26 Success Series ",
+    "startDate": "2026-02-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12048264"
+  },
+  {
+    "name": "Surviving and Thriving Student Panel",
+    "startDate": "2026-02-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "2:00 PM",
+    "location": "HOS 282",
+    "organization": "College of Liberal Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12217584"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-02-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054645"
+  },
+  {
+    "name": "Valentine Crafternoon",
+    "startDate": "2026-02-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "3:30 PM",
+    "location": "Student Union Room 316",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/12152272"
+  },
+  {
+    "name": "Love is Love: Queer Community Mixer",
+    "startDate": "2026-02-11",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "6:00 PM",
+    "location": "Student Union 209",
+    "organization": "UNLV Grad Pride Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12147294"
+  },
+  {
+    "name": "UNLV Scientista Vision Board Social",
+    "startDate": "2026-02-11",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "6:00 PM",
+    "location": "UNLV Campus: CHB C114",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12173846"
+  },
+  {
+    "name": "Valentine\u2019s Fundraiser",
+    "startDate": "2026-02-11",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "6:00 PM",
+    "location": "UNLV Free Speech",
+    "organization": "Mariachi Rebelde de UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12216280"
+  },
+  {
+    "name": "ACF General Meeting",
+    "startDate": "2026-02-11",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-11",
+    "endTime": "6:30 PM",
+    "location": "BEH 107",
+    "organization": "UNLV ACF",
+    "link": "https://involvementcenter.unlv.edu/event/12147272"
+  },
+  {
+    "name": "Newman Night: Lent Workshop",
+    "startDate": "2026-02-11",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-11",
+    "endTime": "8:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/12222865"
+  },
+  {
+    "name": "Perfume Club Weekly Meeting ",
+    "startDate": "2026-02-11",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-11",
+    "endTime": "8:00 PM",
+    "location": "Echo 1055",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834665"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-12",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-12",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131434"
+  },
+  {
+    "name": "SORCE Pop Ups present: A Valentines Paint & Sip",
+    "startDate": "2026-02-12",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "2:00 PM",
+    "location": "Scarlet Sage in Student Union ",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12206837"
+  },
+  {
+    "name": "Wellness & Service: Safer Sex Kit Building",
+    "startDate": "2026-02-12",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "3:00 PM",
+    "location": "SU 207",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12035664"
+  },
+  {
+    "name": "Real Talk \ud83d\udde3\ufe0f\u2728\ud83e\ude9e",
+    "startDate": "2026-02-12",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "3:00 PM",
+    "location": "SU 209",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129384"
+  },
+  {
+    "name": "Becoming an Adaptive Perfectionist",
+    "startDate": "2026-02-12",
+    "startTime": "3:30 PM",
+    "endDate": "2026-02-12",
+    "endTime": "4:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12057034"
+  },
+  {
+    "name": "First Sip of OSINT Workshop",
+    "startDate": "2026-02-12",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "4:30 PM",
+    "location": "CHB C 234",
+    "organization": "WiCyS Student Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12216236"
+  },
+  {
+    "name": "Lunar New Year Calligraphy Workshop ",
+    "startDate": "2026-02-12",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "5:00 PM",
+    "location": "MAB2 Room 141",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12063295"
+  },
+  {
+    "name": "\u2665\ufe0f | RTSO's Transfer-entine Service Week!",
+    "startDate": "2026-02-09",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-12",
+    "endTime": "7:00 PM",
+    "location": "SORCE Room",
+    "organization": "Rebel Transfer Student Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12216215"
+  },
+  {
+    "name": "General Meeting - Club Revival",
+    "startDate": "2026-02-12",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-12",
+    "endTime": "7:00 PM",
+    "location": "AEB 150",
+    "organization": "Society of Hispanic Professional Engineers",
+    "link": "https://involvementcenter.unlv.edu/event/12175922"
+  },
+  {
+    "name": "LSSA First General Meeting",
+    "startDate": "2026-02-12",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-12",
+    "endTime": "7:00 PM",
+    "location": "BEH 119",
+    "organization": "Life Science Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12216123"
+  },
+  {
+    "name": "General Meeting - Club Revival",
+    "startDate": "2026-02-12",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-12",
+    "endTime": "7:00 PM",
+    "location": "AEB 150",
+    "organization": "Society of Hispanic Professional Engineers",
+    "link": "https://involvementcenter.unlv.edu/event/12175923"
+  },
+  {
+    "name": "Blooming Bouquets",
+    "startDate": "2026-02-12",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-12",
+    "endTime": "9:00 PM",
+    "location": "RLL 101",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12077140"
+  },
+  {
+    "name": "Relaxing Your Mind: Coping With Anxiety",
+    "startDate": "2026-02-13",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-13",
+    "endTime": "12:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12135883"
+  },
+  {
+    "name": "WQP: Toolkit Intro (Day 1)",
+    "startDate": "2026-02-13",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-13",
+    "endTime": "2:00 PM",
+    "location": "RLL 101",
+    "organization": "College of Liberal Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12217591"
+  },
+  {
+    "name": "Chai Social + General Body Meeting",
+    "startDate": "2026-02-13",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-13",
+    "endTime": "5:00 PM",
+    "location": "Student Union Room#218",
+    "organization": "Indian Students Association Maitri",
+    "link": "https://involvementcenter.unlv.edu/event/12201522"
+  },
+  {
+    "name": "Welcome Mixer and Movie Night",
+    "startDate": "2026-02-13",
+    "startTime": "3:30 PM",
+    "endDate": "2026-02-13",
+    "endTime": "6:00 PM",
+    "location": "BEH 103 (Frank and Estelle Beam Hall)",
+    "organization": "African Student Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12216312"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-02-13",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-13",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063320"
+  },
+  {
+    "name": "UNLV Health - Walk With a Doc ",
+    "startDate": "2026-02-14",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-14",
+    "endTime": "9:30 AM",
+    "location": "Angel Park ",
+    "organization": "Minority Association of Pre-Medical Students ",
+    "link": "https://involvementcenter.unlv.edu/event/12175924"
+  },
+  {
+    "name": "Off Campus Bird Walk: Finding Lovebirds",
+    "startDate": "2026-02-15",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-15",
+    "endTime": "11:00 AM",
+    "location": "Henderson Bird Viewing Preserve",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063297"
+  },
+  {
+    "name": "Coffee with Karly ",
+    "startDate": "2026-02-17",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-17",
+    "endTime": "11:00 AM",
+    "location": "SU 316",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11360686"
+  },
+  {
+    "name": "Tour Swingers the Crazy Golf Club",
+    "startDate": "2026-02-17",
+    "startTime": "10:30 AM",
+    "endDate": "2026-02-17",
+    "endTime": "11:45 AM",
+    "location": "Swingers the Crazy Golf Club",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12063333"
+  },
+  {
+    "name": "Fellowship & Connection: True Friendship & Making New Friends",
+    "startDate": "2026-02-17",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-17",
+    "endTime": "12:30 PM",
+    "location": "SU 228",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12246693"
+  },
+  {
+    "name": "Rebels CU Grand Opening",
+    "startDate": "2026-02-17",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-17",
+    "endTime": "1:00 PM",
+    "location": "SSC-C",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12214187"
+  },
+  {
+    "name": "Personal Growth Series 2: Managing Stress & Emotional Overload ",
+    "startDate": "2026-02-17",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-17",
+    "endTime": "2:00 PM",
+    "location": "UNLV SU 205",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025318"
+  },
+  {
+    "name": "From Chaos to Calm: Aromatherapy",
+    "startDate": "2026-02-17",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-17",
+    "endTime": "3:00 PM",
+    "location": "SU 208BC",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12035549"
+  },
+  {
+    "name": "Pawsitive Thoughts ",
+    "startDate": "2026-02-17",
+    "startTime": "1:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "3:30 PM",
+    "location": "Honors College Lounge",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12222389"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-17",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131459"
+  },
+  {
+    "name": "Tao Guest Speaker: Andrew Insigne",
+    "startDate": "2026-02-17",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-17",
+    "endTime": "6:00 PM",
+    "location": "Hospitality Hall",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12201516"
+  },
+  {
+    "name": "Narcare General Meeting",
+    "startDate": "2026-02-17",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "6:30 PM",
+    "location": "HOS 380",
+    "organization": "Narcare",
+    "link": "https://involvementcenter.unlv.edu/event/12230330"
+  },
+  {
+    "name": "Setsubun JSA General Meeting ",
+    "startDate": "2026-02-17",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-17",
+    "endTime": "7:00 PM",
+    "location": "Student Union 208C",
+    "organization": "Japanese Students Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12230295"
+  },
+  {
+    "name": "Workshop 2: Arduinos and Soldering",
+    "startDate": "2026-02-17",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "7:30 PM",
+    "location": "TBE B 172",
+    "organization": "UNLV Rebel Robotics",
+    "link": "https://involvementcenter.unlv.edu/event/12252491"
+  },
+  {
+    "name": "Marvel Escape Room: Lost In Time",
+    "startDate": "2026-02-17",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "8:00 PM",
+    "location": "BEH 109",
+    "organization": "UNLV's Disney Club 33",
+    "link": "https://involvementcenter.unlv.edu/event/12250999"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-02-17",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-17",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063311"
+  },
+  {
+    "name": "Prepare for the Fair - Resume Reviews",
+    "startDate": "2026-02-18",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-18",
+    "endTime": "3:00 PM",
+    "location": "Lied Library Amargosa Room (First Floor, Room 1149)",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12208259"
+  },
+  {
+    "name": "Thriving Authentically \ud83d\udcbc\u2728\ud83d\udda4",
+    "startDate": "2026-02-18",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-18",
+    "endTime": "3:00 PM",
+    "location": "SU 208BC",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129462"
+  },
+  {
+    "name": "How to Navigate Employer Talks at the Career Fair",
+    "startDate": "2026-02-18",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-18",
+    "endTime": "6:30 PM",
+    "location": "Online",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12208267"
+  },
+  {
+    "name": "Perfume Club Weekly Meeting ",
+    "startDate": "2026-02-18",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-18",
+    "endTime": "8:00 PM",
+    "location": "Echo 1055 - First Floor Lounge",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834666"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-19",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-19",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131435"
+  },
+  {
+    "name": "Brew Tea Fundraiser",
+    "startDate": "2026-02-19",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-19",
+    "endTime": "1:00 PM",
+    "location": "Brew Tea Bar",
+    "organization": "Business In Action",
+    "link": "https://involvementcenter.unlv.edu/event/12262672"
+  },
+  {
+    "name": "Discovering Me & Self-Care",
+    "startDate": "2026-02-19",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12257293"
+  },
+  {
+    "name": "National Rec Day Wellness Fair",
+    "startDate": "2026-02-19",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-19",
+    "endTime": "1:00 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Campus Recreational Services",
+    "link": "https://involvementcenter.unlv.edu/event/12207962"
+  },
+  {
+    "name": "CyberSips",
+    "startDate": "2026-02-19",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "4:00 PM",
+    "location": "CHB-C234",
+    "organization": "WiCyS Student Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12256939"
+  },
+  {
+    "name": "Archery Club Info Meeting",
+    "startDate": "2026-02-19",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "4:00 PM",
+    "location": "Student Union, room 219",
+    "organization": "UNLV Archery",
+    "link": "https://involvementcenter.unlv.edu/event/12263138"
+  },
+  {
+    "name": "Becoming an Adaptive Perfectionist",
+    "startDate": "2026-02-19",
+    "startTime": "3:30 PM",
+    "endDate": "2026-02-19",
+    "endTime": "4:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12057035"
+  },
+  {
+    "name": "Prepare for the Fair - Employer Panel",
+    "startDate": "2026-02-19",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "6:00 PM",
+    "location": "Lied Library Goldfield Room (Third Floor, Room 3251)",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12208262"
+  },
+  {
+    "name": "Blaxploitation - Movie Night",
+    "startDate": "2026-02-19",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "6:30 PM",
+    "location": "SRWC Room 1010",
+    "organization": "Black Social Workers Society",
+    "link": "https://involvementcenter.unlv.edu/event/12175919"
+  },
+  {
+    "name": "Open House ",
+    "startDate": "2026-02-19",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-19",
+    "endTime": "8:00 PM",
+    "location": "BEH 108",
+    "organization": "Business In Action",
+    "link": "https://involvementcenter.unlv.edu/event/12262678"
+  },
+  {
+    "name": "Rebels After Dark ",
+    "startDate": "2026-02-19",
+    "startTime": "7:00 PM",
+    "endDate": "2026-02-19",
+    "endTime": "10:00 PM",
+    "location": "SU Ballrooms",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/11316351"
+  },
+  {
+    "name": "LeaderShape: Resilience Workshop ",
+    "startDate": "2026-02-20",
+    "startTime": "9:30 AM",
+    "endDate": "2026-02-20",
+    "endTime": "11:30 AM",
+    "location": "SU Room 208",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11227702"
+  },
+  {
+    "name": "K-pop Club Dance Team Audition",
+    "startDate": "2026-02-20",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-20",
+    "endTime": "12:00 PM",
+    "location": "SRWC rm 2025",
+    "organization": "K-pop Club",
+    "link": "https://involvementcenter.unlv.edu/event/12256945"
+  },
+  {
+    "name": "Relaxing Your Mind: Coping With Anxiety",
+    "startDate": "2026-02-20",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-20",
+    "endTime": "12:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12135884"
+  },
+  {
+    "name": "Resume Review Workshop",
+    "startDate": "2026-02-20",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-20",
+    "endTime": "1:00 PM",
+    "location": "Science and Engineering Building, Room No: 1243",
+    "organization": "Institute of Transportation Engineers",
+    "link": "https://involvementcenter.unlv.edu/event/12265214"
+  },
+  {
+    "name": "SPS Guest Lecture",
+    "startDate": "2026-02-20",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-20",
+    "endTime": "1:00 PM",
+    "location": "BPB 248 (Bigelow Physics Building)",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12252786"
+  },
+  {
+    "name": "Advising #1- Spring 26 Success Series ",
+    "startDate": "2026-02-20",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-20",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12222984"
+  },
+  {
+    "name": "New Student Orientation Leader Hiring ",
+    "startDate": "2026-02-17",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-20",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "UNLV Orientation",
+    "link": "https://involvementcenter.unlv.edu/event/12216792"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-02-20",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-20",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063321"
+  },
+  {
+    "name": "Discord Project Update Meeting",
+    "startDate": "2026-02-21",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-21",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "Engineers Without Borders",
+    "link": "https://involvementcenter.unlv.edu/event/12256942"
+  },
+  {
+    "name": "Scientista Sunday",
+    "startDate": "2026-02-22",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-22",
+    "endTime": "12:30 PM",
+    "location": "Tous Les Jours Cafe",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12201520"
+  },
+  {
+    "name": "Guided Hike with a Bureau of Land Management Ranger at Sloan Canyon Petroglyph Site",
+    "startDate": "2026-02-22",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-22",
+    "endTime": "1:00 PM",
+    "location": "3495 Via Altamira, Henderson, NV 89044",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12213150"
+  },
+  {
+    "name": "February Bird Walk!",
+    "startDate": "2026-02-23",
+    "startTime": "8:00 AM",
+    "endDate": "2026-02-23",
+    "endTime": "10:00 AM",
+    "location": "Lee Pascal Memorial Rose Garden",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063303"
+  },
+  {
+    "name": "It's Just Coffee: Mental Health in America",
+    "startDate": "2026-02-23",
+    "startTime": "10:30 AM",
+    "endDate": "2026-02-23",
+    "endTime": "11:30 AM",
+    "location": "Student Union Room 316",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11956265"
+  },
+  {
+    "name": "CAEO + Writing Center Scholarship Workshop",
+    "startDate": "2026-02-23",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-23",
+    "endTime": "3:00 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12184288"
+  },
+  {
+    "name": "UNLV PAD x Princeton Review: LSAT Reading Comprehension Workshop",
+    "startDate": "2026-02-23",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-23",
+    "endTime": "6:30 PM",
+    "location": "Online",
+    "organization": "Phi Alpha Delta Pre-Law",
+    "link": "https://involvementcenter.unlv.edu/event/12252464"
+  },
+  {
+    "name": "Advising #2- Spring 26 Success Series ",
+    "startDate": "2026-02-24",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-24",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12272946"
+  },
+  {
+    "name": "Black Mini Con \ud83c\udf08\ud83d\udda4\u2728",
+    "startDate": "2026-02-24",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-24",
+    "endTime": "2:00 PM",
+    "location": "Marjorie Barrick Museum of Art",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129620"
+  },
+  {
+    "name": "\"Resolving One-on-One Conflicts (Workplace)\"'",
+    "startDate": "2026-02-24",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-24",
+    "endTime": "3:00 PM",
+    "location": "BEH 240",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12089645"
+  },
+  {
+    "name": "Mindfulness Arts and Crafts Corner",
+    "startDate": "2026-02-24",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-24",
+    "endTime": "3:00 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131496"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-24",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-24",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131460"
+  },
+  {
+    "name": "Workshop 3: Motors and Electronic Speed Controllers (ESC)",
+    "startDate": "2026-02-24",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-24",
+    "endTime": "7:00 PM",
+    "location": "TBE B 172",
+    "organization": "UNLV Rebel Robotics",
+    "link": "https://involvementcenter.unlv.edu/event/12278113"
+  },
+  {
+    "name": "Word Games Japanese Student Alliance General Meeting",
+    "startDate": "2026-02-24",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-24",
+    "endTime": "7:00 PM",
+    "location": "Student Union",
+    "organization": "Japanese Students Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12252826"
+  },
+  {
+    "name": "ALPFA x Eide Bailly Early Career Panel",
+    "startDate": "2026-02-24",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-24",
+    "endTime": "8:00 PM",
+    "location": "Philip J. Cohen Theatre, Student Union",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12263153"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-02-24",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-24",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063312"
+  },
+  {
+    "name": "General Study Abroad Scholarship Workshop",
+    "startDate": "2026-02-25",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-25",
+    "endTime": "11:00 AM",
+    "location": "BEH - 240",
+    "organization": "Office of Study Abroad Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12108863"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-02-25",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054646"
+  },
+  {
+    "name": "Rest & Recharge Station at the Spring Career & Internship Fair",
+    "startDate": "2026-02-25",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-25",
+    "endTime": "2:00 PM",
+    "location": "Thomas & Mack Center",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12280991"
+  },
+  {
+    "name": "UNLV Career & Internship Fair Spring 2026",
+    "startDate": "2026-02-25",
+    "startTime": "9:00 AM",
+    "endDate": "2026-02-25",
+    "endTime": "2:00 PM",
+    "location": "Thomas & Mack Center",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12208269"
+  },
+  {
+    "name": "Artvism Crafternoon",
+    "startDate": "2026-02-25",
+    "startTime": "1:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "3:30 PM",
+    "location": "Student Union Room 316",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/12254242"
+  },
+  {
+    "name": "Road to MIS Leadership",
+    "startDate": "2026-02-25",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "5:30 PM",
+    "location": "CHB A112",
+    "organization": "MIS Society",
+    "link": "https://involvementcenter.unlv.edu/event/12252795"
+  },
+  {
+    "name": "Scarlet Sage trivia Night - Hosted by SORCE",
+    "startDate": "2026-02-25",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "6:00 PM",
+    "location": "Scarlet Sage in Student Union ",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12274960"
+  },
+  {
+    "name": "Presentations Night",
+    "startDate": "2026-02-25",
+    "startTime": "5:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "7:00 PM",
+    "location": "SU 222",
+    "organization": "Rebel Anthropomorphic Works and Recreation",
+    "link": "https://involvementcenter.unlv.edu/event/12273078"
+  },
+  {
+    "name": "I Guess We'll See You Next Lifetime",
+    "startDate": "2026-02-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-25",
+    "endTime": "8:00 PM",
+    "location": "Echo 1055 - First Floor Lounge",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834667"
+  },
+  {
+    "name": "Newman Night: Hang With Novices!",
+    "startDate": "2026-02-25",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-25",
+    "endTime": "9:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/12230304"
+  },
+  {
+    "name": "Free Faculty and Staff Week",
+    "startDate": "2026-02-19",
+    "startTime": "6:00 AM",
+    "endDate": "2026-02-25",
+    "endTime": "11:59 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Campus Recreational Services",
+    "link": "https://involvementcenter.unlv.edu/event/12207981"
+  },
+  {
+    "name": "Test Taking Strategies and Note Taking - Spring 26 Success Series ",
+    "startDate": "2026-02-26",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-26",
+    "endTime": "12:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12272973"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-02-26",
+    "startTime": "11:30 AM",
+    "endDate": "2026-02-26",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131436"
+  },
+  {
+    "name": "Spring 26 First General Meeting",
+    "startDate": "2026-02-26",
+    "startTime": "2:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "3:00 PM",
+    "location": "UNLV Community Garden",
+    "organization": "Rebel Roots",
+    "link": "https://involvementcenter.unlv.edu/event/12265363"
+  },
+  {
+    "name": "Narcan Training",
+    "startDate": "2026-02-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "4:00 PM",
+    "location": "Student Recreation & Wellness Center (SRWC) 1502 Health Education Room",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12205984"
+  },
+  {
+    "name": "Spill The Tea",
+    "startDate": "2026-02-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "4:00 PM",
+    "location": "CHB C 234",
+    "organization": "WiCyS Student Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12272612"
+  },
+  {
+    "name": "Study Abroad Information Session",
+    "startDate": "2026-02-26",
+    "startTime": "3:30 PM",
+    "endDate": "2026-02-26",
+    "endTime": "4:30 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12168077"
+  },
+  {
+    "name": "UNLV ROAR Game Night ",
+    "startDate": "2026-02-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "5:00 PM",
+    "location": "SU 209",
+    "organization": "Raising Our AANHPI Rights",
+    "link": "https://involvementcenter.unlv.edu/event/12201514"
+  },
+  {
+    "name": "Welcome Back Party",
+    "startDate": "2026-02-26",
+    "startTime": "4:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "6:00 PM",
+    "location": "208 A and B",
+    "organization": "Food Tasting Club",
+    "link": "https://involvementcenter.unlv.edu/event/12284214"
+  },
+  {
+    "name": "To Immigrants With Love",
+    "startDate": "2026-02-26",
+    "startTime": "4:30 PM",
+    "endDate": "2026-02-26",
+    "endTime": "6:30 PM",
+    "location": "Student Union 224",
+    "organization": "UNLV UndocuNetwork",
+    "link": "https://involvementcenter.unlv.edu/event/12280027"
+  },
+  {
+    "name": "Next Chapter: Academic Recovery",
+    "startDate": "2026-02-26",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-26",
+    "endTime": "6:30 PM",
+    "location": "Gym Road South Resident Services Building (Rebel Learning Lounge)",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12253990"
+  },
+  {
+    "name": "Multicultural Fest",
+    "startDate": "2026-02-26",
+    "startTime": "6:00 PM",
+    "endDate": "2026-02-26",
+    "endTime": "8:00 PM",
+    "location": "RLL 101",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12077135"
+  },
+  {
+    "name": "Snacks and Skills : Good Trouble, Necessary Trouble",
+    "startDate": "2026-02-11",
+    "startTime": "5:30 PM",
+    "endDate": "2026-02-26",
+    "endTime": "8:00 PM",
+    "location": "SU 219",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11225682"
+  },
+  {
+    "name": "Catholic Charities Food Serving ",
+    "startDate": "2026-02-27",
+    "startTime": "8:30 AM",
+    "endDate": "2026-02-27",
+    "endTime": "12:00 PM",
+    "location": "UNLV Student Union Eating Bar ",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12234139"
+  },
+  {
+    "name": "Student Parents of UNLV 1st General Meeting ",
+    "startDate": "2026-02-27",
+    "startTime": "11:00 AM",
+    "endDate": "2026-02-27",
+    "endTime": "12:30 PM",
+    "location": "1291 Marydean Martin and Charles Silvestri Group Study Room- Lied Library ",
+    "organization": "Student Parents of UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12284318"
+  },
+  {
+    "name": "Historic Westside Bus Tour \ud83d\ude8c\ud83d\udda4\ud83c\udfd8\ufe0f",
+    "startDate": "2026-02-27",
+    "startTime": "10:00 AM",
+    "endDate": "2026-02-27",
+    "endTime": "2:00 PM",
+    "location": "SU 228",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12129703"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-02-27",
+    "startTime": "6:30 PM",
+    "endDate": "2026-02-27",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063322"
+  },
+  {
+    "name": "Puppies & Pizza - Grad Students & Alumni",
+    "startDate": "2026-02-28",
+    "startTime": "12:00 PM",
+    "endDate": "2026-02-28",
+    "endTime": "2:00 PM",
+    "location": "Student Union Courtyard",
+    "organization": "College of Education Alumni Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12159990"
+  },
+  {
+    "name": "AB Immersion: Indigenous Sovereignty",
+    "startDate": "2026-02-28",
+    "startTime": "7:00 AM",
+    "endDate": "2026-02-28",
+    "endTime": "4:00 PM",
+    "location": "Outside Student Union (Lot D)",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11325778"
+  },
+  {
+    "name": "Feed My Sheep",
+    "startDate": "2026-03-01",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-01",
+    "endTime": "6:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/11729307"
+  },
+  {
+    "name": "Student Union Show Case",
+    "startDate": "2026-03-02",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-02",
+    "endTime": "9:00 AM",
+    "location": "Student Union Second Floor",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12286557"
+  },
+  {
+    "name": "InspireHER Con",
+    "startDate": "2026-03-02",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-02",
+    "endTime": "2:00 PM",
+    "location": "Barrick Museum Auditorium",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12299590"
+  },
+  {
+    "name": "Effective Communication #2 - Spring 26 Success Series ",
+    "startDate": "2026-03-02",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-02",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12048419"
+  },
+  {
+    "name": "Spring Student Union Showcase",
+    "startDate": "2026-03-02",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-02",
+    "endTime": "5:00 PM",
+    "location": "Student Union",
+    "organization": "Student Union & Event Services",
+    "link": "https://involvementcenter.unlv.edu/event/12234164"
+  },
+  {
+    "name": "Panda Express Fundraiser",
+    "startDate": "2026-03-02",
+    "startTime": "12:00 AM",
+    "endDate": "2026-03-02",
+    "endTime": "11:45 PM",
+    "location": "Panda Express at the Student Union",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12201517"
+  },
+  {
+    "name": "Leadership Link Up : Spongebob Squarepants - When Plankton Pushes Your Buttons ",
+    "startDate": "2026-03-03",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-03",
+    "endTime": "12:00 PM",
+    "location": "SU 219",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11227698"
+  },
+  {
+    "name": "Study Breakers - Learn to Knit ",
+    "startDate": "2026-03-03",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-03",
+    "endTime": "2:00 PM",
+    "location": "SRWC 1020",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025408"
+  },
+  {
+    "name": "Division of Health Sciences & Sciences Mixer",
+    "startDate": "2026-03-03",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-03",
+    "endTime": "4:00 PM",
+    "location": "Student Union Meeting Room 209",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12313966"
+  },
+  {
+    "name": "Now What? How to Follow Up After the Career Fair",
+    "startDate": "2026-03-03",
+    "startTime": "3:30 PM",
+    "endDate": "2026-03-03",
+    "endTime": "4:30 PM",
+    "location": "Beverly Rogers Literature and Law Building, Room 101",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12293630"
+  },
+  {
+    "name": "IC Survival Night",
+    "startDate": "2026-03-03",
+    "startTime": "3:30 PM",
+    "endDate": "2026-03-03",
+    "endTime": "5:00 PM",
+    "location": "BEH 235",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288790"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-03",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-03",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131461"
+  },
+  {
+    "name": "Monthly General Meeting!",
+    "startDate": "2026-03-03",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-03",
+    "endTime": "6:00 PM",
+    "location": "SU 222",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063301"
+  },
+  {
+    "name": "Sunset Yoga \u2013 Women HerStory Month Kickoff",
+    "startDate": "2026-03-03",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-03",
+    "endTime": "8:00 PM",
+    "location": "Alumni Amphitheater",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12299077"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-03-03",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-03",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063313"
+  },
+  {
+    "name": "Study Breakers - Paint and Flow ",
+    "startDate": "2026-03-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "1:00 PM",
+    "location": "UNLV SU 209",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025453"
+  },
+  {
+    "name": "Lee Business Town Hall",
+    "startDate": "2026-02-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "2:00 PM",
+    "location": "BEH Atrium",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12313780"
+  },
+  {
+    "name": "Rebel Vets General Body Meeting - Wednesday, March 4, 2026 - SU 218",
+    "startDate": "2026-03-04",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "2:00 PM",
+    "location": "University of Nevada, Las Vegas ",
+    "organization": "Rebel Vets Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12233938"
+  },
+  {
+    "name": "REB Event",
+    "startDate": "2026-03-04",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-04",
+    "endTime": "2:00 PM",
+    "location": "Pida Plaza ",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/11316360"
+  },
+  {
+    "name": "Speakeasy Series: Speak Your Love",
+    "startDate": "2026-03-04",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "2:30 PM",
+    "location": "Student Union 228",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12307976"
+  },
+  {
+    "name": "Communication Skills Workshop",
+    "startDate": "2026-03-04",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12308199"
+  },
+  {
+    "name": "NVCPA Virtual Info Session",
+    "startDate": "2026-03-04",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12308325"
+  },
+  {
+    "name": "Cybersecurity & IT Policy | Presented by Michael Block",
+    "startDate": "2026-03-04",
+    "startTime": "5:45 PM",
+    "endDate": "2026-03-04",
+    "endTime": "7:00 PM",
+    "location": "CHB A112",
+    "organization": "MIS Society",
+    "link": "https://involvementcenter.unlv.edu/event/12272714"
+  },
+  {
+    "name": "Spring 2026 Research Matching",
+    "startDate": "2026-03-04",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "7:00 PM",
+    "location": "SU Ballroom AB",
+    "organization": "Psychology Club",
+    "link": "https://involvementcenter.unlv.edu/event/12252831"
+  },
+  {
+    "name": "Smells Like Herstory",
+    "startDate": "2026-03-04",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-04",
+    "endTime": "8:00 PM",
+    "location": "Echo 1055 - First Floor Lounge",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834668"
+  },
+  {
+    "name": "It's Just Coffee: Legalizing Sex Work ",
+    "startDate": "2026-03-05",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-05",
+    "endTime": "11:00 AM",
+    "location": "Student Union Room 316",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11956288"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-05",
+    "startTime": "11:30 AM",
+    "endDate": "2026-03-05",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131437"
+  },
+  {
+    "name": "SORCE Pop Up: Paint & Sip\ud83c\udfa8",
+    "startDate": "2026-03-05",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "2:00 PM",
+    "location": "Scarlet Sage",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12290969"
+  },
+  {
+    "name": "Between the Lines: Women's History Month: Pressed Flower Bookmark Workshop",
+    "startDate": "2026-03-05",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "3:00 PM",
+    "location": "Goldfeild Room, Lied Library",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12146331"
+  },
+  {
+    "name": "Between the Lines: Women's History Month: Pressed Flower Bookmark Workshop",
+    "startDate": "2026-03-05",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "3:00 PM",
+    "location": "Goldfeild Room, Lied Library",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12117404"
+  },
+  {
+    "name": "Study Breakers - Karaoke ",
+    "startDate": "2026-03-05",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "4:00 PM",
+    "location": "UNLV SSC-A 301",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025533"
+  },
+  {
+    "name": "OSINT Workshop: Soda Pop",
+    "startDate": "2026-03-05",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "4:00 PM",
+    "location": "CHB-C234",
+    "organization": "WiCyS Student Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12308306"
+  },
+  {
+    "name": "Xiao Jiao Corner",
+    "startDate": "2026-03-05",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "4:30 PM",
+    "location": "Student Union Room 211",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288796"
+  },
+  {
+    "name": "Professional Mixer",
+    "startDate": "2026-03-05",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "5:00 PM",
+    "location": "Greenspun Rm.2212",
+    "organization": "Public Relations Student Society of America, University of Nevada Las Vegas Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12308311"
+  },
+  {
+    "name": "Art Therapy",
+    "startDate": "2026-03-05",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "6:00 PM",
+    "location": "Honors College Lounge",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12284217"
+  },
+  {
+    "name": "Human Trafficking Prevention Club Meeting",
+    "startDate": "2026-03-05",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-05",
+    "endTime": "6:00 PM",
+    "location": "Student Union Room 222",
+    "organization": "Human Trafficking Prevention Club",
+    "link": "https://involvementcenter.unlv.edu/event/12147307"
+  },
+  {
+    "name": "Second General Meeting",
+    "startDate": "2026-03-05",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-05",
+    "endTime": "6:30 PM",
+    "location": "BEH109",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "link": "https://involvementcenter.unlv.edu/event/12308326"
+  },
+  {
+    "name": "Loteria Night",
+    "startDate": "2026-03-05",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-05",
+    "endTime": "7:30 PM",
+    "location": "TBE-A Great Hall",
+    "organization": "Society of Hispanic Professional Engineers",
+    "link": "https://involvementcenter.unlv.edu/event/12265361"
+  },
+  {
+    "name": "General Study Abroad Scholarship Workshop",
+    "startDate": "2026-03-06",
+    "startTime": "10:30 AM",
+    "endDate": "2026-03-06",
+    "endTime": "11:30 AM",
+    "location": "Virtual",
+    "organization": "Office of Study Abroad Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12108920"
+  },
+  {
+    "name": "DASH - Meal Prep Shift ONLY",
+    "startDate": "2026-03-06",
+    "startTime": "11:15 AM",
+    "endDate": "2026-03-06",
+    "endTime": "12:45 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12254594"
+  },
+  {
+    "name": "Nevada NASA Space Grant and NASA Opportunities Informational Meeting",
+    "startDate": "2026-03-06",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-06",
+    "endTime": "1:00 PM",
+    "location": "BPB 217 (Bigelow Physics Building)",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12308334"
+  },
+  {
+    "name": "Chapter Meeting",
+    "startDate": "2026-03-06",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-06",
+    "endTime": "1:30 PM",
+    "location": "ASC Room 146",
+    "organization": "Student Support Club for Academic Success",
+    "link": "https://involvementcenter.unlv.edu/event/11948282"
+  },
+  {
+    "name": "Tour Boyd Law School with UNLV PAD!",
+    "startDate": "2026-03-06",
+    "startTime": "2:30 PM",
+    "endDate": "2026-03-06",
+    "endTime": "3:30 PM",
+    "location": "William S. Boyd School of Law",
+    "organization": "Phi Alpha Delta Pre-Law",
+    "link": "https://involvementcenter.unlv.edu/event/12308314"
+  },
+  {
+    "name": "DASH - Delivery Shift ONLY",
+    "startDate": "2026-03-06",
+    "startTime": "12:45 PM",
+    "endDate": "2026-03-06",
+    "endTime": "4:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12254595"
+  },
+  {
+    "name": "Grad Rebel Ready series: Annotation Workshop",
+    "startDate": "2026-03-06",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-06",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "Black Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12308341"
+  },
+  {
+    "name": "Nevada Reading Week 2026",
+    "startDate": "2026-03-02",
+    "startTime": "12:00 AM",
+    "endDate": "2026-03-06",
+    "endTime": "5:00 PM",
+    "location": "Various locations in-person and virtual options",
+    "organization": "College of Education Alumni Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12146488"
+  },
+  {
+    "name": "UASWS/Phi Alpha Monthly Meeting - March",
+    "startDate": "2026-03-06",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-06",
+    "endTime": "7:30 PM",
+    "location": "Student Union 209 ",
+    "organization": "Phi Alpha Delta (Social Work)",
+    "link": "https://involvementcenter.unlv.edu/event/12216149"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-03-06",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-06",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063323"
+  },
+  {
+    "name": "Community in Action: Pick Up Your City with UNLVolunteers X PickitupLv ",
+    "startDate": "2026-03-07",
+    "startTime": "7:30 AM",
+    "endDate": "2026-03-07",
+    "endTime": "11:00 AM",
+    "location": "UNLV Student Union- Eating Bar",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12252816"
+  },
+  {
+    "name": " \u201cBrewed for Black Brilliance, Pour Into You\u201d Coffee Meet Up",
+    "startDate": "2026-03-07",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-07",
+    "endTime": "1:00 PM",
+    "location": "UNLV Student Union Starbucks",
+    "organization": "Black Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12308338"
+  },
+  {
+    "name": "Rang Barse 2026",
+    "startDate": "2026-03-07",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-07",
+    "endTime": "2:00 PM",
+    "location": "Academic Mall A",
+    "organization": "Indian Students Association Maitri",
+    "link": "https://involvementcenter.unlv.edu/event/12308344"
+  },
+  {
+    "name": "Building a Beloved Brand: Caf\u00e9 Lola",
+    "startDate": "2026-03-09",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-09",
+    "endTime": "9:00 AM",
+    "location": "Cafe Lola",
+    "organization": "The Hospitality Collective",
+    "link": "https://involvementcenter.unlv.edu/event/12201519"
+  },
+  {
+    "name": "Xiao Jiao Corner",
+    "startDate": "2026-03-09",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-09",
+    "endTime": "4:00 PM",
+    "location": "Student Union Room 211",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288797"
+  },
+  {
+    "name": "Sigma Thrift Table ",
+    "startDate": "2026-03-09",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-09",
+    "endTime": "5:00 PM",
+    "location": "Free Speech ",
+    "organization": "Phi Beta Sigma Fraternity Incorporated",
+    "link": "https://involvementcenter.unlv.edu/event/12318384"
+  },
+  {
+    "name": "Self-care in Action ",
+    "startDate": "2026-03-09",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-09",
+    "endTime": "7:30 PM",
+    "location": "Rebel Learning Lounge",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12309440"
+  },
+  {
+    "name": "Honors Talent Show ",
+    "startDate": "2026-03-09",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-09",
+    "endTime": "8:30 PM",
+    "location": "RLL 101",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12222866"
+  },
+  {
+    "name": "Note-Taking Workshop",
+    "startDate": "2026-03-10",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12224850"
+  },
+  {
+    "name": "ALPFA Mercado",
+    "startDate": "2026-03-10",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-10",
+    "endTime": "2:00 PM",
+    "location": "Free Speech Walk",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12318391"
+  },
+  {
+    "name": "Thriving Authentically \u2013 Women\u2019s Professional Panel",
+    "startDate": "2026-03-10",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "3:00 PM",
+    "location": "Student Union Ballroom A",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12299374"
+  },
+  {
+    "name": "Barre to Mocktails: Move, Learn, Connect",
+    "startDate": "2026-03-10",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "3:00 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Campus Recreational Services",
+    "link": "https://involvementcenter.unlv.edu/event/12260322"
+  },
+  {
+    "name": "FYE: Ready, Set, Register!",
+    "startDate": "2026-03-10",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "4:00 PM",
+    "location": "SSC-C",
+    "organization": "First-Year Experience",
+    "link": "https://involvementcenter.unlv.edu/event/11284075"
+  },
+  {
+    "name": "Career Support - Getting the Right Application Materials!",
+    "startDate": "2026-03-10",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12310884"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-10",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-10",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131462"
+  },
+  {
+    "name": "Workshop 5: Power and Safety",
+    "startDate": "2026-03-10",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-10",
+    "endTime": "6:30 PM",
+    "location": "TBE B 172",
+    "organization": "UNLV Rebel Robotics",
+    "link": "https://involvementcenter.unlv.edu/event/12325329"
+  },
+  {
+    "name": "AANHPI Career Panel \u2013 Hosted by UNLV ROAR",
+    "startDate": "2026-03-10",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "8:30 PM",
+    "location": "Advanced Engineering Building (AEB) 130 - Flexitorium",
+    "organization": "Raising Our AANHPI Rights",
+    "link": "https://involvementcenter.unlv.edu/event/12318382"
+  },
+  {
+    "name": "Tuesday kick! (NEW LOCATION)",
+    "startDate": "2026-03-10",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-10",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063314"
+  },
+  {
+    "name": "Women's Community Fair",
+    "startDate": "2026-03-10",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-10",
+    "endTime": "9:00 PM",
+    "location": "Student Union 208 B&C",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12326763"
+  },
+  {
+    "name": "SORCE Workshop: Financial Literacy ",
+    "startDate": "2026-03-11",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "2:00 PM",
+    "location": "SORCE Room SU 305",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12291017"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-03-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054647"
+  },
+  {
+    "name": "German Club Fundraiser",
+    "startDate": "2026-03-11",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-11",
+    "endTime": "2:00 PM",
+    "location": "Free Speech",
+    "organization": "UNLV German Club",
+    "link": "https://involvementcenter.unlv.edu/event/12308346"
+  },
+  {
+    "name": "Wellness Series: Rebel Refresh",
+    "startDate": "2026-03-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12254612"
+  },
+  {
+    "name": "Vision Board making",
+    "startDate": "2026-03-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "3:00 PM",
+    "location": "Frank and Estella Beam Hall (Room BEH 239)",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12308310"
+  },
+  {
+    "name": "Diamond Painting Crafternoon",
+    "startDate": "2026-03-11",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "3:30 PM",
+    "location": "Student Union 316",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/12301361"
+  },
+  {
+    "name": "Communication Skills Workshop",
+    "startDate": "2026-03-11",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12308200"
+  },
+  {
+    "name": "Brains Before Burnout",
+    "startDate": "2026-03-11",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "5:00 PM",
+    "location": "UNLV Campus: LLB Room 1291",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12325338"
+  },
+  {
+    "name": "Women in Law Panel",
+    "startDate": "2026-03-11",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "6:00 PM",
+    "location": "HOS 382",
+    "organization": "Business Law Association of UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12318390"
+  },
+  {
+    "name": "Web Application Security Workshop",
+    "startDate": "2026-03-11",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "6:00 PM",
+    "location": "CHB-C 234 - Layer Zero Lab",
+    "organization": "Layer_Zero",
+    "link": "https://involvementcenter.unlv.edu/event/12320653"
+  },
+  {
+    "name": "Selling Yourself: How to write stellar cover letters and personal statements ",
+    "startDate": "2026-03-11",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "6:30 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025605"
+  },
+  {
+    "name": "How to Meal Prep",
+    "startDate": "2026-03-11",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-11",
+    "endTime": "7:00 PM",
+    "location": "BEH 103",
+    "organization": "Girl Gains UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12328733"
+  },
+  {
+    "name": "Stand Out on Paper: Own Your Resume & Cover Letter",
+    "startDate": "2026-03-11",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "7:00 PM",
+    "location": "Online",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12328920"
+  },
+  {
+    "name": "March is for Blooming",
+    "startDate": "2026-03-11",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-11",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834669"
+  },
+  {
+    "name": "Newman Night: Importance of Reconciliation ",
+    "startDate": "2026-03-11",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-11",
+    "endTime": "9:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/12230301"
+  },
+  {
+    "name": "Coffee with Karly ",
+    "startDate": "2026-03-12",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-12",
+    "endTime": "11:00 AM",
+    "location": "SU 316",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11360687"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-12",
+    "startTime": "11:30 AM",
+    "endDate": "2026-03-12",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131438"
+  },
+  {
+    "name": "Advising #3- Spring 26 Success Series ",
+    "startDate": "2026-03-12",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "3:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12272960"
+  },
+  {
+    "name": "Paint Away Stress",
+    "startDate": "2026-03-12",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "3:00 PM",
+    "location": "SU 208A",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12146641"
+  },
+  {
+    "name": "Brew Tea Social",
+    "startDate": "2026-03-12",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "3:30 PM",
+    "location": "Brew Tea Bar",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12325337"
+  },
+  {
+    "name": "Spring 26 Planting Day",
+    "startDate": "2026-03-12",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "4:00 PM",
+    "location": "UNLV Community Garden",
+    "organization": "Rebel Roots",
+    "link": "https://involvementcenter.unlv.edu/event/12328155"
+  },
+  {
+    "name": "Narcan Training",
+    "startDate": "2026-03-12",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "4:00 PM",
+    "location": "SU 209",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12277659"
+  },
+  {
+    "name": "French Club Meeting ",
+    "startDate": "2026-03-12",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "4:30 PM",
+    "location": "BEH 119 ",
+    "organization": "French Club",
+    "link": "https://involvementcenter.unlv.edu/event/12329668"
+  },
+  {
+    "name": "Guest Speaker: Dr. Lina Nih's Research on the Future of Stroke Recovery and Neural Repair",
+    "startDate": "2026-03-12",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-12",
+    "endTime": "7:00 PM",
+    "location": "BEH241",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "link": "https://involvementcenter.unlv.edu/event/12328153"
+  },
+  {
+    "name": "Rebel Vets Spring Break Mixer - Thu, March 12th - RSVP!",
+    "startDate": "2026-03-12",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-12",
+    "endTime": "9:00 PM",
+    "location": "The Gramercy",
+    "organization": "Rebel Vets Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12273071"
+  },
+  {
+    "name": "Black Excellence Expo",
+    "startDate": "2026-03-12",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-12",
+    "endTime": "9:00 PM",
+    "location": "CHB C116",
+    "organization": "Black Student Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12308351"
+  },
+  {
+    "name": "K-pop Club Dance Team Audition",
+    "startDate": "2026-03-13",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-13",
+    "endTime": "5:00 PM",
+    "location": "SRWC Room 2015",
+    "organization": "K-pop Club",
+    "link": "https://involvementcenter.unlv.edu/event/12308316"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-03-13",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-13",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063324"
+  },
+  {
+    "name": "Habitat Restoration at Desert National Wildlife Refuge",
+    "startDate": "2026-03-15",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-15",
+    "endTime": "10:00 AM",
+    "location": "Corn Creek Visitor Center",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12320641"
+  },
+  {
+    "name": "Communication Skills Workshop",
+    "startDate": "2026-03-18",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-18",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12308201"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-03-20",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-20",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063325"
+  },
+  {
+    "name": "AB Trip: Exploratory Service Trip in San Francisco, CA",
+    "startDate": "2026-03-15",
+    "startTime": "12:00 AM",
+    "endDate": "2026-03-20",
+    "endTime": "11:45 PM",
+    "location": "San Francisco, CA",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11325775"
+  },
+  {
+    "name": "Money Matters #1- Spring 26 Success Series ",
+    "startDate": "2026-03-23",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-23",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12273238"
+  },
+  {
+    "name": "Fellowship & Connection: Navigating Conflicts in Friendship",
+    "startDate": "2026-03-24",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-24",
+    "endTime": "12:30 PM",
+    "location": "SU 228",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12246719"
+  },
+  {
+    "name": "Personal Growth Series 3: Radical Self-Compassion & Rest ",
+    "startDate": "2026-03-24",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-24",
+    "endTime": "2:00 PM",
+    "location": "UNLV SU 207",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12025893"
+  },
+  {
+    "name": "Mindfulness Arts and Crafts Corner",
+    "startDate": "2026-03-24",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-24",
+    "endTime": "3:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131658"
+  },
+  {
+    "name": "SORCE Pop Up: Paint & Sip\ud83c\udfa8",
+    "startDate": "2026-03-24",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-24",
+    "endTime": "5:00 PM",
+    "location": "Scarlet Sage",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12290990"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-24",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-24",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131463"
+  },
+  {
+    "name": "College of Education Alumni & Friends Virtual Trivia",
+    "startDate": "2026-03-24",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-24",
+    "endTime": "6:00 PM",
+    "location": "Online",
+    "organization": "College of Education Alumni Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12239554"
+  },
+  {
+    "name": "Narcare General Meeting",
+    "startDate": "2026-03-24",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-24",
+    "endTime": "6:30 PM",
+    "location": "HOS 382",
+    "organization": "Narcare",
+    "link": "https://involvementcenter.unlv.edu/event/12230323"
+  },
+  {
+    "name": "Women\u2019s Preventative Health Workshop!",
+    "startDate": "2026-03-24",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-24",
+    "endTime": "7:00 PM",
+    "location": "CHB A112",
+    "organization": "Alpha Epsilon Delta",
+    "link": "https://involvementcenter.unlv.edu/event/12355759"
+  },
+  {
+    "name": "Workshop 6: Radio Transmitters",
+    "startDate": "2026-03-24",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-24",
+    "endTime": "7:00 PM",
+    "location": "TBE B 172",
+    "organization": "UNLV Rebel Robotics",
+    "link": "https://involvementcenter.unlv.edu/event/12358386"
+  },
+  {
+    "name": "3rd General Meeting ",
+    "startDate": "2026-03-24",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-24",
+    "endTime": "7:30 PM",
+    "location": "Student Union Room #213",
+    "organization": "Future Latinos in Medicine",
+    "link": "https://involvementcenter.unlv.edu/event/12361102"
+  },
+  {
+    "name": "Tuesday kick! (NEW LOCATION)",
+    "startDate": "2026-03-24",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-24",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063315"
+  },
+  {
+    "name": "The Search for Substance: Navigating Meaningful Career Paths",
+    "startDate": "2026-03-25",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12347090"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-03-25",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054648"
+  },
+  {
+    "name": "Depression 101: Mood Boosting Tips and Tricks",
+    "startDate": "2026-03-25",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "2:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12071414"
+  },
+  {
+    "name": "Art Therapy Workshop",
+    "startDate": "2026-03-25",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "3:00 PM",
+    "location": "Student Union (SU) 213",
+    "organization": "The Intersection",
+    "link": "https://involvementcenter.unlv.edu/event/12340425"
+  },
+  {
+    "name": "\"Interpersonal Communication: Say What You Mean\"",
+    "startDate": "2026-03-25",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "3:00 PM",
+    "location": "BEH 240",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12089976"
+  },
+  {
+    "name": "Shared Stories, Shared Healing",
+    "startDate": "2026-03-25",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "3:30 PM",
+    "location": "Marjorie Barrick Museum of Art",
+    "organization": "The Care Center",
+    "link": "https://involvementcenter.unlv.edu/event/12321446"
+  },
+  {
+    "name": "Communication Skills Workshop",
+    "startDate": "2026-03-25",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12308202"
+  },
+  {
+    "name": "Service Crafternoon with UNLVolunteers",
+    "startDate": "2026-03-25",
+    "startTime": "1:30 PM",
+    "endDate": "2026-03-25",
+    "endTime": "4:30 PM",
+    "location": "Student Union Room 316",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12310244"
+  },
+  {
+    "name": "Craft Social",
+    "startDate": "2026-03-25",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "5:00 PM",
+    "location": "UNLV Campus: CHB C230",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12325335"
+  },
+  {
+    "name": "Step Up and Stock Up Drive - With Pi Zeta",
+    "startDate": "2026-03-25",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "5:00 PM",
+    "location": "CHB Walkway",
+    "organization": "Phi Beta Sigma Fraternity Incorporated",
+    "link": "https://involvementcenter.unlv.edu/event/12358398"
+  },
+  {
+    "name": "Buddy Match Party",
+    "startDate": "2026-03-25",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "5:15 PM",
+    "location": "College of Education - Learning Garden",
+    "organization": "Best Buddies",
+    "link": "https://involvementcenter.unlv.edu/event/12355764"
+  },
+  {
+    "name": "Internship Mixer",
+    "startDate": "2026-03-25",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "5:30 PM",
+    "location": "HOS 382",
+    "organization": "College of Liberal Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12224266"
+  },
+  {
+    "name": "Accessing Academia Panel & Town Hall",
+    "startDate": "2026-03-25",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-25",
+    "endTime": "6:00 PM",
+    "location": "Student Union 218",
+    "organization": "UNLV Grad Pride Alliance",
+    "link": "https://involvementcenter.unlv.edu/event/12147293"
+  },
+  {
+    "name": "Game Night",
+    "startDate": "2026-03-25",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-25",
+    "endTime": "6:30 PM",
+    "location": "CHB C124",
+    "organization": "UNLV UndocuNetwork",
+    "link": "https://involvementcenter.unlv.edu/event/12355765"
+  },
+  {
+    "name": "Open Mic Night",
+    "startDate": "2026-03-25",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "7:00 PM",
+    "location": "Pida Plaza ",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/11316510"
+  },
+  {
+    "name": "Leading Yourself First with SHPE",
+    "startDate": "2026-03-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "7:30 PM",
+    "location": "SU 208C",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12355763"
+  },
+  {
+    "name": "A Fragrant Spring Awakening",
+    "startDate": "2026-03-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834671"
+  },
+  {
+    "name": "K-POP Random Play Dance Event",
+    "startDate": "2026-03-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-25",
+    "endTime": "8:00 PM",
+    "location": "William F. Harrah College of Hospitality",
+    "organization": "K-pop Club",
+    "link": "https://involvementcenter.unlv.edu/event/12355766"
+  },
+  {
+    "name": "Caribbean Students Association~ Sounds of the Caribbean: Leadership & Activism through Conscious Reggae",
+    "startDate": "2026-03-25",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-25",
+    "endTime": "8:30 PM",
+    "location": "SU 228 - SCE Lounge",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/12314832"
+  },
+  {
+    "name": "Newman Bar-Style Catholic Trivia",
+    "startDate": "2026-03-25",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-25",
+    "endTime": "9:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/12230297"
+  },
+  {
+    "name": "Crimson Conversations",
+    "startDate": "2026-03-25",
+    "startTime": "7:13 PM",
+    "endDate": "2026-03-25",
+    "endTime": "9:13 PM",
+    "location": "Student Union 205",
+    "organization": "Delta Sigma Theta Sorority, Inc.",
+    "link": "https://involvementcenter.unlv.edu/event/12355768"
+  },
+  {
+    "name": "March Bird Walk!",
+    "startDate": "2026-03-26",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-26",
+    "endTime": "10:00 AM",
+    "location": "Flashlight",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12063304"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-26",
+    "startTime": "11:30 AM",
+    "endDate": "2026-03-26",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131439"
+  },
+  {
+    "name": " Rebels Rising Up Day: Milestone Preview Preview",
+    "startDate": "2026-03-26",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "First-Year Experience",
+    "link": "https://involvementcenter.unlv.edu/event/12314090"
+  },
+  {
+    "name": "SORCE Workshop: Conflict Resolution",
+    "startDate": "2026-03-26",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "1:30 PM",
+    "location": "SORCE Room SU 305",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12291024"
+  },
+  {
+    "name": "Snacks and Skills : Digital Advocacy",
+    "startDate": "2026-03-26",
+    "startTime": "2:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "3:00 PM",
+    "location": "SU 219",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11227689"
+  },
+  {
+    "name": "Xiao Jiao Corner",
+    "startDate": "2026-03-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "4:00 PM",
+    "location": "Student Union Room 211",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288798"
+  },
+  {
+    "name": "CyberSips",
+    "startDate": "2026-03-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "4:00 PM",
+    "location": "CHB-C234",
+    "organization": "WiCyS Student Chapter",
+    "link": "https://involvementcenter.unlv.edu/event/12363663"
+  },
+  {
+    "name": "\ud83c\udf3b | RTSO's Spring Success Session!",
+    "startDate": "2026-03-26",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-26",
+    "endTime": "6:00 PM",
+    "location": "Student Union - Green Room",
+    "organization": "Rebel Transfer Student Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12355762"
+  },
+  {
+    "name": "The Wildlife Society Career Talk: Working as a Native Fish Biologist with the Nevada Department of Wildlife",
+    "startDate": "2026-03-26",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-26",
+    "endTime": "6:30 PM",
+    "location": "WHI 197",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12278117"
+  },
+  {
+    "name": "The Wildlife Society General Meeting \u2013 March 26 (Following Career Talk)",
+    "startDate": "2026-03-26",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-26",
+    "endTime": "7:00 PM",
+    "location": "WHI 197",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12355770"
+  },
+  {
+    "name": "Community in Action: The Just One Project ",
+    "startDate": "2026-03-27",
+    "startTime": "8:00 AM",
+    "endDate": "2026-03-27",
+    "endTime": "11:30 AM",
+    "location": "Student Union Eating Bar",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12325330"
+  },
+  {
+    "name": "SPS Guest Lecture",
+    "startDate": "2026-03-27",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-27",
+    "endTime": "1:00 PM",
+    "location": "BPB 217 (Bigelow Physics Building) UNLV Campus",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12371727"
+  },
+  {
+    "name": "Gardening Social",
+    "startDate": "2026-03-27",
+    "startTime": "11:30 AM",
+    "endDate": "2026-03-27",
+    "endTime": "1:00 PM",
+    "location": "UNLV Garden",
+    "organization": "The Scientista Foundation Chapter at UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12325333"
+  },
+  {
+    "name": "Courageous Dialogue Workshop",
+    "startDate": "2026-03-27",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-27",
+    "endTime": "1:30 PM",
+    "location": "Student Union Room 219",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/11380743"
+  },
+  {
+    "name": "WQP: Women's Leadership Summit (Day 2)",
+    "startDate": "2026-03-27",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-27",
+    "endTime": "2:00 PM",
+    "location": "RLL 101",
+    "organization": "College of Liberal Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12217593"
+  },
+  {
+    "name": "Gaming with Seniors",
+    "startDate": "2026-03-27",
+    "startTime": "12:00 PM",
+    "endDate": "2026-03-27",
+    "endTime": "4:00 PM",
+    "location": "UNLV Student Union Room 316",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12355760"
+  },
+  {
+    "name": "Balance & Breathe",
+    "startDate": "2026-03-27",
+    "startTime": "5:00 PM",
+    "endDate": "2026-03-27",
+    "endTime": "6:00 PM",
+    "location": "Student Recreation & Wellness Center (SRWC) - room 2015",
+    "organization": "Monarch Program",
+    "link": "https://involvementcenter.unlv.edu/event/12340308"
+  },
+  {
+    "name": "General Membership Meeting",
+    "startDate": "2026-03-27",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-27",
+    "endTime": "6:30 PM",
+    "location": "Online",
+    "organization": "Black Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12308339"
+  },
+  {
+    "name": "Friday kick!",
+    "startDate": "2026-03-27",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-27",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063326"
+  },
+  {
+    "name": "Care Center x Spotlight Poetry: Open Mic",
+    "startDate": "2026-03-28",
+    "startTime": "9:00 AM",
+    "endDate": "2026-03-28",
+    "endTime": "11:00 AM",
+    "location": "Velvet Vine Wine",
+    "organization": "The Care Center",
+    "link": "https://involvementcenter.unlv.edu/event/12321502"
+  },
+  {
+    "name": "VOLUNTEER OPPORTUNITY \u2013 UNLV REBEL VETS COMMUNITY SERVICE EVENT",
+    "startDate": "2026-03-28",
+    "startTime": "5:15 AM",
+    "endDate": "2026-03-28",
+    "endTime": "11:30 AM",
+    "location": "MT CHARLESTON",
+    "organization": "Rebel Vets Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12355767"
+  },
+  {
+    "name": "Women's History Mindful Nature Walk ",
+    "startDate": "2026-03-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-03-28",
+    "endTime": "12:00 PM",
+    "location": "Sunset Park Trail",
+    "organization": "Girl Gains UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12363745"
+  },
+  {
+    "name": "March To The Ballot",
+    "startDate": "2026-03-30",
+    "startTime": "11:00 AM",
+    "endDate": "2026-03-30",
+    "endTime": "3:00 PM",
+    "location": "Pida Plaza",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12332399"
+  },
+  {
+    "name": "Xiao Jiao Corner",
+    "startDate": "2026-03-30",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-30",
+    "endTime": "4:00 PM",
+    "location": "Student Union Room 211",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288799"
+  },
+  {
+    "name": "Be Kind To Your Mind: A Mental Health Panel",
+    "startDate": "2026-03-31",
+    "startTime": "1:00 PM",
+    "endDate": "2026-03-31",
+    "endTime": "2:30 PM",
+    "location": "RLL 101",
+    "organization": "College of Liberal Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12217589"
+  },
+  {
+    "name": "Discovering Me & Self-Care",
+    "startDate": "2026-03-31",
+    "startTime": "3:00 PM",
+    "endDate": "2026-03-31",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12257294"
+  },
+  {
+    "name": "Workshop: Media Literacy ",
+    "startDate": "2026-03-31",
+    "startTime": "4:00 PM",
+    "endDate": "2026-03-31",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12026127"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-03-31",
+    "startTime": "4:30 PM",
+    "endDate": "2026-03-31",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131464"
+  },
+  {
+    "name": "FLM Medical Student Panel ",
+    "startDate": "2026-03-31",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-31",
+    "endTime": "7:30 PM",
+    "location": "CHB C124 ",
+    "organization": "Future Latinos in Medicine",
+    "link": "https://involvementcenter.unlv.edu/event/12359742"
+  },
+  {
+    "name": "Women In Sports Panel",
+    "startDate": "2026-03-31",
+    "startTime": "6:00 PM",
+    "endDate": "2026-03-31",
+    "endTime": "8:00 PM",
+    "location": "Philip J. Cohen Theatre @ UNLV Student Union",
+    "organization": "UNLV Formula Racing",
+    "link": "https://involvementcenter.unlv.edu/event/12367830"
+  },
+  {
+    "name": "Easter Meeting - HOP and Egg Painting",
+    "startDate": "2026-03-31",
+    "startTime": "5:30 PM",
+    "endDate": "2026-03-31",
+    "endTime": "8:00 PM",
+    "location": "Student Union Room 207",
+    "organization": "Cinefemmes",
+    "link": "https://involvementcenter.unlv.edu/event/12325319"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-03-31",
+    "startTime": "6:30 PM",
+    "endDate": "2026-03-31",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12063316"
+  },
+  {
+    "name": "Rebels Mens Spot ",
+    "startDate": "2026-04-01",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "2:00 PM",
+    "location": "The Coaching Spot (SSC-A, Rm 254)",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12365348"
+  },
+  {
+    "name": "Speakeasy Series: Speak your SUCCESS",
+    "startDate": "2026-04-01",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "2:30 PM",
+    "location": "Student Union Room 228",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12307998"
+  },
+  {
+    "name": "Spring Mixer",
+    "startDate": "2026-04-01",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-01",
+    "endTime": "6:30 PM",
+    "location": "BEH104",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "link": "https://involvementcenter.unlv.edu/event/12385535"
+  },
+  {
+    "name": "Stand Out in the Room: Own Your Professionalism",
+    "startDate": "2026-04-01",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "7:00 PM",
+    "location": "Online",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12330140"
+  },
+  {
+    "name": "Executive Debate ",
+    "startDate": "2026-04-01",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-01",
+    "endTime": "7:30 PM",
+    "location": "SU Ballroom A",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12360445"
+  },
+  {
+    "name": "Fine Arts Mixer",
+    "startDate": "2026-04-01",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "8:00 PM",
+    "location": "FDH 101",
+    "organization": "American Institute of Graphic Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12371791"
+  },
+  {
+    "name": "April Fools",
+    "startDate": "2026-04-01",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834672"
+  },
+  {
+    "name": "Leadership Link Up ~ Leading Through Change - Shinobi Style",
+    "startDate": "2026-04-02",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-02",
+    "endTime": "12:00 PM",
+    "location": "SU 219",
+    "organization": "Leadership Engagement and Development Team",
+    "link": "https://involvementcenter.unlv.edu/event/11227699"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-04-02",
+    "startTime": "11:30 AM",
+    "endDate": "2026-04-02",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131440"
+  },
+  {
+    "name": "LinkedIn Bootcamp",
+    "startDate": "2026-04-02",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "1:00 PM",
+    "location": "Beverly Rogers Literature and Law Building (RLL) 101",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12347116"
+  },
+  {
+    "name": "Donut Worry, We Care! Care Center Open House",
+    "startDate": "2026-04-02",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "3:00 PM",
+    "location": "Student Services Complex Building A | Room: 255",
+    "organization": "The Care Center",
+    "link": "https://involvementcenter.unlv.edu/event/12391513"
+  },
+  {
+    "name": "VIRTUAL Success Series: Bouncing back from Burnout",
+    "startDate": "2026-04-02",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "3:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12335682"
+  },
+  {
+    "name": "Between the Lines:  Celebrating Community: Henna & Boba",
+    "startDate": "2026-04-02",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "3:00 PM",
+    "location": "SU Ballroom A",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12146930"
+  },
+  {
+    "name": "Human Trafficking Prevention Club Meeting",
+    "startDate": "2026-04-02",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "6:00 PM",
+    "location": "Student Union Room 222",
+    "organization": "Human Trafficking Prevention Club",
+    "link": "https://involvementcenter.unlv.edu/event/12147308"
+  },
+  {
+    "name": "Thai Cultural Celebration",
+    "startDate": "2026-04-02",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "6:00 PM",
+    "location": "SU 208A",
+    "organization": "Food Tasting Club",
+    "link": "https://involvementcenter.unlv.edu/event/12371785"
+  },
+  {
+    "name": "Dumpling Making",
+    "startDate": "2026-04-02",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "6:00 PM",
+    "location": "Online",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12385529"
+  },
+  {
+    "name": "Gameshow Night",
+    "startDate": "2026-04-02",
+    "startTime": "7:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "9:00 PM",
+    "location": "SU Courtyard",
+    "organization": "Rebel Events Board (REB)",
+    "link": "https://involvementcenter.unlv.edu/event/12382523"
+  },
+  {
+    "name": "RAWR Spring Splash",
+    "startDate": "2026-04-02",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-02",
+    "endTime": "10:00 PM",
+    "location": "Serene Vegas Boutique Hotel",
+    "organization": "Rebel Anthropomorphic Works and Recreation",
+    "link": "https://involvementcenter.unlv.edu/event/12371860"
+  },
+  {
+    "name": "Chapter Meeting",
+    "startDate": "2026-04-03",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-03",
+    "endTime": "1:30 PM",
+    "location": "ASC Room 146",
+    "organization": "Student Support Club for Academic Success",
+    "link": "https://involvementcenter.unlv.edu/event/11948283"
+  },
+  {
+    "name": "Field Trip: St. Thomas, NV",
+    "startDate": "2026-04-03",
+    "startTime": "8:00 AM",
+    "endDate": "2026-04-03",
+    "endTime": "3:00 PM",
+    "location": "UNLV",
+    "organization": "UNLV Anthropology Society",
+    "link": "https://involvementcenter.unlv.edu/event/12308328"
+  },
+  {
+    "name": "Sikolohiyang Pilipino: Filipino Psychology",
+    "startDate": "2026-04-03",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-03",
+    "endTime": "3:30 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12397551"
+  },
+  {
+    "name": "Comics for Kids",
+    "startDate": "2026-04-03",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-03",
+    "endTime": "3:30 PM",
+    "location": "Student Union ",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12318389"
+  },
+  {
+    "name": "Conference Proposal Writing Workshop",
+    "startDate": "2026-04-03",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-03",
+    "endTime": "5:00 PM",
+    "location": "Online",
+    "organization": "Black Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12355769"
+  },
+  {
+    "name": "Meet The Sigmas",
+    "startDate": "2026-04-03",
+    "startTime": "7:14 PM",
+    "endDate": "2026-04-03",
+    "endTime": "8:30 PM",
+    "location": "SU 218",
+    "organization": "Phi Beta Sigma Fraternity Incorporated",
+    "link": "https://involvementcenter.unlv.edu/event/12385136"
+  },
+  {
+    "name": "SOTA 5th Annual Showcase of Meaningful Occupations \u2013 UNLV OTD",
+    "startDate": "2026-04-04",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-04",
+    "endTime": "7:00 PM",
+    "location": "Philip J. Cohen Theatre (Student Union) ",
+    "organization": "Student Occupational Therapy Association",
+    "link": "https://involvementcenter.unlv.edu/event/12367871"
+  },
+  {
+    "name": "Others 2026 (Easter Sunday)",
+    "startDate": "2026-04-05",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-05",
+    "endTime": "1:00 PM",
+    "location": "American Missionary Church - Las Vegas",
+    "organization": "Y-Elements @ UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12389170"
+  },
+  {
+    "name": "Feed My Sheep",
+    "startDate": "2026-04-05",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-05",
+    "endTime": "6:00 PM",
+    "location": "UNLV Newman Center",
+    "organization": "Catholic Rebels",
+    "link": "https://involvementcenter.unlv.edu/event/11729308"
+  },
+  {
+    "name": "Undoing & Reclaiming: Filipino Americans and Colonial Mentality",
+    "startDate": "2026-04-06",
+    "startTime": "2:30 PM",
+    "endDate": "2026-04-06",
+    "endTime": "4:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12397525"
+  },
+  {
+    "name": "Queer Mini Con - Queer Futurism: Radical Hope",
+    "startDate": "2026-04-07",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-07",
+    "endTime": "3:00 PM",
+    "location": "Marjorie Barrick Museum",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12343712"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-04-07",
+    "startTime": "4:30 PM",
+    "endDate": "2026-04-07",
+    "endTime": "5:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131465"
+  },
+  {
+    "name": "Student Veteran and First Generation Session in the Library ",
+    "startDate": "2026-04-07",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-07",
+    "endTime": "7:00 PM",
+    "location": "Rhyolite Room, Lied Library",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12367833"
+  },
+  {
+    "name": "Native UNLV Pizza Night (Chapter recruitment & Social gathering) ",
+    "startDate": "2026-04-07",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-07",
+    "endTime": "7:00 PM",
+    "location": "UNLV Hospitality Hall Room 392",
+    "organization": "UNLV Chapter of AISES",
+    "link": "https://involvementcenter.unlv.edu/event/12400359"
+  },
+  {
+    "name": "Tuesday kick!",
+    "startDate": "2026-04-07",
+    "startTime": "6:30 PM",
+    "endDate": "2026-04-07",
+    "endTime": "8:30 PM",
+    "location": "Student Recreation and Wellness Center",
+    "organization": "Rebel Freestyle",
+    "link": "https://involvementcenter.unlv.edu/event/12389269"
+  },
+  {
+    "name": "Allyship in Practice: Supporting Students Impacted by Immigration",
+    "startDate": "2026-04-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-08",
+    "endTime": "12:00 PM",
+    "location": "Student Union (SU) 218",
+    "organization": "Monarch Program",
+    "link": "https://involvementcenter.unlv.edu/event/12340338"
+  },
+  {
+    "name": "Money Matters #2 - Spring 26 Success Series ",
+    "startDate": "2026-04-08",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-08",
+    "endTime": "12:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12273306"
+  },
+  {
+    "name": "Actuarial Workshop",
+    "startDate": "2026-04-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-08",
+    "endTime": "12:00 PM",
+    "location": "SWRC 1020",
+    "organization": "Actuarial Science Club",
+    "link": "https://involvementcenter.unlv.edu/event/12409675"
+  },
+  {
+    "name": "Narcan Training",
+    "startDate": "2026-04-08",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-08",
+    "endTime": "12:00 PM",
+    "location": "SU 213",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12277740"
+  },
+  {
+    "name": "Relaxing Your Mind: Coping With Anxiety",
+    "startDate": "2026-04-08",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12135885"
+  },
+  {
+    "name": "Recovery Curious",
+    "startDate": "2026-04-08",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "2:00 PM",
+    "location": "CAPS SSC-A Suite 143",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12054649"
+  },
+  {
+    "name": "CSUN Spring 2026 Get out the Vote Elections Event - Session 1",
+    "startDate": "2026-04-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-08",
+    "endTime": "3:00 PM",
+    "location": "UNLV",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12332429"
+  },
+  {
+    "name": "Bookmark Making Crafternoon",
+    "startDate": "2026-04-08",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "3:30 PM",
+    "location": "Student Union Room 316",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/12301554"
+  },
+  {
+    "name": "Thrift/Rummage Sale",
+    "startDate": "2026-04-08",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "4:00 PM",
+    "location": "Free Speech",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12410487"
+  },
+  {
+    "name": "Community in Action: Farm Friends ",
+    "startDate": "2026-04-08",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "6:15 PM",
+    "location": "Student Union- 3rd Floor ",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12389248"
+  },
+  {
+    "name": "Workshop: Office Etiquette and Culture ",
+    "startDate": "2026-04-08",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "6:30 PM",
+    "location": "Online",
+    "organization": "CAEO College Programs",
+    "link": "https://involvementcenter.unlv.edu/event/12026184"
+  },
+  {
+    "name": "Hula H\u0101l\u0101wai",
+    "startDate": "2026-04-08",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "7:00 PM",
+    "location": "SRWC 1020 & 2025",
+    "organization": "Student Connection & Engagement",
+    "link": "https://involvementcenter.unlv.edu/event/12381867"
+  },
+  {
+    "name": "Sniff Out The Flu w/ Perfume Club",
+    "startDate": "2026-04-08",
+    "startTime": "6:00 PM",
+    "endDate": "2026-04-08",
+    "endTime": "8:00 PM",
+    "location": "SRWC Room 1020",
+    "organization": "Perfumery Club",
+    "link": "https://involvementcenter.unlv.edu/event/11834673"
+  },
+  {
+    "name": "It's Just Coffee: Athletics at University ",
+    "startDate": "2026-04-09",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-09",
+    "endTime": "11:00 AM",
+    "location": "Student Union Room 316",
+    "organization": "UNLV Alternative Breaks",
+    "link": "https://involvementcenter.unlv.edu/event/11956293"
+  },
+  {
+    "name": "Mindful Moments: Weekly Guided Meditation",
+    "startDate": "2026-04-09",
+    "startTime": "11:30 AM",
+    "endDate": "2026-04-09",
+    "endTime": "12:30 PM",
+    "location": "Health Education Room, SRWC, Room 1502",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12131441"
+  },
+  {
+    "name": "The Competitive Edge: Identifying Your High-Value Skillset In Careers",
+    "startDate": "2026-04-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "Career Services",
+    "link": "https://involvementcenter.unlv.edu/event/12347138"
+  },
+  {
+    "name": "Thrift/Rummage Sale",
+    "startDate": "2026-04-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "2:00 PM",
+    "location": "Free Speech",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12410488"
+  },
+  {
+    "name": "Celebrating Your Latinidad Identities Through Connection and Healing",
+    "startDate": "2026-04-09",
+    "startTime": "1:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "2:00 PM",
+    "location": "BEH 240",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "link": "https://involvementcenter.unlv.edu/event/12308146"
+  },
+  {
+    "name": "SORCE Pop Up: Paint & Sip\ud83c\udfa8",
+    "startDate": "2026-04-09",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "2:00 PM",
+    "location": "Scarlet Sage",
+    "organization": "Student Organization Resource Center",
+    "link": "https://involvementcenter.unlv.edu/event/12290996"
+  },
+  {
+    "name": "CSUN Spring 2026 Get out the Vote Elections Event - Session 2",
+    "startDate": "2026-04-09",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-09",
+    "endTime": "3:00 PM",
+    "location": "UNLV",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12332430"
+  },
+  {
+    "name": "Xiao Jiao Corner",
+    "startDate": "2026-04-09",
+    "startTime": "3:00 PM",
+    "endDate": "2026-04-09",
+    "endTime": "4:00 PM",
+    "location": "Student Union Room 211",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12288800"
+  },
+  {
+    "name": "Paper Roulette",
+    "startDate": "2026-04-10",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-10",
+    "endTime": "1:00 PM",
+    "location": "BPB 217 (Bigelow Physics Building)",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12410495"
+  },
+  {
+    "name": "Breathe in with Obodo",
+    "startDate": "2026-04-10",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-10",
+    "endTime": "1:00 PM",
+    "location": "Student Union",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12371775"
+  },
+  {
+    "name": "Serve & Lead Mini-Con 2026: Taking Flight",
+    "startDate": "2026-04-10",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-10",
+    "endTime": "2:00 PM",
+    "location": "Student Union, Room 208",
+    "organization": "Service Learning & Leadership",
+    "link": "https://involvementcenter.unlv.edu/event/11997970"
+  },
+  {
+    "name": "Panel Discussion: Racial Equity and  Social Justice research  in  the Age of Retrenchment",
+    "startDate": "2026-04-10",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-10",
+    "endTime": "7:00 PM",
+    "location": "Carol C. Harter Classroom Building Complex (CHB)",
+    "organization": "Black Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12389330"
+  },
+  {
+    "name": "Nevada State Leadership & Skills Conference",
+    "startDate": "2026-04-07",
+    "startTime": "7:00 AM",
+    "endDate": "2026-04-10",
+    "endTime": "7:00 PM",
+    "location": "The Row in Reno, NV",
+    "organization": "UNLV Chapter of SkillsUSA",
+    "link": "https://involvementcenter.unlv.edu/event/11679063"
+  },
+  {
+    "name": "Meet the Poodles ",
+    "startDate": "2026-04-10",
+    "startTime": "5:15 PM",
+    "endDate": "2026-04-10",
+    "endTime": "7:30 PM",
+    "location": "Student Union room 209",
+    "organization": "Sigma Gamma Rho Sorority, Inc.",
+    "link": "https://involvementcenter.unlv.edu/event/12410497"
+  },
+  {
+    "name": "WRHC Mixer ",
+    "startDate": "2026-04-10",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-10",
+    "endTime": "8:00 PM",
+    "location": "RLL 101",
+    "organization": "Honors Student Council",
+    "link": "https://involvementcenter.unlv.edu/event/12393451"
+  },
+  {
+    "name": "SPRING 26' CABARET: USE YOUR VOICE",
+    "startDate": "2026-04-10",
+    "startTime": "9:30 PM",
+    "endDate": "2026-04-10",
+    "endTime": "11:00 PM",
+    "location": "Paul Harris Theatre HFA 104",
+    "organization": "The Ware House Theatre",
+    "link": "https://involvementcenter.unlv.edu/event/12328168"
+  },
+  {
+    "name": "Student Parent Community Day",
+    "startDate": "2026-04-11",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-11",
+    "endTime": "11:30 AM",
+    "location": "UNLV/CSUN Preschool",
+    "organization": "Student Parents of UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12355761"
+  },
+  {
+    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area",
+    "startDate": "2026-04-11",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-11",
+    "endTime": "12:00 PM",
+    "location": "Lake Mead National Recreation Area",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12389341"
+  },
+  {
+    "name": "The Farmers Market @ UNLV with the First Generation Club",
+    "startDate": "2026-04-11",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-11",
+    "endTime": "1:00 PM",
+    "location": "UNLV Parking Lot T (Next to the Stan Fulton Building): 4505 South Maryland Pkwy, Las Vegas, NV 89154",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12385524"
+  },
+  {
+    "name": "2026 Intercollegiate Big Day Competition!",
+    "startDate": "2026-04-11",
+    "startTime": "8:00 AM",
+    "endDate": "2026-04-11",
+    "endTime": "2:00 PM",
+    "location": "Clark County Wetlands Park",
+    "organization": "UNLV Birding and Conservation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12363658"
+  },
+  {
     "name": "Thrift/Rummage Sale",
     "startDate": "2026-04-13",
     "startTime": "12:00 PM",
