@@ -1,45 +1,5 @@
 [
   {
-    "name": "Student Parent Community Day",
-    "startDate": "2026-04-11",
-    "startTime": "10:00 AM",
-    "endDate": "2026-04-11",
-    "endTime": "11:30 AM",
-    "location": "UNLV/CSUN Preschool",
-    "organization": "Student Parents of UNLV",
-    "link": "https://involvementcenter.unlv.edu/event/12355761"
-  },
-  {
-    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area",
-    "startDate": "2026-04-11",
-    "startTime": "9:00 AM",
-    "endDate": "2026-04-11",
-    "endTime": "12:00 PM",
-    "location": "Lake Mead National Recreation Area",
-    "organization": "The Wildlife Society ",
-    "link": "https://involvementcenter.unlv.edu/event/12389341"
-  },
-  {
-    "name": "The Farmers Market @ UNLV with the First Generation Club",
-    "startDate": "2026-04-11",
-    "startTime": "11:00 AM",
-    "endDate": "2026-04-11",
-    "endTime": "1:00 PM",
-    "location": "UNLV Parking Lot T (Next to the Stan Fulton Building): 4505 South Maryland Pkwy, Las Vegas, NV 89154",
-    "organization": "1st Generation Club",
-    "link": "https://involvementcenter.unlv.edu/event/12385524"
-  },
-  {
-    "name": "2026 Intercollegiate Big Day Competition!",
-    "startDate": "2026-04-11",
-    "startTime": "8:00 AM",
-    "endDate": "2026-04-11",
-    "endTime": "2:00 PM",
-    "location": "Clark County Wetlands Park",
-    "organization": "UNLV Birding and Conservation Club",
-    "link": "https://involvementcenter.unlv.edu/event/12363658"
-  },
-  {
     "name": "Thrift/Rummage Sale",
     "startDate": "2026-04-13",
     "startTime": "12:00 PM",
@@ -318,16 +278,6 @@
     "location": "Health Education Room 1502, 1st Floor of Student Recreation & Wellness Center",
     "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
     "link": "https://involvementcenter.unlv.edu/event/12277894"
-  },
-  {
-    "name": "Ruby Duncan Educational ",
-    "startDate": "2026-04-16",
-    "startTime": "4:00 PM",
-    "endDate": "2026-04-16",
-    "endTime": "6:30 PM",
-    "location": "SRWC Room 1010",
-    "organization": "Black Social Workers Society",
-    "link": "https://involvementcenter.unlv.edu/event/12172134"
   },
   {
     "name": "Card Making for Charity",
