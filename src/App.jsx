@@ -1,13 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import StatusPill from "./components/StatusPill";
 import { bridgeTypes, pingExtension, requestExtensionState, subscribeToBridge } from "./lib/bridge";
 
 const DATA_FILES = [
-  { key: "academicCalendar", label: "Academic Calendar", path: "/data/academiccalendar_list.json" },
-  { key: "unlvCalendar", label: "UNLV Calendar", path: "/data/unlvcalendar_list.json" },
-  { key: "involvementCenter", label: "Involvement Center", path: "/data/involvementcenter_list.json" },
-  { key: "rebelCoverage", label: "Rebel Sports", path: "/data/rebelcoverage_list.json" },
+  {
+    key: "academicCalendar",
+    label: "Academic Calendar",
+    path: "/data/academiccalendar_list.json",
+    sourceUrl: "https://www.unlv.edu/students/academic-calendar",
+  },
+  {
+    key: "unlvCalendar",
+    label: "UNLV Calendar",
+    path: "/data/unlvcalendar_list.json",
+    sourceUrl: "https://www.unlv.edu/calendar",
+  },
+  {
+    key: "involvementCenter",
+    label: "Involvement Center",
+    path: "/data/involvementcenter_list.json",
+    sourceUrl: "https://involvementcenter.unlv.edu/events",
+  },
+  {
+    key: "rebelCoverage",
+    label: "Rebel Sports",
+    path: "/data/rebelcoverage_list.json",
+    sourceUrl: "https://unlvrebels.com/coverage",
+  },
 ];
 
 const ALL_INTERESTS = [
@@ -216,6 +236,437 @@ function getEventTimestamp(item) {
   }
 
   return parsed.getTime();
+}
+
+function buildDateKey(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function parseCalendarEventDate(startDate, startTime, allDay = false) {
+  if (!startDate) {
+    return null;
+  }
+
+  if (allDay || !startTime || startTime === "(ALL DAY)") {
+    const parsed = new Date(`${startDate}T12:00:00`);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+
+  const parsed = new Date(`${startDate} ${startTime}`);
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed;
+  }
+
+  const fallback = new Date(`${startDate}T${startTime}`);
+  return Number.isNaN(fallback.getTime()) ? null : fallback;
+}
+
+function parseCalendarEventEndDate(endDate, endTime, startDate, startTime, allDay = false) {
+  const parsed = parseCalendarEventDate(endDate || startDate, endTime || startTime, allDay);
+  if (!parsed) {
+    return null;
+  }
+
+  if (allDay) {
+    const endValue = new Date(parsed);
+    endValue.setHours(23, 59, 59, 999);
+    return endValue;
+  }
+
+  return parsed;
+}
+
+function formatCalendarHeaderMonth(date) {
+  return date.toLocaleDateString(undefined, {
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function formatCalendarPanelDate(dateKey) {
+  const parsed = new Date(`${dateKey}T12:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return dateKey;
+  }
+
+  return parsed.toLocaleDateString(undefined, {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+function getCalendarViewDateLabel(date) {
+  return date.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function formatCalendarDateOnly(dateKey) {
+  const parsed = new Date(`${dateKey}T12:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return dateKey;
+  }
+
+  return parsed.toLocaleDateString(undefined, {
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function getTableDayLabel(dateKey) {
+  const parsed = new Date(`${dateKey}T12:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return { label: dateKey, emphasize: false };
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+
+  const value = new Date(parsed);
+  value.setHours(0, 0, 0, 0);
+
+  if (value.getTime() === today.getTime()) {
+    return { label: "Today", emphasize: true };
+  }
+
+  if (value.getTime() === tomorrow.getTime()) {
+    return { label: "Tomorrow", emphasize: true };
+  }
+
+  return {
+    label: parsed.toLocaleDateString(undefined, { weekday: "long" }),
+    emphasize: false,
+  };
+}
+
+const CALENDAR_SESSION_KEY = "rebelremind-calendar-session";
+
+function readCalendarSession() {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
+  try {
+    const raw = window.sessionStorage.getItem(CALENDAR_SESSION_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function formatCalendarTimeRange(event) {
+  if (!event || event.allDay || event.startTime === "(ALL DAY)") {
+    return "All day";
+  }
+
+  const start = event.startTime || "";
+  const end = event.endTime || "";
+  if (start && end && start !== end) {
+    return `${start} - ${end}`;
+  }
+
+  return start || "Time TBD";
+}
+
+function isWeeklyAllDayEvent(event) {
+  return Boolean(
+    event?.allDay ||
+    !event?.startTime ||
+    event.startTime === "(ALL DAY)" ||
+    event.startTime === "Time TBD" ||
+    event.startTime === "TBD"
+  );
+}
+
+function isCanvasAssignmentEvent(event) {
+  return event?.eventType === "canvasAssignment";
+}
+
+function startOfWeek(date) {
+  const value = new Date(date);
+  value.setHours(0, 0, 0, 0);
+  value.setDate(value.getDate() - value.getDay());
+  return value;
+}
+
+function endOfWeek(date) {
+  const value = startOfWeek(date);
+  value.setDate(value.getDate() + 6);
+  value.setHours(23, 59, 59, 999);
+  return value;
+}
+
+function buildEventsByDate(events) {
+  return events.reduce((result, event) => {
+    if (!event.startDate) {
+      return result;
+    }
+
+    if (!result[event.startDate]) {
+      result[event.startDate] = [];
+    }
+
+    result[event.startDate].push(event);
+    result[event.startDate].sort((left, right) => left.startsAt - right.startsAt);
+    return result;
+  }, {});
+}
+
+function normalizeDatasetCalendarEvents(datasetKey, datasets) {
+  const datasetLabel = DATA_FILE_MAP[datasetKey]?.label || "Campus Calendar";
+  const sourceItems = Array.isArray(datasets[datasetKey]) ? datasets[datasetKey] : [];
+
+  return sourceItems
+    .map((item, index) => ({
+      id: `${datasetKey}-${item.name}-${item.startDate}-${index}`,
+      sourceKey: datasetKey,
+      title: item.name,
+      startDate: item.startDate,
+      endDate: item.endDate || item.startDate,
+      startTime: item.startTime,
+      endTime: item.endTime || item.startTime,
+      location: item.location || "",
+      description: item.organization || item.category || item.sport || "",
+      link: item.link || "",
+      sourceLabel: datasetLabel,
+      allDay: item.startTime === "(ALL DAY)",
+      startsAt: parseCalendarEventDate(item.startDate, item.startTime, item.startTime === "(ALL DAY)"),
+      endsAt: parseCalendarEventEndDate(item.endDate, item.endTime, item.startDate, item.startTime, item.startTime === "(ALL DAY)"),
+    }))
+    .filter((event) => event.startsAt)
+    .sort((left, right) => left.startsAt - right.startsAt);
+}
+
+function normalizeBridgeCalendarEvents(bridgeState) {
+  const colorList = bridgeState?.colorList || {};
+  const courseColors = colorList?.CanvasCourses || {};
+
+  return (Array.isArray(bridgeState?.calendarEvents) ? bridgeState.calendarEvents : [])
+    .map((event, index) => ({
+      id: event.id || `extension-event-${index}`,
+      sourceKey: "extensionEvents",
+      title: event.title || "Untitled Event",
+      startDate: event.startDate,
+      endDate: event.endDate || event.startDate,
+      startTime: event.startTime,
+      endTime: event.endTime || event.startTime,
+      location: event.location || "",
+      description: event.description || "",
+      link: event.link || "",
+      sourceLabel: event.sourceLabel || "Extension Event",
+      eventType: event.eventType || "",
+      courseID: event.courseID || null,
+      allDay: Boolean(event.allDay) || event.startTime === "(ALL DAY)",
+      startsAt: parseCalendarEventDate(event.startDate, event.startTime, Boolean(event.allDay) || event.startTime === "(ALL DAY)"),
+      endsAt: parseCalendarEventEndDate(
+        event.endDate,
+        event.endTime,
+        event.startDate,
+        event.startTime,
+        Boolean(event.allDay) || event.startTime === "(ALL DAY)"
+      ),
+      color: event.eventType === "canvasAssignment"
+        ? courseColors?.[event.courseID]?.color || "#3174ad"
+        : colorList?.[event.eventType] || "",
+    }))
+    .filter((event) => event.startsAt)
+    .sort((left, right) => left.startsAt - right.startsAt);
+}
+
+function getEventForegroundColor(backgroundColor) {
+  if (!backgroundColor || !backgroundColor.startsWith("#") || backgroundColor.length !== 7) {
+    return "#ffffff";
+  }
+
+  const red = Number.parseInt(backgroundColor.slice(1, 3), 16);
+  const green = Number.parseInt(backgroundColor.slice(3, 5), 16);
+  const blue = Number.parseInt(backgroundColor.slice(5, 7), 16);
+
+  if ([red, green, blue].some((value) => Number.isNaN(value))) {
+    return "#ffffff";
+  }
+
+  const brightness = ((red * 299) + (green * 587) + (blue * 114)) / 1000;
+  return brightness > 125 ? "#111827" : "#ffffff";
+}
+
+function layoutTimedWeekEvents(events, weekStart) {
+  const weekEnd = endOfWeek(weekStart);
+  const timedEvents = events
+    .filter((event) => !isWeeklyAllDayEvent(event) && event.startsAt && event.startsAt >= weekStart && event.startsAt <= weekEnd)
+    .map((event) => {
+      const startsAt = new Date(event.startsAt);
+      const endsAt = event.endsAt ? new Date(event.endsAt) : new Date(startsAt.getTime() + (60 * 60 * 1000));
+      if (endsAt <= startsAt) {
+        endsAt.setTime(startsAt.getTime() + (60 * 60 * 1000));
+      }
+
+      return { ...event, startsAt, endsAt };
+    })
+    .sort((left, right) => left.startsAt - right.startsAt);
+
+  const byDay = {};
+
+  for (const event of timedEvents) {
+    const dayKey = buildDateKey(event.startsAt);
+    if (!byDay[dayKey]) {
+      byDay[dayKey] = [];
+    }
+    byDay[dayKey].push(event);
+  }
+
+  const layouts = {};
+  const clusters = {};
+
+  Object.entries(byDay).forEach(([dayKey, dayEvents]) => {
+    const assigned = [];
+    let cluster = [];
+    let clusterEnd = null;
+
+    const finalizeCluster = () => {
+      if (!cluster.length) {
+        return;
+      }
+
+      const clusterId = `${dayKey}-${cluster[0].id}`;
+      const laneEnds = [];
+      cluster.forEach((event) => {
+        let lane = 0;
+        while (laneEnds[lane] && laneEnds[lane] > event.startsAt) {
+          lane += 1;
+        }
+        laneEnds[lane] = event.endsAt;
+        assigned.push({ ...event, lane });
+      });
+
+      const clusterItems = assigned.slice(-cluster.length);
+      const laneCount = Math.max(...clusterItems.map((item) => item.lane)) + 1;
+      clusters[clusterId] = {
+        id: clusterId,
+        leadEventId: clusterItems[0].id,
+        events: clusterItems,
+        count: clusterItems.length,
+      };
+
+      assigned.slice(-cluster.length).forEach((item) => {
+        layouts[item.id] = {
+          lane: item.lane,
+          laneCount,
+          clusterId,
+          clusterSize: clusterItems.length,
+          clusterLeadId: clusterItems[0].id,
+        };
+      });
+
+      cluster = [];
+      clusterEnd = null;
+    };
+
+    dayEvents.forEach((event) => {
+      if (!cluster.length) {
+        cluster = [event];
+        clusterEnd = event.endsAt;
+        return;
+      }
+
+      if (event.startsAt < clusterEnd) {
+        cluster.push(event);
+        if (event.endsAt > clusterEnd) {
+          clusterEnd = event.endsAt;
+        }
+      } else {
+        finalizeCluster();
+        cluster = [event];
+        clusterEnd = event.endsAt;
+      }
+    });
+
+    finalizeCluster();
+  });
+
+  return { events: layouts, clusters };
+}
+
+function CalendarEventModal({ payload, onClose }) {
+  if (!payload) {
+    return null;
+  }
+
+  const isGroup = Array.isArray(payload.events);
+  const modalTitle = isGroup ? payload.title : payload.title;
+  const modalSourceLabel = isGroup ? payload.subtitle : payload.sourceLabel;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-8 backdrop-blur-sm">
+      <div className="w-full max-w-lg rounded-[2rem] border border-white/15 bg-stone-100 p-6 text-stone-900 shadow-2xl">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">{modalSourceLabel}</p>
+            <h3 className="mt-2 font-serif text-3xl leading-tight">{modalTitle}</h3>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-full bg-stone-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+          >
+            Close
+          </button>
+        </div>
+
+        {isGroup ? (
+          <div className="mt-5 max-h-[26rem] space-y-3 overflow-y-auto pr-1">
+            {payload.events.map((event) => {
+              const Wrapper = event.link ? "a" : "div";
+              return (
+                <Wrapper
+                  key={event.id}
+                  href={event.link || undefined}
+                  target={event.link ? "_blank" : undefined}
+                  rel={event.link ? "noreferrer" : undefined}
+                  className="block rounded-[1.35rem] border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{event.sourceLabel}</p>
+                  <h4 className="mt-2 text-lg font-semibold leading-tight text-stone-900">{event.title}</h4>
+                  <p className="mt-2 text-sm font-semibold text-stone-800">
+                    {formatCalendarPanelDate(event.startDate)} · {formatCalendarTimeRange(event)}
+                  </p>
+                  {event.location ? (
+                    <p className="mt-1 text-sm text-stone-700"><span className="font-semibold">Location:</span> {event.location}</p>
+                  ) : null}
+                  {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
+                </Wrapper>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="mt-5 space-y-3 text-sm">
+            <p><span className="font-semibold">Date:</span> {formatCalendarPanelDate(payload.startDate)}</p>
+            <p><span className="font-semibold">Time:</span> {formatCalendarTimeRange(payload)}</p>
+            {payload.location ? <p><span className="font-semibold">Location:</span> {payload.location}</p> : null}
+            {payload.description ? <p><span className="font-semibold">Details:</span> {payload.description}</p> : null}
+            {payload.link ? (
+              <a
+                href={payload.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
+              >
+                Open Event
+              </a>
+            ) : null}
+          </div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 function isUpcomingEvent(item) {
@@ -456,7 +907,7 @@ function isBridgeSupportedBrowser() {
   return /(Chrome|Chromium|Edg)\//.test(navigator.userAgent || "");
 }
 
-function Navbar({ visible }) {
+function Navbar({ visible, onCloseCalendarNavbar }) {
   const location = useLocation();
   const datasetKey = location.pathname.startsWith("/datasets/")
     ? location.pathname.split("/").pop()
@@ -464,8 +915,22 @@ function Navbar({ visible }) {
   const activeDatasetLabel = datasetKey ? DATA_FILE_MAP[datasetKey]?.label : null;
   const isHomePage = location.pathname === "/";
   const isContributorsPage = location.pathname === "/contributors" || location.pathname.startsWith("/contributors/");
-  const pageLabel = isHomePage ? "Home" : isContributorsPage ? "Contributors" : "Dataset Explorer";
-  const showHomeActions = !activeDatasetLabel && !isContributorsPage;
+  const isCalendarPage = location.pathname === "/calendar" || location.pathname.startsWith("/calendar/");
+  const isDatasetsPage = location.pathname === "/datasets" || location.pathname === "/datasets/";
+  const pageLabel = isHomePage
+    ? "Home"
+    : isContributorsPage
+      ? "Contributors"
+      : isCalendarPage
+        ? "Calendar"
+        : isDatasetsPage
+          ? "Datasets"
+          : "Dataset Explorer";
+  const showHomeActions = isHomePage;
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <nav
@@ -476,29 +941,42 @@ function Navbar({ visible }) {
     >
       <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between rounded-[1.5rem] border border-white/20 bg-black/65 px-4 py-3 shadow-2xl backdrop-blur-md">
-          <Link to="/" className="flex items-center gap-3 text-white">
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="flex items-center gap-3 text-left text-white"
+          >
             <img src="/rr_logo.png" alt="Rebel Remind logo" className="h-10 w-10 rounded-xl" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/70">Rebel Remind</p>
               <p className="text-sm font-semibold text-white/95">{pageLabel}</p>
             </div>
-          </Link>
+          </button>
 
           {activeDatasetLabel ? (
             <div className="text-right">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/60">Dataset</p>
               <p className="text-xl font-black text-white sm:text-2xl">{activeDatasetLabel}</p>
             </div>
+          ) : isCalendarPage ? (
+            <button
+              type="button"
+              onClick={onCloseCalendarNavbar}
+              className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+              aria-label="Close navbar"
+            >
+              X
+            </button>
           ) : showHomeActions ? (
             <div className="hidden items-center gap-3 sm:flex">
-              <a
-                href="#campus-feed"
+              <Link
+                to="/calendar"
                 className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
               >
-                Campus Feed
-              </a>
+                Calendar
+              </Link>
               <a
-                href="#dataset-grid"
+                href="/datasets"
                 className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
               >
                 Datasets
@@ -730,30 +1208,30 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
                 const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
 
                 return (
-                <article
-                  key={eventKey}
-                  className="rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <p className="font-semibold">{event.displayTitle}</p>
-                    {hasExtraDetails ? (
-                      <button
-                        type="button"
-                        onClick={() => toggleCollapsedEvent(eventKey)}
-                        className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
-                      >
-                        {isCollapsed ? "Show Details" : "Hide Details"}
-                      </button>
+                  <article
+                    key={eventKey}
+                    className="rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <p className="font-semibold">{event.displayTitle}</p>
+                      {hasExtraDetails ? (
+                        <button
+                          type="button"
+                          onClick={() => toggleCollapsedEvent(eventKey)}
+                          className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
+                        >
+                          {isCollapsed ? "Show Details" : "Hide Details"}
+                        </button>
+                      ) : null}
+                    </div>
+                    <p className="mt-1 text-sm font-semibold text-white/85">{formatCombinedHomeEventDate(event)}</p>
+                    {!isCollapsed && hasExtraDetails ? (
+                      <>
+                        {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
+                        {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
+                      </>
                     ) : null}
-                  </div>
-                  <p className="mt-1 text-sm font-semibold text-white/85">{formatCombinedHomeEventDate(event)}</p>
-                  {!isCollapsed && hasExtraDetails ? (
-                    <>
-                      {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
-                      {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
-                    </>
-                  ) : null}
-                </article>
+                  </article>
                 );
               })
             ) : (
@@ -1186,6 +1664,759 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   );
 }
 
+function DatasetsLandingPage({ datasets }) {
+  return (
+    <section className="space-y-5">
+      <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+        <div className="flex flex-col gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Datasets</p>
+            <h1 className="mt-2 font-serif text-4xl">How Rebel Remind powers the public campus feed.</h1>
+            <div className="mt-4 w-full space-y-2 text-white/80">
+              <p>Rebel Remind collects public UNLV event sources, normalizes them into a consistent JSON format, and publishes them for the site and extension to consume.</p>
+              <p>The website uses these datasets for its public calendar views, while the extension combines them with your personal Rebel Remind events.</p>
+              <p>Below you can open each dataset, inspect the hosted JSON, and see the original source each feed comes from.</p>
+            </div>
+          </div>
+          <div className="flex justify-start lg:justify-end">
+            <Link
+              to="/"
+              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+            >
+              Back Home
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        {DATA_FILES.map((source) => (
+          <article
+            key={source.key}
+            className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-lg"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Dataset</p>
+                <h2 className="mt-1 text-2xl font-semibold">{source.label}</h2>
+              </div>
+              <span className="rounded-full bg-stone-900 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-white">
+                {datasets[source.key]?.length || 0} items
+              </span>
+            </div>
+
+            <div className="mt-5 space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-stone-700">Hosted JSON</p>
+                <a
+                  href={source.path}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block break-all text-[#8b0000] transition hover:text-[#6b0000]"
+                >
+                  {typeof window !== "undefined" ? `${window.location.origin}${source.path}` : source.path}
+                </a>
+              </div>
+
+              <div>
+                <p className="font-semibold text-stone-700">Source URL</p>
+                <a
+                  href={source.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block break-all text-[#8b0000] transition hover:text-[#6b0000]"
+                >
+                  {source.sourceUrl}
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                to={getDatasetRoute(source.key)}
+                className="rounded-full bg-stone-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+              >
+                Open Dataset Page
+              </Link>
+              <a
+                href={source.path}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+              >
+                View JSON
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CalendarPage({ datasets, bridgeState }) {
+  const today = new Date();
+  const initialSession = readCalendarSession();
+  const [currentMonth, setCurrentMonth] = useState(() => {
+    const savedMonth = initialSession?.currentMonth;
+    const parsed = savedMonth ? new Date(savedMonth) : null;
+    return parsed && !Number.isNaN(parsed.getTime())
+      ? new Date(parsed.getFullYear(), parsed.getMonth(), 1)
+      : new Date(today.getFullYear(), today.getMonth(), 1);
+  });
+  const [selectedDateKey, setSelectedDateKey] = useState(() => initialSession?.selectedDateKey || buildDateKey(today));
+  const [calendarView, setCalendarView] = useState(() => initialSession?.calendarView || "month");
+  const [activeModalEvent, setActiveModalEvent] = useState(null);
+  const [calendarPanelHeight, setCalendarPanelHeight] = useState(null);
+  const calendarPanelRef = useRef(null);
+  const weeklyScrollRef = useRef(null);
+  const calendarOptions = [
+    { key: "extensionEvents", label: "Use Extension Events" },
+    ...DATA_FILES.map(({ key, label }) => ({ key, label })),
+  ];
+  const [selectedCalendarKey, setSelectedCalendarKey] = useState(() => initialSession?.selectedCalendarKey || "extensionEvents");
+
+  const visibleCalendarEvents = selectedCalendarKey === "extensionEvents"
+    ? normalizeBridgeCalendarEvents(bridgeState)
+    : normalizeDatasetCalendarEvents(selectedCalendarKey, datasets);
+  const eventsByDate = buildEventsByDate(visibleCalendarEvents);
+
+  const monthStart = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
+  const monthEnd = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0);
+  const gridStart = new Date(monthStart);
+  gridStart.setDate(monthStart.getDate() - monthStart.getDay());
+  const gridEnd = new Date(monthEnd);
+  gridEnd.setDate(monthEnd.getDate() + (6 - monthEnd.getDay()));
+  const totalCalendarDays = Math.round((gridEnd - gridStart) / (1000 * 60 * 60 * 24)) + 1;
+  const monthWeekCount = totalCalendarDays / 7;
+
+  const calendarDays = Array.from({ length: totalCalendarDays }, (_, index) => {
+    const date = new Date(gridStart);
+    date.setDate(gridStart.getDate() + index);
+    const dateKey = buildDateKey(date);
+    const dayEvents = (eventsByDate[dateKey] || []).sort((left, right) => left.startsAt - right.startsAt);
+
+    return {
+      date,
+      dateKey,
+      isCurrentMonth: date.getMonth() === currentMonth.getMonth(),
+      isToday: dateKey === buildDateKey(today),
+      events: dayEvents,
+    };
+  });
+
+  const selectedDayEvents = (eventsByDate[selectedDateKey] || []).sort((left, right) => left.startsAt - right.startsAt);
+  const selectedDate = new Date(`${selectedDateKey}T12:00:00`);
+  const selectedWeekStart = startOfWeek(selectedDate);
+  const selectedWeekEnd = endOfWeek(selectedDate);
+  const todayKey = buildDateKey(today);
+  const weekDays = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(selectedWeekStart);
+    date.setDate(selectedWeekStart.getDate() + index);
+    const dateKey = buildDateKey(date);
+
+    return {
+      date,
+      dateKey,
+      isToday: dateKey === buildDateKey(today),
+      events: (eventsByDate[dateKey] || []).sort((left, right) => left.startsAt - right.startsAt),
+    };
+  });
+
+  const tableEvents = visibleCalendarEvents.filter((event) => {
+    return event.startsAt >= selectedWeekStart && event.startsAt <= selectedWeekEnd;
+  });
+  const weeklyTimedEvents = visibleCalendarEvents.filter((event) => !isCanvasAssignmentEvent(event));
+  const weekLayout = layoutTimedWeekEvents(weeklyTimedEvents, selectedWeekStart);
+  const weekHours = Array.from({ length: 16 }, (_, index) => 7 + index);
+  const nowInSelectedWeek = today >= selectedWeekStart && today <= selectedWeekEnd;
+  const nowMinutes = (today.getHours() * 60) + today.getMinutes();
+  const currentTimeTop = ((Math.max(7 * 60, Math.min(nowMinutes, 23 * 60)) - (7 * 60)) / 60) * 80;
+
+  function shiftCalendar(direction) {
+    if (calendarView === "weekly" || calendarView === "table") {
+      const nextDate = new Date(selectedDate);
+      nextDate.setDate(nextDate.getDate() + (direction * 7));
+      setSelectedDateKey(buildDateKey(nextDate));
+      setCurrentMonth(new Date(nextDate.getFullYear(), nextDate.getMonth(), 1));
+      return;
+    }
+
+    setCurrentMonth((current) => {
+      const nextMonth = new Date(current.getFullYear(), current.getMonth() + direction, 1);
+      return nextMonth;
+    });
+  }
+
+  function jumpToToday() {
+    setCurrentMonth(new Date(today.getFullYear(), today.getMonth(), 1));
+    setSelectedDateKey(buildDateKey(today));
+  }
+
+  useLayoutEffect(() => {
+    if (calendarView !== "month" || !calendarPanelRef.current) {
+      return undefined;
+    }
+
+    const element = calendarPanelRef.current;
+    const syncHeight = () => setCalendarPanelHeight(element.getBoundingClientRect().height);
+
+    const frameId = window.requestAnimationFrame(syncHeight);
+
+    const observer = new ResizeObserver(() => {
+      syncHeight();
+    });
+
+    observer.observe(element);
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      observer.disconnect();
+    };
+  }, [calendarView, currentMonth, selectedDateKey, selectedCalendarKey, visibleCalendarEvents.length, monthWeekCount]);
+
+  useEffect(() => {
+    if (calendarView !== "weekly" || !weeklyScrollRef.current) {
+      return;
+    }
+
+    const viewport = weeklyScrollRef.current;
+    const savedScrollTop = readCalendarSession()?.weeklyScrollTop;
+    if (typeof savedScrollTop === "number") {
+      viewport.scrollTop = savedScrollTop;
+      return;
+    }
+
+    const noonOffset = (12 - 7) * 80;
+    const targetScrollTop = Math.max(0, noonOffset - (viewport.clientHeight / 2));
+    viewport.scrollTop = targetScrollTop;
+  }, [calendarView, selectedDateKey, selectedCalendarKey]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const session = {
+      currentMonth: currentMonth.toISOString(),
+      selectedDateKey,
+      calendarView,
+      selectedCalendarKey,
+      weeklyScrollTop: weeklyScrollRef.current?.scrollTop ?? null,
+      pageScrollY: window.scrollY,
+    };
+
+    window.sessionStorage.setItem(CALENDAR_SESSION_KEY, JSON.stringify(session));
+  }, [currentMonth, selectedDateKey, calendarView, selectedCalendarKey]);
+
+  useEffect(() => {
+    if (calendarView !== "weekly" || !weeklyScrollRef.current) {
+      return undefined;
+    }
+
+    const viewport = weeklyScrollRef.current;
+    const handleScroll = () => {
+      const session = readCalendarSession() || {};
+      window.sessionStorage.setItem(
+        CALENDAR_SESSION_KEY,
+        JSON.stringify({ ...session, weeklyScrollTop: viewport.scrollTop, pageScrollY: window.scrollY })
+      );
+    };
+
+    viewport.addEventListener("scroll", handleScroll, { passive: true });
+    return () => viewport.removeEventListener("scroll", handleScroll);
+  }, [calendarView]);
+
+  useEffect(() => {
+    const savedPageScrollY = readCalendarSession()?.pageScrollY;
+    if (typeof savedPageScrollY !== "number") {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: savedPageScrollY, behavior: "auto" });
+    });
+  }, []);
+
+  useEffect(() => {
+    const handleWindowScroll = () => {
+      const session = readCalendarSession() || {};
+      window.sessionStorage.setItem(
+        CALENDAR_SESSION_KEY,
+        JSON.stringify({ ...session, pageScrollY: window.scrollY })
+      );
+    };
+
+    window.addEventListener("scroll", handleWindowScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleWindowScroll);
+  }, []);
+
+  return (
+    <section className="space-y-5">
+      <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Calendar</p>
+            <h1 className="mt-2 font-serif text-4xl">See campus and synced events on one calendar.</h1>
+            <p className="mt-3 max-w-3xl text-white/80">
+              This view combines our datasets with your synced Rebel Remind events when the extension is connected.
+            </p>
+          </div>
+          <Link
+            to="/"
+            className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+          >
+            Back Home
+          </Link>
+        </div>
+      </div>
+
+      <div className="rounded-[1.75rem] border border-white/20 bg-black/20 p-4 text-white shadow-xl backdrop-blur-md">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/65">Calendars</span>
+            <div className="flex flex-wrap gap-2">
+              {calendarOptions.map((option) => (
+                <button
+                  key={option.key}
+                  type="button"
+                  onClick={() => setSelectedCalendarKey(option.key)}
+                  className={[
+                    "rounded-full border px-4 py-2 text-sm font-semibold transition",
+                    selectedCalendarKey === option.key
+                      ? "border-white bg-white text-stone-900"
+                      : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                  ].join(" ")}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <p className="text-sm text-white/70">
+            {selectedCalendarKey === "extensionEvents"
+              ? "Shows your personalized Rebel Remind events."
+              : `Showing only ${DATA_FILE_MAP[selectedCalendarKey]?.label || "selected"} events.`}
+          </p>
+        </div>
+      </div>
+
+      <div className={calendarView === "month" ? "grid gap-5 xl:grid-cols-[1.35fr_0.65fr] xl:items-start" : "grid gap-5"}>
+        <section ref={calendarPanelRef} className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">
+                {calendarView === "weekly" ? "Weekly View" : calendarView === "table" ? "Table View" : "Month View"}
+              </p>
+              <h2 className="mt-2 font-serif text-3xl">
+                {calendarView === "weekly" || calendarView === "table"
+                  ? `${getCalendarViewDateLabel(weekDays[0].date)} - ${getCalendarViewDateLabel(weekDays[6].date)}`
+                  : formatCalendarHeaderMonth(currentMonth)}
+              </h2>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {["month", "weekly", "table"].map((viewKey) => (
+                <button
+                  key={viewKey}
+                  type="button"
+                  onClick={() => setCalendarView(viewKey)}
+                  className={[
+                    "rounded-full border px-4 py-2 text-sm font-semibold capitalize transition",
+                    calendarView === viewKey
+                      ? "border-white bg-white text-stone-900"
+                      : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                  ].join(" ")}
+                >
+                  {viewKey === "month" ? "Monthly" : viewKey === "weekly" ? "Weekly" : "Table"}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            <button
+              type="button"
+              onClick={jumpToToday}
+              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+            >
+              Jump to Today
+            </button>
+            <div className="inline-flex overflow-hidden rounded-full border border-white/20 bg-white/10">
+              <button
+                type="button"
+                onClick={() => shiftCalendar(-1)}
+                className="px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                Previous
+              </button>
+              <div className="w-px bg-white/15" />
+              <button
+                type="button"
+                onClick={() => shiftCalendar(1)}
+                className="px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+
+          {calendarView === "month" ? (
+            <>
+              <div className="mt-5 grid grid-cols-7 gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+                {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
+                  <div key={day} className="py-2">
+                    {day}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-2 grid grid-cols-7 gap-2">
+                {calendarDays.map((day) => {
+                  const isSelected = day.dateKey === selectedDateKey;
+
+                  return (
+                    <button
+                      key={day.dateKey}
+                      type="button"
+                      onClick={() => setSelectedDateKey(day.dateKey)}
+                      className={[
+                        "flex min-h-[7rem] flex-col rounded-[1.35rem] border px-2.5 py-2 text-left transition",
+                        isSelected
+                          ? "border-white/50 bg-white/20 shadow-lg"
+                          : "border-white/15 bg-white/8 hover:bg-white/12",
+                        day.isCurrentMonth ? "text-white" : "text-white/45",
+                      ].join(" ")}
+                    >
+                      <div className="flex min-h-[1.4rem] items-start justify-between gap-2">
+                        <span
+                          className={[
+                            "text-sm font-semibold",
+                            day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : "",
+                          ].join(" ")}
+                        >
+                          {day.date.getDate()}
+                        </span>
+                        <span
+                          className={[
+                            "min-w-[2.1rem] rounded-full px-2 py-1 text-center text-[10px] font-semibold tabular-nums",
+                            day.events.length
+                              ? "bg-[#8b0000]/85 text-white"
+                              : "border border-white/10 text-transparent",
+                          ].join(" ")}
+                        >
+                          {day.events.length || 0}
+                        </span>
+                      </div>
+                      <div className="mt-2 grid auto-rows-[1.15rem] gap-0.5">
+                        {day.events.slice(0, 2).map((event) => (
+                          <div
+                            key={event.id}
+                            className="truncate rounded-full bg-white/12 px-2 py-0 text-[10px] font-medium leading-[1.15rem] text-white/90"
+                          >
+                            {event.title}
+                          </div>
+                        ))}
+                        {Array.from({ length: Math.max(0, 2 - Math.min(day.events.length, 2)) }).map((_, index) => (
+                          <div
+                            key={`${day.dateKey}-placeholder-${index}`}
+                            className="rounded-full border border-transparent px-2 py-0 text-[10px] leading-[1.15rem] opacity-0"
+                          >
+                            placeholder
+                          </div>
+                        ))}
+                        <div className="pt-0.5 text-[10px] font-semibold uppercase tracking-[0.1em] leading-none text-white/55">
+                          {day.events.length > 2 ? `+${day.events.length - 2} more` : ""}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          ) : null}
+
+          {calendarView === "table" ? (
+            <div
+              className="mt-5 overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/8"
+              style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
+            >
+              <div className="grid grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65">
+                <span>Day</span>
+                <span>Date</span>
+                <span>Time</span>
+                <span>Event</span>
+                <span>Source</span>
+                <span>Location</span>
+              </div>
+              <div className="h-[calc(100%-3.125rem)] overflow-y-auto">
+                <div className="divide-y divide-white/10 bg-transparent">
+                  {tableEvents.length ? (
+                    tableEvents.map((event) => {
+                      const dayLabel = getTableDayLabel(event.startDate);
+
+                      return (
+                        <button
+                          key={event.id}
+                          type="button"
+                          onClick={() => setActiveModalEvent(event)}
+                          className="grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] px-4 py-3 text-left text-sm text-white transition hover:bg-white/10"
+                        >
+                          <span className={dayLabel.emphasize ? "font-bold text-white" : ""}>{dayLabel.label}</span>
+                          <span>{formatCalendarDateOnly(event.startDate)}</span>
+                          <span>{formatCalendarTimeRange(event)}</span>
+                          <span className="font-semibold">{event.title}</span>
+                          <span>{event.sourceLabel}</span>
+                          <span className="truncate text-white/75">{event.location || "TBA"}</span>
+                        </button>
+                      );
+                    })
+                  ) : (
+                    <div className="px-4 py-6 text-sm text-white/75">No events are available for this range.</div>
+                  )}
+                  {tableEvents.length > 0 ? <div className="h-0 border-t border-white/10" /> : null}
+                </div>
+              </div>
+            </div>
+          ) : null}
+
+          {calendarView === "weekly" ? (
+            <div
+              ref={weeklyScrollRef}
+              className="mt-5 overflow-auto rounded-[1.5rem] border border-white/15 bg-white/8"
+              style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
+            >
+              <div className="min-w-[980px]">
+                <div className="sticky top-0 z-30 grid grid-cols-[5rem_repeat(7,minmax(0,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md">
+                  <div className="border-r border-white/10 px-3 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                    Time
+                  </div>
+                  {weekDays.map((day) => (
+                    <div
+                      key={day.dateKey}
+                      className={[
+                        "border-r border-white/10 px-3 py-4 last:border-r-0",
+                        day.isToday ? "bg-[#8b0000]/18" : "",
+                      ].join(" ")}
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">
+                        {day.isToday ? "Today" : day.date.toLocaleDateString(undefined, { weekday: "long" })}
+                      </p>
+                      <div className="mt-1 flex items-center gap-2 text-sm font-semibold text-white">
+                        <span>{day.date.toLocaleDateString(undefined, { month: "short" })}</span>
+                        <span className={day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : ""}>
+                          {day.date.getDate()}
+                        </span>
+                      </div>
+                      {day.events.filter((event) => isWeeklyAllDayEvent(event)).length ? (
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          {day.events.filter((event) => isWeeklyAllDayEvent(event)).slice(0, 1).map((event) => (
+                            <button
+                              key={event.id}
+                              type="button"
+                              onClick={() => setActiveModalEvent(event)}
+                              className="truncate rounded-full bg-white/15 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/25"
+                            >
+                              {event.title}
+                            </button>
+                          ))}
+                          {day.events.filter((event) => isWeeklyAllDayEvent(event)).length > 1 ? (
+                            <button
+                              type="button"
+                              onClick={() => setActiveModalEvent({
+                                title: `${day.events.filter((event) => isWeeklyAllDayEvent(event)).length} All Day Events`,
+                                subtitle: getCalendarViewDateLabel(day.date),
+                                events: day.events.filter((event) => isWeeklyAllDayEvent(event)),
+                              })}
+                              className="rounded-full bg-white/10 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-white/75 transition hover:bg-white/20"
+                            >
+                              +{day.events.filter((event) => isWeeklyAllDayEvent(event)).length - 1} more
+                            </button>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="relative grid grid-cols-[5rem_repeat(7,minmax(0,1fr))]">
+                  <div className="relative border-r border-white/10">
+                    {weekHours.map((hour) => (
+                      <div key={hour} className="h-20 border-b border-white/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45">
+                        {new Date(2025, 0, 1, hour).toLocaleTimeString(undefined, { hour: "numeric" })}
+                      </div>
+                    ))}
+                  </div>
+
+                  {weekDays.map((day) => (
+                    <div
+                      key={day.dateKey}
+                      className={[
+                        "relative border-r border-white/10 last:border-r-0",
+                        day.isToday ? "bg-[#8b0000]/8" : "",
+                      ].join(" ")}
+                    >
+                      {weekHours.map((hour) => (
+                        <div key={`${day.dateKey}-${hour}`} className="h-20 border-b border-white/10" />
+                      ))}
+
+                      {day.isToday && nowInSelectedWeek ? (
+                        <div
+                          className="pointer-events-none absolute left-0 right-0 z-20 border-t-2 border-[#ff4b4b]"
+                          style={{ top: `${currentTimeTop}px` }}
+                        >
+                          <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-[#ff4b4b]" />
+                        </div>
+                      ) : null}
+
+                      {day.events.filter((event) => !isWeeklyAllDayEvent(event) && !isCanvasAssignmentEvent(event)).map((event) => {
+                        const layout = weekLayout.events[event.id] || { lane: 0, laneCount: 1 };
+                        if (layout.clusterSize >= 3 && layout.clusterLeadId !== event.id) {
+                          return null;
+                        }
+
+                        const startMinutes = (event.startsAt.getHours() * 60) + event.startsAt.getMinutes();
+                        const endSource = event.endsAt || new Date(event.startsAt.getTime() + (60 * 60 * 1000));
+                        const endMinutes = (endSource.getHours() * 60) + endSource.getMinutes();
+                        const clampedStart = Math.max(7 * 60, Math.min(startMinutes, 23 * 60));
+                        const clampedEnd = Math.max(clampedStart + 30, Math.min(endMinutes, 23 * 60));
+                        const top = ((clampedStart - (7 * 60)) / 60) * 80;
+                        const height = Math.max(36, ((clampedEnd - clampedStart) / 60) * 80);
+                        const cluster = layout.clusterId ? weekLayout.clusters[layout.clusterId] : null;
+                        const isCollapsedGroup = layout.clusterSize >= 3 && cluster;
+                        const width = isCollapsedGroup ? "calc(100% - 6px)" : `calc(${100 / layout.laneCount}% - 6px)`;
+                        const left = isCollapsedGroup ? "3px" : `calc(${(100 / layout.laneCount) * layout.lane}% + 3px)`;
+                        const buttonLabel = isCollapsedGroup ? `${cluster.count}+ Events` : event.title;
+                        const timeLabel = isCollapsedGroup ? "Overlapping events" : formatCalendarTimeRange(event);
+
+                        const eventBackgroundColor = event.color || "#8b0000";
+                        const eventTextColor = getEventForegroundColor(eventBackgroundColor);
+
+                        return (
+                          <button
+                            key={event.id}
+                            type="button"
+                            onClick={() => {
+                              if (isCollapsedGroup) {
+                                setActiveModalEvent({
+                                  title: `${cluster.count}+ Events`,
+                                  subtitle: getCalendarViewDateLabel(day.date),
+                                  events: cluster.events,
+                                });
+                                return;
+                              }
+
+                              setActiveModalEvent(event);
+                            }}
+                            className="absolute rounded-2xl border border-white/15 px-2 py-2 text-left shadow-lg transition hover:brightness-110"
+                            style={{
+                              top: `${top}px`,
+                              left,
+                              width,
+                              height: `${height}px`,
+                              backgroundColor: eventBackgroundColor,
+                              color: eventTextColor,
+                            }}
+                          >
+                            <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80">
+                              {timeLabel}
+                            </p>
+                            <p className="mt-1 line-clamp-2 text-xs font-semibold">{buttonLabel}</p>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="grid grid-cols-[5rem_repeat(7,minmax(0,1fr))] border-t border-white/10 bg-black/10">
+                  <div className="border-r border-white/10 px-3 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                    Due
+                  </div>
+                  {weekDays.map((day) => {
+                    const canvasAssignments = day.events
+                      .filter((event) => isCanvasAssignmentEvent(event))
+                      .sort((left, right) => left.startsAt - right.startsAt);
+
+                    return (
+                      <div
+                        key={`${day.dateKey}-canvas-footer`}
+                        className={[
+                          "min-h-[5.5rem] border-r border-white/10 px-2 py-3 last:border-r-0",
+                          day.isToday ? "bg-[#8b0000]/10" : "",
+                        ].join(" ")}
+                      >
+                        {canvasAssignments.length ? (
+                          <div className="space-y-2">
+                            {canvasAssignments.map((event) => (
+                              <button
+                                key={`${event.id}-footer`}
+                                type="button"
+                                onClick={() => setActiveModalEvent(event)}
+                                className="w-full rounded-xl border border-white/10 bg-white/10 px-2 py-2 text-left text-white transition hover:bg-white/15"
+                              >
+                                <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] text-white/65">
+                                  {formatCalendarTimeRange(event)}
+                                </p>
+                                <p className="mt-1 line-clamp-2 text-xs font-semibold">{event.title}</p>
+                              </button>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="pt-2 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-white/35">
+                            No Canvas
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          ) : null}
+        </section>
+
+        {calendarView === "month" ? (
+          <aside
+            className="flex min-h-0 flex-col overflow-hidden rounded-[2rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl"
+            style={calendarPanelHeight ? { height: `${calendarPanelHeight}px` } : undefined}
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Selected Day</p>
+            <h2 className="mt-2 font-serif text-3xl">{formatCalendarPanelDate(selectedDateKey)}</h2>
+            <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
+              {selectedDayEvents.length ? (
+                selectedDayEvents.map((event) => (
+                  <a
+                    key={event.id}
+                    href={event.link || undefined}
+                    target={event.link ? "_blank" : undefined}
+                    rel={event.link ? "noreferrer" : undefined}
+                    className="block rounded-[1.35rem] border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{event.sourceLabel}</p>
+                    <h3 className="mt-2 text-lg font-semibold leading-tight text-stone-900">{event.title}</h3>
+                    <p className="mt-2 text-sm font-semibold text-stone-800">{formatEventDate(event)}</p>
+                    {event.location ? (
+                      <p className="mt-1 text-sm text-stone-700">
+                        <span className="font-semibold">Location:</span> {event.location}
+                      </p>
+                    ) : null}
+                    {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
+                  </a>
+                ))
+              ) : (
+                <div className="rounded-[1.35rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
+                  No events are scheduled for this day yet.
+                </div>
+              )}
+            </div>
+          </aside>
+        ) : null}
+      </div>
+
+      <CalendarEventModal payload={activeModalEvent} onClose={() => setActiveModalEvent(null)} />
+    </section>
+  );
+}
+
 function DevelopersPage() {
   return (
     <section className="space-y-5">
@@ -1231,9 +2462,8 @@ function DevelopersPage() {
             href={contributor.linkedin}
             target="_blank"
             rel="noreferrer"
-            className={`flex min-h-[16rem] flex-col items-center rounded-[1.75rem] border border-white/20 bg-black/20 p-5 text-center text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:bg-black/25 hover:shadow-2xl backdrop-blur-md ${
-              index === CONTRIBUTORS.length - 1 && CONTRIBUTORS.length % 3 === 1 ? "xl:col-start-2" : ""
-            }`}
+            className={`flex min-h-[16rem] flex-col items-center rounded-[1.75rem] border border-white/20 bg-black/20 p-5 text-center text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:bg-black/25 hover:shadow-2xl backdrop-blur-md ${index === CONTRIBUTORS.length - 1 && CONTRIBUTORS.length % 3 === 1 ? "xl:col-start-2" : ""
+              }`}
           >
             <img
               src={contributor.image}
@@ -1433,7 +2663,9 @@ export default function App() {
   const [isBridgeModalOpen, setIsBridgeModalOpen] = useState(false);
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
+  const [calendarNavbarDismissed, setCalendarNavbarDismissed] = useState(false);
   const theme = bridgeState?.theme || DEFAULT_THEME;
+  const location = useLocation();
 
   useEffect(() => {
     window.__openRebelDownloadModal = () => setIsDownloadModalOpen(true);
@@ -1444,13 +2676,47 @@ export default function App() {
 
   useEffect(() => {
     function handleScroll() {
-      setShowNavbar(window.scrollY > 120);
+      const scrollY = window.scrollY;
+      const isCalendarPage = location.pathname === "/calendar" || location.pathname.startsWith("/calendar/");
+
+      if (!isCalendarPage) {
+        setShowNavbar(scrollY > 120);
+        return;
+      }
+
+      if (scrollY <= 0) {
+        setCalendarNavbarDismissed(false);
+        setShowNavbar(false);
+        return;
+      }
+
+      if (calendarNavbarDismissed) {
+        setShowNavbar(false);
+        return;
+      }
+
+      setShowNavbar(scrollY > 120);
     }
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [calendarNavbarDismissed, location.pathname]);
+
+  useEffect(() => {
+    const isCalendarPage = location.pathname === "/calendar" || location.pathname.startsWith("/calendar/");
+    if (!isCalendarPage) {
+      setCalendarNavbarDismissed(false);
+      setShowNavbar(window.scrollY > 120);
+      return;
+    }
+
+    if (window.scrollY <= 0) {
+      setShowNavbar(false);
+    } else if (!calendarNavbarDismissed) {
+      setShowNavbar(window.scrollY > 120);
+    }
+  }, [location.pathname, calendarNavbarDismissed]);
 
   useEffect(() => {
     if (!isBridgeSupportedBrowser()) {
@@ -1485,19 +2751,34 @@ export default function App() {
       }
     });
 
-    pingExtension();
-    requestExtensionState();
+    const attemptBridgeHandshake = () => {
+      pingExtension();
+      requestExtensionState();
+    };
+
+    attemptBridgeHandshake();
+
+    const retryIntervalId = window.setInterval(() => {
+      if (seenPong || seenState) {
+        window.clearInterval(retryIntervalId);
+        return;
+      }
+
+      attemptBridgeHandshake();
+    }, 500);
 
     const timeoutId = window.setTimeout(() => {
+      window.clearInterval(retryIntervalId);
       if (!seenPong && !seenState) {
         setBridgeStatus("unavailable");
         setBridgeState(null);
         setBridgeError("");
       }
-    }, 1500);
+    }, 4000);
 
     return () => {
       unsubscribe();
+      window.clearInterval(retryIntervalId);
       window.clearTimeout(timeoutId);
     };
   }, []);
@@ -1523,7 +2804,15 @@ export default function App() {
       className="min-h-screen text-white"
       style={{ background: buildBackground(theme.backgroundColor), color: theme.textColor }}
     >
-      <Navbar visible={showNavbar} />
+      <Navbar
+        visible={showNavbar}
+        onCloseCalendarNavbar={() => {
+          if (location.pathname === "/calendar" || location.pathname.startsWith("/calendar/")) {
+            setCalendarNavbarDismissed(true);
+            setShowNavbar(false);
+          }
+        }}
+      />
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col gap-8 px-4 py-6 sm:px-6 lg:px-8">
         <div className="flex-1">
           <Routes>
@@ -1539,9 +2828,14 @@ export default function App() {
               }
             />
             <Route
+              path="/datasets"
+              element={<DatasetsLandingPage datasets={datasets} />}
+            />
+            <Route
               path="/datasets/:datasetKey"
               element={<DatasetPage datasets={datasets} bridgeStatus={bridgeStatus} bridgeState={bridgeState} />}
             />
+            <Route path="/calendar" element={<CalendarPage datasets={datasets} bridgeState={bridgeState} />} />
             <Route path="/contributors" element={<DevelopersPage />} />
           </Routes>
         </div>
