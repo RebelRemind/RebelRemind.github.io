@@ -264,8 +264,27 @@ function parseCalendarEventDate(startDate, startTime, allDay = false) {
   return Number.isNaN(fallback.getTime()) ? null : fallback;
 }
 
+function buildDefaultEventEndTime(startDate, startTime, allDay = false) {
+  if (allDay || !startDate || !startTime || startTime === "(ALL DAY)") {
+    return allDay ? "(ALL DAY)" : "";
+  }
+
+  const parsedStart = parseCalendarEventDate(startDate, startTime, false);
+  if (!parsedStart) {
+    return startTime;
+  }
+
+  const endDate = new Date(parsedStart.getTime() + (60 * 60 * 1000));
+  return endDate.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+}
+
 function parseCalendarEventEndDate(endDate, endTime, startDate, startTime, allDay = false) {
-  const parsed = parseCalendarEventDate(endDate || startDate, endTime || startTime, allDay);
+  const resolvedEndTime = endTime || buildDefaultEventEndTime(startDate, startTime, allDay);
+  const parsed = parseCalendarEventDate(endDate || startDate, resolvedEndTime || startTime, allDay);
   if (!parsed) {
     return null;
   }
@@ -425,22 +444,27 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
   const sourceItems = Array.isArray(datasets[datasetKey]) ? datasets[datasetKey] : [];
 
   return sourceItems
-    .map((item, index) => ({
-      id: `${datasetKey}-${item.name}-${item.startDate}-${index}`,
-      sourceKey: datasetKey,
-      title: item.name,
-      startDate: item.startDate,
-      endDate: item.endDate || item.startDate,
-      startTime: item.startTime,
-      endTime: item.endTime || item.startTime,
-      location: item.location || "",
-      description: item.organization || item.category || item.sport || "",
-      link: item.link || "",
-      sourceLabel: datasetLabel,
-      allDay: item.startTime === "(ALL DAY)",
-      startsAt: parseCalendarEventDate(item.startDate, item.startTime, item.startTime === "(ALL DAY)"),
-      endsAt: parseCalendarEventEndDate(item.endDate, item.endTime, item.startDate, item.startTime, item.startTime === "(ALL DAY)"),
-    }))
+    .map((item, index) => {
+      const allDay = item.startTime === "(ALL DAY)";
+      const resolvedEndTime = item.endTime || buildDefaultEventEndTime(item.startDate, item.startTime, allDay);
+
+      return {
+        id: `${datasetKey}-${item.name}-${item.startDate}-${index}`,
+        sourceKey: datasetKey,
+        title: item.name,
+        startDate: item.startDate,
+        endDate: item.endDate || item.startDate,
+        startTime: item.startTime,
+        endTime: resolvedEndTime,
+        location: item.location || "",
+        description: item.organization || item.category || item.sport || "",
+        link: item.link || "",
+        sourceLabel: datasetLabel,
+        allDay,
+        startsAt: parseCalendarEventDate(item.startDate, item.startTime, allDay),
+        endsAt: parseCalendarEventEndDate(item.endDate, resolvedEndTime, item.startDate, item.startTime, allDay),
+      };
+    })
     .filter((event) => event.startsAt)
     .sort((left, right) => left.startsAt - right.startsAt);
 }
@@ -450,33 +474,38 @@ function normalizeBridgeCalendarEvents(bridgeState) {
   const courseColors = colorList?.CanvasCourses || {};
 
   return (Array.isArray(bridgeState?.calendarEvents) ? bridgeState.calendarEvents : [])
-    .map((event, index) => ({
-      id: event.id || `extension-event-${index}`,
-      sourceKey: "extensionEvents",
-      title: event.title || "Untitled Event",
-      startDate: event.startDate,
-      endDate: event.endDate || event.startDate,
-      startTime: event.startTime,
-      endTime: event.endTime || event.startTime,
-      location: event.location || "",
-      description: event.description || "",
-      link: event.link || "",
-      sourceLabel: event.sourceLabel || "Extension Event",
-      eventType: event.eventType || "",
-      courseID: event.courseID || null,
-      allDay: Boolean(event.allDay) || event.startTime === "(ALL DAY)",
-      startsAt: parseCalendarEventDate(event.startDate, event.startTime, Boolean(event.allDay) || event.startTime === "(ALL DAY)"),
-      endsAt: parseCalendarEventEndDate(
-        event.endDate,
-        event.endTime,
-        event.startDate,
-        event.startTime,
-        Boolean(event.allDay) || event.startTime === "(ALL DAY)"
-      ),
-      color: event.eventType === "canvasAssignment"
-        ? courseColors?.[event.courseID]?.color || "#3174ad"
-        : colorList?.[event.eventType] || "",
-    }))
+    .map((event, index) => {
+      const allDay = Boolean(event.allDay) || event.startTime === "(ALL DAY)";
+      const resolvedEndTime = event.endTime || buildDefaultEventEndTime(event.startDate, event.startTime, allDay);
+
+      return {
+        id: event.id || `extension-event-${index}`,
+        sourceKey: "extensionEvents",
+        title: event.title || "Untitled Event",
+        startDate: event.startDate,
+        endDate: event.endDate || event.startDate,
+        startTime: event.startTime,
+        endTime: resolvedEndTime,
+        location: event.location || "",
+        description: event.description || "",
+        link: event.link || "",
+        sourceLabel: event.sourceLabel || "Extension Event",
+        eventType: event.eventType || "",
+        courseID: event.courseID || null,
+        allDay,
+        startsAt: parseCalendarEventDate(event.startDate, event.startTime, allDay),
+        endsAt: parseCalendarEventEndDate(
+          event.endDate,
+          resolvedEndTime,
+          event.startDate,
+          event.startTime,
+          allDay
+        ),
+        color: event.eventType === "canvasAssignment"
+          ? courseColors?.[event.courseID]?.color || "#3174ad"
+          : colorList?.[event.eventType] || "",
+      };
+    })
     .filter((event) => event.startsAt)
     .sort((left, right) => left.startsAt - right.startsAt);
 }
@@ -1754,7 +1783,7 @@ function DatasetsLandingPage({ datasets }) {
   );
 }
 
-function CalendarPage({ datasets, bridgeState }) {
+function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const today = new Date();
   const initialSession = readCalendarSession();
   const [currentMonth, setCurrentMonth] = useState(() => {
@@ -1775,6 +1804,13 @@ function CalendarPage({ datasets, bridgeState }) {
     ...DATA_FILES.map(({ key, label }) => ({ key, label })),
   ];
   const [selectedCalendarKey, setSelectedCalendarKey] = useState(() => initialSession?.selectedCalendarKey || "extensionEvents");
+  const extensionEventsAvailable = bridgeStatus === "connected";
+
+  useEffect(() => {
+    if (selectedCalendarKey === "extensionEvents" && !extensionEventsAvailable) {
+      setSelectedCalendarKey(DATA_FILES[0].key);
+    }
+  }, [selectedCalendarKey, extensionEventsAvailable]);
 
   const visibleCalendarEvents = selectedCalendarKey === "extensionEvents"
     ? normalizeBridgeCalendarEvents(bridgeState)
@@ -1976,19 +2012,30 @@ function CalendarPage({ datasets, bridgeState }) {
             <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/65">Calendars</span>
             <div className="flex flex-wrap gap-2">
               {calendarOptions.map((option) => (
+                (() => {
+                  const isDisabled = option.key === "extensionEvents" && !extensionEventsAvailable;
+
+                  return (
                 <button
                   key={option.key}
                   type="button"
                   onClick={() => setSelectedCalendarKey(option.key)}
+                  disabled={isDisabled}
+                  aria-disabled={isDisabled}
+                  title={isDisabled ? "Extension events are only available when the extension bridge is connected in a supported browser." : undefined}
                   className={[
                     "rounded-full border px-4 py-2 text-sm font-semibold transition",
                     selectedCalendarKey === option.key
                       ? "border-white bg-white text-stone-900"
-                      : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                      : isDisabled
+                        ? "cursor-not-allowed border-white/10 bg-white/5 text-white/40"
+                        : "border-white/20 bg-white/10 text-white hover:bg-white/20",
                   ].join(" ")}
                 >
                   {option.label}
                 </button>
+                  );
+                })()
               ))}
             </div>
           </div>
@@ -2000,8 +2047,8 @@ function CalendarPage({ datasets, bridgeState }) {
         </div>
       </div>
 
-      <div className={calendarView === "month" ? "grid gap-5 xl:grid-cols-[1.35fr_0.65fr] xl:items-start" : "grid gap-5"}>
-        <section ref={calendarPanelRef} className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+      <div className={calendarView === "month" ? "grid min-w-0 gap-5 xl:grid-cols-[1.35fr_0.65fr] xl:items-start" : "grid min-w-0 gap-5"}>
+        <section ref={calendarPanelRef} className="min-w-0 rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">
@@ -2061,7 +2108,7 @@ function CalendarPage({ datasets, bridgeState }) {
 
           {calendarView === "month" ? (
             <>
-              <div className="mt-5 grid grid-cols-7 gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+              <div className="mt-5 grid grid-cols-7 gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/60 max-[700px]:text-[10px]">
                 {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
                   <div key={day} className="py-2">
                     {day}
@@ -2069,7 +2116,7 @@ function CalendarPage({ datasets, bridgeState }) {
                 ))}
               </div>
 
-              <div className="mt-2 grid grid-cols-7 gap-2">
+              <div className="mt-2 grid grid-cols-7 gap-2 max-[600px]:gap-1">
                 {calendarDays.map((day) => {
                   const isSelected = day.dateKey === selectedDateKey;
 
@@ -2079,17 +2126,17 @@ function CalendarPage({ datasets, bridgeState }) {
                       type="button"
                       onClick={() => setSelectedDateKey(day.dateKey)}
                       className={[
-                        "flex min-h-[7rem] flex-col rounded-[1.35rem] border px-2.5 py-2 text-left transition",
+                        "flex min-h-[7rem] flex-col rounded-[1.35rem] border px-2.5 py-2 text-left transition max-[700px]:min-h-[4.9rem] max-[700px]:items-center max-[700px]:px-1.5 max-[700px]:py-1.5 max-[600px]:min-h-[4.4rem] max-[600px]:rounded-[1rem] max-[600px]:px-1 max-[600px]:py-1",
                         isSelected
                           ? "border-white/50 bg-white/20 shadow-lg"
                           : "border-white/15 bg-white/8 hover:bg-white/12",
                         day.isCurrentMonth ? "text-white" : "text-white/45",
                       ].join(" ")}
                     >
-                      <div className="flex min-h-[1.4rem] items-start justify-between gap-2">
+                      <div className="flex min-h-[1.4rem] items-start justify-between gap-2 max-[700px]:w-full max-[700px]:min-h-0 max-[700px]:justify-center">
                         <span
                           className={[
-                            "text-sm font-semibold",
+                            "text-sm font-semibold max-[600px]:text-xs",
                             day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : "",
                           ].join(" ")}
                         >
@@ -2097,7 +2144,7 @@ function CalendarPage({ datasets, bridgeState }) {
                         </span>
                         <span
                           className={[
-                            "min-w-[2.1rem] rounded-full px-2 py-1 text-center text-[10px] font-semibold tabular-nums",
+                            "min-w-[2.1rem] rounded-full px-2 py-1 text-center text-[10px] font-semibold tabular-nums max-[700px]:hidden",
                             day.events.length
                               ? "bg-[#8b0000]/85 text-white"
                               : "border border-white/10 text-transparent",
@@ -2106,11 +2153,21 @@ function CalendarPage({ datasets, bridgeState }) {
                           {day.events.length || 0}
                         </span>
                       </div>
-                      <div className="mt-2 grid auto-rows-[1.15rem] gap-0.5">
+                      <div className="mt-2 grid auto-rows-[1.15rem] gap-0.5 max-[700px]:mt-1 max-[700px]:w-full max-[700px]:justify-items-center">
+                        <span
+                          className={[
+                            "hidden min-w-[2.1rem] rounded-full px-2 py-1 text-center text-[10px] font-semibold tabular-nums max-[700px]:inline-flex max-[700px]:items-center max-[700px]:justify-center max-[600px]:min-w-[1.6rem] max-[600px]:px-1.5 max-[600px]:py-0.5 max-[600px]:text-[9px]",
+                            day.events.length
+                              ? "bg-[#8b0000]/85 text-white"
+                              : "border border-white/10 text-transparent",
+                          ].join(" ")}
+                        >
+                          {day.events.length || 0}
+                        </span>
                         {day.events.slice(0, 2).map((event) => (
                           <div
                             key={event.id}
-                            className="truncate rounded-full bg-white/12 px-2 py-0 text-[10px] font-medium leading-[1.15rem] text-white/90"
+                            className="truncate rounded-full bg-white/12 px-2 py-0 text-[10px] font-medium leading-[1.15rem] text-white/90 max-[700px]:hidden"
                           >
                             {event.title}
                           </div>
@@ -2118,12 +2175,12 @@ function CalendarPage({ datasets, bridgeState }) {
                         {Array.from({ length: Math.max(0, 2 - Math.min(day.events.length, 2)) }).map((_, index) => (
                           <div
                             key={`${day.dateKey}-placeholder-${index}`}
-                            className="rounded-full border border-transparent px-2 py-0 text-[10px] leading-[1.15rem] opacity-0"
+                            className="rounded-full border border-transparent px-2 py-0 text-[10px] leading-[1.15rem] opacity-0 max-[700px]:hidden"
                           >
                             placeholder
                           </div>
                         ))}
-                        <div className="pt-0.5 text-[10px] font-semibold uppercase tracking-[0.1em] leading-none text-white/55">
+                        <div className="pt-0.5 text-[10px] font-semibold uppercase tracking-[0.1em] leading-none text-white/55 max-[700px]:hidden">
                           {day.events.length > 2 ? `+${day.events.length - 2} more` : ""}
                         </div>
                       </div>
@@ -2136,43 +2193,47 @@ function CalendarPage({ datasets, bridgeState }) {
 
           {calendarView === "table" ? (
             <div
-              className="mt-5 overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/8"
+              className="mt-5 min-w-0 overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/8"
               style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
             >
-              <div className="grid grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65">
-                <span>Day</span>
-                <span>Date</span>
-                <span>Time</span>
-                <span>Event</span>
-                <span>Source</span>
-                <span>Location</span>
-              </div>
-              <div className="h-[calc(100%-3.125rem)] overflow-y-auto">
-                <div className="divide-y divide-white/10 bg-transparent">
-                  {tableEvents.length ? (
-                    tableEvents.map((event) => {
-                      const dayLabel = getTableDayLabel(event.startDate);
+              <div className="max-w-full overflow-x-auto">
+                <div className="min-w-[34rem]">
+                  <div className="grid grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65 max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]">
+                    <span className="max-[700px]:hidden">Day</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Event</span>
+                    <span>Source</span>
+                    <span>Location</span>
+                  </div>
+                  <div className="h-[calc(100%-3.125rem)] overflow-y-auto">
+                    <div className="divide-y divide-white/10 bg-transparent">
+                      {tableEvents.length ? (
+                        tableEvents.map((event) => {
+                          const dayLabel = getTableDayLabel(event.startDate);
 
-                      return (
-                        <button
-                          key={event.id}
-                          type="button"
-                          onClick={() => setActiveModalEvent(event)}
-                          className="grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] px-4 py-3 text-left text-sm text-white transition hover:bg-white/10"
-                        >
-                          <span className={dayLabel.emphasize ? "font-bold text-white" : ""}>{dayLabel.label}</span>
-                          <span>{formatCalendarDateOnly(event.startDate)}</span>
-                          <span>{formatCalendarTimeRange(event)}</span>
-                          <span className="font-semibold">{event.title}</span>
-                          <span>{event.sourceLabel}</span>
-                          <span className="truncate text-white/75">{event.location || "TBA"}</span>
-                        </button>
-                      );
-                    })
-                  ) : (
-                    <div className="px-4 py-6 text-sm text-white/75">No events are available for this range.</div>
-                  )}
-                  {tableEvents.length > 0 ? <div className="h-0 border-t border-white/10" /> : null}
+                          return (
+                            <button
+                              key={event.id}
+                              type="button"
+                              onClick={() => setActiveModalEvent(event)}
+                              className="grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] px-4 py-3 text-left text-sm text-white transition hover:bg-white/10 max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]"
+                            >
+                              <span className={[dayLabel.emphasize ? "font-bold text-white" : "", "max-[700px]:hidden"].join(" ")}>{dayLabel.label}</span>
+                              <span>{formatCalendarDateOnly(event.startDate)}</span>
+                              <span>{formatCalendarTimeRange(event)}</span>
+                              <span className="font-semibold">{event.title}</span>
+                              <span>{event.sourceLabel}</span>
+                              <span className="truncate text-white/75">{event.location || "TBA"}</span>
+                            </button>
+                          );
+                        })
+                      ) : (
+                        <div className="px-4 py-6 text-sm text-white/75">No events are available for this range.</div>
+                      )}
+                      {tableEvents.length > 0 ? <div className="h-0 border-t border-white/10" /> : null}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2181,26 +2242,26 @@ function CalendarPage({ datasets, bridgeState }) {
           {calendarView === "weekly" ? (
             <div
               ref={weeklyScrollRef}
-              className="mt-5 overflow-auto rounded-[1.5rem] border border-white/15 bg-white/8"
+              className="mt-5 min-w-0 max-w-full overflow-x-auto overflow-y-auto rounded-[1.5rem] border border-white/15 bg-white/8"
               style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
             >
-              <div className="min-w-[980px]">
-                <div className="sticky top-0 z-30 grid grid-cols-[5rem_repeat(7,minmax(0,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md">
-                  <div className="border-r border-white/10 px-3 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+              <div className="min-w-[44rem] max-[600px]:min-w-[760px]">
+                <div className="sticky top-0 z-30 grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                  <div className="border-r border-white/10 px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
                     Time
                   </div>
                   {weekDays.map((day) => (
                     <div
                       key={day.dateKey}
                       className={[
-                        "border-r border-white/10 px-3 py-4 last:border-r-0",
+                        "border-r border-white/10 px-2 py-3 last:border-r-0",
                         day.isToday ? "bg-[#8b0000]/18" : "",
                       ].join(" ")}
                     >
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/60 max-[850px]:text-[10px]">
                         {day.isToday ? "Today" : day.date.toLocaleDateString(undefined, { weekday: "long" })}
                       </p>
-                      <div className="mt-1 flex items-center gap-2 text-sm font-semibold text-white">
+                      <div className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-white max-[850px]:text-xs">
                         <span>{day.date.toLocaleDateString(undefined, { month: "short" })}</span>
                         <span className={day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : ""}>
                           {day.date.getDate()}
@@ -2237,10 +2298,10 @@ function CalendarPage({ datasets, bridgeState }) {
                   ))}
                 </div>
 
-                <div className="relative grid grid-cols-[5rem_repeat(7,minmax(0,1fr))]">
+                <div className="relative grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
                   <div className="relative border-r border-white/10">
                     {weekHours.map((hour) => (
-                      <div key={hour} className="h-20 border-b border-white/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45">
+                      <div key={hour} className="h-20 border-b border-white/10 px-2 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45 max-[850px]:text-[10px]">
                         {new Date(2025, 0, 1, hour).toLocaleTimeString(undefined, { hour: "numeric" })}
                       </div>
                     ))}
@@ -2327,8 +2388,8 @@ function CalendarPage({ datasets, bridgeState }) {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-[5rem_repeat(7,minmax(0,1fr))] border-t border-white/10 bg-black/10">
-                  <div className="border-r border-white/10 px-3 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-t border-white/10 bg-black/10 max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                  <div className="border-r border-white/10 px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
                     Due
                   </div>
                   {weekDays.map((day) => {
@@ -2835,7 +2896,7 @@ export default function App() {
               path="/datasets/:datasetKey"
               element={<DatasetPage datasets={datasets} bridgeStatus={bridgeStatus} bridgeState={bridgeState} />}
             />
-            <Route path="/calendar" element={<CalendarPage datasets={datasets} bridgeState={bridgeState} />} />
+            <Route path="/calendar" element={<CalendarPage datasets={datasets} bridgeState={bridgeState} bridgeStatus={bridgeStatus} />} />
             <Route path="/contributors" element={<DevelopersPage />} />
           </Routes>
         </div>
