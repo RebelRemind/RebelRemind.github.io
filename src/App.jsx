@@ -136,6 +136,25 @@ const CONTRIBUTORS = [
 
 const DATA_FILE_MAP = Object.fromEntries(DATA_FILES.map((item) => [item.key, item]));
 
+const DATASET_HOME_COPY = {
+  academicCalendar: {
+    eyebrow: "Deadlines",
+    description: "Semester milestones, registration windows, and official academic dates.",
+  },
+  unlvCalendar: {
+    eyebrow: "Campus Events",
+    description: "Lectures, workshops, featured events, and university programming.",
+  },
+  involvementCenter: {
+    eyebrow: "Student Life",
+    description: "RSO events, student org meetups, and involvement opportunities.",
+  },
+  rebelCoverage: {
+    eyebrow: "Athletics",
+    description: "Rebel games, meets, matches, and sports coverage across campus.",
+  },
+};
+
 const DEFAULT_THEME = {
   backgroundColor: "#BB0000",
   textColor: "#f3f4f6",
@@ -220,6 +239,54 @@ function getEventSourceLabel(sourceKey) {
   return DATA_FILE_MAP[sourceKey]?.label || "Campus Source";
 }
 
+function parseTimeParts(value) {
+  const normalized = (value || "").trim().toUpperCase();
+  const match = normalized.match(/^(\d{1,2})(?::(\d{2}))?\s*([AP]M)$/);
+  if (!match) {
+    return null;
+  }
+
+  let hour = Number.parseInt(match[1], 10);
+  const minute = Number.parseInt(match[2] || "0", 10);
+  const meridiem = match[3];
+
+  if (hour === 12) {
+    hour = 0;
+  }
+  if (meridiem === "PM") {
+    hour += 12;
+  }
+
+  return { hour, minute };
+}
+
+function parseLocalDateTime(dateValue, timeValue, fallbackHour = 12, fallbackMinute = 0) {
+  if (!dateValue) {
+    return null;
+  }
+
+  const dateMatch = String(dateValue).trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!dateMatch) {
+    const parsed = timeValue ? new Date(`${dateValue} ${timeValue}`) : new Date(dateValue);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+
+  const year = Number.parseInt(dateMatch[1], 10);
+  const monthIndex = Number.parseInt(dateMatch[2], 10) - 1;
+  const day = Number.parseInt(dateMatch[3], 10);
+  const timeParts = parseTimeParts(timeValue);
+
+  return new Date(
+    year,
+    monthIndex,
+    day,
+    timeParts?.hour ?? fallbackHour,
+    timeParts?.minute ?? fallbackMinute,
+    0,
+    0
+  );
+}
+
 function getEventTimestamp(item) {
   if (!item?.startDate) {
     return Number.POSITIVE_INFINITY;
@@ -228,11 +295,11 @@ function getEventTimestamp(item) {
   const datePart = item.startDate;
   const timePart =
     item.startTime && item.startTime !== "(ALL DAY)" ? item.startTime : "11:59 PM";
-  const parsed = new Date(`${datePart} ${timePart}`);
+  const parsed = parseLocalDateTime(datePart, timePart, 23, 59);
 
-  if (Number.isNaN(parsed.getTime())) {
-    const fallback = new Date(datePart);
-    return Number.isNaN(fallback.getTime()) ? Number.POSITIVE_INFINITY : fallback.getTime();
+  if (!parsed || Number.isNaN(parsed.getTime())) {
+    const fallback = parseLocalDateTime(datePart, "", 12, 0);
+    return !fallback || Number.isNaN(fallback.getTime()) ? Number.POSITIVE_INFINITY : fallback.getTime();
   }
 
   return parsed.getTime();
@@ -251,12 +318,12 @@ function parseCalendarEventDate(startDate, startTime, allDay = false) {
   }
 
   if (allDay || !startTime || startTime === "(ALL DAY)") {
-    const parsed = new Date(`${startDate}T12:00:00`);
-    return Number.isNaN(parsed.getTime()) ? null : parsed;
+    const parsed = parseLocalDateTime(startDate, "", 12, 0);
+    return !parsed || Number.isNaN(parsed.getTime()) ? null : parsed;
   }
 
-  const parsed = new Date(`${startDate} ${startTime}`);
-  if (!Number.isNaN(parsed.getTime())) {
+  const parsed = parseLocalDateTime(startDate, startTime, 12, 0);
+  if (parsed && !Number.isNaN(parsed.getTime())) {
     return parsed;
   }
 
@@ -936,8 +1003,13 @@ function isBridgeSupportedBrowser() {
   return /(Chrome|Chromium|Edg)\//.test(navigator.userAgent || "");
 }
 
+function openDownloadModal() {
+  window.__openRebelDownloadModal?.();
+}
+
 function Navbar({ visible, onCloseCalendarNavbar }) {
   const location = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const datasetKey = location.pathname.startsWith("/datasets/")
     ? location.pathname.split("/").pop()
     : null;
@@ -957,6 +1029,10 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
           : "Dataset Explorer";
   const showHomeActions = isHomePage;
 
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -969,58 +1045,116 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
       ].join(" ")}
     >
       <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between rounded-[1.5rem] border border-white/20 bg-black/65 px-4 py-3 shadow-2xl backdrop-blur-md">
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="flex items-center gap-3 text-left text-white"
-          >
-            <img src="/rr_logo.png" alt="Rebel Remind logo" className="h-10 w-10 rounded-xl" />
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/70">Rebel Remind</p>
-              <p className="text-sm font-semibold text-white/95">{pageLabel}</p>
-            </div>
-          </button>
-
-          {activeDatasetLabel ? (
-            <div className="text-right">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/60">Dataset</p>
-              <p className="text-xl font-black text-white sm:text-2xl">{activeDatasetLabel}</p>
-            </div>
-          ) : isCalendarPage ? (
+        <div
+          className={[
+            "rounded-[1.5rem] px-4 py-3 shadow-2xl backdrop-blur-md",
+            showHomeActions
+              ? "border border-white/25 bg-black/82"
+              : "border border-white/20 bg-black/65",
+          ].join(" ")}
+        >
+          <div className="flex items-center justify-between gap-3">
             <button
               type="button"
-              onClick={onCloseCalendarNavbar}
-              className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
-              aria-label="Close navbar"
+              onClick={scrollToTop}
+              className="flex items-center gap-3 text-left text-white"
             >
-              X
+              <img src="/rr_logo.png" alt="Rebel Remind logo" className="h-10 w-10 rounded-xl ring-1 ring-white/20" />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/70">Rebel Remind</p>
+                <p className="text-sm font-semibold text-white/95">{pageLabel}</p>
+              </div>
             </button>
-          ) : showHomeActions ? (
-            <div className="hidden items-center gap-3 sm:flex">
-              <Link
-                to="/calendar"
-                className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
-              >
-                Calendar
-              </Link>
-              <a
-                href="/datasets"
-                className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
-              >
-                Datasets
-              </a>
+
+            {activeDatasetLabel ? (
+              <div className="text-right">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/60">Dataset</p>
+                <p className="text-xl font-black text-white sm:text-2xl">{activeDatasetLabel}</p>
+              </div>
+            ) : isCalendarPage ? (
               <button
                 type="button"
-                onClick={window.__openRebelDownloadModal}
-                className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-stone-900 transition hover:bg-stone-200"
+                onClick={onCloseCalendarNavbar}
+                className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+                aria-label="Close navbar"
               >
-                Download RebelRemind
+                X
               </button>
+            ) : showHomeActions ? (
+              <>
+                <div className="hidden items-center gap-3 md:flex">
+                  <Link
+                    to="/calendar"
+                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+                  >
+                    Calendar
+                  </Link>
+                  <a
+                    href="/datasets"
+                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+                  >
+                    Datasets
+                  </a>
+                  <button
+                    type="button"
+                    onClick={openDownloadModal}
+                    className="rounded-full bg-[#bb0000] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
+                  >
+                    Download RebelRemind
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen((current) => !current)}
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/15 text-white transition hover:bg-white/20 md:hidden"
+                  aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                  aria-expanded={mobileMenuOpen}
+                >
+                  <span className="sr-only">{mobileMenuOpen ? "Close menu" : "Open menu"}</span>
+                  <span className="flex flex-col gap-1.5">
+                    <span className="block h-0.5 w-5 rounded-full bg-current" />
+                    <span className="block h-0.5 w-5 rounded-full bg-current" />
+                    <span className="block h-0.5 w-5 rounded-full bg-current" />
+                  </span>
+                </button>
+              </>
+            ) : (
+              null
+            )}
+          </div>
+
+          {showHomeActions ? (
+            <div
+              className={[
+                "grid overflow-hidden transition-all duration-300 md:hidden",
+                mobileMenuOpen ? "mt-4 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+              ].join(" ")}
+            >
+              <div className="min-h-0">
+                <div className="flex flex-col gap-3 border-t border-white/10 pt-4">
+                  <Link
+                    to="/calendar"
+                    className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+                  >
+                    Calendar
+                  </Link>
+                  <a
+                    href="/datasets"
+                    className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+                  >
+                    Datasets
+                  </a>
+                  <button
+                    type="button"
+                    onClick={openDownloadModal}
+                    className="rounded-2xl bg-[#bb0000] px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-[#980000]"
+                  >
+                    Download RebelRemind
+                  </button>
+                </div>
+              </div>
             </div>
-          ) : (
-            null
-          )}
+          ) : null}
         </div>
       </div>
     </nav>
@@ -1078,7 +1212,6 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
           {bridgeState?.user ? `Signed In: ${bridgeState.user.name}` : bridgeIsUnsupported ? "Chrome Browser Required" : "No Synced Extension Data"}
         </StatusPill>
       </div>
-
       <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
@@ -1125,6 +1258,21 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
               )}
             </div>
           </div>
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            <button
+              type="button"
+              onClick={openDownloadModal}
+              className="inline-flex items-center justify-center rounded-full bg-[#bb0000] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
+            >
+              Download RebelRemind
+            </button>
+            <Link
+              to="/calendar"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/20"
+            >
+              View Calendar
+            </Link>
+          </div>
         </div>
 
         <aside className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
@@ -1152,7 +1300,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
                 {bridgeStatus === "connected"
                   ? "No upcoming Canvas assignments are available right now."
                   : bridgeIsUnsupported
-                    ? "Bridge sync is not available in this browser."
+                    ? "Bridge sync is not available in this browser. Please use Google Chrome and download the extension to see your upcoming Canvas Assignments!"
                     : "Sync not available. Turn on the extension to preview upcoming assignments here."}
               </div>
             )}
@@ -1218,7 +1366,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
       />
 
       {bridgeStatus === "connected" ? (
-        <section className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+        <section className="mt-3 rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Your Events</p>
@@ -1272,7 +1420,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
         </section>
       ) : null}
 
-      <section id="campus-feed" className="grid scroll-mt-28 gap-4 xl:grid-cols-2">
+      <section id="campus-feed" className="mt-3 grid scroll-mt-28 gap-4 xl:grid-cols-2">
         <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Feed</p>
           <div className="mt-5 space-y-3">
@@ -1300,30 +1448,60 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
         </div>
 
         <div id="dataset-grid" className="grid scroll-mt-28 gap-4">
-          {DATA_FILES.map((source) => (
-            <Link
-              key={source.key}
-              to={getDatasetRoute(source.key)}
-              className="group rounded-[2rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-white"
-            >
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Dataset Explorer</p>
-                  <h3 className="mt-1 text-2xl font-semibold">{source.label}</h3>
-                  <p className="mt-2 text-sm text-stone-600">Open the full page for this feed.</p>
+          {DATA_FILES.map((source) => {
+            const sourceItems = Array.isArray(datasets[source.key]) ? datasets[source.key] : [];
+            const nextItem = sourceItems
+              .filter(isUpcomingEvent)
+              .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))[0];
+            const datasetCopy = DATASET_HOME_COPY[source.key] || {
+              eyebrow: "Dataset Explorer",
+              description: "Open the full page for this feed.",
+            };
+
+            return (
+              <Link
+                key={source.key}
+                to={getDatasetRoute(source.key)}
+                className="group rounded-[2rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-white"
+              >
+                <div className="flex h-full flex-col justify-between gap-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">{datasetCopy.eyebrow}</p>
+                      <h3 className="mt-1 text-2xl font-semibold">{source.label}</h3>
+                      <p className="mt-2 max-w-xl text-sm leading-6 text-stone-600">{datasetCopy.description}</p>
+                    </div>
+                    <div className="text-right">
+                      <span className="inline-flex max-w-[5.5rem] flex-col items-center rounded-2xl bg-stone-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] leading-tight text-white sm:max-w-none sm:flex-row sm:gap-1 sm:rounded-full sm:px-3 sm:py-1 sm:text-xs">
+                        <span>{sourceItems.length || 0}</span>
+                        <span>loaded</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="rounded-[1.4rem] border border-stone-200 bg-white/75 px-4 py-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-stone-500">Next Up</p>
+                    {nextItem ? (
+                      <>
+                        <p className="mt-2 line-clamp-2 text-base font-semibold text-stone-900">{nextItem.name}</p>
+                        <p className="mt-1 text-sm text-stone-700">{formatEventDate(nextItem)}</p>
+                        <p className="mt-3 text-sm font-semibold text-stone-700 transition-transform duration-300 group-hover:translate-x-1">
+                          Explore feed →
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="mt-2 text-sm leading-6 text-stone-600">The feed is loading or there are no upcoming events in range yet.</p>
+                        <p className="mt-3 text-sm font-semibold text-stone-700 transition-transform duration-300 group-hover:translate-x-1">
+                          Open dataset →
+                        </p>
+                      </>
+                    )}
+                  </div>
                 </div>
-                <div className="text-right">
-                  <span className="inline-flex max-w-[5.5rem] flex-col items-center rounded-2xl bg-stone-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] leading-tight text-white sm:max-w-none sm:flex-row sm:gap-1 sm:rounded-full sm:px-3 sm:py-1 sm:text-xs">
-                    <span>{datasets[source.key]?.length || 0}</span>
-                    <span>loaded</span>
-                  </span>
-                  <p className="mt-3 text-sm font-semibold text-stone-700 transition-transform duration-300 group-hover:translate-x-1">
-                    View page →
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </section>
     </>
@@ -2016,24 +2194,24 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                   const isDisabled = option.key === "extensionEvents" && !extensionEventsAvailable;
 
                   return (
-                <button
-                  key={option.key}
-                  type="button"
-                  onClick={() => setSelectedCalendarKey(option.key)}
-                  disabled={isDisabled}
-                  aria-disabled={isDisabled}
-                  title={isDisabled ? "Extension events are only available when the extension bridge is connected in a supported browser." : undefined}
-                  className={[
-                    "rounded-full border px-4 py-2 text-sm font-semibold transition",
-                    selectedCalendarKey === option.key
-                      ? "border-white bg-white text-stone-900"
-                      : isDisabled
-                        ? "cursor-not-allowed border-white/10 bg-white/5 text-white/40"
-                        : "border-white/20 bg-white/10 text-white hover:bg-white/20",
-                  ].join(" ")}
-                >
-                  {option.label}
-                </button>
+                    <button
+                      key={option.key}
+                      type="button"
+                      onClick={() => setSelectedCalendarKey(option.key)}
+                      disabled={isDisabled}
+                      aria-disabled={isDisabled}
+                      title={isDisabled ? "Extension events are only available when the extension bridge is connected in a supported browser." : undefined}
+                      className={[
+                        "rounded-full border px-4 py-2 text-sm font-semibold transition",
+                        selectedCalendarKey === option.key
+                          ? "border-white bg-white text-stone-900"
+                          : isDisabled
+                            ? "cursor-not-allowed border-white/10 bg-white/5 text-white/40"
+                            : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                      ].join(" ")}
+                    >
+                      {option.label}
+                    </button>
                   );
                 })()
               ))}
