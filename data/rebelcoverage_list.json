@@ -3728,5 +3728,25 @@
     "location": "San Diego, Calif.",
     "sport": "Women's Volleyball",
     "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/san-diego-state/boxscore/17275"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-12",
+    "startTime": "12:00 PM",
+    "endDate": "2026-10-12",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/grand-canyon/boxscore/17303"
+  },
+  {
+    "name": "San Diego State",
+    "startDate": "2026-10-12",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-12",
+    "endTime": "",
+    "location": "San Diego, CA",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/san-diego-state/boxscore/17345"
   }
 ]
