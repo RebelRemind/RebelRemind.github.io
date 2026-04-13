@@ -4460,6 +4460,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12363658"
   },
   {
+    "name": "Club Meeting: Git & Web Dev!",
+    "startDate": "2026-04-13",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-13",
+    "endTime": "11:00 AM",
+    "location": "SU 205",
+    "organization": "AI and Data Science Club",
+    "link": "https://involvementcenter.unlv.edu/event/12421651"
+  },
+  {
     "name": "Thrift/Rummage Sale",
     "startDate": "2026-04-13",
     "startTime": "12:00 PM",
@@ -4488,6 +4498,16 @@
     "location": "Hospitality Hall",
     "organization": "The Hospitality Collective",
     "link": "https://involvementcenter.unlv.edu/event/12063334"
+  },
+  {
+    "name": "PHSA Third General Meeting",
+    "startDate": "2026-04-13",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-13",
+    "endTime": "6:00 PM",
+    "location": "Online",
+    "organization": "Public Health Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12421676"
   },
   {
     "name": "Mapping Your Future: Life and Career Design in Action",
@@ -4620,6 +4640,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12135886"
   },
   {
+    "name": "Festival of Communities (First Generation Club)",
+    "startDate": "2026-04-15",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-15",
+    "endTime": "2:00 PM",
+    "location": "UNLV Academic Mall",
+    "organization": "1st Generation Club",
+    "link": "https://involvementcenter.unlv.edu/event/12421854"
+  },
+  {
     "name": "Festival of Communities",
     "startDate": "2026-04-15",
     "startTime": "11:00 AM",
@@ -4648,6 +4678,16 @@
     "location": "Student Union Room 316",
     "organization": "Service Learning & Leadership",
     "link": "https://involvementcenter.unlv.edu/event/12301559"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "PHSA Social Event",
@@ -4940,7 +4980,7 @@
     "link": "https://involvementcenter.unlv.edu/event/12330141"
   },
   {
-    "name": "Perfume Club Weekly Meeting ",
+    "name": "Keep Our Earth Clean",
     "startDate": "2026-04-22",
     "startTime": "6:00 PM",
     "endDate": "2026-04-22",
@@ -5110,6 +5150,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12288802"
   },
   {
+    "name": "The Exchange: Where Opportunities Begin",
+    "startDate": "2026-04-27",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-27",
+    "endTime": "8:00 PM",
+    "location": "Lee Business School Courtyard",
+    "organization": "International Business Association",
+    "link": "https://involvementcenter.unlv.edu/event/12421821"
+  },
+  {
     "name": "It's Just Coffee: Partisanship in American Politics",
     "startDate": "2026-04-28",
     "startTime": "10:00 AM",
@@ -5258,16 +5308,6 @@
     "location": "SU 205",
     "organization": "CAEO College Programs",
     "link": "https://involvementcenter.unlv.edu/event/12026261"
-  },
-  {
-    "name": "Cafe Berlin - End of Semester Dinner",
-    "startDate": "2026-04-30",
-    "startTime": "6:30 PM",
-    "endDate": "2026-04-30",
-    "endTime": "8:30 PM",
-    "location": "Cafe Berlin",
-    "organization": "UNLV German Club",
-    "link": "https://involvementcenter.unlv.edu/event/12308347"
   },
   {
     "name": "WQP: End of Semester Celebration",
@@ -5430,6 +5470,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12277942"
   },
   {
+    "name": "Cafe Berlin - End of Semester Dinner",
+    "startDate": "2026-05-07",
+    "startTime": "6:30 PM",
+    "endDate": "2026-05-07",
+    "endTime": "8:30 PM",
+    "location": "Cafe Berlin",
+    "organization": "UNLV German Club",
+    "link": "https://involvementcenter.unlv.edu/event/12308347"
+  },
+  {
     "name": "Late Night Breakfast",
     "startDate": "2026-05-07",
     "startTime": "9:00 PM",
@@ -5498,6 +5548,16 @@
     "location": "Health Education Room, SRWC, Room 1502",
     "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
     "link": "https://involvementcenter.unlv.edu/event/12131446"
+  },
+  {
+    "name": "Congrats Grads!",
+    "startDate": "2026-05-14",
+    "startTime": "4:00 PM",
+    "endDate": "2026-05-14",
+    "endTime": "6:30 PM",
+    "location": "SRWC Room 1010",
+    "organization": "Black Social Workers Society",
+    "link": "https://involvementcenter.unlv.edu/event/12421677"
   },
   {
     "name": "Drag Brunch @ Hamburger Mary's",
