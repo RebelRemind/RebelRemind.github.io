@@ -817,6 +817,36 @@ function formatCombinedHomeEventDate(event) {
   return formatUserEventDate(event);
 }
 
+function getSyncedHomeEventTimestamp(event) {
+  if (!event?.startDate) {
+    return Number.MAX_SAFE_INTEGER;
+  }
+
+  if (event.sourceType === "involvementCenter") {
+    return getEventTimestamp({
+      startDate: event.startDate,
+      startTime: event.startTime,
+    });
+  }
+
+  if (!event.startTime || event.startTime === "(ALL DAY)") {
+    return getEventTimestamp({
+      startDate: event.startDate,
+      startTime: "(ALL DAY)",
+    });
+  }
+
+  const parsed = new Date(`${event.startDate} ${event.startTime}`);
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed.getTime();
+  }
+
+  return getEventTimestamp({
+    startDate: event.startDate,
+    startTime: event.startTime,
+  });
+}
+
 function formatAcademicCalendarBadge(item) {
   if (!item?.startDate) {
     return "TBA";
@@ -1164,6 +1194,18 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
 function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
   const bridgeIsConnected = bridgeStatus === "connected";
   const bridgeIsUnsupported = bridgeStatus === "unsupported";
+  const [profileImageFailed, setProfileImageFailed] = useState(false);
+  const profileName = bridgeState?.user?.name || "User";
+  const profileInitials = profileName
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() || "")
+    .join("") || "U";
+
+  useEffect(() => {
+    setProfileImageFailed(false);
+  }, [bridgeState?.user?.picture]);
 
   return (
     <header className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-6 shadow-2xl backdrop-blur-md">
@@ -1217,11 +1259,19 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
           {bridgeState?.user ? (
             <div className="mt-4 flex items-center gap-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
-              <img
-                src={bridgeState.user.picture}
-                alt={bridgeState.user.name}
-                className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white/30"
-              />
+              {bridgeState.user.picture && !profileImageFailed ? (
+                <img
+                  src={bridgeState.user.picture}
+                  alt={bridgeState.user.name}
+                  referrerPolicy="no-referrer"
+                  onError={() => setProfileImageFailed(true)}
+                  className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white/30"
+                />
+              ) : (
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-lg font-semibold text-white ring-2 ring-white/30">
+                  {profileInitials}
+                </div>
+              )}
               <div>
                 <p className="text-lg font-semibold">{bridgeState.user.name}</p>
                 <p className="text-sm text-white/75">{bridgeState.user.email}</p>
@@ -1234,7 +1284,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
               <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
             </div>
             <div className="rounded-3xl bg-white/12 p-4">
-              <p className="text-sm text-white/70">Custom Events</p>
+              <p className="text-sm text-white/70">Your Events</p>
               <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
             </div>
             <div className="rounded-3xl bg-white/12 p-4">
@@ -1335,19 +1385,25 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
     ...((bridgeState?.userEvents || []).map((event) => ({
       ...event,
       sourceType: "userEvent",
+      displayTitle: `Custom Event: ${event.title}`,
+      displayLocation: event.location,
+      displayDescription: event.desc || "",
+    }))),
+    ...((bridgeState?.savedUNLVEvents || []).map((event) => ({
+      ...event,
+      sourceType: "savedUnlvEvent",
+      displayTitle: event.name,
+      displayLocation: event.location,
+      displayDescription: event.description || event.organization || event.category || event.sport || "",
+    }))),
+    ...((bridgeState?.googleCalendarEvents || []).map((event) => ({
+      ...event,
+      sourceType: "googleCalendar",
       displayTitle: event.title,
       displayLocation: event.location,
       displayDescription: event.desc || "",
     }))),
-  ].sort((left, right) => {
-    const leftTime = left.sourceType === "involvementCenter"
-      ? getEventTimestamp({ startDate: left.startDate, startTime: left.startTime })
-      : new Date(`${left.startDate}T${left.startTime || "00:00"}`).getTime();
-    const rightTime = right.sourceType === "involvementCenter"
-      ? getEventTimestamp({ startDate: right.startDate, startTime: right.startTime })
-      : new Date(`${right.startDate}T${right.startTime || "00:00"}`).getTime();
-    return leftTime - rightTime;
-  });
+  ].sort((left, right) => getSyncedHomeEventTimestamp(left) - getSyncedHomeEventTimestamp(right));
 
   const toggleCollapsedEvent = (eventKey) => {
     setCollapsedEvents((current) => ({
@@ -1370,10 +1426,10 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Your Events</p>
-              <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your upcoming custom events.</h2>
+              <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your upcoming saved and custom events.</h2>
             </div>
             <div className="rounded-[1.5rem] border border-white/15 bg-white/10 px-5 py-4 text-white">
-              <p className="text-sm uppercase tracking-[0.2em] text-white/65">Upcoming Custom Events</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/65">Upcoming Saved Events</p>
               <p className="mt-2 text-4xl font-semibold">{syncedUserEvents.length}</p>
             </div>
           </div>
@@ -1384,17 +1440,26 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
                 const isCollapsed = Boolean(collapsedEvents[eventKey]);
                 const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
 
+                const Wrapper = event.link ? "a" : "article";
+
                 return (
-                  <article
+                  <Wrapper
                     key={eventKey}
-                    className="rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm"
+                    href={event.link || undefined}
+                    target={event.link ? "_blank" : undefined}
+                    rel={event.link ? "noreferrer" : undefined}
+                    className="block rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm transition hover:bg-white/12"
                   >
                     <div className="flex items-start justify-between gap-4">
                       <p className="font-semibold">{event.displayTitle}</p>
                       {hasExtraDetails ? (
                         <button
                           type="button"
-                          onClick={() => toggleCollapsedEvent(eventKey)}
+                          onClick={(clickEvent) => {
+                            clickEvent.preventDefault();
+                            clickEvent.stopPropagation();
+                            toggleCollapsedEvent(eventKey);
+                          }}
                           className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
                         >
                           {isCollapsed ? "Show Details" : "Hide Details"}
@@ -1408,7 +1473,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
                         {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
                       </>
                     ) : null}
-                  </article>
+                  </Wrapper>
                 );
               })
             ) : (
@@ -1964,6 +2029,13 @@ function DatasetsLandingPage({ datasets }) {
 function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const today = new Date();
   const initialSession = readCalendarSession();
+  const [isWideMonthLayout, setIsWideMonthLayout] = useState(() => {
+    if (typeof window === "undefined") {
+      return true;
+    }
+
+    return window.matchMedia("(min-width: 1280px)").matches;
+  });
   const [currentMonth, setCurrentMonth] = useState(() => {
     const savedMonth = initialSession?.currentMonth;
     const parsed = savedMonth ? new Date(savedMonth) : null;
@@ -2087,6 +2159,19 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       observer.disconnect();
     };
   }, [calendarView, currentMonth, selectedDateKey, selectedCalendarKey, visibleCalendarEvents.length, monthWeekCount]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return undefined;
+    }
+
+    const mediaQuery = window.matchMedia("(min-width: 1280px)");
+    const syncLayout = () => setIsWideMonthLayout(mediaQuery.matches);
+
+    syncLayout();
+    mediaQuery.addEventListener("change", syncLayout);
+    return () => mediaQuery.removeEventListener("change", syncLayout);
+  }, []);
 
   useEffect(() => {
     if (calendarView !== "weekly" || !weeklyScrollRef.current) {
@@ -2616,7 +2701,13 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
         {calendarView === "month" ? (
           <aside
             className="flex min-h-0 flex-col overflow-hidden rounded-[2rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl"
-            style={calendarPanelHeight ? { height: `${calendarPanelHeight}px` } : undefined}
+            style={
+              calendarPanelHeight
+                ? isWideMonthLayout
+                  ? { height: `${calendarPanelHeight}px` }
+                  : { maxHeight: `${calendarPanelHeight}px` }
+                : undefined
+            }
           >
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Selected Day</p>
             <h2 className="mt-2 font-serif text-3xl">{formatCalendarPanelDate(selectedDateKey)}</h2>
