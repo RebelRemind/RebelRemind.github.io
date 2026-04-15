@@ -424,20 +424,20 @@
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
-    "name": "Spring 2026 Commencement: Undergraduate Degree Candidates",
-    "startDate": "2026-05-16",
-    "startTime": "",
-    "endDate": "2026-05-16",
-    "endTime": "",
-    "link": "https://www.unlv.edu/event/spring-2026-commencement-undergraduate-degree-candidates-0"
-  },
-  {
     "name": "Spring 2026 Semester Ends",
     "startDate": "2026-05-16",
     "startTime": "",
     "endDate": "2026-05-16",
     "endTime": "",
     "link": "https://www.unlv.edu/event/spring-2026-semester-ends"
+  },
+  {
+    "name": "Spring 2026 Commencement: Undergraduate Degree Candidates",
+    "startDate": "2026-05-16",
+    "startTime": "",
+    "endDate": "2026-05-16",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/spring-2026-commencement-undergraduate-degree-candidates-0"
   },
   {
     "name": "Summer session I instruction begins.",

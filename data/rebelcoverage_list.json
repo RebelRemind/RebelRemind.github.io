@@ -1,15 +1,5 @@
 [
   {
-    "name": "San Jose State",
-    "startDate": "2026-01-14",
-    "startTime": "",
-    "endDate": "2026-01-14",
-    "endTime": "",
-    "location": "San Jose, CA",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-jose-state/boxscore/17647"
-  },
-  {
     "name": "UNR Invitational",
     "startDate": "2026-01-16",
     "startTime": "",
@@ -2157,7 +2147,7 @@
     "endTime": "",
     "location": "Santa Cruz, CA",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/4/12/mens-golf-rebels-to-finish-regular-season-at-televised-western-intercollegiate.aspx"
+    "link": "https://unlvrebels.com/news/2026/4/13/mens-golf-rebels-one-shot-off-lead-after-day-one-at-western.aspx"
   },
   {
     "name": "Fresno State",
@@ -2177,17 +2167,17 @@
     "endTime": "",
     "location": "Santa Cruz, CA",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/4/12/mens-golf-rebels-to-finish-regular-season-at-televised-western-intercollegiate.aspx"
+    "link": "https://unlvrebels.com/news/2026/4/14/mens-golf-little-snyder-guide-rebels-in-second-round-at-western-intercollegiate.aspx"
   },
   {
     "name": "Utah Tech",
     "startDate": "2026-04-14",
-    "startTime": "5:05 PM",
+    "startTime": "6:06 PM",
     "endDate": "2026-04-14",
-    "endTime": "",
+    "endTime": "9:34 PM",
     "location": "St. George, Utah",
     "sport": "Baseball",
-    "link": "https://www.espn.com/watch/player/_/id/c7c53048-6c4d-4387-9d57-f1bac7856404"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/utah-tech/boxscore/17774"
   },
   {
     "name": "Western Intercollegiate",
@@ -2217,7 +2207,7 @@
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Softball",
-    "link": ""
+    "link": "https://themw.com/news/2026/03/24/unlv-at-boise-state-13/?_gl=1*uostau*_up*MQ..*_ga*MTU3MzQ5MTc3OS4xNzc2MTgyNjQ5*_ga_SC44RH1YQ6*czE3NzYxODI2NDgkbzEkZzAkdDE3NzYxODI2NDgkajYwJGwwJGgw"
   },
   {
     "name": "Bryan Clay Invitational",
@@ -2257,17 +2247,17 @@
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Softball",
-    "link": ""
+    "link": "https://themw.com/news/2026/03/24/unlv-at-boise-state-14/?_gl=1*uostau*_up*MQ..*_ga*MTU3MzQ5MTc3OS4xNzc2MTgyNjQ5*_ga_SC44RH1YQ6*czE3NzYxODI2NDgkbzEkZzAkdDE3NzYxODI2NDgkajYwJGwwJGgw"
   },
   {
-    "name": "Boise State",
+    "name": "#69 Boise State",
     "startDate": "2026-04-18",
     "startTime": "10:00 AM",
     "endDate": "2026-04-18",
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Men's Tennis",
-    "link": "https://ioncourt.com/ties/696136c036cd30e2cce23e39?source=my-teams"
+    "link": "https://web.track.tennis/#/ch-pR7GLcB_aO4/events/evt-lwF1WU8yZBE/recordings/"
   },
   {
     "name": "Washington State",
@@ -2287,7 +2277,7 @@
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Softball",
-    "link": ""
+    "link": "https://themw.com/news/2026/03/24/unlv-at-boise-state-15/?_gl=1*uostau*_up*MQ..*_ga*MTU3MzQ5MTc3OS4xNzc2MTgyNjQ5*_ga_SC44RH1YQ6*czE3NzYxODI2NDgkbzEkZzAkdDE3NzYxODI2NDgkajYwJGwwJGgw"
   },
   {
     "name": "Washington State",
