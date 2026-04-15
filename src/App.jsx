@@ -61,6 +61,17 @@ const ALL_SPORTS = [
   "Women's Volleyball",
 ];
 
+const EXTENSION_EVENT_SOURCE_ORDER = [
+  "Canvas",
+  "Your Events",
+  "Involvement Center",
+  "UNLV Calendar",
+  "Rebel Sports",
+  "Google Calendar",
+  "Saved Campus Event",
+  "Extension Event",
+];
+
 const CONTRIBUTORS = [
   {
     name: "Billy Estrada",
@@ -183,23 +194,7 @@ function formatEventDate(item) {
   const itemDay = new Date(date);
   itemDay.setHours(0, 0, 0, 0);
 
-  const formatTime = (value) => {
-    if (!value || value === "(ALL DAY)") {
-      return "";
-    }
-
-    const parsed = new Date(`${item.startDate}T${value}`);
-    if (!Number.isNaN(parsed.getTime())) {
-      return parsed.toLocaleTimeString(undefined, {
-        hour: "numeric",
-        minute: "2-digit",
-      }).toLowerCase();
-    }
-
-    return value.toLowerCase();
-  };
-
-  const timeLabel = formatTime(item.startTime);
+  const timeLabel = normalizeDisplayTime(item.startDate, item.startTime)?.toLowerCase() || "";
 
   if (itemDay.getTime() === today.getTime()) {
     return timeLabel ? `Today at ${timeLabel}` : "Today";
@@ -241,6 +236,15 @@ function getEventSourceLabel(sourceKey) {
 
 function parseTimeParts(value) {
   const normalized = (value || "").trim().toUpperCase();
+  const twentyFourHourMatch = normalized.match(/^(\d{1,2}):(\d{2})$/);
+  if (twentyFourHourMatch) {
+    const hour = Number.parseInt(twentyFourHourMatch[1], 10);
+    const minute = Number.parseInt(twentyFourHourMatch[2], 10);
+    if (!Number.isNaN(hour) && !Number.isNaN(minute)) {
+      return { hour, minute };
+    }
+  }
+
   const match = normalized.match(/^(\d{1,2})(?::(\d{2}))?\s*([AP]M)$/);
   if (!match) {
     return null;
@@ -258,6 +262,45 @@ function parseTimeParts(value) {
   }
 
   return { hour, minute };
+}
+
+function normalizeDisplayTime(dateValue, timeValue) {
+  const rawTime = String(timeValue || "").trim();
+  if (!rawTime || rawTime === "(ALL DAY)" || rawTime === "Time TBD" || rawTime === "TBD") {
+    return rawTime;
+  }
+
+  const amPmParts = parseTimeParts(rawTime);
+  if (amPmParts) {
+    return new Date(2025, 0, 1, amPmParts.hour, amPmParts.minute, 0, 0).toLocaleTimeString(undefined, {
+      hour: "numeric",
+      minute: "2-digit",
+    });
+  }
+
+  const militaryMatch = rawTime.match(/^(\d{1,2}):(\d{2})$/);
+  if (militaryMatch) {
+    const hour = Number.parseInt(militaryMatch[1], 10);
+    const minute = Number.parseInt(militaryMatch[2], 10);
+    if (!Number.isNaN(hour) && !Number.isNaN(minute)) {
+      return new Date(2025, 0, 1, hour, minute, 0, 0).toLocaleTimeString(undefined, {
+        hour: "numeric",
+        minute: "2-digit",
+      });
+    }
+  }
+
+  if (dateValue) {
+    const parsed = new Date(`${dateValue}T${rawTime}`);
+    if (!Number.isNaN(parsed.getTime())) {
+      return parsed.toLocaleTimeString(undefined, {
+        hour: "numeric",
+        minute: "2-digit",
+      });
+    }
+  }
+
+  return rawTime;
 }
 
 function parseLocalDateTime(dateValue, timeValue, fallbackHour = 12, fallbackMinute = 0) {
@@ -453,8 +496,8 @@ function formatCalendarTimeRange(event) {
     return "All day";
   }
 
-  const start = event.startTime || "";
-  const end = event.endTime || "";
+  const start = normalizeDisplayTime(event.startDate, event.startTime) || "";
+  const end = normalizeDisplayTime(event.endDate || event.startDate, event.endTime) || "";
   if (start && end && start !== end) {
     return `${start} - ${end}`;
   }
@@ -514,11 +557,14 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
     .map((item, index) => {
       const allDay = item.startTime === "(ALL DAY)";
       const resolvedEndTime = item.endTime || buildDefaultEventEndTime(item.startDate, item.startTime, allDay);
+      const resolvedTitle = datasetKey === "rebelCoverage" && item.sport && item.name
+        ? `${item.sport}: ${item.name}`
+        : item.name;
 
       return {
         id: `${datasetKey}-${item.name}-${item.startDate}-${index}`,
         sourceKey: datasetKey,
-        title: item.name,
+        title: resolvedTitle,
         startDate: item.startDate,
         endDate: item.endDate || item.startDate,
         startTime: item.startTime,
@@ -543,12 +589,22 @@ function normalizeBridgeCalendarEvents(bridgeState) {
   return (Array.isArray(bridgeState?.calendarEvents) ? bridgeState.calendarEvents : [])
     .map((event, index) => {
       const allDay = Boolean(event.allDay) || event.startTime === "(ALL DAY)";
-      const resolvedEndTime = event.endTime || buildDefaultEventEndTime(event.startDate, event.startTime, allDay);
+      const hasDistinctEndTime = Boolean(event.endTime) && event.endTime !== event.startTime;
+      const resolvedEndTime = hasDistinctEndTime
+        ? event.endTime
+        : buildDefaultEventEndTime(event.startDate, event.startTime, allDay);
+      const courseColor = event.courseID != null
+        ? courseColors?.[event.courseID]?.color || courseColors?.[String(event.courseID)]?.color || ""
+        : "";
+      const resolvedTitle = event.sourceLabel === "Rebel Sports" && event.description && event.title
+        && !event.title.startsWith(`${event.description}:`)
+        ? `${event.description}: ${event.title}`
+        : (event.title || "Untitled Event");
 
       return {
         id: event.id || `extension-event-${index}`,
         sourceKey: "extensionEvents",
-        title: event.title || "Untitled Event",
+        title: resolvedTitle,
         startDate: event.startDate,
         endDate: event.endDate || event.startDate,
         startTime: event.startTime,
@@ -569,7 +625,7 @@ function normalizeBridgeCalendarEvents(bridgeState) {
           allDay
         ),
         color: event.eventType === "canvasAssignment"
-          ? courseColors?.[event.courseID]?.color || "#3174ad"
+          ? courseColor || "#3174ad"
           : colorList?.[event.eventType] || "",
       };
     })
@@ -747,7 +803,11 @@ function CalendarEventModal({ payload, onClose }) {
             <p><span className="font-semibold">Date:</span> {formatCalendarPanelDate(payload.startDate)}</p>
             <p><span className="font-semibold">Time:</span> {formatCalendarTimeRange(payload)}</p>
             {payload.location ? <p><span className="font-semibold">Location:</span> {payload.location}</p> : null}
-            {payload.description ? <p><span className="font-semibold">Details:</span> {payload.description}</p> : null}
+            {payload.description ? (
+              <p>
+                <span className="font-semibold">{payload.sourceLabel === "Rebel Sports" ? "Sport:" : "Details:"}</span> {payload.description}
+              </p>
+            ) : null}
             {payload.link ? (
               <a
                 href={payload.link}
@@ -936,7 +996,11 @@ function ViewAllFiltersModal({
   selectedValues,
   onToggle,
   onClearAll,
+  searchEnabled = false,
+  searchPlaceholder = "Search filters",
 }) {
+  const [modalSearch, setModalSearch] = useState("");
+
   useEffect(() => {
     if (!open) {
       return undefined;
@@ -952,9 +1016,23 @@ function ViewAllFiltersModal({
     return () => window.removeEventListener("keydown", handleEscape);
   }, [open, onClose]);
 
+  useEffect(() => {
+    if (open) {
+      setModalSearch("");
+    }
+  }, [open]);
+
   if (!open) {
     return null;
   }
+
+  const visibleOptions = searchEnabled
+    ? options.filter((option) => option.toLowerCase().includes(modalSearch.trim().toLowerCase()))
+    : options;
+  const handleToggle = (option) => {
+    onToggle(option);
+    setModalSearch("");
+  };
 
   return (
     <div
@@ -963,7 +1041,7 @@ function ViewAllFiltersModal({
       role="presentation"
     >
       <div
-        className="w-full max-w-2xl rounded-[2rem] border border-white/20 bg-stone-100/95 p-6 text-stone-900 shadow-2xl"
+        className="flex h-[min(42rem,calc(100vh-4rem))] w-full max-w-2xl flex-col rounded-[2rem] border border-white/20 bg-stone-100/95 p-6 text-stone-900 shadow-2xl"
         onClick={(event) => event.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -994,17 +1072,33 @@ function ViewAllFiltersModal({
           </div>
         </div>
 
-        <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto rounded-[1.5rem] border border-stone-200 bg-white p-4">
-          {options.map((option) => (
-            <label key={option} className="flex items-center gap-3 rounded-xl px-3 py-2 transition hover:bg-stone-100">
-              <input
-                type="checkbox"
-                checked={selectedValues.includes(option)}
-                onChange={() => onToggle(option)}
+        <div className="mt-5 flex min-h-0 flex-1 flex-col rounded-[1.5rem] border border-stone-200 bg-white p-4">
+          {searchEnabled ? (
+            <div className="mb-4">
+              <SearchInput
+                value={modalSearch}
+                onChange={setModalSearch}
+                placeholder={searchPlaceholder}
               />
-              <span className="text-sm font-medium text-stone-800">{option}</span>
-            </label>
-          ))}
+            </div>
+          ) : null}
+
+          <div className="min-h-0 flex-1 space-y-3 overflow-y-auto">
+            {visibleOptions.length ? (
+              visibleOptions.map((option) => (
+                <label key={option} className="flex items-center gap-3 rounded-xl px-3 py-2 transition hover:bg-stone-100">
+                  <input
+                    type="checkbox"
+                    checked={selectedValues.includes(option)}
+                    onChange={() => handleToggle(option)}
+                  />
+                  <span className="text-sm font-medium text-stone-800">{option}</span>
+                </label>
+              ))
+            ) : (
+              <p className="px-3 py-2 text-sm text-stone-600">No filters match your search.</p>
+            )}
+          </div>
         </div>
       </div>
     </div>
@@ -1392,9 +1486,9 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
     ...((bridgeState?.savedUNLVEvents || []).map((event) => ({
       ...event,
       sourceType: "savedUnlvEvent",
-      displayTitle: event.name,
+      displayTitle: event.sport && event.name ? `${event.sport}: ${event.name}` : event.name,
       displayLocation: event.location,
-      displayDescription: event.description || event.organization || event.category || event.sport || "",
+      displayDescription: event.sport || event.description || event.organization || event.category || "",
     }))),
     ...((bridgeState?.googleCalendarEvents || []).map((event) => ({
       ...event,
@@ -1861,6 +1955,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
           selectedValues={manualFilters}
           onToggle={toggleManualFilter}
           onClearAll={() => setManualFilters([])}
+          searchEnabled={isInvolvementCenter}
+          searchPlaceholder="Search RSOs and organizations"
         />
       ) : null}
 
@@ -2047,24 +2143,124 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const [calendarView, setCalendarView] = useState(() => initialSession?.calendarView || "month");
   const [activeModalEvent, setActiveModalEvent] = useState(null);
   const [calendarPanelHeight, setCalendarPanelHeight] = useState(null);
+  const [useSyncedCalendarFilters, setUseSyncedCalendarFilters] = useState(true);
+  const [calendarManualFilters, setCalendarManualFilters] = useState([]);
+  const [calendarFilterSearch, setCalendarFilterSearch] = useState("");
+  const [calendarOrganizationDirectory, setCalendarOrganizationDirectory] = useState([]);
+  const [isCalendarFilterModalOpen, setIsCalendarFilterModalOpen] = useState(false);
   const calendarPanelRef = useRef(null);
   const weeklyScrollRef = useRef(null);
   const calendarOptions = [
-    { key: "extensionEvents", label: "Use Extension Events" },
+    { key: "extensionEvents", label: "Your Synched Events" },
     ...DATA_FILES.map(({ key, label }) => ({ key, label })),
   ];
-  const [selectedCalendarKey, setSelectedCalendarKey] = useState(() => initialSession?.selectedCalendarKey || "extensionEvents");
+  const [selectedCalendarKey, setSelectedCalendarKey] = useState("extensionEvents");
   const extensionEventsAvailable = bridgeStatus === "connected";
+  const selectedCalendarSupportsFilters = ["extensionEvents", "unlvCalendar", "involvementCenter", "rebelCoverage"].includes(selectedCalendarKey);
+  const selectedCalendarUsesSyncedFilters = ["unlvCalendar", "involvementCenter", "rebelCoverage"].includes(selectedCalendarKey);
+  const hasSyncedCalendarFilters = bridgeStatus === "connected" && selectedCalendarUsesSyncedFilters;
 
   useEffect(() => {
-    if (selectedCalendarKey === "extensionEvents" && !extensionEventsAvailable) {
+    if (selectedCalendarKey === "extensionEvents" && ["unsupported", "unavailable"].includes(bridgeStatus)) {
       setSelectedCalendarKey(DATA_FILES[0].key);
     }
-  }, [selectedCalendarKey, extensionEventsAvailable]);
+  }, [selectedCalendarKey, bridgeStatus]);
 
-  const visibleCalendarEvents = selectedCalendarKey === "extensionEvents"
+  useEffect(() => {
+    setUseSyncedCalendarFilters(true);
+    setCalendarManualFilters([]);
+    setCalendarFilterSearch("");
+  }, [selectedCalendarKey]);
+
+  useEffect(() => {
+    if (selectedCalendarKey !== "involvementCenter") {
+      setCalendarOrganizationDirectory([]);
+      return undefined;
+    }
+
+    let cancelled = false;
+    fetch("/data/organization_list.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load organization list");
+        }
+
+        return response.json();
+      })
+      .then((payload) => {
+        if (!cancelled) {
+          const names = payload
+            .map((item) => item?.name)
+            .filter(Boolean)
+            .sort((left, right) => left.localeCompare(right));
+          setCalendarOrganizationDirectory(names);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedCalendarKey]);
+
+  const baseCalendarEvents = selectedCalendarKey === "extensionEvents"
     ? normalizeBridgeCalendarEvents(bridgeState)
     : normalizeDatasetCalendarEvents(selectedCalendarKey, datasets);
+  const availableCalendarFilters = selectedCalendarSupportsFilters
+    ? selectedCalendarKey === "extensionEvents"
+      ? Array.from(new Set(baseCalendarEvents.map((event) => event.sourceLabel).filter(Boolean)))
+        .sort((left, right) => {
+          const leftIndex = EXTENSION_EVENT_SOURCE_ORDER.indexOf(left);
+          const rightIndex = EXTENSION_EVENT_SOURCE_ORDER.indexOf(right);
+          const leftRank = leftIndex === -1 ? Number.POSITIVE_INFINITY : leftIndex;
+          const rightRank = rightIndex === -1 ? Number.POSITIVE_INFINITY : rightIndex;
+
+          if (leftRank !== rightRank) {
+            return leftRank - rightRank;
+          }
+
+          return left.localeCompare(right);
+        })
+      : selectedCalendarKey === "unlvCalendar"
+        ? ALL_INTERESTS
+        : selectedCalendarKey === "rebelCoverage"
+          ? ALL_SPORTS
+          : calendarOrganizationDirectory.length
+            ? calendarOrganizationDirectory
+            : Array.from(
+              new Set(
+                (Array.isArray(datasets.involvementCenter) ? datasets.involvementCenter : [])
+                  .map((item) => item?.organization)
+                  .filter(Boolean)
+              )
+            ).sort((left, right) => left.localeCompare(right))
+    : [];
+  const syncedCalendarFilters = selectedCalendarKey === "unlvCalendar"
+    ? bridgeState?.selectedInterests || []
+    : selectedCalendarKey === "involvementCenter"
+      ? bridgeState?.involvedClubs || []
+      : selectedCalendarKey === "rebelCoverage"
+        ? bridgeState?.selectedSports || []
+        : [];
+  const activeCalendarFilters = hasSyncedCalendarFilters && useSyncedCalendarFilters
+    ? syncedCalendarFilters
+    : calendarManualFilters;
+  const visibleCalendarManualFilters = selectedCalendarKey === "involvementCenter"
+    ? availableCalendarFilters
+      .filter((filter) => !calendarManualFilters.includes(filter))
+      .filter((filter) => filter.toLowerCase().includes(calendarFilterSearch.trim().toLowerCase()))
+      .slice(0, 8)
+    : availableCalendarFilters;
+  const visibleCalendarEvents = selectedCalendarSupportsFilters && activeCalendarFilters.length
+    ? baseCalendarEvents.filter((event) => {
+      const eventFilterValue = selectedCalendarKey === "extensionEvents"
+        ? event.sourceLabel
+        : event.description;
+      return activeCalendarFilters.includes(eventFilterValue);
+    })
+    : baseCalendarEvents;
   const eventsByDate = buildEventsByDate(visibleCalendarEvents);
 
   const monthStart = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
@@ -2118,6 +2314,27 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const nowInSelectedWeek = today >= selectedWeekStart && today <= selectedWeekEnd;
   const nowMinutes = (today.getHours() * 60) + today.getMinutes();
   const currentTimeTop = ((Math.max(7 * 60, Math.min(nowMinutes, 23 * 60)) - (7 * 60)) / 60) * 80;
+  const isCanvasSourceVisible = !activeCalendarFilters.length || activeCalendarFilters.includes("Canvas");
+  const shouldShowWeeklyDueSection = selectedCalendarKey === "extensionEvents"
+    && bridgeStatus === "connected"
+    && Boolean(bridgeState?.preferences?.canvasIntegration)
+    && isCanvasSourceVisible;
+
+  function toggleCalendarManualFilter(filter) {
+    setCalendarManualFilters((current) =>
+      current.includes(filter)
+        ? current.filter((item) => item !== filter)
+        : [...current, filter]
+    );
+    setCalendarFilterSearch("");
+  }
+
+  function toggleAllCalendarManualFilters() {
+    setCalendarManualFilters((current) =>
+      current.length === availableCalendarFilters.length ? [] : [...availableCalendarFilters]
+    );
+    setCalendarFilterSearch("");
+  }
 
   function shiftCalendar(direction) {
     if (calendarView === "weekly" || calendarView === "table") {
@@ -2199,13 +2416,12 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       currentMonth: currentMonth.toISOString(),
       selectedDateKey,
       calendarView,
-      selectedCalendarKey,
       weeklyScrollTop: weeklyScrollRef.current?.scrollTop ?? null,
       pageScrollY: window.scrollY,
     };
 
     window.sessionStorage.setItem(CALENDAR_SESSION_KEY, JSON.stringify(session));
-  }, [currentMonth, selectedDateKey, calendarView, selectedCalendarKey]);
+  }, [currentMonth, selectedDateKey, calendarView]);
 
   useEffect(() => {
     if (calendarView !== "weekly" || !weeklyScrollRef.current) {
@@ -2270,45 +2486,236 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       </div>
 
       <div className="rounded-[1.75rem] border border-white/20 bg-black/20 p-4 text-white shadow-xl backdrop-blur-md">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/65">Calendars</span>
-            <div className="flex flex-wrap gap-2">
-              {calendarOptions.map((option) => (
-                (() => {
-                  const isDisabled = option.key === "extensionEvents" && !extensionEventsAvailable;
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-xs font-semibold uppercase tracking-[0.24em] text-white/65">Calendars</span>
+              <div className="flex flex-wrap gap-2">
+                {calendarOptions.map((option) => (
+                  (() => {
+                    const isDisabled = option.key === "extensionEvents" && !extensionEventsAvailable;
 
-                  return (
-                    <button
-                      key={option.key}
-                      type="button"
-                      onClick={() => setSelectedCalendarKey(option.key)}
-                      disabled={isDisabled}
-                      aria-disabled={isDisabled}
-                      title={isDisabled ? "Extension events are only available when the extension bridge is connected in a supported browser." : undefined}
-                      className={[
-                        "rounded-full border px-4 py-2 text-sm font-semibold transition",
-                        selectedCalendarKey === option.key
-                          ? "border-white bg-white text-stone-900"
-                          : isDisabled
-                            ? "cursor-not-allowed border-white/10 bg-white/5 text-white/40"
-                            : "border-white/20 bg-white/10 text-white hover:bg-white/20",
-                      ].join(" ")}
-                    >
-                      {option.label}
-                    </button>
-                  );
-                })()
-              ))}
+                    return (
+                      <button
+                        key={option.key}
+                        type="button"
+                        onClick={() => setSelectedCalendarKey(option.key)}
+                        disabled={isDisabled}
+                        aria-disabled={isDisabled}
+                        title={isDisabled ? "Extension events are only available when the extension bridge is connected in a supported browser." : undefined}
+                        className={[
+                          "rounded-full border px-4 py-2 text-sm font-semibold transition",
+                          selectedCalendarKey === option.key
+                            ? "border-white bg-white text-stone-900"
+                            : isDisabled
+                              ? "cursor-not-allowed border-white/10 bg-white/5 text-white/40"
+                              : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                        ].join(" ")}
+                      >
+                        {option.label}
+                      </button>
+                    );
+                  })()
+                ))}
+              </div>
             </div>
+            <p className="text-sm text-white/70">
+              {selectedCalendarKey === "extensionEvents"
+                ? "Shows your personalized Rebel Remind events."
+                : `Showing only ${DATA_FILE_MAP[selectedCalendarKey]?.label || "selected"} events.`}
+            </p>
           </div>
-          <p className="text-sm text-white/70">
-            {selectedCalendarKey === "extensionEvents"
-              ? "Shows your personalized Rebel Remind events."
-              : `Showing only ${DATA_FILE_MAP[selectedCalendarKey]?.label || "selected"} events.`}
-          </p>
+
+          {selectedCalendarSupportsFilters ? (
+            <div className="rounded-[1.5rem] border border-white/15 bg-white/8 p-4">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">Filters</p>
+                    <h2 className="mt-1 text-xl font-semibold text-white">
+                      {selectedCalendarKey === "extensionEvents"
+                        ? "Browse extension events by source"
+                        : selectedCalendarKey === "unlvCalendar"
+                          ? "Browse by interest"
+                          : selectedCalendarKey === "involvementCenter"
+                            ? "Browse by organization"
+                            : "Browse by sport"}
+                    </h2>
+                  </div>
+                  {hasSyncedCalendarFilters ? (
+                    <label className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white">
+                      <input
+                        type="checkbox"
+                        checked={useSyncedCalendarFilters}
+                        onChange={(event) => setUseSyncedCalendarFilters(event.target.checked)}
+                      />
+                      Use Synced Preferences
+                    </label>
+                  ) : null}
+                </div>
+
+                {hasSyncedCalendarFilters && useSyncedCalendarFilters ? (
+                  <div className="rounded-[1.25rem] border border-white/15 bg-black/10 p-4">
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Synced Filters</p>
+                    <div className="flex flex-wrap gap-2">
+                      {syncedCalendarFilters.length ? (
+                        syncedCalendarFilters.map((filter) => (
+                          <span
+                            key={filter}
+                            className="rounded-full border border-white/15 bg-white px-3 py-1 text-sm font-semibold text-stone-900"
+                          >
+                            {filter}
+                          </span>
+                        ))
+                      ) : (
+                        <p className="text-sm text-white/70">
+                          No synced {selectedCalendarKey === "unlvCalendar" ? "interests" : selectedCalendarKey === "involvementCenter" ? "organizations" : "sports"} found, so all events are shown.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="rounded-[1.25rem] border border-white/15 bg-black/10 p-4">
+                    <div className="flex flex-col gap-4">
+                      {selectedCalendarKey === "involvementCenter" ? (
+                        <SearchInput
+                          value={calendarFilterSearch}
+                          onChange={setCalendarFilterSearch}
+                          placeholder="Search RSOs and organizations"
+                        />
+                      ) : null}
+                      {selectedCalendarKey === "rebelCoverage" ? (
+                        <div className="grid gap-4 md:grid-cols-2">
+                          <div className="rounded-[1rem] border border-white/10 bg-white/10 p-4">
+                            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Men's Sports</p>
+                            <div className="flex flex-wrap gap-2">
+                              {availableCalendarFilters
+                                .filter((sport) => !sport.startsWith("Women's"))
+                                .map((sport) => (
+                                  <FilterChip
+                                    key={sport}
+                                    active={calendarManualFilters.includes(sport)}
+                                    onClick={() => toggleCalendarManualFilter(sport)}
+                                  >
+                                    {sport}
+                                  </FilterChip>
+                                ))}
+                            </div>
+                          </div>
+                          <div className="rounded-[1rem] border border-white/10 bg-white/10 p-4">
+                            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Women's Sports</p>
+                            <div className="flex flex-wrap gap-2">
+                              {availableCalendarFilters
+                                .filter((sport) => sport.startsWith("Women's"))
+                                .map((sport) => (
+                                  <FilterChip
+                                    key={sport}
+                                    active={calendarManualFilters.includes(sport)}
+                                    onClick={() => toggleCalendarManualFilter(sport)}
+                                  >
+                                    {sport}
+                                  </FilterChip>
+                                ))}
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
+                      {calendarManualFilters.length ? (
+                        <div>
+                          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">
+                            Selected {selectedCalendarKey === "extensionEvents" ? "Sources" : selectedCalendarKey === "involvementCenter" ? "Organizations" : selectedCalendarKey === "rebelCoverage" ? "Sports" : "Filters"}
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {calendarManualFilters.map((filter) => (
+                              <SelectedFilterPill
+                                key={filter}
+                                label={filter}
+                                onRemove={() =>
+                                  setCalendarManualFilters((current) => current.filter((item) => item !== filter))
+                                }
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ) : null}
+                      {selectedCalendarKey !== "rebelCoverage" ? (
+                        <div className="flex flex-wrap gap-2">
+                          {visibleCalendarManualFilters.map((filter) => (
+                            <FilterChip
+                              key={filter}
+                              active={calendarManualFilters.includes(filter)}
+                              onClick={() => toggleCalendarManualFilter(filter)}
+                            >
+                              {filter}
+                            </FilterChip>
+                          ))}
+                          {!visibleCalendarManualFilters.length ? (
+                            <p className="text-sm text-white/70">
+                              {selectedCalendarKey === "involvementCenter"
+                                ? "No organizations match your search."
+                                : "No filters are available right now."}
+                            </p>
+                          ) : null}
+                        </div>
+                      ) : null}
+                      <div className="flex flex-wrap items-center gap-3 text-sm font-semibold">
+                        {selectedCalendarKey === "extensionEvents" ? (
+                          <button
+                            type="button"
+                            onClick={toggleAllCalendarManualFilters}
+                            className="text-white/80 transition hover:text-white"
+                          >
+                            {calendarManualFilters.length === availableCalendarFilters.length ? "Clear All" : "Select All"}
+                          </button>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => setIsCalendarFilterModalOpen(true)}
+                            className="text-white/80 transition hover:text-white"
+                          >
+                            View All
+                          </button>
+                        )}
+                        {calendarManualFilters.length && selectedCalendarKey !== "extensionEvents" ? (
+                          <button
+                            type="button"
+                            onClick={() => setCalendarManualFilters([])}
+                            className="text-[#ffb3b3] transition hover:text-white"
+                          >
+                            Clear All
+                          </button>
+                        ) : null}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
+
+      {selectedCalendarSupportsFilters ? (
+        <ViewAllFiltersModal
+          open={isCalendarFilterModalOpen}
+          onClose={() => setIsCalendarFilterModalOpen(false)}
+          title={
+            selectedCalendarKey === "extensionEvents"
+              ? "All Extension Event Sources"
+              : selectedCalendarKey === "unlvCalendar"
+                ? "All Interest Filters"
+                : selectedCalendarKey === "involvementCenter"
+                  ? "All Organization Filters"
+                  : "All Sport Filters"
+          }
+          options={availableCalendarFilters}
+          selectedValues={calendarManualFilters}
+          onToggle={toggleCalendarManualFilter}
+          onClearAll={() => setCalendarManualFilters([])}
+          searchEnabled={selectedCalendarKey === "involvementCenter"}
+          searchPlaceholder={selectedCalendarKey === "involvementCenter" ? "Search RSOs and organizations" : "Search filters"}
+        />
+      ) : null}
 
       <div className={calendarView === "month" ? "grid min-w-0 gap-5 xl:grid-cols-[1.35fr_0.65fr] xl:items-start" : "grid min-w-0 gap-5"}>
         <section ref={calendarPanelRef} className="min-w-0 rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
@@ -2456,11 +2863,11 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
 
           {calendarView === "table" ? (
             <div
-              className="mt-5 min-w-0 overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/8"
+              className="mt-5 flex min-w-0 flex-col overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/8"
               style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
             >
-              <div className="max-w-full overflow-x-auto">
-                <div className="min-w-[34rem]">
+              <div className="max-w-full flex-1 overflow-x-auto">
+                <div className="flex min-h-0 min-w-[34rem] flex-col">
                   <div className="grid grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65 max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]">
                     <span className="max-[700px]:hidden">Day</span>
                     <span>Date</span>
@@ -2469,7 +2876,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                     <span>Source</span>
                     <span>Location</span>
                   </div>
-                  <div className="h-[calc(100%-3.125rem)] overflow-y-auto">
+                  <div className="min-h-0 flex-1 overflow-y-auto">
                     <div className="divide-y divide-white/10 bg-transparent">
                       {tableEvents.length ? (
                         tableEvents.map((event) => {
@@ -2480,7 +2887,12 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                               key={event.id}
                               type="button"
                               onClick={() => setActiveModalEvent(event)}
-                              className="grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] px-4 py-3 text-left text-sm text-white transition hover:bg-white/10 max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]"
+                              className={[
+                                "grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-l-2 px-4 py-3 text-left text-sm text-white transition max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]",
+                                dayLabel.emphasize
+                                  ? "border-l-[#ff8f8f] bg-[#8b0000]/18 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:bg-[#8b0000]/24"
+                                  : "border-l-transparent hover:bg-white/10",
+                              ].join(" ")}
                             >
                               <span className={[dayLabel.emphasize ? "font-bold text-white" : "", "max-[700px]:hidden"].join(" ")}>{dayLabel.label}</span>
                               <span>{formatCalendarDateOnly(event.startDate)}</span>
@@ -2509,62 +2921,122 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
               style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
             >
               <div className="min-w-[44rem] max-[600px]:min-w-[760px]">
-                <div className="sticky top-0 z-30 grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
-                  <div className="border-r border-white/10 px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                    Time
-                  </div>
-                  {weekDays.map((day) => (
-                    <div
-                      key={day.dateKey}
-                      className={[
-                        "border-r border-white/10 px-2 py-3 last:border-r-0",
-                        day.isToday ? "bg-[#8b0000]/18" : "",
-                      ].join(" ")}
-                    >
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/60 max-[850px]:text-[10px]">
-                        {day.isToday ? "Today" : day.date.toLocaleDateString(undefined, { weekday: "long" })}
-                      </p>
-                      <div className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-white max-[850px]:text-xs">
-                        <span>{day.date.toLocaleDateString(undefined, { month: "short" })}</span>
-                        <span className={day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : ""}>
-                          {day.date.getDate()}
-                        </span>
-                      </div>
-                      {day.events.filter((event) => isWeeklyAllDayEvent(event)).length ? (
-                        <div className="mt-3 flex flex-wrap gap-2">
-                          {day.events.filter((event) => isWeeklyAllDayEvent(event)).slice(0, 1).map((event) => (
-                            <button
-                              key={event.id}
-                              type="button"
-                              onClick={() => setActiveModalEvent(event)}
-                              className="truncate rounded-full bg-white/15 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/25"
-                            >
-                              {event.title}
-                            </button>
-                          ))}
-                          {day.events.filter((event) => isWeeklyAllDayEvent(event)).length > 1 ? (
-                            <button
-                              type="button"
-                              onClick={() => setActiveModalEvent({
-                                title: `${day.events.filter((event) => isWeeklyAllDayEvent(event)).length} All Day Events`,
-                                subtitle: getCalendarViewDateLabel(day.date),
-                                events: day.events.filter((event) => isWeeklyAllDayEvent(event)),
-                              })}
-                              className="rounded-full bg-white/10 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-white/75 transition hover:bg-white/20"
-                            >
-                              +{day.events.filter((event) => isWeeklyAllDayEvent(event)).length - 1} more
-                            </button>
-                          ) : null}
-                        </div>
-                      ) : null}
+                <div className="sticky top-0 z-30">
+                  <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                    <div className="sticky left-0 z-40 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
+                      Time
                     </div>
-                  ))}
+                    {weekDays.map((day) => (
+                      <div
+                        key={day.dateKey}
+                        className={[
+                          "border-r border-white/10 px-2 py-3 last:border-r-0",
+                          day.isToday ? "bg-[#8b0000]/18" : "",
+                        ].join(" ")}
+                      >
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/60 max-[850px]:text-[10px]">
+                          {day.isToday ? "Today" : day.date.toLocaleDateString(undefined, { weekday: "long" })}
+                        </p>
+                        <div className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-white max-[850px]:text-xs">
+                          <span>{day.date.toLocaleDateString(undefined, { month: "short" })}</span>
+                          <span className={day.isToday ? "rounded-full bg-white px-2 py-0.5 text-stone-900" : ""}>
+                            {day.date.getDate()}
+                          </span>
+                        </div>
+                        {day.events.filter((event) => isWeeklyAllDayEvent(event)).length ? (
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            {day.events.filter((event) => isWeeklyAllDayEvent(event)).slice(0, 1).map((event) => (
+                              <button
+                                key={event.id}
+                                type="button"
+                                onClick={() => setActiveModalEvent(event)}
+                                className="truncate rounded-full bg-white/15 px-2 py-1 text-[11px] font-semibold text-white transition hover:bg-white/25"
+                              >
+                                {event.title}
+                              </button>
+                            ))}
+                            {day.events.filter((event) => isWeeklyAllDayEvent(event)).length > 1 ? (
+                              <button
+                                type="button"
+                                onClick={() => setActiveModalEvent({
+                                  title: `${day.events.filter((event) => isWeeklyAllDayEvent(event)).length} All Day Events`,
+                                  subtitle: getCalendarViewDateLabel(day.date),
+                                  events: day.events.filter((event) => isWeeklyAllDayEvent(event)),
+                                })}
+                                className="rounded-full bg-white/10 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-white/75 transition hover:bg-white/20"
+                              >
+                                +{day.events.filter((event) => isWeeklyAllDayEvent(event)).length - 1} more
+                              </button>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    ))}
+                  </div>
+
                 </div>
+
+                {shouldShowWeeklyDueSection ? (
+                  <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-black/10 max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                    <div className="sticky left-0 z-20 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
+                      Due
+                    </div>
+                    {weekDays.map((day) => {
+                      const canvasAssignments = day.events
+                        .filter((event) => isCanvasAssignmentEvent(event))
+                        .sort((left, right) => left.startsAt - right.startsAt);
+
+                      return (
+                        <div
+                          key={`${day.dateKey}-canvas-header`}
+                          className={[
+                            "min-h-[5.5rem] border-r border-white/10 px-2 py-3 last:border-r-0",
+                            day.isToday ? "bg-[#8b0000]/10" : "",
+                          ].join(" ")}
+                        >
+                          {canvasAssignments.length ? (
+                            <div className="space-y-2">
+                              {canvasAssignments.map((event) => {
+                                const backgroundColor = event.color || "#3174ad";
+                                const textColor = getEventForegroundColor(backgroundColor);
+
+                                return (
+                                  <button
+                                    key={`${event.id}-header-due`}
+                                    type="button"
+                                    onClick={() => setActiveModalEvent(event)}
+                                    className="w-full rounded-xl border border-white/10 px-2 py-2 text-left shadow-sm transition hover:brightness-110"
+                                    style={{
+                                      backgroundColor,
+                                      color: textColor,
+                                    }}
+                                  >
+                                    <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80">
+                                      {formatCalendarTimeRange(event)}
+                                    </p>
+                                    <p className="mt-1 line-clamp-2 text-xs font-semibold">{event.title}</p>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          ) : (
+                            <div className="pt-2 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-white/35">
+                              No Canvas
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : null}
 
                 <div className="relative grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
                   <div className="relative border-r border-white/10">
                     {weekHours.map((hour) => (
-                      <div key={hour} className="h-20 border-b border-white/10 px-2 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45 max-[850px]:text-[10px]">
+                      <div
+                        key={hour}
+                        className="sticky left-0 z-20 h-20 border-b border-white/10 bg-[rgba(17,17,17,0.9)] px-2 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45 backdrop-blur-md max-[850px]:text-[10px]"
+                      >
                         {new Date(2025, 0, 1, hour).toLocaleTimeString(undefined, { hour: "numeric" })}
                       </div>
                     ))}
@@ -2610,6 +3082,8 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                         const left = isCollapsedGroup ? "3px" : `calc(${(100 / layout.laneCount) * layout.lane}% + 3px)`;
                         const buttonLabel = isCollapsedGroup ? `${cluster.count}+ Events` : event.title;
                         const timeLabel = isCollapsedGroup ? "Overlapping events" : formatCalendarTimeRange(event);
+                        const isCompactEvent = height <= 44;
+                        const isTightEvent = height <= 56;
 
                         const eventBackgroundColor = event.color || "#8b0000";
                         const eventTextColor = getEventForegroundColor(eventBackgroundColor);
@@ -2640,10 +3114,30 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                               color: eventTextColor,
                             }}
                           >
-                            <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80">
+                            <p
+                              className={[
+                                "truncate font-semibold uppercase opacity-80",
+                                isCompactEvent
+                                  ? "text-[8px] tracking-[0.08em]"
+                                  : isTightEvent
+                                    ? "text-[9px] tracking-[0.1em]"
+                                    : "text-[10px] tracking-[0.12em]",
+                              ].join(" ")}
+                            >
                               {timeLabel}
                             </p>
-                            <p className="mt-1 line-clamp-2 text-xs font-semibold">{buttonLabel}</p>
+                            <p
+                              className={[
+                                "font-semibold leading-tight",
+                                isCompactEvent
+                                  ? "mt-0.5 line-clamp-1 text-[10px]"
+                                  : isTightEvent
+                                    ? "mt-0.5 line-clamp-2 text-[11px]"
+                                    : "mt-1 line-clamp-2 text-xs",
+                              ].join(" ")}
+                            >
+                              {buttonLabel}
+                            </p>
                           </button>
                         );
                       })}
@@ -2651,48 +3145,6 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-t border-white/10 bg-black/10 max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
-                  <div className="border-r border-white/10 px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                    Due
-                  </div>
-                  {weekDays.map((day) => {
-                    const canvasAssignments = day.events
-                      .filter((event) => isCanvasAssignmentEvent(event))
-                      .sort((left, right) => left.startsAt - right.startsAt);
-
-                    return (
-                      <div
-                        key={`${day.dateKey}-canvas-footer`}
-                        className={[
-                          "min-h-[5.5rem] border-r border-white/10 px-2 py-3 last:border-r-0",
-                          day.isToday ? "bg-[#8b0000]/10" : "",
-                        ].join(" ")}
-                      >
-                        {canvasAssignments.length ? (
-                          <div className="space-y-2">
-                            {canvasAssignments.map((event) => (
-                              <button
-                                key={`${event.id}-footer`}
-                                type="button"
-                                onClick={() => setActiveModalEvent(event)}
-                                className="w-full rounded-xl border border-white/10 bg-white/10 px-2 py-2 text-left text-white transition hover:bg-white/15"
-                              >
-                                <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] text-white/65">
-                                  {formatCalendarTimeRange(event)}
-                                </p>
-                                <p className="mt-1 line-clamp-2 text-xs font-semibold">{event.title}</p>
-                              </button>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="pt-2 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-white/35">
-                            No Canvas
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
               </div>
             </div>
           ) : null}
