@@ -2978,7 +2978,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
 
                 {shouldShowWeeklyDueSection ? (
                   <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-black/10 max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
-                    <div className="sticky left-0 z-20 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
+                    <div className="sticky left-0 z-30 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
                       Due
                     </div>
                     {weekDays.map((day) => {
@@ -3031,11 +3031,11 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                 ) : null}
 
                 <div className="relative grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
-                  <div className="relative border-r border-white/10">
+                  <div className="sticky left-0 z-20 border-r border-white/10 bg-[rgba(17,17,17,0.9)] backdrop-blur-md">
                     {weekHours.map((hour) => (
                       <div
                         key={hour}
-                        className="sticky left-0 z-20 h-20 border-b border-white/10 bg-[rgba(17,17,17,0.9)] px-2 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45 backdrop-blur-md max-[850px]:text-[10px]"
+                        className="h-20 border-b border-white/10 px-2 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/45 max-[850px]:text-[10px]"
                       >
                         {new Date(2025, 0, 1, hour).toLocaleTimeString(undefined, { hour: "numeric" })}
                       </div>
