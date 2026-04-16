@@ -336,28 +336,12 @@
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
-    "name": "Study week begins. Classes are scheduled, but major written exams are not given (with exception of mid-semester classes).",
-    "startDate": "2026-05-04",
-    "startTime": "",
-    "endDate": "2026-05-04",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Study Week Begins",
     "startDate": "2026-05-04",
     "startTime": "",
     "endDate": "2026-05-04",
     "endTime": "",
     "link": "https://www.unlv.edu/event/study-week-begins-8"
-  },
-  {
-    "name": "Instruction ends.",
-    "startDate": "2026-05-09",
-    "startTime": "",
-    "endDate": "2026-05-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Instruction Ends",
@@ -368,14 +352,6 @@
     "link": "https://www.unlv.edu/event/instruction-ends-15"
   },
   {
-    "name": "Final examinations begin. Final examinations are scheduled to be two hours long. For additional semester dates and deadlines, visit the Registrar\u2019s Office website.",
-    "startDate": "2026-05-11",
-    "startTime": "",
-    "endDate": "2026-05-11",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Final Examinations Begin",
     "startDate": "2026-05-11",
     "startTime": "",
@@ -384,44 +360,12 @@
     "link": "https://www.unlv.edu/event/final-examinations-begin-8"
   },
   {
-    "name": "Spring commencement. Graduate degree candidates.",
-    "startDate": "2026-05-15",
-    "startTime": "",
-    "endDate": "2026-05-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Spring 2026 Commencement: Graduate Degree Candidates",
     "startDate": "2026-05-15",
     "startTime": "",
     "endDate": "2026-05-15",
     "endTime": "",
     "link": "https://www.unlv.edu/event/spring-2026-commencement-graduate-degree-candidates"
-  },
-  {
-    "name": "Semester ends.",
-    "startDate": "2026-05-16",
-    "startTime": "",
-    "endDate": "2026-05-16",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Spring commencement. Undergraduate degree candidates.",
-    "startDate": "2026-05-16",
-    "startTime": "",
-    "endDate": "2026-05-16",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Spring degree conferral date.",
-    "startDate": "2026-05-16",
-    "startTime": "",
-    "endDate": "2026-05-16",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Spring 2026 Semester Ends",
@@ -440,22 +384,6 @@
     "link": "https://www.unlv.edu/event/spring-2026-commencement-undergraduate-degree-candidates-0"
   },
   {
-    "name": "Summer session I instruction begins.",
-    "startDate": "2026-05-18",
-    "startTime": "",
-    "endDate": "2026-05-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Last day to drop summer session I classes without a W grade.",
-    "startDate": "2026-05-18",
-    "startTime": "",
-    "endDate": "2026-05-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Summer Session I Instruction Begins",
     "startDate": "2026-05-18",
     "startTime": "",
@@ -464,28 +392,12 @@
     "link": "https://www.unlv.edu/event/summer-session-i-instruction-begins-4"
   },
   {
-    "name": "Grades due. Spring grades are due at the Office of the Registrar by 4:00 p.m.",
-    "startDate": "2026-05-19",
-    "startTime": "",
-    "endDate": "2026-05-19",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Spring Grades Due",
     "startDate": "2026-05-19",
     "startTime": "",
     "endDate": "2026-05-19",
     "endTime": "",
-    "link": "https://www.unlv.edu/event/spring-grades-due-2"
-  },
-  {
-    "name": "Memorial Day recess. The UNLV campus will be closed for the Memorial Day holiday and will reopen Tuesday, May 26.",
-    "startDate": "2026-05-25",
-    "startTime": "",
-    "endDate": "2026-05-25",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+    "link": "https://www.unlv.edu/event/spring-grades-due-1"
   },
   {
     "name": "Memorial Day Recess",
@@ -496,36 +408,12 @@
     "link": "https://www.unlv.edu/event/memorial-day-recess-13"
   },
   {
-    "name": "Last day to drop summer session I classes with a W grade.",
-    "startDate": "2026-05-28",
-    "startTime": "",
-    "endDate": "2026-05-28",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Instruction ends for summer session I.",
-    "startDate": "2026-06-05",
-    "startTime": "",
-    "endDate": "2026-06-05",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Instruction Ends for Summer Session I",
     "startDate": "2026-06-05",
     "startTime": "",
     "endDate": "2026-06-05",
     "endTime": "",
     "link": "https://www.unlv.edu/event/instruction-ends-summer-session-i-3"
-  },
-  {
-    "name": "Summer session II instruction begins.",
-    "startDate": "2026-06-08",
-    "startTime": "",
-    "endDate": "2026-06-08",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Summer Session II Instruction Begins",
@@ -536,36 +424,12 @@
     "link": "https://www.unlv.edu/event/summer-session-ii-instruction-begins-4"
   },
   {
-    "name": "Grades due for summer session I classes.",
-    "startDate": "2026-06-09",
-    "startTime": "",
-    "endDate": "2026-06-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Last day to drop summer session II classes without a W grade.",
-    "startDate": "2026-06-09",
-    "startTime": "",
-    "endDate": "2026-06-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Summer Session I Grades Due",
     "startDate": "2026-06-09",
     "startTime": "",
     "endDate": "2026-06-09",
     "endTime": "",
     "link": "https://www.unlv.edu/event/summer-session-i-grades-due"
-  },
-  {
-    "name": "Juneteenth Day recess. The UNLV campus will be closed for the Juneteenth Day holiday and will reopen Monday, June 22.",
-    "startDate": "2026-06-19",
-    "startTime": "",
-    "endDate": "2026-06-19",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Juneteenth Day Recess",
@@ -584,44 +448,12 @@
     "link": "https://www.unlv.edu/event/juneteenth-recess-0"
   },
   {
-    "name": "Last day to drop summer session II classes with a W grade.",
-    "startDate": "2026-06-26",
-    "startTime": "",
-    "endDate": "2026-06-26",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Last day for undergraduates to apply for August 2026 degree conferral. Late undergraduate applicants, please check with the Registrar\u2019s Office. Graduate students should check with the Graduate College for deadlines. Students whose degrees are conferred in August may participate in the following December\u2019s commencement ceremony.",
-    "startDate": "2026-07-01",
-    "startTime": "",
-    "endDate": "2026-07-01",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Independence Day recess. The UNLV campus will be closed for the Independence Day holiday and will reopen Monday, July 6.",
-    "startDate": "2026-07-03",
-    "startTime": "",
-    "endDate": "2026-07-03",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Independence Day Recess",
     "startDate": "2026-07-03",
     "startTime": "",
     "endDate": "2026-07-03",
     "endTime": "",
     "link": "https://www.unlv.edu/event/independence-day-recess-12"
-  },
-  {
-    "name": "Instruction ends for summer session II.",
-    "startDate": "2026-07-10",
-    "startTime": "",
-    "endDate": "2026-07-10",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Instruction Ends for Summer Session II",
@@ -632,36 +464,12 @@
     "link": "https://www.unlv.edu/event/instruction-ends-summer-session-ii-3"
   },
   {
-    "name": "Summer session III instruction begins.",
-    "startDate": "2026-07-13",
-    "startTime": "",
-    "endDate": "2026-07-13",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Summer Session III Instruction Begins",
     "startDate": "2026-07-13",
     "startTime": "",
     "endDate": "2026-07-13",
     "endTime": "",
     "link": "https://www.unlv.edu/event/summer-session-iii-instruction-begins-4"
-  },
-  {
-    "name": "Grades due for summer session II classes.",
-    "startDate": "2026-07-14",
-    "startTime": "",
-    "endDate": "2026-07-14",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Last day to drop summer session III classes without a W grade.",
-    "startDate": "2026-07-14",
-    "startTime": "",
-    "endDate": "2026-07-14",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
     "name": "Grades Due for Summer Session II Classes",
@@ -672,46 +480,6 @@
     "link": "https://www.unlv.edu/event/grades-due-summer-session-ii-classes-3"
   },
   {
-    "name": "Study day. No classes are in session.",
-    "startDate": "2026-07-24",
-    "startTime": "",
-    "endDate": "2026-07-24",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Last day to drop summer session III classes with a W grade.",
-    "startDate": "2026-07-31",
-    "startTime": "",
-    "endDate": "2026-07-31",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Study day. No classes are in session.",
-    "startDate": "2026-08-07",
-    "startTime": "",
-    "endDate": "2026-08-07",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Instruction ends for summer session III.",
-    "startDate": "2026-08-14",
-    "startTime": "",
-    "endDate": "2026-08-14",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
-    "name": "Summer degree conferral date.",
-    "startDate": "2026-08-14",
-    "startTime": "",
-    "endDate": "2026-08-14",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Instruction Ends for Summer Session III",
     "startDate": "2026-08-14",
     "startTime": "",
@@ -720,484 +488,12 @@
     "link": "https://www.unlv.edu/event/instruction-ends-summer-session-iii-3"
   },
   {
-    "name": "Grades due for summer session III classes.",
-    "startDate": "2026-08-18",
-    "startTime": "",
-    "endDate": "2026-08-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
-  },
-  {
     "name": "Grades Due for Summer Session III Classes",
     "startDate": "2026-08-18",
     "startTime": "",
     "endDate": "2026-08-18",
     "endTime": "",
     "link": "https://www.unlv.edu/event/grades-due-summer-session-iii-classes-3"
-  },
-  {
-    "name": "Classes begin.",
-    "startDate": "2026-08-24",
-    "startTime": "",
-    "endDate": "2026-08-24",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last waitlist run.",
-    "startDate": "2026-08-27",
-    "startTime": "",
-    "endDate": "2026-08-27",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay in person without late penalties.",
-    "startDate": "2026-08-28",
-    "startTime": "",
-    "endDate": "2026-08-28",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop and receive a 100% refund. Last day to add classes online. Modular, mid-semester, and educational outreach classes have different registration dates. Check your MyUNLV Student Center for specific deadlines for each class.",
-    "startDate": "2026-08-28",
-    "startTime": "",
-    "endDate": "2026-08-28",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay online without late penalties.",
-    "startDate": "2026-08-30",
-    "startTime": "",
-    "endDate": "2026-08-30",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Labor Day recess. The campus will be closed for Labor Day recess and will reopen on Tuesday, September 8.",
-    "startDate": "2026-09-07",
-    "startTime": "",
-    "endDate": "2026-09-07",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay in person and online with late fees prior to administrative drop for non-payment.",
-    "startDate": "2026-09-08",
-    "startTime": "",
-    "endDate": "2026-09-08",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Administrative drop for non-payment.",
-    "startDate": "2026-09-09",
-    "startTime": "",
-    "endDate": "2026-09-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to add classes with department permission. Departments and colleges may have shorter time frames for late registration in classes.",
-    "startDate": "2026-09-11",
-    "startTime": "",
-    "endDate": "2026-09-11",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day for undergraduates to apply for December 2026 degree conferral and be included in the Commencement Program booklet. Late undergraduate applicants, please check with the Registrar\u2019s Office. Graduate students should check with the Graduate College for deadlines.",
-    "startDate": "2026-10-01",
-    "startTime": "",
-    "endDate": "2026-10-01",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to completely withdraw from all classes and receive a 50% refund if your account is paid in full.",
-    "startDate": "2026-10-02",
-    "startTime": "",
-    "endDate": "2026-10-02",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Nevada Day recess. The campus will be closed for Nevada Day recess and will reopen on Monday, November 2.",
-    "startDate": "2026-10-30",
-    "startTime": "",
-    "endDate": "2026-10-30",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop classes without a refund/change from credit to audit. No withdrawals or audits after this date. Modular, mid-semester, and educational outreach classes have different withdrawal dates. Check your myUNLV student center for specific deadlines for each class.",
-    "startDate": "2026-10-30",
-    "startTime": "",
-    "endDate": "2026-10-30",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Spring registration begins.",
-    "startDate": "2026-11-02",
-    "startTime": "",
-    "endDate": "2026-11-02",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Veterans Day recess. The campus will be closed for Veterans Day recess and will reopen on Thursday, November 12.",
-    "startDate": "2026-11-11",
-    "startTime": "",
-    "endDate": "2026-11-11",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Thanksgiving Day recess. The campus will be closed for Thanksgiving Day recess and will reopen on Monday, November 30.",
-    "startDate": "2026-11-26",
-    "startTime": "",
-    "endDate": "2026-11-26",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Thanksgiving Day recess. The campus will be closed for Thanksgiving Day recess and will reopen on Monday, November 30.",
-    "startDate": "2026-11-27",
-    "startTime": "",
-    "endDate": "2026-11-27",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Study week begins. Classes are scheduled, but major written exams are not given (with exception of mid-semester classes).",
-    "startDate": "2026-11-30",
-    "startTime": "",
-    "endDate": "2026-11-30",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Instruction ends.",
-    "startDate": "2026-12-05",
-    "startTime": "",
-    "endDate": "2026-12-05",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Final examinations begin. Final examinations are scheduled to be two hours long. For additional semester dates and deadlines, visit the Registrar\u2019s Office website.",
-    "startDate": "2026-12-07",
-    "startTime": "",
-    "endDate": "2026-12-07",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Semester ends.",
-    "startDate": "2026-12-12",
-    "startTime": "",
-    "endDate": "2026-12-12",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Winter degree conferral date.",
-    "startDate": "2026-12-12",
-    "startTime": "",
-    "endDate": "2026-12-12",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Grades due. Fall grades are due at the Office of the Registrar by 4 p.m.",
-    "startDate": "2026-12-15",
-    "startTime": "",
-    "endDate": "2026-12-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Winter commencement. Graduate degree candidates.",
-    "startDate": "2026-12-15",
-    "startTime": "",
-    "endDate": "2026-12-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Winter commencement. Undergraduate degree candidates.",
-    "startDate": "2026-12-16",
-    "startTime": "",
-    "endDate": "2026-12-16",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Martin Luther King Jr. Day recess. The campus will be closed for the Martin Luther King Jr. Day recess and will reopen Tuesday, January 19.",
-    "startDate": "2027-01-18",
-    "startTime": "",
-    "endDate": "2027-01-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Classes begin.",
-    "startDate": "2027-01-19",
-    "startTime": "",
-    "endDate": "2027-01-19",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last waitlist run.",
-    "startDate": "2027-01-22",
-    "startTime": "",
-    "endDate": "2027-01-22",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay in person without late penalties.",
-    "startDate": "2027-01-25",
-    "startTime": "",
-    "endDate": "2027-01-25",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay online without late penalties.",
-    "startDate": "2027-01-25",
-    "startTime": "",
-    "endDate": "2027-01-25",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop and receive a 100% refund. Last day to add classes online. Modular, mid-semester, and educational outreach classes have different registration dates. Check your MyUNLV Student Center for specific deadlines for each class.",
-    "startDate": "2027-01-25",
-    "startTime": "",
-    "endDate": "2027-01-25",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to pay in person and online prior to administrative drop for non-payment.",
-    "startDate": "2027-02-02",
-    "startTime": "",
-    "endDate": "2027-02-02",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Administrative drop for non-payment.",
-    "startDate": "2027-02-03",
-    "startTime": "",
-    "endDate": "2027-02-03",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to add classes with department permission. Departments and colleges may have shorter time frames for late registration in classes.",
-    "startDate": "2027-02-05",
-    "startTime": "",
-    "endDate": "2027-02-05",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Presidents\u2019 Day recess. The campus will be closed for Presidents\u2019 Day recess and will reopen on Tuesday, February 16.",
-    "startDate": "2027-02-15",
-    "startTime": "",
-    "endDate": "2027-02-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to completely withdraw from all classes and receive a 50% refund if your account is paid in full.",
-    "startDate": "2027-02-26",
-    "startTime": "",
-    "endDate": "2027-02-26",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day for undergraduates to apply for May 2027 degree conferral. Late undergraduate applicants, please check with the Registrar\u2019s Office. Graduate students should check with the Graduate College for deadlines.",
-    "startDate": "2027-03-01",
-    "startTime": "",
-    "endDate": "2027-03-01",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Summer registration begins.",
-    "startDate": "2027-03-01",
-    "startTime": "",
-    "endDate": "2027-03-01",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Spring break recess. Classes will not be held for spring break and will resume on Monday, March 22.",
-    "startDate": "2027-03-15",
-    "startTime": "",
-    "endDate": "2027-03-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop classes without a refund/change from credit to audit. No withdrawals or audits after this date. Modular, mid-semester, and educational outreach classes have different withdrawal dates. Check your myUNLV student center for specific deadlines for each class.",
-    "startDate": "2027-04-02",
-    "startTime": "",
-    "endDate": "2027-04-02",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Fall registration begins.",
-    "startDate": "2027-04-12",
-    "startTime": "",
-    "endDate": "2027-04-12",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Study week begins. Classes are scheduled, but major written exams are not given (with exception of mid-semester classes).",
-    "startDate": "2027-05-03",
-    "startTime": "",
-    "endDate": "2027-05-03",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Instruction ends.",
-    "startDate": "2027-05-08",
-    "startTime": "",
-    "endDate": "2027-05-08",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Final examinations begin. Final examinations are scheduled to be two hours long. For additional semester dates and deadlines, visit the Registrar\u2019s Office website.",
-    "startDate": "2027-05-10",
-    "startTime": "",
-    "endDate": "2027-05-10",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Spring commencement. Graduate degree candidates.",
-    "startDate": "2027-05-14",
-    "startTime": "",
-    "endDate": "2027-05-14",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Semester ends.",
-    "startDate": "2027-05-15",
-    "startTime": "",
-    "endDate": "2027-05-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Spring commencement. Undergraduate degree candidates.",
-    "startDate": "2027-05-15",
-    "startTime": "",
-    "endDate": "2027-05-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Spring degree conferral date.",
-    "startDate": "2027-05-15",
-    "startTime": "",
-    "endDate": "2027-05-15",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Summer session I instruction begins.",
-    "startDate": "2027-05-17",
-    "startTime": "",
-    "endDate": "2027-05-17",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop summer session I classes without a W grade.",
-    "startDate": "2027-05-17",
-    "startTime": "",
-    "endDate": "2027-05-17",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Grades due. Spring grades are due at the Office of the Registrar by 4:00 p.m.",
-    "startDate": "2027-05-18",
-    "startTime": "",
-    "endDate": "2027-05-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop summer session I classes with a W grade.",
-    "startDate": "2027-05-27",
-    "startTime": "",
-    "endDate": "2027-05-27",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Memorial Day recess. The UNLV campus will be closed for the Memorial Day holiday and will reopen Tuesday, June 1.",
-    "startDate": "2027-05-31",
-    "startTime": "",
-    "endDate": "2027-05-31",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Instruction ends for summer session I.",
-    "startDate": "2027-06-04",
-    "startTime": "",
-    "endDate": "2027-06-04",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Summer session II instruction begins.",
-    "startDate": "2027-06-07",
-    "startTime": "",
-    "endDate": "2027-06-07",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Grades due for summer session I classes.",
-    "startDate": "2027-06-08",
-    "startTime": "",
-    "endDate": "2027-06-08",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop summer session II classes without a W grade.",
-    "startDate": "2027-06-08",
-    "startTime": "",
-    "endDate": "2027-06-08",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Juneteenth Day recess. The UNLV campus will be closed for the Juneteenth Day holiday and will reopen Monday, June 21.",
-    "startDate": "2027-06-18",
-    "startTime": "",
-    "endDate": "2027-06-18",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
   },
   {
     "name": "Juneteenth Day Recess",
@@ -1214,109 +510,5 @@
     "endDate": "2027-06-19",
     "endTime": "",
     "link": "https://www.unlv.edu/event/juneteenth-day-recess"
-  },
-  {
-    "name": "Last day to drop summer session II classes with a W grade.",
-    "startDate": "2027-06-25",
-    "startTime": "",
-    "endDate": "2027-06-25",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day for undergraduates to apply for August 2027 degree conferral. Late undergraduate applicants, please check with the Registrar\u2019s Office. Graduate students should check with the Graduate College for deadlines. Students whose degrees are conferred in August may participate in the following December\u2019s commencement ceremony.",
-    "startDate": "2027-07-01",
-    "startTime": "",
-    "endDate": "2027-07-01",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Independence Day recess. The UNLV campus will be closed for the Independence Day holiday and will reopen Tuesday, July 6.",
-    "startDate": "2027-07-05",
-    "startTime": "",
-    "endDate": "2027-07-05",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Instruction ends for summer session II.",
-    "startDate": "2027-07-09",
-    "startTime": "",
-    "endDate": "2027-07-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Summer session III instruction begins.",
-    "startDate": "2027-07-12",
-    "startTime": "",
-    "endDate": "2027-07-12",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Grades due for summer session II classes.",
-    "startDate": "2027-07-13",
-    "startTime": "",
-    "endDate": "2027-07-13",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop summer session III classes without a W grade.",
-    "startDate": "2027-07-13",
-    "startTime": "",
-    "endDate": "2027-07-13",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Study day. No classes are in session.",
-    "startDate": "2027-07-23",
-    "startTime": "",
-    "endDate": "2027-07-23",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Last day to drop summer session III classes with a W grade.",
-    "startDate": "2027-07-30",
-    "startTime": "",
-    "endDate": "2027-07-30",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Study day. No classes are in session.",
-    "startDate": "2027-08-09",
-    "startTime": "",
-    "endDate": "2027-08-09",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Instruction ends for summer session III.",
-    "startDate": "2027-08-13",
-    "startTime": "",
-    "endDate": "2027-08-13",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Summer degree conferral date.",
-    "startDate": "2027-08-13",
-    "startTime": "",
-    "endDate": "2027-08-13",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
-  },
-  {
-    "name": "Grades due for summer session III classes.",
-    "startDate": "2027-08-17",
-    "startTime": "",
-    "endDate": "2027-08-17",
-    "endTime": "",
-    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15611"
   }
 ]

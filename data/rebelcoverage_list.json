@@ -2187,7 +2187,7 @@
     "endTime": "",
     "location": "Santa Cruz, CA",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/4/12/mens-golf-rebels-to-finish-regular-season-at-televised-western-intercollegiate.aspx"
+    "link": "https://unlvrebels.com/news/2026/4/15/mens-golf-solid-final-round-lands-rebels-third-place-finish-at-western-intercollegiate.aspx"
   },
   {
     "name": "Beach Invitational",
@@ -2840,16 +2840,6 @@
     "link": ""
   },
   {
-    "name": "Scarlet & Gray Scrimmage",
-    "startDate": "2026-08-16",
-    "startTime": "6:30 PM",
-    "endDate": "2026-08-16",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion Practice Gym",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
     "name": "Utah Tech",
     "startDate": "2026-08-21",
     "startTime": "5:30 PM",
@@ -2868,16 +2858,6 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/lmu/boxscore/17338"
-  },
-  {
-    "name": "Arizona State",
-    "startDate": "2026-08-23",
-    "startTime": "1:00 PM",
-    "endDate": "2026-08-23",
-    "endTime": "",
-    "location": "Lake Havasu, Ariz.",
-    "sport": "Women's Volleyball",
-    "link": ""
   },
   {
     "name": "UC San Diego",
@@ -2920,46 +2900,6 @@
     "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
-    "name": "CSU Bakersfield vs. Utah Tech",
-    "startDate": "2026-08-29",
-    "startTime": "4:00 PM",
-    "endDate": "2026-08-29",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
-    "name": "Iowa",
-    "startDate": "2026-08-29",
-    "startTime": "6:30 PM",
-    "endDate": "2026-08-29",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/iowa/boxscore/17259"
-  },
-  {
-    "name": "Utah Tech vs. Iowa",
-    "startDate": "2026-08-30",
-    "startTime": "4:00 PM",
-    "endDate": "2026-08-30",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
-    "name": "CSU Bakersfield",
-    "startDate": "2026-08-30",
-    "startTime": "6:30 PM",
-    "endDate": "2026-08-30",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/csu-bakersfield/boxscore/17260"
-  },
-  {
     "name": "Mark Covert Classic",
     "startDate": "2026-08-30",
     "startTime": "9:00 AM",
@@ -2978,26 +2918,6 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Women's Soccer",
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/cal-poly/boxscore/17293"
-  },
-  {
-    "name": "Iowa vs. CSU Bakersfield",
-    "startDate": "2026-08-31",
-    "startTime": "2:00 PM",
-    "endDate": "2026-08-31",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
-    "name": "Utah Tech",
-    "startDate": "2026-08-31",
-    "startTime": "4:30 PM",
-    "endDate": "2026-08-31",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/utah-tech/boxscore/17261"
   },
   {
     "name": "Washington",
@@ -3030,16 +2950,6 @@
     "link": ""
   },
   {
-    "name": "California Baptist",
-    "startDate": "2026-09-05",
-    "startTime": "2:00 PM",
-    "endDate": "2026-09-05",
-    "endTime": "",
-    "location": "Santa Clara, Calif.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/california-baptist/boxscore/17262"
-  },
-  {
     "name": "UC Riverside",
     "startDate": "2026-09-05",
     "startTime": "7:00 PM",
@@ -3048,16 +2958,6 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-riverside/boxscore/17335"
-  },
-  {
-    "name": "Santa Clara",
-    "startDate": "2026-09-06",
-    "startTime": "3:00 PM",
-    "endDate": "2026-09-06",
-    "endTime": "",
-    "location": "Santa Clara, Calif.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/santa-clara/boxscore/17263"
   },
   {
     "name": "Southern Utah",
@@ -3100,16 +3000,6 @@
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/csu-bakersfield/boxscore/17336"
   },
   {
-    "name": "UC Irvine",
-    "startDate": "2026-09-11",
-    "startTime": "3:00 PM",
-    "endDate": "2026-09-11",
-    "endTime": "",
-    "location": "Corvallis, Ore.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/uc-irvine/boxscore/17264"
-  },
-  {
     "name": "Seattle",
     "startDate": "2026-09-11",
     "startTime": "7:00 PM",
@@ -3140,16 +3030,6 @@
     "link": "https://stats.statbroadcast.com/broadcast/?id=608017"
   },
   {
-    "name": "Montana State",
-    "startDate": "2026-09-12",
-    "startTime": "3:00 PM",
-    "endDate": "2026-09-12",
-    "endTime": "",
-    "location": "Corvallis, Ore.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/montana-state/boxscore/17265"
-  },
-  {
     "name": "Wildcat Invite",
     "startDate": "2026-09-13",
     "startTime": "(ALL DAY)",
@@ -3158,16 +3038,6 @@
     "location": "Tuscon, AZ",
     "sport": "Men's Tennis",
     "link": "https://stats.statbroadcast.com/broadcast/?id=608017"
-  },
-  {
-    "name": "Oregon State",
-    "startDate": "2026-09-13",
-    "startTime": "3:00 PM",
-    "endDate": "2026-09-13",
-    "endTime": "",
-    "location": "Corvallis, Ore.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/oregon-state/boxscore/17266"
   },
   {
     "name": "Wildcat Invite",
@@ -3220,16 +3090,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/idaho-state/boxscore/17297"
   },
   {
-    "name": "UC Riverside",
-    "startDate": "2026-09-18",
-    "startTime": "6:00 PM",
-    "endDate": "2026-09-18",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/uc-riverside/boxscore/17267"
-  },
-  {
     "name": "UC Santa Barbara",
     "startDate": "2026-09-18",
     "startTime": "8:00 PM",
@@ -3238,16 +3098,6 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-santa-barbara/boxscore/17341"
-  },
-  {
-    "name": "UC Riverside vs. Southern Utah",
-    "startDate": "2026-09-19",
-    "startTime": "4:00 PM",
-    "endDate": "2026-09-19",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
   },
   {
     "name": "ITA All-American Championships",
@@ -3268,16 +3118,6 @@
     "location": "Flagstaff, AZ",
     "sport": "Women's Tennis",
     "link": ""
-  },
-  {
-    "name": "Southern Utah",
-    "startDate": "2026-09-20",
-    "startTime": "2:00 PM",
-    "endDate": "2026-09-20",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/southern-utah/boxscore/17268"
   },
   {
     "name": "NAU Lumberjack Classic",
@@ -3340,14 +3180,14 @@
     "link": "https://unlvrebels.com/news/2025/9/23/mens-golf-lewis-little-place-in-top-30-at-the-tindall.aspx"
   },
   {
-    "name": "San Jose State",
-    "startDate": "2026-09-25",
-    "startTime": "6:00 PM",
-    "endDate": "2026-09-25",
+    "name": "UC Davis",
+    "startDate": "2026-09-24",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-24",
     "endTime": "",
-    "location": "San Jose, Calif.",
+    "location": "Las Vegas, Nev. / The Pavilion",
     "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/san-jose-state/boxscore/17270"
+    "link": ""
   },
   {
     "name": "San Jose State",
@@ -3367,6 +3207,16 @@
     "endTime": "",
     "location": "Akron, OH InfoCision Stadium",
     "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "UC Davis",
+    "startDate": "2026-09-26",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-09-26",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
     "link": ""
   },
   {
@@ -3390,16 +3240,6 @@
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/uc-irvine/boxscore/17343"
   },
   {
-    "name": "Fresno State",
-    "startDate": "2026-09-27",
-    "startTime": "11:00 AM",
-    "endDate": "2026-09-27",
-    "endTime": "",
-    "location": "Fresno, Calif.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/fresno-state/boxscore/17271"
-  },
-  {
     "name": "UC Riverside Invitational",
     "startDate": "2026-09-27",
     "startTime": "8:25 AM",
@@ -3420,6 +3260,16 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/fresno-state/boxscore/17301"
   },
   {
+    "name": "UTEP",
+    "startDate": "2026-10-01",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-01",
+    "endTime": "",
+    "location": "El Paso, Texas",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
     "name": "Mountain West Fall Qualifier",
     "startDate": "2026-10-02",
     "startTime": "(ALL DAY)",
@@ -3438,16 +3288,6 @@
     "location": "Laramie, WY",
     "sport": "Women's Soccer",
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/wyoming/boxscore/17299"
-  },
-  {
-    "name": "UNR",
-    "startDate": "2026-10-02",
-    "startTime": "6:00 PM",
-    "endDate": "2026-10-02",
-    "endTime": "",
-    "location": "Reno, Nev.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/unr/boxscore/17272"
   },
   {
     "name": "Cal",
@@ -3490,6 +3330,16 @@
     "link": "https://unlvrebels.com/news/2025/10/3/womens-golf-du-in-top-35-after-first-round-at-denver-event.aspx"
   },
   {
+    "name": "UTEP",
+    "startDate": "2026-10-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "El Paso, Texas",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
     "name": "Arizona State",
     "startDate": "2026-10-03",
     "startTime": "6:00 PM",
@@ -3528,16 +3378,6 @@
     "location": "Denver, CO",
     "sport": "Women's Golf",
     "link": "https://unlvrebels.com/news/2025/10/4/womens-golf-liu-leads-rebels-in-second-round-at-denver-event.aspx"
-  },
-  {
-    "name": "Air Force",
-    "startDate": "2026-10-04",
-    "startTime": "12:00 PM",
-    "endDate": "2026-10-04",
-    "endTime": "",
-    "location": "USAF Academy, Colo.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/air-force/boxscore/17273"
   },
   {
     "name": "Utah Tech",
@@ -3620,6 +3460,16 @@
     "link": "https://unlvrebels.com/news/2025/10/7/mens-golf-opening-day-wins-put-rebels-in-lead-at-nb3-match-play.aspx"
   },
   {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-08",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
     "name": "ITA Regional",
     "startDate": "2026-10-08",
     "startTime": "(ALL DAY)",
@@ -3648,16 +3498,6 @@
     "location": "Provo, UT",
     "sport": "Women's Tennis",
     "link": "https://unlvrebels.com/news/2025/10/9/womens-tennis-mircheva-marches-on-in-provo.aspx"
-  },
-  {
-    "name": "Grand Canyon",
-    "startDate": "2026-10-09",
-    "startTime": "6:30 PM",
-    "endDate": "2026-10-09",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/grand-canyon/boxscore/17326"
   },
   {
     "name": "California Baptist",
@@ -3690,6 +3530,16 @@
     "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-10",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
     "name": "ITA Regional",
     "startDate": "2026-10-10",
     "startTime": "(ALL DAY)",
@@ -3698,16 +3548,6 @@
     "location": "Provo, UT",
     "sport": "Women's Tennis",
     "link": "https://unlvrebels.com/news/2025/10/10/womens-tennis-mirchevas-run-ends-in-semfinals.aspx"
-  },
-  {
-    "name": "San Diego State",
-    "startDate": "2026-10-11",
-    "startTime": "12:00 PM",
-    "endDate": "2026-10-11",
-    "endTime": "",
-    "location": "San Diego, Calif.",
-    "sport": "Women's Volleyball",
-    "link": "https://unlvrebels.com/sports/womens-volleyball/stats/2025/san-diego-state/boxscore/17275"
   },
   {
     "name": "Grand Canyon",
@@ -3728,5 +3568,25 @@
     "location": "San Diego, CA",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/san-diego-state/boxscore/17345"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-15",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/15/mens-tennis-rebel-netters-open-regional-play.aspx"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-10-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-15",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]

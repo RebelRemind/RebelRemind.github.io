@@ -4690,26 +4690,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12425533"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "PHSA Social Event",
     "startDate": "2026-04-15",
     "startTime": "6:00 PM",
@@ -4728,6 +4708,26 @@
     "location": "UNLV Student Recreation & Wellness Center Lawn",
     "organization": "College of Education Alumni Engagement",
     "link": "https://involvementcenter.unlv.edu/event/12350765"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5160,6 +5160,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12246766"
   },
   {
+    "name": "Global Grads & Friends: End-of-Semester Coffee Meetup \u2615\ud83c\udf0d",
+    "startDate": "2026-04-27",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-27",
+    "endTime": "3:00 PM",
+    "location": "Starbucks",
+    "organization": "International Student Organization",
+    "link": "https://involvementcenter.unlv.edu/event/12429562"
+  },
+  {
     "name": "VIRTUAL Success Series: Finishing Strong",
     "startDate": "2026-04-27",
     "startTime": "2:00 PM",
@@ -5348,6 +5358,16 @@
     "location": "SU 205",
     "organization": "CAEO College Programs",
     "link": "https://involvementcenter.unlv.edu/event/12026261"
+  },
+  {
+    "name": "UNLV ROAR AANHPI Night",
+    "startDate": "2026-04-30",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-30",
+    "endTime": "7:00 PM",
+    "location": "Valerie Pida Plaza",
+    "organization": "Raising Our AANHPI Rights",
+    "link": "https://involvementcenter.unlv.edu/event/12429550"
   },
   {
     "name": "WQP: End of Semester Celebration",
