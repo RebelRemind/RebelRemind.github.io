@@ -23,7 +23,7 @@ const DATA_FILES = [
     sourceUrl: "https://involvementcenter.unlv.edu/events",
   },
   {
-    key: "rebelCoverage",
+    key: "rebelSports",
     label: "Rebel Sports",
     path: "/data/rebelcoverage_list.json",
     sourceUrl: "https://unlvrebels.com/coverage",
@@ -41,6 +41,7 @@ const ALL_INTERESTS = [
   "Social",
   "Sports",
   "Tech",
+  "Other",
 ];
 
 const ALL_SPORTS = [
@@ -146,6 +147,9 @@ const CONTRIBUTORS = [
 ];
 
 const DATA_FILE_MAP = Object.fromEntries(DATA_FILES.map((item) => [item.key, item]));
+const SITE_URL = "https://rebelremind.github.io";
+const DEFAULT_OG_IMAGE = `${SITE_URL}/rr_logo_bg.png`;
+const BACK_HOME_BUTTON_CLASS = "inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white px-5 py-3 text-sm font-semibold text-stone-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-stone-100";
 
 const DATASET_HOME_COPY = {
   academicCalendar: {
@@ -160,11 +164,20 @@ const DATASET_HOME_COPY = {
     eyebrow: "Student Life",
     description: "RSO events, student org meetups, and involvement opportunities.",
   },
-  rebelCoverage: {
+  rebelSports: {
     eyebrow: "Athletics",
     description: "Rebel games, meets, matches, and sports coverage across campus.",
   },
 };
+
+function normalizeDatasetKey(value) {
+  return value === "rebelCoverage" ? "rebelSports" : value;
+}
+
+function getCalendarSourceLink(key) {
+  const normalizedKey = normalizeDatasetKey(key);
+  return normalizedKey ? `/calendar?source=${encodeURIComponent(normalizedKey)}` : "/calendar";
+}
 
 const DEFAULT_THEME = {
   backgroundColor: "#BB0000",
@@ -174,6 +187,108 @@ const DEFAULT_THEME = {
 
 function buildBackground(backgroundColor) {
   return `linear-gradient(135deg, ${backgroundColor} 0%, #f3d2d7 100%)`;
+}
+
+function upsertMetaTag(selector, attributes, content) {
+  if (typeof document === "undefined") {
+    return;
+  }
+
+  let element = document.head.querySelector(selector);
+  if (!element) {
+    element = document.createElement("meta");
+    Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
+    document.head.appendChild(element);
+  }
+
+  element.setAttribute("content", content);
+}
+
+function upsertCanonicalLink(href) {
+  if (typeof document === "undefined") {
+    return;
+  }
+
+  let element = document.head.querySelector('link[rel="canonical"]');
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "canonical");
+    document.head.appendChild(element);
+  }
+
+  element.setAttribute("href", href);
+}
+
+function getSeoConfig(pathname) {
+  const normalizedPath = normalizeDatasetKey(pathname);
+  const defaultConfig = {
+    title: "Rebel Remind | UNLV Events, Academic Calendar, and Student Reminders",
+    description:
+      "Rebel Remind helps UNLV students browse the academic calendar, campus events, Rebel Sports, and synced reminders in one place.",
+    keywords:
+      "Rebel Remind, UNLV academic calendar, UNLV calendar, UNLV events, Rebel Sports, student reminders, UNLV campus events",
+    path: pathname,
+  };
+
+  if (normalizedPath === "/calendar") {
+    return {
+      title: "Rebel Remind Calendar | UNLV Events and Synced Student Calendar",
+      description:
+        "See UNLV academic dates, campus events, Rebel Sports, and your synced Rebel Remind events on one calendar.",
+      keywords:
+        "Rebel Remind calendar, UNLV calendar, UNLV events calendar, Rebel Sports calendar, student calendar",
+      path: pathname,
+    };
+  }
+
+  if (normalizedPath === "/datasets") {
+    return {
+      title: "Rebel Remind Datasets | UNLV Event and Academic Calendar Feeds",
+      description:
+        "Explore the public JSON feeds behind Rebel Remind, including the UNLV Academic Calendar, UNLV Calendar, Involvement Center, and Rebel Sports.",
+      keywords:
+        "Rebel Remind datasets, UNLV academic calendar data, UNLV events data, Rebel Sports data",
+      path: pathname,
+    };
+  }
+
+  if (normalizedPath.startsWith("/datasets/")) {
+    const datasetSlug = normalizedPath.split("/").pop();
+    const datasetKey = normalizeDatasetKey(datasetSlug);
+    const dataset = DATA_FILE_MAP[datasetKey];
+
+    if (datasetKey === "academicCalendar") {
+      return {
+        title: "UNLV Academic Calendar | Rebel Remind",
+        description:
+          "Browse the UNLV Academic Calendar in Rebel Remind with semester dates, registration deadlines, recesses, and key academic milestones.",
+        keywords:
+          "UNLV Academic Calendar, Rebel Remind academic calendar, UNLV semester dates, UNLV deadlines",
+        path: `/datasets/${datasetKey}`,
+      };
+    }
+
+    if (dataset) {
+      return {
+        title: `${dataset.label} | Rebel Remind`,
+        description: `Browse ${dataset.label} on Rebel Remind for upcoming UNLV events, dates, and source-linked campus information.`,
+        keywords: `Rebel Remind, ${dataset.label}, UNLV ${dataset.label}, UNLV events`,
+        path: `/datasets/${datasetKey}`,
+      };
+    }
+  }
+
+  if (normalizedPath === "/contributors") {
+    return {
+      title: "Rebel Remind Contributors | Student-Built at UNLV",
+      description:
+        "Meet the UNLV student team behind Rebel Remind and the campus event, reminder, and calendar experience.",
+      keywords: "Rebel Remind contributors, UNLV student developers, Rebel Remind team",
+      path: pathname,
+    };
+  }
+
+  return defaultConfig;
 }
 
 function formatEventDate(item) {
@@ -194,13 +309,21 @@ function formatEventDate(item) {
   const itemDay = new Date(date);
   itemDay.setHours(0, 0, 0, 0);
 
-  const timeLabel = normalizeDisplayTime(item.startDate, item.startTime)?.toLowerCase() || "";
+  const normalizedTimeLabel = normalizeDisplayTime(item.startDate, item.startTime) || "";
+  const isAllDay = normalizedTimeLabel.toUpperCase() === "(ALL DAY)";
+  const timeLabel = isAllDay ? "(All Day)" : normalizedTimeLabel.toLowerCase();
 
   if (itemDay.getTime() === today.getTime()) {
+    if (isAllDay) {
+      return `Today ${timeLabel}`;
+    }
     return timeLabel ? `Today at ${timeLabel}` : "Today";
   }
 
   if (itemDay.getTime() === tomorrow.getTime()) {
+    if (isAllDay) {
+      return `Tomorrow ${timeLabel}`;
+    }
     return timeLabel ? `Tomorrow at ${timeLabel}` : "Tomorrow";
   }
 
@@ -215,7 +338,34 @@ function formatEventDate(item) {
           : "th";
 
   const dateLabel = `${date.toLocaleDateString(undefined, { month: "short" })} ${day}${suffix}`;
+  if (isAllDay) {
+    return `${dateLabel} ${timeLabel}`;
+  }
+
   return timeLabel ? `${dateLabel} at ${timeLabel}` : dateLabel;
+}
+
+function formatDatasetTimeRange(item) {
+  if (!item) {
+    return "Time TBD";
+  }
+
+  const rawStart = String(item.startTime || "").trim();
+  const rawEnd = String(item.endTime || "").trim();
+  const normalizedStart = rawStart.toUpperCase();
+
+  if (!rawStart || normalizedStart === "(ALL DAY)" || normalizedStart === "TIME TBD" || normalizedStart === "TBD") {
+    return normalizedStart === "(ALL DAY)" ? "All day" : "Time TBD";
+  }
+
+  const start = normalizeDisplayTime(item.startDate, rawStart) || rawStart;
+  const end = normalizeDisplayTime(item.endDate || item.startDate, rawEnd) || "";
+
+  if (start && end && start !== end) {
+    return `${start} - ${end}`;
+  }
+
+  return start || "Time TBD";
 }
 
 function getTitleSizeClass(title = "") {
@@ -266,8 +416,9 @@ function parseTimeParts(value) {
 
 function normalizeDisplayTime(dateValue, timeValue) {
   const rawTime = String(timeValue || "").trim();
-  if (!rawTime || rawTime === "(ALL DAY)" || rawTime === "Time TBD" || rawTime === "TBD") {
-    return rawTime;
+  const normalizedTime = rawTime.toUpperCase();
+  if (!rawTime || normalizedTime === "(ALL DAY)" || normalizedTime === "TIME TBD" || normalizedTime === "TBD") {
+    return normalizedTime === "(ALL DAY)" ? "(ALL DAY)" : rawTime;
   }
 
   const amPmParts = parseTimeParts(rawTime);
@@ -451,7 +602,7 @@ function formatCalendarDateOnly(dateKey) {
 function getTableDayLabel(dateKey) {
   const parsed = new Date(`${dateKey}T12:00:00`);
   if (Number.isNaN(parsed.getTime())) {
-    return { label: dateKey, emphasize: false };
+    return { label: dateKey, emphasize: false, isToday: false };
   }
 
   const today = new Date();
@@ -463,16 +614,17 @@ function getTableDayLabel(dateKey) {
   value.setHours(0, 0, 0, 0);
 
   if (value.getTime() === today.getTime()) {
-    return { label: "Today", emphasize: true };
+    return { label: "Today", emphasize: true, isToday: true };
   }
 
   if (value.getTime() === tomorrow.getTime()) {
-    return { label: "Tomorrow", emphasize: true };
+    return { label: "Tomorrow", emphasize: false, isToday: false };
   }
 
   return {
     label: parsed.toLocaleDateString(undefined, { weekday: "long" }),
     emphasize: false,
+    isToday: false,
   };
 }
 
@@ -485,7 +637,16 @@ function readCalendarSession() {
 
   try {
     const raw = window.sessionStorage.getItem(CALENDAR_SESSION_KEY);
-    return raw ? JSON.parse(raw) : null;
+    if (!raw) {
+      return null;
+    }
+
+    const parsed = JSON.parse(raw);
+    if (parsed?.selectedCalendarKey) {
+      parsed.selectedCalendarKey = normalizeDatasetKey(parsed.selectedCalendarKey);
+    }
+
+    return parsed;
   } catch {
     return null;
   }
@@ -550,20 +711,21 @@ function buildEventsByDate(events) {
 }
 
 function normalizeDatasetCalendarEvents(datasetKey, datasets) {
-  const datasetLabel = DATA_FILE_MAP[datasetKey]?.label || "Campus Calendar";
-  const sourceItems = Array.isArray(datasets[datasetKey]) ? datasets[datasetKey] : [];
+  const normalizedDatasetKey = normalizeDatasetKey(datasetKey);
+  const datasetLabel = DATA_FILE_MAP[normalizedDatasetKey]?.label || "Campus Calendar";
+  const sourceItems = Array.isArray(datasets[normalizedDatasetKey]) ? datasets[normalizedDatasetKey] : [];
 
   return sourceItems
     .map((item, index) => {
       const allDay = item.startTime === "(ALL DAY)";
       const resolvedEndTime = item.endTime || buildDefaultEventEndTime(item.startDate, item.startTime, allDay);
-      const resolvedTitle = datasetKey === "rebelCoverage" && item.sport && item.name
+      const resolvedTitle = normalizedDatasetKey === "rebelSports" && item.sport && item.name
         ? `${item.sport}: ${item.name}`
         : item.name;
 
       return {
-        id: `${datasetKey}-${item.name}-${item.startDate}-${index}`,
-        sourceKey: datasetKey,
+        id: `${normalizedDatasetKey}-${item.name}-${item.startDate}-${index}`,
+        sourceKey: normalizedDatasetKey,
         title: resolvedTitle,
         startDate: item.startDate,
         endDate: item.endDate || item.startDate,
@@ -825,6 +987,60 @@ function CalendarEventModal({ payload, onClose }) {
   );
 }
 
+function DatasetEventModal({ dataset, item, onClose }) {
+  if (!dataset || !item) {
+    return null;
+  }
+
+  const isAcademicCalendar = dataset.key === "academicCalendar";
+  const isRebelSports = dataset.key === "rebelSports";
+  const modalTitle = isRebelSports && item.sport ? `${item.sport}: ${item.name}` : item.name;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-8 backdrop-blur-sm">
+      <div className="w-full max-w-lg rounded-[2rem] border border-white/15 bg-stone-100 p-6 text-stone-900 shadow-2xl">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">{dataset.label}</p>
+            <h3 className="mt-2 font-serif text-3xl leading-tight">{modalTitle}</h3>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-full bg-stone-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+          >
+            Close
+          </button>
+        </div>
+
+        <div className="mt-5 space-y-3 text-sm">
+          <p><span className="font-semibold">Date:</span> {isAcademicCalendar && item.startDate ? item.startDate : formatCalendarPanelDate(item.startDate)}</p>
+          <p><span className="font-semibold">Time:</span> {formatDatasetTimeRange(item)}</p>
+          {item.location ? <p><span className="font-semibold">Location:</span> {item.location}</p> : null}
+          {item.organization ? <p><span className="font-semibold">RSO:</span> {item.organization}</p> : null}
+          {item.sport && !isRebelSports ? <p><span className="font-semibold">Sport:</span> {item.sport}</p> : null}
+          {item.category ? (
+            <p><span className="font-semibold">Category:</span> {item.category}</p>
+          ) : dataset.key === "unlvCalendar" ? (
+            <p><span className="font-semibold">Category:</span> Other</p>
+          ) : null}
+          {item.description ? <p><span className="font-semibold">Details:</span> {item.description}</p> : null}
+          {item.link ? (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
+            >
+              Go to Event
+            </a>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function isUpcomingEvent(item) {
   return getEventTimestamp(item) >= Date.now();
 }
@@ -923,12 +1139,18 @@ function formatAcademicCalendarBadge(item) {
   });
 }
 
+function isAcademicCalendarPrimarySourceEvent(item) {
+  const link = item?.link || "";
+  return link.startsWith("https://www.unlv.edu/");
+}
+
 function toTitleList(preferences = {}) {
   const labelOverrides = {
     UNLVCalendar: "UNLV Calendar",
     involvementCenter: "Involvement Center",
     academicCalendar: "Academic Calendar",
     rebelCoverage: "Rebel Sports",
+    rebelSports: "Rebel Sports",
     canvasIntegration: "Canvas Integration",
     googleCalendar: "Google Calendar",
   };
@@ -940,7 +1162,7 @@ function toTitleList(preferences = {}) {
 }
 
 function getDatasetRoute(key) {
-  return `/datasets/${key}`;
+  return `/datasets/${normalizeDatasetKey(key)}`;
 }
 
 function FilterChip({ active, onClick, children }) {
@@ -995,11 +1217,13 @@ function ViewAllFiltersModal({
   options,
   selectedValues,
   onToggle,
+  onSelectAll,
   onClearAll,
   searchEnabled = false,
   searchPlaceholder = "Search filters",
 }) {
   const [modalSearch, setModalSearch] = useState("");
+  const allSelected = options.length > 0 && selectedValues.length === options.length;
 
   useEffect(() => {
     if (!open) {
@@ -1057,8 +1281,17 @@ function ViewAllFiltersModal({
           <div className="flex items-center gap-3">
             <button
               type="button"
+              onClick={onSelectAll}
+              disabled={allSelected}
+              className="rounded-full border border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              Select All
+            </button>
+            <button
+              type="button"
               onClick={onClearAll}
-              className="rounded-full border border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+              className="rounded-full border border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100 disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={!selectedValues.length}
             >
               Clear All
             </button>
@@ -1135,7 +1368,7 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const datasetKey = location.pathname.startsWith("/datasets/")
-    ? location.pathname.split("/").pop()
+    ? normalizeDatasetKey(location.pathname.split("/").pop())
     : null;
   const activeDatasetLabel = datasetKey ? DATA_FILE_MAP[datasetKey]?.label : null;
   const isHomePage = location.pathname === "/";
@@ -1669,13 +1902,19 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
 
 function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   const { datasetKey } = useParams();
-  const dataset = DATA_FILES.find((item) => item.key === datasetKey);
+  const normalizedDatasetKey = normalizeDatasetKey(datasetKey);
+  const dataset = DATA_FILES.find((item) => item.key === normalizedDatasetKey);
   const allItems = dataset
-    ? (datasets[dataset.key] || []).filter(isUpcomingEvent).sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
+    ? (datasets[dataset.key] || [])
+      .filter(isUpcomingEvent)
+      .filter((item) => (dataset.key === "academicCalendar" ? isAcademicCalendarPrimarySourceEvent(item) : true))
+      .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
     : [];
   const isUNLVCalendar = dataset?.key === "unlvCalendar";
   const isInvolvementCenter = dataset?.key === "involvementCenter";
-  const isRebelSports = dataset?.key === "rebelCoverage";
+  const isRebelSports = dataset?.key === "rebelSports";
+  const supportsViewAllModal = isInvolvementCenter || isRebelSports;
+  const usesSlimEventRows = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const supportsFilters = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const hasSync = bridgeStatus === "connected";
   const [useSyncedPreferences, setUseSyncedPreferences] = useState(true);
@@ -1683,11 +1922,13 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   const [filterSearch, setFilterSearch] = useState("");
   const [organizationDirectory, setOrganizationDirectory] = useState([]);
   const [isViewAllModalOpen, setIsViewAllModalOpen] = useState(false);
+  const [activeDatasetItem, setActiveDatasetItem] = useState(null);
 
   useEffect(() => {
     setUseSyncedPreferences(true);
     setManualFilters([]);
     setFilterSearch("");
+    setActiveDatasetItem(null);
   }, [datasetKey]);
 
   useEffect(() => {
@@ -1747,6 +1988,12 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
 
   const activeFilters =
     supportsFilters && hasSync && useSyncedPreferences ? syncedFilters : manualFilters;
+  const allManualFiltersSelected =
+    supportsFilters && availableFilters.length > 0 && manualFilters.length === availableFilters.length;
+
+  const selectAllManualFilters = () => {
+    setManualFilters(availableFilters);
+  };
 
   const toggleManualFilter = (filter) => {
     setManualFilters((current) =>
@@ -1765,19 +2012,26 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
       .slice(0, 8)
     : availableFilters;
 
-  const items = supportsFilters && activeFilters.length
-    ? allItems.filter((item) => {
-      const field = isUNLVCalendar ? item.category : isInvolvementCenter ? item.organization : item.sport;
-      return activeFilters.includes(field);
-    })
+  const items = supportsFilters
+    ? activeFilters.length
+      ? allItems.filter((item) => {
+        const field = isUNLVCalendar
+          ? item.category || "Other"
+          : isInvolvementCenter
+            ? item.organization
+            : item.sport;
+        return activeFilters.includes(field);
+      })
+      : []
     : allItems;
+  const itemCountLabel = `${items.length} ${items.length === 1 ? "Event" : "Events"}`;
 
   if (!dataset) {
     return (
       <section className="rounded-[2rem] border border-white/20 bg-black/20 p-8 text-white shadow-xl backdrop-blur-md">
         <p className="text-sm uppercase tracking-[0.24em] text-white/70">Not Found</p>
         <h1 className="mt-3 font-serif text-4xl">That dataset page does not exist.</h1>
-        <Link to="/" className="mt-6 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold">
+        <Link to="/" className={`mt-6 ${BACK_HOME_BUTTON_CLASS}`}>
           Back Home
         </Link>
       </section>
@@ -1791,14 +2045,41 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Dataset Explorer</p>
           <h1 className="mt-2 font-serif text-4xl">{dataset.label}</h1>
           <p className="mt-2 text-white/80">Browse the live JSON feed published to GitHub Pages.</p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {DATA_FILES.map((item) => (
+              <Link
+                key={item.key}
+                to={getDatasetRoute(item.key)}
+                className={[
+                  "rounded-full border px-4 py-2 text-sm font-semibold transition",
+                  item.key === dataset.key
+                    ? "border-white bg-white text-stone-900"
+                    : "border-white/20 bg-white/10 text-white hover:bg-white/20",
+                ].join(" ")}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
-        <Link to="/" className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold transition hover:bg-white/20">
-          Back Home
-        </Link>
+        <div className="flex flex-col items-stretch gap-3">
+          <Link
+            to="/"
+            className={BACK_HOME_BUTTON_CLASS}
+          >
+            Back Home
+          </Link>
+          <Link
+            to={getCalendarSourceLink(dataset.key)}
+            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
+          >
+            Calendar View
+          </Link>
+        </div>
       </div>
 
       {supportsFilters ? (
-        <section className="rounded-[2rem] border border-[#7f0d0d]/35 bg-[linear-gradient(135deg,rgba(139,0,0,0.26),rgba(255,232,236,0.94))] p-6 text-stone-900 shadow-lg">
+        <section className="rounded-[1.75rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
@@ -1836,7 +2117,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                     ))
                   ) : (
                     <p className="text-sm text-stone-600">
-                      No synced {isUNLVCalendar ? "interests" : isInvolvementCenter ? "organizations" : "sports"} found, so all events are shown.
+                      No synced {isUNLVCalendar ? "interests" : isInvolvementCenter ? "organizations" : "sports"} selected, so no events are shown.
                     </p>
                   )}
                 </div>
@@ -1924,11 +2205,21 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                   <div className="flex flex-wrap items-center gap-3 text-sm font-semibold">
                     <button
                       type="button"
-                      onClick={() => setIsViewAllModalOpen(true)}
-                      className="text-stone-700 transition hover:text-stone-950"
+                      onClick={selectAllManualFilters}
+                      disabled={allManualFiltersSelected}
+                      className="text-stone-700 transition hover:text-stone-950 disabled:cursor-not-allowed disabled:opacity-50"
                     >
-                      View All
+                      Select All
                     </button>
+                    {supportsViewAllModal ? (
+                      <button
+                        type="button"
+                        onClick={() => setIsViewAllModalOpen(true)}
+                        className="text-stone-700 transition hover:text-stone-950"
+                      >
+                        View All
+                      </button>
+                    ) : null}
                     {manualFilters.length ? (
                       <button
                         type="button"
@@ -1946,7 +2237,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
         </section>
       ) : null}
 
-      {supportsFilters ? (
+      {supportsFilters && supportsViewAllModal ? (
         <ViewAllFiltersModal
           open={isViewAllModalOpen}
           onClose={() => setIsViewAllModalOpen(false)}
@@ -1954,80 +2245,189 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
           options={availableFilters}
           selectedValues={manualFilters}
           onToggle={toggleManualFilter}
+          onSelectAll={selectAllManualFilters}
           onClearAll={() => setManualFilters([])}
           searchEnabled={isInvolvementCenter}
           searchPlaceholder="Search RSOs and organizations"
         />
       ) : null}
 
-      <div className={dataset.key === "academicCalendar" ? "grid gap-4" : "grid gap-4 md:grid-cols-2 xl:grid-cols-3"}>
-        {items.length ? (
-          items.map((item, index) => (
-            <a
-              key={`${dataset.key}-${item.name}-${index}`}
-              href={item.link || undefined}
-              target={item.link ? "_blank" : undefined}
-              rel={item.link ? "noreferrer" : undefined}
-              className={[
-                "flex flex-col rounded-[1.5rem] border border-black/10 bg-stone-100/90 p-5 text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl",
-                dataset.key === "academicCalendar" ? "" : "min-h-[16rem]",
-              ].join(" ")}
-            >
-              <div className="grid h-full grid-cols-[minmax(0,1fr)_auto] gap-4">
-                <div className="flex h-full min-h-0 min-w-0 flex-col justify-between">
-                  <div>
-                    <h2 className={`${getTitleSizeClass(item.name)} font-semibold leading-tight`}>{item.name}</h2>
-                    {dataset.key === "academicCalendar" && item.startDate ? (
-                      <p className="mt-2 text-sm font-medium text-stone-500">{item.startDate}</p>
-                    ) : null}
-                  </div>
-                  <div className="pt-6">
-                    <p className="text-base text-stone-700 sm:text-lg">
-                      <span className="font-bold">
-                        {formatEventDate(item)}
-                      </span>
-                    </p>
-                    {item.location ? (
-                      <p className="mt-1 text-sm text-stone-700">
-                        <span className="font-semibold">Location:</span> {item.location}
-                      </p>
-                    ) : null}
-                    {item.organization ? (
-                      <p className="mt-1 text-sm text-stone-700">
-                        <span className="font-semibold">RSO:</span> {item.organization}
-                      </p>
-                    ) : null}
-                    {item.sport ? (
-                      <p className="mt-1 text-sm text-stone-700">
-                        <span className="font-semibold">Sport:</span> {item.sport}
-                      </p>
-                    ) : null}
-                    {item.category ? (
-                      <p className="mt-1 text-sm text-stone-700">
-                        <span className="font-semibold">Category:</span> {item.category}
-                      </p>
-                    ) : null}
-                  </div>
-                </div>
-                <div className="flex flex-col items-end gap-3 self-start">
-                  {dataset.key === "academicCalendar" ? (
-                    <div className="text-right">
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">Date</p>
-                      <p className="mt-1 text-3xl font-black text-stone-900 sm:text-4xl">
-                        {formatAcademicCalendarBadge(item)}
-                      </p>
+      <div className="rounded-[1.75rem] border border-white/20 bg-black/20 p-4 shadow-xl backdrop-blur-md">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Upcoming Events</p>
+          <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white/80">
+            {itemCountLabel}
+          </span>
+        </div>
+        <div className="max-h-[min(60rem,calc(100vh-16rem))] overflow-y-auto pr-1">
+          <div
+            className={
+              dataset.key === "academicCalendar"
+                ? "grid gap-4"
+                : usesSlimEventRows
+                  ? "grid gap-3"
+                  : "grid gap-4 md:grid-cols-2 xl:grid-cols-3"
+            }
+          >
+            {items.length ? (
+              items.map((item, index) => (
+                dataset.key === "academicCalendar" ? (
+                  <a
+                    key={`${dataset.key}-${item.name}-${index}`}
+                    href={item.link || undefined}
+                    target={item.link ? "_blank" : undefined}
+                    rel={item.link ? "noreferrer" : undefined}
+                    className={[
+                      "flex flex-col rounded-[1.5rem] border border-black/10 bg-stone-100/90 p-5 text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl",
+                      dataset.key === "academicCalendar" ? "" : "min-h-[16rem]",
+                    ].join(" ")}
+                  >
+                    <div className="grid h-full grid-cols-[minmax(0,1fr)_auto] gap-8">
+                      <div className="flex h-full min-h-0 min-w-0 flex-col">
+                        <div>
+                          <h2 className={`${getTitleSizeClass(item.name)} font-semibold leading-tight`}>{item.name}</h2>
+                          {dataset.key === "academicCalendar" && item.startDate ? (
+                            <p className="mt-2 text-sm font-medium text-stone-500">{item.startDate}</p>
+                          ) : null}
+                        </div>
+                        <div className={dataset.key === "academicCalendar" ? "pt-0" : "pt-6"}>
+                          {dataset.key !== "academicCalendar" ? (
+                            <p className="text-base text-stone-700 sm:text-lg">
+                              <span className="font-bold">
+                                {formatEventDate(item)}
+                              </span>
+                            </p>
+                          ) : null}
+                          {item.location ? (
+                            <p className={`${dataset.key === "academicCalendar" ? "" : "mt-1"} text-sm text-stone-700`}>
+                              <span className="font-semibold">Location:</span> {item.location}
+                            </p>
+                          ) : null}
+                          {item.organization ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">RSO:</span> {item.organization}
+                            </p>
+                          ) : null}
+                          {item.sport ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Sport:</span> {item.sport}
+                            </p>
+                          ) : null}
+                          {item.category && !isRebelSports ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Category:</span> {item.category}
+                            </p>
+                          ) : isUNLVCalendar ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Category:</span> Other
+                            </p>
+                          ) : null}
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-end gap-3 self-start">
+                        {dataset.key === "academicCalendar" ? (
+                          <div className="text-right">
+                            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">Date</p>
+                            <p className="mt-1 text-3xl font-black text-stone-900 sm:text-4xl">
+                              {formatAcademicCalendarBadge(item)}
+                            </p>
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
-                  ) : null}
-                </div>
+                  </a>
+                ) : (
+                  <button
+                    key={`${dataset.key}-${item.name}-${index}`}
+                    type="button"
+                    onClick={() => setActiveDatasetItem(item)}
+                    className={[
+                      "flex flex-col rounded-[1.5rem] border border-black/10 bg-stone-100/90 text-left text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl",
+                      usesSlimEventRows ? "min-h-0 p-4" : "min-h-[16rem] p-5",
+                    ].join(" ")}
+                  >
+                    <div className={usesSlimEventRows ? "flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6" : "grid h-full grid-cols-[minmax(0,1fr)_auto] gap-4"}>
+                      <div className={usesSlimEventRows ? "min-w-0 flex-1" : "flex h-full min-h-0 min-w-0 flex-col justify-between"}>
+                        <div>
+                          <h2
+                            className={[
+                              usesSlimEventRows ? "text-base leading-tight sm:text-lg" : `${getTitleSizeClass(item.name)} font-semibold leading-tight`,
+                            ].join(" ")}
+                          >
+                            {isRebelSports && item.sport ? (
+                              <>
+                                <span className="font-semibold">{item.sport}:</span>{" "}
+                                <span className="font-normal">{item.name}</span>
+                              </>
+                            ) : (
+                              <span className={usesSlimEventRows ? "font-normal" : "font-semibold"}>{item.name}</span>
+                            )}
+                          </h2>
+                          {isInvolvementCenter && item.organization ? (
+                            <p className="mt-1 text-sm font-semibold text-stone-700">RSO: {item.organization}</p>
+                          ) : null}
+                          {isUNLVCalendar ? (
+                            <p className="mt-1 text-sm font-semibold text-stone-700">Category: {item.category || "Other"}</p>
+                          ) : null}
+                        </div>
+                        <div className={usesSlimEventRows ? "hidden" : "pt-6"}>
+                          <p className={usesSlimEventRows ? "text-sm text-stone-700 sm:text-base" : "text-base text-stone-700 sm:text-lg"}>
+                            <span className="font-bold">
+                              {formatEventDate(item)}
+                            </span>
+                          </p>
+                          {item.location ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Location:</span> {item.location}
+                            </p>
+                          ) : null}
+                          {item.organization ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">RSO:</span> {item.organization}
+                            </p>
+                          ) : null}
+                          {item.sport && !isRebelSports ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Sport:</span> {item.sport}
+                            </p>
+                          ) : null}
+                          {item.category ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Category:</span> {item.category}
+                            </p>
+                          ) : isUNLVCalendar ? (
+                            <p className="mt-1 text-sm text-stone-700">
+                              <span className="font-semibold">Category:</span> Other
+                            </p>
+                          ) : null}
+                        </div>
+                      </div>
+                      {usesSlimEventRows ? (
+                        <div className="min-w-0 text-left sm:max-w-[16rem] sm:text-right">
+                          <p className="text-sm font-bold text-stone-700 sm:text-base">
+                            {formatEventDate(item)}
+                          </p>
+                          {item.location ? (
+                            <p className="mt-1 line-clamp-2 break-words text-sm text-stone-700">
+                              {item.location}
+                            </p>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  </button>
+                )
+              ))
+            ) : (
+              <div className="rounded-[1.5rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+                No events match the current filters.
               </div>
-            </a>
-          ))
-        ) : (
-          <div className="rounded-[1.5rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
-            No events match the current filters.
+            )}
           </div>
-        )}
+        </div>
       </div>
+
+      <DatasetEventModal dataset={dataset} item={activeDatasetItem} onClose={() => setActiveDatasetItem(null)} />
     </section>
   );
 }
@@ -2049,7 +2449,7 @@ function DatasetsLandingPage({ datasets }) {
           <div className="flex justify-start lg:justify-end">
             <Link
               to="/"
-              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+            className={BACK_HOME_BUTTON_CLASS}
             >
               Back Home
             </Link>
@@ -2124,7 +2524,9 @@ function DatasetsLandingPage({ datasets }) {
 
 function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const today = new Date();
+  const location = useLocation();
   const initialSession = readCalendarSession();
+  const requestedCalendarSource = normalizeDatasetKey(new URLSearchParams(location.search).get("source") || "");
   const [isWideMonthLayout, setIsWideMonthLayout] = useState(() => {
     if (typeof window === "undefined") {
       return true;
@@ -2154,11 +2556,23 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     { key: "extensionEvents", label: "Your Synched Events" },
     ...DATA_FILES.map(({ key, label }) => ({ key, label })),
   ];
-  const [selectedCalendarKey, setSelectedCalendarKey] = useState("extensionEvents");
+  const [selectedCalendarKey, setSelectedCalendarKey] = useState(() => {
+    if (requestedCalendarSource && ["extensionEvents", ...DATA_FILES.map(({ key }) => key)].includes(requestedCalendarSource)) {
+      return requestedCalendarSource;
+    }
+
+    return initialSession?.selectedCalendarKey || "extensionEvents";
+  });
   const extensionEventsAvailable = bridgeStatus === "connected";
-  const selectedCalendarSupportsFilters = ["extensionEvents", "unlvCalendar", "involvementCenter", "rebelCoverage"].includes(selectedCalendarKey);
-  const selectedCalendarUsesSyncedFilters = ["unlvCalendar", "involvementCenter", "rebelCoverage"].includes(selectedCalendarKey);
+  const selectedCalendarSupportsFilters = ["extensionEvents", "unlvCalendar", "involvementCenter", "rebelSports"].includes(selectedCalendarKey);
+  const selectedCalendarUsesSyncedFilters = ["unlvCalendar", "involvementCenter", "rebelSports"].includes(selectedCalendarKey);
   const hasSyncedCalendarFilters = bridgeStatus === "connected" && selectedCalendarUsesSyncedFilters;
+
+  useEffect(() => {
+    if (requestedCalendarSource && calendarOptions.some((option) => option.key === requestedCalendarSource)) {
+      setSelectedCalendarKey(requestedCalendarSource);
+    }
+  }, [requestedCalendarSource]);
 
   useEffect(() => {
     if (selectedCalendarKey === "extensionEvents" && ["unsupported", "unavailable"].includes(bridgeStatus)) {
@@ -2225,7 +2639,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
         })
       : selectedCalendarKey === "unlvCalendar"
         ? ALL_INTERESTS
-        : selectedCalendarKey === "rebelCoverage"
+        : selectedCalendarKey === "rebelSports"
           ? ALL_SPORTS
           : calendarOrganizationDirectory.length
             ? calendarOrganizationDirectory
@@ -2241,7 +2655,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     ? bridgeState?.selectedInterests || []
     : selectedCalendarKey === "involvementCenter"
       ? bridgeState?.involvedClubs || []
-      : selectedCalendarKey === "rebelCoverage"
+      : selectedCalendarKey === "rebelSports"
         ? bridgeState?.selectedSports || []
         : [];
   const activeCalendarFilters = hasSyncedCalendarFilters && useSyncedCalendarFilters
@@ -2415,13 +2829,14 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     const session = {
       currentMonth: currentMonth.toISOString(),
       selectedDateKey,
+      selectedCalendarKey,
       calendarView,
       weeklyScrollTop: weeklyScrollRef.current?.scrollTop ?? null,
       pageScrollY: window.scrollY,
     };
 
     window.sessionStorage.setItem(CALENDAR_SESSION_KEY, JSON.stringify(session));
-  }, [currentMonth, selectedDateKey, calendarView]);
+  }, [currentMonth, selectedDateKey, selectedCalendarKey, calendarView]);
 
   useEffect(() => {
     if (calendarView !== "weekly" || !weeklyScrollRef.current) {
@@ -2478,7 +2893,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
           </div>
           <Link
             to="/"
-            className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
+            className={`self-start ${BACK_HOME_BUTTON_CLASS}`}
           >
             Back Home
           </Link>
@@ -2584,7 +2999,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                           placeholder="Search RSOs and organizations"
                         />
                       ) : null}
-                      {selectedCalendarKey === "rebelCoverage" ? (
+                      {selectedCalendarKey === "rebelSports" ? (
                         <div className="grid gap-4 md:grid-cols-2">
                           <div className="rounded-[1rem] border border-white/10 bg-white/10 p-4">
                             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Men's Sports</p>
@@ -2623,7 +3038,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                       {calendarManualFilters.length ? (
                         <div>
                           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">
-                            Selected {selectedCalendarKey === "extensionEvents" ? "Sources" : selectedCalendarKey === "involvementCenter" ? "Organizations" : selectedCalendarKey === "rebelCoverage" ? "Sports" : "Filters"}
+                            Selected {selectedCalendarKey === "extensionEvents" ? "Sources" : selectedCalendarKey === "involvementCenter" ? "Organizations" : selectedCalendarKey === "rebelSports" ? "Sports" : "Filters"}
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {calendarManualFilters.map((filter) => (
@@ -2638,7 +3053,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                           </div>
                         </div>
                       ) : null}
-                      {selectedCalendarKey !== "rebelCoverage" ? (
+                      {selectedCalendarKey !== "rebelSports" ? (
                         <div className="flex flex-wrap gap-2">
                           {visibleCalendarManualFilters.map((filter) => (
                             <FilterChip
@@ -2837,7 +3252,18 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                         {day.events.slice(0, 2).map((event) => (
                           <div
                             key={event.id}
-                            className="truncate rounded-full bg-white/12 px-2 py-0 text-[10px] font-medium leading-[1.15rem] text-white/90 max-[700px]:hidden"
+                            className={[
+                              "truncate rounded-full px-2 py-0 text-[10px] font-medium leading-[1.15rem] max-[700px]:hidden",
+                              selectedCalendarKey === "extensionEvents" && event.color ? "" : "bg-white/12 text-white/90",
+                            ].join(" ")}
+                            style={
+                              selectedCalendarKey === "extensionEvents" && event.color
+                                ? {
+                                  backgroundColor: event.color,
+                                  color: getEventForegroundColor(event.color),
+                                }
+                                : undefined
+                            }
                           >
                             {event.title}
                           </div>
@@ -2889,8 +3315,8 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                               onClick={() => setActiveModalEvent(event)}
                               className={[
                                 "grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-l-2 px-4 py-3 text-left text-sm text-white transition max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]",
-                                dayLabel.emphasize
-                                  ? "border-l-[#ff8f8f] bg-[#8b0000]/18 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:bg-[#8b0000]/24"
+                                dayLabel.isToday
+                                  ? "border-l-white/60 bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:bg-white/14"
                                   : "border-l-transparent hover:bg-white/10",
                               ].join(" ")}
                             >
@@ -3230,7 +3656,7 @@ function DevelopersPage() {
           </div>
           <Link
             to="/"
-            className="self-start rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20 sm:self-auto"
+            className={`self-start sm:self-auto ${BACK_HOME_BUTTON_CLASS}`}
           >
             Back Home
           </Link>
@@ -3580,6 +4006,23 @@ export default function App() {
       }
     });
   }, []);
+
+  useEffect(() => {
+    const seo = getSeoConfig(location.pathname);
+    const canonicalUrl = `${SITE_URL}${seo.path}`;
+
+    document.title = seo.title;
+    upsertMetaTag('meta[name="description"]', { name: "description" }, seo.description);
+    upsertMetaTag('meta[name="keywords"]', { name: "keywords" }, seo.keywords);
+    upsertMetaTag('meta[property="og:title"]', { property: "og:title" }, seo.title);
+    upsertMetaTag('meta[property="og:description"]', { property: "og:description" }, seo.description);
+    upsertMetaTag('meta[property="og:url"]', { property: "og:url" }, canonicalUrl);
+    upsertMetaTag('meta[property="og:image"]', { property: "og:image" }, DEFAULT_OG_IMAGE);
+    upsertMetaTag('meta[name="twitter:title"]', { name: "twitter:title" }, seo.title);
+    upsertMetaTag('meta[name="twitter:description"]', { name: "twitter:description" }, seo.description);
+    upsertMetaTag('meta[name="twitter:image"]', { name: "twitter:image" }, DEFAULT_OG_IMAGE);
+    upsertCanonicalLink(canonicalUrl);
+  }, [location.pathname]);
 
   return (
     <main
