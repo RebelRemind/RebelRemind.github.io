@@ -185,8 +185,26 @@ const DEFAULT_THEME = {
   selectedThemeKey: "custom",
 };
 
+function blendHexColor(color, ratio = 0.5) {
+  if (!color || !color.startsWith("#") || color.length !== 7) {
+    return color;
+  }
+
+  const clampRatio = Math.max(0, Math.min(1, ratio));
+  const red = Number.parseInt(color.slice(1, 3), 16);
+  const green = Number.parseInt(color.slice(3, 5), 16);
+  const blue = Number.parseInt(color.slice(5, 7), 16);
+
+  const mixChannel = (channel) => Math.round(channel + ((255 - channel) * clampRatio));
+
+  return `#${[mixChannel(red), mixChannel(green), mixChannel(blue)]
+    .map((channel) => channel.toString(16).padStart(2, "0"))
+    .join("")}`;
+}
+
 function buildBackground(backgroundColor) {
-  return `linear-gradient(135deg, ${backgroundColor} 0%, #f3d2d7 100%)`;
+  const softenedColor = blendHexColor(backgroundColor, 0.5);
+  return `linear-gradient(135deg, ${backgroundColor} 0%, ${softenedColor} 100%)`;
 }
 
 function upsertMetaTag(selector, attributes, content) {
