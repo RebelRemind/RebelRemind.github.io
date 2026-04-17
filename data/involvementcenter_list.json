@@ -3840,16 +3840,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12330140"
   },
   {
-    "name": "Executive Debate ",
-    "startDate": "2026-04-01",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-01",
-    "endTime": "7:30 PM",
-    "location": "SU Ballroom A",
-    "organization": "CSUN Student Government",
-    "link": "https://involvementcenter.unlv.edu/event/12360445"
-  },
-  {
     "name": "Fine Arts Mixer",
     "startDate": "2026-04-01",
     "startTime": "6:00 PM",
@@ -3858,6 +3848,16 @@
     "location": "FDH 101",
     "organization": "American Institute of Graphic Arts",
     "link": "https://involvementcenter.unlv.edu/event/12371791"
+  },
+  {
+    "name": "Executive Debate ",
+    "startDate": "2026-04-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-01",
+    "endTime": "8:00 PM",
+    "location": "SU Ballroom A",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12360445"
   },
   {
     "name": "April Fools",
@@ -4710,16 +4710,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4728,6 +4718,16 @@
     "location": "BEH 240",
     "organization": "Chinese Corner",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -4760,6 +4760,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12391514"
   },
   {
+    "name": "VIRTUAL Success Series: Academic Recovery",
+    "startDate": "2026-04-16",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-16",
+    "endTime": "3:00 PM",
+    "location": "Online",
+    "organization": "The Coaching Spot",
+    "link": "https://involvementcenter.unlv.edu/event/12346633"
+  },
+  {
     "name": "SORCE Pop Up: Trivia\ud83d\udca1",
     "startDate": "2026-04-16",
     "startTime": "1:00 PM",
@@ -4780,16 +4790,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12381959"
   },
   {
-    "name": "VIRTUAL Success Series: Academic Recovery",
-    "startDate": "2026-04-16",
-    "startTime": "2:00 PM",
-    "endDate": "2026-04-16",
-    "endTime": "3:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "link": "https://involvementcenter.unlv.edu/event/12346633"
-  },
-  {
     "name": "Narcan Training",
     "startDate": "2026-04-16",
     "startTime": "3:00 PM",
@@ -4798,6 +4798,16 @@
     "location": "Health Education Room 1502, 1st Floor of Student Recreation & Wellness Center",
     "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
     "link": "https://involvementcenter.unlv.edu/event/12277894"
+  },
+  {
+    "name": "Freedom of Songs",
+    "startDate": "2026-04-10",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-16",
+    "endTime": "5:00 PM",
+    "location": "SU Ballrooms ABC",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12432923"
   },
   {
     "name": "THE UNLV Political Collab: Forward x Bridge x NV Forum ",
@@ -4878,6 +4888,16 @@
     "location": "Student Union 205",
     "organization": "Business Law Association of UNLV",
     "link": "https://involvementcenter.unlv.edu/event/12425547"
+  },
+  {
+    "name": "SPS Star Party",
+    "startDate": "2026-04-20",
+    "startTime": "8:15 PM",
+    "endDate": "2026-04-20",
+    "endTime": "10:15 PM",
+    "location": "Late Night Trailhead Las Vegas, NV",
+    "organization": "Society of Physics Students",
+    "link": "https://involvementcenter.unlv.edu/event/12432680"
   },
   {
     "name": "Undoing & Reclaiming: Filipino Americans and Colonial Mentality",
@@ -5358,6 +5378,16 @@
     "location": "SU 205",
     "organization": "CAEO College Programs",
     "link": "https://involvementcenter.unlv.edu/event/12026261"
+  },
+  {
+    "name": "CSUN Pre-Law Banquet",
+    "startDate": "2026-04-30",
+    "startTime": "3:30 PM",
+    "endDate": "2026-04-30",
+    "endTime": "5:00 PM",
+    "location": "RLL 101",
+    "organization": "CSUN Student Government",
+    "link": "https://involvementcenter.unlv.edu/event/12433020"
   },
   {
     "name": "UNLV ROAR AANHPI Night",
