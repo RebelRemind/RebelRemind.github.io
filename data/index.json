@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-04-18T06:02:42Z",
+  "generatedAt": "2026-04-18T07:38:48Z",
   "files": [
     "academiccalendar_list.json",
     "involvementcenter_list.json",
     "organization_list.json",
     "rebelcoverage_list.json",
+    "scarletandgraynews_list.json",
     "unlvcalendar_list.json",
+    "unlvinthenews_list.json",
     "unlvtoday_list.json"
   ]
 }
