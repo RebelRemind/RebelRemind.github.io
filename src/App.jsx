@@ -54,6 +54,20 @@ const NEWS_FEED_FILES = [
   },
 ];
 
+const CAMPUS_WIDE_EVENTS_FILE = {
+  key: "campusWideEvents",
+  label: "Campus-Wide Events",
+  path: "/data/campuswideevents_list.json",
+  sourceUrl: "https://www.unlv.edu/sia/events",
+};
+
+const CAREER_EVENTS_FILE = {
+  key: "careerEvents",
+  label: "Upcoming Career Events",
+  path: "/data/careerevents_list.json",
+  sourceUrl: "https://careerlaunch.unlv.edu/events/",
+};
+
 const ALL_INTERESTS = [
   "Academics",
   "Arts",
@@ -416,6 +430,40 @@ function getNewsFeedLabel(feedKey) {
 
 function getNewsFeedEmptyMessage(feedKey) {
   return NEWS_FEED_FILES.find((feed) => feed.key === feedKey)?.emptyMessage || "Loading campus news...";
+}
+
+function shouldShowNewsSectionHeader(feedKey, sectionLabel) {
+  const normalizedSection = String(sectionLabel || "").trim().toLowerCase();
+
+  if (feedKey === "unlvNews" && normalizedSection === "in the news") {
+    return false;
+  }
+
+  if (feedKey === "scarletGrayNews" && normalizedSection === "scarlet and gray news") {
+    return false;
+  }
+
+  return true;
+}
+
+function sortNewsSections(feedKey, groups) {
+  if (feedKey !== "unlvToday") {
+    return groups;
+  }
+
+  const preferredOrder = ["Today's Announcements", "More from the Last Week"];
+  const orderMap = new Map(preferredOrder.map((label, index) => [label, index]));
+
+  return [...groups].sort((left, right) => {
+    const leftOrder = orderMap.has(left.section) ? orderMap.get(left.section) : Number.POSITIVE_INFINITY;
+    const rightOrder = orderMap.has(right.section) ? orderMap.get(right.section) : Number.POSITIVE_INFINITY;
+
+    if (leftOrder !== rightOrder) {
+      return leftOrder - rightOrder;
+    }
+
+    return left.section.localeCompare(right.section);
+  });
 }
 
 function formatDatasetTimeRange(item) {
@@ -1437,6 +1485,10 @@ function openDownloadModal() {
   window.__openRebelDownloadModal?.();
 }
 
+function openBrowserWarningModal() {
+  window.__openRebelBrowserWarningModal?.();
+}
+
 function Navbar({ visible, onCloseCalendarNavbar }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1634,136 +1686,176 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
         </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <div className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
-          <ConnectedPulse active={bridgeIsConnected} />
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
-            {bridgeIsConnected ? "Bridge Live" : bridgeIsUnsupported ? "Bridge Unavailable" : "Bridge Waiting"}
-          </span>
-        </div>
-        <StatusPill
-          active={bridgeIsConnected}
-          inactiveClassName="border-white/20 bg-white/10 text-white"
-        >
-          {bridgeIsConnected ? "Extension Connected" : bridgeIsUnsupported ? "Bridge Not Available" : "Bridge Not Detected"}
-        </StatusPill>
-        <StatusPill
-          active={Boolean(bridgeState?.user)}
-          inactiveClassName="border-white/20 bg-white/10 text-white"
-        >
-          {bridgeState?.user ? `Signed In: ${bridgeState.user.name}` : bridgeIsUnsupported ? "Chrome Browser Required" : "No Synced Extension Data"}
-        </StatusPill>
-      </div>
-      <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
-          {bridgeState?.user ? (
-            <div className="mt-4 flex items-center gap-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
-              {bridgeState.user.picture && !profileImageFailed ? (
-                <img
-                  src={bridgeState.user.picture}
-                  alt={bridgeState.user.name}
-                  referrerPolicy="no-referrer"
-                  onError={() => setProfileImageFailed(true)}
-                  className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white/30"
-                />
-              ) : (
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-lg font-semibold text-white ring-2 ring-white/30">
-                  {profileInitials}
+      {bridgeIsConnected ? (
+        <>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <div className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
+              <ConnectedPulse active={bridgeIsConnected} />
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
+                Bridge Live
+              </span>
+            </div>
+            <StatusPill
+              active={bridgeIsConnected}
+              inactiveClassName="border-white/20 bg-white/10 text-white"
+            >
+              Extension Connected
+            </StatusPill>
+            <StatusPill
+              active={Boolean(bridgeState?.user)}
+              inactiveClassName="border-white/20 bg-white/10 text-white"
+            >
+              {bridgeState?.user ? `Signed In: ${bridgeState.user.name}` : "No Synced Extension Data"}
+            </StatusPill>
+          </div>
+          <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
+              {bridgeState?.user ? (
+                <div className="mt-4 flex items-center gap-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
+                  {bridgeState.user.picture && !profileImageFailed ? (
+                    <img
+                      src={bridgeState.user.picture}
+                      alt={bridgeState.user.name}
+                      referrerPolicy="no-referrer"
+                      onError={() => setProfileImageFailed(true)}
+                      className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white/30"
+                    />
+                  ) : (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-lg font-semibold text-white ring-2 ring-white/30">
+                      {profileInitials}
+                    </div>
+                  )}
+                  <div>
+                    <p className="text-lg font-semibold">{bridgeState.user.name}</p>
+                    <p className="text-sm text-white/75">{bridgeState.user.email}</p>
+                  </div>
                 </div>
-              )}
-              <div>
-                <p className="text-lg font-semibold">{bridgeState.user.name}</p>
-                <p className="text-sm text-white/75">{bridgeState.user.email}</p>
+              ) : null}
+              <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Saved Preferences</p>
+                  <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
+                </div>
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Your Events</p>
+                  <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
+                </div>
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Canvas Assignments</p>
+                  <p className="mt-2 text-3xl font-semibold">{bridgeState?.upcomingAssignmentCount || 0}</p>
+                </div>
               </div>
-            </div>
-          ) : null}
-          <div className="mt-4 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-3xl bg-white/12 p-4">
-              <p className="text-sm text-white/70">Saved Preferences</p>
-              <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
-            </div>
-            <div className="rounded-3xl bg-white/12 p-4">
-              <p className="text-sm text-white/70">Your Events</p>
-              <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
-            </div>
-            <div className="rounded-3xl bg-white/12 p-4">
-              <p className="text-sm text-white/70">Canvas Assignments</p>
-              <p className="mt-2 text-3xl font-semibold">{bridgeState?.upcomingAssignmentCount || 0}</p>
-            </div>
-          </div>
-          {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
+              {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
 
-          <div className="mt-6 rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {featuredPreferences.length ? (
-                featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
-              ) : (
-                <p className="text-sm text-white/75">
-                  {bridgeIsUnsupported
-                    ? "Bridge sync is only available in Chrome-compatible browsers with the Rebel Remind extension installed."
-                    : "No synced extension preferences yet. Install the extension and open this page in Chrome to pull them in."}
-                </p>
-              )}
-            </div>
-          </div>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            <button
-              type="button"
-              onClick={openDownloadModal}
-              className="inline-flex items-center justify-center rounded-full bg-[#bb0000] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
-            >
-              Download RebelRemind
-            </button>
-            <Link
-              to="/calendar"
-              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/20"
-            >
-              View Calendar
-            </Link>
-          </div>
-        </div>
-
-        <aside className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
-          <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
-          <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto pr-1">
-            {bridgeStatus === "connected" && bridgeState?.upcomingAssignments?.length ? (
-              bridgeState.upcomingAssignments.map((assignment) => (
-                <a
-                  key={assignment.id}
-                  href={assignment.link || undefined}
-                  target={assignment.link ? "_blank" : undefined}
-                  rel={assignment.link ? "noreferrer" : undefined}
-                  className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              <div className="mt-6 rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {featuredPreferences.length ? (
+                    featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
+                  ) : (
+                    <p className="text-sm text-white/75">No synced extension preferences yet.</p>
+                  )}
+                </div>
+              </div>
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                <button
+                  type="button"
+                  onClick={openDownloadModal}
+                  className="inline-flex items-center justify-center rounded-full bg-[#bb0000] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
                 >
-                  <p className="font-semibold text-stone-900">{assignment.title}</p>
-                  {assignment.courseName ? (
-                    <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
-                  ) : null}
-                  <p className="mt-2 text-sm text-stone-700">{formatAssignmentDate(assignment.dueAt)}</p>
-                </a>
-              ))
-            ) : (
-              <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
-                {bridgeStatus === "connected"
-                  ? "No upcoming Canvas assignments are available right now."
-                  : bridgeIsUnsupported
-                    ? "Bridge sync is not available in this browser. Please use Google Chrome and download the extension to see your upcoming Canvas Assignments!"
-                    : "Sync not available. Turn on the extension to preview upcoming assignments here."}
+                  Download RebelRemind
+                </button>
+                <Link
+                  to="/calendar"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/20"
+                >
+                  View Calendar
+                </Link>
               </div>
-            )}
+            </div>
+
+            <aside className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
+              <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
+              <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto pr-1">
+                {bridgeState?.upcomingAssignments?.length ? (
+                  bridgeState.upcomingAssignments.map((assignment) => (
+                    <a
+                      key={assignment.id}
+                      href={assignment.link || undefined}
+                      target={assignment.link ? "_blank" : undefined}
+                      rel={assignment.link ? "noreferrer" : undefined}
+                      className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                    >
+                      <p className="font-semibold text-stone-900">{assignment.title}</p>
+                      {assignment.courseName ? (
+                        <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
+                      ) : null}
+                      <p className="mt-2 text-sm text-stone-700">{formatAssignmentDate(assignment.dueAt)}</p>
+                    </a>
+                  ))
+                ) : (
+                  <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
+                    No upcoming Canvas assignments are available right now.
+                  </div>
+                )}
+              </div>
+            </aside>
           </div>
-        </aside>
-      </div>
+        </>
+      ) : (
+        <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Get Started</p>
+            <h2 className="mt-3 font-serif text-3xl leading-tight text-white">Download Rebel Remind for more features!</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-white/78 sm:text-base">
+              {bridgeIsUnsupported
+                ? "Bridge sync is only available in Chrome-compatible browsers with the Rebel Remind extension installed."
+                : "Install the extension to sync Your Events, Canvas assignments, and your own theme!"}
+            </p>
+            <div className="mt-6">
+              <button
+                type="button"
+                onClick={openDownloadModal}
+                className="inline-flex items-center justify-center rounded-full bg-[#bb0000] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
+              >
+                Download Rebel Remind
+              </button>
+            </div>
+          </div>
+
+          <aside className="flex flex-col rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Navigate the Site</p>
+            <h2 className="mt-3 font-serif text-3xl leading-tight">Explore Rebel Remind</h2>
+            <p className="mt-4 text-sm leading-7 text-stone-600 sm:text-base">
+              View our campus event calendar and meet the team!
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:mt-auto">
+              <Link
+                to="/calendar"
+                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+              >
+                View Calendar
+              </Link>
+              <Link
+                to="/contributors"
+                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+              >
+                Meet the Team
+              </Link>
+            </div>
+          </aside>
+        </div>
+      )}
     </header>
   );
 }
 
-function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds }) {
+function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds, campusWideEvents, careerEvents }) {
   const [collapsedEvents, setCollapsedEvents] = useState({});
   const [activeNewsFeedKey, setActiveNewsFeedKey] = useState(NEWS_FEED_FILES[0].key);
+  const [selectedNewsItem, setSelectedNewsItem] = useState(null);
   const featuredPreferences = toTitleList(bridgeState?.preferences);
   const activeNewsFeed = Array.isArray(newsFeeds?.[activeNewsFeedKey]) ? newsFeeds[activeNewsFeedKey] : [];
   const campusFeedItems = Array.isArray(activeNewsFeed)
@@ -1771,16 +1863,33 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds 
       .filter((item) => item?.name && item?.link)
       .sort((left, right) => getNewsItemTimestamp(right) - getNewsItemTimestamp(left))
     : [];
-  const groupedCampusFeed = Object.values(
-    campusFeedItems.reduce((groups, item) => {
-      const section = item.section || "Latest Stories";
-      if (!groups[section]) {
-        groups[section] = { section, items: [] };
-      }
-      groups[section].items.push(item);
-      return groups;
-    }, {})
+  const groupedCampusFeed = sortNewsSections(
+    activeNewsFeedKey,
+    Object.values(
+      campusFeedItems.reduce((groups, item) => {
+        const section = item.section || "Latest Stories";
+        if (!groups[section]) {
+          groups[section] = { section, items: [] };
+        }
+        groups[section].items.push(item);
+        return groups;
+      }, {})
+    )
   );
+  const featuredCampusWideEvents = Array.isArray(campusWideEvents)
+    ? [...campusWideEvents]
+      .filter((item) => item?.name && item?.startDate)
+      .filter(isUpcomingEvent)
+      .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
+      .slice(0, 3)
+    : [];
+  const featuredCareerEvents = Array.isArray(careerEvents)
+    ? [...careerEvents]
+      .filter((item) => item?.name && item?.startDate)
+      .filter(isUpcomingEvent)
+      .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
+      .slice(0, 3)
+    : [];
   const syncedUserEvents = [
     ...((bridgeState?.involvementCenterEvents || []).map((event) => ({
       ...event,
@@ -1892,61 +2001,96 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds 
         </section>
       ) : null}
 
-      <section id="campus-feed" className="mt-3 grid scroll-mt-28 gap-4">
-        <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">{getNewsFeedLabel(activeNewsFeedKey)}</p>
-            <div className="flex flex-wrap gap-2">
-              {NEWS_FEED_FILES.map((feed) => {
-                const isActive = activeNewsFeedKey === feed.key;
-                return (
-                  <button
-                    key={feed.key}
-                    type="button"
-                    onClick={() => setActiveNewsFeedKey(feed.key)}
-                    className={isActive
-                      ? "rounded-full border border-white/35 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone-900 transition"
-                      : "rounded-full border border-white/20 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 transition hover:bg-white/12"}
+      <section id="campus-wide-events" className="mt-6 scroll-mt-28">
+        <div className="mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">No more FOMO</p>
+          <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">Campus-Wide and Career Events</h2>
+        </div>
+        <div className="grid gap-4 xl:grid-cols-2">
+          <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+            <div className="flex items-center justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Spotlight</p>
+                <h3 className="mt-2 font-serif text-2xl leading-tight text-white">{CAMPUS_WIDE_EVENTS_FILE.label}</h3>
+              </div>
+              <a
+                href={CAMPUS_WIDE_EVENTS_FILE.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
+              >
+                View Source
+              </a>
+            </div>
+            <div className="mt-5 space-y-3">
+              {featuredCampusWideEvents.length ? (
+                featuredCampusWideEvents.map((event, index) => (
+                  <a
+                    key={`${event.name}-${event.startDate || index}`}
+                    href={event.link || undefined}
+                    target={event.link ? "_blank" : undefined}
+                    rel={event.link ? "noreferrer" : undefined}
+                    className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-white transition hover:bg-white/12"
                   >
-                    {feed.label}
-                  </button>
-                );
-              })}
+                    <p className="text-sm font-semibold text-white/85">{formatEventDate(event)}</p>
+                    <h4 className="mt-2 text-lg font-semibold leading-tight">{event.name}</h4>
+                    {event.summary ? <p className="mt-3 text-sm leading-6 text-white/70">{event.summary}</p> : null}
+                  </a>
+                ))
+              ) : (
+                <div className="rounded-[1.5rem] border border-dashed border-white/20 bg-white/5 px-5 py-6 text-sm text-white/75">
+                  Campus-wide events are loading right now.
+                </div>
+              )}
             </div>
           </div>
-          <div className="mt-4 h-px w-full bg-white/15" aria-hidden="true" />
-          <div className="mt-5 max-h-[32rem] space-y-6 overflow-y-auto pr-1">
-            {groupedCampusFeed.length ? (
-              groupedCampusFeed.map((group) => (
-                <div key={group.section}>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">{group.section}</p>
-                  <div className="mt-3 space-y-3">
-                    {group.items.map((item, index) => (
-                      <a
-                        key={`${group.section}-${item.name}-${index}`}
-                        href={item.link || undefined}
-                        target={item.link ? "_blank" : undefined}
-                        rel={item.link ? "noreferrer" : undefined}
-                        className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 transition-transform duration-300 hover:-translate-y-1"
-                      >
-                        <p className="text-lg font-semibold">{item.name}</p>
-                        <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
-                        {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
-                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
-                          {[item.category, getNewsFeedLabel(activeNewsFeedKey)].filter(Boolean).join(" • ")}
-                        </p>
-                      </a>
-                    ))}
-                  </div>
+
+          <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+            <div className="flex items-center justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Career Launch</p>
+                <h3 className="mt-2 font-serif text-2xl leading-tight text-white">{CAREER_EVENTS_FILE.label}</h3>
+              </div>
+              <a
+                href={CAREER_EVENTS_FILE.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
+              >
+                View Source
+              </a>
+            </div>
+            <div className="mt-5 space-y-3">
+              {featuredCareerEvents.length ? (
+                featuredCareerEvents.map((event, index) => (
+                  <a
+                    key={`${event.name}-${event.startDate || index}`}
+                    href={event.link || undefined}
+                    target={event.link ? "_blank" : undefined}
+                    rel={event.link ? "noreferrer" : undefined}
+                    className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-white transition hover:bg-white/12"
+                  >
+                    <p className="text-sm font-semibold text-white/85">{formatEventDate(event)}</p>
+                    <h4 className="mt-2 text-lg font-semibold leading-tight">{event.name}</h4>
+                    {event.summary ? <p className="mt-3 text-sm leading-6 text-white/70">{event.summary}</p> : null}
+                  </a>
+                ))
+              ) : (
+                <div className="rounded-[1.5rem] border border-dashed border-white/20 bg-white/5 px-5 py-6 text-sm text-white/75">
+                  Career events are loading right now.
                 </div>
-              ))
-            ) : (
-              <p className="text-white/80">{getNewsFeedEmptyMessage(activeNewsFeedKey)}</p>
-            )}
+              )}
+            </div>
           </div>
         </div>
+      </section>
 
-        <div id="dataset-grid" className="grid scroll-mt-28 gap-4 xl:grid-cols-2">
+      <section id="dataset-grid" className="mt-6 scroll-mt-28">
+        <div className="mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Our Datasets</p>
+          <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">Explore Upcoming Events</h2>
+        </div>
+        <div className="grid gap-4 xl:grid-cols-2">
           {DATA_FILES.map((source) => {
             const sourceItems = Array.isArray(datasets[source.key]) ? datasets[source.key] : [];
             const nextItem = sourceItems
@@ -2003,6 +2147,126 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds 
           })}
         </div>
       </section>
+
+      <section id="campus-feed" className="mt-6 scroll-mt-28">
+        <div className="mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Updates</p>
+          <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">UNLV News</h2>
+        </div>
+        <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">{getNewsFeedLabel(activeNewsFeedKey)}</p>
+            <div className="flex flex-wrap gap-2">
+              {NEWS_FEED_FILES.map((feed) => {
+                const isActive = activeNewsFeedKey === feed.key;
+                return (
+                  <button
+                    key={feed.key}
+                    type="button"
+                    onClick={() => setActiveNewsFeedKey(feed.key)}
+                    className={isActive
+                      ? "rounded-full border border-white/35 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone-900 transition"
+                      : "rounded-full border border-white/20 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 transition hover:bg-white/12"}
+                  >
+                    {feed.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <div className="mt-4 h-px w-full bg-white/15" aria-hidden="true" />
+          <div className="mt-5 max-h-[32rem] space-y-6 overflow-y-auto pr-1">
+            {groupedCampusFeed.length ? (
+              groupedCampusFeed.map((group) => (
+                <div key={group.section}>
+                  {shouldShowNewsSectionHeader(activeNewsFeedKey, group.section) ? (
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">{group.section}</p>
+                  ) : null}
+                  <div className={shouldShowNewsSectionHeader(activeNewsFeedKey, group.section) ? "mt-3 space-y-3" : "space-y-3"}>
+                    {group.items.map((item, index) => (
+                      <button
+                        key={`${group.section}-${item.name}-${index}`}
+                        type="button"
+                        onClick={() => setSelectedNewsItem({ ...item, feedLabel: getNewsFeedLabel(activeNewsFeedKey) })}
+                        className="block w-full rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 text-left transition-transform duration-300 hover:-translate-y-1"
+                      >
+                        <p className="text-lg font-semibold">{item.name}</p>
+                        <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
+                        {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+                          {[item.category, getNewsFeedLabel(activeNewsFeedKey)].filter(Boolean).join(" • ")}
+                        </p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-white/80">{getNewsFeedEmptyMessage(activeNewsFeedKey)}</p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {selectedNewsItem ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 px-4 py-8 backdrop-blur-sm"
+          onClick={() => setSelectedNewsItem(null)}
+        >
+          <div
+            className="max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] bg-stone-100 p-6 text-stone-900 shadow-2xl"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="news-feed-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  {[selectedNewsItem.category, selectedNewsItem.feedLabel].filter(Boolean).join(" • ")}
+                </p>
+                <h2 id="news-feed-modal-title" className="mt-2 font-serif text-3xl leading-tight">
+                  {selectedNewsItem.name}
+                </h2>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedNewsItem(null)}
+                className="rounded-full border border-stone-300 px-3 py-1 text-sm font-semibold text-stone-700 transition hover:bg-stone-200"
+              >
+                Close
+              </button>
+            </div>
+
+            <p className="mt-4 text-sm font-semibold text-stone-600">{formatNewsDate(selectedNewsItem)}</p>
+            {selectedNewsItem.summary ? (
+              <p className="mt-4 text-base leading-7 text-stone-700">{selectedNewsItem.summary}</p>
+            ) : (
+              <p className="mt-4 text-base leading-7 text-stone-700">No summary is available for this story yet.</p>
+            )}
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {selectedNewsItem.link ? (
+                <a
+                  href={selectedNewsItem.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-2xl bg-stone-900 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-black"
+                >
+                  Open Source
+                </a>
+              ) : null}
+              <button
+                type="button"
+                onClick={() => setSelectedNewsItem(null)}
+                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+              >
+                Back to Feed
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </>
   );
 }
@@ -3940,6 +4204,83 @@ function DownloadModal({ open, onClose }) {
   );
 }
 
+function BrowserWarningModal({ open, onClose }) {
+  useEffect(() => {
+    if (!open) {
+      return undefined;
+    }
+
+    function handleEscape(event) {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    }
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [open, onClose]);
+
+  if (!open) {
+    return null;
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 px-4 py-8 backdrop-blur-sm"
+      onClick={onClose}
+      role="presentation"
+    >
+      <div
+        className="w-full max-w-xl rounded-[2rem] border border-white/20 bg-stone-100/95 p-6 text-stone-900 shadow-2xl"
+        onClick={(event) => event.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="browser-warning-modal-title"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Chrome Required</p>
+            <h2 id="browser-warning-modal-title" className="mt-2 font-serif text-3xl leading-tight">
+              Rebel Remind is a Chrome Extension.
+            </h2>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-full bg-stone-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+          >
+            Close
+          </button>
+        </div>
+
+        <div className="mt-5 rounded-[1.5rem] border border-stone-200 bg-white p-4 text-sm leading-6 text-stone-700">
+          To use Rebel Remind, please open this page in Google Chrome or another Chrome-compatible browser. Once you are
+          in Chrome, you can download and install the extension to get assignments, synced events, and bridge-powered
+          features.
+        </div>
+
+        <div className="mt-5 flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-full bg-stone-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+          >
+            Got It
+          </button>
+          <a
+            href="https://www.google.com/chrome/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-900 transition hover:bg-stone-100"
+          >
+            Download Chrome
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Footer({ onOpenBridgeInfo }) {
   return (
     <footer className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-5 text-white/80 shadow-xl backdrop-blur-md">
@@ -3975,18 +4316,30 @@ export default function App() {
   const [bridgeState, setBridgeState] = useState(null);
   const [datasets, setDatasets] = useState({});
   const [newsFeeds, setNewsFeeds] = useState({});
+  const [campusWideEvents, setCampusWideEvents] = useState([]);
+  const [careerEvents, setCareerEvents] = useState([]);
   const [bridgeError, setBridgeError] = useState("");
   const [isBridgeModalOpen, setIsBridgeModalOpen] = useState(false);
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const [isBrowserWarningModalOpen, setIsBrowserWarningModalOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
   const [calendarNavbarDismissed, setCalendarNavbarDismissed] = useState(false);
   const theme = bridgeState?.theme || DEFAULT_THEME;
   const location = useLocation();
 
   useEffect(() => {
-    window.__openRebelDownloadModal = () => setIsDownloadModalOpen(true);
+    window.__openRebelDownloadModal = () => {
+      if (isBridgeSupportedBrowser()) {
+        setIsDownloadModalOpen(true);
+        return;
+      }
+
+      setIsBrowserWarningModalOpen(true);
+    };
+    window.__openRebelBrowserWarningModal = () => setIsBrowserWarningModalOpen(true);
     return () => {
       delete window.__openRebelDownloadModal;
+      delete window.__openRebelBrowserWarningModal;
     };
   }, []);
 
@@ -4132,6 +4485,42 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const loadCampusWideEvents = async () => {
+      try {
+        const response = await fetch(CAMPUS_WIDE_EVENTS_FILE.path);
+        if (!response.ok) {
+          throw new Error(`Failed to load ${CAMPUS_WIDE_EVENTS_FILE.path}`);
+        }
+
+        const payload = await response.json();
+        setCampusWideEvents(Array.isArray(payload) ? payload : []);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    loadCampusWideEvents();
+  }, []);
+
+  useEffect(() => {
+    const loadCareerEvents = async () => {
+      try {
+        const response = await fetch(CAREER_EVENTS_FILE.path);
+        if (!response.ok) {
+          throw new Error(`Failed to load ${CAREER_EVENTS_FILE.path}`);
+        }
+
+        const payload = await response.json();
+        setCareerEvents(Array.isArray(payload) ? payload : []);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    loadCareerEvents();
+  }, []);
+
+  useEffect(() => {
     const seo = getSeoConfig(location.pathname);
     const canonicalUrl = `${SITE_URL}${seo.path}`;
 
@@ -4174,6 +4563,8 @@ export default function App() {
                   bridgeError={bridgeError}
                   datasets={datasets}
                   newsFeeds={newsFeeds}
+                  campusWideEvents={campusWideEvents}
+                  careerEvents={careerEvents}
                 />
               }
             />
@@ -4193,6 +4584,7 @@ export default function App() {
       </div>
       <BridgeInfoModal open={isBridgeModalOpen} onClose={() => setIsBridgeModalOpen(false)} />
       <DownloadModal open={isDownloadModalOpen} onClose={() => setIsDownloadModalOpen(false)} />
+      <BrowserWarningModal open={isBrowserWarningModalOpen} onClose={() => setIsBrowserWarningModalOpen(false)} />
     </main>
   );
 }
