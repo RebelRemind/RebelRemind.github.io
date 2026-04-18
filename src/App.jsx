@@ -68,6 +68,24 @@ const CAREER_EVENTS_FILE = {
   sourceUrl: "https://careerlaunch.unlv.edu/events/",
 };
 
+const HOMEPAGE_FEED_FILES = [
+  ...NEWS_FEED_FILES.map((feed) => ({
+    ...feed,
+    typeLabel: "Homepage News Feed",
+    homeAnchor: "campus-feed",
+  })),
+  {
+    ...CAMPUS_WIDE_EVENTS_FILE,
+    typeLabel: "Homepage Event Feed",
+    homeAnchor: "campus-wide-events",
+  },
+  {
+    ...CAREER_EVENTS_FILE,
+    typeLabel: "Homepage Event Feed",
+    homeAnchor: "campus-wide-events",
+  },
+];
+
 const ALL_INTERESTS = [
   "Academics",
   "Arts",
@@ -1489,6 +1507,31 @@ function openBrowserWarningModal() {
   window.__openRebelBrowserWarningModal?.();
 }
 
+function scrollToHomeSection(sectionId) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  const target = document.getElementById(sectionId);
+  if (!target) {
+    return;
+  }
+
+  window.history.replaceState(null, "", `/#${sectionId}`);
+  target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function handleHomeSectionLinkClick(event, sectionId) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  if (window.location.pathname === "/") {
+    event.preventDefault();
+    scrollToHomeSection(sectionId);
+  }
+}
+
 function Navbar({ visible, onCloseCalendarNavbar }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1664,7 +1707,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             </div>
             <h1 className="w-full max-w-none font-serif text-2xl font-semibold leading-tight sm:text-3xl xl:text-4xl">
               {bridgeIsConnected
-                ? `Hi ${firstName}, here are your events.`
+                ? `Hi ${firstName}, here are your reminders.`
                 : "A student-built Chrome Extension designed to centralize assignment reminders, club events, and general campus events, all in one place."}
             </h1>
             <div className="mt-5 grid gap-3 text-sm text-white/88 sm:text-base">
@@ -1674,10 +1717,10 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 </>
               ) : (
                 <>
-                  <p>Winner of UNLV's Spring 2025 CS Senior Design Competition</p>
-                  <p>Events and Assignments from Canvas, Involvement Center, and more</p>
-                  <p>Google Calendar Integration</p>
-                  <p>Lightweight, privacy-friendly, open source</p>
+                  <p>🥇 Winner of UNLV's Spring 2025 CS Senior Design Competition</p>
+                  <p>🔖 Events and Assignments from Canvas, Involvement Center, and more</p>
+                  <p>📅 Google Calendar Integration</p>
+                  <p>💡 Lightweight, privacy-friendly, open source</p>
                 </>
               )}
             </div>
@@ -1691,15 +1734,9 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             <div className="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
               <ConnectedPulse active={bridgeIsConnected} />
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
-                Bridge Live
+                Extension Sync Live
               </span>
             </div>
-            <StatusPill
-              active={bridgeIsConnected}
-              inactiveClassName="border-white/20 bg-white/10 text-white"
-            >
-              Extension Connected
-            </StatusPill>
             <StatusPill
               active={Boolean(bridgeState?.user)}
               inactiveClassName="border-white/20 bg-white/10 text-white"
@@ -1768,50 +1805,60 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 )}
               </div>
               {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
-              <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <button
-                  type="button"
-                  onClick={openDownloadModal}
-                  className="inline-flex items-center justify-center rounded-full bg-[#bb0000] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
-                >
-                  Download RebelRemind
-                </button>
-                <Link
-                  to="/calendar"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/20"
-                >
-                  View Calendar
-                </Link>
-              </div>
             </div>
 
-            <aside className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
-              <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
-              <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto pr-1">
-                {bridgeState?.upcomingAssignments?.length ? (
-                  bridgeState.upcomingAssignments.map((assignment) => (
-                    <a
-                      key={assignment.id}
-                      href={assignment.link || undefined}
-                      target={assignment.link ? "_blank" : undefined}
-                      rel={assignment.link ? "noreferrer" : undefined}
-                      className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-                    >
-                      <p className="font-semibold text-stone-900">{assignment.title}</p>
-                      {assignment.courseName ? (
-                        <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
-                      ) : null}
-                      <p className="mt-2 text-sm text-stone-700">{formatAssignmentDate(assignment.dueAt)}</p>
-                    </a>
-                  ))
-                ) : (
-                  <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
-                    No upcoming Canvas assignments are available right now.
-                  </div>
-                )}
-              </div>
-            </aside>
+            <div className="flex h-full flex-col gap-4">
+              <aside className="flex-1 rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
+                <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
+                <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto pr-1">
+                  {bridgeState?.upcomingAssignments?.length ? (
+                    bridgeState.upcomingAssignments.map((assignment) => (
+                      <a
+                        key={assignment.id}
+                        href={assignment.link || undefined}
+                        target={assignment.link ? "_blank" : undefined}
+                        rel={assignment.link ? "noreferrer" : undefined}
+                        className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                      >
+                        <p className="font-semibold text-stone-900">{assignment.title}</p>
+                        {assignment.courseName ? (
+                          <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
+                        ) : null}
+                        <p className="mt-2 text-sm text-stone-700">{formatAssignmentDate(assignment.dueAt)}</p>
+                      </a>
+                    ))
+                  ) : (
+                    <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
+                      No upcoming Canvas assignments are available right now.
+                    </div>
+                  )}
+                </div>
+              </aside>
+
+              <aside className="mt-auto flex flex-col rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Navigate the Site</p>
+                <h2 className="mt-2 font-serif text-3xl leading-tight">Explore Rebel Remind</h2>
+                {/* <p className="mt-2 text-sm leading-7 text-stone-600 sm:text-base">
+                  View our campus event calendar and meet the team!
+                </p> */}
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <Link
+                    to="/#dataset-grid"
+                    onClick={(event) => handleHomeSectionLinkClick(event, "dataset-grid")}
+                    className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+                  >
+                    Upcoming Events
+                  </Link>
+                  <Link
+                    to="/calendar"
+                    className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+                  >
+                    View Calendar
+                  </Link>
+                </div>
+              </aside>
+            </div>
           </div>
         </>
       ) : (
@@ -1843,16 +1890,17 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:mt-auto">
               <Link
+                to="/#dataset-grid"
+                onClick={(event) => handleHomeSectionLinkClick(event, "dataset-grid")}
+                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+              >
+                Upcoming Events
+              </Link>
+              <Link
                 to="/calendar"
                 className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
               >
                 View Calendar
-              </Link>
-              <Link
-                to="/contributors"
-                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
-              >
-                Meet the Team
               </Link>
             </div>
           </aside>
@@ -1891,14 +1939,12 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
       .filter((item) => item?.name && item?.startDate)
       .filter(isUpcomingEvent)
       .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
-      .slice(0, 3)
     : [];
   const featuredCareerEvents = Array.isArray(careerEvents)
     ? [...careerEvents]
       .filter((item) => item?.name && item?.startDate)
       .filter(isUpcomingEvent)
       .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
-      .slice(0, 3)
     : [];
   const syncedUserEvents = [
     ...((bridgeState?.involvementCenterEvents || []).map((event) => ({
@@ -1950,50 +1996,53 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
         onToggleCollapsedEvent={toggleCollapsedEvent}
       />
 
-      {bridgeStatus === "connected" ? (
+      {/* {bridgeStatus === "connected" ? (
         <section className="mt-3 rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-            <div className="max-w-3xl">
+          <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
-              <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your bridge connection is live.</h2>
-              <p className="mt-3 text-sm leading-7 text-white/75 sm:text-base">
-                A quick overview of what the extension is syncing into your homepage right now.
-              </p>
-            </div>
-            <div className="rounded-[1.5rem] border border-white/15 bg-white/10 px-5 py-4 text-white">
-              <p className="text-sm uppercase tracking-[0.2em] text-white/65">Signed In</p>
-              <p className="mt-2 text-xl font-semibold">{bridgeState?.user?.name || "Bridge User"}</p>
-            </div>
-          </div>
-          <div className="mt-5 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-              <div className="rounded-3xl bg-white/12 p-4 text-white">
-                <p className="text-sm text-white/70">Saved Preferences</p>
-                <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
-              </div>
-              <div className="rounded-3xl bg-white/12 p-4 text-white">
-                <p className="text-sm text-white/70">Your Events</p>
-                <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
-              </div>
-              <div className="rounded-3xl bg-white/12 p-4 text-white">
-                <p className="text-sm text-white/70">Canvas Assignments</p>
-                <p className="mt-2 text-3xl font-semibold">{bridgeState?.upcomingAssignmentCount || 0}</p>
-              </div>
-            </div>
-            <div className="rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {featuredPreferences.length ? (
-                  featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
-                ) : (
-                  <p className="text-sm text-white/75">No synced extension preferences yet.</p>
-                )}
+              {bridgeState?.user ? (
+                <div className="mt-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
+                  <p className="text-lg font-semibold text-white">{bridgeState.user.name}</p>
+                  <p className="mt-1 text-sm text-white/75">{bridgeState.user.email}</p>
+                </div>
+              ) : (
+                <div className="mt-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
+                  <p className="text-lg font-semibold text-white">Bridge User</p>
+                  <p className="mt-1 text-sm text-white/75">Connected through the Rebel Remind bridge.</p>
+                </div>
+              )}
+              <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Saved Preferences</p>
+                  <p className="mt-2 text-3xl font-semibold text-white">{featuredPreferences.length}</p>
+                </div>
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Your Events</p>
+                  <p className="mt-2 text-3xl font-semibold text-white">{bridgeState?.userEventCount || 0}</p>
+                </div>
+                <div className="rounded-3xl bg-white/12 p-4">
+                  <p className="text-sm text-white/70">Canvas Assignments</p>
+                  <p className="mt-2 text-3xl font-semibold text-white">{bridgeState?.upcomingAssignmentCount || 0}</p>
+                </div>
               </div>
               {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
+
+              <div className="mt-6 rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {featuredPreferences.length ? (
+                    featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
+                  ) : (
+                    <p className="text-sm text-white/75">No synced extension preferences yet.</p>
+                  )}
+                </div>
+              </div>
             </div>
+
           </div>
         </section>
-      ) : null}
+      ) : null} */}
 
       <section id="campus-wide-events" className="mt-6 scroll-mt-28">
         <div className="mb-4">
@@ -2001,7 +2050,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
           <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">Campus-Wide and Career Events</h2>
         </div>
         <div className="grid gap-4 xl:grid-cols-2">
-          <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+          <div className="flex h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Spotlight</p>
@@ -2016,7 +2065,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
                 View Source
               </a>
             </div>
-            <div className="mt-5 space-y-3">
+            <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
               {featuredCampusWideEvents.length ? (
                 featuredCampusWideEvents.map((event, index) => (
                   <a
@@ -2039,7 +2088,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+          <div className="flex h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Career Launch</p>
@@ -2054,7 +2103,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
                 View Source
               </a>
             </div>
-            <div className="mt-5 space-y-3">
+            <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
               {featuredCareerEvents.length ? (
                 featuredCareerEvents.map((event, index) => (
                   <a
@@ -2429,16 +2478,16 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
         </div>
         <div className="flex flex-col items-stretch gap-3">
           <Link
-            to="/"
-            className={BACK_HOME_BUTTON_CLASS}
-          >
-            Back Home
-          </Link>
-          <Link
             to={getCalendarSourceLink(dataset.key)}
             className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
           >
             Calendar View
+          </Link>
+          <Link
+            to="/"
+            className={BACK_HOME_BUTTON_CLASS}
+          >
+            Back Home
           </Link>
         </div>
       </div>
@@ -2797,7 +2846,17 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   );
 }
 
-function DatasetsLandingPage({ datasets }) {
+function DatasetsLandingPage({ datasets, newsFeeds, campusWideEvents, careerEvents }) {
+  const homepageFeedCounts = {
+    campusWideEvents: Array.isArray(campusWideEvents) ? campusWideEvents.length : 0,
+    careerEvents: Array.isArray(careerEvents) ? careerEvents.length : 0,
+    ...Object.fromEntries(
+      HOMEPAGE_FEED_FILES
+        .filter((source) => ["unlvToday", "unlvNews", "scarletGrayNews"].includes(source.key))
+        .map((source) => [source.key, Array.isArray(newsFeeds?.[source.key]) ? newsFeeds[source.key].length : 0])
+    ),
+  };
+
   return (
     <section className="space-y-5">
       <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
@@ -2869,7 +2928,67 @@ function DatasetsLandingPage({ datasets }) {
                 to={getDatasetRoute(source.key)}
                 className="rounded-full bg-stone-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
               >
-                Open Dataset Page
+                View Events
+              </Link>
+              <a
+                href={source.path}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+              >
+                View JSON
+              </a>
+            </div>
+          </article>
+        ))}
+
+        {HOMEPAGE_FEED_FILES.map((source) => (
+          <article
+            key={source.key}
+            className="rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-lg"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">{source.typeLabel}</p>
+                <h2 className="mt-1 text-2xl font-semibold">{source.label}</h2>
+              </div>
+              <span className="rounded-full bg-stone-900 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-white">
+                {homepageFeedCounts[source.key] || 0} items
+              </span>
+            </div>
+
+            <div className="mt-5 space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-stone-700">Hosted JSON</p>
+                <a
+                  href={source.path}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block break-all text-[#8b0000] transition hover:text-[#6b0000]"
+                >
+                  {typeof window !== "undefined" ? `${window.location.origin}${source.path}` : source.path}
+                </a>
+              </div>
+
+              <div>
+                <p className="font-semibold text-stone-700">Source URL</p>
+                <a
+                  href={source.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block break-all text-[#8b0000] transition hover:text-[#6b0000]"
+                >
+                  {source.sourceUrl}
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                to={`/#${source.homeAnchor}`}
+                className="rounded-full bg-stone-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700"
+              >
+                View Events
               </Link>
               <a
                 href={source.path}
@@ -3248,20 +3367,20 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   return (
     <section className="space-y-5">
       <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Calendar</p>
-            <h1 className="mt-2 font-serif text-4xl">See campus and synced events on one calendar.</h1>
-            <p className="mt-3 max-w-3xl text-white/80">
+            <h1 className="font-serif text-4xl">See campus and synced events on one calendar.</h1>
+            <p className="mt-2 max-w-3xl text-white/80">
               This view combines our datasets with your synced Rebel Remind events when the extension is connected.
             </p>
+            <Link
+              to="/"
+              className={`self-end ${BACK_HOME_BUTTON_CLASS}`}
+            >
+              Back Home
+            </Link>
           </div>
-          <Link
-            to="/"
-            className={`self-start ${BACK_HOME_BUTTON_CLASS}`}
-          >
-            Back Home
-          </Link>
         </div>
       </div>
 
@@ -4531,6 +4650,28 @@ export default function App() {
     upsertCanonicalLink(canonicalUrl);
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (!location.hash) {
+      return;
+    }
+
+    const elementId = location.hash.slice(1);
+    const scrollToHashTarget = () => {
+      const target = document.getElementById(elementId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
+    const frameId = window.requestAnimationFrame(scrollToHashTarget);
+    const timeoutId = window.setTimeout(scrollToHashTarget, 150);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.clearTimeout(timeoutId);
+    };
+  }, [location.pathname, location.hash]);
+
   return (
     <main
       className="min-h-screen text-white"
@@ -4564,7 +4705,14 @@ export default function App() {
             />
             <Route
               path="/datasets"
-              element={<DatasetsLandingPage datasets={datasets} />}
+              element={
+                <DatasetsLandingPage
+                  datasets={datasets}
+                  newsFeeds={newsFeeds}
+                  campusWideEvents={campusWideEvents}
+                  careerEvents={careerEvents}
+                />
+              }
             />
             <Route
               path="/datasets/:datasetKey"
