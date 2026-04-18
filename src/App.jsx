@@ -1643,21 +1643,11 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
   );
 }
 
-function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
+function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syncedUserEvents, collapsedEvents, onToggleCollapsedEvent }) {
   const bridgeIsConnected = bridgeStatus === "connected";
   const bridgeIsUnsupported = bridgeStatus === "unsupported";
-  const [profileImageFailed, setProfileImageFailed] = useState(false);
   const profileName = bridgeState?.user?.name || "User";
-  const profileInitials = profileName
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase() || "")
-    .join("") || "U";
-
-  useEffect(() => {
-    setProfileImageFailed(false);
-  }, [bridgeState?.user?.picture]);
+  const firstName = profileName.split(/\s+/).filter(Boolean)[0] || "User";
 
   return (
     <header className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-6 shadow-2xl backdrop-blur-md">
@@ -1673,14 +1663,23 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
               <div className="hidden h-px flex-1 bg-white/20 sm:block" />
             </div>
             <h1 className="w-full max-w-none font-serif text-2xl font-semibold leading-tight sm:text-3xl xl:text-4xl">
-              A student-built Chrome Extension designed to centralize assignment reminders, club events, and general
-              campus events, all in one place.
+              {bridgeIsConnected
+                ? `Hi ${firstName}, here are your events.`
+                : "A student-built Chrome Extension designed to centralize assignment reminders, club events, and general campus events, all in one place."}
             </h1>
             <div className="mt-5 grid gap-3 text-sm text-white/88 sm:text-base">
-              <p>🥇 Winner of UNLV's Spring 2025 CS Senior Design Competition</p>
-              <p>🔖 Events and Assignments from Canvas, Involvement Center, and more</p>
-              <p>📅 Google Calendar Integration</p>
-              <p>💡 Lightweight, privacy-friendly, open source</p>
+              {bridgeIsConnected ? (
+                <>
+                  <p>Your saved events, custom reminders, and synced campus plans are all in one place.</p>
+                </>
+              ) : (
+                <>
+                  <p>Winner of UNLV's Spring 2025 CS Senior Design Competition</p>
+                  <p>Events and Assignments from Canvas, Involvement Center, and more</p>
+                  <p>Google Calendar Integration</p>
+                  <p>Lightweight, privacy-friendly, open source</p>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -1710,54 +1709,65 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
           </div>
           <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="rounded-[1.75rem] border border-white/20 bg-stone-950/25 p-6 shadow-xl backdrop-blur-md">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
-              {bridgeState?.user ? (
-                <div className="mt-4 flex items-center gap-4 rounded-[1.5rem] border border-white/15 bg-white/10 p-4">
-                  {bridgeState.user.picture && !profileImageFailed ? (
-                    <img
-                      src={bridgeState.user.picture}
-                      alt={bridgeState.user.name}
-                      referrerPolicy="no-referrer"
-                      onError={() => setProfileImageFailed(true)}
-                      className="h-16 w-16 rounded-2xl object-cover ring-2 ring-white/30"
-                    />
-                  ) : (
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-lg font-semibold text-white ring-2 ring-white/30">
-                      {profileInitials}
-                    </div>
-                  )}
-                  <div>
-                    <p className="text-lg font-semibold">{bridgeState.user.name}</p>
-                    <p className="text-sm text-white/75">{bridgeState.user.email}</p>
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Your Events</p>
+                  <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your upcoming saved and custom events.</h2>
+                </div>
+                <div className="rounded-[1.5rem] border border-white/15 bg-white/10 px-5 py-4 text-white">
+                  <p className="text-sm uppercase tracking-[0.2em] text-white/65">Upcoming Saved Events</p>
+                  <p className="mt-2 text-4xl font-semibold">{syncedUserEvents.length}</p>
+                </div>
+              </div>
+              <div className="mt-5 max-h-[21rem] space-y-3 overflow-y-auto pr-1">
+                {syncedUserEvents.length ? (
+                  syncedUserEvents.map((event, index) => {
+                    const eventKey = `${event.displayTitle}-${event.startDate}-${index}`;
+                    const isCollapsed = Boolean(collapsedEvents[eventKey]);
+                    const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
+                    const Wrapper = event.link ? "a" : "article";
+
+                    return (
+                      <Wrapper
+                        key={eventKey}
+                        href={event.link || undefined}
+                        target={event.link ? "_blank" : undefined}
+                        rel={event.link ? "noreferrer" : undefined}
+                        className="block rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm transition hover:bg-white/12"
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <p className="font-semibold">{event.displayTitle}</p>
+                          {hasExtraDetails ? (
+                            <button
+                              type="button"
+                              onClick={(clickEvent) => {
+                                clickEvent.preventDefault();
+                                clickEvent.stopPropagation();
+                                onToggleCollapsedEvent(eventKey);
+                              }}
+                              className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
+                            >
+                              {isCollapsed ? "Show Details" : "Hide Details"}
+                            </button>
+                          ) : null}
+                        </div>
+                        <p className="mt-1 text-sm font-semibold text-white/85">{formatCombinedHomeEventDate(event)}</p>
+                        {!isCollapsed && hasExtraDetails ? (
+                          <>
+                            {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
+                            {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
+                          </>
+                        ) : null}
+                      </Wrapper>
+                    );
+                  })
+                ) : (
+                  <div className="rounded-[1.25rem] border border-dashed border-white/20 bg-white/5 px-4 py-6 text-sm text-white/75">
+                    No upcoming custom events are synced right now.
                   </div>
-                </div>
-              ) : null}
-              <div className="mt-4 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-3xl bg-white/12 p-4">
-                  <p className="text-sm text-white/70">Saved Preferences</p>
-                  <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
-                </div>
-                <div className="rounded-3xl bg-white/12 p-4">
-                  <p className="text-sm text-white/70">Your Events</p>
-                  <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
-                </div>
-                <div className="rounded-3xl bg-white/12 p-4">
-                  <p className="text-sm text-white/70">Canvas Assignments</p>
-                  <p className="mt-2 text-3xl font-semibold">{bridgeState?.upcomingAssignmentCount || 0}</p>
-                </div>
+                )}
               </div>
               {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
-
-              <div className="mt-6 rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {featuredPreferences.length ? (
-                    featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
-                  ) : (
-                    <p className="text-sm text-white/75">No synced extension preferences yet.</p>
-                  )}
-                </div>
-              </div>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                 <button
                   type="button"
@@ -1935,68 +1945,52 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
         bridgeState={bridgeState}
         featuredPreferences={featuredPreferences}
         bridgeError={bridgeError}
+        syncedUserEvents={syncedUserEvents}
+        collapsedEvents={collapsedEvents}
+        onToggleCollapsedEvent={toggleCollapsedEvent}
       />
 
       {bridgeStatus === "connected" ? (
         <section className="mt-3 rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Your Events</p>
-              <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your upcoming saved and custom events.</h2>
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Live Sync Snapshot</p>
+              <h2 className="mt-2 font-serif text-3xl leading-tight text-white">Your bridge connection is live.</h2>
+              <p className="mt-3 text-sm leading-7 text-white/75 sm:text-base">
+                A quick overview of what the extension is syncing into your homepage right now.
+              </p>
             </div>
             <div className="rounded-[1.5rem] border border-white/15 bg-white/10 px-5 py-4 text-white">
-              <p className="text-sm uppercase tracking-[0.2em] text-white/65">Upcoming Saved Events</p>
-              <p className="mt-2 text-4xl font-semibold">{syncedUserEvents.length}</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/65">Signed In</p>
+              <p className="mt-2 text-xl font-semibold">{bridgeState?.user?.name || "Bridge User"}</p>
             </div>
           </div>
-          <div className="mt-5 max-h-[21rem] space-y-3 overflow-y-auto pr-1">
-            {syncedUserEvents.length ? (
-              syncedUserEvents.map((event, index) => {
-                const eventKey = `${event.displayTitle}-${event.startDate}-${index}`;
-                const isCollapsed = Boolean(collapsedEvents[eventKey]);
-                const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
-
-                const Wrapper = event.link ? "a" : "article";
-
-                return (
-                  <Wrapper
-                    key={eventKey}
-                    href={event.link || undefined}
-                    target={event.link ? "_blank" : undefined}
-                    rel={event.link ? "noreferrer" : undefined}
-                    className="block rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm transition hover:bg-white/12"
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <p className="font-semibold">{event.displayTitle}</p>
-                      {hasExtraDetails ? (
-                        <button
-                          type="button"
-                          onClick={(clickEvent) => {
-                            clickEvent.preventDefault();
-                            clickEvent.stopPropagation();
-                            toggleCollapsedEvent(eventKey);
-                          }}
-                          className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white"
-                        >
-                          {isCollapsed ? "Show Details" : "Hide Details"}
-                        </button>
-                      ) : null}
-                    </div>
-                    <p className="mt-1 text-sm font-semibold text-white/85">{formatCombinedHomeEventDate(event)}</p>
-                    {!isCollapsed && hasExtraDetails ? (
-                      <>
-                        {event.displayLocation ? <p className="mt-1 text-sm text-white/70">{event.displayLocation}</p> : null}
-                        {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
-                      </>
-                    ) : null}
-                  </Wrapper>
-                );
-              })
-            ) : (
-              <div className="rounded-[1.25rem] border border-dashed border-white/20 bg-white/5 px-4 py-6 text-sm text-white/75">
-                No upcoming custom events are synced right now.
+          <div className="mt-5 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              <div className="rounded-3xl bg-white/12 p-4 text-white">
+                <p className="text-sm text-white/70">Saved Preferences</p>
+                <p className="mt-2 text-3xl font-semibold">{featuredPreferences.length}</p>
               </div>
-            )}
+              <div className="rounded-3xl bg-white/12 p-4 text-white">
+                <p className="text-sm text-white/70">Your Events</p>
+                <p className="mt-2 text-3xl font-semibold">{bridgeState?.userEventCount || 0}</p>
+              </div>
+              <div className="rounded-3xl bg-white/12 p-4 text-white">
+                <p className="text-sm text-white/70">Canvas Assignments</p>
+                <p className="mt-2 text-3xl font-semibold">{bridgeState?.upcomingAssignmentCount || 0}</p>
+              </div>
+            </div>
+            <div className="rounded-[1.5rem] border border-white/15 bg-white/10 p-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Enabled Areas</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {featuredPreferences.length ? (
+                  featuredPreferences.map((item) => <StatusPill key={item} active>{item}</StatusPill>)
+                ) : (
+                  <p className="text-sm text-white/75">No synced extension preferences yet.</p>
+                )}
+              </div>
+              {bridgeError ? <p className="mt-4 text-sm text-rose-100/90">{bridgeError}</p> : null}
+            </div>
           </div>
         </section>
       ) : null}
@@ -2820,7 +2814,7 @@ function DatasetsLandingPage({ datasets }) {
           <div className="flex justify-start lg:justify-end">
             <Link
               to="/"
-            className={BACK_HOME_BUTTON_CLASS}
+              className={BACK_HOME_BUTTON_CLASS}
             >
               Back Home
             </Link>
