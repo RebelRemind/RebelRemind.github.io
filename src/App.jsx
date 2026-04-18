@@ -30,6 +30,13 @@ const DATA_FILES = [
   },
 ];
 
+const UNLV_TODAY_FILE = {
+  key: "unlvToday",
+  label: "UNLV Today",
+  path: "/data/unlvtoday_list.json",
+  sourceUrl: "https://www.unlv.edu/news/unlvtoday",
+};
+
 const ALL_INTERESTS = [
   "Academics",
   "Arts",
@@ -361,6 +368,24 @@ function formatEventDate(item) {
   }
 
   return timeLabel ? `${dateLabel} at ${timeLabel}` : dateLabel;
+}
+
+function formatNewsDate(item) {
+  const publishedValue = item?.publishedAt || item?.publishedDate;
+  if (!publishedValue) {
+    return "Latest announcement";
+  }
+
+  const parsed = new Date(publishedValue);
+  if (Number.isNaN(parsed.getTime())) {
+    return item?.publishedDate || publishedValue;
+  }
+
+  return parsed.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 function formatDatasetTimeRange(item) {
@@ -1706,19 +1731,19 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
   );
 }
 
-function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
+function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeed }) {
   const [collapsedEvents, setCollapsedEvents] = useState({});
   const featuredPreferences = toTitleList(bridgeState?.preferences);
-  const upcomingEvents = DATA_FILES.flatMap(({ key }) => {
-    const items = Array.isArray(datasets[key]) ? datasets[key] : [];
-    const now = Date.now();
-
-    return items
-      .filter((item) => getEventTimestamp(item) >= now)
-      .sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right))
-      .slice(0, 2)
-      .map((item) => ({ ...item, sourceKey: key }));
-  }).sort((left, right) => getEventTimestamp(left) - getEventTimestamp(right));
+  const campusFeedItems = Array.isArray(newsFeed)
+    ? [...newsFeed]
+      .filter((item) => item?.name && item?.link)
+      .sort((left, right) => {
+        const leftTime = new Date(left.publishedAt || left.publishedDate || 0).getTime();
+        const rightTime = new Date(right.publishedAt || right.publishedDate || 0).getTime();
+        return rightTime - leftTime;
+      })
+      .slice(0, 6)
+    : [];
   const syncedUserEvents = [
     ...((bridgeState?.involvementCenterEvents || []).map((event) => ({
       ...event,
@@ -1834,8 +1859,8 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
         <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Feed</p>
           <div className="mt-5 space-y-3">
-            {upcomingEvents.length ? (
-              upcomingEvents.map((item, index) => (
+            {campusFeedItems.length ? (
+              campusFeedItems.map((item, index) => (
                 <a
                   key={`${item.name}-${index}`}
                   href={item.link || undefined}
@@ -1844,15 +1869,15 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets }) {
                   className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 transition-transform duration-300 hover:-translate-y-1"
                 >
                   <p className="text-lg font-semibold">{item.name}</p>
-                  <p className="mt-1 text-sm text-white/75">{formatEventDate(item)}</p>
-                  {item.location ? <p className="mt-1 text-sm text-white/70">{item.location}</p> : null}
+                  <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
+                  {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
-                    {getEventSourceLabel(item.sourceKey)}
+                    {[item.category, UNLV_TODAY_FILE.label].filter(Boolean).join(" • ")}
                   </p>
                 </a>
               ))
             ) : (
-              <p className="text-white/80">Loading campus data from GitHub Pages JSON...</p>
+              <p className="text-white/80">Loading the latest UNLV Today announcements...</p>
             )}
           </div>
         </div>
@@ -3885,6 +3910,7 @@ export default function App() {
   const [bridgeStatus, setBridgeStatus] = useState("checking");
   const [bridgeState, setBridgeState] = useState(null);
   const [datasets, setDatasets] = useState({});
+  const [newsFeed, setNewsFeed] = useState([]);
   const [bridgeError, setBridgeError] = useState("");
   const [isBridgeModalOpen, setIsBridgeModalOpen] = useState(false);
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
@@ -4026,6 +4052,24 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const loadNewsFeed = async () => {
+      try {
+        const response = await fetch(UNLV_TODAY_FILE.path);
+        if (!response.ok) {
+          throw new Error(`Failed to load ${UNLV_TODAY_FILE.path}`);
+        }
+
+        const payload = await response.json();
+        setNewsFeed(Array.isArray(payload) ? payload : []);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    loadNewsFeed();
+  }, []);
+
+  useEffect(() => {
     const seo = getSeoConfig(location.pathname);
     const canonicalUrl = `${SITE_URL}${seo.path}`;
 
@@ -4067,6 +4111,7 @@ export default function App() {
                   bridgeState={bridgeState}
                   bridgeError={bridgeError}
                   datasets={datasets}
+                  newsFeed={newsFeed}
                 />
               }
             />
