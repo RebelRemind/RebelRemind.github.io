@@ -1855,10 +1855,10 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeed }
         </section>
       ) : null}
 
-      <section id="campus-feed" className="mt-3 grid scroll-mt-28 gap-4 xl:grid-cols-2">
+      <section id="campus-feed" className="mt-3 grid scroll-mt-28 gap-4">
         <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Feed</p>
-          <div className="mt-5 space-y-3">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">UNLV Today</p>
+          <div className="mt-5 max-h-[32rem] space-y-3 overflow-y-auto pr-1">
             {campusFeedItems.length ? (
               campusFeedItems.map((item, index) => (
                 <a
@@ -1882,7 +1882,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeed }
           </div>
         </div>
 
-        <div id="dataset-grid" className="grid scroll-mt-28 gap-4">
+        <div id="dataset-grid" className="grid scroll-mt-28 gap-4 xl:grid-cols-2">
           {DATA_FILES.map((source) => {
             const sourceItems = Array.isArray(datasets[source.key]) ? datasets[source.key] : [];
             const nextItem = sourceItems
