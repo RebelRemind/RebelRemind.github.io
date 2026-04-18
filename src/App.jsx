@@ -30,12 +30,29 @@ const DATA_FILES = [
   },
 ];
 
-const UNLV_TODAY_FILE = {
-  key: "unlvToday",
-  label: "UNLV Today",
-  path: "/data/unlvtoday_list.json",
-  sourceUrl: "https://www.unlv.edu/news/unlvtoday",
-};
+const NEWS_FEED_FILES = [
+  {
+    key: "unlvToday",
+    label: "UNLV Today",
+    path: "/data/unlvtoday_list.json",
+    sourceUrl: "https://www.unlv.edu/news/unlvtoday",
+    emptyMessage: "Loading the latest UNLV Today announcements...",
+  },
+  {
+    key: "unlvNews",
+    label: "UNLV News",
+    path: "/data/unlvinthenews_list.json",
+    sourceUrl: "https://www.unlv.edu/news/inthenews",
+    emptyMessage: "Loading the latest UNLV News coverage...",
+  },
+  {
+    key: "scarletGrayNews",
+    label: "Scarlet and Gray News",
+    path: "/data/scarletandgraynews_list.json",
+    sourceUrl: "https://unlvscarletandgray.com/category/news/",
+    emptyMessage: "Loading the latest Scarlet and Gray stories...",
+  },
+];
 
 const ALL_INTERESTS = [
   "Academics",
@@ -386,6 +403,19 @@ function formatNewsDate(item) {
     month: "short",
     day: "numeric",
   });
+}
+
+function getNewsItemTimestamp(item) {
+  const parsed = new Date(item?.publishedAt || item?.publishedDate || 0);
+  return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+}
+
+function getNewsFeedLabel(feedKey) {
+  return NEWS_FEED_FILES.find((feed) => feed.key === feedKey)?.label || "Campus News";
+}
+
+function getNewsFeedEmptyMessage(feedKey) {
+  return NEWS_FEED_FILES.find((feed) => feed.key === feedKey)?.emptyMessage || "Loading campus news...";
 }
 
 function formatDatasetTimeRange(item) {
@@ -1731,19 +1761,26 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError }) {
   );
 }
 
-function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeed }) {
+function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds }) {
   const [collapsedEvents, setCollapsedEvents] = useState({});
+  const [activeNewsFeedKey, setActiveNewsFeedKey] = useState(NEWS_FEED_FILES[0].key);
   const featuredPreferences = toTitleList(bridgeState?.preferences);
-  const campusFeedItems = Array.isArray(newsFeed)
-    ? [...newsFeed]
+  const activeNewsFeed = Array.isArray(newsFeeds?.[activeNewsFeedKey]) ? newsFeeds[activeNewsFeedKey] : [];
+  const campusFeedItems = Array.isArray(activeNewsFeed)
+    ? [...activeNewsFeed]
       .filter((item) => item?.name && item?.link)
-      .sort((left, right) => {
-        const leftTime = new Date(left.publishedAt || left.publishedDate || 0).getTime();
-        const rightTime = new Date(right.publishedAt || right.publishedDate || 0).getTime();
-        return rightTime - leftTime;
-      })
-      .slice(0, 6)
+      .sort((left, right) => getNewsItemTimestamp(right) - getNewsItemTimestamp(left))
     : [];
+  const groupedCampusFeed = Object.values(
+    campusFeedItems.reduce((groups, item) => {
+      const section = item.section || "Latest Stories";
+      if (!groups[section]) {
+        groups[section] = { section, items: [] };
+      }
+      groups[section].items.push(item);
+      return groups;
+    }, {})
+  );
   const syncedUserEvents = [
     ...((bridgeState?.involvementCenterEvents || []).map((event) => ({
       ...event,
@@ -1857,27 +1894,54 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeed }
 
       <section id="campus-feed" className="mt-3 grid scroll-mt-28 gap-4">
         <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">UNLV Today</p>
-          <div className="mt-5 max-h-[32rem] space-y-3 overflow-y-auto pr-1">
-            {campusFeedItems.length ? (
-              campusFeedItems.map((item, index) => (
-                <a
-                  key={`${item.name}-${index}`}
-                  href={item.link || undefined}
-                  target={item.link ? "_blank" : undefined}
-                  rel={item.link ? "noreferrer" : undefined}
-                  className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <p className="text-lg font-semibold">{item.name}</p>
-                  <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
-                  {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
-                    {[item.category, UNLV_TODAY_FILE.label].filter(Boolean).join(" • ")}
-                  </p>
-                </a>
+          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">{getNewsFeedLabel(activeNewsFeedKey)}</p>
+            <div className="flex flex-wrap gap-2">
+              {NEWS_FEED_FILES.map((feed) => {
+                const isActive = activeNewsFeedKey === feed.key;
+                return (
+                  <button
+                    key={feed.key}
+                    type="button"
+                    onClick={() => setActiveNewsFeedKey(feed.key)}
+                    className={isActive
+                      ? "rounded-full border border-white/35 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone-900 transition"
+                      : "rounded-full border border-white/20 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 transition hover:bg-white/12"}
+                  >
+                    {feed.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <div className="mt-4 h-px w-full bg-white/15" aria-hidden="true" />
+          <div className="mt-5 max-h-[32rem] space-y-6 overflow-y-auto pr-1">
+            {groupedCampusFeed.length ? (
+              groupedCampusFeed.map((group) => (
+                <div key={group.section}>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">{group.section}</p>
+                  <div className="mt-3 space-y-3">
+                    {group.items.map((item, index) => (
+                      <a
+                        key={`${group.section}-${item.name}-${index}`}
+                        href={item.link || undefined}
+                        target={item.link ? "_blank" : undefined}
+                        rel={item.link ? "noreferrer" : undefined}
+                        className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 transition-transform duration-300 hover:-translate-y-1"
+                      >
+                        <p className="text-lg font-semibold">{item.name}</p>
+                        <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
+                        {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+                          {[item.category, getNewsFeedLabel(activeNewsFeedKey)].filter(Boolean).join(" • ")}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
               ))
             ) : (
-              <p className="text-white/80">Loading the latest UNLV Today announcements...</p>
+              <p className="text-white/80">{getNewsFeedEmptyMessage(activeNewsFeedKey)}</p>
             )}
           </div>
         </div>
@@ -3910,7 +3974,7 @@ export default function App() {
   const [bridgeStatus, setBridgeStatus] = useState("checking");
   const [bridgeState, setBridgeState] = useState(null);
   const [datasets, setDatasets] = useState({});
-  const [newsFeed, setNewsFeed] = useState([]);
+  const [newsFeeds, setNewsFeeds] = useState({});
   const [bridgeError, setBridgeError] = useState("");
   const [isBridgeModalOpen, setIsBridgeModalOpen] = useState(false);
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
@@ -4052,21 +4116,19 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const loadNewsFeed = async () => {
+    NEWS_FEED_FILES.forEach(async ({ key, path }) => {
       try {
-        const response = await fetch(UNLV_TODAY_FILE.path);
+        const response = await fetch(path);
         if (!response.ok) {
-          throw new Error(`Failed to load ${UNLV_TODAY_FILE.path}`);
+          throw new Error(`Failed to load ${path}`);
         }
 
         const payload = await response.json();
-        setNewsFeed(Array.isArray(payload) ? payload : []);
+        setNewsFeeds((current) => ({ ...current, [key]: Array.isArray(payload) ? payload : [] }));
       } catch (error) {
         console.error(error);
       }
-    };
-
-    loadNewsFeed();
+    });
   }, []);
 
   useEffect(() => {
@@ -4111,7 +4173,7 @@ export default function App() {
                   bridgeState={bridgeState}
                   bridgeError={bridgeError}
                   datasets={datasets}
-                  newsFeed={newsFeed}
+                  newsFeeds={newsFeeds}
                 />
               }
             />
