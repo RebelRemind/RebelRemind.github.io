@@ -1,35 +1,5 @@
 [
   {
-    "name": "San Diego State",
-    "startDate": "2026-01-17",
-    "startTime": "",
-    "endDate": "2026-01-17",
-    "endTime": "",
-    "location": "Las Vegas The Pavilion",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-diego-state/boxscore/17648"
-  },
-  {
-    "name": "Wichita State",
-    "startDate": "2026-01-17",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-17",
-    "endTime": "",
-    "location": "Chandler, AZ",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/1/17/mens-tennis-opens-2026-with-win-over-wichita-state.aspx"
-  },
-  {
-    "name": "San Jose State",
-    "startDate": "2026-01-17",
-    "startTime": "2:00 PM",
-    "endDate": "2026-01-17",
-    "endTime": "",
-    "location": "San Jose, California",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-jose-state/boxscore/17616"
-  },
-  {
     "name": "Arizona State",
     "startDate": "2026-01-18",
     "startTime": "9:00 AM",
@@ -2197,7 +2167,7 @@
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/unlv-at-boise-state-13/?_gl=1*uostau*_up*MQ..*_ga*MTU3MzQ5MTc3OS4xNzc2MTgyNjQ5*_ga_SC44RH1YQ6*czE3NzYxODI2NDgkbzEkZzAkdDE3NzYxODI2NDgkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/boise-state/boxscore/17722"
   },
   {
     "name": "Bryan Clay Invitational",
@@ -2217,17 +2187,17 @@
     "endTime": "",
     "location": "Las Vegas, NV Fertitta Tennis Complex",
     "sport": "Women's Tennis",
-    "link": "https://swing.vision/teams/unlv-w/stream"
+    "link": "https://unlvrebels.com/news/2026/4/17/womens-tennis-crowning-achievement-netter-nab-seventh-mw-regular-season-title.aspx"
   },
   {
     "name": "Washington State",
     "startDate": "2026-04-17",
-    "startTime": "6:05 PM",
+    "startTime": "6:07 PM",
     "endDate": "2026-04-17",
-    "endTime": "",
+    "endTime": "8:57 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-2/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/washington-state/boxscore/17775"
   },
   {
     "name": "Boise State",
@@ -3598,5 +3568,35 @@
     "location": "USAF Academy, CO",
     "sport": "Women's Soccer",
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/air-force/boxscore/17304"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-10-17",
+    "startTime": "",
+    "endDate": "2026-10-17",
+    "endTime": "",
+    "location": "USAF Academy, CO Falcon Stadium",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-17",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-17",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/17/mens-tennis-pair-of-rebs-roll-into-round-of-16.aspx"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-10-17",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-17",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]
