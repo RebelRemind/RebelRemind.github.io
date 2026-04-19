@@ -9,15 +9,6 @@
     "link": "https://careerlaunch.unlv.edu/events/2026/01/21/career-services-drop-in-spring-2026/"
   },
   {
-    "name": "Rebel Preview Spring 2026: College Readiness and Resources (CLOSED EVENT)",
-    "category": "Career Event",
-    "section": "Upcoming Career Events",
-    "startDate": "2026-04-18",
-    "summary": "Saturday, April 18, 2026 | 8am - 2pm PDT | University of Nevada, Las Vegas",
-    "location": "University of Nevada, Las Vegas",
-    "link": "https://careerlaunch.unlv.edu/events/2026/04/18/rebel-preview-spring-2026-college-readiness-and-resources-closed-event/"
-  },
-  {
     "name": "Thriving Authentically - APIME Heritage Month Professional Panel",
     "category": "Career Event",
     "section": "Upcoming Career Events",
@@ -54,6 +45,15 @@
     "link": "https://careerlaunch.unlv.edu/events/2026/04/22/stand-out-through-connection-own-your-in-person-digital-network/"
   },
   {
+    "name": "Amazon Operations Info Session and Tabling Event",
+    "category": "Career Event",
+    "section": "Upcoming Career Events",
+    "startDate": "2026-04-23",
+    "summary": "Thursday, April 23, 2026 | 11am - 12pm PDT | Beverly Rogers Literature and Law Building, Room 101, 4505 S Maryland Pkwy, Paradise, Nevada 89154, United States",
+    "location": "Beverly Rogers Literature and Law Building, Room 101, 4505 S Maryland Pkwy, Paradise, Nevada 89154, United States",
+    "link": "https://careerlaunch.unlv.edu/events/2026/04/23/amazon-operations-info-session-and-tabling-event/"
+  },
+  {
     "name": "Bytes and Brews: Data Analytics Networking Opportunity",
     "category": "Career Event",
     "section": "Upcoming Career Events",
@@ -72,6 +72,15 @@
     "link": "https://careerlaunch.unlv.edu/events/2026/04/28/the-next-horizon-navigating-the-graduate-school-transition/"
   },
   {
+    "name": "Information Session with TTI Power Equipment",
+    "category": "Career Event",
+    "section": "Upcoming Career Events",
+    "startDate": "2026-04-28",
+    "summary": "Tuesday, April 28, 2026 | 1pm - 2pm PDT | Beam Hall (BEH), 239, 4505 S Maryland Pkwy, Las Vegas, Nevada 89119, United States",
+    "location": "Beam Hall (BEH), 239, 4505 S Maryland Pkwy, Las Vegas, Nevada 89119, United States",
+    "link": "https://careerlaunch.unlv.edu/events/2026/04/28/information-session-with-tti-power-equipment/"
+  },
+  {
     "name": "UNLV - Cane's and Connections",
     "category": "Career Event",
     "section": "Upcoming Career Events",
@@ -88,5 +97,14 @@
     "summary": "Thursday, April 30, 2026 | 4pm - 7pm PDT | Pida Plaza",
     "location": "Pida Plaza",
     "link": "https://careerlaunch.unlv.edu/events/2026/04/30/aanhpi-culture-night-hosted-by-unlv-roar/"
+  },
+  {
+    "name": "Resume Refresh: Get Ready for Summer",
+    "category": "Career Event",
+    "section": "Upcoming Career Events",
+    "startDate": "2026-05-01",
+    "summary": "Friday, May 1, 2026 | 11:30am - 1:30pm PDT | Virtual",
+    "location": "Virtual",
+    "link": "https://careerlaunch.unlv.edu/events/2026/05/01/resume-refresh-get-ready-for-summer/"
   }
 ]
