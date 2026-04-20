@@ -2227,17 +2227,17 @@
     "endTime": "",
     "location": "Boise, ID",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/unlv-at-boise-state-15/?_gl=1*uostau*_up*MQ..*_ga*MTU3MzQ5MTc3OS4xNzc2MTgyNjQ5*_ga_SC44RH1YQ6*czE3NzYxODI2NDgkbzEkZzAkdDE3NzYxODI2NDgkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/boise-state/boxscore/17724"
   },
   {
     "name": "Washington State",
     "startDate": "2026-04-19",
-    "startTime": "12:05 PM",
+    "startTime": "12:06 PM",
     "endDate": "2026-04-19",
-    "endTime": "",
+    "endTime": "3:20 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/washington-state-at-unlv-4/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/washington-state/boxscore/17777"
   },
   {
     "name": "Mountain West Championship",
@@ -3628,5 +3628,55 @@
     "location": "Riverside, Calif.",
     "sport": "Women's Cross Country",
     "link": "https://unlvrebels.com/news/2025/10/18/womens-cross-country-rebels-conclude-regular-season-at-highlander-invitational.aspx"
+  },
+  {
+    "name": "Fallen Oak Collegiate",
+    "startDate": "2026-10-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-19",
+    "endTime": "",
+    "location": "Saucier, MS",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/documents/2025/10/19/Fallen_Oak_-_Round_Two_Results.pdf"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-19",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/19/mens-tennis-snitari-and-maksymchuk-both-headed-to-semifinals.aspx"
+  },
+  {
+    "name": "Jim West Challenge",
+    "startDate": "2026-10-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-19",
+    "endTime": "",
+    "location": "San Marcos, TX",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/documents/2025/10/19/Jim_West_Challenge_Day_1_Results.pdf"
+  },
+  {
+    "name": "Colorado College",
+    "startDate": "2026-10-19",
+    "startTime": "11:00 AM",
+    "endDate": "2026-10-19",
+    "endTime": "",
+    "location": "Colorado Springs, CO",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/colorado-college/boxscore/17305"
+  },
+  {
+    "name": "Washington (exhibition game)",
+    "startDate": "2026-10-19",
+    "startTime": "12:00 PM",
+    "endDate": "2026-10-19",
+    "endTime": "",
+    "location": "Seattle, Washington",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/washington-exhibition-game-/boxscore/17441"
   }
 ]

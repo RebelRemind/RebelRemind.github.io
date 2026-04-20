@@ -4710,16 +4710,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4728,6 +4718,16 @@
     "location": "HOS382",
     "organization": "Neuroscience Undergraduate Research Organization ",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
