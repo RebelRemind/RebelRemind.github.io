@@ -718,6 +718,27 @@ function formatCalendarPanelDate(dateKey) {
   });
 }
 
+function formatRelativeDatasetCardDate(dateKey) {
+  const parsed = new Date(`${dateKey}T12:00:00`);
+  if (Number.isNaN(parsed.getTime())) {
+    return dateKey;
+  }
+
+  const dayLabel = getTableDayLabel(dateKey);
+  if (dayLabel.label === "Today" || dayLabel.label === "Tomorrow") {
+    return `${dayLabel.label}, ${parsed.toLocaleDateString(undefined, {
+      month: "long",
+      day: "numeric",
+    })}`;
+  }
+
+  return parsed.toLocaleDateString(undefined, {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
+}
+
 function getCalendarViewDateLabel(date) {
   return date.toLocaleDateString(undefined, {
     weekday: "short",
@@ -1126,7 +1147,7 @@ function CalendarEventModal({ payload, onClose }) {
   );
 }
 
-function DatasetEventModal({ dataset, item, onClose }) {
+function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "" }) {
   if (!dataset || !item) {
     return null;
   }
@@ -1156,7 +1177,12 @@ function DatasetEventModal({ dataset, item, onClose }) {
           <p><span className="font-semibold">Date:</span> {isAcademicCalendar && item.startDate ? item.startDate : formatCalendarPanelDate(item.startDate)}</p>
           <p><span className="font-semibold">Time:</span> {formatDatasetTimeRange(item)}</p>
           {item.location ? <p><span className="font-semibold">Location:</span> {item.location}</p> : null}
-          {item.organization ? <p><span className="font-semibold">RSO:</span> {item.organization}</p> : null}
+          {item.organization ? (
+            <div className="flex items-center gap-3">
+              <OrganizationAvatar src={organizationImageUrl} name={item.organization} className="h-12 w-12 text-sm" />
+              <p><span className="font-semibold">RSO:</span> {item.organization}</p>
+            </div>
+          ) : null}
           {item.sport && !isRebelSports ? <p><span className="font-semibold">Sport:</span> {item.sport}</p> : null}
           {item.category ? (
             <p><span className="font-semibold">Category:</span> {item.category}</p>
@@ -1181,7 +1207,27 @@ function DatasetEventModal({ dataset, item, onClose }) {
 }
 
 function isUpcomingEvent(item) {
-  return getEventTimestamp(item) >= Date.now();
+  if (!item?.startDate) {
+    return false;
+  }
+
+  const allDay = item.startTime === "(ALL DAY)";
+  const startsAt = parseCalendarEventDate(item.startDate, item.startTime, allDay);
+
+  if (!startsAt || Number.isNaN(startsAt.getTime())) {
+    return false;
+  }
+
+  const endsAt = parseCalendarEventEndDate(
+    item.endDate,
+    item.endTime,
+    item.startDate,
+    item.startTime,
+    allDay
+  );
+
+  const effectiveEnd = endsAt && !Number.isNaN(endsAt.getTime()) ? endsAt : startsAt;
+  return effectiveEnd.getTime() >= Date.now();
 }
 
 function formatAssignmentDate(value) {
@@ -1304,13 +1350,43 @@ function getDatasetRoute(key) {
   return `/datasets/${normalizeDatasetKey(key)}`;
 }
 
+function getInitials(label) {
+  return String(label || "")
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) => part.charAt(0).toUpperCase())
+    .join("") || "?";
+}
+
+function OrganizationAvatar({ src, name, className = "h-10 w-10 text-sm" }) {
+  const classes = `flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-stone-300 bg-stone-200 font-semibold text-stone-700 ${className}`;
+
+  if (src) {
+    return (
+      <img
+        src={src}
+        alt={name ? `${name} logo` : "Organization logo"}
+        className={`${classes} object-cover`}
+        loading="lazy"
+      />
+    );
+  }
+
+  return (
+    <span className={classes} aria-hidden="true">
+      {getInitials(name)}
+    </span>
+  );
+}
+
 function FilterChip({ active, onClick, children }) {
   return (
     <button
       type="button"
       onClick={onClick}
       className={[
-        "rounded-full border px-3 py-1 text-sm font-semibold transition",
+        "inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm font-semibold transition",
         active
           ? "border-stone-900 bg-stone-900 text-white"
           : "border-stone-300 bg-white text-stone-700 hover:bg-stone-100",
@@ -1333,10 +1409,10 @@ function SearchInput({ value, onChange, placeholder }) {
   );
 }
 
-function SelectedFilterPill({ label, onRemove }) {
+function SelectedFilterPill({ label, onRemove, content }) {
   return (
-    <div className="inline-flex items-center gap-2 rounded-full bg-[#8b0000] px-3 py-1 text-sm font-semibold text-white shadow-sm">
-      <span>{label}</span>
+    <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-[#8b0000] px-3 py-1 text-sm font-semibold text-white shadow-sm">
+      <span className="inline-flex min-w-0 max-w-full flex-wrap items-center gap-2 break-words">{content || label}</span>
       <button
         type="button"
         onClick={onRemove}
@@ -1360,6 +1436,7 @@ function ViewAllFiltersModal({
   onClearAll,
   searchEnabled = false,
   searchPlaceholder = "Search filters",
+  renderOption,
 }) {
   const [modalSearch, setModalSearch] = useState("");
   const allSelected = options.length > 0 && selectedValues.length === options.length;
@@ -1396,6 +1473,7 @@ function ViewAllFiltersModal({
     onToggle(option);
     setModalSearch("");
   };
+  const renderOptionLabel = renderOption || ((option) => option);
 
   return (
     <div
@@ -1464,7 +1542,9 @@ function ViewAllFiltersModal({
                     checked={selectedValues.includes(option)}
                     onChange={() => handleToggle(option)}
                   />
-                  <span className="text-sm font-medium text-stone-800">{option}</span>
+                  <div className="min-w-0 flex-1 text-sm font-medium text-stone-800">
+                    {renderOptionLabel(option)}
+                  </div>
                 </label>
               ))
             ) : (
@@ -2335,6 +2415,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   const [manualFilters, setManualFilters] = useState([]);
   const [filterSearch, setFilterSearch] = useState("");
   const [organizationDirectory, setOrganizationDirectory] = useState([]);
+  const [organizationDirectoryByName, setOrganizationDirectoryByName] = useState({});
   const [isViewAllModalOpen, setIsViewAllModalOpen] = useState(false);
   const [activeDatasetItem, setActiveDatasetItem] = useState(null);
 
@@ -2347,6 +2428,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
 
   useEffect(() => {
     if (!isInvolvementCenter) {
+      setOrganizationDirectory([]);
+      setOrganizationDirectoryByName({});
       return undefined;
     }
 
@@ -2360,11 +2443,13 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
       })
       .then((payload) => {
         if (!cancelled) {
-          const names = payload
-            .map((item) => item?.name)
-            .filter(Boolean)
-            .sort((left, right) => left.localeCompare(right));
-          setOrganizationDirectory(names);
+          const organizations = payload
+            .filter((item) => item?.name)
+            .sort((left, right) => left.name.localeCompare(right.name));
+          setOrganizationDirectory(organizations.map((item) => item.name));
+          setOrganizationDirectoryByName(
+            Object.fromEntries(organizations.map((item) => [item.name, item]))
+          );
         }
       })
       .catch((error) => {
@@ -2439,6 +2524,13 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
       : []
     : allItems;
   const itemCountLabel = `${items.length} ${items.length === 1 ? "Event" : "Events"}`;
+  const getOrganizationImageUrl = (name) => organizationDirectoryByName[name]?.imageUrl || "";
+  const renderOrganizationFilter = (name) => (
+    <span className="flex min-w-0 max-w-full items-center gap-3">
+      <OrganizationAvatar src={getOrganizationImageUrl(name)} name={name} className="h-8 w-8 text-xs" />
+      <span className="min-w-0 break-words whitespace-normal">{name}</span>
+    </span>
+  );
 
   if (!dataset) {
     return (
@@ -2526,7 +2618,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         key={filter}
                         className="rounded-full border border-stone-900 bg-stone-900 px-3 py-1 text-sm font-semibold text-white"
                       >
-                        {filter}
+                        {isInvolvementCenter ? renderOrganizationFilter(filter) : filter}
                       </span>
                     ))
                   ) : (
@@ -2588,15 +2680,24 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         Selected {isInvolvementCenter ? "Organizations" : isRebelSports ? "Sports" : "Filters"}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {manualFilters.map((filter) => (
+                        {isInvolvementCenter && allManualFiltersSelected ? (
                           <SelectedFilterPill
-                            key={filter}
-                            label={filter}
-                            onRemove={() =>
-                              setManualFilters((current) => current.filter((item) => item !== filter))
-                            }
+                            label="All RSOs Selected"
+                            content="All RSOs Selected"
+                            onRemove={() => setManualFilters([])}
                           />
-                        ))}
+                        ) : (
+                          manualFilters.map((filter) => (
+                            <SelectedFilterPill
+                              key={filter}
+                              label={filter}
+                              content={isInvolvementCenter ? renderOrganizationFilter(filter) : filter}
+                              onRemove={() =>
+                                setManualFilters((current) => current.filter((item) => item !== filter))
+                              }
+                            />
+                          ))
+                        )}
                       </div>
                     </div>
                   ) : null}
@@ -2608,7 +2709,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                           active={manualFilters.includes(filter)}
                           onClick={() => toggleManualFilter(filter)}
                         >
-                          {filter}
+                          {isInvolvementCenter ? renderOrganizationFilter(filter) : filter}
                         </FilterChip>
                       ))}
                       {!visibleManualFilters.length ? (
@@ -2663,6 +2764,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
           onClearAll={() => setManualFilters([])}
           searchEnabled={isInvolvementCenter}
           searchPlaceholder="Search RSOs and organizations"
+          renderOption={isInvolvementCenter ? renderOrganizationFilter : undefined}
         />
       ) : null}
 
@@ -2760,8 +2862,21 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                       usesSlimEventRows ? "min-h-0 p-4" : "min-h-[16rem] p-5",
                     ].join(" ")}
                   >
-                    <div className={usesSlimEventRows ? "flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6" : "grid h-full grid-cols-[minmax(0,1fr)_auto] gap-4"}>
+                    <div className={usesSlimEventRows ? "flex min-w-0 flex-col gap-3 sm:flex-row sm:items-stretch sm:justify-between sm:gap-6" : "grid h-full grid-cols-[minmax(0,1fr)_auto] gap-4"}>
                       <div className={usesSlimEventRows ? "min-w-0 flex-1" : "flex h-full min-h-0 min-w-0 flex-col justify-between"}>
+                        {isInvolvementCenter && item.organization ? (
+                          <div className="mb-3 flex items-center gap-3">
+                            <OrganizationAvatar
+                              src={getOrganizationImageUrl(item.organization)}
+                              name={item.organization}
+                              className="h-12 w-12 text-sm"
+                            />
+                            <div className="min-w-0">
+                              <p className="truncate text-sm font-semibold text-stone-800">{item.organization}</p>
+                              <p className="text-xs uppercase tracking-[0.18em] text-stone-500">RSO</p>
+                            </div>
+                          </div>
+                        ) : null}
                         <div>
                           <h2
                             className={[
@@ -2777,10 +2892,15 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                               <span className={usesSlimEventRows ? "font-normal" : "font-semibold"}>{item.name}</span>
                             )}
                           </h2>
-                          {isInvolvementCenter && item.organization ? (
-                            <p className="mt-1 text-sm font-semibold text-stone-700">RSO: {item.organization}</p>
-                          ) : null}
-                          {isUNLVCalendar ? (
+                          {isInvolvementCenter ? (
+                            <div className="mt-3 space-y-1.5 text-sm text-stone-600">
+                              <p className="font-bold text-stone-800">{formatRelativeDatasetCardDate(item.startDate)}</p>
+                              <p>{formatDatasetTimeRange(item)}</p>
+                              {item.location ? (
+                                <p className="line-clamp-2 break-words">{item.location}</p>
+                              ) : null}
+                            </div>
+                          ) : isUNLVCalendar ? (
                             <p className="mt-1 text-sm font-semibold text-stone-700">Category: {item.category || "Other"}</p>
                           ) : null}
                         </div>
@@ -2817,16 +2937,33 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         </div>
                       </div>
                       {usesSlimEventRows ? (
-                        <div className="min-w-0 text-left sm:max-w-[16rem] sm:text-right">
-                          <p className="text-sm font-bold text-stone-700 sm:text-base">
-                            {formatEventDate(item)}
-                          </p>
-                          {item.location ? (
-                            <p className="mt-1 line-clamp-2 break-words text-sm text-stone-700">
-                              {item.location}
+                        isInvolvementCenter ? (
+                          <div className="flex w-full aspect-[5/3] items-center justify-center overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-200 sm:max-w-[15rem] sm:basis-[15rem] sm:shrink">
+                            {item.imageUrl ? (
+                              <img
+                                src={item.imageUrl}
+                                alt={item.name ? `${item.name} event artwork` : "Event artwork"}
+                                className="h-full w-full object-cover object-center"
+                                loading="lazy"
+                              />
+                            ) : (
+                              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-stone-300 to-stone-200 px-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                                No Event Flyer
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="min-w-0 text-left sm:max-w-[16rem] sm:text-right">
+                            <p className="text-sm font-bold text-stone-700 sm:text-base">
+                              {formatEventDate(item)}
                             </p>
-                          ) : null}
-                        </div>
+                            {item.location ? (
+                              <p className="mt-1 line-clamp-2 break-words text-sm text-stone-700">
+                                {item.location}
+                              </p>
+                            ) : null}
+                          </div>
+                        )
                       ) : null}
                     </div>
                   </button>
@@ -2841,7 +2978,12 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
         </div>
       </div>
 
-      <DatasetEventModal dataset={dataset} item={activeDatasetItem} onClose={() => setActiveDatasetItem(null)} />
+      <DatasetEventModal
+        dataset={dataset}
+        item={activeDatasetItem}
+        organizationImageUrl={getOrganizationImageUrl(activeDatasetItem?.organization)}
+        onClose={() => setActiveDatasetItem(null)}
+      />
     </section>
   );
 }
