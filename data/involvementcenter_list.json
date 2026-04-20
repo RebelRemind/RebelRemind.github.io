@@ -4880,6 +4880,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12401154"
   },
   {
+    "name": "Resume Review!",
+    "startDate": "2026-04-20",
+    "startTime": "2:30 PM",
+    "endDate": "2026-04-20",
+    "endTime": "3:45 PM",
+    "location": "SU 218",
+    "organization": "UNLV Association for Computing Machinery",
+    "link": "https://involvementcenter.unlv.edu/event/12438673"
+  },
+  {
     "name": "Law Case Study & LSAT Review",
     "startDate": "2026-04-20",
     "startTime": "4:00 PM",
@@ -5070,6 +5080,26 @@
     "link": "https://involvementcenter.unlv.edu/event/12393449"
   },
   {
+    "name": "Taichi and Football Seminar",
+    "startDate": "2026-04-23",
+    "startTime": "3:00 PM",
+    "endDate": "2026-04-23",
+    "endTime": "4:30 PM",
+    "location": "BEH 242",
+    "organization": "Chinese Corner",
+    "link": "https://involvementcenter.unlv.edu/event/12438691"
+  },
+  {
+    "name": "Noche de Excelencia",
+    "startDate": "2026-04-23",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-23",
+    "endTime": "8:00 PM",
+    "location": "SU 208AB",
+    "organization": "Association of Latino Professionals For America",
+    "link": "https://involvementcenter.unlv.edu/event/12438678"
+  },
+  {
     "name": "Rebels After Dark ",
     "startDate": "2026-04-23",
     "startTime": "7:00 PM",
@@ -5120,6 +5150,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12147291"
   },
   {
+    "name": "Trivia Night",
+    "startDate": "2026-04-24",
+    "startTime": "7:00 PM",
+    "endDate": "2026-04-24",
+    "endTime": "8:30 PM",
+    "location": "Student Union 211",
+    "organization": "Indian Students Association Maitri",
+    "link": "https://involvementcenter.unlv.edu/event/12438685"
+  },
+  {
     "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
     "startDate": "2026-04-25",
     "startTime": "9:00 AM",
@@ -5158,6 +5198,16 @@
     "location": "Flashlight",
     "organization": "UNLV Birding and Conservation Club",
     "link": "https://involvementcenter.unlv.edu/event/12063305"
+  },
+  {
+    "name": "Introduction to AI Agents Using LangChain",
+    "startDate": "2026-04-27",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-27",
+    "endTime": "11:00 AM",
+    "location": "SU 205",
+    "organization": "AI and Data Science Club",
+    "link": "https://involvementcenter.unlv.edu/event/12438670"
   },
   {
     "name": "SORCE Workshop: Officer Transitions",
@@ -5220,6 +5270,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12288802"
   },
   {
+    "name": "Business Law Panel",
+    "startDate": "2026-04-27",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-27",
+    "endTime": "6:00 PM",
+    "location": "HOS 384",
+    "organization": "Business Law Association of UNLV",
+    "link": "https://involvementcenter.unlv.edu/event/12438805"
+  },
+  {
     "name": "The Exchange: Where Opportunities Begin",
     "startDate": "2026-04-27",
     "startTime": "5:30 PM",
@@ -5235,7 +5295,7 @@
     "startTime": "10:00 AM",
     "endDate": "2026-04-28",
     "endTime": "11:00 AM",
-    "location": "Student Union Room 316",
+    "location": "Student Union Room 228",
     "organization": "UNLV Alternative Breaks",
     "link": "https://involvementcenter.unlv.edu/event/11956312"
   },
@@ -5340,6 +5400,36 @@
     "link": "https://involvementcenter.unlv.edu/event/12393448"
   },
   {
+    "name": "End of Year Celebration ",
+    "startDate": "2026-04-29",
+    "startTime": "4:00 PM",
+    "endDate": "2026-04-29",
+    "endTime": "6:00 PM",
+    "location": "Sunset Park (Meet by Model Boat Ramp)",
+    "organization": "Latinx Graduate Student Association",
+    "link": "https://involvementcenter.unlv.edu/event/12438683"
+  },
+  {
+    "name": "The Wildlife Society End-of-Semester Social & General Meeting \u2013 April 29",
+    "startDate": "2026-04-29",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-29",
+    "endTime": "6:30 PM",
+    "location": "WHI 105",
+    "organization": "The Wildlife Society ",
+    "link": "https://involvementcenter.unlv.edu/event/12438674"
+  },
+  {
+    "name": "Flipbook Workshop",
+    "startDate": "2026-04-29",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-29",
+    "endTime": "7:00 PM",
+    "location": "GRA 239-A",
+    "organization": "American Institute of Graphic Arts",
+    "link": "https://involvementcenter.unlv.edu/event/12438680"
+  },
+  {
     "name": "Simplify Your Finals",
     "startDate": "2026-04-29",
     "startTime": "6:00 PM",
@@ -5410,6 +5500,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12217595"
   },
   {
+    "name": "Senior Sing Off",
+    "startDate": "2026-05-01",
+    "startTime": "12:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "4:00 PM",
+    "location": "UNLV Student Union Room 316",
+    "organization": "UNLVolunteers",
+    "link": "https://involvementcenter.unlv.edu/event/12438681"
+  },
+  {
     "name": "CSUN Swearing In Ceremony",
     "startDate": "2026-05-01",
     "startTime": "4:00 PM",
@@ -5458,6 +5558,16 @@
     "location": "Meet at the detention basin at the corner of Democracy Drive and Via Firenze in Henderson, NV.",
     "organization": "The Wildlife Society ",
     "link": "https://involvementcenter.unlv.edu/event/12388957"
+  },
+  {
+    "name": "Member Open Meeting",
+    "startDate": "2026-05-04",
+    "startTime": "10:00 AM",
+    "endDate": "2026-05-04",
+    "endTime": "11:00 AM",
+    "location": "WRI-B 114",
+    "organization": "Lambda Alpha: National Collegiate Honor Society for Anthropology",
+    "link": "https://involvementcenter.unlv.edu/event/12438675"
   },
   {
     "name": "Finals Study Breakers - Learn to Knit ",
@@ -5588,6 +5698,16 @@
     "location": "ASC Room 146",
     "organization": "Student Support Club for Academic Success",
     "link": "https://involvementcenter.unlv.edu/event/11948284"
+  },
+  {
+    "name": "Senior Sendoff",
+    "startDate": "2026-05-08",
+    "startTime": "4:00 PM",
+    "endDate": "2026-05-08",
+    "endTime": "6:00 PM",
+    "location": "HC Social Lounge ",
+    "organization": "UNLV Real Estate & Business Society",
+    "link": "https://involvementcenter.unlv.edu/event/12438687"
   },
   {
     "name": "Feed My Sheep",

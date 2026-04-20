@@ -2252,32 +2252,22 @@
   {
     "name": "Mountain West Championship",
     "startDate": "2026-04-22",
-    "startTime": "",
-    "endDate": "2026-04-22",
-    "endTime": "",
-    "location": "Las Vegas, NV Darling Tennis Center",
-    "sport": "Men's Tennis",
-    "link": ""
-  },
-  {
-    "name": "Mountain West Championship",
-    "startDate": "2026-04-22",
-    "startTime": "",
-    "endDate": "2026-04-22",
-    "endTime": "",
-    "location": "Las Vegas, NV Darling Tennis Center",
-    "sport": "Women's Tennis",
-    "link": ""
-  },
-  {
-    "name": "Mountain West Championship",
-    "startDate": "2026-04-22",
     "startTime": "(ALL DAY)",
     "endDate": "2026-04-22",
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
     "link": ""
+  },
+  {
+    "name": "QUARTERFINALS - Grand Canyon",
+    "startDate": "2026-04-22",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-22",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://ioncourt.com/leagues/2026-mountain-west-men's-tennis-championship"
   },
   {
     "name": "Mountain West Championship",
@@ -2290,6 +2280,16 @@
     "link": ""
   },
   {
+    "name": "QUARTERFINAL - SJSU/USU Winner",
+    "startDate": "2026-04-23",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-23",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://themw.com/wtenchamp/#schedule"
+  },
+  {
     "name": "Grand Canyon",
     "startDate": "2026-04-24",
     "startTime": "",
@@ -2298,16 +2298,6 @@
     "location": "Phoenix, AZ",
     "sport": "Softball",
     "link": "https://stats.statbroadcast.com/broadcast/?id=657126"
-  },
-  {
-    "name": "Penn Relays",
-    "startDate": "2026-04-24",
-    "startTime": "",
-    "endDate": "2026-04-24",
-    "endTime": "",
-    "location": "Philadelphia, Pa.",
-    "sport": "Women's Track & Field",
-    "link": ""
   },
   {
     "name": "UNR",
