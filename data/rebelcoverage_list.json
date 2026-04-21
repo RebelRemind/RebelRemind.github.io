@@ -1,15 +1,5 @@
 [
   {
-    "name": "Utah State",
-    "startDate": "2026-01-20",
-    "startTime": "8:00 PM",
-    "endDate": "2026-01-20",
-    "endTime": "",
-    "location": "Logan, Utah",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/utah-state/boxscore/17617"
-  },
-  {
     "name": "Air Force",
     "startDate": "2026-01-21",
     "startTime": "",
@@ -2247,7 +2237,7 @@
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
   },
   {
     "name": "Mountain West Championship",
@@ -2257,7 +2247,7 @@
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
   },
   {
     "name": "QUARTERFINALS - Grand Canyon",
@@ -2277,7 +2267,7 @@
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
   },
   {
     "name": "QUARTERFINAL - SJSU/USU Winner",
@@ -3668,5 +3658,35 @@
     "location": "Seattle, Washington",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/washington-exhibition-game-/boxscore/17441"
+  },
+  {
+    "name": "Fallen Oak Collegiate",
+    "startDate": "2026-10-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-20",
+    "endTime": "",
+    "location": "Saucier, MS",
+    "sport": "Men's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/20/mens-golf-abuan-posts-top-5-finish-at-rebels-strong-fall-finale-in-mississippi.aspx"
+  },
+  {
+    "name": "ITA Regional",
+    "startDate": "2026-10-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-20",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/10/20/mens-tennis-magic-monday-two-rebels-win-way-into-ncaa-singles-championship.aspx"
+  },
+  {
+    "name": "Jim West Challenge",
+    "startDate": "2026-10-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-20",
+    "endTime": "",
+    "location": "San Marcos, TX",
+    "sport": "Women's Golf",
+    "link": "https://unlvrebels.com/news/2025/10/20/womens-golf-rebel-duo-closes-fall-with-top-20-finishes-in-texas.aspx"
   }
 ]

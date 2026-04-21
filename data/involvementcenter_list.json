@@ -1,16 +1,5 @@
 [
   {
-    "name": "Tuesday kick!",
-    "startDate": "2026-01-20",
-    "startTime": "6:30 PM",
-    "endDate": "2026-01-20",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0e1f32de-c566-4e92-be6b-6f76fc0e6b02a96e438a-2326-461d-aeb0-524c90f88e7b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063307"
-  },
-  {
     "name": "What is a Furry?",
     "startDate": "2026-01-21",
     "startTime": "5:00 PM",
@@ -5181,17 +5170,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5201,6 +5179,17 @@
     "organization": "Chinese Corner",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5694,7 +5683,7 @@
     "endTime": "1:00 PM",
     "location": "Clark County Wetlands Park",
     "organization": "UNLV Birding and Conservation Club",
-    "imageUrl": "",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12367872"
   },
   {
@@ -5894,6 +5883,17 @@
     "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/f5fd7d94-e0bf-4082-84ba-bc0ed7c272f6d026bdb7-31d0-4219-bcb0-b8cedf2a2de9.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12131468"
+  },
+  {
+    "name": "TAKE 3 Short Films Night",
+    "startDate": "2026-04-28",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-28",
+    "endTime": "8:00 PM",
+    "location": "Student Union Room 207",
+    "organization": "Cinefemmes",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/454c57ef-1003-476e-be09-52499f6edcfc65268a0f-9912-40e5-a865-550fb48efdbe.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12439534"
   },
   {
     "name": "Tuesday kick!",
