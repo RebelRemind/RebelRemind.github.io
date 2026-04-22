@@ -1,27 +1,5 @@
 [
   {
-    "name": "What is a Furry?",
-    "startDate": "2026-01-21",
-    "startTime": "5:00 PM",
-    "endDate": "2026-01-21",
-    "endTime": "7:00 PM",
-    "location": "SU 222",
-    "organization": "Rebel Anthropomorphic Works and Recreation",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12077134"
-  },
-  {
-    "name": "Game Night w/ a Treat!",
-    "startDate": "2026-01-21",
-    "startTime": "6:00 PM",
-    "endDate": "2026-01-21",
-    "endTime": "8:00 PM",
-    "location": "SRWC Room 1020",
-    "organization": "Perfumery Club",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/11834662"
-  },
-  {
     "name": "Spring Welcome Back Event: Rebel Grand Prix",
     "startDate": "2026-01-22",
     "startTime": "11:00 AM",
@@ -5170,17 +5148,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5190,6 +5157,17 @@
     "organization": "Neuroscience Undergraduate Research Organization ",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5500,14 +5478,14 @@
     "link": "https://involvementcenter.unlv.edu/event/12054650"
   },
   {
-    "name": "SORCE Workshop: Career Prep",
+    "name": "SORCE Workshop: Career Prep with UNLV Career Services",
     "startDate": "2026-04-22",
     "startTime": "1:00 PM",
     "endDate": "2026-04-22",
     "endTime": "3:00 PM",
     "location": "SORCE Room SU 305",
     "organization": "Student Organization Resource Center",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e54c024b-6be9-4c52-9591-cb8996d58f76e175ca5d-11f0-4c80-b13e-c2093027ecfd.png?preset=med-w",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/0f124a35-6858-4028-9b04-c54c1c5f8d1f6dfe9f16-88bd-4c73-9c08-e9996439017f.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12291050"
   },
   {
@@ -6066,9 +6044,9 @@
     "startTime": "4:00 PM",
     "endDate": "2026-05-01",
     "endTime": "6:00 PM",
-    "location": "UNLV",
+    "location": "UNLV Alumni Ampitheater",
     "organization": "CSUN Student Government",
-    "imageUrl": "",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/31ff8cf7-8aed-4b1f-89d1-8d7d00952f34d62cd30a-a879-4399-ad26-ab06e6dcfcce.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
