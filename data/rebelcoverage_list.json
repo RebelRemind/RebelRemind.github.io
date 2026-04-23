@@ -2237,17 +2237,17 @@
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
-    "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
+    "link": "https://unlvrebels.com/news/2026/4/22/womens-golf-rebels-in-contention-after-two-rounds-at-mw-championship.aspx"
   },
   {
-    "name": "QUARTERFINALS - Grand Canyon",
+    "name": "QUARTERFINALS - #67 Grand Canyon",
     "startDate": "2026-04-22",
     "startTime": "5:00 PM",
     "endDate": "2026-04-22",
     "endTime": "",
     "location": "Las Vegas, NV Darling Tennis Center",
     "sport": "Men's Tennis",
-    "link": "https://ioncourt.com/leagues/2026-mountain-west-men's-tennis-championship"
+    "link": "https://unlvrebels.com/news/2026/4/22/mens-tennis-powers-past-gcu-for-trip-to-semis.aspx"
   },
   {
     "name": "Mountain West Championship",
@@ -2260,7 +2260,7 @@
     "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
   },
   {
-    "name": "QUARTERFINAL - SJSU/USU Winner",
+    "name": "QUARTERFINALS - Utah State",
     "startDate": "2026-04-23",
     "startTime": "10:00 AM",
     "endDate": "2026-04-23",
@@ -2270,6 +2270,16 @@
     "link": "https://themw.com/wtenchamp/#schedule"
   },
   {
+    "name": "SEMIFINALS - #57 Utah State",
+    "startDate": "2026-04-23",
+    "startTime": "5:00 PM",
+    "endDate": "2026-04-23",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Men's Tennis",
+    "link": "https://themw.com/mtenchamp/?_gl=1*17qvqbf*_up*MQ..*_ga*MTMyNzgwMTgwOS4xNzc2OTE1ODg5*_ga_SC44RH1YQ6*czE3NzY5MTU4ODkkbzEkZzAkdDE3NzY5MTU4ODkkajYwJGwwJGgw#schedule"
+  },
+  {
     "name": "Grand Canyon",
     "startDate": "2026-04-24",
     "startTime": "",
@@ -2277,7 +2287,7 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=657126"
+    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-4/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
     "name": "UNR",
@@ -2297,7 +2307,7 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=657127"
+    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-5/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
     "name": "UNR",
@@ -2317,7 +2327,7 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=657128"
+    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-6/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
     "name": "UNR",
@@ -2347,17 +2357,7 @@
     "endTime": "",
     "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=656239"
-  },
-  {
-    "name": "Desert Heat Classic",
-    "startDate": "2026-05-01",
-    "startTime": "",
-    "endDate": "2026-05-01",
-    "endTime": "",
-    "location": "Tucson, Ariz.",
-    "sport": "Women's Track & Field",
-    "link": ""
+    "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-27/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
     "name": "NCAA First & Second Rounds",
@@ -2377,7 +2377,7 @@
     "endTime": "",
     "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=656240"
+    "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-28/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
     "name": "Milwaukee",
@@ -2397,7 +2397,17 @@
     "endTime": "",
     "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
-    "link": "https://stats.statbroadcast.com/broadcast/?id=656241"
+    "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-29/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+  },
+  {
+    "name": "Desert Heat Classic",
+    "startDate": "2026-05-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-02",
+    "endTime": "",
+    "location": "Tucson, Ariz.",
+    "sport": "Women's Track & Field",
+    "link": ""
   },
   {
     "name": "Milwaukee",

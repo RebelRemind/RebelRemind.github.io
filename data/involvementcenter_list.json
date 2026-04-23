@@ -1,27 +1,5 @@
 [
   {
-    "name": "Spring Welcome Back Event: Rebel Grand Prix",
-    "startDate": "2026-01-22",
-    "startTime": "11:00 AM",
-    "endDate": "2026-01-22",
-    "endTime": "2:00 PM",
-    "location": "Pida Plaza ",
-    "organization": "Rebel Events Board (REB)",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/dba0c356-5a91-4f44-9330-9e28ed283c8c74c57fc7-7840-4204-b601-c8b99f226c50.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11316326"
-  },
-  {
-    "name": "Becoming an Adaptive Perfectionist",
-    "startDate": "2026-01-22",
-    "startTime": "3:30 PM",
-    "endDate": "2026-01-22",
-    "endTime": "4:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8551edb-f558-4f54-ba41-d5c2ec09333b16bc4c1d-1e4e-4646-a325-a1bb308deee5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12057031"
-  },
-  {
     "name": "Chapter Meeting",
     "startDate": "2026-01-23",
     "startTime": "1:00 PM",
@@ -5522,14 +5500,14 @@
     "link": "https://involvementcenter.unlv.edu/event/12330141"
   },
   {
-    "name": "Keep Our Earth Clean",
+    "name": "Get Clean on Earth Day",
     "startDate": "2026-04-22",
     "startTime": "6:00 PM",
     "endDate": "2026-04-22",
     "endTime": "8:00 PM",
     "location": "Echo 1055",
     "organization": "Perfumery Club",
-    "imageUrl": "",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/85f44f7c-ef7a-409b-8d56-199c9292b46e58804693-2bbf-485b-b797-0ce34b9f57d6.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/11834675"
   },
   {
@@ -5564,6 +5542,17 @@
     "organization": "Chinese Corner",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/8ca7e417-95d3-4fdc-8386-847141df886a2ae0899a-1813-4065-aafe-bfcb92ec8691.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12438691"
+  },
+  {
+    "name": "LSSA Spring 2026 Pairings Appreciation Night",
+    "startDate": "2026-04-23",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-23",
+    "endTime": "7:30 PM",
+    "location": "BEH 241",
+    "organization": "Life Science Student Association",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/f60f0ecd-5d27-41c1-8bac-061bb9a5a8af1214a9ce-47e6-41cc-a1d3-f057fee5e235.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444721"
   },
   {
     "name": "Noche de Excelencia",
@@ -5665,6 +5654,17 @@
     "link": "https://involvementcenter.unlv.edu/event/12367872"
   },
   {
+    "name": "Student Dialogue & Brunch",
+    "startDate": "2026-04-25",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "1:00 PM",
+    "location": "FDH 105",
+    "organization": "African Student Alliance",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/e63eb03c-f8e7-4b8b-8375-26bbf355dc81abba3b2b-0da5-4645-bf91-23c582a6b1db.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444700"
+  },
+  {
     "name": "UNLV Women Veteran Retreat hosted by the Rebel Vets - April 25, 2026",
     "startDate": "2026-04-25",
     "startTime": "10:00 AM",
@@ -5683,7 +5683,7 @@
     "endTime": "11:00 AM",
     "location": "Flashlight",
     "organization": "UNLV Birding and Conservation Club",
-    "imageUrl": "",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/6f1e1a17-e815-48e2-a6ec-c83d1da86cb8a3f1c7c0-8c0b-447d-a040-4fbb82fca3e5.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12063305"
   },
   {
@@ -5984,6 +5984,17 @@
     "link": "https://involvementcenter.unlv.edu/event/12393347"
   },
   {
+    "name": "Community in Action: Food Pantry Helper",
+    "startDate": "2026-04-30",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-30",
+    "endTime": "3:00 PM",
+    "location": "3rd Floor Student Union",
+    "organization": "UNLVolunteers",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/76afdd19-6593-4627-8bc0-3ff86d929b37378abe6e-8b12-4936-a00f-63a680cc3df6.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444742"
+  },
+  {
     "name": "From College to Life: Tools for Thriving After Graduation ",
     "startDate": "2026-04-30",
     "startTime": "2:00 PM",
@@ -6158,6 +6169,28 @@
     "organization": "CAEO College Programs",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/12026389"
+  },
+  {
+    "name": "LSSA Finals Study Sessions",
+    "startDate": "2026-05-05",
+    "startTime": "4:30 PM",
+    "endDate": "2026-05-06",
+    "endTime": "6:00 PM",
+    "location": "SU 222",
+    "organization": "Life Science Student Association",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e11e66a-2400-4d4d-817a-ceebc4119bcfbda42988-afa7-47cc-9eff-dbacfef83e99.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444715"
+  },
+  {
+    "name": "LSSA Finals Study Sessions",
+    "startDate": "2026-05-06",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-06",
+    "endTime": "6:00 PM",
+    "location": "SU 219",
+    "organization": "Life Science Student Association",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e11e66a-2400-4d4d-817a-ceebc4119bcfbda42988-afa7-47cc-9eff-dbacfef83e99.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444716"
   },
   {
     "name": "It\u2019s Hard To Say Goodbye",
