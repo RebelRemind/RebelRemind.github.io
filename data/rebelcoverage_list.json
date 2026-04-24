@@ -1,25 +1,5 @@
 [
   {
-    "name": "UC Riverside",
-    "startDate": "2026-01-23",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-23",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/1/23/mens-tennis-netters-blank-ucr-to-kick-off-home-slate.aspx"
-  },
-  {
-    "name": "UNR (Women Only)",
-    "startDate": "2026-01-23",
-    "startTime": "1:15 PM",
-    "endDate": "2026-01-23",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/1/23/swimming-diving-rebel-women-earn-dominant-silver-state-series-win-over-unr.aspx"
-  },
-  {
     "name": "UNR",
     "startDate": "2026-01-24",
     "startTime": "",
@@ -2257,17 +2237,17 @@
     "endTime": "",
     "location": "Rancho Mirage, CA",
     "sport": "Women's Golf",
-    "link": "https://scoreboard.clippd.com/tournaments/240303/scoring/participants"
+    "link": "https://unlvrebels.com/news/2026/4/23/womens-golf-rebels-repeat-as-mountain-west-champions.aspx"
   },
   {
-    "name": "QUARTERFINALS - Utah State",
+    "name": "QUARTERFINAL - Utah State",
     "startDate": "2026-04-23",
     "startTime": "10:00 AM",
     "endDate": "2026-04-23",
     "endTime": "",
     "location": "Las Vegas, NV Darling Tennis Center",
     "sport": "Women's Tennis",
-    "link": "https://themw.com/wtenchamp/#schedule"
+    "link": "https://unlvrebels.com/news/2026/4/23/womens-tennis-sensational-singles-send-rebs-to-semfinals.aspx"
   },
   {
     "name": "SEMIFINALS - #57 Utah State",
@@ -2277,7 +2257,7 @@
     "endTime": "",
     "location": "Las Vegas, NV Darling Tennis Center",
     "sport": "Men's Tennis",
-    "link": "https://themw.com/mtenchamp/?_gl=1*17qvqbf*_up*MQ..*_ga*MTMyNzgwMTgwOS4xNzc2OTE1ODg5*_ga_SC44RH1YQ6*czE3NzY5MTU4ODkkbzEkZzAkdDE3NzY5MTU4ODkkajYwJGwwJGgw#schedule"
+    "link": "https://unlvrebels.com/news/2026/4/23/mens-tennis-rebs-drop-season-ending-heartbreaker-to-top-seed-at-mw-tourney.aspx"
   },
   {
     "name": "Grand Canyon",
@@ -2288,6 +2268,16 @@
     "location": "Phoenix, AZ",
     "sport": "Softball",
     "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-4/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+  },
+  {
+    "name": "SEMIFINAL - #67 Boise State",
+    "startDate": "2026-04-24",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-24",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://themw.com/wtenchamp/#schedule"
   },
   {
     "name": "UNR",
@@ -2358,16 +2348,6 @@
     "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
     "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-27/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
-  },
-  {
-    "name": "NCAA First & Second Rounds",
-    "startDate": "2026-05-01",
-    "startTime": "",
-    "endDate": "2026-05-01",
-    "endTime": "",
-    "location": "TBA",
-    "sport": "Men's Tennis",
-    "link": ""
   },
   {
     "name": "UNR",
@@ -2480,16 +2460,6 @@
     "link": ""
   },
   {
-    "name": "NCAA Super Regionals",
-    "startDate": "2026-05-08",
-    "startTime": "",
-    "endDate": "2026-05-08",
-    "endTime": "",
-    "location": "TBA",
-    "sport": "Men's Tennis",
-    "link": ""
-  },
-  {
     "name": "Fresno State",
     "startDate": "2026-05-08",
     "startTime": "6:05 PM",
@@ -2537,16 +2507,6 @@
     "endTime": "",
     "location": "TBD",
     "sport": "Women's Golf",
-    "link": ""
-  },
-  {
-    "name": "NCAA Championships",
-    "startDate": "2026-05-13",
-    "startTime": "",
-    "endDate": "2026-05-13",
-    "endTime": "",
-    "location": "Athens, GA",
-    "sport": "Men's Tennis",
     "link": ""
   },
   {
@@ -3688,5 +3648,25 @@
     "location": "San Marcos, TX",
     "sport": "Women's Golf",
     "link": "https://unlvrebels.com/news/2025/10/20/womens-golf-rebel-duo-closes-fall-with-top-20-finishes-in-texas.aspx"
+  },
+  {
+    "name": "Hawai\u2018i",
+    "startDate": "2026-10-23",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-23",
+    "endTime": "",
+    "location": "Honolulu, Hawaii",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Utah Valley",
+    "startDate": "2026-10-23",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-23",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/utah-valley/boxscore/17347"
   }
 ]

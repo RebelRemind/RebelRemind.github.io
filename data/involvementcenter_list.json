@@ -1,27 +1,5 @@
 [
   {
-    "name": "Chapter Meeting",
-    "startDate": "2026-01-23",
-    "startTime": "1:00 PM",
-    "endDate": "2026-01-23",
-    "endTime": "2:00 PM",
-    "location": "ASC Room 146",
-    "organization": "Student Support Club for Academic Success",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fe6eb608-7b5c-47ce-87f9-c0b5ff0f0a910836e614-99e3-4bc0-8e0b-c69971651764.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11948280"
-  },
-  {
-    "name": "Friday kick!",
-    "startDate": "2026-01-23",
-    "startTime": "6:30 PM",
-    "endDate": "2026-01-23",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/048ac95f-e5ce-4cf5-a1ec-47e6503da0723991180e-afb3-4ece-a00f-600320d5560a.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063317"
-  },
-  {
     "name": "UNLV College of Education Student Mixer - Session 1 - Let's Get It Started!",
     "startDate": "2026-01-26",
     "startTime": "10:00 AM",
@@ -5588,6 +5566,17 @@
     "link": "https://involvementcenter.unlv.edu/event/12367816"
   },
   {
+    "name": "SPS Semester Wrap Potluck and Movie",
+    "startDate": "2026-04-24",
+    "startTime": "12:00 PM",
+    "endDate": "2026-04-24",
+    "endTime": "1:00 PM",
+    "location": "BPB 217 (Bigelow Physics Building)",
+    "organization": "Society of Physics Students",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/db56022c-a681-4c66-9fc1-d7773646f731a680af87-509a-4752-9720-2384c2bef13c.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12446588"
+  },
+  {
     "name": "DASH - Delivery Shift ONLY",
     "startDate": "2026-04-24",
     "startTime": "12:45 PM",
@@ -5907,6 +5896,17 @@
     "link": "https://involvementcenter.unlv.edu/event/11284085"
   },
   {
+    "name": "General Meeting",
+    "startDate": "2026-04-29",
+    "startTime": "4:30 PM",
+    "endDate": "2026-04-29",
+    "endTime": "5:30 PM",
+    "location": "AEB 150",
+    "organization": "Engineers Without Borders",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/997748be-293a-4683-8efb-14a53ebdc1ba68c6bfe1-fb3b-433d-86d0-99315d4c24b7.pdf?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12446600"
+  },
+  {
     "name": "Town Hall",
     "startDate": "2026-04-29",
     "startTime": "4:45 PM",
@@ -6116,7 +6116,7 @@
     "link": "https://involvementcenter.unlv.edu/event/12438675"
   },
   {
-    "name": "Finals Study Breakers - Learn to Knit ",
+    "name": "Finals Study Breakers - Arts & Crafts",
     "startDate": "2026-05-04",
     "startTime": "1:00 PM",
     "endDate": "2026-05-04",
@@ -6158,6 +6158,17 @@
     "organization": "Rebel Freestyle",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/92f66182-7c8d-4d3f-8281-8d30675f444af8f124b8-f24c-440d-a16f-36fcc58a2a37.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12389273"
+  },
+  {
+    "name": "COLA/Hospitality Mixer",
+    "startDate": "2026-05-06",
+    "startTime": "10:00 AM",
+    "endDate": "2026-05-06",
+    "endTime": "2:00 PM",
+    "location": "SU 205/207",
+    "organization": "CSUN Student Government",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12447031"
   },
   {
     "name": "Finals Study Breakers - Paint and Flow ",
@@ -6268,17 +6279,6 @@
     "organization": "Rebel Events Board (REB)",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/11316520"
-  },
-  {
-    "name": "Chapter Meeting",
-    "startDate": "2026-05-08",
-    "startTime": "1:00 PM",
-    "endDate": "2026-05-08",
-    "endTime": "1:30 PM",
-    "location": "ASC Room 146",
-    "organization": "Student Support Club for Academic Success",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fe6eb608-7b5c-47ce-87f9-c0b5ff0f0a910836e614-99e3-4bc0-8e0b-c69971651764.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11948284"
   },
   {
     "name": "Senior Sendoff",
