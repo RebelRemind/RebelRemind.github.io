@@ -1,45 +1,5 @@
 [
   {
-    "name": "UNR",
-    "startDate": "2026-01-24",
-    "startTime": "",
-    "endDate": "2026-01-24",
-    "endTime": "",
-    "location": "Reno, NV",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/unr/boxscore/17650"
-  },
-  {
-    "name": "Fresno Pacific",
-    "startDate": "2026-01-24",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-24",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/1/24/swimming-diving-rebels-sweep-fresno-pacific-on-senior-day.aspx"
-  },
-  {
-    "name": "New Mexico State",
-    "startDate": "2026-01-24",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-24",
-    "endTime": "",
-    "location": "Las Vegas. NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/1/24/mens-tennis-unlv-men-post-second-straight-shutout.aspx"
-  },
-  {
-    "name": "San Diego State",
-    "startDate": "2026-01-24",
-    "startTime": "1:00 PM",
-    "endDate": "2026-01-24",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-diego-state/boxscore/17618"
-  },
-  {
     "name": "Weber State",
     "startDate": "2026-01-25",
     "startTime": "10:00 AM",
@@ -3678,5 +3638,15 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/utah-valley/boxscore/17347"
+  },
+  {
+    "name": "Hawai'i",
+    "startDate": "2026-10-24",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-24",
+    "endTime": "",
+    "location": "Honolulu, Hawaii",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]
