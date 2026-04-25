@@ -2267,7 +2267,7 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-4/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/grand-canyon/boxscore/17725"
   },
   {
     "name": "SEMIFINAL - #67 Boise State",
@@ -2277,17 +2277,17 @@
     "endTime": "",
     "location": "Las Vegas, NV Darling Tennis Center",
     "sport": "Women's Tennis",
-    "link": "https://themw.com/wtenchamp/#schedule"
+    "link": "https://unlvrebels.com/news/2026/4/24/womens-tennis-rebs-bounce-boise-state-to-reach-ninth-straight-mw-final.aspx"
   },
   {
     "name": "UNR",
     "startDate": "2026-04-24",
-    "startTime": "6:05 PM",
+    "startTime": "6:07 PM",
     "endDate": "2026-04-24",
-    "endTime": "",
+    "endTime": "8:42 PM",
     "location": "Reno, Nev.",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-23/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/unr/boxscore/17778"
   },
   {
     "name": "Grand Canyon",
@@ -2298,6 +2298,16 @@
     "location": "Phoenix, AZ",
     "sport": "Softball",
     "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-5/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+  },
+  {
+    "name": "FINAL - #57 San Diego State",
+    "startDate": "2026-04-25",
+    "startTime": "11:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "",
+    "location": "Las Vegas, NV Darling Tennis Center",
+    "sport": "Women's Tennis",
+    "link": "https://ioncourt.com/leagues/2026-mountain-west-women%E2%80%99s-tennis-championship"
   },
   {
     "name": "UNR",
@@ -2350,6 +2360,16 @@
     "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-27/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
   },
   {
+    "name": "Fresno State Invitational",
+    "startDate": "2026-05-01",
+    "startTime": "",
+    "endDate": "2026-05-01",
+    "endTime": "",
+    "location": "Fresno, Calif.",
+    "sport": "Women's Track & Field",
+    "link": ""
+  },
+  {
     "name": "UNR",
     "startDate": "2026-05-01",
     "startTime": "",
@@ -2378,16 +2398,6 @@
     "location": "Las Vegas Eller Media Stadium",
     "sport": "Softball",
     "link": "https://themw.com/news/2026/03/24/nevada-at-unlv-29/?_gl=1*62cy6v*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
-  },
-  {
-    "name": "Desert Heat Classic",
-    "startDate": "2026-05-02",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-05-02",
-    "endTime": "",
-    "location": "Tucson, Ariz.",
-    "sport": "Women's Track & Field",
-    "link": ""
   },
   {
     "name": "Milwaukee",

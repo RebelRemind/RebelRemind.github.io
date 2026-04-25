@@ -1,0 +1,597 @@
+[
+  {
+    "bldg-code": "AEB",
+    "bldg-name": "Advanced Engineering Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2024-05/aeb-D75249_001-2000x1333.jpg?itok=KgS47Uho"
+  },
+  {
+    "bldg-code": "ALB",
+    "bldg-name": "Accelerator Lab Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/alb-D72804_001.jpg?itok=bKOkOy1n"
+  },
+  {
+    "bldg-code": "ARC",
+    "bldg-name": "Paul B. Sogg Architecture Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/arc-D76322_006-2000x1333.jpg?itok=6fXYtt0x"
+  },
+  {
+    "bldg-code": "ASC",
+    "bldg-name": "Academic Success Center - Claude I. Howard Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/asc-D72281_029.jpg?itok=I-jAWno-"
+  },
+  {
+    "bldg-code": "BDC",
+    "bldg-name": "Bennett Professional Development Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bdc-d66361_16.jpg?itok=M33m2isU"
+  },
+  {
+    "bldg-code": "BEH",
+    "bldg-name": "Frank and Estella Beam Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL"
+  },
+  {
+    "bldg-code": "BGC",
+    "bldg-name": "John D. Jackie Gaughan Boys and Girls Club",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bgc_northeast.jpg?itok=H7zXXkV0"
+  },
+  {
+    "bldg-code": "BHS",
+    "bldg-name": "Rod Lee Bigelow Health Sciences",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bhs-d65234_45.jpg?itok=PDC4s0v-"
+  },
+  {
+    "bldg-code": "BKS",
+    "bldg-name": "UNLV Bookstore",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/bks-D76637_005-2000x1333.jpg?itok=olNM0Av4"
+  },
+  {
+    "bldg-code": "BMC",
+    "bldg-name": "Lee and Thomas Beam Music Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bmc-D73222_005.jpg?itok=7XDW3brT"
+  },
+  {
+    "bldg-code": "BPB",
+    "bldg-name": "Robert L. Bigelow Physics",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bpb-d67108_02.jpg?itok=ZQ60Z8LP"
+  },
+  {
+    "bldg-code": "BSL",
+    "bldg-name": "William S. Boyd School of Law",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/bsl-d67839_08.jpg?itok=AeNsxZxC"
+  },
+  {
+    "bldg-code": "CAEO",
+    "bldg-name": "Center for Academic Enrichment and Outreach",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/caeo-google_maps.jpg?itok=lX0PGWBR"
+  },
+  {
+    "bldg-code": "CDC",
+    "bldg-name": "Central Desert Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/cdc-D72281_001.jpg?itok=KJ8tR8_F"
+  },
+  {
+    "bldg-code": "CEB",
+    "bldg-name": "William D. Carlson Education",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/ceb-d65805_14.jpg?itok=KE4yGCrg"
+  },
+  {
+    "bldg-code": "CHB",
+    "bldg-name": "Carol C. Harter Classroom Building Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/cbc-d65130-01.jpg?itok=2PS4CCTE"
+  },
+  {
+    "bldg-code": "CHE",
+    "bldg-name": "Chemistry Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/che-d66578-03.jpg?itok=RzwiwC0b"
+  },
+  {
+    "bldg-code": "CLB1",
+    "bldg-name": "Campus Lab Building 1",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/clb1-D74183_014.jpg?itok=_ZFcm9HX"
+  },
+  {
+    "bldg-code": "CLB2",
+    "bldg-name": "Campus Lab Building 2",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/clb2-D74183_011.jpg?itok=zur87hQ0"
+  },
+  {
+    "bldg-code": "CLB3",
+    "bldg-name": "Campus Lab Building 3",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/clb3-D74183_002.jpg?itok=4SsVrRdq"
+  },
+  {
+    "bldg-code": "CNC",
+    "bldg-name": "Catholic Newman Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/cnc-d65813_11_0.jpg?itok=_1i6sYzp"
+  },
+  {
+    "bldg-code": "COX",
+    "bldg-name": "Cox Pavilion",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/cox-d66578-09.jpg?itok=IefXXXIe"
+  },
+  {
+    "bldg-code": "CRC",
+    "bldg-name": "Campus Resource Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/crc-D74183_008.jpg?itok=5UYs5qGk"
+  },
+  {
+    "bldg-code": "CSB",
+    "bldg-name": "Campus Services Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/csb-d64277_17.jpg?itok=YOt-T5LK"
+  },
+  {
+    "bldg-code": "DAY",
+    "bldg-name": "Dayton Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/day-D74864_001-2000x1333.jpg?itok=xrLhfduJ"
+  },
+  {
+    "bldg-code": "DEG1",
+    "bldg-name": "The Degree",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-05/deg1-d73709_191.jpg?itok=83m7KBlR"
+  },
+  {
+    "bldg-code": "DIN",
+    "bldg-name": "Hazel M. Wilson Dining Commons",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/din-D76637_007-2000x1333.jpg?itok=ofSr7T71"
+  },
+  {
+    "bldg-code": "EMS",
+    "bldg-name": "Eller Media Softball Stadium",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/ems-d69574_62_1.jpg?itok=j1YIoKHR"
+  },
+  {
+    "bldg-code": "FAB-1",
+    "bldg-name": "Flamingo Auxiliary Building 1",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-05/tec-d73557_003.jpg?itok=eLExCgDG"
+  },
+  {
+    "bldg-code": "FDH",
+    "bldg-name": "Flora Dungan Humanities",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/fdh-d67807_15.jpg?itok=L9YnT90c"
+  },
+  {
+    "bldg-code": "FFC",
+    "bldg-name": "Fertitta Football Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/ffc-D73210_003.jpg?itok=fA4X4SxH"
+  },
+  {
+    "bldg-code": "FMA",
+    "bldg-name": "Facilities Management Administration",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/fma-d64911-06.jpg?itok=Kvmi6DNb"
+  },
+  {
+    "bldg-code": "FND",
+    "bldg-name": "Foundation Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/fnd-d65805_16.jpg?itok=DrpmmH_O"
+  },
+  {
+    "bldg-code": "FTC",
+    "bldg-name": "Frank and Vicki Fertitta Tennis Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/ftc-d64911-08.jpg?itok=-xhCHpXk"
+  },
+  {
+    "bldg-code": "GRA",
+    "bldg-name": "Archie C. Grant Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2023-07/gra-D74888_002-2000x1333.jpg?itok=wrRmT5gn"
+  },
+  {
+    "bldg-code": "GRS",
+    "bldg-name": "Graduate Arts Studios",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/grs-d69076_02.jpg?itok=aLeSHxCP"
+  },
+  {
+    "bldg-code": "GTW",
+    "bldg-name": "University Gateway Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/gtw-D73024_002.jpg?itok=QrpAJLog"
+  },
+  {
+    "bldg-code": "GUA",
+    "bldg-name": "Greenspun Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/gua-d67659_14.jpg?itok=wYudySNa"
+  },
+  {
+    "bldg-code": "HAB1",
+    "bldg-name": "Harmon Auxiliary Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/hab1-D74183_015.jpg?itok=OmT95DmL"
+  },
+  {
+    "bldg-code": "HBL",
+    "bldg-name": "High Bay Lab",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hbl.jpg?itok=2pt2A7lh"
+  },
+  {
+    "bldg-code": "HCH",
+    "bldg-name": "Artemus W. Ham Concert Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hch-D73222_009.jpg?itok=dsStJspz"
+  },
+  {
+    "bldg-code": "HEA",
+    "bldg-name": "Holbert H. Hendrix Education Auditorium",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/CEB-HEA-D64233_25.jpg?itok=Ut8wSvJM"
+  },
+  {
+    "bldg-code": "HFA",
+    "bldg-name": "Alta Ham Fine Arts",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/HFA-D64911-22.jpg?itok=v44gmq37"
+  },
+  {
+    "bldg-code": "HOS",
+    "bldg-name": "Hospitality Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hab-D71933_001.JPG?itok=Gmq93C3f"
+  },
+  {
+    "bldg-code": "HOU",
+    "bldg-name": "Houssels House",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/HOU-D69260_34.jpg?itok=tTTD0DxD"
+  },
+  {
+    "bldg-code": "HR1",
+    "bldg-name": "Harry Reid Research & Technology Park - Building 1",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hr1-D72902_013.jpg?itok=J72-4mNA"
+  },
+  {
+    "bldg-code": "HWB",
+    "bldg-name": "Herman Westfall Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/HWB-D64911-30.jpg?itok=Yot7qood"
+  },
+  {
+    "bldg-code": "IGS",
+    "bldg-name": "Integrated Graphics Services",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/igs-D74183_010.jpg?itok=Sg2EJEx_"
+  },
+  {
+    "bldg-code": "JBT",
+    "bldg-name": "Judy Bayley Theatre",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/JBT-D64277_04.jpg?itok=wk_5zD4f"
+  },
+  {
+    "bldg-code": "LAC",
+    "bldg-name": "Lied Athletic Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/LAC-D64911-09.jpg?itok=qO7ufleF"
+  },
+  {
+    "bldg-code": "LBC",
+    "bldg-name": "Lynn Bennett Early Childhood Education Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/LBC-D64066-03.jpg?itok=VSrIDFTI"
+  },
+  {
+    "bldg-code": "LDS",
+    "bldg-name": "LDS Institute of Religion Student Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/LDS-D64911-34.jpg?itok=8R53z8NJ"
+  },
+  {
+    "bldg-code": "LEG",
+    "bldg-name": "Legacy LV",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/leg-D74183_020.jpg?itok=vIAOuVnx"
+  },
+  {
+    "bldg-code": "LFG",
+    "bldg-name": "Lilly Fong Geoscience",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/LFG-D67644_20.jpg?itok=t9SPeaeu"
+  },
+  {
+    "bldg-code": "LLB",
+    "bldg-name": "Lied Library",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/llb-D76280_009-2000x1333.jpg?itok=2-uMe_dt"
+  },
+  {
+    "bldg-code": "MAB1",
+    "bldg-name": "Maryland Administrative Building 1",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/mab1-D74183_019.jpg?itok=iNasFW5F"
+  },
+  {
+    "bldg-code": "MAB2",
+    "bldg-name": "Maryland Administrative Building 2",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2024-04/mab2-D75384_013-2000x1333.jpg?itok=naamISFm"
+  },
+  {
+    "bldg-code": "MBC",
+    "bldg-name": "Anthony and Lyndy Marnell III Baseball Clubhouse",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/mbc_exterior-D70728_91.jpg?itok=cFRXdkhO"
+  },
+  {
+    "bldg-code": "MCB",
+    "bldg-name": "Thomas and Mack Moot Court",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/MCB-D65707_13.jpg?itok=_3WpexEW"
+  },
+  {
+    "bldg-code": "MDC",
+    "bldg-name": "Mendenhall Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/MDC-D68448_32.jpg?itok=LrwWl_j0"
+  },
+  {
+    "bldg-code": "MEB",
+    "bldg-name": "Medical Education Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/meb-D76107_011-2000x1333.jpg?itok=4jVRHNeY"
+  },
+  {
+    "bldg-code": "MPE",
+    "bldg-name": "Paul McDermott Physical Education Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/mpe-D65734_04.jpg?itok=WNgBLKx0"
+  },
+  {
+    "bldg-code": "MSB",
+    "bldg-name": "Robert Miller Soccer Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/msb-D74183_003.jpg?itok=QwNypf-_"
+  },
+  {
+    "bldg-code": "MSM-HRC",
+    "bldg-name": "Marjorie Barrick Museum of Art / Harry Reid Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/D71804_007.jpg?itok=3JNbtY6y"
+  },
+  {
+    "bldg-code": "O&M",
+    "bldg-name": "Operations and Maintenance",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/OM-D64911-04.jpg?itok=f1gGsS2q"
+  },
+  {
+    "bldg-code": "PES",
+    "bldg-name": "Paradise Elementary School",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/PES-D64911-14.jpg?itok=9xSOTz6a"
+  },
+  {
+    "bldg-code": "PKG-1",
+    "bldg-name": "Cottage Grove Parking Garage",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/PKG1-D64542_49.jpg?itok=sBcSH6yR"
+  },
+  {
+    "bldg-code": "PKG-2",
+    "bldg-name": "Tropicana Parking Garage",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/pkg_2-D74286_013-2000x1333.jpg?itok=DwFII8T-"
+  },
+  {
+    "bldg-code": "PKG-3",
+    "bldg-name": "University Gateway Parking Garage",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/pkg3-D71376_09.jpg?itok=D9i7cH9_"
+  },
+  {
+    "bldg-code": "PSB",
+    "bldg-name": "Claude I. Howard Public Safety",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/PSB-D64911-28.jpg?itok=HNa5_Vmt"
+  },
+  {
+    "bldg-code": "RAB",
+    "bldg-name": "Research Administration Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/RAB-D64911-03.jpg?itok=fTriYWhm"
+  },
+  {
+    "bldg-code": "RHW",
+    "bldg-name": "Gym Road South Resident Services Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/RHW-D64911-37_0.jpg?itok=-qPOsLyt"
+  },
+  {
+    "bldg-code": "RLL",
+    "bldg-name": "Beverly Rogers Literature and Law Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/rll-D76637_010-2000x1333.jpg?itok=WX8mCfDU"
+  },
+  {
+    "bldg-code": "RPL",
+    "bldg-name": "Radiation Protection Laboratory",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/RPL-D64911-18_0.jpg?itok=Zn60CW9D"
+  },
+  {
+    "bldg-code": "RRC",
+    "bldg-name": "Rebel Recycling Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rrc-D72804_007.jpg?itok=vinQzDHi"
+  },
+  {
+    "bldg-code": "RWC",
+    "bldg-name": "Student Recreation & Wellness Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR"
+  },
+  {
+    "bldg-code": "SCS",
+    "bldg-name": "System Computing Services",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/scs-D76637_011-2000x1333.jpg?itok=7x2I6RcT"
+  },
+  {
+    "bldg-code": "SEB",
+    "bldg-name": "Science and Engineering Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SEB-Partial-Light-D67739_01A.jpg?itok=iIdkjwVW"
+  },
+  {
+    "bldg-code": "SFB",
+    "bldg-name": "Stan Fulton Building - International Gaming Institute",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SFB-D67840_27.jpg?itok=GdE5aXP2"
+  },
+  {
+    "bldg-code": "SLC-A",
+    "bldg-name": "Shadow Lane Dental School",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-A-D68863_13.jpg?itok=GQzTp8df"
+  },
+  {
+    "bldg-code": "SLC-B",
+    "bldg-name": "Shadow Lane Biotech Research",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/slc_b-D76605_001-2000x1333.jpg?itok=4_49OH5A"
+  },
+  {
+    "bldg-code": "SLC-C",
+    "bldg-name": "Shadow Lane Campus Services",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-C-D64950-07_0.jpg?itok=_YoyTkv4"
+  },
+  {
+    "bldg-code": "SLC-D",
+    "bldg-name": "Shadow Lane Advanced Dental Education",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-D-D66257_13.jpg?itok=nR1Opk2Q"
+  },
+  {
+    "bldg-code": "SLC-E",
+    "bldg-name": "Shadow Lane Campus - Building E",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/DJI_0050_0.jpg?itok=XtgpsNoX"
+  },
+  {
+    "bldg-code": "SLC-F",
+    "bldg-name": "Shadow Lane Campus - Building F",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/slc_f-D74183_007.jpg?itok=ZRYaBJiu"
+  },
+  {
+    "bldg-code": "SMT",
+    "bldg-name": "Student Life Maintenance and Technology",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SAM-D64911-24.jpg?itok=eioqg4d7"
+  },
+  {
+    "bldg-code": "SOM-03",
+    "bldg-name": "School of Medicine 03",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/som3-google_maps.jpg?itok=PRScR1yU"
+  },
+  {
+    "bldg-code": "SOM-09",
+    "bldg-name": "School of Medicine 09",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/som9-google_maps.jpg?itok=jdFJYh3C"
+  },
+  {
+    "bldg-code": "SOM-10",
+    "bldg-name": "School of Medicine 10",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/Pediatrics-Shadow-Lane_A7F00951.jpg?itok=0DTKinIk"
+  },
+  {
+    "bldg-code": "SOM-13",
+    "bldg-name": "School of Medicine 13",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/Mojave-West-Charleston_A7F00982.jpg?itok=vV0cIzKX"
+  },
+  {
+    "bldg-code": "SOM-16",
+    "bldg-name": "School of Medicine 16",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/Mojave%20Counseling_A7F00728.jpg?itok=4AtDnIoR"
+  },
+  {
+    "bldg-code": "SOM-17",
+    "bldg-name": "School of Medicine 17",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/som17-google_maps.jpg?itok=PQMLa-eN"
+  },
+  {
+    "bldg-code": "SOM-19",
+    "bldg-name": "School of Medicine 19",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/som19-google_maps.jpg?itok=rT5J3LDh"
+  },
+  {
+    "bldg-code": "SOM-20",
+    "bldg-name": "School of Medicine 20",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/som209-google_maps.jpg?itok=7oh4LuQn"
+  },
+  {
+    "bldg-code": "SOM-21",
+    "bldg-name": "School of Medicine 21",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/ENT-Rainbow_A7F00993.jpg?itok=WMAmiPCZ"
+  },
+  {
+    "bldg-code": "SOM-23",
+    "bldg-name": "School of Medicine 23",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-06/A7F09538.jpg?itok=cvMgmXgZ"
+  },
+  {
+    "bldg-code": "SOU",
+    "bldg-name": "South Residential Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/sou-D76322_001-2000x1333.jpg?itok=DlhpadIB"
+  },
+  {
+    "bldg-code": "SSC",
+    "bldg-name": "Student Services Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/ssc_a-D76280_008-2000x1333.jpg?itok=io24Cuh2"
+  },
+  {
+    "bldg-code": "STL",
+    "bldg-name": "Science Teaching Labs",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/STL-D65746_03.jpg?itok=snqTISJR"
+  },
+  {
+    "bldg-code": "SU",
+    "bldg-name": "Student Union",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80"
+  },
+  {
+    "bldg-code": "SWC",
+    "bldg-name": "Sidewalk Caf\u00e9",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-04/swc-D76171_001-2000x1333.jpg?itok=BIffHR46"
+  },
+  {
+    "bldg-code": "TAC",
+    "bldg-name": "Richard Tam Alumni Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/TAC-D65749_04.jpg?itok=Pw1_F-fZ"
+  },
+  {
+    "bldg-code": "TAY",
+    "bldg-name": "William D. Taylor Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/tay-d64911-13.jpg?itok=hjQJ4ADP"
+  },
+  {
+    "bldg-code": "TBE",
+    "bldg-name": "Thomas T. Beam Engineering Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/tbe-d64233_38.jpg?itok=fn0BRE2P"
+  },
+  {
+    "bldg-code": "TEC",
+    "bldg-name": "Technology Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/tec-d64911-33.jpg?itok=LFekRwoK"
+  },
+  {
+    "bldg-code": "TMC",
+    "bldg-name": "Thomas and Mack Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/tmc-D74286_020-2000x1333.jpg?itok=gBHx4aU_"
+  },
+  {
+    "bldg-code": "TMW",
+    "bldg-name": "Thomas and Mack Warehouse",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/tmw-D74183_009.jpg?itok=au_M9Rec"
+  },
+  {
+    "bldg-code": "TON",
+    "bldg-name": "Tonopah Residence Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/ton-D74864_016-2000x1333.jpg?itok=pqFZvcaA"
+  },
+  {
+    "bldg-code": "TWH",
+    "bldg-name": "Thunder Warehouse",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/twh-D74183_006.jpg?itok=HqwtvY27"
+  },
+  {
+    "bldg-code": "UAB",
+    "bldg-name": "University Auxiliary Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2022-10/uab-D74183_013.jpg?itok=JJudmruz"
+  },
+  {
+    "bldg-code": "UCC",
+    "bldg-name": "UCC Residential Complex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-01/ucc-D74864_019-2000x1333.jpg?itok=urF7-nSe"
+  },
+  {
+    "bldg-code": "UNH",
+    "bldg-name": "University Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/unh-d64911-29.jpg?itok=py5uUCzk"
+  },
+  {
+    "bldg-code": "USB",
+    "bldg-name": "University Systems Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/usb-d64911-02.jpg?itok=s95FgSYG"
+  },
+  {
+    "bldg-code": "UTC",
+    "bldg-name": "UNLV Transit Center",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2025-07/utc-D76316_004-2000x1333.jpg?itok=GepyK6Nl"
+  },
+  {
+    "bldg-code": "WBS",
+    "bldg-name": "Earl E. Wilson Baseball Stadium",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/wbs-d64911-10.jpg?itok=1LLmQTue"
+  },
+  {
+    "bldg-code": "WHA",
+    "bldg-name": "White Hall Annex",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/WHA-1-2.jpg?itok=fvLpWmrz"
+  },
+  {
+    "bldg-code": "WHI",
+    "bldg-name": "Juanita Greer White Life Sciences",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/whi-d63699_04.jpg?itok=jZYO7jVk"
+  },
+  {
+    "bldg-code": "WRI",
+    "bldg-name": "John S. Wright Hall",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/complex_map_photos/wri-d65364-06.jpg?itok=YDbt08fs"
+  },
+  {
+    "bldg-code": "WRL",
+    "bldg-name": "Eugene R. Warner Residential Life Building",
+    "image-link": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/wrl-d64911-23.jpg?itok=CeQG34ih"
+  }
+]

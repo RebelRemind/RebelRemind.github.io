@@ -21,6 +21,7 @@ const DATA_FILES = [
     label: "Involvement Center",
     path: "/data/involvementcenter_list.json",
     sourceUrl: "https://involvementcenter.unlv.edu/events",
+    apiUrl: "https://involvementcenter.unlv.edu/api/discovery/event/search",
   },
   {
     key: "rebelSports",
@@ -116,6 +117,24 @@ const ALL_SPORTS = [
   "Women's Tennis",
   "Women's Track & Field",
   "Women's Volleyball",
+];
+
+const SPORT_IMAGE_BY_KEYWORD = [
+  ["Swimming & Diving", "/images/sports/swimming_diving.png"],
+  ["Cross Country", "/images/sports/cross_country.png"],
+  ["Track & Field", "/images/sports/track_field.png"],
+  ["Basketball", "/images/sports/basketball.png"],
+  ["Women's Golf", "/images/sports/womens_golf.png"],
+  ["Men's Golf", "/images/sports/mens_golf.png"],
+  ["Women's Tennis", "/images/sports/womens_tennis.png"],
+  ["Men's Tennis", "/images/sports/mens_tennis.png"],
+  ["Baseball", "/images/sports/baseball.png"],
+  ["Football", "/images/sports/football.png"],
+  ["Softball", "/images/sports/softball.png"],
+  ["Volleyball", "/images/sports/volleyball.png"],
+  ["Soccer", "/images/sports/soccer.png"],
+  ["Tennis", "/images/sports/tennis.png"],
+  ["Golf", "/images/sports/golf.png"],
 ];
 
 const EXTENSION_EVENT_SOURCE_ORDER = [
@@ -505,6 +524,14 @@ function formatDatasetTimeRange(item) {
   }
 
   return start || "Time TBD";
+}
+
+function getSportImageUrl(sport) {
+  const normalizedSport = String(sport || "").trim().toLowerCase();
+  const match = SPORT_IMAGE_BY_KEYWORD.find(([keyword]) =>
+    normalizedSport.includes(keyword.toLowerCase())
+  );
+  return match ? match[1] : "/images/UNLV_Logo.png";
 }
 
 function getTitleSizeClass(title = "") {
@@ -2130,7 +2157,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
           <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">Campus-Wide and Career Events</h2>
         </div>
         <div className="grid gap-4 xl:grid-cols-2">
-          <div className="flex h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+          <div className="flex max-h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md xl:h-[34rem]">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Spotlight</p>
@@ -2168,7 +2195,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             </div>
           </div>
 
-          <div className="flex h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
+          <div className="flex max-h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md xl:h-[34rem]">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Career Launch</p>
@@ -2223,6 +2250,9 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
               eyebrow: "Dataset Explorer",
               description: "Open the full page for this feed.",
             };
+            const nextItemTitle = source.key === "rebelSports" && nextItem?.sport && nextItem?.name
+              ? `${nextItem.sport}: ${nextItem.name}`
+              : nextItem?.name;
 
             return (
               <Link
@@ -2249,7 +2279,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-stone-500">Next Up</p>
                     {nextItem ? (
                       <>
-                        <p className="mt-2 line-clamp-2 text-base font-semibold text-stone-900">{nextItem.name}</p>
+                        <p className="mt-2 line-clamp-2 text-base font-semibold text-stone-900">{nextItemTitle}</p>
                         <p className="mt-1 text-sm text-stone-700">{formatEventDate(nextItem)}</p>
                         <p className="mt-3 text-sm font-semibold text-stone-700 transition-transform duration-300 group-hover:translate-x-1">
                           Explore feed →
@@ -2298,22 +2328,22 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             </div>
           </div>
           <div className="mt-4 h-px w-full bg-white/15" aria-hidden="true" />
-          <div className="mt-5 max-h-[32rem] space-y-6 overflow-y-auto pr-1">
+          <div className="mt-5 max-h-[32rem] space-y-6 overflow-x-hidden overflow-y-auto pr-1">
             {groupedCampusFeed.length ? (
               groupedCampusFeed.map((group) => (
-                <div key={group.section}>
+                <div key={group.section} className="min-w-0">
                   {shouldShowNewsSectionHeader(activeNewsFeedKey, group.section) ? (
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">{group.section}</p>
                   ) : null}
-                  <div className={shouldShowNewsSectionHeader(activeNewsFeedKey, group.section) ? "mt-3 space-y-3" : "space-y-3"}>
+                  <div className={shouldShowNewsSectionHeader(activeNewsFeedKey, group.section) ? "mt-3 min-w-0 space-y-3" : "min-w-0 space-y-3"}>
                     {group.items.map((item, index) => (
                       <button
                         key={`${group.section}-${item.name}-${index}`}
                         type="button"
                         onClick={() => setSelectedNewsItem({ ...item, feedLabel: getNewsFeedLabel(activeNewsFeedKey) })}
-                        className="block w-full rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 text-left transition-transform duration-300 hover:-translate-y-1"
+                        className="block min-w-0 w-full rounded-[1.5rem] border border-white/15 bg-white/8 px-4 py-4 text-left text-white transition-transform duration-300 hover:-translate-y-1"
                       >
-                        <p className="text-lg font-semibold">{item.name}</p>
+                        <p className="break-words text-lg font-semibold text-white">{item.name}</p>
                         <p className="mt-1 text-sm text-white/75">{formatNewsDate(item)}</p>
                         {item.summary ? <p className="mt-2 text-sm leading-6 text-white/72">{item.summary}</p> : null}
                         <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
@@ -2408,7 +2438,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   const isInvolvementCenter = dataset?.key === "involvementCenter";
   const isRebelSports = dataset?.key === "rebelSports";
   const supportsViewAllModal = isInvolvementCenter || isRebelSports;
-  const usesSlimEventRows = isUNLVCalendar || isInvolvementCenter || isRebelSports;
+  const usesPhotoEventCards = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const supportsFilters = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const hasSync = bridgeStatus === "connected";
   const [useSyncedPreferences, setUseSyncedPreferences] = useState(true);
@@ -2780,8 +2810,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
             className={
               dataset.key === "academicCalendar"
                 ? "grid gap-4"
-                : usesSlimEventRows
-                  ? "grid gap-3"
+                : usesPhotoEventCards
+                  ? "grid gap-4 sm:grid-cols-2 xl:grid-cols-3"
                   : "grid gap-4 md:grid-cols-2 xl:grid-cols-3"
             }
           >
@@ -2852,6 +2882,80 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                       </div>
                     </div>
                   </a>
+                ) : usesPhotoEventCards ? (
+                  <button
+                    key={`${dataset.key}-${item.name}-${index}`}
+                    type="button"
+                    onClick={() => setActiveDatasetItem(item)}
+                    className={[
+                      "flex flex-col overflow-hidden rounded-[1.5rem] border border-black/10 bg-stone-100/90 p-4 text-left text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl",
+                      isRebelSports ? "min-h-[22rem]" : "min-h-[28rem]",
+                    ].join(" ")}
+                  >
+                    {!isRebelSports ? (
+                      <div className="flex min-w-0 items-center gap-3">
+                        {isInvolvementCenter ? (
+                          <OrganizationAvatar
+                            src={getOrganizationImageUrl(item.organization)}
+                            name={item.organization}
+                            className="h-11 w-11 text-xs"
+                          />
+                        ) : (
+                          <img
+                            src="/images/UNLV_Logo.png"
+                            alt="UNLV logo"
+                            className="h-11 w-11 shrink-0 rounded-full border border-stone-300 bg-white object-contain p-1"
+                            loading="lazy"
+                          />
+                        )}
+                        <div className="min-w-0">
+                          <p className="truncate text-sm font-semibold text-stone-800">
+                            {isInvolvementCenter ? item.organization || "Registered Student Organization" : "UNLV Calendar"}
+                          </p>
+                          <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+                            {isInvolvementCenter ? "RSO" : item.category || "Campus Event"}
+                          </p>
+                        </div>
+                      </div>
+                    ) : null}
+
+                    <div className={`${isRebelSports ? "" : "mt-4"} flex aspect-[5/3] w-full items-center justify-center overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-200`}>
+                      {item.imageUrl || isUNLVCalendar || isRebelSports ? (
+                        <img
+                          src={item.imageUrl || (isRebelSports ? getSportImageUrl(item.sport) : "/images/UNLV_Logo.png")}
+                          alt={item.name ? `${item.name} event artwork` : "Event artwork"}
+                          className={[
+                            "h-full w-full object-center",
+                            isRebelSports || item.imageUrl === "/images/UNLV_Logo.png" || (!item.imageUrl && isUNLVCalendar)
+                              ? "object-contain p-6"
+                              : "object-cover",
+                          ].join(" ")}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-stone-300 to-stone-200 px-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                          No Event Flyer
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="mt-4 flex min-h-0 flex-1 flex-col">
+                      <h2 className="line-clamp-2 text-lg font-semibold leading-tight text-stone-950">
+                        {isRebelSports && item.sport ? `${item.sport}: ${item.name}` : item.name}
+                      </h2>
+                      {!isRebelSports ? (
+                        <p className="mt-3 line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-stone-600">
+                          {item.description || item.summary || (isInvolvementCenter && item.organization ? `Hosted by ${item.organization}.` : "Event details are available from the source.")}
+                        </p>
+                      ) : null}
+
+                      <div className={`${isRebelSports ? "pt-2" : "pt-4"} mt-auto grid grid-rows-[1.25rem_1.25rem_1.25rem] gap-1.5 text-sm text-stone-700`}>
+                        <p className="truncate font-bold text-stone-900">{formatRelativeDatasetCardDate(item.startDate)}</p>
+                        <p className="truncate">{formatDatasetTimeRange(item)}</p>
+                        <p className="truncate">{item.location || "No Location Specified"}</p>
+                      </div>
+                    </div>
+                  </button>
                 ) : (
                   <button
                     key={`${dataset.key}-${item.name}-${index}`}
@@ -2937,33 +3041,16 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         </div>
                       </div>
                       {usesSlimEventRows ? (
-                        isInvolvementCenter ? (
-                          <div className="flex w-full aspect-[5/3] items-center justify-center overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-200 sm:max-w-[15rem] sm:basis-[15rem] sm:shrink">
-                            {item.imageUrl ? (
-                              <img
-                                src={item.imageUrl}
-                                alt={item.name ? `${item.name} event artwork` : "Event artwork"}
-                                className="h-full w-full object-cover object-center"
-                                loading="lazy"
-                              />
-                            ) : (
-                              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-stone-300 to-stone-200 px-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
-                                No Event Flyer
-                              </div>
-                            )}
-                          </div>
-                        ) : (
-                          <div className="min-w-0 text-left sm:max-w-[16rem] sm:text-right">
-                            <p className="text-sm font-bold text-stone-700 sm:text-base">
-                              {formatEventDate(item)}
+                        <div className="min-w-0 text-left sm:max-w-[16rem] sm:text-right">
+                          <p className="text-sm font-bold text-stone-700 sm:text-base">
+                            {formatEventDate(item)}
+                          </p>
+                          {item.location ? (
+                            <p className="mt-1 line-clamp-2 break-words text-sm text-stone-700">
+                              {item.location}
                             </p>
-                            {item.location ? (
-                              <p className="mt-1 line-clamp-2 break-words text-sm text-stone-700">
-                                {item.location}
-                              </p>
-                            ) : null}
-                          </div>
-                        )
+                          ) : null}
+                        </div>
                       ) : null}
                     </div>
                   </button>
@@ -3063,6 +3150,20 @@ function DatasetsLandingPage({ datasets, newsFeeds, campusWideEvents, careerEven
                   {source.sourceUrl}
                 </a>
               </div>
+
+              {source.apiUrl ? (
+                <div>
+                  <p className="font-semibold text-stone-700">Source API</p>
+                  <a
+                    href={source.apiUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-1 block break-all text-[#8b0000] transition hover:text-[#6b0000]"
+                  >
+                    {source.apiUrl}
+                  </a>
+                </div>
+              ) : null}
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">

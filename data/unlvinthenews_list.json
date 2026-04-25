@@ -1,110 +1,83 @@
 [
   {
-    "name": "Housing summit addresses Las Vegas Valley shortage",
+    "name": "Alpha Kappa Alpha sorority to host Women\u2019s Wellness Summit next Friday",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T12:46:05-07:00",
+    "summary": "Organizers said mental health will be a key focus of the summit.",
+    "link": "https://news3lv.com/news/local/alpha-kappa-alpha-sorority-to-host-womens-wellness-summit-next-friday"
+  },
+  {
+    "name": "A visit to the Las Vegas Sphere shows what's in store for Abu Dhabi",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T12:25:49-07:00",
+    "summary": "From emojis winking on the skyline to concerts surrounding audiences in light, sound and motion, Sphere could redefine live entertainment in the UAE",
+    "link": "https://www.thenationalnews.com/news/us/2026/04/24/a-visit-to-the-las-vegas-sphere-shows-whats-in-store-for-abu-dhabi/"
+  },
+  {
+    "name": "\u2018Long overdue\u2019 anti-money laundering rules adopted by Nevada casino regulators",
+    "category": "Las Vegas Review Journal",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T09:40:04-07:00",
+    "summary": "Nevada gaming regulators are enhancing anti-money laundering practices inside casinos, as the state looks to play a more hands-on role in an area that has long been the domain of federal enforcement, following several recent high-profile violations by some of the biggest Las Vegas operators.",
+    "link": "https://www.reviewjournal.com/business/long-overdue-anti-money-laundering-rules-adopted-by-nevada-casino-regulators-3792017/"
+  },
+  {
+    "name": "UNLV Rebel Girls & Company honored for back-to-back national titles during county meeting",
+    "category": "K.V.V.U. T.V. Fox 5",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T09:31:45-07:00",
+    "summary": "The co-ed team notches its seventh national title since 2013.",
+    "link": "https://www.fox5vegas.com/2026/04/24/unlv-rebel-girls-company-honored-back-to-back-national-titles-during-county-meeting/"
+  },
+  {
+    "name": "Catch future Las Vegas Strip musicians at this UNLV jazz show",
+    "category": "Las Vegas Review Journal",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T09:20:26-07:00",
+    "summary": "The Spring Jazz Festival approaches. The three-night celebration of jazz, featuring UNLV\u2019s top student ensembles and guest artists, returns to Ham Hall from Monday through Wednesday.",
+    "link": "https://neon.reviewjournal.com/kats/catch-future-las-vegas-strip-musicians-at-this-unlv-jazz-show-3333844/"
+  },
+  {
+    "name": "Clark County commissioner moves money around multiple PACs to influence race to replace him",
+    "category": "Nevada Current",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T09:15:18-07:00",
+    "summary": "Outgoing Clark County Commissioner Justin Jones has funneled thousands of dollars through various political action committees in support of his chosen successor.",
+    "link": "https://nevadacurrent.com/2026/04/24/clark-county-commissioner-moves-money-around-multiple-pacs-to-influence-race-to-replace-him/"
+  },
+  {
+    "name": "The best way to sleep on a plane, according to science",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T08:33:45-07:00",
+    "summary": "An eye mask, earplugs, and a same-day workout can all increase your odds.",
+    "link": "https://www.popsci.com/science/best-way-to-sleep-on-plane/"
+  },
+  {
+    "name": "UNLV preschool expanding to add four new classrooms and enroll 80 more students",
+    "category": "K.T.N.V. T.V. ABC 13",
+    "section": "In The News",
+    "publishedDate": "2026-04-24",
+    "publishedAt": "2026-04-24T06:10:32-07:00",
+    "summary": "The Lynn Bennett Early Childhood Education Center on the UNLV campus is expanding. They're expected to be completed in the summer with a potential opening in the fall. More children also means more staff, giving more UNLV students an opportunity to work in a field they may want to pursue.",
+    "link": "https://www.ktnv.com/news/unlv-preschool-expanding-to-add-four-new-classrooms-and-enroll-80-more-students"
+  },
+  {
+    "name": "Vintage fashion trend offers sustainable alternative to fast fashion in Las Vegas",
     "category": "K.V.V.U. T.V. Fox 5",
     "section": "In The News",
     "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T16:45:09-07:00",
-    "summary": "Experts predict nearly 400,000 people will move to the Las Vegas Valley over the next 10 years. Gov. Joe Lombardo joined developers, realtors, policymakers and researchers today to look for ways to build homes for all of them, while confronting the reality that the Valley lacks affordable housing for all the people who live here right now.",
-    "link": "https://www.fox5vegas.com/2026/04/23/housing-summit-addresses-las-vegas-valley-shortage/"
-  },
-  {
-    "name": "U.S. Anesthesia Partners Fights to Keep Nevada\u2019s Doctors Home on Medicine\u2019s Biggest Day",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T15:34:13-07:00",
-    "summary": "On the morning of March 20, medical students at UNLV\u2019s Kirk Kerkorian School of Medicine gathered with their families in a room buzzing with nervous energy. At noon Eastern time, along with tens of thousands of peers at medical schools across the country, they tore open envelopes to learn where they would spend the next three to seven years of their lives \u2014 and, in many cases, build their entire careers.",
-    "link": "https://executives-edge.com/u-s-anesthesia-partners-fights-to-keep-nevadas-doctors-home-on-medicines-biggest-day/"
-  },
-  {
-    "name": "Nevada could reap tax benefits from reclassification of medical marijuana",
-    "category": "The Nevada Independent",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T14:18:35-07:00",
-    "summary": "Trump\u2019s order shifting state-licensed cannabis to a less-dangerous drug category provides a tax break for operators and eases research barriers.",
-    "link": "https://thenevadaindependent.com/article/nevada-could-reap-tax-benefits-from-reclassification-of-medical-marijuana"
-  },
-  {
-    "name": "UNLV film school undergoes rebranding",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T11:33:59-07:00",
-    "summary": "UNLV's film school has a new name. The university's provost approved the renaming of the Department of Film into the School of Cinematic Arts, or UNLV CinArts. This change is meant to cover the full spectrum of creative and technical disciplines available for students. No changes will be made to the school's structure or administration.",
-    "link": "https://news3lv.com/news/local/unlv-film-school-rebranding-cinematic-arts-las-vegas-university-nevada-movies-television"
-  },
-  {
-    "name": "See \"Giants Have Us in Their Books: Six Children\u2019s Plays for Adults\" at UNLV",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T11:09:38-07:00",
-    "summary": "Nevada Conservatory Theatre is closing out its 25th anniversary season with a bold and imaginative production. It runs May 1st through 10th at the Judy Bayley Theatre. We learned on ARC Las Vegas the creator got inspiration from their child. The series itself though is made for adults because it touches on more difficult life content like curse words, hate speech, war and death.",
-    "link": "https://news3lv.com/news/arc/see-giants-have-us-in-their-bookssix-childrens-plays-for-adultsat-unlv"
-  },
-  {
-    "name": "UNLV doctor deciphers why publication of Covid-19 vaccine study was nixed",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T11:04:40-07:00",
-    "summary": "A study examining whether the Covid-19 vaccine was keeping adults from becoming sick enough to have to go to the hospital is no more.",
-    "link": "https://news3lv.com/news/arc/unlv-doctor-deciphers-why-publication-of-covid-19-vaccine-study-was-nixed"
-  },
-  {
-    "name": "When Movie Theaters Tried to Ban Popcorn",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T10:52:22-07:00",
-    "summary": "Today, popcorn and the movies are so inextricably linked that it\u2019s hard to imagine a time when the buttery, salty snack wasn\u2019t served at a concession stand in the lobby. But that was actually the case for the first few decades of the movie theater business.",
-    "link": "https://www.history.com/articles/why-popcorn-is-movie-snack"
-  },
-  {
-    "name": "Bellagio to host UNLV's 19th International Conference on Gambling & Risk Taking",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-04-23",
-    "publishedAt": "2026-04-23T09:45:08-07:00",
-    "summary": "Hosted by the UNLV International Gaming Institute, the event will bring together researchers, policymakers, and industry professionals to examine developments in gambling, gaming, and risk behavior.",
-    "link": "https://www.yogonet.com/international/news/2026/04/23/118686-bellagio-to-host-unlv-39s-19th-international-conference-on-gambling-risk-taking"
-  },
-  {
-    "name": "Homeless, jobs, \u2018no scandal:\u2019 Las Vegas mayor speaks",
-    "category": "K.L.A.S. T.V. 8 News Now",
-    "section": "In The News",
-    "publishedDate": "2026-04-22",
-    "publishedAt": "2026-04-22T23:14:48-07:00",
-    "summary": "Berkley touted a public-private partnership for the Downtown Las Vegas area involving ManiFlex, UNLV, and CSN to create an advanced manufacturing hub located at 1700 Industrial Road.",
-    "link": "https://www.8newsnow.com/news/local-news/homeless-jobs-no-scandal-vegas-mayor-speaks/"
-  },
-  {
-    "name": "UNLV Newsmakers 2026: March",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "",
-    "publishedAt": "",
-    "summary": "",
-    "link": "https://www.unlv.edu/news/article/unlv-newsmakers-2026-march"
-  },
-  {
-    "name": "UNLV Newsmakers 2026: February",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "",
-    "publishedAt": "",
-    "summary": "",
-    "link": "https://www.unlv.edu/news/article/unlv-newsmakers-2026-february"
-  },
-  {
-    "name": "UNLV Newsmakers 2026: January",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "",
-    "publishedAt": "",
-    "summary": "",
-    "link": "https://www.unlv.edu/news/article/unlv-newsmakers-2026-january"
+    "publishedAt": "2026-04-23T21:58:04-07:00",
+    "summary": "Fast fashion may be keeping closets full, but it comes with a hidden cost. From water pollution to mountains of waste, globally fast fashion generates roughly 92 million tons of textile waste annually, according to the UN Environmental Program. Experts warn that the way people shop is taking a serious toll on the planet. In the valley, vintage shopping is emerging as a sustainable alternative.",
+    "link": "https://www.fox5vegas.com/2026/04/24/vintage-fashion-trend-offers-sustainable-alternative-fast-fashion-las-vegas/"
   }
 ]
