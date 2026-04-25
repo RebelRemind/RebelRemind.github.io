@@ -119,6 +119,13 @@ const ALL_SPORTS = [
   "Women's Volleyball",
 ];
 
+const MEN_SPORT_FILTERS = ALL_SPORTS.filter((sport) => !sport.startsWith("Women's") && sport !== "Softball");
+const WOMEN_SPORT_FILTERS = [
+  "Softball",
+  "Swimming & Diving",
+  ...ALL_SPORTS.filter((sport) => sport.startsWith("Women's")),
+];
+
 const SPORT_IMAGE_BY_KEYWORD = [
   ["Swimming & Diving", "/images/sports/swimming_diving.png"],
   ["Cross Country", "/images/sports/cross_country.png"],
@@ -1257,23 +1264,38 @@ function isUpcomingEvent(item) {
   return effectiveEnd.getTime() >= Date.now();
 }
 
-function formatAssignmentDate(value) {
+function getAssignmentDateDetails(value) {
   if (!value) {
-    return "No due date";
+    return { label: "No due date", isUrgent: false };
   }
 
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) {
-    return value;
+    return { label: value, isUrgent: false };
   }
 
-  return parsed.toLocaleString(undefined, {
-    weekday: "short",
+  const today = new Date();
+  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const dueStart = new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
+  const dayDifference = Math.round((dueStart.getTime() - todayStart.getTime()) / (24 * 60 * 60 * 1000));
+  const dayLabel = dayDifference === 0
+    ? "Today"
+    : dayDifference === 1
+      ? "Tomorrow"
+      : parsed.toLocaleDateString(undefined, { weekday: "short" });
+  const dateLabel = parsed.toLocaleDateString(undefined, {
     month: "short",
     day: "numeric",
+  });
+  const timeLabel = parsed.toLocaleTimeString(undefined, {
     hour: "numeric",
     minute: "2-digit",
-  });
+  }).replace(/\s/g, "").toLowerCase();
+
+  return {
+    label: `${dayLabel}, ${dateLabel}, ${timeLabel}`,
+    isUrgent: dayDifference === 0 || dayDifference === 1,
+  };
 }
 
 function formatUserEventDate(event) {
@@ -1639,9 +1661,10 @@ function handleHomeSectionLinkClick(event, sectionId) {
   }
 }
 
-function Navbar({ visible, onCloseCalendarNavbar }) {
+function Navbar({ visible, onDismiss, bridgeStatus }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const touchStartYRef = useRef(null);
   const datasetKey = location.pathname.startsWith("/datasets/")
     ? normalizeDatasetKey(location.pathname.split("/").pop())
     : null;
@@ -1660,6 +1683,7 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
           ? "Datasets"
           : "Dataset Explorer";
   const showHomeActions = isHomePage;
+  const showDownloadAction = bridgeStatus !== "connected";
 
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -1669,8 +1693,28 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function handleTouchStart(event) {
+    touchStartYRef.current = event.touches[0]?.clientY ?? null;
+  }
+
+  function handleTouchEnd(event) {
+    const startY = touchStartYRef.current;
+    touchStartYRef.current = null;
+
+    if (startY === null) {
+      return;
+    }
+
+    const endY = event.changedTouches[0]?.clientY ?? startY;
+    if (startY - endY > 30) {
+      onDismiss();
+    }
+  }
+
   return (
     <nav
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       className={[
         "fixed inset-x-0 top-0 z-40 transition duration-300",
         visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none",
@@ -1679,12 +1723,20 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
       <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
         <div
           className={[
-            "rounded-[1.5rem] px-4 py-3 shadow-2xl backdrop-blur-md",
+            "relative rounded-[1.5rem] px-4 py-3 shadow-2xl backdrop-blur-md",
             showHomeActions
               ? "border border-white/25 bg-black/82"
               : "border border-white/20 bg-black/65",
           ].join(" ")}
         >
+          <button
+            type="button"
+            onClick={onDismiss}
+            className="absolute bottom-1 left-1/2 z-10 flex h-6 w-10 -translate-x-1/2 items-center justify-center text-white/70 transition hover:text-white"
+            aria-label="Hide banner"
+          >
+            <span className="block h-3 w-3 rotate-45 border-l-2 border-t-2 border-current" aria-hidden="true" />
+          </button>
           <div className="flex items-center justify-between gap-3">
             <button
               type="button"
@@ -1704,36 +1756,34 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
                 <p className="text-xl font-black text-white sm:text-2xl">{activeDatasetLabel}</p>
               </div>
             ) : isCalendarPage ? (
-              <button
-                type="button"
-                onClick={onCloseCalendarNavbar}
-                className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
-                aria-label="Close navbar"
-              >
-                X
-              </button>
+              <div className="text-right">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/60">View</p>
+                <p className="text-xl font-black text-white sm:text-2xl">Calendar View</p>
+              </div>
             ) : showHomeActions ? (
               <>
                 <div className="hidden items-center gap-3 md:flex">
-                  <Link
-                    to="/calendar"
-                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
-                  >
-                    Calendar
-                  </Link>
                   <a
                     href="/datasets"
                     className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
                   >
-                    Datasets
+                    All Datasets
                   </a>
-                  <button
-                    type="button"
-                    onClick={openDownloadModal}
-                    className="rounded-full bg-[#bb0000] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
+                  <Link
+                    to="/calendar"
+                    className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20"
                   >
-                    Download RebelRemind
-                  </button>
+                    Calendar View
+                  </Link>
+                  {showDownloadAction ? (
+                    <button
+                      type="button"
+                      onClick={openDownloadModal}
+                      className="rounded-full bg-[#bb0000] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#bb0000]/30 transition hover:bg-[#980000]"
+                    >
+                      Download RebelRemind
+                    </button>
+                  ) : null}
                 </div>
                 <button
                   type="button"
@@ -1764,25 +1814,27 @@ function Navbar({ visible, onCloseCalendarNavbar }) {
             >
               <div className="min-h-0">
                 <div className="flex flex-col gap-3 border-t border-white/10 pt-4">
-                  <Link
-                    to="/calendar"
-                    className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
-                  >
-                    Calendar
-                  </Link>
                   <a
                     href="/datasets"
                     className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
                   >
-                    Datasets
+                    All Datasets
                   </a>
-                  <button
-                    type="button"
-                    onClick={openDownloadModal}
-                    className="rounded-2xl bg-[#bb0000] px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-[#980000]"
+                  <Link
+                    to="/calendar"
+                    className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
                   >
-                    Download RebelRemind
-                  </button>
+                    Calendar View
+                  </Link>
+                  {showDownloadAction ? (
+                    <button
+                      type="button"
+                      onClick={openDownloadModal}
+                      className="rounded-2xl bg-[#bb0000] px-4 py-3 text-left text-sm font-semibold text-white transition hover:bg-[#980000]"
+                    >
+                      Download RebelRemind
+                    </button>
+                  ) : null}
                 </div>
               </div>
             </div>
@@ -1907,7 +1959,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                   })
                 ) : (
                   <div className="rounded-[1.25rem] border border-dashed border-white/20 bg-white/5 px-4 py-6 text-sm text-white/75">
-                    No upcoming custom events are synced right now.
+                    No upcoming custom events found.
                   </div>
                 )}
               </div>
@@ -1918,23 +1970,29 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
               <aside className="flex-1 rounded-[1.75rem] border border-black/10 bg-stone-100/90 p-6 text-stone-900 shadow-xl">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
                 <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
-                <div className="mt-5 max-h-[24rem] space-y-3 overflow-y-auto pr-1">
+                <div className="mt-5 max-h-[16rem] space-y-3 overflow-y-auto pr-1">
                   {bridgeState?.upcomingAssignments?.length ? (
-                    bridgeState.upcomingAssignments.map((assignment) => (
-                      <a
-                        key={assignment.id}
-                        href={assignment.link || undefined}
-                        target={assignment.link ? "_blank" : undefined}
-                        rel={assignment.link ? "noreferrer" : undefined}
-                        className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-                      >
-                        <p className="font-semibold text-stone-900">{assignment.title}</p>
-                        {assignment.courseName ? (
-                          <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
-                        ) : null}
-                        <p className="mt-2 text-sm text-stone-700">{formatAssignmentDate(assignment.dueAt)}</p>
-                      </a>
-                    ))
+                    bridgeState.upcomingAssignments.map((assignment) => {
+                      const dueDate = getAssignmentDateDetails(assignment.dueAt);
+
+                      return (
+                        <a
+                          key={assignment.id}
+                          href={assignment.link || undefined}
+                          target={assignment.link ? "_blank" : undefined}
+                          rel={assignment.link ? "noreferrer" : undefined}
+                          className="block rounded-[1.25rem] border border-stone-200 bg-white px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                        >
+                          <p className="font-semibold text-stone-900">{assignment.title}</p>
+                          {assignment.courseName ? (
+                            <p className="mt-1 text-sm text-stone-600">{assignment.courseName}</p>
+                          ) : null}
+                          <p className={`mt-2 text-sm ${dueDate.isUrgent ? "font-bold text-stone-900" : "text-stone-700"}`}>
+                            {dueDate.label}
+                          </p>
+                        </a>
+                      );
+                    })
                   ) : (
                     <div className="rounded-[1.25rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
                       No upcoming Canvas assignments are available right now.
@@ -1951,17 +2009,16 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 </p> */}
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <Link
-                    to="/#dataset-grid"
-                    onClick={(event) => handleHomeSectionLinkClick(event, "dataset-grid")}
+                    to="/datasets"
                     className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
                   >
-                    Upcoming Events
+                    All Datasets
                   </Link>
                   <Link
                     to="/calendar"
-                    className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+                    className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-base font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
                   >
-                    View Calendar
+                    Calendar View
                   </Link>
                 </div>
               </aside>
@@ -1997,17 +2054,16 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:mt-auto">
               <Link
-                to="/#dataset-grid"
-                onClick={(event) => handleHomeSectionLinkClick(event, "dataset-grid")}
+                to="/datasets"
                 className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
               >
-                Upcoming Events
+                All Datasets
               </Link>
               <Link
                 to="/calendar"
-                className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
+                className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-base font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
               >
-                View Calendar
+                Calendar View
               </Link>
             </div>
           </aside>
@@ -2437,7 +2493,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
   const isUNLVCalendar = dataset?.key === "unlvCalendar";
   const isInvolvementCenter = dataset?.key === "involvementCenter";
   const isRebelSports = dataset?.key === "rebelSports";
-  const supportsViewAllModal = isInvolvementCenter || isRebelSports;
+  const supportsViewAllModal = isInvolvementCenter;
   const usesPhotoEventCards = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const supportsFilters = isUNLVCalendar || isInvolvementCenter || isRebelSports;
   const hasSync = bridgeStatus === "connected";
@@ -2517,6 +2573,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
 
   const activeFilters =
     supportsFilters && hasSync && useSyncedPreferences ? syncedFilters : manualFilters;
+  const shouldFilterItems =
+    supportsFilters && (hasSync && useSyncedPreferences ? true : activeFilters.length > 0);
   const allManualFiltersSelected =
     supportsFilters && availableFilters.length > 0 && manualFilters.length === availableFilters.length;
 
@@ -2541,7 +2599,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
       .slice(0, 8)
     : availableFilters;
 
-  const items = supportsFilters
+  const items = shouldFilterItems
     ? activeFilters.length
       ? allItems.filter((item) => {
         const field = isUNLVCalendar
@@ -2674,7 +2732,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">Men's Sports</p>
                         <div className="flex flex-wrap gap-2">
                           {availableFilters
-                            .filter((sport) => !sport.startsWith("Women's"))
+                            .filter((sport) => MEN_SPORT_FILTERS.includes(sport))
                             .map((sport) => (
                               <FilterChip
                                 key={sport}
@@ -2690,7 +2748,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">Women's Sports</p>
                         <div className="flex flex-wrap gap-2">
                           {availableFilters
-                            .filter((sport) => sport.startsWith("Women's"))
+                            .filter((sport) => WOMEN_SPORT_FILTERS.includes(sport))
                             .map((sport) => (
                               <FilterChip
                                 key={sport}
@@ -2920,13 +2978,15 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                     ) : null}
 
                     <div className={`${isRebelSports ? "" : "mt-4"} flex aspect-[5/3] w-full items-center justify-center overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-200`}>
-                      {item.imageUrl || isUNLVCalendar || isRebelSports ? (
+                      {item.imageUrl || isUNLVCalendar || isInvolvementCenter || isRebelSports ? (
                         <img
-                          src={item.imageUrl || (isRebelSports ? getSportImageUrl(item.sport) : "/images/UNLV_Logo.png")}
+                          src={item.imageUrl || (isRebelSports ? getSportImageUrl(item.sport) : isInvolvementCenter ? "/images/IC_default.png" : "/images/UNLV_Logo.png")}
                           alt={item.name ? `${item.name} event artwork` : "Event artwork"}
                           className={[
                             "h-full w-full object-center",
-                            isRebelSports || item.imageUrl === "/images/UNLV_Logo.png" || (!item.imageUrl && isUNLVCalendar)
+                            isRebelSports
+                            || item.imageUrl === "/images/UNLV_Logo.png"
+                            || (!item.imageUrl && isUNLVCalendar)
                               ? "object-contain p-6"
                               : "object-cover",
                           ].join(" ")}
@@ -3057,7 +3117,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                 )
               ))
             ) : (
-              <div className="rounded-[1.5rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+              <div className="col-span-full rounded-[1.5rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
                 No events match the current filters.
               </div>
             )}
@@ -3294,6 +3354,9 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const selectedCalendarSupportsFilters = ["extensionEvents", "unlvCalendar", "involvementCenter", "rebelSports"].includes(selectedCalendarKey);
   const selectedCalendarUsesSyncedFilters = ["unlvCalendar", "involvementCenter", "rebelSports"].includes(selectedCalendarKey);
   const hasSyncedCalendarFilters = bridgeStatus === "connected" && selectedCalendarUsesSyncedFilters;
+  const selectedCalendarDatasetRoute = DATA_FILE_MAP[selectedCalendarKey]
+    ? getDatasetRoute(selectedCalendarKey)
+    : "/datasets";
 
   useEffect(() => {
     if (requestedCalendarSource && calendarOptions.some((option) => option.key === requestedCalendarSource)) {
@@ -3388,6 +3451,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const activeCalendarFilters = hasSyncedCalendarFilters && useSyncedCalendarFilters
     ? syncedCalendarFilters
     : calendarManualFilters;
+  const supportsCalendarViewAllModal = selectedCalendarKey === "involvementCenter";
   const visibleCalendarManualFilters = selectedCalendarKey === "involvementCenter"
     ? availableCalendarFilters
       .filter((filter) => !calendarManualFilters.includes(filter))
@@ -3609,21 +3673,27 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
 
   return (
     <section className="space-y-5">
-      <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
-        <div className="flex flex-col gap-2">
-          <div className="flex flex-col gap-2">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Calendar</p>
-            <h1 className="font-serif text-4xl">See campus and synced events on one calendar.</h1>
-            <p className="mt-2 max-w-3xl text-white/80">
-              This view combines our datasets with your synced Rebel Remind events when the extension is connected.
-            </p>
-            <Link
-              to="/"
-              className={`self-end ${BACK_HOME_BUTTON_CLASS}`}
-            >
-              Back Home
-            </Link>
-          </div>
+      <div className="flex flex-wrap items-center justify-between gap-4 rounded-[2rem] border border-white/20 bg-black/20 p-6 text-white shadow-xl backdrop-blur-md">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Calendar</p>
+          <h1 className="mt-2 font-serif text-4xl">See campus and synced events on one calendar.</h1>
+          <p className="mt-2 max-w-3xl text-white/80">
+            This view combines our datasets with your synced Rebel Remind events when the extension is connected.
+          </p>
+        </div>
+        <div className="flex flex-col items-stretch gap-3">
+          <Link
+            to={selectedCalendarDatasetRoute}
+            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
+          >
+            Dataset Explorer
+          </Link>
+          <Link
+            to="/"
+            className={BACK_HOME_BUTTON_CLASS}
+          >
+            Back Home
+          </Link>
         </div>
       </div>
 
@@ -3732,7 +3802,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Men's Sports</p>
                             <div className="flex flex-wrap gap-2">
                               {availableCalendarFilters
-                                .filter((sport) => !sport.startsWith("Women's"))
+                                .filter((sport) => MEN_SPORT_FILTERS.includes(sport))
                                 .map((sport) => (
                                   <FilterChip
                                     key={sport}
@@ -3748,7 +3818,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/55">Women's Sports</p>
                             <div className="flex flex-wrap gap-2">
                               {availableCalendarFilters
-                                .filter((sport) => sport.startsWith("Women's"))
+                                .filter((sport) => WOMEN_SPORT_FILTERS.includes(sport))
                                 .map((sport) => (
                                   <FilterChip
                                     key={sport}
@@ -3809,7 +3879,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                           >
                             {calendarManualFilters.length === availableCalendarFilters.length ? "Clear All" : "Select All"}
                           </button>
-                        ) : (
+                        ) : supportsCalendarViewAllModal ? (
                           <button
                             type="button"
                             onClick={() => setIsCalendarFilterModalOpen(true)}
@@ -3817,7 +3887,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                           >
                             View All
                           </button>
-                        )}
+                        ) : null}
                         {calendarManualFilters.length && selectedCalendarKey !== "extensionEvents" ? (
                           <button
                             type="button"
@@ -3837,7 +3907,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
         </div>
       </div>
 
-      {selectedCalendarSupportsFilters ? (
+      {selectedCalendarSupportsFilters && supportsCalendarViewAllModal ? (
         <ViewAllFiltersModal
           open={isCalendarFilterModalOpen}
           onClose={() => setIsCalendarFilterModalOpen(false)}
@@ -4637,7 +4707,7 @@ function BrowserWarningModal({ open, onClose }) {
   );
 }
 
-function Footer({ onOpenBridgeInfo }) {
+function Footer({ onOpenBridgeInfo, onOpenDownload, showDownloadAction = false }) {
   return (
     <footer className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-5 text-white/80 shadow-xl backdrop-blur-md">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -4661,6 +4731,15 @@ function Footer({ onOpenBridgeInfo }) {
           <Link to="/contributors" className="transition hover:text-white">
             Contributors
           </Link>
+          {showDownloadAction ? (
+            <button
+              type="button"
+              onClick={onOpenDownload}
+              className="rounded-full bg-[#bb0000] px-4 py-2 font-semibold text-white shadow-lg shadow-[#bb0000]/25 transition hover:bg-[#980000]"
+            >
+              Download Rebel Remind
+            </button>
+          ) : null}
         </div>
       </div>
     </footer>
@@ -4679,7 +4758,7 @@ export default function App() {
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
   const [isBrowserWarningModalOpen, setIsBrowserWarningModalOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
-  const [calendarNavbarDismissed, setCalendarNavbarDismissed] = useState(false);
+  const [navbarDismissed, setNavbarDismissed] = useState(false);
   const theme = bridgeState?.theme || DEFAULT_THEME;
   const location = useLocation();
 
@@ -4702,20 +4781,14 @@ export default function App() {
   useEffect(() => {
     function handleScroll() {
       const scrollY = window.scrollY;
-      const isCalendarPage = location.pathname === "/calendar" || location.pathname.startsWith("/calendar/");
-
-      if (!isCalendarPage) {
-        setShowNavbar(scrollY > 120);
-        return;
-      }
 
       if (scrollY <= 0) {
-        setCalendarNavbarDismissed(false);
+        setNavbarDismissed(false);
         setShowNavbar(false);
         return;
       }
 
-      if (calendarNavbarDismissed) {
+      if (navbarDismissed) {
         setShowNavbar(false);
         return;
       }
@@ -4726,22 +4799,17 @@ export default function App() {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [calendarNavbarDismissed, location.pathname]);
+  }, [navbarDismissed, location.pathname]);
 
   useEffect(() => {
-    const isCalendarPage = location.pathname === "/calendar" || location.pathname.startsWith("/calendar/");
-    if (!isCalendarPage) {
-      setCalendarNavbarDismissed(false);
-      setShowNavbar(window.scrollY > 120);
-      return;
-    }
+    setNavbarDismissed(false);
 
     if (window.scrollY <= 0) {
       setShowNavbar(false);
-    } else if (!calendarNavbarDismissed) {
+    } else {
       setShowNavbar(window.scrollY > 120);
     }
-  }, [location.pathname, calendarNavbarDismissed]);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (!isBridgeSupportedBrowser()) {
@@ -4922,11 +4990,10 @@ export default function App() {
     >
       <Navbar
         visible={showNavbar}
-        onCloseCalendarNavbar={() => {
-          if (location.pathname === "/calendar" || location.pathname.startsWith("/calendar/")) {
-            setCalendarNavbarDismissed(true);
-            setShowNavbar(false);
-          }
+        bridgeStatus={bridgeStatus}
+        onDismiss={() => {
+          setNavbarDismissed(true);
+          setShowNavbar(false);
         }}
       />
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col gap-8 px-4 py-6 sm:px-6 lg:px-8">
@@ -4965,7 +5032,11 @@ export default function App() {
             <Route path="/contributors" element={<DevelopersPage />} />
           </Routes>
         </div>
-        <Footer onOpenBridgeInfo={() => setIsBridgeModalOpen(true)} />
+        <Footer
+          onOpenBridgeInfo={() => setIsBridgeModalOpen(true)}
+          onOpenDownload={openDownloadModal}
+          showDownloadAction={bridgeStatus === "connected"}
+        />
       </div>
       <BridgeInfoModal open={isBridgeModalOpen} onClose={() => setIsBridgeModalOpen(false)} />
       <DownloadModal open={isDownloadModalOpen} onClose={() => setIsDownloadModalOpen(false)} />
