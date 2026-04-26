@@ -1,15 +1,5 @@
 [
   {
-    "name": "Weber State",
-    "startDate": "2026-01-25",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-25",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/1/25/mens-tennis-rebs-hold-on-to-complete-weekend-sweep.aspx"
-  },
-  {
     "name": "Southwestern Invitational",
     "startDate": "2026-01-26",
     "startTime": "(ALL DAY)",
@@ -2257,7 +2247,7 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-5/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/grand-canyon/boxscore/17726"
   },
   {
     "name": "FINAL - #57 San Diego State",
@@ -2272,12 +2262,12 @@
   {
     "name": "UNR",
     "startDate": "2026-04-25",
-    "startTime": "2:05 PM",
+    "startTime": "2:08 PM",
     "endDate": "2026-04-25",
-    "endTime": "",
+    "endTime": "5:34 PM",
     "location": "Reno, Nev.",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-24/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/unr/boxscore/17779"
   },
   {
     "name": "Grand Canyon",
