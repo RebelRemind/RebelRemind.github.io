@@ -6156,18 +6156,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12291031"
   },
   {
-    "name": "Fellowship & Connection: Friendship, Family, and Society",
-    "startDate": "2026-04-27",
-    "startTime": "1:30 PM",
-    "endDate": "2026-04-27",
-    "endTime": "3:00 PM",
-    "location": "SU 228",
-    "organization": "Student Connection & Engagement",
-    "description": "A guided presentation and discussion examining the relationship, conflict, and overlap between friendship, family, and society. Participants will be invited to share experiences and perspectives in an open dialogue setting. Open to everyone. \ud83d\udcc5 April 27 | 1:30 PM\u20133:00 PM \ud83d\udccd SU 228 RSVP Today!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/93d9bda2-17ea-47b2-8c49-26ba39d537bd9ea0976d-8071-436a-94e5-a75f2b601540.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12246766"
-  },
-  {
     "name": "Global Grads & Friends: End-of-Semester Coffee Meetup \u2615\ud83c\udf0d",
     "startDate": "2026-04-27",
     "startTime": "2:00 PM",
@@ -6192,16 +6180,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12346532"
   },
   {
-    "name": "Yoga Support Group (Care Advocates Recruitment)",
+    "name": "Fellowship & Connection: Friendship, Family, and Society",
     "startDate": "2026-04-27",
-    "startTime": "2:00 PM",
+    "startTime": "1:30 PM",
     "endDate": "2026-04-27",
-    "endTime": "4:00 PM",
-    "location": "Student Union (Room 205)",
-    "organization": "CARE Advocates",
-    "description": "Please join us for our Yoga Support Group session on Monday, April 27th from 2-4pm in SU, Room #205. The CARE Advocate RSO hopes you'll attend to meet fellow students, destress, come together in community, learn a thing a thing or two about yoga, and inquire about becoming an advocate or general member! If you have any questions or concerns regarding this event, please feel free to contact us at: carecenter@unlv.edu",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12263157"
+    "endTime": "3:00 PM",
+    "location": "SU 228",
+    "organization": "Student Connection & Engagement",
+    "description": "A guided presentation and discussion examining the relationship, conflict, and overlap between friendship, family, and society. Participants will be invited to share experiences and perspectives in an open dialogue setting. Open to everyone. \ud83d\udcc5 April 27 | 1:30 PM\u20133:00 PM \ud83d\udccd SU 228 RSVP Today!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/93d9bda2-17ea-47b2-8c49-26ba39d537bd9ea0976d-8071-436a-94e5-a75f2b601540.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12246766"
   },
   {
     "name": "Xiao Jiao Corner",
@@ -6214,6 +6202,18 @@
     "description": "\ud83d\udc3c Xiao Jiao Corner \u2013 Practice Chinese Together \u4e00\u8d77\u7ec3\u4e60\u4e2d\u6587 | All Levels Welcome Looking for a relaxed and supportive space to practice Chinese? Join us at Xiao Jiao Corner, a welcoming environment where students of all proficiency levels can grow their language skills together. Whether you're just starting out or already conversational, this is a low-pressure space to build confidence and improve through practice. \ud83c\udf1f What We\u2019ll Do: Practice speaking Chinese in small groups Practice writing Chinese characters Receive peer feedback Ask questions before turning in assignments Connect with fellow Chinese language learners \ud83d\udc9b Why It Works: No pressure No judgment Learn at your own pace Supportive, student-led environment Come for one session or join us regularly \u2014 we\u2019re here to help each other succeed!",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/a4e92a3d-f091-4262-8e39-e16013db6d87244e77c4-de6f-4931-b378-31ccab31c55e.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12288802"
+  },
+  {
+    "name": "Yoga Support Group (Care Advocates Recruitment)",
+    "startDate": "2026-04-27",
+    "startTime": "2:00 PM",
+    "endDate": "2026-04-27",
+    "endTime": "4:00 PM",
+    "location": "Student Union (Room 205)",
+    "organization": "CARE Advocates",
+    "description": "Please join us for our Yoga Support Group session on Monday, April 27th from 2-4pm in SU, Room #205. The CARE Advocate RSO hopes you'll attend to meet fellow students, destress, come together in community, learn a thing a thing or two about yoga, and inquire about becoming an advocate or general member! If you have any questions or concerns regarding this event, please feel free to contact us at: carecenter@unlv.edu",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12263157"
   },
   {
     "name": "Business Law Panel",
@@ -6288,7 +6288,7 @@
     "link": "https://involvementcenter.unlv.edu/event/12347176"
   },
   {
-    "name": "SORCE Pop Up: Paint & Sip\ud83c\udfa8",
+    "name": "SORCE Pop Up: Water Bottle Paint & Sip\ud83c\udfa8",
     "startDate": "2026-04-28",
     "startTime": "12:00 PM",
     "endDate": "2026-04-28",
@@ -6296,7 +6296,7 @@
     "location": "Scarlet Sage",
     "organization": "Student Organization Resource Center",
     "description": "Paint a water bottle, grab a snack, and bring a friend (or two)! No experience needed. Just good vibes and free supplies. Join us Tuesday, April 28th from 12pm-2pm at Scarlet Sage in the Student Union! *While supplies last*",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a6fc884f-e30e-4e9f-9757-b0623919e1afb055700b-3f96-4770-94fa-d555f82904c2.png?preset=med-w",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/d258d4a4-d341-4b3a-849b-751689e013103b2a0d53-60a3-40b8-a720-f40c123fa5f6.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12291001"
   },
   {
