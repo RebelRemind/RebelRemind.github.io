@@ -1,16 +1,6 @@
 [
   {
     "name": "Southwestern Invitational",
-    "startDate": "2026-01-26",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-01-26",
-    "endTime": "",
-    "location": "Malibu, CA",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/1/26/mens-golf-lewis-leads-rebels-in-second-after-day-one-at-southwestern-invitational.aspx"
-  },
-  {
-    "name": "Southwestern Invitational",
     "startDate": "2026-01-27",
     "startTime": "(ALL DAY)",
     "endDate": "2026-01-27",
@@ -2277,17 +2267,17 @@
     "endTime": "",
     "location": "Phoenix, AZ",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/03/24/unlv-at-grand-canyon-6/?_gl=1*1p4et0w*_up*MQ..*_ga*NTc3NjUxMjI3LjE3NzY4ODczMjY.*_ga_SC44RH1YQ6*czE3NzY4ODczMjYkbzEkZzAkdDE3NzY4ODczMjYkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/grand-canyon/boxscore/17727"
   },
   {
     "name": "UNR",
     "startDate": "2026-04-26",
-    "startTime": "12:05 PM",
+    "startTime": "12:09 PM",
     "endDate": "2026-04-26",
-    "endTime": "",
+    "endTime": "2:42 PM",
     "location": "Reno, Nev.",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-nevada-25/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/unr/boxscore/17780"
   },
   {
     "name": "Utah Tech",
@@ -3638,5 +3628,25 @@
     "location": "Honolulu, Hawaii",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-10-26",
+    "startTime": "12:00 PM",
+    "endDate": "2026-10-26",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Women's Soccer",
+    "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/new-mexico/boxscore/17307"
+  },
+  {
+    "name": "San Jose State",
+    "startDate": "2026-10-26",
+    "startTime": "6:00 PM",
+    "endDate": "2026-10-26",
+    "endTime": "",
+    "location": "Las Vegas, NV Peter Johann Memorial Field",
+    "sport": "Men's Soccer",
+    "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/san-jose-state/boxscore/17348"
   }
 ]
