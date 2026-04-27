@@ -1,7 +1,14 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import StatusPill from "./components/StatusPill";
-import { bridgeTypes, pingExtension, requestExtensionState, subscribeToBridge } from "./lib/bridge";
+import {
+  bridgeTypes,
+  pingExtension,
+  removeCampusEvent,
+  requestExtensionState,
+  saveCampusEvent,
+  subscribeToBridge,
+} from "./lib/bridge";
 
 const DATA_FILES = [
   {
@@ -252,8 +259,14 @@ const DATASET_HOME_COPY = {
   },
 };
 
+const SAVABLE_DATASET_KEYS = new Set(["unlvCalendar", "involvementCenter", "rebelSports"]);
+
 function normalizeDatasetKey(value) {
   return value === "rebelCoverage" ? "rebelSports" : value;
+}
+
+function isSavableDatasetKey(value) {
+  return SAVABLE_DATASET_KEYS.has(normalizeDatasetKey(value));
 }
 
 function getCalendarSourceLink(key) {
@@ -916,19 +929,28 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
       const resolvedTitle = normalizedDatasetKey === "rebelSports" && item.sport && item.name
         ? `${item.sport}: ${item.name}`
         : item.name;
+      const filterValue = normalizedDatasetKey === "unlvCalendar"
+        ? item.category || "Other"
+        : item.organization || item.sport || "";
 
       return {
         id: `${normalizedDatasetKey}-${item.name}-${item.startDate}-${index}`,
         sourceKey: normalizedDatasetKey,
+        name: item.name || resolvedTitle,
         title: resolvedTitle,
         startDate: item.startDate,
         endDate: item.endDate || item.startDate,
         startTime: item.startTime,
         endTime: resolvedEndTime,
         location: item.location || "",
-        description: item.organization || item.category || item.sport || "",
+        organization: item.organization || "",
+        category: item.category || (normalizedDatasetKey === "unlvCalendar" ? "Other" : ""),
+        sport: item.sport || "",
+        description: filterValue,
+        imageUrl: item.imageUrl || "",
         link: item.link || "",
         sourceLabel: datasetLabel,
+        datasetItem: item,
         allDay,
         startsAt: parseCalendarEventDate(item.startDate, item.startTime, allDay),
         endsAt: parseCalendarEventEndDate(item.endDate, resolvedEndTime, item.startDate, item.startTime, allDay),
@@ -1103,7 +1125,7 @@ function layoutTimedWeekEvents(events, weekStart) {
   return { events: layouts, clusters };
 }
 
-function CalendarEventModal({ payload, onClose }) {
+function CalendarEventModal({ payload, onClose, renderSaveAction = null }) {
   if (!payload) {
     return null;
   }
@@ -1132,13 +1154,9 @@ function CalendarEventModal({ payload, onClose }) {
         {isGroup ? (
           <div className="mt-5 max-h-[26rem] space-y-3 overflow-y-auto pr-1">
             {payload.events.map((event) => {
-              const Wrapper = event.link ? "a" : "div";
               return (
-                <Wrapper
+                <article
                   key={event.id}
-                  href={event.link || undefined}
-                  target={event.link ? "_blank" : undefined}
-                  rel={event.link ? "noreferrer" : undefined}
                   className="block rounded-[1.35rem] border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{event.sourceLabel}</p>
@@ -1150,7 +1168,20 @@ function CalendarEventModal({ payload, onClose }) {
                     <p className="mt-1 text-sm text-stone-700"><span className="font-semibold">Location:</span> {event.location}</p>
                   ) : null}
                   {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
-                </Wrapper>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {event.link ? (
+                      <a
+                        href={event.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+                      >
+                        Open Event
+                      </a>
+                    ) : null}
+                    {renderSaveAction ? renderSaveAction(event, "w-full sm:w-auto") : null}
+                  </div>
+                </article>
               );
             })}
           </div>
@@ -1174,6 +1205,7 @@ function CalendarEventModal({ payload, onClose }) {
                 Open Event
               </a>
             ) : null}
+            {renderSaveAction ? renderSaveAction(payload, "w-full sm:w-auto") : null}
           </div>
         )}
       </div>
@@ -1181,7 +1213,7 @@ function CalendarEventModal({ payload, onClose }) {
   );
 }
 
-function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "" }) {
+function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "", renderSaveAction = null }) {
   if (!dataset || !item) {
     return null;
   }
@@ -1224,7 +1256,8 @@ function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "" }
             <p><span className="font-semibold">Category:</span> Other</p>
           ) : null}
           {item.description ? <p><span className="font-semibold">Details:</span> {item.description}</p> : null}
-          {item.link ? (
+          <div className="mt-5 flex flex-wrap gap-3">
+            {item.link ? (
             <a
               href={item.link}
               target="_blank"
@@ -1233,7 +1266,9 @@ function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "" }
             >
               Go to Event
             </a>
-          ) : null}
+            ) : null}
+            {renderSaveAction ? renderSaveAction(item, "w-full sm:w-auto") : null}
+          </div>
         </div>
       </div>
     </div>
@@ -1399,6 +1434,56 @@ function getDatasetRoute(key) {
   return `/datasets/${normalizeDatasetKey(key)}`;
 }
 
+function normalizeSavedEventText(value) {
+  return String(value || "").trim();
+}
+
+function buildSavedCampusEventKey(event) {
+  return [
+    normalizeSavedEventText(event?.name || event?.title).toLowerCase(),
+    normalizeSavedEventText(event?.startDate),
+    normalizeSavedEventText(event?.startTime).toLowerCase(),
+  ].join("::");
+}
+
+function getSavedCampusEventKeys(bridgeState) {
+  const savedEvents = Array.isArray(bridgeState?.savedUNLVEvents) ? bridgeState.savedUNLVEvents : [];
+  return new Set(savedEvents.map(buildSavedCampusEventKey));
+}
+
+function buildSavedCampusEventPayload(sourceKey, item) {
+  const normalizedSourceKey = normalizeDatasetKey(sourceKey || item?.sourceKey || "");
+  if (!isSavableDatasetKey(normalizedSourceKey)) {
+    return null;
+  }
+
+  const rawItem = item?.datasetItem || item || {};
+  const dataset = DATA_FILE_MAP[normalizedSourceKey];
+  const name = rawItem.name || item?.name || item?.title || "";
+  const startDate = rawItem.startDate || item?.startDate || "";
+
+  if (!name || !startDate) {
+    return null;
+  }
+
+  return {
+    name,
+    startDate,
+    startTime: rawItem.startTime || item?.startTime || "",
+    endDate: rawItem.endDate || item?.endDate || rawItem.startDate || item?.startDate || "",
+    endTime: rawItem.endTime || item?.endTime || "",
+    location: rawItem.location || item?.location || "",
+    organization: rawItem.organization || item?.organization || "",
+    category: rawItem.category || item?.category || (normalizedSourceKey === "unlvCalendar" ? "Other" : ""),
+    sport: rawItem.sport || item?.sport || "",
+    description: rawItem.description || item?.description || rawItem.summary || "",
+    imageUrl: rawItem.imageUrl || item?.imageUrl || "",
+    link: rawItem.link || item?.link || "",
+    sourceKey: normalizedSourceKey,
+    sourceLabel: dataset?.label || item?.sourceLabel || "Campus Event",
+  };
+}
+
 function getInitials(label) {
   return String(label || "")
     .trim()
@@ -1442,6 +1527,53 @@ function FilterChip({ active, onClick, children }) {
       ].join(" ")}
     >
       {children}
+    </button>
+  );
+}
+
+function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, className = "" }) {
+  if (!event) {
+    return null;
+  }
+
+  const isConnected = bridgeStatus === "connected";
+  const label = !isConnected
+    ? "Connect Extension to Save"
+    : saved
+      ? "Remove from My Events"
+      : "Add to My Events";
+
+  function handleClick(clickEvent) {
+    clickEvent.preventDefault();
+    clickEvent.stopPropagation();
+
+    if (!isConnected) {
+      openDownloadModal();
+      return;
+    }
+
+    if (saved) {
+      onRemove(event);
+      return;
+    }
+
+    onSave(event);
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={handleClick}
+      className={[
+        "inline-flex min-h-10 items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold transition",
+        saved
+          ? "border-stone-300 bg-white text-stone-800 hover:bg-stone-100"
+          : "border-[#8b0000]/30 bg-[#8b0000] text-white shadow-sm shadow-[#8b0000]/20 hover:bg-[#6b0000]",
+        !isConnected ? "border-stone-300 bg-stone-900 text-white hover:bg-black" : "",
+        className,
+      ].join(" ")}
+    >
+      {label}
     </button>
   );
 }
@@ -2613,12 +2745,40 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
     : allItems;
   const itemCountLabel = `${items.length} ${items.length === 1 ? "Event" : "Events"}`;
   const getOrganizationImageUrl = (name) => organizationDirectoryByName[name]?.imageUrl || "";
+  const savedCampusEventKeys = getSavedCampusEventKeys(bridgeState);
   const renderOrganizationFilter = (name) => (
     <span className="flex min-w-0 max-w-full items-center gap-3">
       <OrganizationAvatar src={getOrganizationImageUrl(name)} name={name} className="h-8 w-8 text-xs" />
       <span className="min-w-0 break-words whitespace-normal">{name}</span>
     </span>
   );
+  const isDatasetEventSaved = (event) => {
+    const key = buildSavedCampusEventKey(event);
+    return savedCampusEventKeys.has(key);
+  };
+  const handleSaveDatasetEvent = (event) => {
+    saveCampusEvent(event);
+  };
+  const handleRemoveDatasetEvent = (event) => {
+    removeCampusEvent(event);
+  };
+  const renderDatasetSaveAction = (item, className = "w-full") => {
+    const event = buildSavedCampusEventPayload(dataset?.key, item);
+    if (!event) {
+      return null;
+    }
+
+    return (
+      <AddToMyEventsButton
+        event={event}
+        bridgeStatus={bridgeStatus}
+        saved={isDatasetEventSaved(event)}
+        onSave={handleSaveDatasetEvent}
+        onRemove={handleRemoveDatasetEvent}
+        className={className}
+      />
+    );
+  };
 
   if (!dataset) {
     return (
@@ -2941,10 +3101,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                     </div>
                   </a>
                 ) : usesPhotoEventCards ? (
-                  <button
+                  <article
                     key={`${dataset.key}-${item.name}-${index}`}
-                    type="button"
-                    onClick={() => setActiveDatasetItem(item)}
                     className={[
                       "flex flex-col overflow-hidden rounded-[1.5rem] border border-black/10 bg-stone-100/90 p-4 text-left text-stone-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl",
                       isRebelSports ? "min-h-[22rem]" : "min-h-[28rem]",
@@ -3015,7 +3173,17 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         <p className="truncate">{item.location || "No Location Specified"}</p>
                       </div>
                     </div>
-                  </button>
+                    <div className="mt-4 grid gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setActiveDatasetItem(item)}
+                        className="inline-flex min-h-10 w-full items-center justify-center rounded-2xl border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+                      >
+                        View Details
+                      </button>
+                      {renderDatasetSaveAction(item)}
+                    </div>
+                  </article>
                 ) : (
                   <button
                     key={`${dataset.key}-${item.name}-${index}`}
@@ -3129,6 +3297,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
         dataset={dataset}
         item={activeDatasetItem}
         organizationImageUrl={getOrganizationImageUrl(activeDatasetItem?.organization)}
+        renderSaveAction={renderDatasetSaveAction}
         onClose={() => setActiveDatasetItem(null)}
       />
     </section>
@@ -3524,6 +3693,34 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     && bridgeStatus === "connected"
     && Boolean(bridgeState?.preferences?.canvasIntegration)
     && isCanvasSourceVisible;
+  const savedCalendarEventKeys = getSavedCampusEventKeys(bridgeState);
+  const isCalendarEventSaved = (event) => {
+    const key = buildSavedCampusEventKey(event);
+    return savedCalendarEventKeys.has(key);
+  };
+  const handleSaveCalendarEvent = (event) => {
+    saveCampusEvent(event);
+  };
+  const handleRemoveCalendarEvent = (event) => {
+    removeCampusEvent(event);
+  };
+  const renderCalendarSaveAction = (event, className = "w-full") => {
+    const payload = buildSavedCampusEventPayload(event?.sourceKey, event);
+    if (!payload) {
+      return null;
+    }
+
+    return (
+      <AddToMyEventsButton
+        event={payload}
+        bridgeStatus={bridgeStatus}
+        saved={isCalendarEventSaved(payload)}
+        onSave={handleSaveCalendarEvent}
+        onRemove={handleRemoveCalendarEvent}
+        className={className}
+      />
+    );
+  };
 
   function toggleCalendarManualFilter(filter) {
     setCalendarManualFilters((current) =>
@@ -4389,11 +4586,8 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
             <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
               {selectedDayEvents.length ? (
                 selectedDayEvents.map((event) => (
-                  <a
+                  <article
                     key={event.id}
-                    href={event.link || undefined}
-                    target={event.link ? "_blank" : undefined}
-                    rel={event.link ? "noreferrer" : undefined}
                     className="block rounded-[1.35rem] border border-stone-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                   >
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{event.sourceLabel}</p>
@@ -4405,7 +4599,20 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                       </p>
                     ) : null}
                     {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
-                  </a>
+                    <div className="mt-4 grid gap-2">
+                      {event.link ? (
+                        <a
+                          href={event.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex min-h-10 items-center justify-center rounded-2xl border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
+                        >
+                          Open Event
+                        </a>
+                      ) : null}
+                      {renderCalendarSaveAction(event)}
+                    </div>
+                  </article>
                 ))
               ) : (
                 <div className="rounded-[1.35rem] border border-dashed border-stone-300 bg-white/70 px-4 py-6 text-sm text-stone-600">
@@ -4417,7 +4624,11 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
         ) : null}
       </div>
 
-      <CalendarEventModal payload={activeModalEvent} onClose={() => setActiveModalEvent(null)} />
+      <CalendarEventModal
+        payload={activeModalEvent}
+        renderSaveAction={renderCalendarSaveAction}
+        onClose={() => setActiveModalEvent(null)}
+      />
     </section>
   );
 }
@@ -4835,6 +5046,19 @@ export default function App() {
         setBridgeError("");
         console.log("Rebel Remind bridge payload:", payload);
         setBridgeState(payload);
+        return;
+      }
+
+      if (type === bridgeTypes.eventActionResult) {
+        if (payload?.success) {
+          setBridgeStatus("connected");
+          setBridgeError("");
+          requestExtensionState();
+          return;
+        }
+
+        setBridgeStatus("connected");
+        setBridgeError(payload?.message || "The event could not be updated in Rebel Remind.");
         return;
       }
 
