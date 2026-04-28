@@ -1,25 +1,5 @@
 [
   {
-    "name": "Southwestern Invitational",
-    "startDate": "2026-01-27",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-01-27",
-    "endTime": "",
-    "location": "Malibu, CA",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/1/27/mens-golf-two-rebels-in-top-20-after-second-round-at-southwestern-invitational.aspx"
-  },
-  {
-    "name": "New Mexico",
-    "startDate": "2026-01-27",
-    "startTime": "8:00 PM",
-    "endDate": "2026-01-27",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/new-mexico/boxscore/17620"
-  },
-  {
     "name": "New Mexico",
     "startDate": "2026-01-28",
     "startTime": "",
@@ -3648,5 +3628,15 @@
     "location": "Las Vegas, NV Peter Johann Memorial Field",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/san-jose-state/boxscore/17348"
+  },
+  {
+    "name": "The Clash at Boulder Creek (Individuals Only)",
+    "startDate": "2026-10-27",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-27",
+    "endTime": "",
+    "location": "Boulder City, NV",
+    "sport": "Women's Golf",
+    "link": ""
   }
 ]
