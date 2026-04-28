@@ -334,5 +334,181 @@
     "endDate": "2026-04-13",
     "endTime": "",
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+  },
+  {
+    "name": "Study Week Begins",
+    "startDate": "2026-05-04",
+    "startTime": "",
+    "endDate": "2026-05-04",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/study-week-begins-8"
+  },
+  {
+    "name": "Instruction Ends",
+    "startDate": "2026-05-09",
+    "startTime": "",
+    "endDate": "2026-05-09",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/instruction-ends-15"
+  },
+  {
+    "name": "Final Examinations Begin",
+    "startDate": "2026-05-11",
+    "startTime": "",
+    "endDate": "2026-05-11",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/final-examinations-begin-8"
+  },
+  {
+    "name": "Spring 2026 Commencement: Graduate Degree Candidates",
+    "startDate": "2026-05-15",
+    "startTime": "",
+    "endDate": "2026-05-15",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/spring-2026-commencement-graduate-degree-candidates"
+  },
+  {
+    "name": "Spring 2026 Semester Ends",
+    "startDate": "2026-05-16",
+    "startTime": "",
+    "endDate": "2026-05-16",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/spring-2026-semester-ends"
+  },
+  {
+    "name": "Spring 2026 Commencement: Undergraduate Degree Candidates",
+    "startDate": "2026-05-16",
+    "startTime": "",
+    "endDate": "2026-05-16",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/spring-2026-commencement-undergraduate-degree-candidates-0"
+  },
+  {
+    "name": "Summer Session I Instruction Begins",
+    "startDate": "2026-05-18",
+    "startTime": "",
+    "endDate": "2026-05-18",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/summer-session-i-instruction-begins-4"
+  },
+  {
+    "name": "Spring Grades Due",
+    "startDate": "2026-05-19",
+    "startTime": "",
+    "endDate": "2026-05-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/spring-grades-due-1"
+  },
+  {
+    "name": "Memorial Day Recess",
+    "startDate": "2026-05-25",
+    "startTime": "",
+    "endDate": "2026-05-25",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/memorial-day-recess-13"
+  },
+  {
+    "name": "Instruction Ends for Summer Session I",
+    "startDate": "2026-06-05",
+    "startTime": "",
+    "endDate": "2026-06-05",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/instruction-ends-summer-session-i-3"
+  },
+  {
+    "name": "Summer Session II Instruction Begins",
+    "startDate": "2026-06-08",
+    "startTime": "",
+    "endDate": "2026-06-08",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/summer-session-ii-instruction-begins-4"
+  },
+  {
+    "name": "Summer Session I Grades Due",
+    "startDate": "2026-06-09",
+    "startTime": "",
+    "endDate": "2026-06-09",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/summer-session-i-grades-due"
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-day-recess-2"
+  },
+  {
+    "name": "Juneteenth Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-recess-0"
+  },
+  {
+    "name": "Independence Day Recess",
+    "startDate": "2026-07-03",
+    "startTime": "",
+    "endDate": "2026-07-03",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/independence-day-recess-12"
+  },
+  {
+    "name": "Instruction Ends for Summer Session II",
+    "startDate": "2026-07-10",
+    "startTime": "",
+    "endDate": "2026-07-10",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/instruction-ends-summer-session-ii-3"
+  },
+  {
+    "name": "Summer Session III Instruction Begins",
+    "startDate": "2026-07-13",
+    "startTime": "",
+    "endDate": "2026-07-13",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/summer-session-iii-instruction-begins-4"
+  },
+  {
+    "name": "Grades Due for Summer Session II Classes",
+    "startDate": "2026-07-14",
+    "startTime": "",
+    "endDate": "2026-07-14",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/grades-due-summer-session-ii-classes-3"
+  },
+  {
+    "name": "Instruction Ends for Summer Session III",
+    "startDate": "2026-08-14",
+    "startTime": "",
+    "endDate": "2026-08-14",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/instruction-ends-summer-session-iii-3"
+  },
+  {
+    "name": "Grades Due for Summer Session III Classes",
+    "startDate": "2026-08-18",
+    "startTime": "",
+    "endDate": "2026-08-18",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/grades-due-summer-session-iii-classes-3"
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2027-06-18",
+    "startTime": "",
+    "endDate": "2027-06-18",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-day-recess-3"
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2027-06-19",
+    "startTime": "",
+    "endDate": "2027-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-day-recess"
   }
 ]

@@ -5448,18 +5448,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5470,6 +5458,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5880,6 +5880,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12131443"
   },
   {
+    "name": "Lee Business Town Hall",
+    "startDate": "2026-04-23",
+    "startTime": "11:30 AM",
+    "endDate": "2026-04-23",
+    "endTime": "2:30 PM",
+    "location": "BEH Atrium",
+    "organization": "CSUN Student Government",
+    "description": "Come join us to connect with CSUN Business Senators! \ud83d\udccdBEH Atrium Free Pizza\ud83c\udf55!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12453277"
+  },
+  {
     "name": "Spring Field Day",
     "startDate": "2026-04-23",
     "startTime": "2:00 PM",
@@ -5902,6 +5914,18 @@
     "description": "Join the Sands Institute for Chinese Language and Culture at UNLV, in collaboration with Chinese Corner, for a unique seminar exploring the connection between traditional Tai Chi and modern athletic performance. Featuring guest speaker Baldwin Chiu, this session draws on over 30 years of martial arts experience and extensive work with athletes to demonstrate how Tai Chi principles can enhance movement, efficiency, and longevity in sports. Participants will gain insight into improving balance, coordination, flexibility, and mental focus while learning techniques that support injury prevention, recovery, and overall physical resilience. Through concepts such as force absorption, redirection, and optimized body mechanics, attendees will discover how Tai Chi can be applied both on and off the field to elevate performance and well-being.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/8ca7e417-95d3-4fdc-8386-847141df886a2ae0899a-1813-4065-aafe-bfcb92ec8691.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12438691"
+  },
+  {
+    "name": "College of Engineering Mixer",
+    "startDate": "2026-04-23",
+    "startTime": "3:00 PM",
+    "endDate": "2026-04-23",
+    "endTime": "7:00 PM",
+    "location": "CLB2 Loading Dock & Patio",
+    "organization": "CSUN Student Government",
+    "description": "Come enjoy freshly barbecued burgers, hot dogs, and veggie burgers, along with a condiment bar. We will also have a variety of snacks, drinks, and fun prizes to share. Games like cornhole, spike ball, giant Jenga, and more will be available. There will also be a stage with live music performances curated just for you, supported by AMPED, the Alliance for Media, Production, and Event Design. Our theme is Through the Decades, so feel free to dress up in attire from your favorite decade. We welcome everyone, so please feel free to pass along the invite. It will be a lot of fun! We hope you can join us:)",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b68fe228-8ccd-45aa-bfa7-a3a2b66882f2a06eb91c-1a95-4e56-bb50-22888e1ce0b9.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453234"
   },
   {
     "name": "LSSA Spring 2026 Pairings Appreciation Night",
@@ -6192,18 +6216,6 @@
     "link": "https://involvementcenter.unlv.edu/event/11956312"
   },
   {
-    "name": "Sikolohiyang Pilipino: Filipino Psychology",
-    "startDate": "2026-04-28",
-    "startTime": "11:30 AM",
-    "endDate": "2026-04-28",
-    "endTime": "1:00 PM",
-    "location": "Online",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Have you ever heard of utang na loob? Walang hiya? Kapwa? Sikolohiyang Pilipino, or Filipino Psychology, has concepts rooted in indigenous practices and values that better capture the Filipino experience. Join us this Asian American History Month in an online workshop to learn more about its history and foundational concepts!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b9a61637-e020-4192-93d2-9bce8108bb0e5492ee1e-bd71-4aa4-ae84-47113d9dd992.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12397552"
-  },
-  {
     "name": "Rainbow Story Hour",
     "startDate": "2026-04-28",
     "startTime": "12:00 PM",
@@ -6214,6 +6226,18 @@
     "description": "Remember the good ole\u2019 days of being a kid and heading to your favorite library for storytime? You're in luck! Join us for our first Rainbow Story Hour \u2013 storytime for LGBTQ+ students and Allies. Bring your favorite plushie, wear your most comfy clothes, and join us on the storytime rug for snacks, activities, and the books Not Quite Narwhal and Miss Rita, Mystery Reader.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/d633e993-d352-4655-b15c-01af4fa4aa22a549e912-0f01-4677-a203-583080e2b13a.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12397560"
+  },
+  {
+    "name": "Sikolohiyang Pilipino: Filipino Psychology",
+    "startDate": "2026-04-28",
+    "startTime": "11:30 AM",
+    "endDate": "2026-04-28",
+    "endTime": "1:00 PM",
+    "location": "Online",
+    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
+    "description": "Have you ever heard of utang na loob? Walang hiya? Kapwa? Sikolohiyang Pilipino, or Filipino Psychology, has concepts rooted in indigenous practices and values that better capture the Filipino experience. Join us this Asian American History Month in an online workshop to learn more about its history and foundational concepts!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b9a61637-e020-4192-93d2-9bce8108bb0e5492ee1e-bd71-4aa4-ae84-47113d9dd992.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12397552"
   },
   {
     "name": "The Next Horizon: Navigating the Graduate School Transition",
@@ -6432,6 +6456,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12026261"
   },
   {
+    "name": "Game Night & Cyber Sips",
+    "startDate": "2026-04-30",
+    "startTime": "2:30 PM",
+    "endDate": "2026-04-30",
+    "endTime": "3:30 PM",
+    "location": "CHB C 234",
+    "organization": "WiCyS Student Chapter",
+    "description": "Join Layer_Zero and WiCyS UNLV this Thursday starting 2:30pm in CHB C234 for Game Night & CyberSips! We'll be offering various activities from: \ud83c\udfaeSwitch games \ud83d\udd11Lockpicking \ud83d\uddffSocial engineering games Food and drinks will be provided\ud83d\ude0b Swing by and chill with us ahead of finals. Hope to see you there!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/3fa69dfe-f8d2-449f-b328-a93fc6a992cc3c8513c6-9165-4d6c-a2b0-cab8ab358973.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453166"
+  },
+  {
     "name": "CSUN Pre-Law Banquet",
     "startDate": "2026-04-30",
     "startTime": "3:30 PM",
@@ -6502,6 +6538,18 @@
     "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12172129"
+  },
+  {
+    "name": "ASA E-Board Election Spring 2026",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "Student Union Building room 219",
+    "organization": "African Student Alliance",
+    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453163"
   },
   {
     "name": "Spring Service Day",
@@ -6814,6 +6862,30 @@
     "description": "Join us in celebrating our clubs' Spring/Summer 2026 graduates! We will provide BSWS graduates with a night of community, celebration, and fun as we honor their achievements!",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b78ba439-285d-4126-9bf3-1daae6beee11ed57d2c7-f704-45f6-b9e3-8e36058f2d86.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421677"
+  },
+  {
+    "name": "UNLV Launchpad: Navigating Your Career After Graduation ",
+    "startDate": "2026-05-19",
+    "startTime": "3:30 PM",
+    "endDate": "2026-05-19",
+    "endTime": "7:00 PM",
+    "location": "UNLV Advanced Engineering Building (AEB)",
+    "organization": "Career Services",
+    "description": "Graduating this semester? Then you might want to check this out! This event is for recent UNLV graduates: - Seeking employment opportunities. - Looking for guidance on crafting a strong resume and acing job interviews. - Who want to connect with alumni and employers from various industries. Event Details: Date: Tuesday, May 19th 2026 Time: 3:30-7PM Location: UNLV Advanced Engineering Building Register: https://unlv.joinhandshake.com/events/1923962/share_preview Flyer: 2026 UNLV Career Launchpad",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e65f255-175f-4767-b4a0-8ef106bb11800eb568ee-d636-4e84-8b5f-c0388271e6f0.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12452851"
+  },
+  {
+    "name": "UNLV Launchpad: Navigating Your Career After Graduation ",
+    "startDate": "2026-05-19",
+    "startTime": "3:30 PM",
+    "endDate": "2026-05-19",
+    "endTime": "7:00 PM",
+    "location": "UNLV Advanced Engineering Building (AEB)",
+    "organization": "Career Services",
+    "description": "Graduating this semester? Then you might want to check this out! This event is for recent UNLV graduates: - Seeking employment opportunities. - Looking for guidance on crafting a strong resume and acing job interviews. - Who want to connect with alumni and employers from various industries. Event Details: Date: Tuesday, May 19th 2026 Time: 3:30-7PM Location: UNLV Advanced Engineering Building Register: https://unlv.joinhandshake.com/events/1923962/share_preview Flyer: 2026 UNLV Career Launchpad",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e65f255-175f-4767-b4a0-8ef106bb11800eb568ee-d636-4e84-8b5f-c0388271e6f0.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12452852"
   },
   {
     "name": "Drag Brunch @ Hamburger Mary's",
