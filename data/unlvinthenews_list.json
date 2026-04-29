@@ -1,5 +1,23 @@
 [
   {
+    "name": "Why flights are more likely to be delayed at certain times of day",
+    "category": "Yahoo!",
+    "section": "In The News",
+    "publishedDate": "2026-04-28",
+    "publishedAt": "2026-04-28T15:09:39-07:00",
+    "summary": "Aviation experts weigh in on why the early bird doesn't just get the worm \u2014 it gets the on-time departure.",
+    "link": "https://travel.yahoo.com/flights/article/why-flights-are-more-likely-to-be-delayed-at-certain-times-of-day-195700527.html"
+  },
+  {
+    "name": "\u2018A husband expects a yes\u2019: how wife schools are shaping submissive Christian women",
+    "category": "The Guardian",
+    "section": "In The News",
+    "publishedDate": "2026-04-28",
+    "publishedAt": "2026-04-28T14:27:29-07:00",
+    "summary": "A cottage industry of women are selling courses aligned with a conservative movement that claims feminism is the source of women\u2019s discontent",
+    "link": "https://www.theguardian.com/us-news/ng-interactive/2026/apr/28/wife-school-christian-women-submissive"
+  },
+  {
     "name": "TSA staffing crisis deepens as DHS funding nears cutoff",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -61,23 +79,5 @@
     "publishedAt": "2026-04-27T15:49:56-07:00",
     "summary": "More than 80% of businesses in the space have embraced generative AI to support tasks like content creation and gathering customer insights, according to a new study by the University of Nevada, Las Vegas\u2019 International Gaming Institute AI Research Hub in collaboration with audit, tax and advisory firm KPMG.",
     "link": "https://igamingbusiness.com/tech-innovation/artificial-intelligence/from-cost-reduction-to-cost-prevention-powering-igamings-ai-transformation/"
-  },
-  {
-    "name": "Customized Software Solutions Help Universities Meet Institutional Goals",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-04-27",
-    "publishedAt": "2026-04-27T15:29:44-07:00",
-    "summary": "Higher education IT teams wear many hats. Beyond just managing trouble tickets, they support human resources processes, facilitate student application and enrollment workflows and, of course, handle network security.",
-    "link": "https://edtechmagazine.com/higher/article/2026/04/customized-software-solutions-help-universities-meet-institutional-goals"
-  },
-  {
-    "name": "Exercising a Specific Leg Muscle Can Help Stabilize Blood Sugar for Hours",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-04-27",
-    "publishedAt": "2026-04-27T14:10:10-07:00",
-    "summary": "While a temporary rise in blood sugar after a meal is normal, there are things you can do to prevent extreme fluctuations, including one that doesn't require you to leave the table. Research suggests that seated calf raises, also called soleus push-ups, can help stabilize post-meal blood sugar. The soleus is a muscle in the calf, and is especially good at using glucose in the blood stream.",
-    "link": "https://www.verywellhealth.com/leg-muscle-stabilize-blood-sugar-11945686"
   }
 ]
