@@ -1,15 +1,5 @@
 [
   {
-    "name": "Lumberjack Diving Invite",
-    "startDate": "2026-01-29",
-    "startTime": "10:30 AM",
-    "endDate": "2026-01-29",
-    "endTime": "",
-    "location": "Flagstaff, AZ",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/1/29/swimming-diving-rebels-grab-two-top-10-finishes-to-open-lumberjack-invite.aspx"
-  },
-  {
     "name": "New Mexico Team Open",
     "startDate": "2026-01-30",
     "startTime": "",
@@ -3638,5 +3628,25 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/lincoln-university-exhibition-game-/boxscore/17442"
+  },
+  {
+    "name": "Southern Nazarene",
+    "startDate": "2026-10-29",
+    "startTime": "",
+    "endDate": "2026-10-29",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/southern-nazarene/boxscore/17315"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-10-29",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-10-29",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]

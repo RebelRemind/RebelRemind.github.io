@@ -1,41 +1,5 @@
 [
   {
-    "name": "Becoming an Adaptive Perfectionist",
-    "startDate": "2026-01-29",
-    "startTime": "3:30 PM",
-    "endDate": "2026-01-29",
-    "endTime": "4:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Learn how to rethink the relationship between motivation and self-criticism, set manageable goals, and be more productive while also tending to your wellbeing.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8551edb-f558-4f54-ba41-d5c2ec09333b16bc4c1d-1e4e-4646-a325-a1bb308deee5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12057032"
-  },
-  {
-    "name": "FYE -  Campus Kick Off: Spring Edition",
-    "startDate": "2026-01-29",
-    "startTime": "4:00 PM",
-    "endDate": "2026-01-29",
-    "endTime": "5:00 PM",
-    "location": "SU Ballroom A",
-    "organization": "First-Year Experience",
-    "description": "Join us for the first FYE milestone event for spring, where we will welcome our new and returning students and celebrate academic achievement! There will be food, activities, and mingling. The FYE Connection Award winners will also be recognized.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/4cc10352-7dad-4e4f-8776-03592b748dbca7807833-1cf4-4cef-a5f6-7282c2b0cda5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11284055"
-  },
-  {
-    "name": "Welcome to the Club - Lantern Making",
-    "startDate": "2026-01-29",
-    "startTime": "4:00 PM",
-    "endDate": "2026-01-29",
-    "endTime": "5:30 PM",
-    "location": "MAB2 Room 141",
-    "organization": "Chinese Corner",
-    "description": "Join Chinese Corner UNLV for a festive Lunar New Year Lantern Making event in collaboration with the Sands Institute for Chinese Language and Culture at UNLV. Participants will create traditional lanterns that will be displayed during the Lunar New Year Festival, while learning about the cultural significance of Lunar New Year traditions. This event also serves as a Welcome to the Club, offering students an opportunity to learn more about Chinese Corner, meet our officers, and hear about the exciting events, workshops, and cultural activities we have planned for the semester. No prior experience is required, and all materials will be provided. This event is open to all students interested in Chinese culture, language, and community. Come celebrate, create, and connect as we welcome the Lunar New Year together!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e93c8bce-2c4c-40ec-a531-43b5acdaaf4af4ad7eee-fe54-4275-8de2-3449c6436a5f.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063296"
-  },
-  {
     "name": "AIAA Meetings",
     "startDate": "2026-01-30",
     "startTime": "3:00 PM",
@@ -5268,18 +5232,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5290,6 +5242,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -6156,18 +6120,6 @@
     "link": "https://involvementcenter.unlv.edu/event/11284085"
   },
   {
-    "name": "General Meeting",
-    "startDate": "2026-04-29",
-    "startTime": "4:30 PM",
-    "endDate": "2026-04-29",
-    "endTime": "5:30 PM",
-    "location": "AEB 150",
-    "organization": "Engineers Without Borders",
-    "description": "\ud83c\udfd7\ufe0f Building Our Future: EWB General Meeting! Are you ready to use your skills to make a global impact? Join Engineers Without Borders for our upcoming general meeting! Whether you're looking to gain hands-on experience, lead a team, or just find a community of like-minded innovators, this is the place to be. \ud83d\ude80 Major Project Update We\u2019ll be diving into the latest developments on attaining a new project. From technical design \ud83d\udccb Now Recruiting: Officer Positions We are looking for the next generation of leaders to help drive our mission forward. We have several Officer Positions open and are looking for passionate students to fill them. If you want to play a direct role in shaping the future of our chapter, managing projects, or coordinating outreach, we want to hear from you! Applications and role descriptions will be discussed during the meeting. \ud83c\udf1f Why Join a Student Organization? Beyond the projects, being part of EWB and the broader student engineering community offers incredible perks: Professional Development: Build your resume with real-world project management and technical design experience. Networking: Connect with university faculty, professional guest speakers, and industry mentors. Leadership Skills: Move beyond the classroom by leading teams and managing budgets. Community: Make lifelong friends who share your passion for civil engineering and global service. \ud83d\udcc5 Meeting Details: Date: April 29, 2026 Time: 4:30pm Location: AEB 150 Let\u2019s build something better together. See you there!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/997748be-293a-4683-8efb-14a53ebdc1ba68c6bfe1-fb3b-433d-86d0-99315d4c24b7.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12446600"
-  },
-  {
     "name": "Town Hall",
     "startDate": "2026-04-29",
     "startTime": "4:45 PM",
@@ -6178,6 +6130,18 @@
     "description": "Join us as we recap events and share your thoughts during our open floor portion! End of year celebration with a transition to the new administration!",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/12393448"
+  },
+  {
+    "name": "General Meeting",
+    "startDate": "2026-04-29",
+    "startTime": "4:30 PM",
+    "endDate": "2026-04-29",
+    "endTime": "5:30 PM",
+    "location": "AEB 150",
+    "organization": "Engineers Without Borders",
+    "description": "\ud83c\udfd7\ufe0f Building Our Future: EWB General Meeting! Are you ready to use your skills to make a global impact? Join Engineers Without Borders for our upcoming general meeting! Whether you're looking to gain hands-on experience, lead a team, or just find a community of like-minded innovators, this is the place to be. \ud83d\ude80 Major Project Update We\u2019ll be diving into the latest developments on attaining a new project. From technical design \ud83d\udccb Now Recruiting: Officer Positions We are looking for the next generation of leaders to help drive our mission forward. We have several Officer Positions open and are looking for passionate students to fill them. If you want to play a direct role in shaping the future of our chapter, managing projects, or coordinating outreach, we want to hear from you! Applications and role descriptions will be discussed during the meeting. \ud83c\udf1f Why Join a Student Organization? Beyond the projects, being part of EWB and the broader student engineering community offers incredible perks: Professional Development: Build your resume with real-world project management and technical design experience. Networking: Connect with university faculty, professional guest speakers, and industry mentors. Leadership Skills: Move beyond the classroom by leading teams and managing budgets. Community: Make lifelong friends who share your passion for civil engineering and global service. \ud83d\udcc5 Meeting Details: Date: April 29, 2026 Time: 4:30pm Location: AEB 150 Let\u2019s build something better together. See you there!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/997748be-293a-4683-8efb-14a53ebdc1ba68c6bfe1-fb3b-433d-86d0-99315d4c24b7.pdf?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12446600"
   },
   {
     "name": "End of Year Celebration ",
