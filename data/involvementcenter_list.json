@@ -5232,18 +5232,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5254,6 +5242,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -6300,6 +6300,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12438681"
   },
   {
+    "name": "STEM Bowl",
+    "startDate": "2026-05-01",
+    "startTime": "4:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "6:00 PM",
+    "location": "BPB 102 (Bigelow Physics Building)",
+    "organization": "Society of Physics Students",
+    "description": "Join SPS, SBS, and SIAM for an exciting new event called the STEM Bowl. Similar to a spelling bee, students will be given time to answer questions from a specific STEM subject. You'll compete against other students to be the last student standing. There will be prizes and food! Calculators will be provided. RSVP is not required but encouraged.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/8e388572-bd99-4e5d-90e0-d58ac2d2ee438a1d8b60-370a-4fc9-9043-79ff15789ab0.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12456942"
+  },
+  {
     "name": "CSUN Swearing In Ceremony",
     "startDate": "2026-05-01",
     "startTime": "4:00 PM",
@@ -6312,18 +6324,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "ASA E-Board Election Spring 2026",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "Student Union Building room 219",
-    "organization": "African Student Alliance",
-    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12453163"
-  },
-  {
     "name": "Hot \"Girl\" Walk",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -6334,6 +6334,18 @@
     "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12172129"
+  },
+  {
+    "name": "ASA E-Board Election Spring 2026",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "Student Union Building room 219",
+    "organization": "African Student Alliance",
+    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453163"
   },
   {
     "name": "Spring Service Day",
@@ -6682,6 +6694,18 @@
     "description": "Times TBD. Keep a lookout for updates.",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/12147290"
+  },
+  {
+    "name": "End of the Year Pizza Party",
+    "startDate": "2026-05-23",
+    "startTime": "11:00 AM",
+    "endDate": "2026-05-23",
+    "endTime": "12:30 PM",
+    "location": "UNLV/CSUN Preschool",
+    "organization": "Student Parents of UNLV",
+    "description": "Student Parents of UNLV will host an end of school year pizza celebration for members and their families. The event recognizes graduating members and celebrates children completing the school year. Attendees will share a meal, connect with other student parents, and participate in child friendly activities. Children are welcome.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b604289e-d65f-4b57-a7d8-61d82de1b08b48a62937-ab80-48b7-9d69-395f2131b27b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12457114"
   },
   {
     "name": "AB Trip: Conservation & Ecology",
