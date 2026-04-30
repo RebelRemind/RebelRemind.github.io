@@ -6312,18 +6312,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "Hot \"Girl\" Walk",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "UNLV",
-    "organization": "Black Social Workers Society",
-    "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12172129"
-  },
-  {
     "name": "ASA E-Board Election Spring 2026",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -6334,6 +6322,18 @@
     "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12453163"
+  },
+  {
+    "name": "Hot \"Girl\" Walk",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "UNLV",
+    "organization": "Black Social Workers Society",
+    "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12172129"
   },
   {
     "name": "Spring Service Day",

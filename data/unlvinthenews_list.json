@@ -1,5 +1,32 @@
 [
   {
+    "name": "\u2018This is the new Ohio\u2019: Why everyone\u2019s watching the Nevada governor\u2019s race",
+    "category": "Politico",
+    "section": "In The News",
+    "publishedDate": "2026-04-30",
+    "publishedAt": "2026-04-30T08:55:16-07:00",
+    "summary": "The neck-and-neck Nevada governor\u2019s race is shaping up as one of the earliest tests of whether Republicans can separate themselves from Trump\u2019s political fortunes \u2014 without losing his coalition.",
+    "link": "https://www.politico.com/news/2026/04/30/joe-lombardo-is-walking-the-trump-tightrope-it-might-just-work-why-nevadas-gubernatorial-election-is-key-for-2028-and-the-future-of-the-go-00899065"
+  },
+  {
+    "name": "The birthright divide",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-04-29",
+    "publishedAt": "2026-04-29T21:13:34-07:00",
+    "summary": "In South Central Los Angeles, generations of African American families reside alongside expanding immigrant communities. Debates over citizenship in this context extend beyond legal considerations, encompassing history, identity, economic structures, and daily life.",
+    "link": "https://www.ourweekly.com/2026/04/29/the-birthright-divide/"
+  },
+  {
+    "name": "Beyond luck: The rise of skill-based gaming in the north American digital market",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-04-29",
+    "publishedAt": "2026-04-29T20:58:46-07:00",
+    "summary": "A study from the University of Nevada, Las Vegas found that skill-based games retain player attention for 35% longer per session than traditional RNG-driven games.",
+    "link": "https://www.jpost.com/consumerism/article-894616"
+  },
+  {
     "name": "With one hurdle down, Kenosha casino faces plenty more",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-04-29T10:58:43-07:00",
     "summary": "In 2018, after 23 years as a Navy SEAL, Jon Dalton retired and turned his attention to a new struggle: living with depression and anxiety.",
     "link": "https://lasvegassun.com/news/2026/apr/29/once-illegal-now-hopeful-nevada-advocates-eye-trum/"
-  },
-  {
-    "name": "Conflicting standards create air quality confusion across Southern Nevada",
-    "category": "K.L.A.S. T.V. 8 News Now",
-    "section": "In The News",
-    "publishedDate": "2026-04-28",
-    "publishedAt": "2026-04-28T18:39:19-07:00",
-    "summary": "A recent report gave Clark County a failing grade for air quality, but that report even confuses county officials who pay attention to daily pollution levels in the valley. The American Lung Association\u2019s \u201cState of the Air 2026\u201d report indicates the valley ranked 11th out of 226 metro areas for the worst high ozone days. The valley also ranked high in measures for particulates.",
-    "link": "https://www.8newsnow.com/news/local-news/conflicting-standards-create-air-quality-confusion-across-southern-nevada/"
-  },
-  {
-    "name": "Why flights are more likely to be delayed at certain times of day",
-    "category": "Yahoo!",
-    "section": "In The News",
-    "publishedDate": "2026-04-28",
-    "publishedAt": "2026-04-28T15:09:39-07:00",
-    "summary": "Aviation experts weigh in on why the early bird doesn't just get the worm \u2014 it gets the on-time departure.",
-    "link": "https://travel.yahoo.com/flights/article/why-flights-are-more-likely-to-be-delayed-at-certain-times-of-day-195700527.html"
-  },
-  {
-    "name": "\u2018A husband expects a yes\u2019: how wife schools are shaping submissive Christian women",
-    "category": "The Guardian",
-    "section": "In The News",
-    "publishedDate": "2026-04-28",
-    "publishedAt": "2026-04-28T14:27:29-07:00",
-    "summary": "A cottage industry of women are selling courses aligned with a conservative movement that claims feminism is the source of women\u2019s discontent",
-    "link": "https://www.theguardian.com/us-news/ng-interactive/2026/apr/28/wife-school-christian-women-submissive"
   }
 ]
