@@ -235,7 +235,8 @@ const CONTRIBUTORS = [
   },
 ];
 
-const DATA_FILE_MAP = Object.fromEntries(DATA_FILES.map((item) => [item.key, item]));
+const CAMPUS_EVENT_FILES = [...DATA_FILES, CAMPUS_WIDE_EVENTS_FILE, CAREER_EVENTS_FILE];
+const DATA_FILE_MAP = Object.fromEntries(CAMPUS_EVENT_FILES.map((item) => [item.key, item]));
 const SITE_URL = "https://rebelremind.github.io";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/rr_logo_bg.png`;
 const BACK_HOME_BUTTON_CLASS = "inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white px-5 py-3 text-sm font-semibold text-stone-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-stone-100";
@@ -259,7 +260,7 @@ const DATASET_HOME_COPY = {
   },
 };
 
-const SAVABLE_DATASET_KEYS = new Set(["unlvCalendar", "involvementCenter", "rebelSports"]);
+const SAVABLE_DATASET_KEYS = new Set(["unlvCalendar", "involvementCenter", "rebelSports", "campusWideEvents", "careerEvents"]);
 
 function normalizeDatasetKey(value) {
   return value === "rebelCoverage" ? "rebelSports" : value;
@@ -483,6 +484,10 @@ function getNewsItemTimestamp(item) {
 
 function getNewsFeedLabel(feedKey) {
   return NEWS_FEED_FILES.find((feed) => feed.key === feedKey)?.label || "Campus News";
+}
+
+function getNewsFeedSourceUrl(feedKey) {
+  return NEWS_FEED_FILES.find((feed) => feed.key === feedKey)?.sourceUrl || "";
 }
 
 function getNewsFeedEmptyMessage(feedKey) {
@@ -1125,7 +1130,46 @@ function layoutTimedWeekEvents(events, weekStart) {
   return { events: layouts, clusters };
 }
 
-function CalendarEventModal({ payload, onClose, renderSaveAction = null }) {
+function getSyncedHomeEventSourceLabel(event) {
+  if (event?.sourceLabel) {
+    return event.sourceLabel;
+  }
+
+  if (event?.sourceType === "involvementCenter") {
+    return "Involvement Center";
+  }
+
+  if (event?.sourceType === "userEvent") {
+    return "Your Events";
+  }
+
+  if (event?.sourceType === "savedUnlvEvent") {
+    return DATA_FILE_MAP[normalizeDatasetKey(event.sourceKey || "")]?.label || "Saved Campus Event";
+  }
+
+  if (event?.sourceType === "googleCalendar") {
+    return "Google Calendar";
+  }
+
+  return "Your Events";
+}
+
+function normalizeSyncedHomeEventForModal(event) {
+  if (!event) {
+    return null;
+  }
+
+  return {
+    ...event,
+    title: event.displayTitle || event.title || event.name || "Untitled Event",
+    sourceLabel: getSyncedHomeEventSourceLabel(event),
+    description: event.displayDescription || event.description || event.desc || "",
+    location: event.displayLocation || event.location || "",
+    link: event.link || "",
+  };
+}
+
+function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceActionLabel = "Open Event" }) {
   if (!payload) {
     return null;
   }
@@ -1195,17 +1239,19 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null }) {
                 <span className="font-semibold">{payload.sourceLabel === "Rebel Sports" ? "Sport:" : "Details:"}</span> {payload.description}
               </p>
             ) : null}
-            {payload.link ? (
-              <a
-                href={payload.link}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
-              >
-                Open Event
-              </a>
-            ) : null}
-            {renderSaveAction ? renderSaveAction(payload, "w-full sm:w-auto") : null}
+            <div className="flex flex-wrap gap-3">
+              {payload.link ? (
+                <a
+                  href={payload.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-10 items-center justify-center rounded-2xl bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
+                >
+                  {sourceActionLabel}
+                </a>
+              ) : null}
+              {renderSaveAction ? renderSaveAction(payload, "w-full sm:w-auto") : null}
+            </div>
           </div>
         )}
       </div>
@@ -1213,7 +1259,7 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null }) {
   );
 }
 
-function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "", renderSaveAction = null }) {
+function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "", renderSaveAction = null, sourceActionLabel = "Go to Event" }) {
   if (!dataset || !item) {
     return null;
   }
@@ -1264,7 +1310,7 @@ function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "", 
               rel="noreferrer"
               className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
             >
-              Go to Event
+              {sourceActionLabel}
             </a>
             ) : null}
             {renderSaveAction ? renderSaveAction(item, "w-full sm:w-auto") : null}
@@ -1511,6 +1557,29 @@ function OrganizationAvatar({ src, name, className = "h-10 w-10 text-sm" }) {
     <span className={classes} aria-hidden="true">
       {getInitials(name)}
     </span>
+  );
+}
+
+function EventArtwork({ item, src, useWideFit = false }) {
+  const [isWideArtwork, setIsWideArtwork] = useState(false);
+
+  function handleLoad(event) {
+    const image = event.currentTarget;
+    const aspectRatio = image.naturalHeight ? image.naturalWidth / image.naturalHeight : 0;
+    setIsWideArtwork(useWideFit && aspectRatio >= 1.9);
+  }
+
+  return (
+    <img
+      src={src}
+      alt={item.name ? `${item.name} event artwork` : "Event artwork"}
+      onLoad={handleLoad}
+      className={[
+        "h-full w-full object-center",
+        isWideArtwork ? "object-contain bg-white p-2" : "object-cover",
+      ].join(" ")}
+      loading="lazy"
+    />
   );
 }
 
@@ -1977,7 +2046,7 @@ function Navbar({ visible, onDismiss, bridgeStatus }) {
   );
 }
 
-function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syncedUserEvents, collapsedEvents, onToggleCollapsedEvent }) {
+function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syncedUserEvents, collapsedEvents, onToggleCollapsedEvent, onSelectSyncedEvent }) {
   const bridgeIsConnected = bridgeStatus === "connected";
   const bridgeIsUnsupported = bridgeStatus === "unsupported";
   const profileName = bridgeState?.user?.name || "User";
@@ -2053,15 +2122,19 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                     const eventKey = `${event.displayTitle}-${event.startDate}-${index}`;
                     const isCollapsed = Boolean(collapsedEvents[eventKey]);
                     const hasExtraDetails = Boolean(event.displayLocation || event.displayDescription);
-                    const Wrapper = event.link ? "a" : "article";
-
                     return (
-                      <Wrapper
+                      <article
                         key={eventKey}
-                        href={event.link || undefined}
-                        target={event.link ? "_blank" : undefined}
-                        rel={event.link ? "noreferrer" : undefined}
-                        className="block rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-white shadow-sm transition hover:bg-white/12"
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => onSelectSyncedEvent(event)}
+                        onKeyDown={(keyEvent) => {
+                          if (keyEvent.key === "Enter" || keyEvent.key === " ") {
+                            keyEvent.preventDefault();
+                            onSelectSyncedEvent(event);
+                          }
+                        }}
+                        className="block cursor-pointer rounded-[1.25rem] border border-white/15 bg-white/10 px-4 py-4 text-left text-white shadow-sm transition hover:bg-white/12"
                       >
                         <div className="flex items-start justify-between gap-4">
                           <p className="font-semibold">{event.displayTitle}</p>
@@ -2086,7 +2159,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                             {event.displayDescription ? <p className="mt-2 text-sm text-white/70">{event.displayDescription}</p> : null}
                           </>
                         ) : null}
-                      </Wrapper>
+                      </article>
                     );
                   })
                 ) : (
@@ -2209,6 +2282,8 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
   const [collapsedEvents, setCollapsedEvents] = useState({});
   const [activeNewsFeedKey, setActiveNewsFeedKey] = useState(NEWS_FEED_FILES[0].key);
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
+  const [activeHomepageEvent, setActiveHomepageEvent] = useState(null);
+  const [activeSyncedHomeEvent, setActiveSyncedHomeEvent] = useState(null);
   const featuredPreferences = toTitleList(bridgeState?.preferences);
   const activeNewsFeed = Array.isArray(newsFeeds?.[activeNewsFeedKey]) ? newsFeeds[activeNewsFeedKey] : [];
   const campusFeedItems = Array.isArray(activeNewsFeed)
@@ -2271,6 +2346,72 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
       displayDescription: event.desc || "",
     }))),
   ].sort((left, right) => getSyncedHomeEventTimestamp(left) - getSyncedHomeEventTimestamp(right));
+  const savedHomepageEventKeys = getSavedCampusEventKeys(bridgeState);
+  const bridgeIsConnected = bridgeStatus === "connected";
+  const isHomepageEventSaved = (event) => {
+    const key = buildSavedCampusEventKey(event);
+    return savedHomepageEventKeys.has(key);
+  };
+  const handleSaveHomepageEvent = (event) => {
+    saveCampusEvent(event);
+  };
+  const handleRemoveHomepageEvent = (event) => {
+    removeCampusEvent(event);
+  };
+  const renderHomepageSaveAction = (item, sourceKey, className = "w-full") => {
+    if (!bridgeIsConnected) {
+      return null;
+    }
+
+    const event = buildSavedCampusEventPayload(sourceKey, item);
+    if (!event) {
+      return null;
+    }
+
+    return (
+      <AddToMyEventsButton
+        event={event}
+        bridgeStatus={bridgeStatus}
+        saved={isHomepageEventSaved(event)}
+        onSave={handleSaveHomepageEvent}
+        onRemove={handleRemoveHomepageEvent}
+        className={className}
+      />
+    );
+  };
+  const getSyncedHomeEventSourceKey = (event) => {
+    if (event?.sourceKey) {
+      return event.sourceKey;
+    }
+
+    if (event?.sourceType === "involvementCenter") {
+      return "involvementCenter";
+    }
+
+    return "";
+  };
+  const renderSyncedHomeSaveAction = (event, className = "w-full") => {
+    if (!bridgeIsConnected) {
+      return null;
+    }
+
+    const sourceKey = getSyncedHomeEventSourceKey(event);
+    const payload = buildSavedCampusEventPayload(sourceKey, event);
+    if (!payload) {
+      return null;
+    }
+
+    return (
+      <AddToMyEventsButton
+        event={payload}
+        bridgeStatus={bridgeStatus}
+        saved={isHomepageEventSaved(payload)}
+        onSave={handleSaveHomepageEvent}
+        onRemove={handleRemoveHomepageEvent}
+        className={className}
+      />
+    );
+  };
 
   const toggleCollapsedEvent = (eventKey) => {
     setCollapsedEvents((current) => ({
@@ -2289,6 +2430,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
         syncedUserEvents={syncedUserEvents}
         collapsedEvents={collapsedEvents}
         onToggleCollapsedEvent={toggleCollapsedEvent}
+        onSelectSyncedEvent={setActiveSyncedHomeEvent}
       />
 
       {/* {bridgeStatus === "connected" ? (
@@ -2346,7 +2488,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
         </div>
         <div className="grid gap-4 xl:grid-cols-2">
           <div className="flex max-h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md xl:h-[34rem]">
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Campus Spotlight</p>
                 <h3 className="mt-2 font-serif text-2xl leading-tight text-white">{CAMPUS_WIDE_EVENTS_FILE.label}</h3>
@@ -2355,7 +2497,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
                 href={CAMPUS_WIDE_EVENTS_FILE.sourceUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
               >
                 View Source
               </a>
@@ -2363,17 +2505,16 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
               {featuredCampusWideEvents.length ? (
                 featuredCampusWideEvents.map((event, index) => (
-                  <a
+                  <button
                     key={`${event.name}-${event.startDate || index}`}
-                    href={event.link || undefined}
-                    target={event.link ? "_blank" : undefined}
-                    rel={event.link ? "noreferrer" : undefined}
-                    className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-white transition hover:bg-white/12"
+                    type="button"
+                    onClick={() => setActiveHomepageEvent({ dataset: CAMPUS_WIDE_EVENTS_FILE, item: event })}
+                    className="block w-full rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-left text-white transition hover:bg-white/12"
                   >
                     <p className="text-sm font-semibold text-white/85">{formatEventDate(event)}</p>
                     <h4 className="mt-2 text-lg font-semibold leading-tight">{event.name}</h4>
                     {event.summary ? <p className="mt-3 text-sm leading-6 text-white/70">{event.summary}</p> : null}
-                  </a>
+                  </button>
                 ))
               ) : (
                 <div className="rounded-[1.5rem] border border-dashed border-white/20 bg-white/5 px-5 py-6 text-sm text-white/75">
@@ -2384,7 +2525,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
           </div>
 
           <div className="flex max-h-[34rem] flex-col rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md xl:h-[34rem]">
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Career Launch</p>
                 <h3 className="mt-2 font-serif text-2xl leading-tight text-white">{CAREER_EVENTS_FILE.label}</h3>
@@ -2393,7 +2534,7 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
                 href={CAREER_EVENTS_FILE.sourceUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
               >
                 View Source
               </a>
@@ -2401,17 +2542,16 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             <div className="mt-5 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
               {featuredCareerEvents.length ? (
                 featuredCareerEvents.map((event, index) => (
-                  <a
+                  <button
                     key={`${event.name}-${event.startDate || index}`}
-                    href={event.link || undefined}
-                    target={event.link ? "_blank" : undefined}
-                    rel={event.link ? "noreferrer" : undefined}
-                    className="block rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-white transition hover:bg-white/12"
+                    type="button"
+                    onClick={() => setActiveHomepageEvent({ dataset: CAREER_EVENTS_FILE, item: event })}
+                    className="block w-full rounded-[1.5rem] border border-white/15 bg-white/8 px-5 py-4 text-left text-white transition hover:bg-white/12"
                   >
                     <p className="text-sm font-semibold text-white/85">{formatEventDate(event)}</p>
                     <h4 className="mt-2 text-lg font-semibold leading-tight">{event.name}</h4>
                     {event.summary ? <p className="mt-3 text-sm leading-6 text-white/70">{event.summary}</p> : null}
-                  </a>
+                  </button>
                 ))
               ) : (
                 <div className="rounded-[1.5rem] border border-dashed border-white/20 bg-white/5 px-5 py-6 text-sm text-white/75">
@@ -2495,8 +2635,20 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
           <h2 className="mt-2 font-serif text-3xl leading-tight text-white sm:text-4xl">UNLV News</h2>
         </div>
         <div className="rounded-[2rem] border border-white/20 bg-black/20 p-6 shadow-xl backdrop-blur-md">
-          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">{getNewsFeedLabel(activeNewsFeedKey)}</p>
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between lg:gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">{getNewsFeedLabel(activeNewsFeedKey)}</p>
+              {getNewsFeedSourceUrl(activeNewsFeedKey) ? (
+                <a
+                  href={getNewsFeedSourceUrl(activeNewsFeedKey)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 transition hover:bg-white/15"
+                >
+                  View Source
+                </a>
+              ) : null}
+            </div>
             <div className="flex flex-wrap gap-2">
               {NEWS_FEED_FILES.map((feed) => {
                 const isActive = activeNewsFeedKey === feed.key;
@@ -2608,6 +2760,23 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
           </div>
         </div>
       ) : null}
+
+      {activeHomepageEvent ? (
+        <DatasetEventModal
+          dataset={activeHomepageEvent.dataset}
+          item={activeHomepageEvent.item}
+          onClose={() => setActiveHomepageEvent(null)}
+          renderSaveAction={(item, className) => renderHomepageSaveAction(item, activeHomepageEvent.dataset.key, className)}
+          sourceActionLabel="Take Me"
+        />
+      ) : null}
+
+      <CalendarEventModal
+        payload={normalizeSyncedHomeEventForModal(activeSyncedHomeEvent)}
+        onClose={() => setActiveSyncedHomeEvent(null)}
+        renderSaveAction={renderSyncedHomeSaveAction}
+        sourceActionLabel="Take Me"
+      />
     </>
   );
 }
@@ -2763,6 +2932,10 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
     removeCampusEvent(event);
   };
   const renderDatasetSaveAction = (item, className = "w-full") => {
+    if (!hasSync) {
+      return null;
+    }
+
     const event = buildSavedCampusEventPayload(dataset?.key, item);
     if (!event) {
       return null;
@@ -2816,18 +2989,18 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
             ))}
           </div>
         </div>
-        <div className="flex flex-col items-stretch gap-3">
-          <Link
-            to={getCalendarSourceLink(dataset.key)}
-            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
-          >
-            Calendar View
-          </Link>
+        <div className="flex flex-row flex-wrap items-stretch gap-3 min-[916px]:flex-col">
           <Link
             to="/"
             className={BACK_HOME_BUTTON_CLASS}
           >
             Back Home
+          </Link>
+          <Link
+            to={getCalendarSourceLink(dataset.key)}
+            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
+          >
+            Calendar View
           </Link>
         </div>
       </div>
@@ -3137,19 +3310,27 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
 
                     <div className={`${isRebelSports ? "" : "mt-4"} flex aspect-[5/3] w-full items-center justify-center overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-200`}>
                       {item.imageUrl || isUNLVCalendar || isInvolvementCenter || isRebelSports ? (
-                        <img
-                          src={item.imageUrl || (isRebelSports ? getSportImageUrl(item.sport) : isInvolvementCenter ? "/images/IC_default.png" : "/images/UNLV_Logo.png")}
-                          alt={item.name ? `${item.name} event artwork` : "Event artwork"}
-                          className={[
-                            "h-full w-full object-center",
-                            isRebelSports
-                            || item.imageUrl === "/images/UNLV_Logo.png"
-                            || (!item.imageUrl && isUNLVCalendar)
-                              ? "object-contain p-6"
-                              : "object-cover",
-                          ].join(" ")}
-                          loading="lazy"
-                        />
+                        isUNLVCalendar && item.imageUrl ? (
+                          <EventArtwork
+                            item={item}
+                            src={item.imageUrl}
+                            useWideFit
+                          />
+                        ) : (
+                          <img
+                            src={item.imageUrl || (isRebelSports ? getSportImageUrl(item.sport) : isInvolvementCenter ? "/images/IC_default.png" : "/images/UNLV_Logo.png")}
+                            alt={item.name ? `${item.name} event artwork` : "Event artwork"}
+                            className={[
+                              "h-full w-full object-center",
+                              isRebelSports
+                              || item.imageUrl === "/images/UNLV_Logo.png"
+                              || (!item.imageUrl && isUNLVCalendar)
+                                ? "object-contain p-8"
+                                : "object-cover",
+                            ].join(" ")}
+                            loading="lazy"
+                          />
+                        )
                       ) : (
                         <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-stone-300 to-stone-200 px-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                           No Event Flyer
@@ -3173,7 +3354,7 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                         <p className="truncate">{item.location || "No Location Specified"}</p>
                       </div>
                     </div>
-                    <div className="mt-4 grid gap-2">
+                    <div className={hasSync ? "mt-4 grid gap-2 min-[500px]:grid-cols-2" : "mt-4 grid gap-2"}>
                       <button
                         type="button"
                         onClick={() => setActiveDatasetItem(item)}
@@ -3878,18 +4059,18 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
             This view combines our datasets with your synced Rebel Remind events when the extension is connected.
           </p>
         </div>
-        <div className="flex flex-col items-stretch gap-3">
-          <Link
-            to={selectedCalendarDatasetRoute}
-            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
-          >
-            Dataset Explorer
-          </Link>
+        <div className="flex flex-row flex-wrap items-stretch gap-3 min-[916px]:flex-col">
           <Link
             to="/"
             className={BACK_HOME_BUTTON_CLASS}
           >
             Back Home
+          </Link>
+          <Link
+            to={selectedCalendarDatasetRoute}
+            className="inline-flex items-center justify-center rounded-2xl border border-[#8b0000]/30 bg-[#8b0000] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8b0000]/25 transition hover:-translate-y-0.5 hover:bg-[#6b0000]"
+          >
+            Dataset Explorer
           </Link>
         </div>
       </div>
