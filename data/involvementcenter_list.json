@@ -1,41 +1,5 @@
 [
   {
-    "name": "AIAA Meetings",
-    "startDate": "2026-01-30",
-    "startTime": "3:00 PM",
-    "endDate": "2026-01-30",
-    "endTime": "6:00 PM",
-    "location": "TBE B 162",
-    "organization": "American Institute of Aeronautics and Astronautics",
-    "description": "Come and join our meetings every Fridays from 3pm-6pm at TBE B 162 (machine shop). All major are welcome, see you there!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fb462387-f0c0-4b02-b653-e860a3e7dd34df46cb2a-5cad-433c-83e2-ec5af50f6a53.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147287"
-  },
-  {
-    "name": "Rebels RISE Scholar Program \u2013 Spring 2026 | Applications Now Open",
-    "startDate": "2025-12-29",
-    "startTime": "12:00 PM",
-    "endDate": "2026-01-30",
-    "endTime": "7:00 PM",
-    "location": "SSC-A, 2nd floor, RM 254",
-    "organization": "Rebels R.I.S.E.",
-    "description": "Applications for the Spring 2026 Rebels RISE Scholar Cohort are now open. The Rebels RISE Scholar Program is a flexible, non-graded experience designed to help students strengthen their connection to campus, build community, and develop skills that support academic and personal success. Through online modules, optional in-person events, workshops, and individualized support, Rebels RISE encourages students to engage with campus resources and with one another during their time at UNLV. This program is open to UNLV students who have completed their first year at UNLV or have 30+ earned credits and are looking to deepen their campus involvement, build meaningful connections, and gain additional support as they continue their academic journey. Application Deadline: January 30, 2026 Apply today",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/699a24e5-3212-4884-bad1-df65a7dcb364998e385f-9274-41ed-b52a-4f2d4462c448.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11964438"
-  },
-  {
-    "name": "Friday kick!",
-    "startDate": "2026-01-30",
-    "startTime": "6:30 PM",
-    "endDate": "2026-01-30",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! We'll meet in the lobby of the Rec. See the latest exact plans on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/048ac95f-e5ce-4cf5-a1ec-47e6503da0723991180e-afb3-4ece-a00f-600320d5560a.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063318"
-  },
-  {
     "name": "AB Immersion: Artivism",
     "startDate": "2026-01-31",
     "startTime": "10:00 AM",
@@ -5232,18 +5196,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -5254,6 +5206,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
