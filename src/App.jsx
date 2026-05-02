@@ -283,7 +283,7 @@ function getSavableEventSourceKey(item, fallbackSourceKey = "") {
     return "involvementCenter";
   }
 
-  if (sourceLabel === "unlv calendar" || eventType === "unlvevents") {
+  if (sourceLabel === "unlv calendar" || sourceLabel === "saved campus event" || eventType === "unlvevents") {
     return "unlvCalendar";
   }
 
@@ -292,6 +292,23 @@ function getSavableEventSourceKey(item, fallbackSourceKey = "") {
   }
 
   return "";
+}
+
+function getSavedCampusEventSourceKey(item) {
+  const sourceKey = getSavableEventSourceKey(item);
+  if (sourceKey) {
+    return sourceKey;
+  }
+
+  if (item?.sport) {
+    return "rebelSports";
+  }
+
+  if (item?.organization) {
+    return "involvementCenter";
+  }
+
+  return item?.sourceType === "savedUnlvEvent" ? "unlvCalendar" : "";
 }
 
 function getCalendarSourceLink(key) {
@@ -498,6 +515,40 @@ function formatNewsDate(item) {
     weekday: "short",
     month: "short",
     day: "numeric",
+  });
+}
+
+function getDataFileName(path) {
+  return String(path || "").split("/").filter(Boolean).pop() || "";
+}
+
+function getDataFileMetadata(dataMetadata, source) {
+  const fileName = getDataFileName(source?.path);
+  if (!fileName) {
+    return null;
+  }
+
+  return dataMetadata?.datasets?.[fileName] || null;
+}
+
+function formatDataUpdatedAt(value) {
+  if (!value) {
+    return "Unknown";
+  }
+
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+
+  return parsed.toLocaleString("en-US", {
+    timeZone: "America/Los_Angeles",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZoneName: "short",
   });
 }
 
@@ -1202,6 +1253,8 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceA
   const isGroup = Array.isArray(payload.events);
   const modalTitle = isGroup ? payload.title : payload.title;
   const modalSourceLabel = isGroup ? payload.subtitle : payload.sourceLabel;
+  const getSourceActionLabel = (event) => isCanvasAssignmentEvent(event) ? "Go to Assignment" : sourceActionLabel;
+  const shouldShowLocation = (event) => event?.sourceKey !== "academicCalendar" && event?.location;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-8 backdrop-blur-sm">
@@ -1233,7 +1286,7 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceA
                   <p className="mt-2 text-sm font-semibold text-stone-800">
                     {formatCalendarPanelDate(event.startDate)} · {formatCalendarTimeRange(event)}
                   </p>
-                  {event.location ? (
+                  {shouldShowLocation(event) ? (
                     <p className="mt-1 text-sm text-stone-700"><span className="font-semibold">Location:</span> {event.location}</p>
                   ) : null}
                   {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
@@ -1245,7 +1298,7 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceA
                         rel="noreferrer"
                         className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
                       >
-                        Open Event
+                        {getSourceActionLabel(event)}
                       </a>
                     ) : null}
                     {renderSaveAction ? renderSaveAction(event, "w-full sm:w-auto") : null}
@@ -1258,7 +1311,7 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceA
           <div className="mt-5 space-y-3 text-sm">
             <p><span className="font-semibold">Date:</span> {formatCalendarPanelDate(payload.startDate)}</p>
             <p><span className="font-semibold">Time:</span> {formatCalendarTimeRange(payload)}</p>
-            {payload.location ? <p><span className="font-semibold">Location:</span> {payload.location}</p> : null}
+            {shouldShowLocation(payload) ? <p><span className="font-semibold">Location:</span> {payload.location}</p> : null}
             {payload.description ? (
               <p>
                 <span className="font-semibold">{payload.sourceLabel === "Rebel Sports" ? "Sport:" : "Details:"}</span> {payload.description}
@@ -1272,7 +1325,7 @@ function CalendarEventModal({ payload, onClose, renderSaveAction = null, sourceA
                   rel="noreferrer"
                   className="inline-flex min-h-10 items-center justify-center rounded-2xl bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
                 >
-                  {sourceActionLabel}
+                  {getSourceActionLabel(payload)}
                 </a>
               ) : null}
               {renderSaveAction ? renderSaveAction(payload, "w-full sm:w-auto") : null}
@@ -1587,11 +1640,12 @@ function OrganizationAvatar({ src, name, className = "h-10 w-10 text-sm" }) {
 
 function EventArtwork({ item, src, useWideFit = false }) {
   const [isWideArtwork, setIsWideArtwork] = useState(false);
+  const bannerAspectRatioThreshold = 2.25;
 
   function handleLoad(event) {
     const image = event.currentTarget;
     const aspectRatio = image.naturalHeight ? image.naturalWidth / image.naturalHeight : 0;
-    setIsWideArtwork(useWideFit && aspectRatio >= 1.9);
+    setIsWideArtwork(useWideFit && aspectRatio >= bannerAspectRatioThreshold);
   }
 
   return (
@@ -2249,10 +2303,10 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 </p> */}
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <Link
-                    to="/datasets"
+                    to={getDatasetRoute("unlvCalendar")}
                     className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
                   >
-                    All Datasets
+                    View Events
                   </Link>
                   <Link
                     to="/calendar"
@@ -2294,10 +2348,10 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:mt-auto">
               <Link
-                to="/datasets"
+                to={getDatasetRoute("unlvCalendar")}
                 className="inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-base font-semibold text-stone-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-stone-100"
               >
-                All Datasets
+                View Events
               </Link>
               <Link
                 to="/calendar"
@@ -2313,14 +2367,17 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
   );
 }
 
-function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds, campusWideEvents, careerEvents }) {
+function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds, dataMetadata, campusWideEvents, careerEvents }) {
   const [collapsedEvents, setCollapsedEvents] = useState({});
   const [activeNewsFeedKey, setActiveNewsFeedKey] = useState(NEWS_FEED_FILES[0].key);
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
   const [activeHomepageEvent, setActiveHomepageEvent] = useState(null);
   const [activeSyncedHomeEvent, setActiveSyncedHomeEvent] = useState(null);
+  const [locallyRemovedHomeEventKeys, setLocallyRemovedHomeEventKeys] = useState(() => new Set());
   const featuredPreferences = toTitleList(bridgeState?.preferences);
   const activeNewsFeed = Array.isArray(newsFeeds?.[activeNewsFeedKey]) ? newsFeeds[activeNewsFeedKey] : [];
+  const activeNewsFeedSource = NEWS_FEED_FILES.find((feed) => feed.key === activeNewsFeedKey);
+  const activeNewsFeedMetadata = getDataFileMetadata(dataMetadata, activeNewsFeedSource);
   const campusFeedItems = Array.isArray(activeNewsFeed)
     ? [...activeNewsFeed]
       .filter((item) => item?.name && item?.link)
@@ -2385,12 +2442,32 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
   const bridgeIsConnected = bridgeStatus === "connected";
   const isHomepageEventSaved = (event) => {
     const key = buildSavedCampusEventKey(event);
+    if (locallyRemovedHomeEventKeys.has(key)) {
+      return false;
+    }
+
+    if (getSavableEventSourceKey(event) === "involvementCenter") {
+      return true;
+    }
+
     return savedHomepageEventKeys.has(key);
   };
   const handleSaveHomepageEvent = (event) => {
+    const key = buildSavedCampusEventKey(event);
+    setLocallyRemovedHomeEventKeys((current) => {
+      const next = new Set(current);
+      next.delete(key);
+      return next;
+    });
     saveCampusEvent(event);
   };
   const handleRemoveHomepageEvent = (event) => {
+    const key = buildSavedCampusEventKey(event);
+    setLocallyRemovedHomeEventKeys((current) => {
+      const next = new Set(current);
+      next.add(key);
+      return next;
+    });
     removeCampusEvent(event);
   };
   const renderHomepageSaveAction = (item, sourceKey, className = "w-full") => {
@@ -2423,6 +2500,10 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
       return "involvementCenter";
     }
 
+    if (event?.sourceType === "savedUnlvEvent") {
+      return getSavedCampusEventSourceKey(event);
+    }
+
     return "";
   };
   const renderSyncedHomeSaveAction = (event, className = "w-full") => {
@@ -2442,7 +2523,10 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
         bridgeStatus={bridgeStatus}
         saved={isHomepageEventSaved(payload)}
         onSave={handleSaveHomepageEvent}
-        onRemove={handleRemoveHomepageEvent}
+        onRemove={(selectedEvent) => {
+          handleRemoveHomepageEvent(selectedEvent);
+          setActiveSyncedHomeEvent(null);
+        }}
         className={className}
       />
     );
@@ -2732,6 +2816,13 @@ function HomePage({ bridgeStatus, bridgeState, bridgeError, datasets, newsFeeds,
             ) : (
               <p className="text-white/80">{getNewsFeedEmptyMessage(activeNewsFeedKey)}</p>
             )}
+          </div>
+          <div className="mt-5 border-t border-white/15 pt-4">
+            <p className="text-left text-xs text-white/62">
+              <span className="font-semibold text-white/78">{getNewsFeedLabel(activeNewsFeedKey)} - </span>{" "}
+              Last Updated: {formatDataUpdatedAt(activeNewsFeedMetadata?.lastSuccessfulAt)}
+              {activeNewsFeedMetadata?.status === "fallback" ? " (using fallback)" : ""}
+            </p>
           </div>
         </div>
       </section>
@@ -3945,6 +4036,38 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       />
     );
   };
+  const tableShowsDetailColumn = ["unlvCalendar", "involvementCenter"].includes(selectedCalendarKey);
+  const tableShowsSourceColumn = selectedCalendarKey === "extensionEvents";
+  const tableShowsLocationColumn = selectedCalendarKey !== "academicCalendar";
+  const tableDetailColumnLabel = selectedCalendarKey === "unlvCalendar"
+    ? "Category"
+    : selectedCalendarKey === "involvementCenter"
+      ? "RSO"
+      : "";
+  const tableGridTemplateColumns = [
+    "minmax(4.25rem,0.45fr)",
+    "minmax(4.75rem,0.5fr)",
+    "minmax(7rem,0.85fr)",
+    "minmax(11rem,1.65fr)",
+    tableShowsSourceColumn ? "minmax(7rem,0.78fr)" : "",
+    tableShowsDetailColumn ? "minmax(7rem,0.82fr)" : "",
+    tableShowsLocationColumn ? "minmax(7rem,0.85fr)" : "",
+  ].filter(Boolean).join(" ");
+  const calendarTableSourceLabel = selectedCalendarKey === "extensionEvents"
+    ? "Your Synched Events"
+    : DATA_FILE_MAP[selectedCalendarKey]?.label || "Selected Calendar";
+  const getCalendarTableDetail = (event) => {
+    if (selectedCalendarKey === "unlvCalendar") {
+      return event.category || "Other";
+    }
+
+    if (selectedCalendarKey === "involvementCenter") {
+      return event.organization || "RSO";
+    }
+
+    return "";
+  };
+  const getCalendarEventActionLabel = (event) => isCanvasAssignmentEvent(event) ? "Go to Assignment" : "Open Event";
 
   function toggleCalendarManualFilter(filter) {
     setCalendarManualFilters((current) =>
@@ -4409,6 +4532,12 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
             </div>
           </div>
 
+          {calendarView === "table" ? (
+            <p className="mt-4 text-sm text-white/72">
+              <span className="font-semibold text-white/90">Source:</span> {calendarTableSourceLabel}
+            </p>
+          ) : null}
+
           {calendarView === "month" ? (
             <>
               <div className="mt-5 grid grid-cols-7 gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/60 max-[700px]:text-[10px]">
@@ -4512,13 +4641,17 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
             >
               <div className="max-w-full flex-1 overflow-x-auto">
                 <div className="flex min-h-0 min-w-[34rem] flex-col">
-                  <div className="grid grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65 max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]">
-                    <span className="max-[700px]:hidden">Day</span>
-                    <span>Date</span>
-                    <span>Time</span>
-                    <span>Event</span>
-                    <span>Source</span>
-                    <span>Location</span>
+                  <div
+                    className="grid gap-x-4 border-b border-white/10 bg-white/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/65 max-[700px]:gap-x-3 max-[700px]:px-3"
+                    style={{ gridTemplateColumns: tableGridTemplateColumns }}
+                  >
+                    <span className="min-w-0 truncate">Day</span>
+                    <span className="min-w-0 truncate">Date</span>
+                    <span className="min-w-0 truncate">Time</span>
+                    <span className="min-w-0 truncate">Event</span>
+                    {tableShowsSourceColumn ? <span className="min-w-0 truncate">Source</span> : null}
+                    {tableShowsDetailColumn ? <span>{tableDetailColumnLabel}</span> : null}
+                    {tableShowsLocationColumn ? <span className="min-w-0 truncate">Location</span> : null}
                   </div>
                   <div className="min-h-0 flex-1 overflow-y-auto">
                     <div className="divide-y divide-white/10 bg-transparent">
@@ -4532,18 +4665,26 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                               type="button"
                               onClick={() => setActiveModalEvent(event)}
                               className={[
-                                "grid w-full grid-cols-[0.8fr_0.95fr_0.95fr_1.3fr_0.95fr_1.1fr] border-l-2 px-4 py-3 text-left text-sm text-white transition max-[700px]:grid-cols-[0.95fr_0.95fr_1.4fr_1fr_1.15fr] max-[700px]:px-3 max-[600px]:grid-cols-[0.95fr_0.95fr_1.5fr_1fr_1.15fr]",
+                                "grid w-full gap-x-4 border-l-2 px-4 py-3 text-left text-sm text-white transition max-[700px]:gap-x-3 max-[700px]:px-3",
                                 dayLabel.isToday
                                   ? "border-l-white/60 bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:bg-white/14"
                                   : "border-l-transparent hover:bg-white/10",
                               ].join(" ")}
+                              style={{ gridTemplateColumns: tableGridTemplateColumns }}
                             >
-                              <span className={[dayLabel.emphasize ? "font-bold text-white" : "", "max-[700px]:hidden"].join(" ")}>{dayLabel.label}</span>
-                              <span>{formatCalendarDateOnly(event.startDate)}</span>
-                              <span>{formatCalendarTimeRange(event)}</span>
-                              <span className="font-semibold">{event.title}</span>
-                              <span>{event.sourceLabel}</span>
-                              <span className="truncate text-white/75">{event.location || "TBA"}</span>
+                              <span className={`min-w-0 truncate ${dayLabel.emphasize ? "font-bold text-white" : ""}`}>{dayLabel.label}</span>
+                              <span className="min-w-0 truncate whitespace-nowrap">{formatCalendarDateOnly(event.startDate)}</span>
+                              <span className="min-w-0 truncate">{formatCalendarTimeRange(event)}</span>
+                              <span className="min-w-0 truncate font-semibold">{event.title}</span>
+                              {tableShowsSourceColumn ? (
+                                <span className="min-w-0 truncate text-white/75">{event.sourceLabel}</span>
+                              ) : null}
+                              {tableShowsDetailColumn ? (
+                                <span className="min-w-0 truncate text-white/75">{getCalendarTableDetail(event)}</span>
+                              ) : null}
+                              {tableShowsLocationColumn ? (
+                                <span className="min-w-0 truncate text-white/75">{event.location || "TBA"}</span>
+                              ) : null}
                             </button>
                           );
                         })
@@ -4817,12 +4958,16 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">{event.sourceLabel}</p>
                     <h3 className="mt-2 text-lg font-semibold leading-tight text-stone-900">{event.title}</h3>
                     <p className="mt-2 text-sm font-semibold text-stone-800">{formatEventDate(event)}</p>
-                    {event.location ? (
+                    {event.sourceKey !== "academicCalendar" && event.location ? (
                       <p className="mt-1 text-sm text-stone-700">
                         <span className="font-semibold">Location:</span> {event.location}
                       </p>
                     ) : null}
-                    {event.description ? <p className="mt-2 text-sm text-stone-600">{event.description}</p> : null}
+                    {event.description ? (
+                      <p className={`mt-2 text-sm text-stone-600 ${event.sourceKey === "unlvCalendar" ? "line-clamp-2" : ""}`}>
+                        {event.description}
+                      </p>
+                    ) : null}
                     <div className="mt-4 grid gap-2">
                       {event.link ? (
                         <a
@@ -4831,7 +4976,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                           rel="noreferrer"
                           className="inline-flex min-h-10 items-center justify-center rounded-2xl border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 transition hover:bg-stone-100"
                         >
-                          Open Event
+                          {getCalendarEventActionLabel(event)}
                         </a>
                       ) : null}
                       {renderCalendarSaveAction(event)}
@@ -5186,6 +5331,7 @@ export default function App() {
   const [bridgeState, setBridgeState] = useState(null);
   const [datasets, setDatasets] = useState({});
   const [newsFeeds, setNewsFeeds] = useState({});
+  const [dataMetadata, setDataMetadata] = useState({});
   const [campusWideEvents, setCampusWideEvents] = useState([]);
   const [careerEvents, setCareerEvents] = useState([]);
   const [bridgeError, setBridgeError] = useState("");
@@ -5348,6 +5494,24 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const loadDataMetadata = async () => {
+      try {
+        const response = await fetch("/data/index.json");
+        if (!response.ok) {
+          throw new Error("Failed to load /data/index.json");
+        }
+
+        const payload = await response.json();
+        setDataMetadata(payload && typeof payload === "object" ? payload : {});
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    loadDataMetadata();
+  }, []);
+
+  useEffect(() => {
     DATA_FILES.forEach(async ({ key, path }) => {
       try {
         const response = await fetch(path);
@@ -5479,6 +5643,7 @@ export default function App() {
                   bridgeError={bridgeError}
                   datasets={datasets}
                   newsFeeds={newsFeeds}
+                  dataMetadata={dataMetadata}
                   campusWideEvents={campusWideEvents}
                   careerEvents={careerEvents}
                 />
