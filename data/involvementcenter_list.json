@@ -1,17 +1,5 @@
 [
   {
-    "name": "AB Immersion: Artivism",
-    "startDate": "2026-01-31",
-    "startTime": "10:00 AM",
-    "endDate": "2026-01-31",
-    "endTime": "3:00 PM",
-    "location": "UNLV",
-    "organization": "UNLV Alternative Breaks",
-    "description": "AB Immersions are partial-day (up to 6 hour) experiences within the Las Vegas community to dive deeper into a pertinent social issue. These events will include some combination of topic education, community service, talking with community leaders, and reflection. This Involvement Center page is currently serving as a Save-the-Date until the Alternative Breaks Immersions team finalizes the event schedule. More details and RSVP spots will be made available once the schedule is finalized. Please check back periodically for updates. Questions? Email altbreaks@unlv.edu",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d5a5eb5e-c23a-4d2d-b51a-6b3d4d7e7d1a2821c5ea-232e-4327-9a8c-68c284485971.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11325772"
-  },
-  {
     "name": " Study Abroad Scholarships: Part 1 - Freeman Asia & Gilman Information Session (Financial Need Awards)",
     "startDate": "2026-02-02",
     "startTime": "1:00 PM",
@@ -6288,18 +6276,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "ASA E-Board Election Spring 2026",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "Student Union Building room 219",
-    "organization": "African Student Alliance",
-    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12453163"
-  },
-  {
     "name": "Hot \"Girl\" Walk",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -6312,16 +6288,16 @@
     "link": "https://involvementcenter.unlv.edu/event/12172129"
   },
   {
-    "name": "Spring Service Day",
+    "name": "ASA E-Board Election Spring 2026",
     "startDate": "2026-05-01",
-    "startTime": "6:00 PM",
+    "startTime": "5:00 PM",
     "endDate": "2026-05-01",
-    "endTime": "9:00 PM",
-    "location": "First Friday",
-    "organization": "UNLV Grad Pride Alliance",
-    "description": "Queer Education Zine Making Marathon & First Friday Zine Distribution",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12147292"
+    "endTime": "7:00 PM",
+    "location": "Student Union Building room 219",
+    "organization": "African Student Alliance",
+    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453163"
   },
   {
     "name": "The Wildlife Society-Herpetofauna Surveys: Chuckwalla Count at Sloan Canyon",
