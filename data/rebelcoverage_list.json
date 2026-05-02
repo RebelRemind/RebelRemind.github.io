@@ -2227,7 +2227,7 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
   },
   {
     "name": "Milwaukee",
@@ -2247,7 +2247,7 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
   },
   {
     "name": "Mountain West Championship",
@@ -2257,7 +2257,7 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
   },
   {
     "name": "BYU",
@@ -2310,32 +2310,32 @@
     "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-32/"
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Ann Arbor Regional",
     "startDate": "2026-05-11",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-11",
     "endTime": "",
-    "location": "TBD",
+    "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
     "link": ""
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Ann Arbor Regional",
     "startDate": "2026-05-12",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-12",
     "endTime": "",
-    "location": "TBD",
+    "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
     "link": ""
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Ann Arbor Regional",
     "startDate": "2026-05-13",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-13",
     "endTime": "",
-    "location": "TBD",
+    "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
     "link": ""
   },
@@ -2384,6 +2384,16 @@
     "startDate": "2026-05-18",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-18",
+    "endTime": "",
+    "location": "TBD",
+    "sport": "Men's Golf",
+    "link": ""
+  },
+  {
+    "name": "NCAA Regionals",
+    "startDate": "2026-05-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-05-19",
     "endTime": "",
     "location": "TBD",
     "sport": "Men's Golf",
