@@ -270,6 +270,30 @@ function isSavableDatasetKey(value) {
   return SAVABLE_DATASET_KEYS.has(normalizeDatasetKey(value));
 }
 
+function getSavableEventSourceKey(item, fallbackSourceKey = "") {
+  const normalizedFallback = normalizeDatasetKey(fallbackSourceKey || item?.sourceKey || "");
+  if (isSavableDatasetKey(normalizedFallback)) {
+    return normalizedFallback;
+  }
+
+  const sourceLabel = String(item?.sourceLabel || "").trim().toLowerCase();
+  const eventType = String(item?.eventType || "").trim().toLowerCase();
+
+  if (sourceLabel === "involvement center" || eventType === "involvementcenter") {
+    return "involvementCenter";
+  }
+
+  if (sourceLabel === "unlv calendar" || eventType === "unlvevents") {
+    return "unlvCalendar";
+  }
+
+  if (sourceLabel === "rebel sports" || eventType === "rebelcoverage") {
+    return "rebelSports";
+  }
+
+  return "";
+}
+
 function getCalendarSourceLink(key) {
   const normalizedKey = normalizeDatasetKey(key);
   return normalizedKey ? `/calendar?source=${encodeURIComponent(normalizedKey)}` : "/calendar";
@@ -951,7 +975,8 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
         organization: item.organization || "",
         category: item.category || (normalizedDatasetKey === "unlvCalendar" ? "Other" : ""),
         sport: item.sport || "",
-        description: filterValue,
+        description: item.description || "",
+        filterValue,
         imageUrl: item.imageUrl || "",
         link: item.link || "",
         sourceLabel: datasetLabel,
@@ -1498,7 +1523,7 @@ function getSavedCampusEventKeys(bridgeState) {
 }
 
 function buildSavedCampusEventPayload(sourceKey, item) {
-  const normalizedSourceKey = normalizeDatasetKey(sourceKey || item?.sourceKey || "");
+  const normalizedSourceKey = getSavableEventSourceKey(item, sourceKey);
   if (!isSavableDatasetKey(normalizedSourceKey)) {
     return null;
   }
@@ -1606,20 +1631,15 @@ function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, cla
   }
 
   const isConnected = bridgeStatus === "connected";
-  const label = !isConnected
-    ? "Connect Extension to Save"
-    : saved
-      ? "Remove from My Events"
-      : "Add to My Events";
+  if (!isConnected) {
+    return null;
+  }
+
+  const label = saved ? "Remove from My Events" : "Add to My Events";
 
   function handleClick(clickEvent) {
     clickEvent.preventDefault();
     clickEvent.stopPropagation();
-
-    if (!isConnected) {
-      openDownloadModal();
-      return;
-    }
 
     if (saved) {
       onRemove(event);
@@ -1638,7 +1658,6 @@ function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, cla
         saved
           ? "border-stone-300 bg-white text-stone-800 hover:bg-stone-100"
           : "border-[#8b0000]/30 bg-[#8b0000] text-white shadow-sm shadow-[#8b0000]/20 hover:bg-[#6b0000]",
-        !isConnected ? "border-stone-300 bg-stone-900 text-white hover:bg-black" : "",
         className,
       ].join(" ")}
     >
@@ -2047,10 +2066,24 @@ function Navbar({ visible, onDismiss, bridgeStatus }) {
 }
 
 function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syncedUserEvents, collapsedEvents, onToggleCollapsedEvent, onSelectSyncedEvent }) {
-  const bridgeIsConnected = bridgeStatus === "connected";
+  const bridgeHasState = Boolean(bridgeState);
+  const bridgeIsConnected = bridgeStatus === "connected" && bridgeHasState;
+  const bridgeIsSyncing = bridgeStatus === "connected" && !bridgeHasState;
   const bridgeIsUnsupported = bridgeStatus === "unsupported";
   const profileName = bridgeState?.user?.name || "User";
   const firstName = profileName.split(/\s+/).filter(Boolean)[0] || "User";
+  const bridgeCanvasAssignments = Array.isArray(bridgeState?.upcomingAssignments) && bridgeState.upcomingAssignments.length
+    ? bridgeState.upcomingAssignments
+    : (Array.isArray(bridgeState?.calendarEvents) ? bridgeState.calendarEvents : [])
+      .filter(isCanvasAssignmentEvent)
+      .map((event) => ({
+        id: event.id,
+        title: event.title,
+        courseName: event.description || "",
+        dueAt: event.startDate && event.startTime ? `${event.startDate} ${event.startTime}` : event.startDate,
+        link: event.link || "",
+      }))
+      .slice(0, 4);
 
   return (
     <header className="rounded-[2rem] border border-white/20 bg-black/20 px-6 py-6 shadow-2xl backdrop-blur-md">
@@ -2068,12 +2101,14 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
             <h1 className="w-full max-w-none font-serif text-2xl font-semibold leading-tight sm:text-3xl xl:text-4xl">
               {bridgeIsConnected
                 ? `Hi ${firstName}, here are your reminders.`
+                : bridgeIsSyncing
+                  ? "Syncing your Rebel Remind data..."
                 : "A student-built Chrome Extension designed to centralize assignment reminders, club events, and general campus events, all in one place."}
             </h1>
             <div className="mt-5 grid gap-3 text-sm text-white/88 sm:text-base">
-              {bridgeIsConnected ? (
+              {bridgeIsConnected || bridgeIsSyncing ? (
                 <>
-                  <p>Your saved events, custom reminders, and synced campus plans are all in one place.</p>
+                  <p>{bridgeIsConnected ? "Your saved events, custom reminders, and synced campus plans are all in one place." : "Pulling the latest assignments and events from your extension."}</p>
                 </>
               ) : (
                 <>
@@ -2176,8 +2211,8 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Upcoming Assignments</p>
                 <h2 className="mt-3 font-serif text-3xl leading-tight">Canvas Assignments Due Soon</h2>
                 <div className="mt-5 max-h-[16rem] space-y-3 overflow-y-auto pr-1">
-                  {bridgeState?.upcomingAssignments?.length ? (
-                    bridgeState.upcomingAssignments.map((assignment) => {
+                  {bridgeCanvasAssignments.length ? (
+                    bridgeCanvasAssignments.map((assignment) => {
                       const dueDate = getAssignmentDateDetails(assignment.dueAt);
 
                       return (
@@ -3812,7 +3847,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     ? baseCalendarEvents.filter((event) => {
       const eventFilterValue = selectedCalendarKey === "extensionEvents"
         ? event.sourceLabel
-        : event.description;
+        : event.filterValue || event.category || event.organization || event.sport || "";
       return activeCalendarFilters.includes(eventFilterValue);
     })
     : baseCalendarEvents;
@@ -3876,6 +3911,10 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     && isCanvasSourceVisible;
   const savedCalendarEventKeys = getSavedCampusEventKeys(bridgeState);
   const isCalendarEventSaved = (event) => {
+    if (selectedCalendarKey === "extensionEvents" && isSavableDatasetKey(event?.sourceKey)) {
+      return true;
+    }
+
     const key = buildSavedCampusEventKey(event);
     return savedCalendarEventKeys.has(key);
   };
@@ -3886,6 +3925,10 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     removeCampusEvent(event);
   };
   const renderCalendarSaveAction = (event, className = "w-full") => {
+    if (bridgeStatus !== "connected") {
+      return null;
+    }
+
     const payload = buildSavedCampusEventPayload(event?.sourceKey, event);
     if (!payload) {
       return null;
@@ -5218,6 +5261,7 @@ export default function App() {
       if (type === bridgeTypes.pong) {
         seenPong = true;
         setBridgeStatus("connected");
+        requestExtensionState();
         return;
       }
 
@@ -5257,7 +5301,7 @@ export default function App() {
     attemptBridgeHandshake();
 
     const retryIntervalId = window.setInterval(() => {
-      if (seenPong || seenState) {
+      if (seenState) {
         window.clearInterval(retryIntervalId);
         return;
       }
@@ -5271,6 +5315,9 @@ export default function App() {
         setBridgeStatus("unavailable");
         setBridgeState(null);
         setBridgeError("");
+      } else if (seenPong && !seenState) {
+        setBridgeStatus("connected");
+        requestExtensionState();
       }
     }, 4000);
 
@@ -5278,6 +5325,25 @@ export default function App() {
       unsubscribe();
       window.clearInterval(retryIntervalId);
       window.clearTimeout(timeoutId);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isBridgeSupportedBrowser()) {
+      return undefined;
+    }
+
+    const refreshBridgeState = () => {
+      if (document.visibilityState === "visible") {
+        requestExtensionState();
+      }
+    };
+
+    document.addEventListener("visibilitychange", refreshBridgeState);
+    window.addEventListener("focus", refreshBridgeState);
+    return () => {
+      document.removeEventListener("visibilitychange", refreshBridgeState);
+      window.removeEventListener("focus", refreshBridgeState);
     };
   }, []);
 
