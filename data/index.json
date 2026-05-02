@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T20:55:48Z",
+  "generatedAt": "2026-05-02T22:30:29Z",
   "files": [
     "academiccalendar_list.json",
     "buildingimages_list.json",
@@ -12,5 +12,63 @@
     "unlvcalendar_list.json",
     "unlvinthenews_list.json",
     "unlvtoday_list.json"
-  ]
+  ],
+  "datasets": {
+    "academiccalendar_list.json": {
+      "status": "success",
+      "itemCount": 42,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "buildingimages_list.json": {
+      "status": "success",
+      "itemCount": 119,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "campuswideevents_list.json": {
+      "status": "success",
+      "itemCount": 2,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "careerevents_list.json": {
+      "status": "success",
+      "itemCount": 2,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "involvementcenter_list.json": {
+      "status": "success",
+      "itemCount": 560,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "rebelcoverage_list.json": {
+      "status": "success",
+      "itemCount": 362,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "scarletandgraynews_list.json": {
+      "status": "fallback",
+      "itemCount": 10,
+      "lastSuccessfulAt": "",
+      "error": "403 Client Error: Forbidden for url: https://unlvscarletandgray.com/news/feed/"
+    },
+    "unlvinthenews_list.json": {
+      "status": "success",
+      "itemCount": 9,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "unlvcalendar_list.json": {
+      "status": "success",
+      "itemCount": 2133,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "unlvtoday_list.json": {
+      "status": "success",
+      "itemCount": 27,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    },
+    "organization_list.json": {
+      "status": "success",
+      "itemCount": 564,
+      "lastSuccessfulAt": "2026-05-02T22:30:29Z"
+    }
+  }
 }
