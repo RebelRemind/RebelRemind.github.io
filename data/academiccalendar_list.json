@@ -336,14 +336,6 @@
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
-    "name": "Study Week Begins",
-    "startDate": "2026-05-04",
-    "startTime": "",
-    "endDate": "2026-05-04",
-    "endTime": "",
-    "link": "https://www.unlv.edu/event/study-week-begins-8"
-  },
-  {
     "name": "Instruction Ends",
     "startDate": "2026-05-09",
     "startTime": "",
@@ -432,20 +424,20 @@
     "link": "https://www.unlv.edu/event/summer-session-i-grades-due"
   },
   {
-    "name": "Juneteenth Day Recess",
-    "startDate": "2026-06-19",
-    "startTime": "",
-    "endDate": "2026-06-19",
-    "endTime": "",
-    "link": "https://www.unlv.edu/event/juneteenth-day-recess-2"
-  },
-  {
     "name": "Juneteenth Recess",
     "startDate": "2026-06-19",
     "startTime": "",
     "endDate": "2026-06-19",
     "endTime": "",
     "link": "https://www.unlv.edu/event/juneteenth-recess-0"
+  },
+  {
+    "name": "Juneteenth Day Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-day-recess-2"
   },
   {
     "name": "Independence Day Recess",
