@@ -1,16 +1,6 @@
 [
   {
     "name": "Therese Hession Regional Challenge",
-    "startDate": "2026-02-02",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-02",
-    "endTime": "",
-    "location": "Palos Verdes Estates, CA",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/2/womens-golf-foong-moves-into-top-20-after-two-rounds-in-palos-verdes.aspx"
-  },
-  {
-    "name": "Therese Hession Regional Challenge",
     "startDate": "2026-02-03",
     "startTime": "(ALL DAY)",
     "endDate": "2026-02-03",
@@ -2207,17 +2197,17 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
+    "link": "https://unlvrebels.com/news/2026/5/3/mens-golf-rebels-in-top-5-after-first-round-at-mountain-west-championship.aspx"
   },
   {
     "name": "Milwaukee",
     "startDate": "2026-05-03",
-    "startTime": "11:05 AM",
+    "startTime": "11:02 AM",
     "endDate": "2026-05-03",
-    "endTime": "",
+    "endTime": "2:02 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://youtube.com/live/330Vr68_PsQ?feature=share"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/milwaukee/boxscore/17784"
   },
   {
     "name": "Mountain West Championship",
@@ -3608,5 +3598,15 @@
     "location": "Phoenix, AZ",
     "sport": "Men's Soccer",
     "link": "https://unlvrebels.com/sports/mens-soccer/stats/2025/grand-canyon/boxscore/17349"
+  },
+  {
+    "name": "Easley Invite",
+    "startDate": "2026-11-02",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-02",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/2/mens-tennis-rebs-win-three-during-day-one-of-easley-classic.aspx"
   }
 ]
