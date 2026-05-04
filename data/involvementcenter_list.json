@@ -6432,18 +6432,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12300839"
   },
   {
-    "name": "Final Study Breakers - Karaoke ",
-    "startDate": "2026-05-07",
-    "startTime": "2:00 PM",
-    "endDate": "2026-05-07",
-    "endTime": "3:00 PM",
-    "location": "UNLV SSC-A 301",
-    "organization": "CAEO College Programs",
-    "description": "Take a break from finals, grab the mic, and sing your stress away! Join us for a fun karaoke study break to relax and recharge.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12026404"
-  },
-  {
     "name": "Narcan Training",
     "startDate": "2026-05-07",
     "startTime": "3:00 PM",
@@ -6490,6 +6478,18 @@
     "description": "One Last Hurrah with the Class of 2026 From the first day of freshman year to the final walk across the stage, we\u2019ve been through it all together. Before you head off on your next great adventure, join us for an evening of reflection, laughter, and celebration. Come enjoy a meal with friends and share those \"remember when\" stories one last time. Let\u2019s make this final chapter a beautiful one.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/7bd01a45-cea0-4f3b-847c-2e7c47aa3570ea534bf3-2148-40a4-ae07-114ffe80aadc.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12438687"
+  },
+  {
+    "name": "K-pop Club Karaoke",
+    "startDate": "2026-05-08",
+    "startTime": "6:00 PM",
+    "endDate": "2026-05-08",
+    "endTime": "8:00 PM",
+    "location": "HOS 282",
+    "organization": "K-pop Club",
+    "description": "If you enjoy singing K-pop or K-pop adjacent songs, this is the perfect event for you! Come join us to meet new friends, enjoy free snacks, and have fun singing! Please RSVP so we have an idea on how many people plan to come! \ud83d\udccdLocation: HOS 282 (Hospitality Building) \u23f0Time: 6PM - 8PM \ud83d\udcc5 Day: May 8th, 2026 (Friday) RSVP Form: https://docs.google.com/forms/d/e/1FAIpQLSc5vy3dU6d3-4IPK21wvakww9eFe6ULne2MP_ePN8BXGxWl-Q/viewform",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/eeb88629-0c15-485e-89ac-dce6e5acb06425cbe32d-343e-4182-9803-9b698f0b89a6.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12460159"
   },
   {
     "name": "Feed My Sheep",
@@ -6550,6 +6550,18 @@
     "description": "As an ongoing, newfound tradition, Perfume Club would like to honor its graduates with Senior Night! Spring graduates will receive personalized stoles, gift boxes, and a night of fun to celebrate their achievement - surviving and thriving college. *Must be a graduating student to attend & club dues must be fully paid*",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/12063306"
+  },
+  {
+    "name": "Grad Pride Alliance X PRIDE Family Bingo",
+    "startDate": "2026-05-13",
+    "startTime": "7:00 PM",
+    "endDate": "2026-05-13",
+    "endTime": "9:30 PM",
+    "location": "The Portal @ AREA15",
+    "organization": "UNLV Grad Pride Alliance",
+    "description": "The UNLV Grad Pride Alliance will be meeting up at PRIDE Family Bingo to hang out, have fun make friends, and build community. PRIDE Family Bingo will be hosted at The Portal at AREA15 on Wednesday May 13th at 6:45 PM. We would love to see you there!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/abf08453-7015-477e-9a31-cd2e80b6b20f644b5280-33fa-4de9-8dcb-a0ae882bbb86.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12460161"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
