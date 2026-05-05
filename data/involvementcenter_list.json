@@ -1,17 +1,5 @@
 [
   {
-    "name": "IN PERSON Rebels R.I.S.E - Initial Cohort Meeting",
-    "startDate": "2026-02-04",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-04",
-    "endTime": "12:00 PM",
-    "location": "SSC-A, 2nd floor, RM 254 - The Coaching Spot",
-    "organization": "Rebels R.I.S.E.",
-    "description": "Congratulations to our accepted Rebels R.I.S.E. Scholars! Rebels R.I.S.E. Scholars are required to attend one initial cohort meeting. During Rebels R.I.S.E. cohort session you\u2019ll meet your peer mentors, review program requirements, and learn about event participation expectations. Students attending the in-person session will also have the opportunity to meet Academic Success Coaches and enjoy a ramen bar and other snacks. We look forward to seeing you there! \ud83c\udf5c\ud83c\udf93 You only have to attend one session: Please RSVP for the VIRTUAL session or the IN PERSON session. If you are unable to attend either option, contact rebelsrise@unlv.edu as soon as possible.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/65365130-3334-4dd0-8802-f13129a2cbe14b57b2ab-973f-44ec-bb2a-32dadf3e22f4.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12052656"
-  },
-  {
     "name": "Hospitality Involvement Fair: Spring Sememster",
     "startDate": "2026-02-04",
     "startTime": "11:00 AM",
@@ -6156,18 +6144,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "ASA E-Board Election Spring 2026",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "Student Union Building room 219",
-    "organization": "African Student Alliance",
-    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12453163"
-  },
-  {
     "name": "Hot \"Girl\" Walk",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -6178,6 +6154,18 @@
     "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12172129"
+  },
+  {
+    "name": "ASA E-Board Election Spring 2026",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "Student Union Building room 219",
+    "organization": "African Student Alliance",
+    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453163"
   },
   {
     "name": "The Wildlife Society-Herpetofauna Surveys: Chuckwalla Count at Sloan Canyon",
@@ -6288,6 +6276,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12026389"
   },
   {
+    "name": "SORCE Pop Up: Study Breaker x CRAFTERNOON",
+    "startDate": "2026-05-06",
+    "startTime": "12:30 PM",
+    "endDate": "2026-05-06",
+    "endTime": "4:00 PM",
+    "location": "SORCE Room SU 305",
+    "organization": "Student Organization Resource Center",
+    "description": "Refuel with a free lunch and hit the reset button with games, movies, and crafts before you head back to the grind. Join us Wednesday, May 6th from 12:30pm-4pm in the SORCE Room (SU 305).",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/424a4142-b016-4765-8571-bd96b18f1170a78c63e1-15c9-4237-9184-09e841aa2e9a.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12300839"
+  },
+  {
     "name": "LSSA Finals Study Sessions",
     "startDate": "2026-05-05",
     "startTime": "4:30 PM",
@@ -6334,18 +6334,6 @@
     "description": "Join us for guided meditation. No registration needed.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b81b307b-9e63-4f82-be3b-8c52910904e876ee8b92-1fed-4ad1-b3e4-b5e32947ee2e.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12131445"
-  },
-  {
-    "name": "SORCE Pop Up: Study Breaker",
-    "startDate": "2026-05-07",
-    "startTime": "12:00 PM",
-    "endDate": "2026-05-07",
-    "endTime": "1:30 PM",
-    "location": "SORCE Room SU 305",
-    "organization": "Student Organization Resource Center",
-    "description": "Your ultimate finals survival starts here! Refuel with a free lunch and hit the reset button with games, movies, and crafts before you head back to the grind. Join us Thursday, May 7th from 12pm-1:30pm in the SORCE Room (SU 305).",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/ee426292-7070-4a2a-ad05-697cd12a558c120cc83e-541b-4e69-92f4-e8b6218941af.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12300839"
   },
   {
     "name": "Narcan Training",
