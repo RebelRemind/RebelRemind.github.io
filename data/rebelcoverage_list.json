@@ -1,25 +1,5 @@
 [
   {
-    "name": "Therese Hession Regional Challenge",
-    "startDate": "2026-02-03",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-03",
-    "endTime": "",
-    "location": "Palos Verdes Estates, CA",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/3/womens-golf-rebels-conclude-spring-opener-in-palos-verdes.aspx"
-  },
-  {
-    "name": "Fresno State",
-    "startDate": "2026-02-03",
-    "startTime": "8:00 PM",
-    "endDate": "2026-02-03",
-    "endTime": "",
-    "location": "Fresno, California",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/fresno-state/boxscore/17622"
-  },
-  {
     "name": "CBU",
     "startDate": "2026-02-05",
     "startTime": "",
@@ -2217,7 +2197,7 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
+    "link": "https://unlvrebels.com/news/2026/5/4/mens-golf-rebels-surge-into-lead-on-record-day-two-at-mountain-west-championship.aspx"
   },
   {
     "name": "Mountain West Championship",
@@ -3608,5 +3588,15 @@
     "location": "Las Vegas, NV Fertitta Tennis Complex",
     "sport": "Men's Tennis",
     "link": "https://unlvrebels.com/news/2025/11/2/mens-tennis-rebs-win-three-during-day-one-of-easley-classic.aspx"
+  },
+  {
+    "name": "Easley Invite",
+    "startDate": "2026-11-03",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-03",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/3/mens-tennis-gibson-wins-again-at-easley-tourney.aspx"
   }
 ]
