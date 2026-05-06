@@ -1330,11 +1330,6 @@
     "link": "https://involvementcenter.unlv.edu/organization/nhoceanclub"
   },
   {
-    "name": "Nu Rho Psi",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/73581131-c2ee-4b0a-8f08-98e9d6de1b32390cae93-7d7d-4fff-8350-37b0f2e20ae3.jpeg?preset=small-sq",
-    "link": "https://involvementcenter.unlv.edu/organization/nurhopsi"
-  },
-  {
     "name": "Off the Shelf: A Banned Book Club",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/96dd7b1c-6216-4f26-a39a-9bc77daf15d97e7c46c4-12c6-46b1-b35c-2aa3b824ec97.png?preset=small-sq",
     "link": "https://involvementcenter.unlv.edu/organization/offtheshelf"
@@ -2453,6 +2448,11 @@
     "name": "UNLV Music Business Club",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/1ca773d2-ae70-42cf-84d5-26cfd4587c4d5c8b0fe7-64ad-4a6a-87fb-f58e77a3ff19.jpg?preset=small-sq",
     "link": "https://involvementcenter.unlv.edu/organization/umbc"
+  },
+  {
+    "name": "UNLV Nu Rho Psi Chapter",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/73581131-c2ee-4b0a-8f08-98e9d6de1b32390cae93-7d7d-4fff-8350-37b0f2e20ae3.jpeg?preset=small-sq",
+    "link": "https://involvementcenter.unlv.edu/organization/nurhopsi"
   },
   {
     "name": "UNLV Office of Admissions",

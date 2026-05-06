@@ -2207,17 +2207,17 @@
     "endTime": "",
     "location": "Tucson, AZ",
     "sport": "Men's Golf",
-    "link": "https://scoreboard.clippd.com/tournaments/240304/scoring/participants"
+    "link": "https://unlvrebels.com/news/2026/5/5/mens-golf-rebels-sweep-mountain-west-titles-after-playoff-win.aspx"
   },
   {
     "name": "BYU",
     "startDate": "2026-05-05",
-    "startTime": "6:05 PM",
+    "startTime": "6:06 PM",
     "endDate": "2026-05-05",
-    "endTime": "",
+    "endTime": "9:44 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/byu-at-unlv-2/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/byu/boxscore/17785"
   },
   {
     "name": "No. 3 UNR / No. 6 Colorado State",
@@ -3598,5 +3598,25 @@
     "location": "Las Vegas, NV Fertitta Tennis Complex",
     "sport": "Men's Tennis",
     "link": "https://unlvrebels.com/news/2025/11/3/mens-tennis-gibson-wins-again-at-easley-tourney.aspx"
+  },
+  {
+    "name": "Easley Invite",
+    "startDate": "2026-11-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-04",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/4/mens-tennis-horovoy-closes-easley-with-win.aspx"
+  },
+  {
+    "name": "UT Martin",
+    "startDate": "2026-11-04",
+    "startTime": "7:00 PM",
+    "endDate": "2026-11-04",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/ut-martin/boxscore/17443"
   }
 ]
