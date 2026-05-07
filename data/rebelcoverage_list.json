@@ -1,15 +1,5 @@
 [
   {
-    "name": "CBU",
-    "startDate": "2026-02-05",
-    "startTime": "",
-    "endDate": "2026-02-05",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/cbu/boxscore/17731"
-  },
-  {
     "name": "UIC",
     "startDate": "2026-02-06",
     "startTime": "",
@@ -2220,7 +2210,7 @@
     "link": "https://unlvrebels.com/sports/baseball/stats/2026/byu/boxscore/17785"
   },
   {
-    "name": "No. 3 UNR / No. 6 Colorado State",
+    "name": "No. 3 UNR",
     "startDate": "2026-05-07",
     "startTime": "",
     "endDate": "2026-05-07",
@@ -3618,5 +3608,25 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/ut-martin/boxscore/17443"
+  },
+  {
+    "name": "Washington State",
+    "startDate": "2026-11-05",
+    "startTime": "",
+    "endDate": "2026-11-05",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/washington-state/boxscore/17316"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-11-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-05",
+    "endTime": "",
+    "location": "Laramie, Wyo.",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]
