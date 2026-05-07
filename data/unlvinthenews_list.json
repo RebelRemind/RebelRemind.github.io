@@ -1,5 +1,23 @@
 [
   {
+    "name": "She opposed his plan for a blockchain city. Now he's bankrolling her primary opponent.",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-06",
+    "publishedAt": "2026-05-06T13:34:17-07:00",
+    "summary": "A crypto mogul gave $2.5 million to a candidate running against State Sen. Nicole Cannizzaro in the Nevada attorney general race.",
+    "link": "https://theintercept.com/2026/05/06/crypto-nevada-attorney-general-race-cannizzaro-conine/"
+  },
+  {
+    "name": "Frontier Airlines moves to fill void left by Spirit. Will DTW benefit?",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-06",
+    "publishedAt": "2026-05-06T13:30:06-07:00",
+    "summary": "Experts say Frontier Airlines is likely to capture a significant share of Spirit Airlines\u2019 business at Detroit Metro and across national routes, though they expect demand to be spread among the remaining low-cost carriers. Frontier offers service between Detroit and Spirit's top three markets, all of them popular among leisure travelers: Fort Lauderdale, Orlando and Las Vegas.",
+    "link": "https://www.detroitnews.com/story/business/2026/05/06/frontier-airlines-signals-interest-to-fill-spirit-void-will-dtw-benefit/89947717007/"
+  },
+  {
     "name": "Home prices remain stubbornly high in Southern Nevada, report says",
     "category": "Las Vegas Review Journal",
     "section": "In The News",
@@ -36,6 +54,15 @@
     "link": "https://www.fox5vegas.com/2026/05/06/unlv-announces-four-year-extension-director-athletics-erick-harper/"
   },
   {
+    "name": "UNLV\u2019s Harper signs contract extension, will remain AD through 2030",
+    "category": "K.L.A.S. T.V. 8 News Now",
+    "section": "In The News",
+    "publishedDate": "2026-05-05",
+    "publishedAt": "2026-05-05T18:35:59-07:00",
+    "summary": "Harper was named UNLV\u2019s 14th permanent Director of Athletics on Jan. 1, 2022, and is in his fifth year. He also served as the department\u2019s interim athletics director from August 2021 through the end of that year.",
+    "link": "https://www.8newsnow.com/sports/unlvs-harper-signs-contract-extension-will-remain-ad-through-2030/"
+  },
+  {
     "name": "Las Vegas locals weigh travel plans amid high gas, jet fuel costs",
     "category": "K.T.N.V. T.V. ABC 13",
     "section": "In The News",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-05-05T18:10:09-07:00",
     "summary": "UNLV has extended athletic director Erick Harper on a four-year contract, interim President Chris Heavey announced today. Harper has led the department since 2022.",
     "link": "https://lasvegassun.com/news/2026/may/05/erick-harper-receives-4-year-contract-extension-to/"
-  },
-  {
-    "name": "UNLV extends athletics director Erick Harper for four years",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-05-05",
-    "publishedAt": "2026-05-05T16:56:03-07:00",
-    "summary": "UNLV sports have captured 15 conference championships in Harper\u2019s first four seasons, with 11 league coach of the year awards and multiple NCAA Tournament appearances.",
-    "link": "https://www.reviewjournal.com/sports/unlv/unlv-extends-athletics-director-erick-harper-for-four-years-3797560/"
-  },
-  {
-    "name": "Decoding the \"Dopamine Trap\" of Overwork and 6 Self-Help Strategies",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-05",
-    "publishedAt": "2026-05-05T13:35:36-07:00",
-    "summary": "Manoj Sharma, a tenured professor of social and behavioral health at the University of Nevada, Las Vegas, told The Epoch Times that a constantly busy schedule keeps the brain in a state of high alert, resulting in rapid beta waves visible on an electroencephalogram (EEG). This chronic overactivation depletes energy, leading to stress, burnout, mental fatigue, poor sleep, decreased work efficiency, and emotional neglect.",
-    "link": "https://hk.epochtimes.com/news/2026-05-05/31043575"
-  },
-  {
-    "name": "Review-Journal\u2019s Aging Wellness Expo returns to South Point",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-05",
-    "publishedAt": "2026-05-05T11:58:52-07:00",
-    "summary": "A Wellness Corral will be hosted by Osher Lifelong Learning Institute at UNLV, where attendees can explore activities such as ukulele lessons, Mahjong, art tables, and puzzle and board game strategies.",
-    "link": "https://www.reviewjournal.com/business/review-journals-aging-wellness-expo-returns-to-south-point-3797439/"
   }
 ]

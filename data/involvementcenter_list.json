@@ -1,125 +1,5 @@
 [
   {
-    "name": "Mindful Moments: Weekly Guided Meditation",
-    "startDate": "2026-02-05",
-    "startTime": "11:30 AM",
-    "endDate": "2026-02-05",
-    "endTime": "12:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us for guided meditation. No registration needed.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b81b307b-9e63-4f82-be3b-8c52910904e876ee8b92-1fed-4ad1-b3e4-b5e32947ee2e.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12131433"
-  },
-  {
-    "name": "\"Working with Challenging Individuals\"",
-    "startDate": "2026-02-05",
-    "startTime": "2:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "3:00 PM",
-    "location": "BEH 240",
-    "organization": "CAEO College Programs",
-    "description": "This interactive workshop will help participants work more effectively with challenging people. Whether it is a passive-aggressive co-worker, an inept supervisor, a know-it-all colleague, or politically-minded schemer. We will discuss these and other common workplace personality types and, through small-group discussion, role plays, and collective problem-solving, learn how to be less frustrated and more functional, even when challenging people may abound.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12089216"
-  },
-  {
-    "name": "Time Management #2 - Spring 26 Success Series ",
-    "startDate": "2026-02-05",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "4:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "description": "This workshop will help students build effective academic habits to support success throughout the semester. We will discuss motivation, goal-setting, and planning strategies to help avoid procrastination and manage time more effectively. Whether you\u2019re a busy student juggling multiple responsibilities or simply looking to improve your productivity, this session is for you. The UNLV Writing Center will also join us to share strategies for building healthy writing habits, including making time for writing and staying consistent with assignments. Visit our website for additional information. https://www.unlv.edu/asc/coaching/workshops",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/2015f0d3-80fe-4523-8fdd-3c0eab9205d67a895efa-2a90-48e0-b89a-a36c83ab556f.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12048368"
-  },
-  {
-    "name": "Becoming an Adaptive Perfectionist",
-    "startDate": "2026-02-05",
-    "startTime": "3:30 PM",
-    "endDate": "2026-02-05",
-    "endTime": "4:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Learn how to rethink the relationship between motivation and self-criticism, set manageable goals, and be more productive while also tending to your wellbeing.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8551edb-f558-4f54-ba41-d5c2ec09333b16bc4c1d-1e4e-4646-a325-a1bb308deee5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12057033"
-  },
-  {
-    "name": "Human Trafficking Prevention Club Meeting",
-    "startDate": "2026-02-05",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "6:00 PM",
-    "location": "Student Union Room 222",
-    "organization": "Human Trafficking Prevention Club",
-    "description": "The Human Trafficking Prevention Club at UNLV invites you to join us for our Spring 2026 Meetings. These meetings provide a safe and supportive space to learn about human trafficking, understand the warning signs, and explore how you can help prevent it within your community. Throughout the semester, we will engage in open discussions, educational activities, and guest speaker conversations focused on awareness, prevention, and advocacy. Whether you are new to this topic or already passionate about social justice, all are welcome! Our goal is to empower individuals with knowledge, encourage meaningful dialogue, and inspire action against human trafficking.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8eb32e3-dd2a-48a9-9bbc-35fe56710da8ddaf9506-7c0c-463c-a99d-295ba633935b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147306"
-  },
-  {
-    "name": "Human Trafficking Prevention Club Meeting",
-    "startDate": "2026-02-05",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "6:00 PM",
-    "location": "UNLV Student Union 222",
-    "organization": "Human Trafficking Prevention Club",
-    "description": "Join the Human Trafficking Prevention Club at UNLV for an informative and impactful meeting focused on understanding human trafficking in Southern Nevada. This meeting will feature guest speakers Jhenna Strasser, Manager of the Southern Nevada Human Trafficking Task Force, and Rachel Stephensen, LVMPD Senior Financial Analyst. Our speakers will share their professional experiences, explain how the Human Trafficking Task Force operates, and discuss real ways students can get involved in prevention, advocacy, and community action. This is a great opportunity for students interested in social justice, criminal justice, psychology, public service, or anyone who wants to learn to make a difference. We aim to create a safe and informed space where students can learn the signs of human trafficking and feel empowered to take action against it.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/36d9d8e3-bc36-4a03-9d45-e72f1ba651b7ca524321-b7dc-4886-88ba-d078c93e9d22.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147309"
-  },
-  {
-    "name": "Black History Month Kickoff \ud83d\udda4\ud83c\udfb6\u2728",
-    "startDate": "2026-02-05",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "7:30 PM",
-    "location": "Richard Tam Alumni Center",
-    "organization": "Student Connection & Engagement",
-    "description": "We\u2019re setting the tone for Black History Month with a night rooted in culture, connection, and Black joy. Join us for our BHM Kickoff featuring a resource fair, live DJ, soul food, and a 106 & Park\u2013inspired vibe that brings the early 2000s energy all the way back. Come dressed as your favorite early 2000s icon and enter our Best Dressed Icon contest \u2014because the fits matter. Pull up ready to celebrate, connect, and kick off a powerful month together. \ud83d\udcc5 February 5 \u23f0 5:00\u20137:30 PM \ud83d\udccd Richard Tam Alumni Center \u270a\ud83c\udffe RSVP Today",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/3b8de69b-2bdb-49a3-91c8-caf540662bc020d0911e-b3f2-4798-b198-98cac861456f.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12129022"
-  },
-  {
-    "name": "Game Night w/ RSM",
-    "startDate": "2026-02-05",
-    "startTime": "6:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "7:30 PM",
-    "location": "SU 209",
-    "organization": "Association of Latino Professionals For America",
-    "description": "Game Night with RSM \ud83c\udf89\ud83c\udfb2 ALPFA is excited to invite you to Game Night with RSM! Join us for a fun, relaxed evening to connect with RSM professionals while enjoying classic board and card games. This is a low-pressure networking opportunity designed to help you learn more about RSM, ask questions about careers and internships, and build connections, all while playing games like UNO, Cards Against Humanity, Millennial Loter\u00eda, and Scattergories. Whether you\u2019re actively recruiting or just curious to learn more, this is a great way to get involved and meet professionals in a casual setting. \ud83d\udcc5 Date: Thursday, February 5 \u23f0 Time: 6:00\u20137:30 PM \ud83d\udccd Location: SU 209 \ud83c\udfaf Who should attend: All majors welcome Bring a friend, come hang out, and don\u2019t miss this chance to connect with RSM in a fun and engaging way. We hope to see you there!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/ae2f6776-cb45-414f-8300-ac21bb2df1a0302f6c38-314a-4ea4-ab22-931613e239f5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147288"
-  },
-  {
-    "name": "FIrst General Meeting S2026",
-    "startDate": "2026-02-05",
-    "startTime": "7:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "8:00 PM",
-    "location": "AEB Flexatorium",
-    "organization": "UNLV Formula Racing",
-    "description": "Come hang out with us at our first general meeting of the spring semester! We will be going over what the club has been up to, where we are headed, and what to expect this semester. This meeting is also a great chance to learn more about the club and how to get involved. All current members should plan to attend, and any students who are interested in joining or just want to check us out are more than welcome. We are excited to see new faces and meet anyone interested in being part of the club!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e33f86b1-d444-4c12-8a33-40b1f6b73ef5c314ee98-5929-4f04-bfdd-53c8035f9595.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12173886"
-  },
-  {
-    "name": "Free Korean Fried Chicken at Korean Social Club's First Meeting!",
-    "startDate": "2026-02-05",
-    "startTime": "6:00 PM",
-    "endDate": "2026-02-05",
-    "endTime": "8:00 PM",
-    "location": "UNLV Student Union Room 224",
-    "organization": "Korean Social Club",
-    "description": "The Korean Social Club (KSC) at UNLV is kicking off the Spring 2026 semester with our First General Meeting, and we\u2019d love to see you there! Come hang out, meet new people, and enjoy free Korean fried chicken and Korean drinks in a fun, welcoming space. Whether you\u2019re already into Korean culture or just curious and hungry, this is a great chance to relax, make friends, and learn more about what KSC is all about. You do not have to be Korean to attend. Everyone is welcome! Please RSVP so we can cater enough chicken! Thank you! RSVP Form: https://forms.gle/dio9C6oc1T4xDXbP8 Event Details: When: Thursday, February 5 at 6:00 PM Where: Student Union Room 224 Our Instagram: https://www.instagram.com/unlv.ksc/",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0016aca6-2f80-4018-b1bb-233c4be0a50ce99147b8-0391-4090-b185-1256374f2540.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12173800"
-  },
-  {
     "name": " Study Abroad Scholarships: Part 1 - Freeman Asia & Gilman Information Session (Financial Need Awards)",
     "startDate": "2026-02-06",
     "startTime": "11:30 AM",
@@ -4920,18 +4800,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4942,6 +4810,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5508,18 +5388,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12438685"
   },
   {
-    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
-    "startDate": "2026-04-25",
-    "startTime": "9:00 AM",
-    "endDate": "2026-04-25",
-    "endTime": "1:00 PM",
-    "location": "Lake Mead National Recreation Area",
-    "organization": "The Wildlife Society ",
-    "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12393455"
-  },
-  {
     "name": "Wetlands Park 4th Annual BioBlast",
     "startDate": "2026-04-25",
     "startTime": "10:00 AM",
@@ -5530,6 +5398,18 @@
     "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12367872"
+  },
+  {
+    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
+    "startDate": "2026-04-25",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "1:00 PM",
+    "location": "Lake Mead National Recreation Area",
+    "organization": "The Wildlife Society ",
+    "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12393455"
   },
   {
     "name": "Student Dialogue & Brunch",
@@ -6012,18 +5892,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "Hot \"Girl\" Walk",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "UNLV",
-    "organization": "Black Social Workers Society",
-    "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12172129"
-  },
-  {
     "name": "ASA E-Board Election Spring 2026",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -6034,6 +5902,18 @@
     "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12453163"
+  },
+  {
+    "name": "Hot \"Girl\" Walk",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "UNLV",
+    "organization": "Black Social Workers Society",
+    "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12172129"
   },
   {
     "name": "The Wildlife Society-Herpetofauna Surveys: Chuckwalla Count at Sloan Canyon",
@@ -6157,18 +6037,6 @@
   },
   {
     "name": "LSSA Finals Study Sessions",
-    "startDate": "2026-05-06",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-06",
-    "endTime": "6:00 PM",
-    "location": "SU 219",
-    "organization": "Life Science Student Association",
-    "description": "LSSA will be hosting 2 study sessions both to hold an additional space for UNLV students and LSSA students to lock in! This would be a perfect time to hang out with friends, finish those last minute assignments, and work on those finals! LSSA will be hosting some small snacks in SU 219 from 5:00 - 6:00 PM on Wednesday, May 6th. Attending for an hour will count as either an LSSA club credit or a professional development credit (depending on whichever one needs to be met). Sessions will be online and in-person with online attendance being in our discord (for further information please reach out to us via email at lssa@unlv.edu). Use the link below to fill out our interest! LSSA Finals Study Session Interest Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e11e66a-2400-4d4d-817a-ceebc4119bcfbda42988-afa7-47cc-9eff-dbacfef83e99.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12444716"
-  },
-  {
-    "name": "LSSA Finals Study Sessions",
     "startDate": "2026-05-05",
     "startTime": "4:30 PM",
     "endDate": "2026-05-06",
@@ -6178,6 +6046,18 @@
     "description": "LSSA will be hosting 2 study sessions both to hold an additional space for UNLV students and LSSA students to lock in! This would be a perfect time to hang out with friends, finish those last minute assignments, and work on those finals! LSSA will be hosting some small snacks in SU 219 from 5:00 - 6:00 PM on Wednesday, May 6th. Attending for an hour will count as either an LSSA club credit or a professional development credit (depending on whichever one needs to be met). Sessions will be online and in-person with online attendance being in our discord (for further information please reach out to us via email at lssa@unlv.edu). Use the link below to fill out our interest! LSSA Finals Study Session Interest Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/4e11e66a-2400-4d4d-817a-ceebc4119bcfbda42988-afa7-47cc-9eff-dbacfef83e99.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12444715"
+  },
+  {
+    "name": "LSSA Finals Study Sessions",
+    "startDate": "2026-05-06",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-06",
+    "endTime": "6:00 PM",
+    "location": "SU 219",
+    "organization": "Life Science Student Association",
+    "description": "LSSA will be hosting 2 study sessions both to hold an additional space for UNLV students and LSSA students to lock in! This would be a perfect time to hang out with friends, finish those last minute assignments, and work on those finals! LSSA will be hosting some small snacks in SU 219 from 5:00 - 6:00 PM on Wednesday, May 6th. Attending for an hour will count as either an LSSA club credit or a professional development credit (depending on whichever one needs to be met). Sessions will be online and in-person with online attendance being in our discord (for further information please reach out to us via email at lssa@unlv.edu). Use the link below to fill out our interest! LSSA Finals Study Session Interest Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4e11e66a-2400-4d4d-817a-ceebc4119bcfbda42988-afa7-47cc-9eff-dbacfef83e99.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12444716"
   },
   {
     "name": "It\u2019s Hard To Say Goodbye",
