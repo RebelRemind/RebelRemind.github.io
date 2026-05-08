@@ -1,35 +1,5 @@
 [
   {
-    "name": "UIC",
-    "startDate": "2026-02-06",
-    "startTime": "",
-    "endDate": "2026-02-06",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uic/boxscore/17798"
-  },
-  {
-    "name": "Iowa State",
-    "startDate": "2026-02-06",
-    "startTime": "10:30 AM",
-    "endDate": "2026-02-06",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/6/womens-tennis-doubles-domination-not-enough-to-fend-off-cyclones.aspx"
-  },
-  {
-    "name": "USC (Men Only)",
-    "startDate": "2026-02-06",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-06",
-    "endTime": "",
-    "location": "Los Angeles, CA",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/6/swimming-diving-rebel-men-drop-regular-season-finale-to-no-15-usc.aspx"
-  },
-  {
     "name": "CBU",
     "startDate": "2026-02-07",
     "startTime": "",
@@ -3628,5 +3598,15 @@
     "location": "Laramie, Wyo.",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "ITA Sectionals",
+    "startDate": "2026-11-06",
+    "startTime": "",
+    "endDate": "2026-11-06",
+    "endTime": "",
+    "location": "Seattle, WA",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/6/womens-tennis-mircheva-ousted-from-sectional.aspx"
   }
 ]
