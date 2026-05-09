@@ -1,45 +1,5 @@
 [
   {
-    "name": "CBU",
-    "startDate": "2026-02-07",
-    "startTime": "",
-    "endDate": "2026-02-07",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/cbu/boxscore/17799"
-  },
-  {
-    "name": "UIC",
-    "startDate": "2026-02-07",
-    "startTime": "",
-    "endDate": "2026-02-07",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uic/boxscore/17800"
-  },
-  {
-    "name": "Utah State",
-    "startDate": "2026-02-07",
-    "startTime": "",
-    "endDate": "2026-02-07",
-    "endTime": "",
-    "location": "Logan, UT",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/utah-state/boxscore/17653"
-  },
-  {
-    "name": "Grand Canyon",
-    "startDate": "2026-02-07",
-    "startTime": "1:30 PM",
-    "endDate": "2026-02-07",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/grand-canyon/boxscore/17623"
-  },
-  {
     "name": "Purdue",
     "startDate": "2026-02-08",
     "startTime": "",
@@ -2197,7 +2157,7 @@
     "endTime": "",
     "location": "Reno, NV",
     "sport": "Softball",
-    "link": "https://themw.com/news/2026/04/27/2026-cu-1-softball-championship-friday-game-2/?_gl=1*e68jne*_up*MQ..*_ga*MTMxODY0Mjk2Ny4xNzc4MjE5MjI5*_ga_SC44RH1YQ6*czE3NzgyMTkyMjgkbzEkZzAkdDE3NzgyMTkyMjgkajYwJGwwJGgw"
+    "link": "https://unlvrebels.com/sports/softball/stats/2026/no-4-new-mexico/boxscore/17867"
   },
   {
     "name": "Fresno State",
@@ -3638,5 +3598,45 @@
     "location": "Seattle, WA",
     "sport": "Women's Tennis",
     "link": "https://unlvrebels.com/news/2025/11/6/womens-tennis-mircheva-ousted-from-sectional.aspx"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-11-07",
+    "startTime": "",
+    "endDate": "2026-11-07",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
+  },
+  {
+    "name": "Watanabe Classic",
+    "startDate": "2026-11-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-07",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/6/womens-tennis-to-close-fall-with-watanabe.aspx"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-11-07",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-07",
+    "endTime": "",
+    "location": "Laramie, Wyo.",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "BYU",
+    "startDate": "2026-11-07",
+    "startTime": "4:00 PM",
+    "endDate": "2026-11-07",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/11/8/swimming-diving-rebel-women-take-home-opening-win-over-byu.aspx"
   }
 ]
