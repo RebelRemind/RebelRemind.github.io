@@ -240,6 +240,8 @@ const DATA_FILE_MAP = Object.fromEntries(CAMPUS_EVENT_FILES.map((item) => [item.
 const SITE_URL = "https://rebelremind.github.io";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/rr_logo_bg.png`;
 const BACK_HOME_BUTTON_CLASS = "inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white px-5 py-3 text-sm font-semibold text-stone-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-stone-100";
+const US_HOLIDAYS_STORAGE_KEY = "rebelremind-show-us-holidays";
+const US_HOLIDAYS_SOURCE_URL = "https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics";
 
 const DATASET_HOME_COPY = {
   academicCalendar: {
@@ -809,6 +811,78 @@ function buildDefaultEventEndTime(startDate, startTime, allDay = false) {
   });
 }
 
+function isMidnightEndTime(value) {
+  const timeParts = parseTimeParts(value);
+  return Boolean(timeParts && timeParts.hour === 0 && timeParts.minute === 0);
+}
+
+function resolveMidnightCalendarEndDate(startDate, endDate) {
+  const parsedStart = parseLocalDateTime(startDate, "", 12, 0);
+  const parsedEnd = parseLocalDateTime(endDate || startDate, "", 12, 0);
+  if (parsedStart && parsedEnd && parsedEnd > parsedStart) {
+    const adjustedEnd = new Date(parsedEnd);
+    adjustedEnd.setDate(adjustedEnd.getDate() - 1);
+    return buildDateKey(adjustedEnd);
+  }
+
+  return startDate;
+}
+
+function resolveCalendarEventEnd(startDate, startTime, endDate, endTime, allDay = false) {
+  const resolvedEndTime = endTime || buildDefaultEventEndTime(startDate, startTime, allDay);
+
+  if (allDay) {
+    return {
+      endDate: endDate || startDate,
+      endTime: resolvedEndTime,
+      endsAt: parseCalendarEventEndDate(endDate, resolvedEndTime, startDate, startTime, allDay),
+    };
+  }
+
+  const startsAt = parseCalendarEventDate(startDate, startTime, false);
+  if (!startsAt) {
+    return {
+      endDate: endDate || startDate,
+      endTime: resolvedEndTime,
+      endsAt: null,
+    };
+  }
+
+  if (isMidnightEndTime(resolvedEndTime)) {
+    const resolvedEndDate = resolveMidnightCalendarEndDate(startDate, endDate || startDate);
+    const sameDayEnd = parseCalendarEventDate(resolvedEndDate, "11:59 PM", false);
+    return {
+      endDate: resolvedEndDate,
+      endTime: "11:59 PM",
+      endsAt: sameDayEnd,
+    };
+  }
+
+  let resolvedEndDate = endDate || startDate;
+  let endsAt = parseCalendarEventDate(resolvedEndDate, resolvedEndTime, false);
+
+  if (endsAt && endsAt <= startsAt && resolvedEndTime) {
+    endsAt = new Date(endsAt);
+    endsAt.setDate(endsAt.getDate() + 1);
+    resolvedEndDate = buildDateKey(endsAt);
+  }
+
+  if (!endsAt || endsAt <= startsAt) {
+    endsAt = new Date(startsAt.getTime() + (60 * 60 * 1000));
+    resolvedEndDate = buildDateKey(endsAt);
+  }
+
+  return {
+    endDate: resolvedEndDate,
+    endTime: endsAt.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    }),
+    endsAt,
+  };
+}
+
 function parseCalendarEventEndDate(endDate, endTime, startDate, startTime, allDay = false) {
   const resolvedEndTime = endTime || buildDefaultEventEndTime(startDate, startTime, allDay);
   const parsed = parseCalendarEventDate(endDate || startDate, resolvedEndTime || startTime, allDay);
@@ -872,6 +946,179 @@ function getCalendarViewDateLabel(date) {
     month: "short",
     day: "numeric",
   });
+}
+
+function addCalendarDays(date, days) {
+  const nextDate = new Date(date);
+  nextDate.setDate(nextDate.getDate() + days);
+  return nextDate;
+}
+
+function getNthWeekdayOfMonth(year, monthIndex, weekday, occurrence) {
+  const date = new Date(year, monthIndex, 1, 12, 0, 0, 0);
+  const dayOffset = (weekday - date.getDay() + 7) % 7;
+  date.setDate(1 + dayOffset + ((occurrence - 1) * 7));
+  return date;
+}
+
+function getLastWeekdayOfMonth(year, monthIndex, weekday) {
+  const date = new Date(year, monthIndex + 1, 0, 12, 0, 0, 0);
+  const dayOffset = (date.getDay() - weekday + 7) % 7;
+  date.setDate(date.getDate() - dayOffset);
+  return date;
+}
+
+function getEasterSunday(year) {
+  const a = year % 19;
+  const b = Math.floor(year / 100);
+  const c = year % 100;
+  const d = Math.floor(b / 4);
+  const e = b % 4;
+  const f = Math.floor((b + 8) / 25);
+  const g = Math.floor((b - f + 1) / 3);
+  const h = ((19 * a) + b - d - g + 15) % 30;
+  const i = Math.floor(c / 4);
+  const k = c % 4;
+  const l = (32 + (2 * e) + (2 * i) - h - k) % 7;
+  const m = Math.floor((a + (11 * h) + (22 * l)) / 451);
+  const month = Math.floor((h + l - (7 * m) + 114) / 31);
+  const day = ((h + l - (7 * m) + 114) % 31) + 1;
+  return new Date(year, month - 1, day, 12, 0, 0, 0);
+}
+
+function slugifyHolidayTitle(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function decodeIcsText(value) {
+  return String(value || "")
+    .replace(/\\n/g, "\n")
+    .replace(/\\,/g, ",")
+    .replace(/\\;/g, ";")
+    .replace(/\\\\/g, "\\")
+    .trim();
+}
+
+function getIcsFieldValue(eventText, fieldName) {
+  const line = eventText
+    .split(/\r?\n/)
+    .find((candidate) => candidate.startsWith(`${fieldName}:`) || candidate.startsWith(`${fieldName};`));
+
+  if (!line) {
+    return "";
+  }
+
+  const separatorIndex = line.indexOf(":");
+  return separatorIndex === -1 ? "" : line.slice(separatorIndex + 1).trim();
+}
+
+function parseIcsDate(value) {
+  const match = String(value || "").match(/^(\d{4})(\d{2})(\d{2})/);
+  if (!match) {
+    return "";
+  }
+
+  return `${match[1]}-${match[2]}-${match[3]}`;
+}
+
+function parsePublicHolidayIcs(icsText) {
+  const unfoldedText = String(icsText || "").replace(/\r?\n[ \t]/g, "");
+  const eventMatches = unfoldedText.match(/BEGIN:VEVENT[\s\S]*?END:VEVENT/g) || [];
+
+  return eventMatches
+    .map((eventText, index) => {
+      const title = decodeIcsText(getIcsFieldValue(eventText, "SUMMARY"));
+      const startDate = parseIcsDate(getIcsFieldValue(eventText, "DTSTART"));
+
+      if (!title || !startDate) {
+        return null;
+      }
+
+      return {
+        id: `us-holiday-${startDate}-${slugifyHolidayTitle(title) || index}`,
+        name: title,
+        title,
+        startDate,
+        endDate: startDate,
+        startTime: "(ALL DAY)",
+        endTime: "(ALL DAY)",
+        allDay: true,
+        sourceKey: "usHolidays",
+        sourceLabel: "U.S. Holidays",
+        description: "Public U.S. holiday calendar.",
+        location: "",
+        link: US_HOLIDAYS_SOURCE_URL,
+        filterValue: "U.S. Holidays",
+        category: "Holiday",
+        color: "#0f766e",
+        startsAt: parseCalendarEventDate(startDate, "(ALL DAY)", true),
+        endsAt: parseCalendarEventDate(startDate, "(ALL DAY)", true),
+      };
+    })
+    .filter(Boolean);
+}
+
+function buildUsHolidayEventsForYear(year) {
+  const holidayDefinitions = [
+    ["New Year's Day", new Date(year, 0, 1, 12)],
+    ["Martin Luther King Jr. Day", getNthWeekdayOfMonth(year, 0, 1, 3)],
+    ["Valentine's Day", new Date(year, 1, 14, 12)],
+    ["Presidents' Day", getNthWeekdayOfMonth(year, 1, 1, 3)],
+    ["St. Patrick's Day", new Date(year, 2, 17, 12)],
+    ["Easter Sunday", getEasterSunday(year)],
+    ["Mother's Day", getNthWeekdayOfMonth(year, 4, 0, 2)],
+    ["Memorial Day", getLastWeekdayOfMonth(year, 4, 1)],
+    ["Juneteenth", new Date(year, 5, 19, 12)],
+    ["Father's Day", getNthWeekdayOfMonth(year, 5, 0, 3)],
+    ["Independence Day", new Date(year, 6, 4, 12)],
+    ["Labor Day", getNthWeekdayOfMonth(year, 8, 1, 1)],
+    ["Indigenous Peoples' Day", getNthWeekdayOfMonth(year, 9, 1, 2)],
+    ["Halloween", new Date(year, 9, 31, 12)],
+    ["Veterans Day", new Date(year, 10, 11, 12)],
+    ["Thanksgiving Day", getNthWeekdayOfMonth(year, 10, 4, 4)],
+    ["Christmas Eve", new Date(year, 11, 24, 12)],
+    ["Christmas Day", new Date(year, 11, 25, 12)],
+    ["New Year's Eve", new Date(year, 11, 31, 12)],
+  ];
+
+  return holidayDefinitions.map(([title, date]) => {
+    const dateKey = buildDateKey(date);
+    return {
+      id: `us-holiday-${dateKey}-${slugifyHolidayTitle(title)}`,
+      name: title,
+      title,
+      startDate: dateKey,
+      endDate: dateKey,
+      startTime: "(ALL DAY)",
+      endTime: "(ALL DAY)",
+      allDay: true,
+      sourceKey: "usHolidays",
+      sourceLabel: "U.S. Holidays",
+      description: "Public U.S. holiday calendar.",
+      location: "",
+      link: US_HOLIDAYS_SOURCE_URL,
+      filterValue: "U.S. Holidays",
+      category: "Holiday",
+      color: "#0f766e",
+      startsAt: parseCalendarEventDate(dateKey, "(ALL DAY)", true),
+      endsAt: parseCalendarEventDate(dateKey, "(ALL DAY)", true),
+    };
+  });
+}
+
+function buildUsHolidayEvents(startYear, endYear) {
+  const firstYear = Math.min(startYear, endYear);
+  const lastYear = Math.max(startYear, endYear);
+  const events = [];
+
+  for (let year = firstYear; year <= lastYear; year += 1) {
+    events.push(...buildUsHolidayEventsForYear(year));
+  }
+
+  return events;
 }
 
 function formatCalendarDateOnly(dateKey) {
@@ -983,18 +1230,124 @@ function endOfWeek(date) {
 
 function buildEventsByDate(events) {
   return events.reduce((result, event) => {
-    if (!event.startDate) {
+    const dateKeys = getCalendarEventDateKeys(event);
+    if (!dateKeys.length) {
       return result;
     }
 
-    if (!result[event.startDate]) {
-      result[event.startDate] = [];
-    }
+    dateKeys.forEach((dateKey) => {
+      if (!result[dateKey]) {
+        result[dateKey] = [];
+      }
 
-    result[event.startDate].push(event);
-    result[event.startDate].sort((left, right) => left.startsAt - right.startsAt);
+      result[dateKey].push(event);
+      result[dateKey].sort((left, right) => getEventDateSortValue(left, dateKey) - getEventDateSortValue(right, dateKey));
+    });
     return result;
   }, {});
+}
+
+function getCalendarEventDateKeys(event) {
+  if (!event?.startDate) {
+    return [];
+  }
+
+  const startsAt = event.startsAt instanceof Date && !Number.isNaN(event.startsAt.getTime())
+    ? event.startsAt
+    : parseCalendarEventDate(event.startDate, event.startTime, event.allDay);
+  const endsAt = event.endsAt instanceof Date && !Number.isNaN(event.endsAt.getTime())
+    ? event.endsAt
+    : startsAt;
+
+  if (!startsAt) {
+    return [event.startDate];
+  }
+
+  const startDay = new Date(startsAt);
+  startDay.setHours(0, 0, 0, 0);
+  const endDay = new Date(endsAt && endsAt > startsAt ? endsAt : startsAt);
+  endDay.setHours(0, 0, 0, 0);
+
+  const dateKeys = [];
+  const cursor = new Date(startDay);
+  while (cursor <= endDay) {
+    dateKeys.push(buildDateKey(cursor));
+    cursor.setDate(cursor.getDate() + 1);
+  }
+
+  return dateKeys;
+}
+
+function getEventDateSortValue(event, dateKey) {
+  if (event?.startsAt instanceof Date && !Number.isNaN(event.startsAt.getTime())) {
+    if (buildDateKey(event.startsAt) === dateKey) {
+      return event.startsAt.getTime();
+    }
+
+    return new Date(`${dateKey}T00:00:00`).getTime();
+  }
+
+  return 0;
+}
+
+function eventOverlapsRange(event, rangeStart, rangeEnd) {
+  if (!event?.startsAt) {
+    return false;
+  }
+
+  const eventEnd = event.endsAt && event.endsAt > event.startsAt ? event.endsAt : event.startsAt;
+  return event.startsAt <= rangeEnd && eventEnd >= rangeStart;
+}
+
+function splitCalendarEventIntoDailySegments(event) {
+  if (!event?.startsAt || !event?.endsAt || event.endsAt <= event.startsAt || isWeeklyAllDayEvent(event)) {
+    return [event];
+  }
+
+  const startKey = buildDateKey(event.startsAt);
+  const endKey = buildDateKey(event.endsAt);
+  if (startKey === endKey) {
+    return [event];
+  }
+
+  const segments = [];
+  const cursor = new Date(event.startsAt);
+  cursor.setHours(0, 0, 0, 0);
+  const finalDay = new Date(event.endsAt);
+  finalDay.setHours(0, 0, 0, 0);
+
+  while (cursor <= finalDay) {
+    const dateKey = buildDateKey(cursor);
+    const segmentStart = dateKey === startKey
+      ? new Date(event.startsAt)
+      : new Date(cursor);
+    const segmentEnd = dateKey === endKey
+      ? new Date(event.endsAt)
+      : new Date(cursor.getFullYear(), cursor.getMonth(), cursor.getDate(), 23, 59, 0, 0);
+
+    segments.push({
+      ...event,
+      id: `${event.id}-segment-${dateKey}`,
+      originalEvent: event,
+      startsAt: segmentStart,
+      endsAt: segmentEnd,
+      startDate: dateKey,
+      endDate: dateKey,
+      startTime: segmentStart.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      }),
+      endTime: segmentEnd.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      }),
+    });
+    cursor.setDate(cursor.getDate() + 1);
+  }
+
+  return segments;
 }
 
 function normalizeDatasetCalendarEvents(datasetKey, datasets) {
@@ -1005,7 +1358,7 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
   return sourceItems
     .map((item, index) => {
       const allDay = item.startTime === "(ALL DAY)";
-      const resolvedEndTime = item.endTime || buildDefaultEventEndTime(item.startDate, item.startTime, allDay);
+      const resolvedEnd = resolveCalendarEventEnd(item.startDate, item.startTime, item.endDate, item.endTime, allDay);
       const resolvedTitle = normalizedDatasetKey === "rebelSports" && item.sport && item.name
         ? `${item.sport}: ${item.name}`
         : item.name;
@@ -1019,9 +1372,9 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
         name: item.name || resolvedTitle,
         title: resolvedTitle,
         startDate: item.startDate,
-        endDate: item.endDate || item.startDate,
+        endDate: resolvedEnd.endDate,
         startTime: item.startTime,
-        endTime: resolvedEndTime,
+        endTime: resolvedEnd.endTime,
         location: item.location || "",
         organization: item.organization || "",
         category: item.category || (normalizedDatasetKey === "unlvCalendar" ? "Other" : ""),
@@ -1034,7 +1387,7 @@ function normalizeDatasetCalendarEvents(datasetKey, datasets) {
         datasetItem: item,
         allDay,
         startsAt: parseCalendarEventDate(item.startDate, item.startTime, allDay),
-        endsAt: parseCalendarEventEndDate(item.endDate, resolvedEndTime, item.startDate, item.startTime, allDay),
+        endsAt: resolvedEnd.endsAt,
       };
     })
     .filter((event) => event.startsAt)
@@ -1049,9 +1402,21 @@ function normalizeBridgeCalendarEvents(bridgeState) {
     .map((event, index) => {
       const allDay = Boolean(event.allDay) || event.startTime === "(ALL DAY)";
       const hasDistinctEndTime = Boolean(event.endTime) && event.endTime !== event.startTime;
-      const resolvedEndTime = hasDistinctEndTime
-        ? event.endTime
-        : buildDefaultEventEndTime(event.startDate, event.startTime, allDay);
+      const startsAt = parseCalendarEventDate(event.startDate, event.startTime, allDay);
+      const isCanvasAssignment = event.eventType === "canvasAssignment";
+      const resolvedEnd = isCanvasAssignment
+        ? {
+          endDate: event.startDate,
+          endTime: event.startTime,
+          endsAt: startsAt,
+        }
+        : resolveCalendarEventEnd(
+          event.startDate,
+          event.startTime,
+          event.endDate,
+          hasDistinctEndTime ? event.endTime : "",
+          allDay
+        );
       const courseColor = event.courseID != null
         ? courseColors?.[event.courseID]?.color || courseColors?.[String(event.courseID)]?.color || ""
         : "";
@@ -1065,9 +1430,9 @@ function normalizeBridgeCalendarEvents(bridgeState) {
         sourceKey: "extensionEvents",
         title: resolvedTitle,
         startDate: event.startDate,
-        endDate: event.endDate || event.startDate,
+        endDate: resolvedEnd.endDate,
         startTime: event.startTime,
-        endTime: resolvedEndTime,
+        endTime: resolvedEnd.endTime,
         location: event.location || "",
         description: event.description || "",
         link: event.link || "",
@@ -1075,15 +1440,9 @@ function normalizeBridgeCalendarEvents(bridgeState) {
         eventType: event.eventType || "",
         courseID: event.courseID || null,
         allDay,
-        startsAt: parseCalendarEventDate(event.startDate, event.startTime, allDay),
-        endsAt: parseCalendarEventEndDate(
-          event.endDate,
-          resolvedEndTime,
-          event.startDate,
-          event.startTime,
-          allDay
-        ),
-        color: event.eventType === "canvasAssignment"
+        startsAt,
+        endsAt: resolvedEnd.endsAt,
+        color: isCanvasAssignment
           ? courseColor || "#3174ad"
           : colorList?.[event.eventType] || "",
       };
@@ -1109,8 +1468,10 @@ function getEventForegroundColor(backgroundColor) {
   return brightness > 125 ? "#111827" : "#ffffff";
 }
 
-function layoutTimedWeekEvents(events, weekStart) {
-  const weekEnd = endOfWeek(weekStart);
+function layoutTimedWeekEvents(events, weekStart, dayCount = 7) {
+  const weekEnd = new Date(weekStart);
+  weekEnd.setDate(weekStart.getDate() + Math.max(0, dayCount - 1));
+  weekEnd.setHours(23, 59, 59, 999);
   const timedEvents = events
     .filter((event) => !isWeeklyAllDayEvent(event) && event.startsAt && event.startsAt >= weekStart && event.startsAt <= weekEnd)
     .map((event) => {
@@ -1382,14 +1743,14 @@ function DatasetEventModal({ dataset, item, onClose, organizationImageUrl = "", 
           {item.description ? <p><span className="font-semibold">Details:</span> {item.description}</p> : null}
           <div className="mt-5 flex flex-wrap gap-3">
             {item.link ? (
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
-            >
-              {sourceActionLabel}
-            </a>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex rounded-full bg-[#8b0000] px-4 py-2 font-semibold text-white transition hover:bg-[#6b0000]"
+              >
+                {sourceActionLabel}
+              </a>
             ) : null}
             {renderSaveAction ? renderSaveAction(item, "w-full sm:w-auto") : null}
           </div>
@@ -1680,6 +2041,12 @@ function FilterChip({ active, onClick, children }) {
 }
 
 function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, className = "" }) {
+  const [optimisticSaved, setOptimisticSaved] = useState(saved);
+
+  useEffect(() => {
+    setOptimisticSaved(saved);
+  }, [saved, event]);
+
   if (!event) {
     return null;
   }
@@ -1689,17 +2056,19 @@ function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, cla
     return null;
   }
 
-  const label = saved ? "Remove from My Events" : "Add to My Events";
+  const label = optimisticSaved ? "Remove from My Events" : "Add to My Events";
 
   function handleClick(clickEvent) {
     clickEvent.preventDefault();
     clickEvent.stopPropagation();
 
-    if (saved) {
+    if (optimisticSaved) {
+      setOptimisticSaved(false);
       onRemove(event);
       return;
     }
 
+    setOptimisticSaved(true);
     onSave(event);
   }
 
@@ -1709,7 +2078,7 @@ function AddToMyEventsButton({ event, bridgeStatus, saved, onSave, onRemove, cla
       onClick={handleClick}
       className={[
         "inline-flex min-h-10 items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold transition",
-        saved
+        optimisticSaved
           ? "border-stone-300 bg-white text-stone-800 hover:bg-stone-100"
           : "border-[#8b0000]/30 bg-[#8b0000] text-white shadow-sm shadow-[#8b0000]/20 hover:bg-[#6b0000]",
         className,
@@ -2157,7 +2526,7 @@ function Hero({ bridgeStatus, bridgeState, featuredPreferences, bridgeError, syn
                 ? `Hi ${firstName}, here are your reminders.`
                 : bridgeIsSyncing
                   ? "Syncing your Rebel Remind data..."
-                : "A student-built Chrome Extension designed to centralize assignment reminders, club events, and general campus events, all in one place."}
+                  : "A student-built Chrome Extension designed to centralize assignment reminders, club events, and general campus events, all in one place."}
             </h1>
             <div className="mt-5 grid gap-3 text-sm text-white/88 sm:text-base">
               {bridgeIsConnected || bridgeIsSyncing ? (
@@ -3449,8 +3818,8 @@ function DatasetPage({ datasets, bridgeStatus, bridgeState }) {
                             className={[
                               "h-full w-full object-center",
                               isRebelSports
-                              || item.imageUrl === "/images/UNLV_Logo.png"
-                              || (!item.imageUrl && isUNLVCalendar)
+                                || item.imageUrl === "/images/UNLV_Logo.png"
+                                || (!item.imageUrl && isUNLVCalendar)
                                 ? "object-contain p-8"
                                 : "object-cover",
                             ].join(" ")}
@@ -3798,13 +4167,9 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     return window.matchMedia("(min-width: 1280px)").matches;
   });
   const [currentMonth, setCurrentMonth] = useState(() => {
-    const savedMonth = initialSession?.currentMonth;
-    const parsed = savedMonth ? new Date(savedMonth) : null;
-    return parsed && !Number.isNaN(parsed.getTime())
-      ? new Date(parsed.getFullYear(), parsed.getMonth(), 1)
-      : new Date(today.getFullYear(), today.getMonth(), 1);
+    return new Date(today.getFullYear(), today.getMonth(), 1);
   });
-  const [selectedDateKey, setSelectedDateKey] = useState(() => initialSession?.selectedDateKey || buildDateKey(today));
+  const [selectedDateKey, setSelectedDateKey] = useState(() => buildDateKey(today));
   const [calendarView, setCalendarView] = useState(() => initialSession?.calendarView || "month");
   const [activeModalEvent, setActiveModalEvent] = useState(null);
   const [calendarPanelHeight, setCalendarPanelHeight] = useState(null);
@@ -3813,8 +4178,21 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const [calendarFilterSearch, setCalendarFilterSearch] = useState("");
   const [calendarOrganizationDirectory, setCalendarOrganizationDirectory] = useState([]);
   const [isCalendarFilterModalOpen, setIsCalendarFilterModalOpen] = useState(false);
+  const [calendarEventSavedOverrides, setCalendarEventSavedOverrides] = useState({});
+  const [isWeeklyDueCollapsed, setIsWeeklyDueCollapsed] = useState(false);
+  const [weeklyVisibleStartKey, setWeeklyVisibleStartKey] = useState(() => buildDateKey(startOfWeek(today)));
+  const [weeklyRecenterNonce, setWeeklyRecenterNonce] = useState(0);
+  const [showUsHolidays, setShowUsHolidays] = useState(() => {
+    if (typeof window === "undefined") {
+      return true;
+    }
+
+    return window.localStorage.getItem(US_HOLIDAYS_STORAGE_KEY) !== "false";
+  });
+  const [publicHolidayEvents, setPublicHolidayEvents] = useState([]);
   const calendarPanelRef = useRef(null);
   const weeklyScrollRef = useRef(null);
+  const weeklyProgrammaticScrollUntilRef = useRef(0);
   const calendarOptions = [
     { key: "extensionEvents", label: "Your Synched Events" },
     ...DATA_FILES.map(({ key, label }) => ({ key, label })),
@@ -3839,6 +4217,40 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       setSelectedCalendarKey(requestedCalendarSource);
     }
   }, [requestedCalendarSource]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    window.localStorage.setItem(US_HOLIDAYS_STORAGE_KEY, String(showUsHolidays));
+  }, [showUsHolidays]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    const loadPublicHolidays = async () => {
+      try {
+        const response = await fetch(US_HOLIDAYS_SOURCE_URL, { signal: controller.signal });
+        if (!response.ok) {
+          throw new Error(`Failed to load public holidays: ${response.status}`);
+        }
+
+        const icsText = await response.text();
+        const events = parsePublicHolidayIcs(icsText);
+        if (events.length) {
+          setPublicHolidayEvents(events);
+        }
+      } catch (error) {
+        if (error?.name !== "AbortError") {
+          console.warn("Using built-in U.S. holiday fallback.", error);
+        }
+      }
+    };
+
+    loadPublicHolidays();
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     if (selectedCalendarKey === "extensionEvents" && ["unsupported", "unavailable"].includes(bridgeStatus)) {
@@ -3934,7 +4346,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       .filter((filter) => filter.toLowerCase().includes(calendarFilterSearch.trim().toLowerCase()))
       .slice(0, 8)
     : availableCalendarFilters;
-  const visibleCalendarEvents = selectedCalendarSupportsFilters && activeCalendarFilters.length
+  const filteredCalendarEvents = selectedCalendarSupportsFilters && activeCalendarFilters.length
     ? baseCalendarEvents.filter((event) => {
       const eventFilterValue = selectedCalendarKey === "extensionEvents"
         ? event.sourceLabel
@@ -3942,6 +4354,23 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       return activeCalendarFilters.includes(eventFilterValue);
     })
     : baseCalendarEvents;
+  const holidayAnchorDate = new Date(`${selectedDateKey}T12:00:00`);
+  const holidayAnchorYear = Number.isNaN(holidayAnchorDate.getTime())
+    ? today.getFullYear()
+    : holidayAnchorDate.getFullYear();
+  const holidayStartYear = Math.min(today.getFullYear(), currentMonth.getFullYear(), holidayAnchorYear) - 2;
+  const holidayEndYear = Math.max(today.getFullYear(), currentMonth.getFullYear(), holidayAnchorYear) + 2;
+  const fallbackUsHolidayEvents = buildUsHolidayEvents(holidayStartYear, holidayEndYear);
+  const publicUsHolidayEvents = publicHolidayEvents.filter((event) => {
+    const eventYear = Number(event.startDate?.slice(0, 4));
+    return eventYear >= holidayStartYear && eventYear <= holidayEndYear;
+  });
+  const usHolidayEvents = showUsHolidays
+    ? (publicUsHolidayEvents.length ? publicUsHolidayEvents : fallbackUsHolidayEvents)
+    : [];
+  const visibleCalendarEvents = showUsHolidays
+    ? [...filteredCalendarEvents, ...usHolidayEvents]
+    : filteredCalendarEvents;
   const eventsByDate = buildEventsByDate(visibleCalendarEvents);
 
   const monthStart = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
@@ -3971,7 +4400,10 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   const selectedDayEvents = (eventsByDate[selectedDateKey] || []).sort((left, right) => left.startsAt - right.startsAt);
   const selectedDate = new Date(`${selectedDateKey}T12:00:00`);
   const selectedWeekStart = startOfWeek(selectedDate);
-  const selectedWeekEnd = endOfWeek(selectedDate);
+  const selectedWeekEnd = new Date(selectedWeekStart);
+  selectedWeekEnd.setDate(selectedWeekStart.getDate() + 6);
+  selectedWeekEnd.setHours(23, 59, 59, 999);
+  const selectedWeekStartKey = buildDateKey(selectedWeekStart);
   const todayKey = buildDateKey(today);
   const weekDays = Array.from({ length: 7 }, (_, index) => {
     const date = new Date(selectedWeekStart);
@@ -3985,34 +4417,78 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       events: (eventsByDate[dateKey] || []).sort((left, right) => left.startsAt - right.startsAt),
     };
   });
+  const weeklyScrollBackwardDays = 370;
+  const weeklyScrollForwardDays = 370;
+  const weeklyScrollDayCount = weeklyScrollBackwardDays + 7 + weeklyScrollForwardDays;
+  const weeklyScrollStart = addCalendarDays(selectedWeekStart, -weeklyScrollBackwardDays);
+  const weeklyScrollStartKey = buildDateKey(weeklyScrollStart);
+  const weeklyScrollDays = Array.from({ length: weeklyScrollDayCount }, (_, index) => {
+    const date = addCalendarDays(weeklyScrollStart, index);
+    const dateKey = buildDateKey(date);
 
-  const tableEvents = visibleCalendarEvents.filter((event) => {
-    return event.startsAt >= selectedWeekStart && event.startsAt <= selectedWeekEnd;
+    return {
+      date,
+      dateKey,
+      isToday: dateKey === buildDateKey(today),
+      events: (eventsByDate[dateKey] || []).sort((left, right) => left.startsAt - right.startsAt),
+    };
   });
-  const weeklyTimedEvents = visibleCalendarEvents.filter((event) => !isCanvasAssignmentEvent(event));
-  const weekLayout = layoutTimedWeekEvents(weeklyTimedEvents, selectedWeekStart);
-  const weekHours = Array.from({ length: 16 }, (_, index) => 7 + index);
-  const nowInSelectedWeek = today >= selectedWeekStart && today <= selectedWeekEnd;
+  const weeklyScrollEnd = addCalendarDays(weeklyScrollStart, weeklyScrollDayCount - 1);
+  weeklyScrollEnd.setHours(23, 59, 59, 999);
+  const weeklyGridTemplateColumns = `4rem repeat(${weeklyScrollDayCount}, minmax(8.5rem, 1fr))`;
+  const parsedWeeklyVisibleStartDate = new Date(`${weeklyVisibleStartKey}T12:00:00`);
+  const weeklyVisibleStartDate = Number.isNaN(parsedWeeklyVisibleStartDate.getTime())
+    ? selectedWeekStart
+    : parsedWeeklyVisibleStartDate;
+  const weeklyVisibleDayCount = 8;
+  const weeklyVisibleEndDate = addCalendarDays(weeklyVisibleStartDate, weeklyVisibleDayCount - 1);
+
+  const tableEvents = visibleCalendarEvents.filter((event) => eventOverlapsRange(event, selectedWeekStart, selectedWeekEnd));
+  const weeklyTimedEvents = visibleCalendarEvents
+    .filter((event) => !isCanvasAssignmentEvent(event))
+    .flatMap(splitCalendarEventIntoDailySegments);
+  const weeklyTimedEventsByDate = buildEventsByDate(weeklyTimedEvents);
+  const weekLayout = layoutTimedWeekEvents(weeklyTimedEvents, weeklyScrollStart, weeklyScrollDayCount);
+  const weekHours = Array.from({ length: 24 }, (_, index) => index);
+  const nowInSelectedWeek = today >= weeklyScrollStart && today <= weeklyScrollEnd;
   const nowMinutes = (today.getHours() * 60) + today.getMinutes();
-  const currentTimeTop = ((Math.max(7 * 60, Math.min(nowMinutes, 23 * 60)) - (7 * 60)) / 60) * 80;
+  const currentTimeTop = (Math.max(0, Math.min(nowMinutes, (23 * 60) + 59)) / 60) * 80;
   const isCanvasSourceVisible = !activeCalendarFilters.length || activeCalendarFilters.includes("Canvas");
   const shouldShowWeeklyDueSection = selectedCalendarKey === "extensionEvents"
     && bridgeStatus === "connected"
     && Boolean(bridgeState?.preferences?.canvasIntegration)
     && isCanvasSourceVisible;
   const savedCalendarEventKeys = getSavedCampusEventKeys(bridgeState);
+  const getCalendarEventSaveKey = (event) => {
+    const payload = buildSavedCampusEventPayload(event?.sourceKey, event) || event;
+    return buildSavedCampusEventKey(payload);
+  };
   const isCalendarEventSaved = (event) => {
+    const key = getCalendarEventSaveKey(event);
+    if (Object.prototype.hasOwnProperty.call(calendarEventSavedOverrides, key)) {
+      return calendarEventSavedOverrides[key];
+    }
+
     if (selectedCalendarKey === "extensionEvents" && isSavableDatasetKey(event?.sourceKey)) {
       return true;
     }
 
-    const key = buildSavedCampusEventKey(event);
     return savedCalendarEventKeys.has(key);
   };
   const handleSaveCalendarEvent = (event) => {
+    const key = getCalendarEventSaveKey(event);
+    setCalendarEventSavedOverrides((current) => ({
+      ...current,
+      [key]: true,
+    }));
     saveCampusEvent(event);
   };
   const handleRemoveCalendarEvent = (event) => {
+    const key = getCalendarEventSaveKey(event);
+    setCalendarEventSavedOverrides((current) => ({
+      ...current,
+      [key]: false,
+    }));
     removeCampusEvent(event);
   };
   const renderCalendarSaveAction = (event, className = "w-full") => {
@@ -4067,7 +4543,17 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
 
     return "";
   };
-  const getCalendarEventActionLabel = (event) => isCanvasAssignmentEvent(event) ? "Go to Assignment" : "Open Event";
+  const getCalendarEventActionLabel = (event) => {
+    if (isCanvasAssignmentEvent(event)) {
+      return "Go to Assignment";
+    }
+
+    if (event?.sourceKey === "usHolidays") {
+      return "View Source";
+    }
+
+    return "Open Event";
+  };
 
   function toggleCalendarManualFilter(filter) {
     setCalendarManualFilters((current) =>
@@ -4087,9 +4573,9 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
 
   function shiftCalendar(direction) {
     if (calendarView === "weekly" || calendarView === "table") {
-      const nextDate = new Date(selectedDate);
-      nextDate.setDate(nextDate.getDate() + (direction * 7));
+      const nextDate = addCalendarDays(selectedWeekStart, direction * 7);
       setSelectedDateKey(buildDateKey(nextDate));
+      setWeeklyVisibleStartKey(buildDateKey(nextDate));
       setCurrentMonth(new Date(nextDate.getFullYear(), nextDate.getMonth(), 1));
       return;
     }
@@ -4103,6 +4589,8 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
   function jumpToToday() {
     setCurrentMonth(new Date(today.getFullYear(), today.getMonth(), 1));
     setSelectedDateKey(buildDateKey(today));
+    setWeeklyVisibleStartKey(buildDateKey(startOfWeek(today)));
+    setWeeklyRecenterNonce((current) => current + 1);
   }
 
   useLayoutEffect(() => {
@@ -4144,17 +4632,46 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       return;
     }
 
+    setWeeklyVisibleStartKey(selectedWeekStartKey);
+
     const viewport = weeklyScrollRef.current;
     const savedScrollTop = readCalendarSession()?.weeklyScrollTop;
     if (typeof savedScrollTop === "number") {
       viewport.scrollTop = savedScrollTop;
-      return;
+    } else {
+      const noonOffset = 12 * 80;
+      const targetScrollTop = Math.max(0, noonOffset - (viewport.clientHeight / 2));
+      viewport.scrollTop = targetScrollTop;
     }
 
-    const noonOffset = (12 - 7) * 80;
-    const targetScrollTop = Math.max(0, noonOffset - (viewport.clientHeight / 2));
-    viewport.scrollTop = targetScrollTop;
-  }, [calendarView, selectedDateKey, selectedCalendarKey]);
+    let resetProgrammaticTimer = null;
+    let restoreBehaviorFrame = null;
+    const frameId = window.requestAnimationFrame(() => {
+      const dayColumnWidth = Math.max(1, (viewport.scrollWidth - 64) / weeklyScrollDayCount);
+      const previousScrollBehavior = viewport.style.scrollBehavior;
+
+      weeklyProgrammaticScrollUntilRef.current = Date.now() + 400;
+      viewport.style.scrollBehavior = "auto";
+      viewport.scrollLeft = weeklyScrollBackwardDays * dayColumnWidth;
+
+      restoreBehaviorFrame = window.requestAnimationFrame(() => {
+        viewport.style.scrollBehavior = previousScrollBehavior;
+        resetProgrammaticTimer = window.setTimeout(() => {
+          weeklyProgrammaticScrollUntilRef.current = 0;
+        }, 400);
+      });
+    });
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      if (restoreBehaviorFrame) {
+        window.cancelAnimationFrame(restoreBehaviorFrame);
+      }
+      if (resetProgrammaticTimer) {
+        window.clearTimeout(resetProgrammaticTimer);
+      }
+    };
+  }, [calendarView, selectedWeekStartKey, selectedCalendarKey, weeklyScrollBackwardDays, weeklyScrollDayCount, weeklyRecenterNonce]);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -4166,12 +4683,14 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
       selectedDateKey,
       selectedCalendarKey,
       calendarView,
+      weeklyVisibleStartKey,
       weeklyScrollTop: weeklyScrollRef.current?.scrollTop ?? null,
+      weeklyScrollLeft: weeklyScrollRef.current?.scrollLeft ?? null,
       pageScrollY: window.scrollY,
     };
 
     window.sessionStorage.setItem(CALENDAR_SESSION_KEY, JSON.stringify(session));
-  }, [currentMonth, selectedDateKey, selectedCalendarKey, calendarView]);
+  }, [currentMonth, selectedDateKey, selectedCalendarKey, calendarView, weeklyVisibleStartKey]);
 
   useEffect(() => {
     if (calendarView !== "weekly" || !weeklyScrollRef.current) {
@@ -4179,17 +4698,49 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
     }
 
     const viewport = weeklyScrollRef.current;
+    let frameId = null;
     const handleScroll = () => {
-      const session = readCalendarSession() || {};
-      window.sessionStorage.setItem(
-        CALENDAR_SESSION_KEY,
-        JSON.stringify({ ...session, weeklyScrollTop: viewport.scrollTop, pageScrollY: window.scrollY })
-      );
+      if (Date.now() < weeklyProgrammaticScrollUntilRef.current) {
+        return;
+      }
+
+      if (frameId) {
+        return;
+      }
+
+      frameId = window.requestAnimationFrame(() => {
+        frameId = null;
+        const dayColumnWidth = Math.max(1, (viewport.scrollWidth - 64) / weeklyScrollDayCount);
+        const visibleIndex = Math.max(
+          0,
+          Math.min(weeklyScrollDayCount - 1, Math.round(viewport.scrollLeft / dayColumnWidth))
+        );
+        const visibleDate = addCalendarDays(new Date(`${weeklyScrollStartKey}T12:00:00`), visibleIndex);
+        const visibleDateKey = buildDateKey(visibleDate);
+        setWeeklyVisibleStartKey(visibleDateKey);
+
+        const session = readCalendarSession() || {};
+        window.sessionStorage.setItem(
+          CALENDAR_SESSION_KEY,
+          JSON.stringify({
+            ...session,
+            weeklyVisibleStartKey: visibleDateKey,
+            weeklyScrollTop: viewport.scrollTop,
+            weeklyScrollLeft: viewport.scrollLeft,
+            pageScrollY: window.scrollY,
+          })
+        );
+      });
     };
 
     viewport.addEventListener("scroll", handleScroll, { passive: true });
-    return () => viewport.removeEventListener("scroll", handleScroll);
-  }, [calendarView]);
+    return () => {
+      viewport.removeEventListener("scroll", handleScroll);
+      if (frameId) {
+        window.cancelAnimationFrame(frameId);
+      }
+    };
+  }, [calendarView, weeklyScrollDayCount, weeklyScrollStartKey]);
 
   useEffect(() => {
     const savedPageScrollY = readCalendarSession()?.pageScrollY;
@@ -4481,9 +5032,11 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                 {calendarView === "weekly" ? "Weekly View" : calendarView === "table" ? "Table View" : "Month View"}
               </p>
               <h2 className="mt-2 font-serif text-3xl">
-                {calendarView === "weekly" || calendarView === "table"
-                  ? `${getCalendarViewDateLabel(weekDays[0].date)} - ${getCalendarViewDateLabel(weekDays[6].date)}`
-                  : formatCalendarHeaderMonth(currentMonth)}
+                {calendarView === "weekly"
+                  ? `${getCalendarViewDateLabel(weeklyVisibleStartDate)} - ${getCalendarViewDateLabel(weeklyVisibleEndDate)}`
+                  : calendarView === "table"
+                    ? `${getCalendarViewDateLabel(weekDays[0].date)} - ${getCalendarViewDateLabel(weekDays[6].date)}`
+                    : formatCalendarHeaderMonth(currentMonth)}
               </h2>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -4531,6 +5084,16 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
               </button>
             </div>
           </div>
+
+          <label className="mt-3 inline-flex cursor-pointer items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15">
+            <input
+              type="checkbox"
+              checked={showUsHolidays}
+              onChange={(event) => setShowUsHolidays(event.target.checked)}
+              className="h-4 w-4 accent-[#8b0000]"
+            />
+            <span>U.S. Holidays</span>
+          </label>
 
           {calendarView === "table" ? (
             <p className="mt-4 text-sm text-white/72">
@@ -4702,20 +5265,23 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
           {calendarView === "weekly" ? (
             <div
               ref={weeklyScrollRef}
-              className="mt-5 min-w-0 max-w-full overflow-x-auto overflow-y-auto rounded-[1.5rem] border border-white/15 bg-white/8"
+              className="mt-5 min-w-0 max-w-full snap-x snap-mandatory overflow-x-auto overflow-y-auto scroll-smooth rounded-[1.5rem] border border-white/15 bg-white/8"
               style={{ height: "min(46rem, calc(100vh - 17.5rem))" }}
             >
-              <div className="min-w-[44rem] max-[600px]:min-w-[760px]">
+              <div style={{ minWidth: `calc(4rem + (${weeklyScrollDayCount} * 8.5rem))` }}>
                 <div className="sticky top-0 z-30">
-                  <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-white/10 backdrop-blur-md max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                  <div
+                    className="grid border-b border-white/10 bg-[rgba(17,17,17,0.86)] backdrop-blur-md"
+                    style={{ gridTemplateColumns: weeklyGridTemplateColumns }}
+                  >
                     <div className="sticky left-0 z-40 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
                       Time
                     </div>
-                    {weekDays.map((day) => (
+                    {weeklyScrollDays.map((day) => (
                       <div
                         key={day.dateKey}
                         className={[
-                          "border-r border-white/10 px-2 py-3 last:border-r-0",
+                          "snap-start scroll-ml-16 border-r border-white/10 px-2 py-3 last:border-r-0",
                           day.isToday ? "bg-[#8b0000]/18" : "",
                         ].join(" ")}
                       >
@@ -4759,63 +5325,128 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                     ))}
                   </div>
 
+                  {shouldShowWeeklyDueSection ? (
+                    <div
+                      className="grid border-b border-white/10 bg-[rgba(17,17,17,0.82)] backdrop-blur-md"
+                      style={{ gridTemplateColumns: weeklyGridTemplateColumns }}
+                    >
+                      <div className="sticky left-0 z-40 border-r border-white/10 bg-black/85 px-2 py-2 backdrop-blur-md">
+                        <button
+                          type="button"
+                          onClick={() => setIsWeeklyDueCollapsed((current) => !current)}
+                          className="grid w-full grid-cols-[1fr_auto_1fr] items-center rounded-full border border-white/20 bg-black px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/80 transition hover:bg-stone-900"
+                        >
+                          <span />
+
+                          <span className="justify-self-center whitespace-nowrap">
+                            Due
+                          </span>
+
+                          <span
+                            className="justify-self-end pr-1"
+                            aria-hidden="true"
+                          >
+                            {isWeeklyDueCollapsed ? "+" : "-"}
+                          </span>
+                        </button>
+                      </div>
+                      {weeklyScrollDays.map((day) => {
+                        const canvasAssignments = day.events
+                          .filter((event) => isCanvasAssignmentEvent(event))
+                          .sort((left, right) => left.startsAt - right.startsAt);
+                        const visibleCanvasAssignments = canvasAssignments.slice(0, 1);
+                        const hiddenCanvasAssignmentCount = Math.max(0, canvasAssignments.length - visibleCanvasAssignments.length);
+
+                        return (
+                          <div
+                            key={`${day.dateKey}-canvas-header`}
+                            className={[
+                              "overflow-hidden border-r border-white/10 px-2 py-2 last:border-r-0",
+                              isWeeklyDueCollapsed ? "h-[2.25rem]" : "h-[6.25rem]",
+                              day.isToday ? "bg-[#8b0000]/10" : "",
+                            ].join(" ")}
+                          >
+                            {isWeeklyDueCollapsed ? (
+                              <button
+                                type="button"
+                                disabled={!canvasAssignments.length}
+                                onClick={() => {
+                                  if (!canvasAssignments.length) {
+                                    return;
+                                  }
+
+                                  setActiveModalEvent({
+                                    title: `${canvasAssignments.length} ${canvasAssignments.length === 1 ? "Assignment" : "Assignments"}`,
+                                    subtitle: getCalendarViewDateLabel(day.date),
+                                    events: canvasAssignments,
+                                  });
+                                }}
+                                className={[
+                                  "h-6 w-full truncate rounded-full px-2 text-[11px] font-semibold transition",
+                                  canvasAssignments.length
+                                    ? "bg-white/15 text-white hover:bg-white/25"
+                                    : "bg-white/5 text-white/25",
+                                ].join(" ")}
+                              >
+                                {canvasAssignments.length
+                                  ? `${canvasAssignments.length} ${canvasAssignments.length === 1 ? "assignment" : "assignments"}`
+                                  : "No assignments"}
+                              </button>
+                            ) : canvasAssignments.length ? (
+                              <div className="space-y-2">
+                                {visibleCanvasAssignments.map((event) => {
+                                  const backgroundColor = event.color || "#3174ad";
+                                  const textColor = getEventForegroundColor(backgroundColor);
+
+                                  return (
+                                    <button
+                                      key={`${event.id}-header-due`}
+                                      type="button"
+                                      onClick={() => setActiveModalEvent(event)}
+                                      className="w-full rounded-xl border border-white/10 px-2 py-1.5 text-left shadow-sm transition hover:brightness-110"
+                                      style={{
+                                        backgroundColor,
+                                        color: textColor,
+                                      }}
+                                    >
+                                      <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80">
+                                        {formatCalendarTimeRange(event)}
+                                      </p>
+                                      <p className="mt-1 line-clamp-1 text-xs font-semibold">{event.title}</p>
+                                    </button>
+                                  );
+                                })}
+                                {hiddenCanvasAssignmentCount ? (
+                                  <button
+                                    type="button"
+                                    onClick={() => setActiveModalEvent({
+                                      title: `${canvasAssignments.length} ${canvasAssignments.length === 1 ? "Assignment" : "Assignments"}`,
+                                      subtitle: getCalendarViewDateLabel(day.date),
+                                      events: canvasAssignments,
+                                    })}
+                                    className="w-full rounded-full bg-white/18 px-2 py-1 text-center text-[11px] font-bold text-white shadow-sm shadow-black/20 ring-1 ring-white/15 transition hover:bg-white/28"
+                                  >
+                                    +{hiddenCanvasAssignmentCount} More
+                                  </button>
+                                ) : null}
+                              </div>
+                            ) : (
+                              <div className="py-1 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-white/35">
+                                No Canvas
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : null}
+
                 </div>
 
-                {shouldShowWeeklyDueSection ? (
-                  <div className="grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] border-b border-white/10 bg-black/10 max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
-                    <div className="sticky left-0 z-30 border-r border-white/10 bg-[rgba(17,17,17,0.94)] px-2 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/50 backdrop-blur-md">
-                      Due
-                    </div>
-                    {weekDays.map((day) => {
-                      const canvasAssignments = day.events
-                        .filter((event) => isCanvasAssignmentEvent(event))
-                        .sort((left, right) => left.startsAt - right.startsAt);
-
-                      return (
-                        <div
-                          key={`${day.dateKey}-canvas-header`}
-                          className={[
-                            "min-h-[5.5rem] border-r border-white/10 px-2 py-3 last:border-r-0",
-                            day.isToday ? "bg-[#8b0000]/10" : "",
-                          ].join(" ")}
-                        >
-                          {canvasAssignments.length ? (
-                            <div className="space-y-2">
-                              {canvasAssignments.map((event) => {
-                                const backgroundColor = event.color || "#3174ad";
-                                const textColor = getEventForegroundColor(backgroundColor);
-
-                                return (
-                                  <button
-                                    key={`${event.id}-header-due`}
-                                    type="button"
-                                    onClick={() => setActiveModalEvent(event)}
-                                    className="w-full rounded-xl border border-white/10 px-2 py-2 text-left shadow-sm transition hover:brightness-110"
-                                    style={{
-                                      backgroundColor,
-                                      color: textColor,
-                                    }}
-                                  >
-                                    <p className="truncate text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80">
-                                      {formatCalendarTimeRange(event)}
-                                    </p>
-                                    <p className="mt-1 line-clamp-2 text-xs font-semibold">{event.title}</p>
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          ) : (
-                            <div className="pt-2 text-center text-[11px] font-medium uppercase tracking-[0.12em] text-white/35">
-                              No Canvas
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                ) : null}
-
-                <div className="relative grid grid-cols-[4rem_repeat(7,minmax(5.7rem,1fr))] max-[600px]:grid-cols-[4rem_repeat(7,minmax(6rem,1fr))]">
+                <div
+                  className="relative grid"
+                  style={{ gridTemplateColumns: weeklyGridTemplateColumns }}
+                >
                   <div className="sticky left-0 z-20 border-r border-white/10 bg-[rgba(17,17,17,0.9)] backdrop-blur-md">
                     {weekHours.map((hour) => (
                       <div
@@ -4827,11 +5458,11 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                     ))}
                   </div>
 
-                  {weekDays.map((day) => (
+                  {weeklyScrollDays.map((day) => (
                     <div
                       key={day.dateKey}
                       className={[
-                        "relative border-r border-white/10 last:border-r-0",
+                        "relative snap-start scroll-ml-16 border-r border-white/10 last:border-r-0",
                         day.isToday ? "bg-[#8b0000]/8" : "",
                       ].join(" ")}
                     >
@@ -4848,7 +5479,7 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                         </div>
                       ) : null}
 
-                      {day.events.filter((event) => !isWeeklyAllDayEvent(event) && !isCanvasAssignmentEvent(event)).map((event) => {
+                      {(weeklyTimedEventsByDate[day.dateKey] || []).filter((event) => !isWeeklyAllDayEvent(event) && !isCanvasAssignmentEvent(event)).map((event) => {
                         const layout = weekLayout.events[event.id] || { lane: 0, laneCount: 1 };
                         if (layout.clusterSize >= 3 && layout.clusterLeadId !== event.id) {
                           return null;
@@ -4857,9 +5488,9 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                         const startMinutes = (event.startsAt.getHours() * 60) + event.startsAt.getMinutes();
                         const endSource = event.endsAt || new Date(event.startsAt.getTime() + (60 * 60 * 1000));
                         const endMinutes = (endSource.getHours() * 60) + endSource.getMinutes();
-                        const clampedStart = Math.max(7 * 60, Math.min(startMinutes, 23 * 60));
-                        const clampedEnd = Math.max(clampedStart + 30, Math.min(endMinutes, 23 * 60));
-                        const top = ((clampedStart - (7 * 60)) / 60) * 80;
+                        const clampedStart = Math.max(0, Math.min(startMinutes, (23 * 60) + 59));
+                        const clampedEnd = Math.max(clampedStart + 30, Math.min(endMinutes, (23 * 60) + 59));
+                        const top = (clampedStart / 60) * 80;
                         const height = Math.max(36, ((clampedEnd - clampedStart) / 60) * 80);
                         const cluster = layout.clusterId ? weekLayout.clusters[layout.clusterId] : null;
                         const isCollapsedGroup = layout.clusterSize >= 3 && cluster;
@@ -4882,12 +5513,12 @@ function CalendarPage({ datasets, bridgeState, bridgeStatus }) {
                                 setActiveModalEvent({
                                   title: `${cluster.count}+ Events`,
                                   subtitle: getCalendarViewDateLabel(day.date),
-                                  events: cluster.events,
+                                  events: cluster.events.map((clusterEvent) => clusterEvent.originalEvent || clusterEvent),
                                 });
                                 return;
                               }
 
-                              setActiveModalEvent(event);
+                              setActiveModalEvent(event.originalEvent || event);
                             }}
                             className="absolute rounded-2xl border border-white/15 px-2 py-2 text-left shadow-lg transition hover:brightness-110"
                             style={{
