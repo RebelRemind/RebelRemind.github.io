@@ -6449,11 +6449,11 @@
     "startTime": "1:00 PM",
     "endDate": "2026-03-10",
     "endTime": "3:00 PM",
-    "location": "Student Recreation & Wellness Center\n        Room 2015 and Room 1020",
-    "description": "Join Campus Rec for an empowering afternoon featuring our low-impact Barre class, which incorporates elements of Ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life.",
+    "location": "Student Recreation & Wellness Center\n        Student Recreation and Wellness Center\r\nBarre Class from 1:00 pm - 1:45 pm in Room 2015\r\nBystander Training & Mocktails from 2:00 pm - 3:00 pm in Room 1020",
+    "description": "Join us for an empowering afternoon featuring our low-impact barre class, which incorporates elements of ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life. Both portions of the event can be attended individually\u2014come to one or stay for both!",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
-    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect-0"
+    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect"
   },
   {
     "name": "Barre to Mocktails: Move, Learn, Connect",
@@ -6461,11 +6461,11 @@
     "startTime": "1:00 PM",
     "endDate": "2026-03-10",
     "endTime": "3:00 PM",
-    "location": "Student Recreation & Wellness Center\n        Student Recreation and Wellness Center\r\nBarre Class from 1:00 pm - 1:45 pm in Room 2015\r\nBystander Training & Mocktails from 2:00 pm - 3:00 pm in Room 1020",
-    "description": "Join us for an empowering afternoon featuring our low-impact barre class, which incorporates elements of ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life. Both portions of the event can be attended individually\u2014come to one or stay for both!",
+    "location": "Student Recreation & Wellness Center\n        Room 2015 and Room 1020",
+    "description": "Join Campus Rec for an empowering afternoon featuring our low-impact Barre class, which incorporates elements of Ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
-    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect"
+    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect-0"
   },
   {
     "name": "Thesis Defense: Austin Tang",
@@ -6873,7 +6873,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-9"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-7"
   },
   {
     "name": "Communication Skills Workshop",
@@ -8202,10 +8202,10 @@
     "endDate": "2026-03-17",
     "endTime": "11:00 AM",
     "location": "Shadow Lane Advanced Dental Education\n        School of Dental Medicine Building D Classroom 228",
-    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH, Advisory Committee Chair Dr. Tanya Al-Talib, Committee Member Dr. Charles Hill, Committee Member Arpita Basu, Ph.D., Graduate College Representative",
+    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH Advisory Committee Chair Dr. Tanya Al-Talib, Advisory Committee Member Dr. Charles Hill, Advisory Committee Member Arpita Basu, Ph.D., Graduate College Representative",
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-D-D66257_13.jpg?itok=nR1Opk2Q",
-    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le-0"
+    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le"
   },
   {
     "name": "Cutting Through the Clutter",
@@ -20613,7 +20613,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-8"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-10"
   },
   {
     "name": "Dissertation Defense: Anthony Graham",
@@ -22833,7 +22833,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
