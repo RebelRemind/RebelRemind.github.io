@@ -1,25 +1,5 @@
 [
   {
-    "name": "Purdue",
-    "startDate": "2026-02-08",
-    "startTime": "",
-    "endDate": "2026-02-08",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/purdue/boxscore/17801"
-  },
-  {
-    "name": "#21 USC",
-    "startDate": "2026-02-08",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-08",
-    "endTime": "",
-    "location": "Los Angeles, CA",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/8/mens-tennis-falls-just-short-of-stunner-at-no-21-usc.aspx"
-  },
-  {
     "name": "San Jose State",
     "startDate": "2026-02-10",
     "startTime": "8:00 PM",
@@ -112,9 +92,9 @@
   {
     "name": "Austin Peay",
     "startDate": "2026-02-13",
-    "startTime": "6:05 PM",
+    "startTime": "6:07 PM",
     "endDate": "2026-02-13",
-    "endTime": "",
+    "endTime": "9:11 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
     "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay/boxscore/17735"
@@ -2172,17 +2152,17 @@
   {
     "name": "Fresno State",
     "startDate": "2026-05-09",
-    "startTime": "3:05 PM",
+    "startTime": "3:09 PM",
     "endDate": "2026-05-09",
-    "endTime": "",
+    "endTime": "5:54 PM",
     "location": "Fresno, Calif.",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-31/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/fresno-state/boxscore/17787"
   },
   {
     "name": "Fresno State",
     "startDate": "2026-05-10",
-    "startTime": "12:05 PM",
+    "startTime": "1:05 PM",
     "endDate": "2026-05-10",
     "endTime": "",
     "location": "Fresno, Calif.",
@@ -3638,5 +3618,35 @@
     "location": "Las Vegas, NV",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/11/8/swimming-diving-rebel-women-take-home-opening-win-over-byu.aspx"
+  },
+  {
+    "name": "Watanabe Classic",
+    "startDate": "2026-11-08",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-08",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Utah",
+    "startDate": "2026-11-08",
+    "startTime": "11:00 AM",
+    "endDate": "2026-11-08",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/11/8/swimming-diving-rebel-women-earn-dual-meet-win-over-utah.aspx"
+  },
+  {
+    "name": "Chattanooga",
+    "startDate": "2026-11-08",
+    "startTime": "6:00 PM",
+    "endDate": "2026-11-08",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/chattanooga/boxscore/17444"
   }
 ]
