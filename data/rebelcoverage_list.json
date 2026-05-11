@@ -2162,12 +2162,12 @@
   {
     "name": "Fresno State",
     "startDate": "2026-05-10",
-    "startTime": "1:05 PM",
+    "startTime": "1:06 PM",
     "endDate": "2026-05-10",
-    "endTime": "",
+    "endTime": "4:53 PM",
     "location": "Fresno, Calif.",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/unlv-at-fresno-state-32/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/fresno-state/boxscore/17788"
   },
   {
     "name": "NCAA Ann Arbor Regional",
@@ -2177,7 +2177,7 @@
     "endTime": "",
     "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/10/womens-golf-rebels-open-ncaa-postseason-at-ann-arbor-regional-monday.aspx"
   },
   {
     "name": "NCAA Ann Arbor Regional",
@@ -2187,7 +2187,7 @@
     "endTime": "",
     "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/10/womens-golf-rebels-open-ncaa-postseason-at-ann-arbor-regional-monday.aspx"
   },
   {
     "name": "NCAA Ann Arbor Regional",
@@ -2197,7 +2197,7 @@
     "endTime": "",
     "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/10/womens-golf-rebels-open-ncaa-postseason-at-ann-arbor-regional-monday.aspx"
   },
   {
     "name": "Mountain West Outdoor Championships",
@@ -3648,5 +3648,25 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/chattanooga/boxscore/17444"
+  },
+  {
+    "name": "DePaul",
+    "startDate": "2026-11-09",
+    "startTime": "",
+    "endDate": "2026-11-09",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/depaul/boxscore/17317"
+  },
+  {
+    "name": "Watanabe Classic",
+    "startDate": "2026-11-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-09",
+    "endTime": "",
+    "location": "Las Vegas, NV Fertitta Tennis Complex",
+    "sport": "Women's Tennis",
+    "link": ""
   }
 ]
