@@ -318,10 +318,10 @@
     "endDate": "2026-02-10",
     "endTime": "3:00 PM",
     "location": "Student Union\n        208A",
-    "description": "Celebrate Black History Month with Student Connection and Engagement, UNLV CAPS, and the UNLV Wellness Zone at our cozy Crochet-a-Thon! This event offers a relaxing and creative space to learn or practice crochet, fostering mindfulness and reducing stress \u2013 key aspects of emotional wellness.",
-    "category": "Health",
+    "description": "Between the Lines is a monthly gathering designed to center Black creativity, storytelling, and community care. In honor of Black History Month, this session invites participants to learn how to crochet in a relaxed, beginner-friendly environment focused on reflection, creativity, and connection. Refreshments will be provided. Open to everyone. In partnership with UNLV Wellness Zone. More details and RSVP",
+    "category": "Diversity",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/between-lines-black-history-month-crochet-thon"
+    "link": "https://www.unlv.edu/event/between-lines-black-history-month-crochet-thon-0"
   },
   {
     "name": "Bachelor of Social Work Degree Online Information Session",
@@ -6873,7 +6873,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-9"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-7"
   },
   {
     "name": "Communication Skills Workshop",
@@ -24012,6 +24012,18 @@
     "link": "https://www.unlv.edu/event/mindful-moments-weekly-guided-meditation-1?delta=13"
   },
   {
+    "name": "UNLV Women's Council End of Spring Happy Hour\ufeff",
+    "startDate": "2026-05-12",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-12",
+    "endTime": "7:00 PM",
+    "location": "Lazy Dog Restaurant & Bar at Town Square\r\n6509 S Las Vegas Blvd\r\nLas Vegas, NV 89119",
+    "description": "Please join the UNLV Women's Council for our end of spring semester happy hour at Lazy Dog Restaurant & Bar at Town Square!",
+    "category": "Diversity",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/unlv-womens-council-end-spring-happy-hour"
+  },
+  {
     "name": "Thurman White Academy for the Performing Arts: 2026 Spring Choir Concert",
     "startDate": "2026-05-12",
     "startTime": "6:00 PM",
@@ -25680,6 +25692,18 @@
     "link": "https://www.unlv.edu/event/benefits-qa-drop-session-2"
   },
   {
+    "name": "The Delta Academy Graduating Class of 2026 - Ceremony 1",
+    "startDate": "2026-05-21",
+    "startTime": "11:00 AM",
+    "endDate": "2026-05-21",
+    "endTime": "12:30 PM",
+    "location": "Artemus W. Ham Concert Hall",
+    "description": "Delta Academy celebrates its 2026 graduating class.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hch-D73222_009.jpg?itok=dsStJspz",
+    "link": "https://www.unlv.edu/event/delta-academy-graduating-class-2026-ceremony-1"
+  },
+  {
     "name": "Virtual: Grad 101 - Ready for Grad School & How to Apply",
     "startDate": "2026-05-21",
     "startTime": "2:00 PM",
@@ -25690,6 +25714,18 @@
     "category": "Career",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/virtual-grad-101-ready-grad-school-how-apply-3"
+  },
+  {
+    "name": "The Delta Academy Graduating Class of 2026 - Ceremony 2",
+    "startDate": "2026-05-21",
+    "startTime": "3:00 PM",
+    "endDate": "2026-05-21",
+    "endTime": "4:30 PM",
+    "location": "Artemus W. Ham Concert Hall",
+    "description": "Delta Academy celebrates its 2026 graduating class.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hch-D73222_009.jpg?itok=dsStJspz",
+    "link": "https://www.unlv.edu/event/delta-academy-graduating-class-2026-ceremony-2"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
