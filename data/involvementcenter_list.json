@@ -1,125 +1,5 @@
 [
   {
-    "name": "SORCE Workshop: Recruitment 101",
-    "startDate": "2026-02-10",
-    "startTime": "12:30 PM",
-    "endDate": "2026-02-10",
-    "endTime": "1:30 PM",
-    "location": "SU 305",
-    "organization": "Student Organization Resource Center",
-    "description": "Join us for a SORCE Workshop event where we teach effective skills for recruitment. Food will be provided to those who RSVP. Tuesday, Feb 10th, 12:30p-1:30p SORCE Room, SU 305",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/65a74522-9703-4206-b239-3e4bba11d331d3f3a7b5-e665-442e-a920-146fae741a8f.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12217502"
-  },
-  {
-    "name": "Between the Lines: Black History Month Crochet-a-Thon \ud83d\udcd6\u2728",
-    "startDate": "2026-02-10",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "3:00 PM",
-    "location": "SU 208A",
-    "organization": "Student Connection & Engagement",
-    "description": "Between the Lines is a cozy, interactive experience centering Black creativity, storytelling, and community care. Participants will engage in reflection, connection, and mindfulness through guided activities designed to foster rest, expression, and meaningful dialogue. This event is intentionally slower-paced, offering space to recharge while building community. Refreshments will be provided. \ud83e\udd1d In partnership with UNLV Wellness Zone \ud83d\udcc5 February 10 \u23f0 1:00\u20133:00 PM \ud83d\udccd SU 208A \u270a\ud83c\udffe RSVP Today",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/ec6f9a97-ce0b-43d7-af80-51281f854acfc1c20859-d3a6-415f-9783-388e08cf325e.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12129267"
-  },
-  {
-    "name": "Between the Lines: Black History Month Crochet-a-Thon",
-    "startDate": "2026-02-10",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "3:00 PM",
-    "location": "SU 208A",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Celebrate Black History Month with Student Connection & Engagement, UNLV CAPS, and the UNLV Wellness Zone at our cozy Crochet-a-Thon! This event offers a relaxing and creative space to learn or practice crochet, fostering mindfulness and reducing stress \u2013 key aspects of emotional wellness.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d6493e32-df77-40c7-b10e-134e87682b77beadf2e1-3b10-482b-83ac-10d39d11c092.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12035732"
-  },
-  {
-    "name": "\ud83c\udf38 Welcome Spring 2026 General Meeting | International Student Organization \ud83c\udf38",
-    "startDate": "2026-02-10",
-    "startTime": "2:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "3:00 PM",
-    "location": "Starbucks",
-    "organization": "International Student Organization",
-    "description": "Join us as we kick off Spring 2026 with our first general meeting of the semester! This gathering is a great opportunity for all members, new and returning, to connect, meet the leadership team, and learn about upcoming events, programs, and ways to get involved. We will be sharing important updates, welcoming new students, and creating a space to celebrate the diverse cultures that make our organization special. Come build friendships, share ideas, and start the semester strong with our global community at UNLV. Everyone is welcome. Bring a friend and be part of the experience!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/cd88cfa5-ff34-496b-951c-cae6ca54c13abfe7def7-a25a-482a-b8f4-070cdc78e789.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12175929"
-  },
-  {
-    "name": "The Peer Mentor Experience: Insights and Opportunities",
-    "startDate": "2026-02-10",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "4:00 PM",
-    "location": "Student Union Rm. 205",
-    "organization": "First-Year Experience",
-    "description": "Hear from Peer Mentors about their experience and learn how to apply to be a Peer Mentor!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fdf7d412-6e1a-4d81-8ac0-92098f0293e0739bfef2-0861-4c1c-ab33-9e17452930c5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11284066"
-  },
-  {
-    "name": "Leadership Link Up : Jimmy Neutron \u2013 \u201cThink, Don\u2019t Panic!\u201d",
-    "startDate": "2026-02-10",
-    "startTime": "4:30 PM",
-    "endDate": "2026-02-10",
-    "endTime": "5:30 PM",
-    "location": "SU 219",
-    "organization": "Leadership Engagement and Development Team",
-    "description": "Got a leadership emergency? Channel your inner Jimmy Neutron and learn how to think before you panic. In this high-energy session, we\u2019ll explore how stress affects decision-making and how to stay creative and calm in chaos. Participants will: Examine how stress affects decision-making and contributes to reactive leadership. \u200b Learn strategies to pause, assess, and choose thoughtful responses during high-pressure moments. \u200b Practice applying a problem-solving model to complex, emotionally charged leadership challenges. \u200b",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/6f6a7c9f-5344-48da-80d3-77084e060c2c27916b0e-e664-4d71-9f3a-59f6f368a262.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11227697"
-  },
-  {
-    "name": "Mindful Moments: Weekly Guided Meditation",
-    "startDate": "2026-02-10",
-    "startTime": "4:30 PM",
-    "endDate": "2026-02-10",
-    "endTime": "5:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us for guided meditation. No registration needed.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/f5fd7d94-e0bf-4082-84ba-bc0ed7c272f6d026bdb7-31d0-4219-bcb0-b8cedf2a2de9.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12131458"
-  },
-  {
-    "name": "JSA Rock Paper Scissors Tournament Meeting",
-    "startDate": "2026-02-10",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "7:00 PM",
-    "location": "Student Union SU207",
-    "organization": "Japanese Students Alliance",
-    "description": "Think you've got the reflexes? Join us for our next general Japanese Student Alliance meeting! We will be playing \u53e9\u3044\u3066\u88ab\u3063\u3066\u30b8\u30e3\u30f3\u30b1\u30f3\u30dd\u30f3 (tattaite-kabutte-jyankenpon), winner grabs the hammer and the loser dives for the helmet! Try to beat our 3 time reigning champion!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/c2609412-9701-4c4a-a6c4-3eaf9a05d9d66b064d66-07bf-40d7-b260-f47e4fe19b5f.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12201512"
-  },
-  {
-    "name": "Student Town Hall",
-    "startDate": "2026-02-10",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-10",
-    "endTime": "7:00 PM",
-    "location": "SU 222",
-    "organization": "Young Democratic Socialists of America, University of Nevada Las Vegas Chapter",
-    "description": "Join us and make your voice heard! Let's get this campus organized!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d0d59c5f-d667-44cc-80b5-b52c8780737873f23f73-4e9e-4e90-ab24-d4bae1514419.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12222859"
-  },
-  {
-    "name": "Tuesday kick!",
-    "startDate": "2026-02-10",
-    "startTime": "6:30 PM",
-    "endDate": "2026-02-10",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! We'll meet in the lobby of the Rec. See the latest exact plans on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0e1f32de-c566-4e92-be6b-6f76fc0e6b02a96e438a-2326-461d-aeb0-524c90f88e7b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063310"
-  },
-  {
     "name": "New Student Orientation Leader Hiring ",
     "startDate": "2026-02-02",
     "startTime": "12:00 PM",
@@ -4524,18 +4404,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4546,6 +4414,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -5926,18 +5806,6 @@
     "description": "You can RSVP for your New RSO Meeting right here. All new RSOs must have at least one member attend a New RSO Meeting to complete the New RSO Registration process.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/5b4a95a9-47c6-45c6-adbd-85caa8378675af0a323f-d8b0-43bf-8ae4-27e832e8c997.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12458273"
-  },
-  {
-    "name": "SORCE Pop Up: Study Breaker",
-    "startDate": "2026-05-13",
-    "startTime": "3:00 PM",
-    "endDate": "2026-05-13",
-    "endTime": "5:00 PM",
-    "location": "Scarlet Sage",
-    "organization": "Student Organization Resource Center",
-    "description": "Swap the flashcards for mood boards. Grab some snacks and get creative as we map out what\u2019s next on your journey. Join us Wednesday, May 13th from 3pm-5pm at Scarlet Sage in the Student Union! *While supplies last*",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/2caf56a7-3621-4c43-a34d-bfeafe729341db92fc71-9f71-4f70-a055-684c1430ff05.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12300943"
   },
   {
     "name": "April Showers Bring May Flowers",
