@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T16:10:50Z",
+  "generatedAt": "2026-05-12T20:23:38Z",
   "files": [
     "academiccalendar_list.json",
     "buildingimages_list.json",
@@ -17,57 +17,57 @@
     "academiccalendar_list.json": {
       "status": "success",
       "itemCount": 64,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "buildingimages_list.json": {
       "status": "success",
       "itemCount": 119,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "campuswideevents_list.json": {
       "status": "success",
       "itemCount": 1,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "careerevents_list.json": {
       "status": "success",
       "itemCount": 1,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "involvementcenter_list.json": {
       "status": "success",
       "itemCount": 497,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "rebelcoverage_list.json": {
       "status": "success",
       "itemCount": 366,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "scarletandgraynews_list.json": {
       "status": "success",
       "itemCount": 10,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "unlvinthenews_list.json": {
       "status": "success",
       "itemCount": 9,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "unlvcalendar_list.json": {
       "status": "success",
       "itemCount": 2174,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "unlvtoday_list.json": {
       "status": "success",
-      "itemCount": 12,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "itemCount": 11,
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     },
     "organization_list.json": {
       "status": "success",
       "itemCount": 564,
-      "lastSuccessfulAt": "2026-05-12T16:10:50Z"
+      "lastSuccessfulAt": "2026-05-12T20:23:38Z"
     }
   }
 }
