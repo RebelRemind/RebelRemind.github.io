@@ -1,137 +1,5 @@
 [
   {
-    "name": "New Student Orientation Leader Hiring ",
-    "startDate": "2026-02-02",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "1:00 PM",
-    "location": "Handshake",
-    "organization": "UNLV Orientation",
-    "description": "New Student Orientation is looking to hire New Student Orientation Leaders for the Summer 2026 Orientation season. Check out this amazing opportunity where you get to help new incoming Rebels with their transition to UNLV through providing campus tours, facilitating breakout sessions, and sharing of campus resources.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/189f42e2-267b-45e7-b686-f93e21c61df4798cd15b-cade-4475-b333-7c2e5a199da5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12170121"
-  },
-  {
-    "name": "Effective Communication #1 - Spring 26 Success Series ",
-    "startDate": "2026-02-11",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "2:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "description": "In this Success Series session, Lean-In to Effective Communication, students will explore the importance of clear, intentional communication and how it supports success throughout the semester. We\u2019ll also discuss how to clearly express your needs, navigate different communication styles, and highlight helpful ASC resources to support you along the way. The UNLV Writing Center will join to provide general tips on clarity in writing and professional email communication, helping you communicate confidently across campus. For additional information visit our website. https://www.unlv.edu/asc/coaching/workshops",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b3dd60d8-7ce9-4dfa-84ac-cd7669ecd2334a9a08bb-719a-44bb-8ff3-a5522268f4a7.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12048264"
-  },
-  {
-    "name": "Surviving and Thriving Student Panel",
-    "startDate": "2026-02-11",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "2:00 PM",
-    "location": "HOS 282",
-    "organization": "College of Liberal Arts",
-    "description": "An open, student-led panel that helps guide first-year students on their college journeys. Upper-level students majoring in the College of Liberal Arts (COLA) will answer a series of questions about their college careers that will teach first-year students on how to be successful at UNLV. There will be a segment at the end where the audience can ask any questions that they feel best benefits their individual lives. Participants will be provided free snacks and COLA swag. Even though this event is geared towards first-year COLA majors, it is open to all who feel they can benefit from listening in on this panel.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12217584"
-  },
-  {
-    "name": "Recovery Curious",
-    "startDate": "2026-02-11",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "2:00 PM",
-    "location": "CAPS SSC-A Suite 143",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Are you curious about substance use recovery or ways to reduce use? Join us virtually or in-person to share questions or receive support around the topic of substance use and recovery.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/46a34094-0f98-4ed4-b081-ce4c8de113c409450576-147e-4790-abbc-fd1e3b62dc29.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12054645"
-  },
-  {
-    "name": "Valentine Crafternoon",
-    "startDate": "2026-02-11",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "3:30 PM",
-    "location": "Student Union Room 316",
-    "organization": "Service Learning & Leadership",
-    "description": "Join us for a cozy afternoon of creativity. We\u2019ll be making DIY Valentines and painting mugs! Enjoy hot chocolate and mooncakes while you create. When: February 11th | 1:00 PM \u2013 3:30 PM Where: Student Union, Room 316",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/dc91090d-6ce1-4332-bfe3-2b23adfb41f644ecbf0b-1341-4a00-bbd0-86d42967c2b2.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12152272"
-  },
-  {
-    "name": "Love is Love: Queer Community Mixer",
-    "startDate": "2026-02-11",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "6:00 PM",
-    "location": "Student Union 209",
-    "organization": "UNLV Grad Pride Alliance",
-    "description": "The UNLV Grad Pride Alliance invites you to join us as we kick off the Spring semester!!! The Grad Pride Alliance will be hosting a queer community mixer open to everyone - where we'll be making friends, listening to music, enjoying food, building community, and discussing ways to get involved with our community initiatives this semester! This is an event open to all! Bring your friends, allies, and anyone interested! We hope to see you there!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/503e5684-d9fa-4eab-b354-8d1640cd6c890fc564f4-92fb-45e2-8c01-c64be69be34b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147294"
-  },
-  {
-    "name": "UNLV Scientista Vision Board Social",
-    "startDate": "2026-02-11",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "6:00 PM",
-    "location": "UNLV Campus: CHB C114",
-    "organization": "The Scientista Foundation Chapter at UNLV",
-    "description": "Manifest your goals with Scientista! Get creative, set intentions, and connect with fellow women in STEMM.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9c77319f-8159-4e2a-983e-75d3c78a446eb776c6c5-3e29-439b-9fad-c18ac98669c9.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12173846"
-  },
-  {
-    "name": "Valentine\u2019s Fundraiser",
-    "startDate": "2026-02-11",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "6:00 PM",
-    "location": "UNLV Free Speech",
-    "organization": "Mariachi Rebelde de UNLV",
-    "description": "Join us on Wednesday, February 11th at 5pm in celebrating Valentine\u2019s Day! We will be offering Valentine\u2019s Day grams as well as playing free live music on UNLV\u2019s Free speech are located in front of the Hospitality building.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/707698cf-27b0-4969-9789-ba5e6a550207011f0f97-c174-406a-b427-8844ef78d615.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12216280"
-  },
-  {
-    "name": "ACF General Meeting",
-    "startDate": "2026-02-11",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-11",
-    "endTime": "6:30 PM",
-    "location": "BEH 107",
-    "organization": "UNLV ACF",
-    "description": "Join to find out more about the club plans and goals throughout the semester.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/30c40b5b-ffa5-4b9b-b810-ca462e3a9bcb6b73e764-0ec4-44d4-9dca-a35a0e91fc40.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12147272"
-  },
-  {
-    "name": "Newman Night: Lent Workshop",
-    "startDate": "2026-02-11",
-    "startTime": "4:30 PM",
-    "endDate": "2026-02-11",
-    "endTime": "8:00 PM",
-    "location": "UNLV Newman Center",
-    "organization": "Catholic Rebels",
-    "description": "Join us for a Newman Night! We will have Mardi Gras themed food, and end the night learning the ins-and-outs of Lent. We will go over things such as how to make goals for Lent to increase your faith and virtue! Mass will be at 5:30 and we will eat right after we bless the food.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/95e352aa-a8c9-4b81-bb23-9e4049a6b8a024c0c707-ad8d-4072-8b4b-82500ee262e0.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12222865"
-  },
-  {
-    "name": "Perfume Club Weekly Meeting ",
-    "startDate": "2026-02-11",
-    "startTime": "6:00 PM",
-    "endDate": "2026-02-11",
-    "endTime": "8:00 PM",
-    "location": "Echo 1055",
-    "organization": "Perfumery Club",
-    "description": "Hey, Hey, Hey! It's Wednesday, and you know what that means - Perfume Club is back with another meeting. Join us in the Echo 1055 1st Floor Lounge from 6 pm to 8 pm to create your signature scent and bond with your fellow fragrance connoisseurs. Feel free to bring friends, guests, and even your professor! The only thing we turn our noses at is Black Pepper (seriously, that oil is way too strong) We hope to see you there!!! Please join the GroupMe through the front page link or the QR code on the event flyer to stay up-to-date with club updates and further information.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d3abca3b-4c12-4135-aa5b-a3e236e367ae3085b4cc-f909-4dcb-b3c4-a712b02ac36c.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11834665"
-  },
-  {
     "name": "Mindful Moments: Weekly Guided Meditation",
     "startDate": "2026-02-12",
     "startTime": "11:30 AM",
@@ -4992,18 +4860,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12438685"
   },
   {
-    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
-    "startDate": "2026-04-25",
-    "startTime": "9:00 AM",
-    "endDate": "2026-04-25",
-    "endTime": "1:00 PM",
-    "location": "Lake Mead National Recreation Area",
-    "organization": "The Wildlife Society ",
-    "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12393455"
-  },
-  {
     "name": "Wetlands Park 4th Annual BioBlast",
     "startDate": "2026-04-25",
     "startTime": "10:00 AM",
@@ -5014,6 +4870,18 @@
     "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12367872"
+  },
+  {
+    "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
+    "startDate": "2026-04-25",
+    "startTime": "9:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "1:00 PM",
+    "location": "Lake Mead National Recreation Area",
+    "organization": "The Wildlife Society ",
+    "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12393455"
   },
   {
     "name": "Student Dialogue & Brunch",
