@@ -1,15 +1,5 @@
 [
   {
-    "name": "John A. Burns Intercollegiate",
-    "startDate": "2026-02-12",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-12",
-    "endTime": "",
-    "location": "Lihue, Kauai, HI",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/12/mens-golf-rebels-in-top-5-after-first-round-in-hawai-i.aspx"
-  },
-  {
     "name": "Don Kirby Elite Invitational",
     "startDate": "2026-02-13",
     "startTime": "",
@@ -2177,7 +2167,7 @@
     "endTime": "",
     "location": "Ann Arbor, MI University of Michigan Golf Course",
     "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/5/10/womens-golf-rebels-open-ncaa-postseason-at-ann-arbor-regional-monday.aspx"
+    "link": "https://unlvrebels.com/news/2026/5/13/womens-golf-rebels-conclude-season-with-pair-of-top-25-finishes-at-ann-arbor-regional.aspx"
   },
   {
     "name": "Mountain West Outdoor Championships",
@@ -3658,5 +3648,15 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/montana/boxscore/17445"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-11-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-12",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]

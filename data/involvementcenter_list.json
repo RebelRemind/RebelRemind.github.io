@@ -1,149 +1,5 @@
 [
   {
-    "name": "Mindful Moments: Weekly Guided Meditation",
-    "startDate": "2026-02-12",
-    "startTime": "11:30 AM",
-    "endDate": "2026-02-12",
-    "endTime": "12:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us for guided meditation. No registration needed.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b81b307b-9e63-4f82-be3b-8c52910904e876ee8b92-1fed-4ad1-b3e4-b5e32947ee2e.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12131434"
-  },
-  {
-    "name": "SORCE Pop Ups present: A Valentines Paint & Sip",
-    "startDate": "2026-02-12",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "2:00 PM",
-    "location": "Scarlet Sage in Student Union ",
-    "organization": "Student Organization Resource Center",
-    "description": "Celebrate Valentine\u2019s with SORCE Pop-Ups at this Paint & Sip event on February 12th, 12 p.m. to 2 p.m. in Scarlet Sage. Paint a vase, sip mocktails, and snack on something sweet. Bring a friend (or two)!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d7f78d58-5071-43f9-b9e4-325873e440d74b09aa6e-8535-405b-8882-36b74f253c5d.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12206837"
-  },
-  {
-    "name": "Wellness & Service: Safer Sex Kit Building",
-    "startDate": "2026-02-12",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "3:00 PM",
-    "location": "SU 207",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join UNLVolunteers and the Wellness Zone for our annual Safer Sex Kit Building event, a long-standing tradition of service and education. Participants will assemble safer sex kits for the community while engaging in an informative conversation about safer sex practices. This hands-on event combines community care with essential health education, empowering individuals to prioritize their well-being and the well-being of others.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/aad20bea-1891-4c4f-bc9e-099bbc9dcad9186ad7d9-de1f-4fbc-ae27-41335b108a8d.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12035664"
-  },
-  {
-    "name": "Real Talk \ud83d\udde3\ufe0f\u2728\ud83e\ude9e",
-    "startDate": "2026-02-12",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "3:00 PM",
-    "location": "SU 209",
-    "organization": "Student Connection & Engagement",
-    "description": "Real Talk is a facilitated dialogue led by Dr. Valerie Taylor (UNLV Interdisciplinary Studies). This session examines colorism and texturism and their impact on Black identity, beauty standards, self-worth, and lived experience. \ud83c\udf7d\ufe0f Lunch provided by House of Dutch Pot \ud83d\udcc5 February 12 \u23f0 1:00\u20133:00 PM \ud83d\udccd SU 209 \u270a\ud83c\udffe RSVP Today",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0a970157-fa7d-43e2-8fd9-6ee040d553c05628296f-de70-4ccd-a8bf-b38fcef640f7.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12129384"
-  },
-  {
-    "name": "Becoming an Adaptive Perfectionist",
-    "startDate": "2026-02-12",
-    "startTime": "3:30 PM",
-    "endDate": "2026-02-12",
-    "endTime": "4:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Learn how to rethink the relationship between motivation and self-criticism, set manageable goals, and be more productive while also tending to your wellbeing.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8551edb-f558-4f54-ba41-d5c2ec09333b16bc4c1d-1e4e-4646-a325-a1bb308deee5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12057034"
-  },
-  {
-    "name": "First Sip of OSINT Workshop",
-    "startDate": "2026-02-12",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "4:30 PM",
-    "location": "CHB C 234",
-    "organization": "WiCyS Student Chapter",
-    "description": "Kick off the semester with us at our first OSINT workshop! Join us to dive into the foundational tools and investigative mindset of open-source intelligence.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9073a6f4-9795-4049-bfa1-cec96f8176c7a0edbac9-05ed-40cf-9e81-2fe135a986c4.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12216236"
-  },
-  {
-    "name": "Lunar New Year Calligraphy Workshop ",
-    "startDate": "2026-02-12",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "5:00 PM",
-    "location": "MAB2 Room 141",
-    "organization": "Chinese Corner",
-    "description": "Celebrate the Lunar New Year by joining Chinese Corner UNLV for a hands-on Calligraphy Workshop in collaboration with UNLV Global and the Sands Institute for Chinese Language and Culture at UNLV. Participants will learn the basics of traditional Chinese calligraphy, including proper brush techniques and the cultural significance behind commonly used characters and phrases during Lunar New Year. This interactive workshop offers a welcoming space for students to explore Chinese language and culture while creating their own calligraphy pieces to take home. No prior experience is required, and all materials will be provided. This event is open to all students interested in cultural learning, language exploration, and creative expression.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/3f2ea104-1b80-4ffb-a237-400dedd01ff837c32c76-aaee-4faf-a4d1-e86330f088a3.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063295"
-  },
-  {
-    "name": "\u2665\ufe0f | RTSO's Transfer-entine Service Week!",
-    "startDate": "2026-02-09",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-12",
-    "endTime": "7:00 PM",
-    "location": "SORCE Room",
-    "organization": "Rebel Transfer Student Organization",
-    "description": "A week of love, kindness, and giving-back! RTSO invites all students to join us throughout our Transfer-entine Service Week as we come together for daily service activities to ultimately assemble craft kits to be donated to the local children\u2019s hospital. Work alongside your fellow peers to spread joy, compassion, and make a difference! This event will be hosted PASSIVELY - meaning, participants are welcome to stop by and contribute as your availability allows! A representative from the executive leadership board will be present to provide guidance and/or refer to the instructions available at SORCE for more details!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/bf765331-eb88-44ab-902d-8bb7d9811e172c9626dc-e27b-4279-a5ce-7ca09c4b5f96.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12216215"
-  },
-  {
-    "name": "General Meeting - Club Revival",
-    "startDate": "2026-02-12",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-12",
-    "endTime": "7:00 PM",
-    "location": "AEB 150",
-    "organization": "Society of Hispanic Professional Engineers",
-    "description": "This isn't just another club meeting; it\u2019s the official relaunch of the Society of Hispanic Professional Engineers (SHPE) at UNLV! After a period of dormancy, we are bringing the \"Familia\" back to campus to empower Hispanic students in STEM. The Revival Meeting is designed to bridge the gap between academic life and professional success. Whether you are a freshman looking for a community or a senior wanting to leave a legacy, this meeting is your chance to help build the foundation of our chapter. What to Expect: \u2022 The Vision: We\u2019ll outline our roadmap for the year, including professional development workshops, networking events, and community outreach. \u2022 Leadership Opportunities: We are looking for passionate members to step into foundational roles and help lead the relaunch. \u2022 Networking: Connect with fellow engineers and STEM majors who share your background and drive. \u2022 Resources: Learn about SHPE National benefit",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/65dba06f-ff92-40e3-a9ae-2a81151cf6352562f145-64cf-47d7-860f-87c397946868.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12175922"
-  },
-  {
-    "name": "LSSA First General Meeting",
-    "startDate": "2026-02-12",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-12",
-    "endTime": "7:00 PM",
-    "location": "BEH 119",
-    "organization": "Life Science Student Association",
-    "description": "UNLV Life Science Student Association is hosting their First General Meeting this Thursday, February 12th from 5:30 - 7:00 PM in BEH 119! We look forward to seeing you there! LSSA first general meeting introduces all requirements, upcoming events, and welcoming members to an great semester ahead! Additionally, we hold a prep book giveaway to members who attend either virtually or in-person! UNLV LSSA fosters mentorship and guidance for students to succeed in the difficult Life Sciences degree so we hope to see you there! Joining us on the involvement center invites you to our mail list where you can get updates and information about all the upcoming events we host and share. We hope to see you there!!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/cfd7c64c-5854-4cca-b413-90753c37bbf84026d0e1-439b-46ea-83a4-90314d80caac.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12216123"
-  },
-  {
-    "name": "General Meeting - Club Revival",
-    "startDate": "2026-02-12",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-12",
-    "endTime": "7:00 PM",
-    "location": "AEB 150",
-    "organization": "Society of Hispanic Professional Engineers",
-    "description": "This isn't just another club meeting; it\u2019s the official relaunch of the Society of Hispanic Professional Engineers (SHPE) at UNLV! After a period of dormancy, we are bringing the \"Familia\" back to campus to empower Hispanic students in STEM. The Revival Meeting is designed to bridge the gap between academic life and professional success. Whether you are a freshman looking for a community or a senior wanting to leave a legacy, this meeting is your chance to help build the foundation of our chapter. What to Expect: \u2022 The Vision: We\u2019ll outline our roadmap for the year, including professional development workshops, networking events, and community outreach. \u2022 Leadership Opportunities: We are looking for passionate members to step into foundational roles and help lead the relaunch. \u2022 Networking: Connect with fellow engineers and STEM majors who share your background and drive. \u2022 Resources: Learn about SHPE National benefit",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/65dba06f-ff92-40e3-a9ae-2a81151cf6352562f145-64cf-47d7-860f-87c397946868.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12175923"
-  },
-  {
-    "name": "Blooming Bouquets",
-    "startDate": "2026-02-12",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-12",
-    "endTime": "9:00 PM",
-    "location": "RLL 101",
-    "organization": "Honors Student Council",
-    "description": "Stop and smell the roses, but wait, there's way more than just roses at HSCxHonor's Rebellion's Blooming Bouquets. Take a walk through our garden and come out with a customized bouquet just for you!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/462c13ee-676f-4c1b-9c55-2fc76c147cdedff47c11-9529-4ce2-b708-70536cd158aa.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12077140"
-  },
-  {
     "name": "Relaxing Your Mind: Coping With Anxiety",
     "startDate": "2026-02-13",
     "startTime": "11:00 AM",
@@ -4272,18 +4128,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4294,6 +4138,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
