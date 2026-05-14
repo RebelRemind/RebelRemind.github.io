@@ -1,5 +1,23 @@
 [
   {
+    "name": "Join UNLV's Immersive Learning Cohort",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-14",
+    "publishedAt": "2026-05-14T10:56:40-0700",
+    "summary": "UNLV faculty are invited to apply for the Immersive Learning Cohort, a hands-on opportunity for instructors interested in integrating virtual reality into their courses using content from Dreamscape Learn and the Immersive Learning Lab . Limited to 15 in-person participants,...",
+    "link": "https://www.unlv.edu/news/unlvtoday/join-unlvs-immersive-learning-cohort"
+  },
+  {
+    "name": "Input needed: UNLV Programs and Activities Involving Minors Survey",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-14",
+    "publishedAt": "2026-05-13T14:53:34-0700",
+    "summary": "Student Affairs and Risk Management and Safety are conducting a preliminary survey to identify UNLV programs, activities, and events that involve participants under the age of 18. This includes but is not limited to: If your department, unit, or program involves participants...",
+    "link": "https://www.unlv.edu/news/unlvtoday/input-needed-unlv-programs-and-activities-involving-minors-survey"
+  },
+  {
     "name": "Survey: Fall Grant Writing Workshop Series Development",
     "category": "Today's Announcements",
     "section": "Today's Announcements",
@@ -127,15 +145,6 @@
   },
   {
     "name": "Classified/Academic/Administrative/Postdoctoral Scholar Employment Opportunities",
-    "category": "Today's Announcements",
-    "section": "Today's Announcements",
-    "publishedDate": "",
-    "publishedAt": "2026-05-12T14:57:26-0700",
-    "summary": "Each week Human Resources will inform the campus community about new internal job opportunities. The following is a listing of new UNLV classified job openings for the week: Classified Employment Opportunities",
-    "link": "https://www.unlv.edu/news/unlvtoday/classifiedacademicadministrativepostdoctoral-scholar-employment-opportunities-22"
-  },
-  {
-    "name": "Classified/Academic/Administrative/Postdoctoral Scholar Employment Opportunities",
     "category": "HR and Employment",
     "section": "More from the Last Week",
     "publishedDate": "2026-05-12",
@@ -205,23 +214,5 @@
     "publishedAt": "2026-05-07T14:22:40-0700",
     "summary": "The University Libraries will offer Rebel Hours during Finals Week, May 11-15, providing a safe and secure study environment for students who want to stay on track. All current UNLV students, faculty, and staff can access the Libraries during Rebel Hours by using their...",
     "link": "https://www.unlv.edu/news/unlvtoday/rebel-hours-return-university-libraries-finals-week"
-  },
-  {
-    "name": "Student Health Center and FAST Center Reach Perfect Score for Re-Accreditation",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-07",
-    "publishedAt": "2026-05-07T12:30:29-0700",
-    "summary": "The UNLV Student Health Center and Faculty and Staff Treatment Center recently achieved a perfect score in a national reaccreditation survey by the Accreditation Association for Ambulatory Health Care . During a rigorous two-day on-site survey this week, expert AAAHC...",
-    "link": "https://www.unlv.edu/news/unlvtoday/student-health-center-and-fast-center-reach-perfect-score-re-accreditation"
-  },
-  {
-    "name": "Action Required: Sophos Expires May 15, Check Your Security Software",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-07",
-    "publishedAt": "2026-05-06T15:30:43-0700",
-    "summary": "Our Sophos license will end on May 15 and will stop receiving updates that protect your computer. Instead, your campus computer should now be running SentinelOne , a modern, AI-driven security platform designed to better protect against today's sophisticated cyber threats.",
-    "link": "https://www.unlv.edu/news/unlvtoday/action-required-sophos-expires-may-15-check-your-security-software"
   }
 ]

@@ -1,17 +1,5 @@
 [
   {
-    "name": "Relaxing Your Mind: Coping With Anxiety",
-    "startDate": "2026-02-13",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-13",
-    "endTime": "12:00 PM",
-    "location": "Online",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "This two-part workshop is intended to provide information about anxiety and a variety of practical coping skills for anxiety and stress.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/909480eb-17a5-40c0-80d3-adf67e6f4409ac573d88-825b-4d60-bb2d-de5cafb24cff.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12135883"
-  },
-  {
     "name": "WQP: Toolkit Intro (Day 1)",
     "startDate": "2026-02-13",
     "startTime": "10:00 AM",
@@ -4716,18 +4704,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12438685"
   },
   {
-    "name": "Wetlands Park 4th Annual BioBlast",
-    "startDate": "2026-04-25",
-    "startTime": "10:00 AM",
-    "endDate": "2026-04-25",
-    "endTime": "1:00 PM",
-    "location": "Clark County Wetlands Park",
-    "organization": "UNLV Birding and Conservation Club",
-    "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12367872"
-  },
-  {
     "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
     "startDate": "2026-04-25",
     "startTime": "9:00 AM",
@@ -4738,6 +4714,18 @@
     "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12393455"
+  },
+  {
+    "name": "Wetlands Park 4th Annual BioBlast",
+    "startDate": "2026-04-25",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "1:00 PM",
+    "location": "Clark County Wetlands Park",
+    "organization": "UNLV Birding and Conservation Club",
+    "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12367872"
   },
   {
     "name": "Student Dialogue & Brunch",
@@ -5220,18 +5208,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12332483"
   },
   {
-    "name": "ASA E-Board Election Spring 2026",
-    "startDate": "2026-05-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-05-01",
-    "endTime": "7:00 PM",
-    "location": "Student Union Building room 219",
-    "organization": "African Student Alliance",
-    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12453163"
-  },
-  {
     "name": "Hot \"Girl\" Walk",
     "startDate": "2026-05-01",
     "startTime": "5:00 PM",
@@ -5242,6 +5218,18 @@
     "description": "Black Social Workers Society is hosting a very special event this May: The Hot \"Girl\" Walk. Open to everyone of all genders and class standings, we aim to build community through healthy stress management tactics. Join us for a stroll or skate during study week here on our beautiful campus. Open to everyone: runners, joggers, walkers, roller-skaters, rollerbladers, skateboarders, and anything in between. Hydration will be provided",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/e2413e9f-207e-407f-a191-d0a5dfeee320f7c8007f-5c35-4218-8230-5cdf10070810.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12172129"
+  },
+  {
+    "name": "ASA E-Board Election Spring 2026",
+    "startDate": "2026-05-01",
+    "startTime": "5:00 PM",
+    "endDate": "2026-05-01",
+    "endTime": "7:00 PM",
+    "location": "Student Union Building room 219",
+    "organization": "African Student Alliance",
+    "description": "ASA E-Board Spring 2026 upcoming election: Eligibility to contest and vote is based on active membership. 1. Anyone who has attended at least one event this academic year 2.Anyone who is registered on the Involvement Center",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9edb64af-fff1-475e-abcc-e128c9a004d142b92bdc-95d0-4a9b-949b-90326c3b1a56.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12453163"
   },
   {
     "name": "The Wildlife Society-Herpetofauna Surveys: Chuckwalla Count at Sloan Canyon",
