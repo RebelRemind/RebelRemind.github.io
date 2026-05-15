@@ -318,10 +318,10 @@
     "endDate": "2026-02-10",
     "endTime": "3:00 PM",
     "location": "Student Union\n        208A",
-    "description": "Between the Lines is a monthly gathering designed to center Black creativity, storytelling, and community care. In honor of Black History Month, this session invites participants to learn how to crochet in a relaxed, beginner-friendly environment focused on reflection, creativity, and connection. Refreshments will be provided. Open to everyone. In partnership with UNLV Wellness Zone. More details and RSVP",
-    "category": "Diversity",
+    "description": "Celebrate Black History Month with Student Connection and Engagement, UNLV CAPS, and the UNLV Wellness Zone at our cozy Crochet-a-Thon! This event offers a relaxing and creative space to learn or practice crochet, fostering mindfulness and reducing stress \u2013 key aspects of emotional wellness.",
+    "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/between-lines-black-history-month-crochet-thon-0"
+    "link": "https://www.unlv.edu/event/between-lines-black-history-month-crochet-thon"
   },
   {
     "name": "Bachelor of Social Work Degree Online Information Session",
@@ -6873,7 +6873,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-9"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-7"
   },
   {
     "name": "Communication Skills Workshop",
@@ -16637,11 +16637,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -16649,11 +16649,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -20613,7 +20613,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-10"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-8"
   },
   {
     "name": "Dissertation Defense: Anthony Graham",
@@ -22833,7 +22833,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
@@ -24984,6 +24984,30 @@
     "link": "https://www.unlv.edu/event/willow-beach-stand-paddling-day"
   },
   {
+    "name": "91.5 Jazz and More Broadcasting Live: Sunset Jazz Series - Jarez",
+    "startDate": "2026-05-16",
+    "startTime": "8:00 PM",
+    "endDate": "2026-05-16",
+    "endTime": "10:00 PM",
+    "location": "Side Lawn at Sunset Station\r\n1301 W Sunset Rd, \r\nHenderson, NV 89014",
+    "description": "JaRez is a Billboard-charting saxophonist, producer, and creative visionary who has redefined the modern smooth jazz landscape with a sound that fuses sophistication, soul, and streetwise cool. Known for blending futuristic grooves with emotional depth, Jarez continues to evolve\u2014both musically and culturally\u2014while shaping the future of contemporary jazz. 91.5 Jazz and More will be broadcasting live.",
+    "category": "Arts",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/915-jazz-and-more-broadcasting-live-sunset-jazz-series-jarez"
+  },
+  {
+    "name": "Live Broadcast from Vic's Supper Club",
+    "startDate": "2026-05-16",
+    "startTime": "8:00 PM",
+    "endDate": "2026-05-16",
+    "endTime": "10:00 PM",
+    "location": "Vic's Supper Club\r\n355 Promenade Place\r\nLas Vegas, NV 89106",
+    "description": "91.5 Jazz and More is at Vic's Supper Club in Symphony Park. Join us this Saturday night for a live broadcast featuring seasonal cocktails, an Italian menu and live jazz performed by national headliners and the Las Vegas Jazz Academy trio. Parking is validated, every Saturday at 8pm as 91.5 Jazz and More broadcast Live from Vic's Supper Club in Symphony Park.",
+    "category": "Arts",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/live-broadcast-vics-supper-club"
+  },
+  {
     "name": "Alt Breaks Spring Break Trip - Conservation & Ecology on Catalina Island, CA (apply by April 19))",
     "startDate": "2026-05-17",
     "startTime": "(ALL DAY)",
@@ -25194,10 +25218,10 @@
     "endDate": "2026-05-19",
     "endTime": "",
     "location": "",
-    "description": "Spring grades are due at the Office of the Registrar by 4 p.m.",
+    "description": "Spring 2026 grades are due at the Office of the Registrar by 4 p.m.",
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/spring-grades-due-2"
+    "link": "https://www.unlv.edu/event/spring-grades-due-1"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
@@ -25716,6 +25740,18 @@
     "link": "https://www.unlv.edu/event/delta-academy-graduating-class-2026-ceremony-2"
   },
   {
+    "name": "91.5 Jazz and More Live Broadcast - The Virgin Hotel Las Vegas",
+    "startDate": "2026-05-21",
+    "startTime": "8:00 PM",
+    "endDate": "2026-05-21",
+    "endTime": "10:00 PM",
+    "location": "The Shag Room inside Virgin Hotel \r\n4455 Paradise Rd,\r\nLas Vegas, NV 89169",
+    "description": "Join 91.5 Jazz and More and Jason, as he hosts our newest live broadcast, The Shag Room Sessions live from the Virgin Hotels, every Thursday night from 8-10 p.m. Come down and listen to local and national artists, as we broadcast live. We will see you there.",
+    "category": "Arts",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/915-jazz-and-more-live-broadcast-virgin-hotel-las-vegas"
+  },
+  {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
     "startDate": "2026-05-22",
     "startTime": "(ALL DAY)",
@@ -26002,6 +26038,18 @@
     "category": "Arts",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/hch-D73222_009.jpg?itok=dsStJspz",
     "link": "https://www.unlv.edu/event/coral-academy-science-senior-graduation-ceremony"
+  },
+  {
+    "name": "Live Broadcast from Vic's Supper Club",
+    "startDate": "2026-05-23",
+    "startTime": "8:00 PM",
+    "endDate": "2026-05-23",
+    "endTime": "10:00 PM",
+    "location": "Vic's Supper Club\r\n355 Promenade Place\r\nLas Vegas, NV 89106",
+    "description": "91.5 Jazz and More is at Vic's Supper Club in Symphony Park. Join us this Saturday night for a live broadcast featuring seasonal cocktails, an Italian menu and live jazz performed by national headliners and the Las Vegas Jazz Academy trio. Parking is validated, every Saturday at 8pm as 91.5 Jazz and More broadcast Live from Vic's Supper Club in Symphony Park.",
+    "category": "Arts",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/live-broadcast-vics-supper-club?delta=1"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
