@@ -1,85 +1,5 @@
 [
   {
-    "name": "Don Kirby Elite Invitational",
-    "startDate": "2026-02-13",
-    "startTime": "",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Albuquerque, N.M.",
-    "sport": "Women's Track & Field",
-    "link": "https://unlvrebels.com/news/2026/2/14/womens-track-field-rebels-wrap-up-regular-season-at-don-kirby-elite-invitational.aspx"
-  },
-  {
-    "name": "Quinnipiac",
-    "startDate": "2026-02-13",
-    "startTime": "",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/quinnipiac/boxscore/17802"
-  },
-  {
-    "name": "UC Davis",
-    "startDate": "2026-02-13",
-    "startTime": "",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-davis/boxscore/17732"
-  },
-  {
-    "name": "John A. Burns Intercollegiate",
-    "startDate": "2026-02-13",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Lihue, Kauai, HI",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/13/mens-golf-big-second-round-moves-rebels-into-top-3-in-hawai-i.aspx"
-  },
-  {
-    "name": "Idaho State",
-    "startDate": "2026-02-13",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/13/mens-tennis-posts-third-shutout-of-season.aspx"
-  },
-  {
-    "name": "UNLV First Chance Invitational",
-    "startDate": "2026-02-13",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Swimming & Diving",
-    "link": ""
-  },
-  {
-    "name": "Austin Peay",
-    "startDate": "2026-02-13",
-    "startTime": "6:07 PM",
-    "endDate": "2026-02-13",
-    "endTime": "9:11 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay/boxscore/17735"
-  },
-  {
-    "name": "Boise State",
-    "startDate": "2026-02-13",
-    "startTime": "7:00 PM",
-    "endDate": "2026-02-13",
-    "endTime": "",
-    "location": "Boise, Idaho",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/boise-state/boxscore/17625"
-  },
-  {
     "name": "Grand Canyon",
     "startDate": "2026-02-14",
     "startTime": "",
@@ -2182,12 +2102,12 @@
   {
     "name": "San Diego State",
     "startDate": "2026-05-14",
-    "startTime": "6:05 PM",
+    "startTime": "6:06 PM",
     "endDate": "2026-05-14",
-    "endTime": "",
+    "endTime": "8:34 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-26/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-diego-state/boxscore/17789"
   },
   {
     "name": "San Diego State",
