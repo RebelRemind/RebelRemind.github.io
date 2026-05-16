@@ -1,75 +1,5 @@
 [
   {
-    "name": "Grand Canyon",
-    "startDate": "2026-02-14",
-    "startTime": "",
-    "endDate": "2026-02-14",
-    "endTime": "",
-    "location": "Las Vegas The Pavilion",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/grand-canyon/boxscore/17655"
-  },
-  {
-    "name": "Quinnipiac",
-    "startDate": "2026-02-14",
-    "startTime": "",
-    "endDate": "2026-02-14",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/quinnipiac/boxscore/17804"
-  },
-  {
-    "name": "Seattle U",
-    "startDate": "2026-02-14",
-    "startTime": "",
-    "endDate": "2026-02-14",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/seattle-u/boxscore/17803"
-  },
-  {
-    "name": "John A. Burns Intercollegiate",
-    "startDate": "2026-02-14",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-14",
-    "endTime": "",
-    "location": "Lihue, Kauai, HI",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/14/mens-golf-rebels-secure-second-place-finish-in-hawai-i.aspx"
-  },
-  {
-    "name": "UNLV First Chance Invitational",
-    "startDate": "2026-02-14",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-14",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Swimming & Diving",
-    "link": ""
-  },
-  {
-    "name": "Austin Peay (DH)",
-    "startDate": "2026-02-14",
-    "startTime": "12:09 PM",
-    "endDate": "2026-02-14",
-    "endTime": "3:37 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay-dh-/boxscore/17737"
-  },
-  {
-    "name": "Austin Peay (DH)",
-    "startDate": "2026-02-14",
-    "startTime": "4:22 PM",
-    "endDate": "2026-02-14",
-    "endTime": "7:22 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay-dh-/boxscore/17738"
-  },
-  {
     "name": "UC Davis",
     "startDate": "2026-02-15",
     "startTime": "",
@@ -2112,12 +2042,12 @@
   {
     "name": "San Diego State",
     "startDate": "2026-05-15",
-    "startTime": "6:05 PM",
+    "startTime": "6:06 PM",
     "endDate": "2026-05-15",
-    "endTime": "",
+    "endTime": "8:43 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-27/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-diego-state/boxscore/17790"
   },
   {
     "name": "San Diego State",
@@ -3578,5 +3508,45 @@
     "location": "Las Vegas, Nev. / The Pavilion",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-11-14",
+    "startTime": "",
+    "endDate": "2026-11-14",
+    "endTime": "",
+    "location": "Albuquerque, NM University Stadium",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "No. 7 Baylor",
+    "startDate": "2026-11-14",
+    "startTime": "",
+    "endDate": "2026-11-14",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/baylor/boxscore/17318"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-11-14",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-14",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "NCAA West Regionals",
+    "startDate": "2026-11-14",
+    "startTime": "9:00 AM",
+    "endDate": "2026-11-14",
+    "endTime": "",
+    "location": "Sacramento, Calif.",
+    "sport": "Women's Cross Country",
+    "link": "https://unlvrebels.com/news/2025/11/14/womens-cross-country-rebels-conclude-season-at-ncaa-west-regional.aspx"
   }
 ]

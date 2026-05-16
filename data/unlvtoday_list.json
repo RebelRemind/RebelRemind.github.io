@@ -1,5 +1,23 @@
 [
   {
+    "name": "Connect to Campus Network/VPN for Windows Activation Error Messages",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-15",
+    "publishedAt": "2026-05-15T14:46:03-0700",
+    "summary": "On May 20 , we will be upgrading the server that manages Microsoft Windows licenses for campus-owned devices. What you need to do:",
+    "link": "https://www.unlv.edu/news/unlvtoday/connect-campus-networkvpn-windows-activation-error-messages"
+  },
+  {
+    "name": "Discover 50+ Summer Camp Opportunities for K-12 Students at UNLV",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-15",
+    "publishedAt": "2026-05-15T10:59:03-0700",
+    "summary": "UNLV Young Rebels is offering 50+ exciting programs for K-12 students designed to inspire curiosity, spark creativity, and introduce students to future academic and career possibilities. Whether your student is interested in healthcare, engineering, business, the arts, or...",
+    "link": "https://www.unlv.edu/news/unlvtoday/discover-50-summer-camp-opportunities-k-12-students-unlv"
+  },
+  {
     "name": "Last Chance: RSVP for Mahjong Night May 19",
     "category": "Save-The-Date",
     "section": "More from the Last Week",
@@ -196,23 +214,5 @@
     "publishedAt": "2026-05-11T08:51:22-0700",
     "summary": "Starting May 18, the bookstore\u2019s summer hours will be: The bookstore will also be closed for the following holidays:",
     "link": "https://www.unlv.edu/news/unlvtoday/bookstore-summer-hours-holiday-closures"
-  },
-  {
-    "name": "Attend Tomorrow: Open Enrollment & RebelWELL Wellness Fair",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-08",
-    "publishedAt": "2026-05-08T11:58:45-0700",
-    "summary": "All faculty and staff are invited to the Open Enrollment and Wellness Fair on Tuesday, May 12 in the Student Union, room 208 and nearby breakout rooms . The event is composed of two parts: the Open Enrollment and Wellness Resource Fair and RebelWELL Pathways to Wellness...",
-    "link": "https://www.unlv.edu/news/unlvtoday/attend-tomorrow-open-enrollment-rebelwell-wellness-fair"
-  },
-  {
-    "name": "Cisco AI Assistant Now Live in Webex",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-08",
-    "publishedAt": "2026-05-08T11:55:04-0700",
-    "summary": "Calls made or received in the Webex App may now use the Cisco AI Assistant. This tool: Additionally, this tool was designed with privacy in mind. The AI Assistant in-call summaries and transcripts for unrecorded calls are a transient, user-centric feature. The live summaries...",
-    "link": "https://www.unlv.edu/news/unlvtoday/cisco-ai-assistant-now-live-webex"
   }
 ]
