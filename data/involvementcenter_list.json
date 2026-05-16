@@ -1,17 +1,5 @@
 [
   {
-    "name": "Off Campus Bird Walk: Finding Lovebirds",
-    "startDate": "2026-02-15",
-    "startTime": "9:00 AM",
-    "endDate": "2026-02-15",
-    "endTime": "11:00 AM",
-    "location": "Henderson Bird Viewing Preserve",
-    "organization": "UNLV Birding and Conservation Club",
-    "description": "Join UNLV BCC for a relaxing bird walk at the Henderson Bird Viewing Preserve! As spring arrives in Las Vegas, many birds are busy trying to find their true love for the spring season. This is the best time to observe birds out in the open and see some unique behavior! We will be spotting some of the \"lovebirds\" that have decided to set up their families at the Preserve while learning about different rituals and displays birds do to attract a mate. Like always, binoculars will be provided as supplies last, in addition the Henderson Bird Viewing Preserve also has binoculars to borrow! We will be walking outside for this event so please be sure to bring water, sun protection, a hat, and comfortable shoes! Due to the off-campus nature of the event, we will require waivers to be filled out before the event date. Carpooling will be available for this event! If you want the opportunity to carpool to the event location please RSVP by February 11th!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/4c5a2c4e-b0f8-4e53-bcfd-53b2f8a06a4754dd4a06-0f5f-4ef5-9c49-8be9fb229117.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063297"
-  },
-  {
     "name": "Coffee with Karly ",
     "startDate": "2026-02-17",
     "startTime": "10:00 AM",
@@ -4056,18 +4044,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4078,6 +4054,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
