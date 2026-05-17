@@ -1,35 +1,5 @@
 [
   {
-    "name": "UC Davis",
-    "startDate": "2026-02-15",
-    "startTime": "",
-    "endDate": "2026-02-15",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-davis/boxscore/17805"
-  },
-  {
-    "name": "Austin Peay",
-    "startDate": "2026-02-15",
-    "startTime": "12:06 PM",
-    "endDate": "2026-02-15",
-    "endTime": "4:08 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/austin-peay/boxscore/17739"
-  },
-  {
-    "name": "#15 UCLA",
-    "startDate": "2026-02-15",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-15",
-    "endTime": "",
-    "location": "Los Angeles, CA",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/15/mens-tennis-snitari-streak-ends-as-bruins-blank-rebels.aspx"
-  },
-  {
     "name": "UC Riverside",
     "startDate": "2026-02-17",
     "startTime": "2:05 PM",
@@ -2027,7 +1997,7 @@
     "endTime": "",
     "location": "Clovis, Calif.",
     "sport": "Women's Track & Field",
-    "link": "https://unlvrebels.com/news/2026/5/13/womens-track-field-rebels-ready-for-credit-union-1-mw-outdoor-track-field-championships.aspx"
+    "link": "https://unlvrebels.com/news/2026/5/16/womens-track-field-rebels-record-10-top-eight-finishes-wins-4x100m-relay-at-cu1-mw-outdoor-track-field-championships.aspx"
   },
   {
     "name": "San Diego State",
@@ -2054,10 +2024,10 @@
     "startDate": "2026-05-16",
     "startTime": "12:05 PM",
     "endDate": "2026-05-16",
-    "endTime": "",
+    "endTime": "3:38 PM",
     "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
     "sport": "Baseball",
-    "link": "https://themw.com/news/2026/03/23/san-diego-state-at-unlv-28/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-diego-state/boxscore/17791"
   },
   {
     "name": "NCAA Regionals",
@@ -2090,7 +2060,7 @@
     "link": ""
   },
   {
-    "name": "Mountain West",
+    "name": "No. 3 Air Force",
     "startDate": "2026-05-21",
     "startTime": "",
     "endDate": "2026-05-21",
