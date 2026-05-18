@@ -2037,7 +2037,7 @@
     "endTime": "",
     "location": "TBD",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
   },
   {
     "name": "NCAA Regionals",
@@ -2047,7 +2047,7 @@
     "endTime": "",
     "location": "TBD",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
   },
   {
     "name": "NCAA Regionals",
@@ -2057,7 +2057,7 @@
     "endTime": "",
     "location": "TBD",
     "sport": "Men's Golf",
-    "link": ""
+    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
   },
   {
     "name": "#3 Air Force",
@@ -3518,5 +3518,15 @@
     "location": "Sacramento, Calif.",
     "sport": "Women's Cross Country",
     "link": "https://unlvrebels.com/news/2025/11/14/womens-cross-country-rebels-conclude-season-at-ncaa-west-regional.aspx"
+  },
+  {
+    "name": "Memphis",
+    "startDate": "2026-11-16",
+    "startTime": "2:00 PM",
+    "endDate": "2026-11-16",
+    "endTime": "",
+    "location": "Memphis, Tennessee",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/memphis/boxscore/17446"
   }
 ]
