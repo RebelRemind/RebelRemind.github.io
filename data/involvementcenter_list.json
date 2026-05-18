@@ -1,29 +1,5 @@
 [
   {
-    "name": "Coffee with Karly ",
-    "startDate": "2026-02-17",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-17",
-    "endTime": "11:00 AM",
-    "location": "SU 316",
-    "organization": "Leadership Engagement and Development Team",
-    "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will: \u2705 Build authentic connections through casual conversation and community-building. \u2705 Reflect on your personal leadership journey and how everyday choices can create change. \u2705 Strengthen your understanding of how relationships and mentorship shape leadership development. \u2705 Explore the role of dialogue and connection in fostering inclusive, community-centered leadership. \u2705 Identify one way to nurture your leadership skills through intentional relationships and mentorship. Whether you come every month or drop in when you can, we\u2019re here to sip, chat, and grow\u2014together.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/c41aa539-b17f-4cdf-9e92-395ec59ba2bdd46923a7-579e-43a9-a79e-2b0566efcaa7.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11360686"
-  },
-  {
-    "name": "Tour Swingers the Crazy Golf Club",
-    "startDate": "2026-02-17",
-    "startTime": "10:30 AM",
-    "endDate": "2026-02-17",
-    "endTime": "11:45 AM",
-    "location": "Swingers the Crazy Golf Club",
-    "organization": "The Hospitality Collective",
-    "description": "Join The Hospitality Collective on a private tour of Swingers, the Crazy Golf Club at Mandalay Bay.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a8fbeb44-0fb1-4b59-992d-6bcf2d8b86e0030abc73-f327-451e-a81c-72f16c614d76.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063333"
-  },
-  {
     "name": "Fellowship & Connection: True Friendship & Making New Friends",
     "startDate": "2026-02-17",
     "startTime": "11:00 AM",
@@ -4044,18 +4020,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4066,6 +4030,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
