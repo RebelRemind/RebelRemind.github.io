@@ -1,15 +1,5 @@
 [
   {
-    "name": "UC Riverside",
-    "startDate": "2026-02-17",
-    "startTime": "2:05 PM",
-    "endDate": "2026-02-17",
-    "endTime": "",
-    "location": "Riverside, Calif.",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/news/2026/2/16/baseball-tuesdays-game-postponed-due-to-weather.aspx"
-  },
-  {
     "name": "San Diego State",
     "startDate": "2026-02-18",
     "startTime": "",
@@ -2030,34 +2020,34 @@
     "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-diego-state/boxscore/17791"
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Bryan Regional",
     "startDate": "2026-05-18",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-18",
     "endTime": "",
-    "location": "TBD",
+    "location": "Bryan, TX Traditions Club",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
+    "link": "https://unlvrebels.com/news/2026/5/18/mens-golf-plattner-in-top-10-after-first-round-at-bryan-regional.aspx"
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Bryan Regional",
     "startDate": "2026-05-19",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-19",
     "endTime": "",
-    "location": "TBD",
+    "location": "Bryan, TX Traditions Club",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
+    "link": "https://scoreboard.clippd.com/tournaments/243259/scoring/team"
   },
   {
-    "name": "NCAA Regionals",
+    "name": "NCAA Bryan Regional",
     "startDate": "2026-05-20",
     "startTime": "(ALL DAY)",
     "endDate": "2026-05-20",
     "endTime": "",
-    "location": "TBD",
+    "location": "Bryan, TX Traditions Club",
     "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/5/17/rebels-start-play-at-ncaa-bryan-regional-monday.aspx"
+    "link": "https://scoreboard.clippd.com/tournaments/243259/scoring/team"
   },
   {
     "name": "#3 Air Force",

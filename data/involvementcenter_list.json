@@ -1,149 +1,5 @@
 [
   {
-    "name": "Fellowship & Connection: True Friendship & Making New Friends",
-    "startDate": "2026-02-17",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-17",
-    "endTime": "12:30 PM",
-    "location": "SU 228",
-    "organization": "Student Connection & Engagement",
-    "description": "A community dialogue focused on authentic friendship and building meaningful new connections. Participants will engage in guided conversation and reflection. Corny Bakery lunch will be provided. Open to everyone. \ud83d\udcc5 February 17 | 11:00 AM\u201312:30 PM \ud83d\udccd SU 228 RSVP Today!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/f455858d-4877-4d93-a2be-41fa1aab36b11c86f55d-42fc-4657-9e37-714eaba1a519.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12246693"
-  },
-  {
-    "name": "Rebels CU Grand Opening",
-    "startDate": "2026-02-17",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-17",
-    "endTime": "1:00 PM",
-    "location": "SSC-C",
-    "organization": "Student Organization Resource Center",
-    "description": "The Grand Opening event for the Rebels CU campus branch will be on Tuesday, February 17 at SSC-C, from 11am to 1pm. Our entire UNLV community, including students, faculty and staff, are welcome to join us Stop by to enjoy giveaways, food, games, and special performances Open a new account and get entered to win a free trip for two to Hawaii New and existing Rebels CU members can try their luck at grabbing as much cash as they can in 20 seconds in our Cash Grab Cube Rebels CU branch regular branch hours are Monday through Friday, 9am to 5pm.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/af3c37a7-ea09-47dd-b8f7-49e4f406e2636d8dda29-7d6f-416e-8693-f6fdd07ca6e1.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12214187"
-  },
-  {
-    "name": "Personal Growth Series 2: Managing Stress & Emotional Overload ",
-    "startDate": "2026-02-17",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-17",
-    "endTime": "2:00 PM",
-    "location": "UNLV SU 205",
-    "organization": "CAEO College Programs",
-    "description": "Personal Growth Series 2: Managing Stress & Emotional Overload This workshop provides students with practical tools to manage stress and emotional overload in academic and personal life. Through discussion, self reflection, and coping strategies, participants will learn how to recognize stress triggers, regulate emotions, and build resilience for long term well being.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12025318"
-  },
-  {
-    "name": "From Chaos to Calm: Aromatherapy",
-    "startDate": "2026-02-17",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-17",
-    "endTime": "3:00 PM",
-    "location": "SU 208BC",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us in creating your own aromatherapy inhaler to take home after attending this workshop. Learn about the benefits of essential oil aromatherapy for mindfulness and wellness.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e6aef37a-6d43-43a2-bb9c-3ad55846adf65de0b749-e182-47d7-8e76-dda0375cf2be.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12035549"
-  },
-  {
-    "name": "Pawsitive Thoughts ",
-    "startDate": "2026-02-17",
-    "startTime": "1:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "3:30 PM",
-    "location": "Honors College Lounge",
-    "organization": "Honors Student Council",
-    "description": "Relieve your anxiety and stress with our local therapy pets and complimentary snacks and goodies!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/17a37815-7468-4fea-aa5c-1b399d74850d2c9c5547-396a-44cf-ab00-ddb94c27ea7a.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12222389"
-  },
-  {
-    "name": "Mindful Moments: Weekly Guided Meditation",
-    "startDate": "2026-02-17",
-    "startTime": "4:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "5:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us for guided meditation. No registration needed.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/f5fd7d94-e0bf-4082-84ba-bc0ed7c272f6d026bdb7-31d0-4219-bcb0-b8cedf2a2de9.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12131459"
-  },
-  {
-    "name": "Tao Guest Speaker: Andrew Insigne",
-    "startDate": "2026-02-17",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-17",
-    "endTime": "6:00 PM",
-    "location": "Hospitality Hall",
-    "organization": "The Hospitality Collective",
-    "description": "Want to break into nightlife & hospitality? Join the Hospitality Collective and hear UNLV alum Andrew Insigne talk TAO Nightclub, event marketing, and real industry experience.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/95544d71-f0f7-40b0-8792-f2693d21b5c5612797b8-9eff-417c-bc9b-bd70b2371b39.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12201516"
-  },
-  {
-    "name": "Narcare General Meeting",
-    "startDate": "2026-02-17",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "6:30 PM",
-    "location": "HOS 380",
-    "organization": "Narcare",
-    "description": "Join us for our first general meeting of the semester!",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12230330"
-  },
-  {
-    "name": "Setsubun JSA General Meeting ",
-    "startDate": "2026-02-17",
-    "startTime": "5:00 PM",
-    "endDate": "2026-02-17",
-    "endTime": "7:00 PM",
-    "location": "Student Union 208C",
-    "organization": "Japanese Students Alliance",
-    "description": "Come celebrate Setsubun with us! Setsubun is a Japanese festival traditionally held in early February that marks the day before the first day of spring. It's a day to drive away evil spirits and welcome good fortune for the new season! Join us in Mamemaki (bean throwing) and so much more! Tuesday, 2/17/26 from 5:00-7:00pm at the Student Union 208C \ud83c\udf38\ud83d\udc1d\ud83c\udf37\ud83c\udf08",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/aac2b85c-ad4a-44d6-a3de-41e2efeb2ac4bffa58c3-2434-4f84-9b93-d0d19f8c6b5d.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12230295"
-  },
-  {
-    "name": "Workshop 2: Arduinos and Soldering",
-    "startDate": "2026-02-17",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "7:30 PM",
-    "location": "TBE B 172",
-    "organization": "UNLV Rebel Robotics",
-    "description": "We will cover the basics in Arduino's and how to get started on building by using Arduino IDE and Tinkercad. Lastly, We will cover the soldering components and safety.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/86a4abc3-a493-43c8-a38f-e765da2e623ce0ef2d3f-f994-4f6e-908c-291f6398c6f4.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12252491"
-  },
-  {
-    "name": "Marvel Escape Room: Lost In Time",
-    "startDate": "2026-02-17",
-    "startTime": "6:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "8:00 PM",
-    "location": "BEH 109",
-    "organization": "UNLV's Disney Club 33",
-    "description": "UNLV's Disney Club 33, ASSEMBLE! A malfunction is occuring and you're STUCK in time! Will you be able to travel back to your time, or will you be stuck in this distant time forever? Work together to figure out what the problem is and how to get back home! Join us as we travel through time in our Marvel Escape Room meeting!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/1d7c379c-9936-4499-bf82-d3033db6729e75524264-d622-4001-a4c1-6eb035c25bcb.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12250999"
-  },
-  {
-    "name": "Tuesday kick!",
-    "startDate": "2026-02-17",
-    "startTime": "6:30 PM",
-    "endDate": "2026-02-17",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! We'll meet in the lobby of the Rec. See the latest exact plans on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0e1f32de-c566-4e92-be6b-6f76fc0e6b02a96e438a-2326-461d-aeb0-524c90f88e7b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063311"
-  },
-  {
     "name": "Prepare for the Fair - Resume Reviews",
     "startDate": "2026-02-18",
     "startTime": "9:00 AM",
@@ -4020,18 +3876,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -4042,6 +3886,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
