@@ -408,6 +408,14 @@
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
+    "name": "Grades due. Spring grades are due at the Office of the Registrar by 4:00 p.m.",
+    "startDate": "2026-05-19",
+    "startTime": "",
+    "endDate": "2026-05-19",
+    "endTime": "",
+    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+  },
+  {
     "name": "Memorial Day Recess",
     "startDate": "2026-05-25",
     "startTime": "",
@@ -440,20 +448,20 @@
     "link": "https://www.unlv.edu/event/summer-session-i-grades-due"
   },
   {
-    "name": "Juneteenth Recess",
-    "startDate": "2026-06-19",
-    "startTime": "",
-    "endDate": "2026-06-19",
-    "endTime": "",
-    "link": "https://www.unlv.edu/event/juneteenth-recess-0"
-  },
-  {
     "name": "Juneteenth Day Recess",
     "startDate": "2026-06-19",
     "startTime": "",
     "endDate": "2026-06-19",
     "endTime": "",
     "link": "https://www.unlv.edu/event/juneteenth-day-recess-2"
+  },
+  {
+    "name": "Juneteenth Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-recess-0"
   },
   {
     "name": "Independence Day Recess",

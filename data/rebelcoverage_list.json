@@ -1,35 +1,5 @@
 [
   {
-    "name": "San Diego State",
-    "startDate": "2026-02-18",
-    "startTime": "",
-    "endDate": "2026-02-18",
-    "endTime": "",
-    "location": "San Diego, CA",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/san-diego-state/boxscore/17656"
-  },
-  {
-    "name": "Colorado State",
-    "startDate": "2026-02-18",
-    "startTime": "8:00 PM",
-    "endDate": "2026-02-18",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/colorado-state/boxscore/17626"
-  },
-  {
-    "name": "Mountain West Championships",
-    "startDate": "2026-02-18",
-    "startTime": "8:30 AM",
-    "endDate": "2026-02-18",
-    "endTime": "",
-    "location": "Houston, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/18/swimming-diving-olson-wins-500-free-title-on-opening-night-of-mw-championships.aspx"
-  },
-  {
     "name": "Valparaiso",
     "startDate": "2026-02-19",
     "startTime": "",
@@ -3518,5 +3488,35 @@
     "location": "Memphis, Tennessee",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/memphis/boxscore/17446"
+  },
+  {
+    "name": "Montana State",
+    "startDate": "2026-11-18",
+    "startTime": "",
+    "endDate": "2026-11-18",
+    "endTime": "",
+    "location": "Bozeman, MT",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/montana-state/boxscore/17319"
+  },
+  {
+    "name": "NCAA Singles Championship",
+    "startDate": "2026-11-18",
+    "startTime": "",
+    "endDate": "2026-11-18",
+    "endTime": "",
+    "location": "Orlando, FL",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/18/mens-tennis-snitari-earns-unlv-its-first-ncaa-win-since-2007.aspx"
+  },
+  {
+    "name": "San Jos\u00e9 State",
+    "startDate": "2026-11-18",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-18",
+    "endTime": "",
+    "location": "San Jose, Calif.",
+    "sport": "Women's Volleyball",
+    "link": ""
   }
 ]
