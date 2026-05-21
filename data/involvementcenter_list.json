@@ -1,41 +1,5 @@
 [
   {
-    "name": "LeaderShape: Resilience Workshop ",
-    "startDate": "2026-02-20",
-    "startTime": "9:30 AM",
-    "endDate": "2026-02-20",
-    "endTime": "11:30 AM",
-    "location": "SU Room 208",
-    "organization": "Leadership Engagement and Development Team",
-    "description": "Just like Alex, Marty, Gloria, and Melman had to adapt when they found themselves far from the comforts of the Central Park Zoo, Resilience is all about learning how to navigate the wild twists and turns of life. In this program, participants will explore the LeaderShape Model of Resilience to discover their core values\u2014the anchors that keep us steady when things feel unpredictable. Together, we\u2019ll identify the challenges that call for resilience, learn how to rewrite our own stories with confidence (kind of like Julien declaring himself king of the lemurs), and reflect on the ways we can build strength both within ourselves and alongside our communities. By the end, you\u2019ll not only recognize your own resilience but also leave ready to co-create it with your team\u2014because in the jungle of change, we\u2019re better when we move it, move it together.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a90c3d08-3400-48b1-a56f-1a6ee84200ff4de7c09f-70c5-46d4-b333-00d58d7823de.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11227702"
-  },
-  {
-    "name": "K-pop Club Dance Team Audition",
-    "startDate": "2026-02-20",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-20",
-    "endTime": "12:00 PM",
-    "location": "SRWC rm 2025",
-    "organization": "K-pop Club",
-    "description": "K-pop Club is holding auditions this Friday to create a dance team! You will present 30-60 seconds of any K-pop choreography and have a brief interview with the judges so we can get to know you. The K-pop Club dance team will have opportunities to perform and film dance covers \u2606 If you have any questions, you can either email montav3@unlv.nevada.edu or message us on Instagram @unlvkpop_official!:D",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/eab8e98a-f3c1-4ca9-a60d-7f417e9fb72ec91f1868-6348-4422-ab3d-41313d29b608.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12256945"
-  },
-  {
-    "name": "Relaxing Your Mind: Coping With Anxiety",
-    "startDate": "2026-02-20",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-20",
-    "endTime": "12:00 PM",
-    "location": "Online",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "This two-part workshop is intended to provide information about anxiety and a variety of practical coping skills for anxiety and stress.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/909480eb-17a5-40c0-80d3-adf67e6f4409ac573d88-825b-4d60-bb2d-de5cafb24cff.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12135884"
-  },
-  {
     "name": "Resume Review Workshop",
     "startDate": "2026-02-20",
     "startTime": "11:30 AM",
@@ -852,7 +816,7 @@
     "link": "https://involvementcenter.unlv.edu/event/12233938"
   },
   {
-    "name": "REB Event",
+    "name": "REB Event Spring Festival",
     "startDate": "2026-03-04",
     "startTime": "11:00 AM",
     "endDate": "2026-03-04",
@@ -3696,18 +3660,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -3718,6 +3670,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
@@ -4207,8 +4171,8 @@
     "endTime": "10:00 PM",
     "location": "SU Ballrooms",
     "organization": "Rebel Events Board (REB)",
-    "description": "Join REB for our late night event of the semester! Free food and activities for all UNLV students!",
-    "imageUrl": "",
+    "description": "Join REB for the Rebels After Dark Glowfest for a chance to win a MacBook Neo and AirPods Max! Get glow in the dark painting and neon foam blasters, check out local businesses, vibe out to l ive DJ Bellahue, and munch on some free food truck vendors! \ud83d\udccdPida Plaza",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/6c60fd4c-63db-49b1-bc92-cbf5a32c1fac07734127-604e-453d-bfb3-3cf9e513af54.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/11316517"
   },
   {
@@ -5047,8 +5011,8 @@
     "endTime": "12:00 AM",
     "location": "Pida Plaza ",
     "organization": "Rebel Events Board (REB)",
-    "description": "Join REB for the last event of the academic year, Late Night Breakfast filled with lots of free food, giveaways, and activities. Come celebrate finals with us!",
-    "imageUrl": "",
+    "description": "Join REB for the last event of the academic year, Late Night Breakfast filled with lots of free food, giveaways, and activities. Come celebrate finals with us! There'll be live performances, light painting photography, light tunnel, Mario Kart, free glow merch + shirts, and more! Don't miss it! \ud83c\udf73 Breakfast foods! \ud83c\udfae Mario Kart \ud83c\udfa4 Live Music \ud83d\udccdPida Plaza",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/05c7b0c8-5de9-4431-8519-f6a804790e5777f46dfb-39e4-4838-92e0-d45f3a5ffd3d.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/11316520"
   },
   {
