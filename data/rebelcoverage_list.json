@@ -1,25 +1,5 @@
 [
   {
-    "name": "Valparaiso",
-    "startDate": "2026-02-19",
-    "startTime": "",
-    "endDate": "2026-02-19",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/valparaiso/boxscore/17733"
-  },
-  {
-    "name": "Mountain West Championships",
-    "startDate": "2026-02-19",
-    "startTime": "8:30 AM",
-    "endDate": "2026-02-19",
-    "endTime": "",
-    "location": "Houston, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/19/swimming-diving-rebels-grab-three-medals-on-day-two-of-mw-championships.aspx"
-  },
-  {
     "name": "Utah Valley",
     "startDate": "2026-02-20",
     "startTime": "",
@@ -3514,6 +3494,26 @@
     "startDate": "2026-11-18",
     "startTime": "(ALL DAY)",
     "endDate": "2026-11-18",
+    "endTime": "",
+    "location": "San Jose, Calif.",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "NCAA Singles Championship",
+    "startDate": "2026-11-19",
+    "startTime": "",
+    "endDate": "2026-11-19",
+    "endTime": "",
+    "location": "Orlando, FL",
+    "sport": "Men's Tennis",
+    "link": "https://unlvrebels.com/news/2025/11/19/mens-tennis-snitari-first-rebel-to-earn-all-america-status-since-2002.aspx"
+  },
+  {
+    "name": "San Jos\u00e9 State",
+    "startDate": "2026-11-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-19",
     "endTime": "",
     "location": "San Jose, Calif.",
     "sport": "Women's Volleyball",

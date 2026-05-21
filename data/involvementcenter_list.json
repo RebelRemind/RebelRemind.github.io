@@ -1,113 +1,5 @@
 [
   {
-    "name": "Brew Tea Fundraiser",
-    "startDate": "2026-02-19",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-19",
-    "endTime": "1:00 PM",
-    "location": "Brew Tea Bar",
-    "organization": "Business In Action",
-    "description": "Join us for our Brew Tea Fundraiser on February 19th from 11AM\u20138PM at Brew Tea Bar (4700 S Maryland Pkwy). Stop by anytime throughout the day, grab your favorite drink, and support BIA while you\u2019re at it! Just show this flyer when purchasing, and a portion of the proceeds will go toward supporting our organization\u2019s events and initiatives. Bring your friends, treat yourself, and help us make an impact\u2014one cup at a time!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/3bfb5fa9-6714-4b9e-be92-07afbe19eec8b1ec5a15-dd54-4e41-957a-44a731362048.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12262672"
-  },
-  {
-    "name": "Discovering Me & Self-Care",
-    "startDate": "2026-02-19",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-19",
-    "endTime": "1:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "description": "We\u2019re excited to host our upcoming workshop, \u201cDiscovering Me & Self-Care,\u201d focused on helping students better understand themselves, recognize burnout, and build sustainable self-care routines. This session will guide participants through identifying stressors and triggers, learning grounding and breathing techniques, and understanding what self-care truly means beyond surface-level habits. We\u2019ll also cover how to advocate for yourself, set healthy boundaries, and create a personalized self-care routine that supports your physical, emotional, social, financial, intellectual, and spiritual well-being.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/3a9a997c-3ec6-4bfb-ab6d-27397da63e7eae69db90-51fa-445b-936b-e8aa78fb8d8b.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12257293"
-  },
-  {
-    "name": "National Rec Day Wellness Fair",
-    "startDate": "2026-02-19",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-19",
-    "endTime": "1:00 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Campus Recreational Services",
-    "description": "UNLV joins college campuses across the nation annually to celebrate and recognize National Recreational Sports and Fitness Day - or as we call it, National Rec Day! Join us for the annual wellness fair- happening February 19, 2026 - featuring a blood drive, physical challenges, fun prizes, and connecting with the community over wellness!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/1e66f722-b8d3-48a1-83c5-8f824f896edfad81d69c-61bd-4d06-9814-b152185b3b59.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12207962"
-  },
-  {
-    "name": "CyberSips",
-    "startDate": "2026-02-19",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-19",
-    "endTime": "4:00 PM",
-    "location": "CHB-C234",
-    "organization": "WiCyS Student Chapter",
-    "description": "\ud83e\udec2Come socially network! \ud83d\udcacMeet new people, talk about school, careers, life, and everything in between. \u2615Open to all students and free refreshments provided.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e243c1de-19f8-4cb3-9235-98cf19239b229344aa8f-6f98-445e-9790-5c0ac9a0cef6.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12256939"
-  },
-  {
-    "name": "Archery Club Info Meeting",
-    "startDate": "2026-02-19",
-    "startTime": "3:00 PM",
-    "endDate": "2026-02-19",
-    "endTime": "4:00 PM",
-    "location": "Student Union, room 219",
-    "organization": "UNLV Archery",
-    "description": "Interested in archery? Come to the Archery Club meeting on Thursday, February 19 at 3:00pm in room 219 of the Student Union. Enjoy free food and drinks while learning how to become a member, when practices are held, and how you can take on an officer role in the club. Whether you\u2019re experienced or brand new to the sport, we\u2019d love to have you join us.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/8d29ea2c-b150-4361-bc76-a2e5fc2ad62423418478-6f82-4166-9f00-f38b259051e4.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12263138"
-  },
-  {
-    "name": "Becoming an Adaptive Perfectionist",
-    "startDate": "2026-02-19",
-    "startTime": "3:30 PM",
-    "endDate": "2026-02-19",
-    "endTime": "4:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Learn how to rethink the relationship between motivation and self-criticism, set manageable goals, and be more productive while also tending to your wellbeing.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b8551edb-f558-4f54-ba41-d5c2ec09333b16bc4c1d-1e4e-4646-a325-a1bb308deee5.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12057035"
-  },
-  {
-    "name": "Prepare for the Fair - Employer Panel",
-    "startDate": "2026-02-19",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-19",
-    "endTime": "6:00 PM",
-    "location": "Lied Library Goldfield Room (Third Floor, Room 3251)",
-    "organization": "Career Services",
-    "description": "Are you a student eager to make a lasting impression at the upcoming Career & Internship Fair? Join us for Prepare for the Fair - an exclusive employer panel and mixer designed to equip you with the tools and insights needed to land your dream job. What to Expect: Expert Panel Discussion: Hear directly from experienced HR professionals and recruiters as they share their top tips for crafting a standout resume, acing the interview, and making the most of your time at the career fair. Networking Opportunities: Connect with potential employers in a relaxed and informal setting. Ask questions, seek advice, and gain valuable insights into the hiring process. Career Fair Preparation: Learn about common interview questions, practice your elevator pitch, and discover strategies for building lasting relationships with recruiters at the Career and Internship Fair. Don't miss this chance to gain a competitive edge and increase your chances of landing your dream job. Register here on Handshake: https://unlv.joinhandshake.com/events/1880438",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a4391983-40f0-4385-bdef-51f55fb5ff70195431cd-df55-4f37-8daa-c5d96ccf0301.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12208262"
-  },
-  {
-    "name": "Blaxploitation - Movie Night",
-    "startDate": "2026-02-19",
-    "startTime": "4:00 PM",
-    "endDate": "2026-02-19",
-    "endTime": "6:30 PM",
-    "location": "SRWC Room 1010",
-    "organization": "Black Social Workers Society",
-    "description": "Black Social Worker Society, in collaboration with Black Student Organization, is inviting you to Movie Night! We will be watching and discussing the 2025 Tyler Perry film Straw. We hope to highlight Black-focused film while leaving room for open dialogue and discussion relating to the \"Black struggle\" genre of film. Snacks and drinks will be provided. We hope to see you there!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fd85ec30-dd9d-419d-844d-d9da5631a428c58c6c7a-2cc5-4d37-b898-0704bee5ebe4.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12175919"
-  },
-  {
-    "name": "Open House ",
-    "startDate": "2026-02-19",
-    "startTime": "5:30 PM",
-    "endDate": "2026-02-19",
-    "endTime": "8:00 PM",
-    "location": "BEH 108",
-    "organization": "Business In Action",
-    "description": "Join us for Business in Action: Open House & Game Night We\u2019re opening our doors so you can learn more about who we are, what we do, and how you can get involved. Meet our members, ask questions, play games, and enjoy a relaxed, welcoming atmosphere\u2014plus a chance to win some fun prizes! Whether you're curious about BIA or just want to connect with new people, we\u2019d love to see you there. \ud83d\uddd3 February 19, 2026 \u23f0 5:00 PM \u2013 8:00 PM \ud83d\udccd BEH 108 RSVP",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/e26a4776-bfad-4837-81d0-45cd939c66f428fc01e6-75fe-4f93-9313-41ca2369b994.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12262678"
-  },
-  {
     "name": "Rebels After Dark ",
     "startDate": "2026-02-19",
     "startTime": "7:00 PM",
@@ -3816,18 +3708,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "Side Hustle Night: From Idea to Income",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "BEH 240",
-    "organization": "Chinese Corner",
-    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12421840"
-  },
-  {
     "name": "The Brain Health Research Pipeline Panel",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -3838,6 +3718,18 @@
     "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12425543"
+  },
+  {
+    "name": "Side Hustle Night: From Idea to Income",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "BEH 240",
+    "organization": "Chinese Corner",
+    "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12421840"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",
