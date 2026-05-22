@@ -1,5 +1,14 @@
 [
   {
+    "name": "Circle of Hope: The Future of Treating Alzheimer\u2019s Disease",
+    "category": "P.B.S.",
+    "section": "In The News",
+    "publishedDate": "2026-05-22",
+    "publishedAt": "2026-05-22T10:01:29-07:00",
+    "summary": "Out now is the 10th annual Alzheimer's Drug Development Pipeline Report.",
+    "link": "https://www.pbs.org/video/circle-of-hope-the-future-of-treating-alzheimers-disease-z7zlkg/"
+  },
+  {
     "name": "Do you live in one of Nevada\u2019s 40 food deserts? Here\u2019s what to know",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -45,6 +54,15 @@
     "link": "https://thenevadaindependent.com/article/nevada-ice-arrests-of-people-with-no-criminal-convictions-go-up-despite-trump-admin-pledge"
   },
   {
+    "name": "Memorial Day: Higher fuel prices have some Americans scaling back their travel plans",
+    "category": "Associated Press",
+    "section": "In The News",
+    "publishedDate": "2026-05-21",
+    "publishedAt": "2026-05-21T12:27:15-07:00",
+    "summary": "Sticking closer to home may not cushion the sticker shock. The nonprofit Institute on Taxation and Economic Policy estimated Americans would collectively spend an extra $3.5 billion on gasoline over the holiday weekend. The average price for a gallon of regular gas in the U.S. was $4.56 on Thursday compared to $3.18 a year ago, according to motor club AAA.",
+    "link": "https://apnews.com/article/memorial-day-summer-travel-jet-fuel-costs-3056bd2cf16bdba6f0f03d69aaf20808"
+  },
+  {
     "name": "How McKinney Is Positioning Itself As The Next Major Innovation Hub",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -54,30 +72,12 @@
     "link": "https://www.localprofile.com/news/how-mckinney-is-positioning-itself-as-the-next-major-innovation-hub-12309859"
   },
   {
-    "name": "Paradise Group partners with UNLV to help South Korea's integrated resort industry enhance its competitiveness.",
+    "name": "Nevada's First Children's Hospital Will Be in Las Vegas, Plans To Hire Thousands of Nurses",
     "category": "UNLV In The News",
     "section": "In The News",
     "publishedDate": "2026-05-21",
-    "publishedAt": "2026-05-21T11:43:44-07:00",
-    "summary": "The two parties will jointly organize a student and faculty exchange program and conduct joint research projects on the integrated resort industry. They will also implement a number of cooperative initiatives covering areas such as information sharing in teaching and research, short-term professional courses, cultural exchanges, executive training, and joint seminars.",
-    "link": "https://zh.asgam.com/2026/05/21/paradise-co-to-strengthen-competitiveness-of-koreas-ir-industry-via-partnership-with-unlv-zh/"
-  },
-  {
-    "name": "How many homes have mom-and-pop investors bought in Las Vegas?",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-21",
-    "publishedAt": "2026-05-21T11:07:45-07:00",
-    "summary": "Mom-and-pop investors were behind nearly 66 percent of all homes bought by business entities in Clark County since 2015, and real estate experts say the Las Vegas Valley is the perfect climate for the business venture.",
-    "link": "https://www.reviewjournal.com/business/housing/how-many-homes-have-mom-and-pop-investors-bought-in-las-vegas-3827242/"
-  },
-  {
-    "name": "What's the future of AI in medicine research and discovery?",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-05-21",
-    "publishedAt": "2026-05-21T10:32:56-07:00",
-    "summary": "The Wall Street Journal first reported that Biopharmaceutical giant Bristol Myers Squibb is bringing Anthropic\u2019s flagship Claude product to more than 30,000 of its employees. The company plans to deepen its use of artificial intelligence and AI agents for a variety of functions, from research to clinical development and corporate functions.",
-    "link": "https://news3lv.com/news/arc/whats-the-future-of-ai-in-medicine-research-and-discovery"
+    "publishedAt": "2026-05-21T11:58:43-07:00",
+    "summary": "The more than $1 billion facility will rise on roughly 32 acres inside UNLV's Harry Reid Research and Technology Park, near the 215 Beltway and Durango Drive. Intermountain Health first unveiled the site in October 2024, but this week's approval was the milestone that moves construction off paper and into the ground.",
+    "link": "https://nurse.org/news/nevada-first-childrens-hospital/"
   }
 ]
