@@ -1,55 +1,5 @@
 [
   {
-    "name": "Utah Valley",
-    "startDate": "2026-02-20",
-    "startTime": "",
-    "endDate": "2026-02-20",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-valley/boxscore/17806"
-  },
-  {
-    "name": "Colorado",
-    "startDate": "2026-02-20",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-20",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/20/womens-tennis-rebs-can-t-close-out-colorado.aspx"
-  },
-  {
-    "name": "#75 Pacific",
-    "startDate": "2026-02-20",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-20",
-    "endTime": "",
-    "location": "Stockton, CA",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/20/mens-tennis-tames-ranked-tigers.aspx"
-  },
-  {
-    "name": "Bradley",
-    "startDate": "2026-02-20",
-    "startTime": "6:05 PM",
-    "endDate": "2026-02-20",
-    "endTime": "9:40 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17741"
-  },
-  {
-    "name": "Mountain West Championships",
-    "startDate": "2026-02-20",
-    "startTime": "8:30 AM",
-    "endDate": "2026-02-20",
-    "endTime": "",
-    "location": "Houston, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/20/swimming-diving-wigginton-takes-200-fly-title-on-day-three-of-mw-championships.aspx"
-  },
-  {
     "name": "Idaho State",
     "startDate": "2026-02-21",
     "startTime": "",
@@ -2002,12 +1952,12 @@
   {
     "name": "#3 Air Force",
     "startDate": "2026-05-21",
-    "startTime": "1:00 PM",
+    "startTime": "1:07 PM",
     "endDate": "2026-05-21",
-    "endTime": "",
+    "endTime": "3:45 PM",
     "location": "Mesa, Ariz. / Sloan Park",
     "sport": "Baseball",
-    "link": "https://themw.com/watch/"
+    "link": "https://unlvrebels.com/sports/baseball/stats/2026/air-force/boxscore/17870"
   },
   {
     "name": "NCAA West Regionals",
@@ -3438,5 +3388,35 @@
     "location": "San Jose, Calif.",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "NCAA Singles Championship",
+    "startDate": "2026-11-20",
+    "startTime": "",
+    "endDate": "2026-11-20",
+    "endTime": "",
+    "location": "Orlando, FL",
+    "sport": "Men's Tennis",
+    "link": ""
+  },
+  {
+    "name": "Trojan Diving Invitational",
+    "startDate": "2026-11-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-20",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/11/20/swimming-diving-rebels-complete-day-one-of-trojan-diving-invitational.aspx"
+  },
+  {
+    "name": "Saint Joseph's",
+    "startDate": "2026-11-20",
+    "startTime": "7:00 PM",
+    "endDate": "2026-11-20",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/saint-joseph-s/boxscore/17447"
   }
 ]

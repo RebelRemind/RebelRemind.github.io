@@ -1,65 +1,5 @@
 [
   {
-    "name": "Resume Review Workshop",
-    "startDate": "2026-02-20",
-    "startTime": "11:30 AM",
-    "endDate": "2026-02-20",
-    "endTime": "1:00 PM",
-    "location": "Science and Engineering Building, Room No: 1243",
-    "organization": "Institute of Transportation Engineers",
-    "description": "Resume Review Workshop \u2013 ITE UNLV Student Chapter The ITE UNLV Student Chapter, in collaboration with the CEEC Department, TRC, and University Transportation Centers at UNLV, is hosting a Resume Review Workshop designed to help students strengthen their resumes and prepare for internships and full-time opportunities. Event Details: Friday, February 20, 2026 11:30 AM \u2013 1:00 PM PST SEB 1243 Students will have the opportunity to receive direct feedback from hiring managers and industry professionals, improve resume structure and content, and gain practical insights into what employers look for in competitive candidates. Representatives from leading organizations are expected to participate, including: Kimley-Horn Regional Transportation Commission of Southern Nevada City of Henderson Jacobs GCW Westwood And additional industry partners This workshop is an excellent opportunity to refine your resume, expand your professional network, and gain career-focused guidance.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a7b3f89d-a56d-4e72-9288-cf5f5afd61f97ce8b1be-0a77-4c78-84d6-a632575f5c33.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12265214"
-  },
-  {
-    "name": "SPS Guest Lecture",
-    "startDate": "2026-02-20",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-20",
-    "endTime": "1:00 PM",
-    "location": "BPB 248 (Bigelow Physics Building)",
-    "organization": "Society of Physics Students",
-    "description": "Have you ever wondered how the Universe came to be? People have been asking the same question since the very beginnings of civilization! Join us in BPB 248 as Dr. David Jeffrey explores the fascinating history of Cosmology. Dr. Jeffrey's primary research interests are supernovae and radiative transfer. By studying these processes, physicists like Dr. Jeffrey seek to find answers to how the Universe became the way it is today!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/a8338bf7-a051-4a58-9825-cbd175ccf2f50aa1820c-5fb5-4b30-bff6-1bfc34d81134.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12252786"
-  },
-  {
-    "name": "Advising #1- Spring 26 Success Series ",
-    "startDate": "2026-02-20",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-20",
-    "endTime": "2:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "description": "Learn why it\u2019s important to schedule advising appointments early and how to make the most of these sessions. We\u2019ll discuss strategies for selecting courses that align with your goals and share tips for effectively utilizing advising resources.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/68ca6512-7c18-4bf5-a415-19c70384ece0b6b4f2cd-2a7b-475e-be1f-e866fbb88da9.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12222984"
-  },
-  {
-    "name": "New Student Orientation Leader Hiring ",
-    "startDate": "2026-02-17",
-    "startTime": "8:00 AM",
-    "endDate": "2026-02-20",
-    "endTime": "5:00 PM",
-    "location": "Online",
-    "organization": "UNLV Orientation",
-    "description": "Job description Minimum Requirements: Active UNLV student enrolled in at least 6 credit hours in an UNDERGRADUATE degree seeking program 2.5 overall GPA or higher Been a UNLV student for at least 1 semester Graduating Summer 2026 or later Involved at UNLV such as through Student Involvement & Activities, Academic Departments, Residence Life, etc. Attend weekly trainings every Friday afternoon from 1:00 p.m. - 5:00 p.m. from March 27 - May 8 Skills Looking For: Positive, customer service oriented mindset Strong public speaking skills Being able to work independently and on a team Flexibility and the ability to adapt to change Strong sense of time management Expected Responsibilities: Act as an ambassador for UNLV's mission and culture. Represent UNLV to all new incoming students, family, and guests. Assist in the organization, preparation, implementation, and evaluation of New Student Orientation. Prepare new incoming students in starting their higher education journeys at UNLV through campus tours, presentations, and sharing of campus resources. Facilitate breakout sessions for new students. Assist Academic Advising Centers with post-orientation virtual academic advising sessions for incoming first-year students. Participate in Rebel Ready Week as a Rebel Ready Week Leader. Other duties as assigned.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/c74c1903-4f92-49b3-be18-517da4e0826a7cb3b9b8-a32b-429a-a265-9bfa035fa2ab.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12216792"
-  },
-  {
-    "name": "Friday kick!",
-    "startDate": "2026-02-20",
-    "startTime": "6:30 PM",
-    "endDate": "2026-02-20",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! We'll meet in the lobby of the Rec. See the latest exact plans on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/048ac95f-e5ce-4cf5-a1ec-47e6503da0723991180e-afb3-4ece-a00f-600320d5560a.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063321"
-  },
-  {
     "name": "Discord Project Update Meeting",
     "startDate": "2026-02-21",
     "startTime": "4:00 PM",
@@ -3660,18 +3600,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12350765"
   },
   {
-    "name": "The Brain Health Research Pipeline Panel",
-    "startDate": "2026-04-15",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-15",
-    "endTime": "7:00 PM",
-    "location": "HOS382",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12425543"
-  },
-  {
     "name": "Side Hustle Night: From Idea to Income",
     "startDate": "2026-04-15",
     "startTime": "5:30 PM",
@@ -3682,6 +3610,18 @@
     "description": "Side Hustle Night: From Idea to Income is an interactive, team-based business challenge where students collaborate to build a side hustle in real time. Participants rotate through five fast-paced rounds\u2014developing a business name, product or service, target audience, cultural element, and monetization strategy\u2014while building on ideas created by other teams. At the end of the event, teams receive their original concept back, now evolved through collaboration, and deliver a final pitch. This event encourages creativity, adaptability, and entrepreneurial thinking while incorporating cross-cultural perspectives in business development.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/9822c071-f3e5-4ed9-9585-7d2eb9ffb02e2b4139c3-8461-41f0-a922-427f97e26836.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12421840"
+  },
+  {
+    "name": "The Brain Health Research Pipeline Panel",
+    "startDate": "2026-04-15",
+    "startTime": "5:30 PM",
+    "endDate": "2026-04-15",
+    "endTime": "7:00 PM",
+    "location": "HOS382",
+    "organization": "Neuroscience Undergraduate Research Organization ",
+    "description": "We are so excited to announce our first ever Brain Health Research Pipeline Panel! Meet and speak with graduate students, laboratory technicians, post-doctoral researchers, and other faculty including Dr. Kinney himself from the Kinney Lab (otherwise known as the Pam Quirk Biomarker Discovery Laboratory). Holding numerous positions on campus, Dr. Jefferson Kinney serves as NURO's club advisor, founding chair of the Department of Brain Health, and co-director of the Pam Quirk Brain Health and Biomarker Laboratory! This event will begin with an informative career-oriented presentation on the neuroscience research pipeline followed by an open Q&A session, so bring your questions and your notebooks\u2013any and all curiosity is welcomed and encouraged! This event will also be open to the public, so feel free to bring along friends, peers, and anyone that you think might be interested! Spots will be limited, so please RSVP with the link below. RSVP here: Research Pipeline Panel Event RSVP Form",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/b4cfbdab-1bb5-496b-a5ef-2752bc009a5737717846-0483-48ca-8c0b-e0f3649db68b.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12425543"
   },
   {
     "name": "Mindful Moments: Weekly Guided Meditation",

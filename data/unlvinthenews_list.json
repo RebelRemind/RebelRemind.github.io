@@ -1,5 +1,32 @@
 [
   {
+    "name": "Do you live in one of Nevada\u2019s 40 food deserts? Here\u2019s what to know",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-21",
+    "publishedAt": "2026-05-21T14:50:34-07:00",
+    "summary": "Though many people in Nevada live in food deserts, local nonprofits and agencies are working together to fix the issue.",
+    "link": "https://thenevadannews.com/local/with-40-food-deserts-1-in-7-nevadans-face-food-insecurity/"
+  },
+  {
+    "name": "The Mob Museum, National Atomic Testing Museum Partner With University of Nevada, Las Vegas\u2019 College of Liberal Arts for \u201cWitnessing History\u201d Summer Camp",
+    "category": "Nevada Business",
+    "section": "In The News",
+    "publishedDate": "2026-05-21",
+    "publishedAt": "2026-05-21T14:36:24-07:00",
+    "summary": "Taking place Monday, June 8, through Friday, June 12, from 8 a.m. to 5 p.m., the UNLV summer program invites students to step into the past and explore the vital role museums play in preserving and interpreting history.",
+    "link": "https://nevadabusiness.com/2026/05/the-mob-museum-national-atomic-testing-museum-partner-with-university-of-nevada-las-vegas-college-of-liberal-arts-for-witnessing-history-summer-camp/"
+  },
+  {
+    "name": "Memorial Day: Higher fuel prices have some Americans scaling back their travel plans",
+    "category": "A.B.C. News",
+    "section": "In The News",
+    "publishedDate": "2026-05-21",
+    "publishedAt": "2026-05-21T14:30:56-07:00",
+    "summary": "The U.S. Travel Association expacts annual travel spending to grow by a modest 1% this year, powered largely by domestic leisure travel despite the FIFA World Cup giving soccer fans from other countries a reason to visit the U.S. Airfares have climbed around the world along with the price of jet fuel as the war constrains global oil supplies.",
+    "link": "https://abcnews.com/Business/wireStory/memorial-day-higher-fuel-prices-americans-scaling-back-133186632"
+  },
+  {
     "name": "Presenting Vegas Inc\u2019s 2026 Health Care Headliners",
     "category": "Vegas Inc",
     "section": "In The News",
@@ -27,13 +54,13 @@
     "link": "https://www.localprofile.com/news/how-mckinney-is-positioning-itself-as-the-next-major-innovation-hub-12309859"
   },
   {
-    "name": "Paradise Co to strengthen competitiveness of Korea\u2019s IR industry via partnership with UNLV",
+    "name": "Paradise Group partners with UNLV to help South Korea's integrated resort industry enhance its competitiveness.",
     "category": "UNLV In The News",
     "section": "In The News",
     "publishedDate": "2026-05-21",
     "publishedAt": "2026-05-21T11:43:44-07:00",
-    "summary": "Korea\u2019s Paradise Co has signed a Memorandum of Understanding (MoU) with the University of Nevada, Las Vegas (UNLV) with the goal of nurturing core talent for the integrated resort industry and to promote related research.",
-    "link": "https://asgam.com/2026/05/21/paradise-co-to-strengthen-competitiveness-of-koreas-ir-industry-via-partnership-with-unlv/"
+    "summary": "The two parties will jointly organize a student and faculty exchange program and conduct joint research projects on the integrated resort industry. They will also implement a number of cooperative initiatives covering areas such as information sharing in teaching and research, short-term professional courses, cultural exchanges, executive training, and joint seminars.",
+    "link": "https://zh.asgam.com/2026/05/21/paradise-co-to-strengthen-competitiveness-of-koreas-ir-industry-via-partnership-with-unlv-zh/"
   },
   {
     "name": "How many homes have mom-and-pop investors bought in Las Vegas?",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-05-21T10:32:56-07:00",
     "summary": "The Wall Street Journal first reported that Biopharmaceutical giant Bristol Myers Squibb is bringing Anthropic\u2019s flagship Claude product to more than 30,000 of its employees. The company plans to deepen its use of artificial intelligence and AI agents for a variety of functions, from research to clinical development and corporate functions.",
     "link": "https://news3lv.com/news/arc/whats-the-future-of-ai-in-medicine-research-and-discovery"
-  },
-  {
-    "name": "How to Hack a Mosquito: The Science of Saving Southern Nevada",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-21",
-    "publishedAt": "2026-05-21T10:30:32-07:00",
-    "summary": "From deploying natural predators like bats to the strategic release of genetically modified mosquitoes, discover the cutting-edge science and \"biological hacking\" being used to protect Southern Nevada from unpredictable diseases like the West Nile virus.",
-    "link": "https://podcasts.apple.com/us/podcast/how-to-hack-a-mosquito-the-science-of-saving-southern-nevada/id1687031374?i=1000768451541"
-  },
-  {
-    "name": "Ambassador Hotel Group Chairman Seo Jeong-ho Receives Honorary Doctor of Humanities Degree from University of Nevada, Las Vegas (UNLV)",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-20",
-    "publishedAt": "2026-05-20T15:50:08-07:00",
-    "summary": "The Nevada Higher Education System (NSHE) awarded Chairman Seo Jeong-ho an honorary doctorate in humanities in recognition of his contributions to the global hotel and tourism industry and his dedication to the development of the university. In particular, his significant contributions to expanding UNLV's global influence, strengthening its position in Asia, and advancing hospitality education worldwide were acknowledged.",
-    "link": "https://biz.heraldcorp.com/article/10741940"
-  },
-  {
-    "name": "Clark County approves permits for Las Vegas\u2019 first standalone children\u2019s hospital",
-    "category": "Las Vegas Sun",
-    "section": "In The News",
-    "publishedDate": "2026-05-20",
-    "publishedAt": "2026-05-20T15:45:12-07:00",
-    "summary": "Clark County unanimously approved the development and use permits for Intermountain Health\u2019s proposed standalone children\u2019s hospital in the southwest valley. The future facility will be located on a roughly 32 acre site in UNLV\u2019s Harry Reid Research and Technology Park at Durango Drive and Patrick Lane.",
-    "link": "https://lasvegassun.com/news/2026/may/20/clark-county-approves-permits-for-las-vegas-first/"
   }
 ]
