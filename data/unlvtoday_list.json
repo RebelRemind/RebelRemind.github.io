@@ -1,6 +1,15 @@
 [
   {
     "name": "Administrative Faculty of the Month - Nominate Your Colleagues",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-05-20T13:20:36-0700",
+    "summary": "The Administrative Faculty Committee is pleased to continue its monthly award recognizing outstanding UNLV administrative faculty. May nominations are due by May 31, 2026. To qualify, the administrative faculty must: The awardee will receive $150, a certificate, and a...",
+    "link": "https://www.unlv.edu/news/unlvtoday/administrative-faculty-month-nominate-your-colleagues-25"
+  },
+  {
+    "name": "Administrative Faculty of the Month - Nominate Your Colleagues",
     "category": "Announcements",
     "section": "More from the Last Week",
     "publishedDate": "2026-05-21",
@@ -10,12 +19,30 @@
   },
   {
     "name": "Explore Summer Professional Development Opportunities With Campus Compact",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-05-20T12:15:58-0700",
+    "summary": "For those working in higher education, the summer represents an opportunity to rest and reflect, to explore and engage, or most often some combination of the two. It can also be a good time to thoughtfully plan ahead for busy Fall semesters to ensure you\u2019re prioritizing your...",
+    "link": "https://www.unlv.edu/news/unlvtoday/explore-summer-professional-development-opportunities-campus-compact"
+  },
+  {
+    "name": "Explore Summer Professional Development Opportunities With Campus Compact",
     "category": "Training and Professional Development",
     "section": "More from the Last Week",
     "publishedDate": "2026-05-21",
     "publishedAt": "2026-05-20T12:15:58-0700",
     "summary": "For those working in higher education, the summer represents an opportunity to rest and reflect, to explore and engage, or most often some combination of the two. It can also be a good time to thoughtfully plan ahead for busy Fall semesters to ensure you\u2019re prioritizing your...",
     "link": "https://www.unlv.edu/news/unlvtoday/explore-summer-professional-development-opportunities-campus-compact"
+  },
+  {
+    "name": "Strategic Retirement Planning for UNLV Faculty & Staff May 27",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-05-20T10:38:42-0700",
+    "summary": "Navigating institutional retirement plans requires a comprehensive strategy that integrates system-wide benefits with private-market opportunities. Join the UNLV Institute for Financial Literacy & Wellness next Wednesday for a rare, side-by-side analysis featuring: Michelle...",
+    "link": "https://www.unlv.edu/news/unlvtoday/strategic-retirement-planning-unlv-faculty-staff-may-27"
   },
   {
     "name": "Strategic Retirement Planning for UNLV Faculty & Staff May 27",
@@ -151,32 +178,5 @@
     "publishedAt": "2026-05-15T08:41:16-0700",
     "summary": "Explore extended reality technology through UNLV\u2019s new Immersive Learning Lab in BEH 114. Faculty consultations and workshops are available for instructors interested in incorporating VR technology into their courses and creating more interactive learning experiences for...",
     "link": "https://www.unlv.edu/news/unlvtoday/implement-vr-technology-your-classes-new-immersive-learning-lab"
-  },
-  {
-    "name": "UNLV Writing Center Summer Presentation and Workshop Requests",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-15",
-    "publishedAt": "2026-05-15T08:40:15-0700",
-    "summary": "Interested in having a representative from the UNLV Writing Center speak to your class, department, unit, or unit this summer? Requests for Informational Presentation and Customized Workshops for summer sessions 2 and 3 can be submitted online on our website starting Monday,...",
-    "link": "https://www.unlv.edu/news/unlvtoday/unlv-writing-center-summer-presentation-and-workshop-requests"
-  },
-  {
-    "name": "UNLV Eats Summer 2026 Dining Hours (May 18-Aug 16)",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-15",
-    "publishedAt": "2026-05-14T15:01:31-0700",
-    "summary": "Summer dining hours are now in effect across campus, with limited weekday and weekend options available in the Student Union and Dining Commons. What\u2019s Open Monday\u2013Friday",
-    "link": "https://www.unlv.edu/news/unlvtoday/unlv-eats-summer-2026-dining-hours-may-18-aug-16"
-  },
-  {
-    "name": "Enroll Today: Scorpion STEAM Academy at Nevada State University",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-15",
-    "publishedAt": "2026-05-14T12:13:46-0700",
-    "summary": "Don't miss an opportunity to take advantage of the NSHE Family & Friends promotion and reserve your student\u2019s spot at this summer\u2019s Scorpion STEAM Academy (SSA)! NSU Workforce Development is once again offering the NSHE Friends & Family discount for NSHE-affiliated...",
-    "link": "https://www.unlv.edu/news/unlvtoday/enroll-today-scorpion-steam-academy-nevada-state-university"
   }
 ]
