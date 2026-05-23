@@ -1,65 +1,5 @@
 [
   {
-    "name": "Idaho State",
-    "startDate": "2026-02-21",
-    "startTime": "",
-    "endDate": "2026-02-21",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/idaho-state/boxscore/17807"
-  },
-  {
-    "name": "Merrimack",
-    "startDate": "2026-02-21",
-    "startTime": "",
-    "endDate": "2026-02-21",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/merrimack/boxscore/17808"
-  },
-  {
-    "name": "UNR",
-    "startDate": "2026-02-21",
-    "startTime": "",
-    "endDate": "2026-02-21",
-    "endTime": "",
-    "location": "Las Vegas The Pavilion",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/unr/boxscore/17657"
-  },
-  {
-    "name": "Air Force",
-    "startDate": "2026-02-21",
-    "startTime": "12:00 PM",
-    "endDate": "2026-02-21",
-    "endTime": "",
-    "location": "Colorado Springs, Colorado",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/air-force/boxscore/17627"
-  },
-  {
-    "name": "Bradley",
-    "startDate": "2026-02-21",
-    "startTime": "4:05 PM",
-    "endDate": "2026-02-21",
-    "endTime": "7:33 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17742"
-  },
-  {
-    "name": "Mountain West Championships",
-    "startDate": "2026-02-21",
-    "startTime": "8:30 AM",
-    "endDate": "2026-02-21",
-    "endTime": "",
-    "location": "Houston, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/21/swimming-diving-rebels-earn-three-medals-in-mw-championship-finale.aspx"
-  },
-  {
     "name": "Merrimack",
     "startDate": "2026-02-22",
     "startTime": "",
@@ -3418,5 +3358,25 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/saint-joseph-s/boxscore/17447"
+  },
+  {
+    "name": "San Jos\u00e9 State",
+    "startDate": "2026-11-21",
+    "startTime": "",
+    "endDate": "2026-11-21",
+    "endTime": "",
+    "location": "San Jos\u00e9 , CA CEFCU Stadium",
+    "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "Trojan Diving Invitational",
+    "startDate": "2026-11-21",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-21",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/11/22/swimming-diving-rebels-finish-day-two-of-trojan-diving-invitational.aspx"
   }
 ]
