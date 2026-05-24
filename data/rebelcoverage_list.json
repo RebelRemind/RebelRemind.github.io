@@ -1,55 +1,5 @@
 [
   {
-    "name": "Merrimack",
-    "startDate": "2026-02-22",
-    "startTime": "",
-    "endDate": "2026-02-22",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/merrimack/boxscore/17809"
-  },
-  {
-    "name": "Westbrook Invitational",
-    "startDate": "2026-02-22",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-22",
-    "endTime": "",
-    "location": "Peoria, AZ",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/2/22/womens-golf-rebels-in-top-10-after-day-one-at-westbrook-invitational.aspx"
-  },
-  {
-    "name": "Gonzaga",
-    "startDate": "2026-02-22",
-    "startTime": "10:00 AM",
-    "endDate": "2026-02-22",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/22/womens-tennis-earns-sunday-win-over-zags.aspx"
-  },
-  {
-    "name": "#40 Santa Clara",
-    "startDate": "2026-02-22",
-    "startTime": "11:00 AM",
-    "endDate": "2026-02-22",
-    "endTime": "",
-    "location": "Santa Clara, CA",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/22/mens-tennis-rebel-tennis-falls-at-no-40-santa-clara.aspx"
-  },
-  {
-    "name": "Bradley",
-    "startDate": "2026-02-22",
-    "startTime": "11:04 AM",
-    "endDate": "2026-02-22",
-    "endTime": "3:05 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/bradley/boxscore/17743"
-  },
-  {
     "name": "Westbrook Invitational",
     "startDate": "2026-02-23",
     "startTime": "(ALL DAY)",
@@ -3378,5 +3328,25 @@
     "location": "Los Angeles, CA",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/11/22/swimming-diving-rebels-finish-day-two-of-trojan-diving-invitational.aspx"
+  },
+  {
+    "name": "Arizona State",
+    "startDate": "2026-11-22",
+    "startTime": "",
+    "endDate": "2026-11-22",
+    "endTime": "",
+    "location": "Tempe, AZ",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/arizona-state/boxscore/17320"
+  },
+  {
+    "name": "Trojan Diving Invitational",
+    "startDate": "2026-11-22",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-11-22",
+    "endTime": "",
+    "location": "Los Angeles, CA",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/11/22/swimming-diving-rebels-close-out-trojan-diving-invitational.aspx"
   }
 ]
