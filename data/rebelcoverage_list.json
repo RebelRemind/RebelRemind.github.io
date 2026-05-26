@@ -1,15 +1,5 @@
 [
   {
-    "name": "Western Michigan",
-    "startDate": "2026-02-24",
-    "startTime": "6:06 PM",
-    "endDate": "2026-02-24",
-    "endTime": "9:01 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/western-michigan/boxscore/17744"
-  },
-  {
     "name": "Colorado State",
     "startDate": "2026-02-25",
     "startTime": "",
@@ -3338,5 +3328,25 @@
     "location": "Los Angeles, CA",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/11/22/swimming-diving-rebels-close-out-trojan-diving-invitational.aspx"
+  },
+  {
+    "name": "Mountain West Conference",
+    "startDate": "2026-11-24",
+    "startTime": "",
+    "endDate": "2026-11-24",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Maryland",
+    "startDate": "2026-11-24",
+    "startTime": "9:00 PM",
+    "endDate": "2026-11-24",
+    "endTime": "",
+    "location": "MGM Grand Garden Arena, Las Vegas",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/maryland/boxscore/17448"
   }
 ]
