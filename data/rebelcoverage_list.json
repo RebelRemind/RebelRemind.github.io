@@ -1900,16 +1900,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/arizona-state/boxscore/17292"
   },
   {
-    "name": "Memphis",
-    "startDate": "2026-08-29",
-    "startTime": "",
-    "endDate": "2026-08-29",
-    "endTime": "",
-    "location": "Las Vegas, NV Allegiant Stadium",
-    "sport": "Football",
-    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
-  },
-  {
     "name": "Nebraska",
     "startDate": "2026-08-29",
     "startTime": "",
@@ -1918,6 +1908,16 @@
     "location": "Las Vegas, Nev. / T-Mobile Arena",
     "sport": "Women's Volleyball",
     "link": "https://www.axs.com/events/1442695/players-era-volleyball-showcase-tickets?skin=tmobile"
+  },
+  {
+    "name": "Memphis",
+    "startDate": "2026-08-29",
+    "startTime": "7:00 PM",
+    "endDate": "2026-08-29",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
     "name": "TCU",
@@ -1972,7 +1972,7 @@
   {
     "name": "Hawai'i",
     "startDate": "2026-09-05",
-    "startTime": "",
+    "startTime": "7:00 PM",
     "endDate": "2026-09-05",
     "endTime": "",
     "location": "Honolulu, HI Clarence T. C. Ching Athletics Complex",
@@ -2040,16 +2040,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/seattle/boxscore/17296"
   },
   {
-    "name": "North Texas",
-    "startDate": "2026-09-12",
-    "startTime": "",
-    "endDate": "2026-09-12",
-    "endTime": "",
-    "location": "Denton, TX DATCU Stadium",
-    "sport": "Football",
-    "link": ""
-  },
-  {
     "name": "Wildcat Invite",
     "startDate": "2026-09-12",
     "startTime": "(ALL DAY)",
@@ -2058,6 +2048,16 @@
     "location": "Tuscon, AZ",
     "sport": "Men's Tennis",
     "link": "https://stats.statbroadcast.com/broadcast/?id=608017"
+  },
+  {
+    "name": "North Texas",
+    "startDate": "2026-09-12",
+    "startTime": "12:45 PM",
+    "endDate": "2026-09-12",
+    "endTime": "",
+    "location": "Denton, TX DATCU Stadium",
+    "sport": "Football",
+    "link": ""
   },
   {
     "name": "Wildcat Invite",
@@ -2320,16 +2320,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/wyoming/boxscore/17299"
   },
   {
-    "name": "Cal",
-    "startDate": "2026-10-03",
-    "startTime": "",
-    "endDate": "2026-10-03",
-    "endTime": "",
-    "location": "Las Vegas, NV Allegiant Stadium",
-    "sport": "Football",
-    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
-  },
-  {
     "name": "Mountain West Fall Qualifier",
     "startDate": "2026-10-03",
     "startTime": "(ALL DAY)",
@@ -2368,6 +2358,16 @@
     "location": "El Paso, Texas",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "Cal",
+    "startDate": "2026-10-03",
+    "startTime": "12:30 PM",
+    "endDate": "2026-10-03",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
     "name": "Arizona State",
@@ -2550,16 +2550,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/san-diego-state/boxscore/17302"
   },
   {
-    "name": "NDSU",
-    "startDate": "2026-10-10",
-    "startTime": "",
-    "endDate": "2026-10-10",
-    "endTime": "",
-    "location": "Las Vegas, NV Allegiant Stadium",
-    "sport": "Football",
-    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
-  },
-  {
     "name": "Grand Canyon",
     "startDate": "2026-10-10",
     "startTime": "(ALL DAY)",
@@ -2578,6 +2568,16 @@
     "location": "Provo, UT",
     "sport": "Women's Tennis",
     "link": "https://unlvrebels.com/news/2025/10/10/womens-tennis-mirchevas-run-ends-in-semfinals.aspx"
+  },
+  {
+    "name": "NDSU",
+    "startDate": "2026-10-10",
+    "startTime": "4:00 PM",
+    "endDate": "2026-10-10",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
     "name": "Grand Canyon",
@@ -2640,16 +2640,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/air-force/boxscore/17304"
   },
   {
-    "name": "Air Force",
-    "startDate": "2026-10-17",
-    "startTime": "",
-    "endDate": "2026-10-17",
-    "endTime": "",
-    "location": "USAF Academy, CO Falcon Stadium",
-    "sport": "Football",
-    "link": ""
-  },
-  {
     "name": "ITA Regional",
     "startDate": "2026-10-17",
     "startTime": "(ALL DAY)",
@@ -2667,6 +2657,16 @@
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
     "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2026-10-17",
+    "startTime": "12:30 PM",
+    "endDate": "2026-10-17",
+    "endTime": "",
+    "location": "USAF Academy, CO Falcon Stadium",
+    "sport": "Football",
     "link": ""
   },
   {
@@ -2900,16 +2900,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/unr/boxscore/17308"
   },
   {
-    "name": "NIU",
-    "startDate": "2026-10-31",
-    "startTime": "",
-    "endDate": "2026-10-31",
-    "endTime": "",
-    "location": "Las Vegas, NV Allegiant Stadium",
-    "sport": "Football",
-    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
-  },
-  {
     "name": "Air Force",
     "startDate": "2026-10-31",
     "startTime": "(ALL DAY)",
@@ -2918,6 +2908,16 @@
     "location": "Las Vegas, Nev. / The Pavilion",
     "sport": "Women's Volleyball",
     "link": ""
+  },
+  {
+    "name": "NIU",
+    "startDate": "2026-10-31",
+    "startTime": "7:30 PM",
+    "endDate": "2026-10-31",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
     "name": "Mountain West Championship",
@@ -3010,16 +3010,6 @@
     "link": "https://unlvrebels.com/news/2025/11/6/womens-tennis-mircheva-ousted-from-sectional.aspx"
   },
   {
-    "name": "Wyoming",
-    "startDate": "2026-11-07",
-    "startTime": "",
-    "endDate": "2026-11-07",
-    "endTime": "",
-    "location": "Las Vegas, NV Allegiant Stadium",
-    "sport": "Football",
-    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
-  },
-  {
     "name": "Watanabe Classic",
     "startDate": "2026-11-07",
     "startTime": "(ALL DAY)",
@@ -3048,6 +3038,16 @@
     "location": "Las Vegas, NV",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/11/8/swimming-diving-rebel-women-take-home-opening-win-over-byu.aspx"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2026-11-07",
+    "startTime": "7:30 PM",
+    "endDate": "2026-11-07",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   },
   {
     "name": "Watanabe Classic",
@@ -3120,16 +3120,6 @@
     "link": ""
   },
   {
-    "name": "New Mexico",
-    "startDate": "2026-11-14",
-    "startTime": "",
-    "endDate": "2026-11-14",
-    "endTime": "",
-    "location": "Albuquerque, NM University Stadium",
-    "sport": "Football",
-    "link": ""
-  },
-  {
     "name": "No. 7 Baylor",
     "startDate": "2026-11-14",
     "startTime": "",
@@ -3147,6 +3137,16 @@
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
     "sport": "Women's Volleyball",
+    "link": ""
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-11-14",
+    "startTime": "4:30 PM",
+    "endDate": "2026-11-14",
+    "endTime": "",
+    "location": "Albuquerque, NM University Stadium",
+    "sport": "Football",
     "link": ""
   },
   {
@@ -3250,16 +3250,6 @@
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/saint-joseph-s/boxscore/17447"
   },
   {
-    "name": "San Jos\u00e9 State",
-    "startDate": "2026-11-21",
-    "startTime": "",
-    "endDate": "2026-11-21",
-    "endTime": "",
-    "location": "San Jos\u00e9 , CA CEFCU Stadium",
-    "sport": "Football",
-    "link": ""
-  },
-  {
     "name": "Trojan Diving Invitational",
     "startDate": "2026-11-21",
     "startTime": "(ALL DAY)",
@@ -3268,6 +3258,16 @@
     "location": "Los Angeles, CA",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/11/22/swimming-diving-rebels-finish-day-two-of-trojan-diving-invitational.aspx"
+  },
+  {
+    "name": "San Jos\u00e9 State",
+    "startDate": "2026-11-21",
+    "startTime": "4:00 PM",
+    "endDate": "2026-11-21",
+    "endTime": "",
+    "location": "San Jos\u00e9 , CA CEFCU Stadium",
+    "sport": "Football",
+    "link": ""
   },
   {
     "name": "Arizona State",

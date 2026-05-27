@@ -1,5 +1,32 @@
 [
   {
+    "name": "Researchers Propose a \"Fountain of Youth\" for Lithium Batteries: Blasting Them Better with X-Rays",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-27",
+    "publishedAt": "2026-05-27T12:03:54-07:00",
+    "summary": "Stuck lithium ions, responsible for older batteries' loss in capacity, could be freed if gently encouraged by high-energy X-rays.",
+    "link": "https://www.hackster.io/news/researchers-propose-a-fountain-of-youth-for-lithium-batteries-blasting-them-better-with-x-rays-1ab4293f2c6d"
+  },
+  {
+    "name": "The fountain of youth for lithium batteries",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-27",
+    "publishedAt": "2026-05-27T11:57:24-07:00",
+    "summary": "New UNLV-led research may prove the contrary, adding years to the lifespan of our beloved battery-powered electronic devices.",
+    "link": "https://techxplore.com/news/2026-05-fountain-youth-lithium-batteries.html"
+  },
+  {
+    "name": "Study: Hospital wastewater reveals deadly fungus earlier",
+    "category": "Public News Service",
+    "section": "In The News",
+    "publishedDate": "2026-05-26",
+    "publishedAt": "2026-05-26T21:00:00-07:00",
+    "summary": "A deadly fungus called C. auris can be detected in sewer water from hospitals and nursing homes five months before it shows up in clinical tests of patients, according to a new study.",
+    "link": "https://app.publicnewsservice.org/story/study-hospital-wastewater-reveals-deadly-fungus-earlier/30163661-6a6a-4f07-a481-097196edb6bb?"
+  },
+  {
     "name": "Are gamblers better off playing games with high table limits or lower-stakes? A professor weighs in",
     "category": "Las Vegas Review Journal",
     "section": "In The News",
@@ -27,6 +54,15 @@
     "link": "https://www.starchefs.com/features/narrowing-the-gap"
   },
   {
+    "name": "Nevada could see its first \u2018gambling ghost town\u2019 following a series of closures near the California border",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-26",
+    "publishedAt": "2026-05-26T14:15:00-07:00",
+    "summary": "A community that welcomed California travelers north to Las Vegas faces uncertain future.",
+    "link": "https://www.deseret.com/the-west/2026/05/26/primm-valley-casino-resort-set-to-close-july-4-potential-gambling-ghost-town/"
+  },
+  {
     "name": "Exceeded expectations\u2019: Gulf Shores airport celebrates 104,000 passengers in first year",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -43,41 +79,5 @@
     "publishedAt": "2026-05-26T02:00:00-07:00",
     "summary": "Regeneration has long been the stuff of science fiction. At UNLV, researchers are now studying frogs that can regrow their eyes in days \u2014 work that could bring that idea closer to reality for human patients.",
     "link": "https://lasvegassun.com/news/2026/may/26/unlv-lab-using-african-clawed-frogs-to-unlock-the/"
-  },
-  {
-    "name": "UNLV lab using African clawed frogs to unlock the secrets of human eye repair",
-    "category": "Las Vegas Sun",
-    "section": "In The News",
-    "publishedDate": "2026-05-26",
-    "publishedAt": "2026-05-26T02:00:00-07:00",
-    "summary": "Regeneration has long been the stuff of science fiction. At UNLV, researchers are now studying frogs that can regrow their eyes in days \u2014 work that could bring that idea closer to reality for human patients.",
-    "link": "https://lasvegassun.com/news/2026/may/26/unlv-lab-using-african-clawed-frogs-to-unlock-the/"
-  },
-  {
-    "name": "Las Vegas author\u2019s new novel tackles grief, nostalgia",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-05-25",
-    "publishedAt": "2026-05-25T05:00:00-07:00",
-    "summary": "Maile Chapman, a Las Vegas-based author and professor of English at UNLV, recently published \u201cThe Spoil,\u201d first novel in 15 years, following \u201cYour Presence Is Requested at Suvanto,\u201d released in 2011.",
-    "link": "https://neon.reviewjournal.com/books/las-vegas-authors-new-novel-tackles-grief-nostalgia-3335909/?utm_source=lvrj&amp;utm_medium=section_row&amp;utm_campaign=neon_launch"
-  },
-  {
-    "name": "10 Ways To Unwind After the Kids Go To Bed",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-24",
-    "publishedAt": "2026-05-24T12:34:00-07:00",
-    "summary": "Even after the kids go to bed, many parents struggle to switch off. These 10 expert-backed wind-down ideas can help you relax, reset, and ease into the rest of your night.",
-    "link": "https://www.todaysparent.com/family/unwind-after-kids-go-to-bed/"
-  },
-  {
-    "name": "BTS is back in Las Vegas \u2014 and the whole city is celebrating",
-    "category": "Vegas Inc",
-    "section": "In The News",
-    "publishedDate": "2026-05-23",
-    "publishedAt": "2026-05-23T15:37:26-07:00",
-    "summary": "The rise in large-scale music events being hosted in Las Vegas \u2013 including past performances from artists like Bruno Mars, Taylor Swift and Korean girl group TWICE \u2013 are attracting a new kind of crowd, one that might prefer fan experiences, photo pop-ups and curated food over gambling. \u00a0They\u2019re spreading their spending across the city, from shows on the Strip to dinners at local restaurants and injecting financial support throughout the region \u2013 not just in tourism hotspots.",
-    "link": "https://vegasinc.lasvegassun.com/business/2026/may/23/bts-is-back-in-las-vegas-and-the-whole-city-is-cel/"
   }
 ]
