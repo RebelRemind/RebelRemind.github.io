@@ -1,45 +1,5 @@
 [
   {
-    "name": "Colorado State",
-    "startDate": "2026-02-25",
-    "startTime": "",
-    "endDate": "2026-02-25",
-    "endTime": "",
-    "location": "Fort Collins, CO",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/colorado-state/boxscore/17658"
-  },
-  {
-    "name": "MPSF Championships",
-    "startDate": "2026-02-25",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-25",
-    "endTime": "",
-    "location": "Pharr, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/25/swimming-diving-rebels-200-medley-relay-team-takes-gold-on-day-one-of-mpsf-championships.aspx"
-  },
-  {
-    "name": "Western Michigan",
-    "startDate": "2026-02-25",
-    "startTime": "12:04 PM",
-    "endDate": "2026-02-25",
-    "endTime": "2:53 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/western-michigan/boxscore/17745"
-  },
-  {
-    "name": "Grand Canyon",
-    "startDate": "2026-02-25",
-    "startTime": "6:00 PM",
-    "endDate": "2026-02-25",
-    "endTime": "",
-    "location": "Phoenix, Arizona",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/grand-canyon/boxscore/17628"
-  },
-  {
     "name": "Mountain West Indoor Championships",
     "startDate": "2026-02-26",
     "startTime": "",
@@ -3348,5 +3308,15 @@
     "location": "MGM Grand Garden Arena, Las Vegas",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/maryland/boxscore/17448"
+  },
+  {
+    "name": "No. 8 Alabama",
+    "startDate": "2026-11-25",
+    "startTime": "9:00 PM",
+    "endDate": "2026-11-25",
+    "endTime": "",
+    "location": "MGM Grand Garden Arena, Las Vegas",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/no-8-alabama/boxscore/17449"
   }
 ]
