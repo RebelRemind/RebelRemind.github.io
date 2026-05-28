@@ -1,5 +1,32 @@
 [
   {
+    "name": "Scientists Say Exercise May Be the Closest Thing to a Parkinson\u2019s \u201cMedicine\u201d Yet",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-28",
+    "publishedAt": "2026-05-28T12:10:39-07:00",
+    "summary": "Regular aerobic exercise may reduce inflammation, support brain health, and help slow the progression of symptoms.",
+    "link": "https://scitechdaily.com/scientists-say-exercise-may-be-the-closest-thing-to-a-parkinsons-medicine-yet/"
+  },
+  {
+    "name": "Land-based casinos have fallen behind on AI, but it could enhance operations and guest experiences",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-27",
+    "publishedAt": "2026-05-27T23:00:00-07:00",
+    "summary": "The land-based casino industry has fallen behind when it comes to using artificial intelligence, but the potential is there to transform gaming and the guest experience.",
+    "link": "https://cdcgaming.com/land-based-casinos-have-fallen-behind-on-ai-but-it-could-enhance-operations-and-guest-experiences/"
+  },
+  {
+    "name": "Slot design pivots from licensed brands and complex mechanics back to ritual",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-27",
+    "publishedAt": "2026-05-27T22:56:00-07:00",
+    "summary": "Slot manufacturers continue to move away from branded games of television shows and other content to in-house themes, games that are more volatile, and simpler.",
+    "link": "https://cdcgaming.com/slot-design-pivots-from-licensed-brands-and-complex-mechanics-back-to-ritual/"
+  },
+  {
     "name": "Federal judge stops immigrant detainees from being transferred out of Nevada",
     "category": "Nevada Current",
     "section": "In The News",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-05-27T15:26:32-07:00",
     "summary": "The course \u2014 Introduction to the Responsible Use of AI \u2014 will give students hands-on experience with AI tools while stressing a central theme: Just because AI can perform a task does not mean it should. The course will be framed around ethics, professionalism and client service.",
     "link": "https://lasvegassun.com/news/2026/may/27/unlv-boyd-law-school-introduces-mandatory-ai-cours/"
-  },
-  {
-    "name": "Water with UNLV",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-27",
-    "publishedAt": "2026-05-27T14:45:59-07:00",
-    "summary": "UNLV professor Edwin Oh joined ARC Reno on Wednesday to discuss new research showing hospital wastewater monitoring may help detect dangerous drug-resistant C. auris outbreaks months before patients show symptoms. The study involved researchers and public health partners across Nevada, including the Nevada State Public Health Laboratory in Reno. Researchers say the technology could help hospitals identify outbreaks earlier and improve response times.",
-    "link": "https://foxreno.com/news/mornings-on-fox-11-and-arc-reno/water-with-unlv"
-  },
-  {
-    "name": "Federal judge stops immigrant detainees from being transferred out of Nevada",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-27",
-    "publishedAt": "2026-05-27T13:35:35-07:00",
-    "summary": "A federal judge temporarily blocked 25 immigrant detainees from being transferred out of state as the ACLU of Nevada determines whether they received bond hearings prior to being detained.",
-    "link": "https://www.newsfromthestates.com/article/federal-judge-stops-immigrant-detainees-being-transferred-out-nevada"
-  },
-  {
-    "name": "Researchers Propose a \"Fountain of Youth\" for Lithium Batteries: Blasting Them Better with X-Rays",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-27",
-    "publishedAt": "2026-05-27T12:03:54-07:00",
-    "summary": "Stuck lithium ions, responsible for older batteries' loss in capacity, could be freed if gently encouraged by high-energy X-rays.",
-    "link": "https://www.hackster.io/news/researchers-propose-a-fountain-of-youth-for-lithium-batteries-blasting-them-better-with-x-rays-1ab4293f2c6d"
   }
 ]
