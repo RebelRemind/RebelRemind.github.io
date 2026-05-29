@@ -1,55 +1,5 @@
 [
   {
-    "name": "No. 23 Arizona State",
-    "startDate": "2026-02-27",
-    "startTime": "",
-    "endDate": "2026-02-27",
-    "endTime": "",
-    "location": "Tempe, AZ",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/arizona-state/boxscore/17810"
-  },
-  {
-    "name": "UC Riverside",
-    "startDate": "2026-02-27",
-    "startTime": "",
-    "endDate": "2026-02-27",
-    "endTime": "",
-    "location": "Tempe, AZ",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-riverside/boxscore/17734"
-  },
-  {
-    "name": "MPSF Championships",
-    "startDate": "2026-02-27",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-27",
-    "endTime": "",
-    "location": "Pharr, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/27/swimming-diving-rebels-claim-two-event-titles-on-day-three-of-mpsf-championships.aspx"
-  },
-  {
-    "name": "#54 Grand Canyon",
-    "startDate": "2026-02-27",
-    "startTime": "1:00 PM",
-    "endDate": "2026-02-27",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/2/27/mens-tennis-hot-start-rebels-run-past-lopes-in-conference-kickoff.aspx"
-  },
-  {
-    "name": "Santa Clara",
-    "startDate": "2026-02-27",
-    "startTime": "6:05 PM",
-    "endDate": "2026-02-27",
-    "endTime": "9:27 PM",
-    "location": "Santa Clara, Calif.",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17746"
-  },
-  {
     "name": "Eastern Illinois",
     "startDate": "2026-02-28",
     "startTime": "",
@@ -3308,5 +3258,15 @@
     "location": "Las Vegas Thomas & Mack Center",
     "sport": "Women's Basketball",
     "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/creighton/boxscore/17321"
+  },
+  {
+    "name": "Rutgers",
+    "startDate": "2026-11-27",
+    "startTime": "1:30 PM",
+    "endDate": "2026-11-27",
+    "endTime": "",
+    "location": "Michelob ULTRA Arena, Las Vegas",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/rutgers/boxscore/17450"
   }
 ]
