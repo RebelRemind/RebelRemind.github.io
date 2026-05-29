@@ -1,5 +1,23 @@
 [
   {
+    "name": "Classified Employee of the Month",
+    "category": "People (new hires, retirements, etc.)",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-29",
+    "publishedAt": "2026-05-29T11:16:43-0700",
+    "summary": "The recipient of the May 2026 Classified Employee of the Month is: Sammie Glover \u2013 School of Public Health",
+    "link": "https://www.unlv.edu/news/unlvtoday/classified-employee-month-16"
+  },
+  {
+    "name": "Participants Needed: UNLV Research Study on Musculoskeletal Injury Experiences Among Service Members",
+    "category": "Just for Faculty and Researchers",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-05-29",
+    "publishedAt": "2026-05-28T15:59:00-0700",
+    "summary": "Researchers from the Department of Kinesiology and Nutrition Sciences and the School of Nursing are seeking participants for a research study examining musculoskeletal injury experiences among Active Duty and National Guard service members. The purpose of this study is to...",
+    "link": "https://www.unlv.edu/news/unlvtoday/participants-needed-unlv-research-study-musculoskeletal-injury-experiences-among"
+  },
+  {
     "name": "Summer APIME-FSA Events June 25 & July 21",
     "category": "Save-The-Date",
     "section": "More from the Last Week",
@@ -88,14 +106,5 @@
     "publishedAt": "2026-05-26T09:18:59-0700",
     "summary": "The UNLV Office of Accessibility Resources (OAR) has scheduled the following online training and workshops: For information on the Ally tool in WebCampus, please register for the structured overview workshops. If you are already familiar with Ally and digital accessibility...",
     "link": "https://www.unlv.edu/news/unlvtoday/june-2026-digital-accessibility-training"
-  },
-  {
-    "name": "Active Assailant 8-Hour Training June 3",
-    "category": "Save-The-Date",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-05-22",
-    "publishedAt": "2026-05-21T16:44:18-0700",
-    "summary": "The University Police Department is pleased to offer a dynamic 8-hour, in-person Active Assailant Training designed to provide hands-on experience and practical tools to help participants prepare for and respond to emergency situations. This comprehensive training will equip...",
-    "link": "https://www.unlv.edu/news/unlvtoday/active-assailant-8-hour-training-june-3"
   }
 ]
