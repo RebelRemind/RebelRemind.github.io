@@ -1,65 +1,5 @@
 [
   {
-    "name": "Eastern Illinois",
-    "startDate": "2026-02-28",
-    "startTime": "",
-    "endDate": "2026-02-28",
-    "endTime": "",
-    "location": "Phoenix, AZ",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/eastern-illinois/boxscore/17811"
-  },
-  {
-    "name": "Fresno State",
-    "startDate": "2026-02-28",
-    "startTime": "",
-    "endDate": "2026-02-28",
-    "endTime": "",
-    "location": "Fresno, CA",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/fresno-state/boxscore/17659"
-  },
-  {
-    "name": "UC Riverside",
-    "startDate": "2026-02-28",
-    "startTime": "",
-    "endDate": "2026-02-28",
-    "endTime": "",
-    "location": "Phoenix, AZ",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/uc-riverside/boxscore/17812"
-  },
-  {
-    "name": "MPSF Championships",
-    "startDate": "2026-02-28",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-02-28",
-    "endTime": "",
-    "location": "Pharr, TX",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/2/28/swimming-diving-rebels-earn-six-medals-to-close-out-mpsf-championships.aspx"
-  },
-  {
-    "name": "Santa Clara",
-    "startDate": "2026-02-28",
-    "startTime": "1:04 PM",
-    "endDate": "2026-02-28",
-    "endTime": "4:14 PM",
-    "location": "Santa Clara, Calif.",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17747"
-  },
-  {
-    "name": "UNR",
-    "startDate": "2026-02-28",
-    "startTime": "7:00 PM",
-    "endDate": "2026-02-28",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/unr/boxscore/17629"
-  },
-  {
     "name": "Wisconsin",
     "startDate": "2026-03-01",
     "startTime": "",
@@ -3268,5 +3208,25 @@
     "location": "Michelob ULTRA Arena, Las Vegas",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/rutgers/boxscore/17450"
+  },
+  {
+    "name": "Northern Iowa",
+    "startDate": "2026-11-28",
+    "startTime": "",
+    "endDate": "2026-11-28",
+    "endTime": "",
+    "location": "Las Vegas Thomas & Mack Center",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/northern-iowa/boxscore/17322"
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-11-28",
+    "startTime": "6:00 PM",
+    "endDate": "2026-11-28",
+    "endTime": "",
+    "location": "Las Vegas, NV Allegiant Stadium",
+    "sport": "Football",
+    "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
   }
 ]
