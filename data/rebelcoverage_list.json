@@ -1,45 +1,5 @@
 [
   {
-    "name": "Wisconsin",
-    "startDate": "2026-03-01",
-    "startTime": "",
-    "endDate": "2026-03-01",
-    "endTime": "",
-    "location": "Tempe, AZ",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/wisconsin/boxscore/17813"
-  },
-  {
-    "name": "Southern Highlands Collegiate",
-    "startDate": "2026-03-01",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-01",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/1/mens-golf-three-rebels-in-top-20-after-first-round-at-southern-highlands.aspx"
-  },
-  {
-    "name": "Santa Clara",
-    "startDate": "2026-03-01",
-    "startTime": "12:05 PM",
-    "endDate": "2026-03-01",
-    "endTime": "2:44 PM",
-    "location": "Santa Clara, Calif.",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/santa-clara/boxscore/17748"
-  },
-  {
-    "name": "Utah",
-    "startDate": "2026-03-01",
-    "startTime": "1:00 PM",
-    "endDate": "2026-03-01",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/1/mens-tennis-rebel-netters-remain-perfect-at-home-in-2026.aspx"
-  },
-  {
     "name": "Lady Luck Invitational",
     "startDate": "2026-03-02",
     "startTime": "(ALL DAY)",
@@ -1667,7 +1627,7 @@
     "endTime": "",
     "location": "Fayetteville, Ark.",
     "sport": "Women's Track & Field",
-    "link": "https://flashresults.ncaa.com/Outdoor/2026/FirstRounds/West/index.htm"
+    "link": "https://unlvrebels.com/news/2026/5/30/womens-track-field-rebels-close-outdoor-season-at-ncaa-west-regionals.aspx"
   },
   {
     "name": "Scarlet & Gray Intrasquad Scrimmage",
