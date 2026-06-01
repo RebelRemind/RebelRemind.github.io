@@ -1,5 +1,41 @@
 [
   {
+    "name": "\u2018Not a fad\u2019: UNLV law school to launch AI use class this fall",
+    "category": "Las Vegas Review Journal",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T07:00:00-07:00",
+    "summary": "First-year UNLV law students will be required to take a new class on artificial intelligence uses in legal practices starting this fall, the college announced Tuesday.",
+    "link": "https://www.reviewjournal.com/local/education/not-a-fad-unlv-law-school-to-launch-ai-use-class-this-fall-3831493/"
+  },
+  {
+    "name": "Can X-rays save your EV battery? A UNLV professor is extending the life of tech",
+    "category": "Las Vegas Sun",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T02:00:00-07:00",
+    "summary": "A UNLV professor is looking to an unlikely source to extend the life of the lithium-ion batteries that have become a part of everyday life: X-rays.",
+    "link": "https://lasvegassun.com/news/2026/may/31/can-x-rays-save-your-ev-battery-a-unlv-professor-i/"
+  },
+  {
+    "name": "UNLV study finds hospital sewage samples offer early warning for deadly fungus",
+    "category": "Las Vegas Sun",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T02:00:00-07:00",
+    "summary": "Sampling wastewater near hospitals and care facilities can detect a deadly, drug-resistant fungus up to five months before patients show symptoms, according to new UNLV research.",
+    "link": "https://lasvegassun.com/news/2026/may/31/unlv-study-finds-hospital-sewage-samples-offer-ear/"
+  },
+  {
+    "name": "These 6 Kitchen Tools Are Dirtier Than You Think, According to Food Safety Experts",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-30",
+    "publishedAt": "2026-05-30T12:30:00-07:00",
+    "summary": "Thanks to moist environments (like your kitchen sink) and food particles, the kitchen is full of objects that make a perfect breeding ground for bacteria. So how can you ensure you aren\u2019t spreading germs the next time you serve a meal? According to the food safety experts we spoke with, it starts with knowing where to look\u2014and giving some often-overlooked tools a thorough cleaning. The items below are some of the most surprising offenders.",
+    "link": "https://www.eatingwell.com/these-kitchen-tools-are-dirtier-than-you-think-according-to-food-safety-experts-11986523"
+  },
+  {
     "name": "Passenger points out strange detail to flight attendant\u2014has instant regret",
     "category": "M.S.N.",
     "section": "In The News",
@@ -43,41 +79,5 @@
     "publishedAt": "2026-05-28T23:45:10-07:00",
     "summary": "The much-anticipated move would give Fertitta control of one of the largest gaming companies in the world and put him in direct competition with MGM.",
     "link": "https://news3lv.com/news/local/what-tilman-fertittas-pending-purchase-of-caesars-entertainment-means-for-las-vegas"
-  },
-  {
-    "name": "What Tilman Fertitta's pending purchase of Caesars Entertainment means for Las Vegas",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T23:45:10-07:00",
-    "summary": "The much-anticipated move would give Fertitta control of one of the largest gaming companies in the world and put him in direct competition with MGM.",
-    "link": "https://news3lv.com/news/local/what-tilman-fertittas-pending-purchase-of-caesars-entertainment-means-for-las-vegas"
-  },
-  {
-    "name": "Wall Street analyst says MGM and Boyd will benefit from Caesars\u2019s acquisition by Fertitta Entertainment",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T21:24:57-07:00",
-    "summary": "In an interview with CDC Gaming at Thursday\u2019s conference, Alan Feldman, director of Strategic Initiatives and distinguished fellow for Responsible Gaming at the UNLV International Gaming Institute, said the deal has the opportunity to be \u201cextraordinarily beneficial\u201d to both companies and all the markets that they serve.",
-    "link": "https://cdcgaming.com/wall-street-analyst-says-mgm-and-boyd-will-benefit-from-caesarss-acquisition-by-fertitta-entertainment/"
-  },
-  {
-    "name": "Caesars Entertainment, a Las Vegas Strip icon, is sold for $5.7 billion to Fertitta",
-    "category": "K.V.V.U. T.V. Fox 5",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T17:56:40-07:00",
-    "summary": "Houston-based billionaire Tilman Fertitta plans to buy Caesars Entertainment and take it private in a deal valued at $17.6 billion. Fertitta Entertainment will pay $5.7 billion and take on close to $12 billion in debt from Caesars.",
-    "link": "https://www.fox5vegas.com/2026/05/28/caesars-entertainment-las-vegas-strip-icon-is-sold-6-billion/"
-  },
-  {
-    "name": "Casino experts react to Fertitta buying Caesars Entertainment",
-    "category": "K.L.A.S. T.V. 8 News Now",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T17:52:19-07:00",
-    "summary": "Tilman Fertitta\u2019s history in Las Vegas extends back to when he bought the Golden Nugget more than 20 years ago, he is also the biggest shareholder in Wynn Resorts.",
-    "link": "https://www.8newsnow.com/news/casino-experts-react-to-fertitta-buying-caesars-entertainment/"
   }
 ]
