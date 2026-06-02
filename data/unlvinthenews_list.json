@@ -1,5 +1,41 @@
 [
   {
+    "name": "Most ballot questions are up in November. Why is Henderson voting on a parks tax now?",
+    "category": "The Nevada Independent",
+    "section": "In The News",
+    "publishedDate": "2026-06-01",
+    "publishedAt": "2026-06-01T13:34:44-07:00",
+    "summary": "A renewal for Henderson's park tax is scheduled for June. The Indy takes a deeper look at why the question is on the primary ballot rather than the general elec",
+    "link": "https://thenevadaindependent.com/article/how-do-nevada-municipalities-schedule-their-ballot-questions"
+  },
+  {
+    "name": "Economist forecasts two million more visitors to Las Vegas in 2026 than 2025",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T17:27:00-07:00",
+    "summary": "Despite consumer sentiment at record lows, a UNLV economist projects a rebound in tourism in 2026 with two million more visitors to Las Vegas this year than last.",
+    "link": "https://cdcgaming.com/economist-forecasts-two-million-more-visitors-to-las-vegas-in-2026-than-2025/"
+  },
+  {
+    "name": "NMSU study says daylight saving time can be bad for you",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T15:11:31-07:00",
+    "summary": "Daylight saving time isn\u2019t just an annoyance, it may also be bad for your mental and physical health. That\u2019s according to a major new study by a team of researchers from New Mexico State University\u2019s College of Health, Education and Social Transformation and the University of Nevada, Las Vegas\u2019s Kirk Kerkorian School of Medicine.",
+    "link": "https://www.ktsm.com/news/nmsu-study-says-daylight-saving-time-can-be-bad-for-you/"
+  },
+  {
+    "name": "On \u2018Euphoria\u2019 and Elsewhere, TV Is Having a Sex Cam Spring",
+    "category": "The New York Times",
+    "section": "In The News",
+    "publishedDate": "2026-05-31",
+    "publishedAt": "2026-05-31T12:30:00-07:00",
+    "summary": "Virtual sex work is nothing new on TV. But this year it is more visible, central to series like \u201cEuphoria,\u201d \u201cMargo\u2019s Got Money Troubles\u201d and \u201cMaximum Pleasure Guaranteed.\u201d",
+    "link": "https://www.nytimes.com/2026/05/30/arts/television/euphoria-sex-cam.html"
+  },
+  {
     "name": "\u2018Not a fad\u2019: UNLV law school to launch AI use class this fall",
     "category": "Las Vegas Review Journal",
     "section": "In The News",
@@ -43,41 +79,5 @@
     "publishedAt": "2026-05-29T12:21:04-07:00",
     "summary": "Dan Bubb, a former airline pilot who is an aviation historian at the University of Nevada, Las Vegas, told Newsweek that the issue visible in the viral video appears to involve a part of the wing\u2019s spoiler.",
     "link": "https://www.msn.com/en-us/news/technology/passenger-points-out-strange-detail-to-flight-attendant-has-instant-regret/ar-AA24nhUR"
-  },
-  {
-    "name": "Charity Qualifies for Sales Tax Exemption, Nevada Justices Rule",
-    "category": "Bloomberg",
-    "section": "In The News",
-    "publishedDate": "2026-05-29",
-    "publishedAt": "2026-05-29T12:16:18-07:00",
-    "summary": "A nonprofit formed to help the University of Nevada-Las Vegas build a medical school is exempt from sales and use tax as a charitable organization, regardless of the fact that it partnered with the government, the state high court ruled.",
-    "link": "https://news.bloombergtax.com/ip-law/charity-qualifies-for-sales-tax-exemption-nevada-justices-rule"
-  },
-  {
-    "name": "On the Etymology of the Term \u2018Paramedic\u2019",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-05-29",
-    "publishedAt": "2026-05-29T11:40:54-07:00",
-    "summary": "The origin of the term \u201cparamedic\u201d is from the military. Medics, often called corpsmen, were trained to care for injured military personnel in the battlefield setting and in field hospitals. Despite the rumors, the term paramedic had nothing to do with parachutes. It simply meant that they were \u201cnon-doctors\u201d (paraprofessionals) who provided medical care in the military setting.",
-    "link": "https://www.jems.com/commentary/on-the-etymology-of-the-term-paramedic/"
-  },
-  {
-    "name": "What Tilman Fertitta's pending purchase of Caesars Entertainment means for Las Vegas",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T23:45:10-07:00",
-    "summary": "The much-anticipated move would give Fertitta control of one of the largest gaming companies in the world and put him in direct competition with MGM.",
-    "link": "https://news3lv.com/news/local/what-tilman-fertittas-pending-purchase-of-caesars-entertainment-means-for-las-vegas"
-  },
-  {
-    "name": "What Tilman Fertitta's pending purchase of Caesars Entertainment means for Las Vegas",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-05-28",
-    "publishedAt": "2026-05-28T23:45:10-07:00",
-    "summary": "The much-anticipated move would give Fertitta control of one of the largest gaming companies in the world and put him in direct competition with MGM.",
-    "link": "https://news3lv.com/news/local/what-tilman-fertittas-pending-purchase-of-caesars-entertainment-means-for-las-vegas"
   }
 ]

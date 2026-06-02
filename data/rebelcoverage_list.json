@@ -1,45 +1,5 @@
 [
   {
-    "name": "Lady Luck Invitational",
-    "startDate": "2026-03-03",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-03",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/3/womens-golf-foong-takes-second-rebels-finish-fourth-in-home-event.aspx"
-  },
-  {
-    "name": "Southern Highlands Collegiate",
-    "startDate": "2026-03-03",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-03",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/3/mens-golf-little-finishes-11th-at-southern-highlands-collegiate.aspx"
-  },
-  {
-    "name": "Northern Colorado",
-    "startDate": "2026-03-03",
-    "startTime": "6:03 PM",
-    "endDate": "2026-03-03",
-    "endTime": "8:42 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northern-colorado/boxscore/17749"
-  },
-  {
-    "name": "Utah State",
-    "startDate": "2026-03-03",
-    "startTime": "8:00 PM",
-    "endDate": "2026-03-03",
-    "endTime": "",
-    "location": "Thomas & Mack Center",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/utah-state/boxscore/17630"
-  },
-  {
     "name": "Boise State",
     "startDate": "2026-03-04",
     "startTime": "",
