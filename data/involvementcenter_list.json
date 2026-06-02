@@ -1,17 +1,5 @@
 [
   {
-    "name": "Study Breakers - Paint and Flow ",
-    "startDate": "2026-03-04",
-    "startTime": "12:00 PM",
-    "endDate": "2026-03-04",
-    "endTime": "1:00 PM",
-    "location": "UNLV SU 209",
-    "organization": "CAEO College Programs",
-    "description": "S tudy Breakers \u2013 Paint and Flow Unplug from stress and tap into your creativity during this relaxing paint session. Participants will enjoy a guided, free flow painting experience designed to help release tension, express creativity, and reset their minds no artistic experience required.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12025453"
-  },
-  {
     "name": "Lee Business Town Hall",
     "startDate": "2026-02-04",
     "startTime": "12:00 PM",
@@ -4570,6 +4558,18 @@
     "description": "Join us for guided meditation. No registration needed.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/7929eaab-ea5a-40d5-b9a8-df67c7dbe4d571425b50-4c18-4491-98d4-c74e5e370a69.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12481176"
+  },
+  {
+    "name": "Summer Food Drive",
+    "startDate": "2026-06-08",
+    "startTime": "12:00 AM",
+    "endDate": "2026-06-26",
+    "endTime": "11:45 PM",
+    "location": "Online",
+    "organization": "College of Education Alumni Engagement",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways: Purchase items from the wishlist which will will be delivered to NPHY; or Purchase items from your store of choice and deliver them (Monday-Friday) to: NPHY Drop-in Center 4981 Shirley St, Las Vegas, NV 89119 ABOUT THE EDUCATION ALUMNI CHAPTER The UNLV College of Education Alumni Chapter Board of Directors is the driving force behind a strong relationship between UNLV\u2019s College of Education, its alumni, and its friends. Through outreach, engagement, and philanthropy, our goal is to benefit the greater UNLV community and next generation of professionals. Our members represent many aspects of the educational field at all levels - classroom teachers, counselors and psychologists, human services professionals, researchers, subject specialists, and more. Learn more: unlv.edu/education/alumni-chapter",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/1b789ed0-43c8-4a58-897d-740ce2025a6f9047a59a-ef05-4bf4-895a-8467975dbccf.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12481447"
   },
   {
     "name": "Mindful Moments: Weekly Guided Mediation",

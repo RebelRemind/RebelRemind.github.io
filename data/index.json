@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T17:58:07Z",
+  "generatedAt": "2026-06-02T21:38:47Z",
   "files": [
     "academiccalendar_list.json",
     "buildingimages_list.json",
@@ -17,58 +17,57 @@
     "academiccalendar_list.json": {
       "status": "success",
       "itemCount": 67,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "buildingimages_list.json": {
       "status": "success",
       "itemCount": 119,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "campuswideevents_list.json": {
       "status": "success",
       "itemCount": 1,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "careerevents_list.json": {
       "status": "success",
       "itemCount": 2,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "involvementcenter_list.json": {
       "status": "success",
       "itemCount": 397,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "rebelcoverage_list.json": {
       "status": "success",
       "itemCount": 313,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "scarletandgraynews_list.json": {
-      "status": "fallback",
+      "status": "success",
       "itemCount": 10,
-      "lastSuccessfulAt": "2026-06-02T06:25:40Z",
-      "error": "403 Client Error: Forbidden for url: https://unlvscarletandgray.com/news/feed/"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "unlvinthenews_list.json": {
       "status": "success",
       "itemCount": 9,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "unlvcalendar_list.json": {
       "status": "success",
       "itemCount": 2082,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "unlvtoday_list.json": {
       "status": "success",
       "itemCount": 18,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     },
     "organization_list.json": {
       "status": "success",
       "itemCount": 565,
-      "lastSuccessfulAt": "2026-06-02T17:58:07Z"
+      "lastSuccessfulAt": "2026-06-02T21:38:47Z"
     }
   }
 }
