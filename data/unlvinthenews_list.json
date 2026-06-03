@@ -1,11 +1,29 @@
 [
   {
+    "name": "7 Nevada stereotypes and stories that aren\u2019t true at all. Or, are they?",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T16:01:08-07:00",
+    "summary": "From the pronunciation of the state\u2019s name to the existence of nefarious underwater creatures, we\u2019ll fill you in on what\u2019s true, false, or unconfirmed about Nevada.",
+    "link": "https://thenevadannews.com/local/culture/7-nevada-stereotypes-and-stories-that-arent-true-at-all-or-are-they/"
+  },
+  {
+    "name": "Barry Diller\u2019s People Incorporated Offers $18B to Take MGM Private",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T15:58:38-07:00",
+    "summary": "The proposal comes days after Fertitta Entertainment agreed to acquire Caesars Entertainment, putting two of the largest U.S. casino operators at the center of major takeover deals.",
+    "link": "https://www.gamblinginsider.com/news/164641/barry-diller-people-incorporated-18b-offer-mgm"
+  },
+  {
     "name": "Federal grant brings mobile dementia screening to rural Nevada",
     "category": "K.V.V.U. T.V. Fox 5",
     "section": "In The News",
     "publishedDate": "2026-06-02",
     "publishedAt": "2026-06-02T14:02:03-07:00",
-    "summary": "$784,000 investment will fund portable MRI scanner to serve underserved communities",
+    "summary": "The program will include educational outreach activities in rural communities focused on early identification and reducing modifiable risk factors for dementia. The efforts will include collaborations with partners across Nevada, including UNLV and community stakeholders.",
     "link": "https://www.fox5vegas.com/2026/06/02/federal-grant-brings-mobile-dementia-screening-rural-nevada/"
   },
   {
@@ -14,8 +32,17 @@
     "section": "In The News",
     "publishedDate": "2026-06-02",
     "publishedAt": "2026-06-02T13:56:03-07:00",
-    "summary": "UNLV wants a floor in downtown Las Vegas\u2019s new $190 million Civic Center. So far, it hasn\u2019t said what that will cost.",
+    "summary": "UNLV wants a floor in downtown Las Vegas\u2019s new $190 million Civic Center. The school plans to feature a \u201cRebel One Stop\u201d to help with admissions, financial aid and advising. UNLV will also have a Cyber Clinic for online safety, programs with the Boyd School of Law and other ties with local governments.",
     "link": "https://www.8newsnow.com/news/local-news/unlv-proposes-downtown-las-vegas-expansion/"
+  },
+  {
+    "name": "Golden Knights\u2019 Stanley Cup run brings economic windfall to Southern Nevada",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T13:47:21-07:00",
+    "summary": "With the Vegas Golden Knights set to open the Stanley Cup Final against the Carolina Hurricanes on Tuesday, the series is already being felt far beyond the ice. Southern Nevada businesses and workers are poised to benefit from a surge in sports-driven spending.",
+    "link": "https://news3lv.com/news/local/story/golden-knights-stanley-cup-run-brings-economic-windfall-to-southern-nevada"
   },
   {
     "name": "Golden Knights\u2019 Stanley Cup run brings economic windfall to Southern Nevada",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-06-02T11:46:29-07:00",
     "summary": "The chair of the Department of Finance at UNLV\u2019s Lee Business School wants to increase financial literacy across Nevada. A recent study found that Nevada has the highest rate of credit card delinquencies and one of the highest overall debt burdens of any state.",
     "link": "https://www.reviewjournal.com/business/personal-finance/las-vegans-are-bad-with-their-money-meet-the-guy-who-wants-to-change-that-3832148/"
-  },
-  {
-    "name": "MGM buyout offer, Caesars sale raise questions about Las Vegas Strip jobs",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-01",
-    "publishedAt": "2026-06-01T17:28:00-07:00",
-    "summary": "Just days after Caesars Entertainment agreed to be sold to billionaire businessman Tilman Fertitta, MGM Resorts has received a buyout offer valued at $18 billion from Barry Diller\u2019s People Inc.",
-    "link": "https://news3lv.com/news/local/mgm-buyout-offer-caesars-sale-raise-questions-about-las-vegas-strip-jobs"
-  },
-  {
-    "name": "Most ballot questions are up in November. Why is Henderson voting on a parks tax now?",
-    "category": "The Nevada Independent",
-    "section": "In The News",
-    "publishedDate": "2026-06-01",
-    "publishedAt": "2026-06-01T13:34:44-07:00",
-    "summary": "A renewal for Henderson's park tax is scheduled for June. The Indy takes a deeper look at why the question is on the primary ballot rather than the general elec",
-    "link": "https://thenevadaindependent.com/article/how-do-nevada-municipalities-schedule-their-ballot-questions"
-  },
-  {
-    "name": "Research Shows Combining Melatonin and Caffeine Boosts Workout Performance",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-01",
-    "publishedAt": "2026-06-01T12:30:00-07:00",
-    "summary": "Consuming caffeine before exercise is a popular way to optimize workout performance, and new research suggests that adding melatonin to your nighttime routine may result in even more improvement.",
-    "link": "https://www.verywellhealth.com/caffeine-melatonin-workout-performance-11973893"
   }
 ]

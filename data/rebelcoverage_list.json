@@ -1,25 +1,5 @@
 [
   {
-    "name": "Boise State",
-    "startDate": "2026-03-04",
-    "startTime": "",
-    "endDate": "2026-03-04",
-    "endTime": "",
-    "location": "Las Vegas The Pavilion",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/boise-state/boxscore/17660"
-  },
-  {
-    "name": "Northern Colorado",
-    "startDate": "2026-03-04",
-    "startTime": "12:06 PM",
-    "endDate": "2026-03-04",
-    "endTime": "3:35 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northern-colorado/boxscore/17750"
-  },
-  {
     "name": "Last Chance Invitational",
     "startDate": "2026-03-05",
     "startTime": "4:00 PM",
