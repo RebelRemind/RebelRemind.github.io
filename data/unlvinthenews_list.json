@@ -1,5 +1,50 @@
 [
   {
+    "name": "Common medications may disrupt brain development",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-03",
+    "publishedAt": "2026-06-03T08:09:11-07:00",
+    "summary": "Many people don't think twice when their doctor prescribes antidepressants or other medications, but new research suggests that some of these drugs may subtly interfere with brain development in unborn babies, raising urgent questions about their safety during pregnancy.",
+    "link": "https://www.epochtimes.cz/2026/06/03/bezne-leky-mohou-narusovat-vyvoj-mozku/"
+  },
+  {
+    "name": "Daylight saving time linked to heightened mental health risks, review finds",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-03",
+    "publishedAt": "2026-06-03T07:52:45-07:00",
+    "summary": "Study comes amid growing calls to end the seasonal practice of changing clocks in the U.S.",
+    "link": "https://www.independent.co.uk/news/science/daylight-saving-time-psychological-health-issues-b2988439.html"
+  },
+  {
+    "name": "As Primm's final casino prepares to close, one business is betting on the town\u2019s future",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T19:40:57-07:00",
+    "summary": "For decades, the lights of Primm served as a welcome sign for travelers crossing from California into Nevada, signaling that Las Vegas was just ahead. Now, that tradition is set to come to an end.",
+    "link": "https://news3lv.com/news/local/as-primms-final-casino-prepares-to-close-one-business-is-betting-on-the-towns-future"
+  },
+  {
+    "name": "Las Vegas father, daughter celebrate matching graduations",
+    "category": "K.L.A.S. T.V. 8 News Now",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T17:31:33-07:00",
+    "summary": "A unique feat for a father and daughter here in Las Vegas, finishing school at the same time with perfect 4.0 GPAs. Ebenezer Belete graduated with his PhD from UNLV while his daughter, 16-year-old Tracy Belete, graduated from high school.",
+    "link": "https://www.8newsnow.com/news/local-news/las-vegas-father-daughter-celebrate-matching-graduations/"
+  },
+  {
+    "name": "Circus Meets Medicine Medical Conference",
+    "category": "K.L.A.S. T.V. 8 News Now",
+    "section": "In The News",
+    "publishedDate": "2026-06-02",
+    "publishedAt": "2026-06-02T16:57:06-07:00",
+    "summary": "Scott McDonald and Dr. Nathan Hollister \u2014 co-founders of Circus Meets Medicine and UNLV Consortium of Arts + Medicine \u2014 joined us with the details on their Circus Meets Medicine Medical Conference.",
+    "link": "https://www.8newsnow.com/news/las-vegas-now/circus-meets-medicine-medical-conference/"
+  },
+  {
     "name": "7 Nevada stereotypes and stories that aren\u2019t true at all. Or, are they?",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -34,50 +79,5 @@
     "publishedAt": "2026-06-02T13:56:03-07:00",
     "summary": "UNLV wants a floor in downtown Las Vegas\u2019s new $190 million Civic Center. The school plans to feature a \u201cRebel One Stop\u201d to help with admissions, financial aid and advising. UNLV will also have a Cyber Clinic for online safety, programs with the Boyd School of Law and other ties with local governments.",
     "link": "https://www.8newsnow.com/news/local-news/unlv-proposes-downtown-las-vegas-expansion/"
-  },
-  {
-    "name": "Golden Knights\u2019 Stanley Cup run brings economic windfall to Southern Nevada",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T13:47:21-07:00",
-    "summary": "With the Vegas Golden Knights set to open the Stanley Cup Final against the Carolina Hurricanes on Tuesday, the series is already being felt far beyond the ice. Southern Nevada businesses and workers are poised to benefit from a surge in sports-driven spending.",
-    "link": "https://news3lv.com/news/local/story/golden-knights-stanley-cup-run-brings-economic-windfall-to-southern-nevada"
-  },
-  {
-    "name": "Golden Knights\u2019 Stanley Cup run brings economic windfall to Southern Nevada",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T13:47:21-07:00",
-    "summary": "With the Vegas Golden Knights set to open the Stanley Cup Final against the Carolina Hurricanes on Tuesday, the series is already being felt far beyond the ice. Southern Nevada businesses and workers are poised to benefit from a surge in sports-driven spending.",
-    "link": "https://news3lv.com/news/local/story/golden-knights-stanley-cup-run-brings-economic-windfall-to-southern-nevada"
-  },
-  {
-    "name": "Groundbreaking Drug May Double Survival Time for Pancreatic Cancer",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T13:01:22-07:00",
-    "summary": "Results from a late-stage clinical trial of the pill daraxonrasib offer new hope for a notoriously deadly disease, doctors say.",
-    "link": "https://www.everydayhealth.com/cancer/groundbreaking-drug-may-double-survival-time-for-pancreatic-cancer/"
-  },
-  {
-    "name": "What will Nevada's next governor do for education? Top candidates explain.",
-    "category": "The Nevada Independent",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T12:49:09-07:00",
-    "summary": "The three most prominent candidates vary widely in what they think the funding goal should be, not to mention their plans for getting there.",
-    "link": "https://thenevadaindependent.com/article/what-will-nevadas-next-governor-do-for-education-top-candidates-explain"
-  },
-  {
-    "name": "Las Vegans are bad with their money. Meet the guy who wants to change that",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T11:46:29-07:00",
-    "summary": "The chair of the Department of Finance at UNLV\u2019s Lee Business School wants to increase financial literacy across Nevada. A recent study found that Nevada has the highest rate of credit card delinquencies and one of the highest overall debt burdens of any state.",
-    "link": "https://www.reviewjournal.com/business/personal-finance/las-vegans-are-bad-with-their-money-meet-the-guy-who-wants-to-change-that-3832148/"
   }
 ]
