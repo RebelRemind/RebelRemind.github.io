@@ -2129,11 +2129,11 @@
     "startTime": "1:00 PM",
     "endDate": "2026-03-10",
     "endTime": "3:00 PM",
-    "location": "Student Recreation & Wellness Center\n        Student Recreation and Wellness Center\r\nBarre Class from 1:00 pm - 1:45 pm in Room 2015\r\nBystander Training & Mocktails from 2:00 pm - 3:00 pm in Room 1020",
-    "description": "Join us for an empowering afternoon featuring our low-impact barre class, which incorporates elements of ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life. Both portions of the event can be attended individually\u2014come to one or stay for both!",
+    "location": "Student Recreation & Wellness Center\n        Room 2015 and Room 1020",
+    "description": "Join Campus Rec for an empowering afternoon featuring our low-impact Barre class, which incorporates elements of Ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
-    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect"
+    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect-0"
   },
   {
     "name": "Barre to Mocktails: Move, Learn, Connect",
@@ -2141,11 +2141,11 @@
     "startTime": "1:00 PM",
     "endDate": "2026-03-10",
     "endTime": "3:00 PM",
-    "location": "Student Recreation & Wellness Center\n        Room 2015 and Room 1020",
-    "description": "Join Campus Rec for an empowering afternoon featuring our low-impact Barre class, which incorporates elements of Ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life.",
+    "location": "Student Recreation & Wellness Center\n        Student Recreation and Wellness Center\r\nBarre Class from 1:00 pm - 1:45 pm in Room 2015\r\nBystander Training & Mocktails from 2:00 pm - 3:00 pm in Room 1020",
+    "description": "Join us for an empowering afternoon featuring our low-impact barre class, which incorporates elements of ballet, Pilates, and resistance training for a full-body workout that will strengthen and challenge you. Afterward, participate in an engaging Alcohol Bystander Training where you'll learn how to recognize the signs of alcohol poisoning, confidently step in when someone\u2019s at risk, and become the supportive bystander who could save a life. Both portions of the event can be attended individually\u2014come to one or stay for both!",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
-    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect-0"
+    "link": "https://www.unlv.edu/event/barre-mocktails-move-learn-connect"
   },
   {
     "name": "Thesis Defense: Austin Tang",
@@ -12317,11 +12317,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -12329,11 +12329,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -12716,8 +12716,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
-    "link": "https://www.unlv.edu/event/coffee-karly-7"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
+    "link": "https://www.unlv.edu/event/coffee-karly-6"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -18513,7 +18513,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
