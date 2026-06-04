@@ -1,5 +1,23 @@
 [
   {
+    "name": "Coping With Colorectal Cancer",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-04",
+    "publishedAt": "2026-06-04T08:43:10-07:00",
+    "summary": "Statistically speaking, the 5-year relative survival rate for Stage IIA colorectal cancer is generally high, estimated at over 90%.",
+    "link": "https://indiacurrents.com/coping-with-colorectal-cancer/"
+  },
+  {
+    "name": "UNLV mosquito lab: No local mosquitoes have tested positive for West Nile so far",
+    "category": "K.V.V.U. T.V. Fox 5",
+    "section": "In The News",
+    "publishedDate": "2026-06-04",
+    "publishedAt": "2026-06-04T08:41:36-07:00",
+    "summary": "Louisa Messenger, a researcher at UNLV\u2019s mosquito lab, said less than 1 percent of people with West Nile virus develop neuroinvasive cases. The virus crosses the blood-brain barrier and causes symptoms like meningitis and inflammation of the tissues of the brain.",
+    "link": "https://www.fox5vegas.com/2026/06/04/unlv-mosquito-lab-no-local-mosquitoes-have-tested-positive-west-nile-so-far/"
+  },
+  {
     "name": "Common medications may disrupt brain development",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -61,23 +79,5 @@
     "publishedAt": "2026-06-02T15:58:38-07:00",
     "summary": "The proposal comes days after Fertitta Entertainment agreed to acquire Caesars Entertainment, putting two of the largest U.S. casino operators at the center of major takeover deals.",
     "link": "https://www.gamblinginsider.com/news/164641/barry-diller-people-incorporated-18b-offer-mgm"
-  },
-  {
-    "name": "Federal grant brings mobile dementia screening to rural Nevada",
-    "category": "K.V.V.U. T.V. Fox 5",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T14:02:03-07:00",
-    "summary": "The program will include educational outreach activities in rural communities focused on early identification and reducing modifiable risk factors for dementia. The efforts will include collaborations with partners across Nevada, including UNLV and community stakeholders.",
-    "link": "https://www.fox5vegas.com/2026/06/02/federal-grant-brings-mobile-dementia-screening-rural-nevada/"
-  },
-  {
-    "name": "UNLV proposes Downtown Las Vegas expansion",
-    "category": "K.L.A.S. T.V. 8 News Now",
-    "section": "In The News",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T13:56:03-07:00",
-    "summary": "UNLV wants a floor in downtown Las Vegas\u2019s new $190 million Civic Center. The school plans to feature a \u201cRebel One Stop\u201d to help with admissions, financial aid and advising. UNLV will also have a Cyber Clinic for online safety, programs with the Boyd School of Law and other ties with local governments.",
-    "link": "https://www.8newsnow.com/news/local-news/unlv-proposes-downtown-las-vegas-expansion/"
   }
 ]
