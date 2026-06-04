@@ -1,15 +1,5 @@
 [
   {
-    "name": "Last Chance Invitational",
-    "startDate": "2026-03-05",
-    "startTime": "4:00 PM",
-    "endDate": "2026-03-05",
-    "endTime": "",
-    "location": "Las Vegas, NV",
-    "sport": "Swimming & Diving",
-    "link": ""
-  },
-  {
     "name": "North Dakota State",
     "startDate": "2026-03-06",
     "startTime": "",
@@ -3108,5 +3098,15 @@
     "location": "Las Vegas, NV Allegiant Stadium",
     "sport": "Football",
     "link": "https://www.unlvtickets.com/eventInfo/ath/8/rebel-football/"
+  },
+  {
+    "name": "UTSA",
+    "startDate": "2026-12-03",
+    "startTime": "",
+    "endDate": "2026-12-03",
+    "endTime": "",
+    "location": "San Antonio, TX",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/utsa/boxscore/17323"
   }
 ]
