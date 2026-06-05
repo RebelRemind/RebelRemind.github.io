@@ -1,55 +1,5 @@
 [
   {
-    "name": "North Dakota State",
-    "startDate": "2026-03-06",
-    "startTime": "",
-    "endDate": "2026-03-06",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/north-dakota-state/boxscore/17814"
-  },
-  {
-    "name": "Utah Tech",
-    "startDate": "2026-03-06",
-    "startTime": "",
-    "endDate": "2026-03-06",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-tech/boxscore/17736"
-  },
-  {
-    "name": "Seattle",
-    "startDate": "2026-03-06",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-06",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/6/womens-tennis-shuts-out-seattle.aspx"
-  },
-  {
-    "name": "Minnesota",
-    "startDate": "2026-03-06",
-    "startTime": "7:00 PM",
-    "endDate": "2026-03-06",
-    "endTime": "9:13 PM",
-    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/minnesota/boxscore/17751"
-  },
-  {
-    "name": "San Diego State",
-    "startDate": "2026-03-06",
-    "startTime": "7:00 PM",
-    "endDate": "2026-03-06",
-    "endTime": "",
-    "location": "San Diego, California",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/san-diego-state/boxscore/17631"
-  },
-  {
     "name": "LMU",
     "startDate": "2026-03-07",
     "startTime": "",
@@ -3108,5 +3058,15 @@
     "location": "San Antonio, TX",
     "sport": "Women's Basketball",
     "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/utsa/boxscore/17323"
+  },
+  {
+    "name": "Minnesota Invitational",
+    "startDate": "2026-12-04",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-12-04",
+    "endTime": "",
+    "location": "Minneapolis, MN",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/4/swimming-diving-rebels-break-records-on-opening-night-of-the-minnesota-invitational.aspx"
   }
 ]
