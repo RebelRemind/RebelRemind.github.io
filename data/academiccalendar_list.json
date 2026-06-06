@@ -432,6 +432,14 @@
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   },
   {
+    "name": "Instruction ends for summer session I.",
+    "startDate": "2026-06-05",
+    "startTime": "",
+    "endDate": "2026-06-05",
+    "endTime": "",
+    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+  },
+  {
     "name": "Summer Session II Instruction Begins",
     "startDate": "2026-06-08",
     "startTime": "",
@@ -448,20 +456,20 @@
     "link": "https://www.unlv.edu/event/summer-session-i-grades-due"
   },
   {
-    "name": "Juneteenth Recess",
-    "startDate": "2026-06-19",
-    "startTime": "",
-    "endDate": "2026-06-19",
-    "endTime": "",
-    "link": "https://www.unlv.edu/event/juneteenth-recess-0"
-  },
-  {
     "name": "Juneteenth Day Recess",
     "startDate": "2026-06-19",
     "startTime": "",
     "endDate": "2026-06-19",
     "endTime": "",
     "link": "https://www.unlv.edu/event/juneteenth-day-recess-2"
+  },
+  {
+    "name": "Juneteenth Recess",
+    "startDate": "2026-06-19",
+    "startTime": "",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "link": "https://www.unlv.edu/event/juneteenth-recess-0"
   },
   {
     "name": "Independence Day Recess",

@@ -1,56 +1,6 @@
 [
   {
     "name": "LMU",
-    "startDate": "2026-03-07",
-    "startTime": "",
-    "endDate": "2026-03-07",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/lmu/boxscore/17815"
-  },
-  {
-    "name": "North Dakota State",
-    "startDate": "2026-03-07",
-    "startTime": "",
-    "endDate": "2026-03-07",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/north-dakota-state/boxscore/17816"
-  },
-  {
-    "name": "Beach Opener",
-    "startDate": "2026-03-07",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-07",
-    "endTime": "",
-    "location": "Long Beach, Calif.",
-    "sport": "Women's Track & Field",
-    "link": "https://unlvrebels.com/news/2026/3/7/womens-track-field-rebel-dup-performs-well-in-long-beach.aspx"
-  },
-  {
-    "name": "Northern Arizona",
-    "startDate": "2026-03-07",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-07",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/7/womens-tennis-netters-notch-another-7-0-blanking.aspx"
-  },
-  {
-    "name": "Southern Illinois",
-    "startDate": "2026-03-07",
-    "startTime": "11:01 PM",
-    "endDate": "2026-03-07",
-    "endTime": "2:00 AM",
-    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/southern-illinois/boxscore/17752"
-  },
-  {
-    "name": "LMU",
     "startDate": "2026-03-08",
     "startTime": "",
     "endDate": "2026-03-08",
@@ -3068,5 +3018,25 @@
     "location": "Minneapolis, MN",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/4/swimming-diving-rebels-break-records-on-opening-night-of-the-minnesota-invitational.aspx"
+  },
+  {
+    "name": "Silver State Invitational & Combined Event",
+    "startDate": "2026-12-05",
+    "startTime": "",
+    "endDate": "2026-12-05",
+    "endTime": "",
+    "location": "Reno, Nev.",
+    "sport": "Women's Track & Field",
+    "link": "https://unlvrebels.com/news/2025/12/6/womens-track-field-rebels-perform-well-at-silver-state-invitational-combined-events.aspx"
+  },
+  {
+    "name": "Minnesota Invitational",
+    "startDate": "2026-12-05",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-12-05",
+    "endTime": "",
+    "location": "Minneapolis, MN",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/5/swimming-diving-rebels-collect-top-5-finishes-on-day-two-in-minnesota.aspx"
   }
 ]
