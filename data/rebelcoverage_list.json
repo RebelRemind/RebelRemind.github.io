@@ -1,45 +1,5 @@
 [
   {
-    "name": "LMU",
-    "startDate": "2026-03-08",
-    "startTime": "",
-    "endDate": "2026-03-08",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/lmu/boxscore/17817"
-  },
-  {
-    "name": "No. 7 Fresno State",
-    "startDate": "2026-03-08",
-    "startTime": "",
-    "endDate": "2026-03-08",
-    "endTime": "",
-    "location": "Las Vegas Thomas & Mack Center",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/no-7-fresno-state/boxscore/17661"
-  },
-  {
-    "name": "New Mexico State",
-    "startDate": "2026-03-08",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-08",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/8/womens-tennis-finishes-off-perfect-weekend.aspx"
-  },
-  {
-    "name": "Northwestern",
-    "startDate": "2026-03-08",
-    "startTime": "2:02 PM",
-    "endDate": "2026-03-08",
-    "endTime": "5:01 PM",
-    "location": "Minneapolis, Minn. / U.S. Bank Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/northwestern/boxscore/17753"
-  },
-  {
     "name": "No. 3 Colorado State",
     "startDate": "2026-03-09",
     "startTime": "",
@@ -3038,5 +2998,25 @@
     "location": "Minneapolis, MN",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/5/swimming-diving-rebels-collect-top-5-finishes-on-day-two-in-minnesota.aspx"
+  },
+  {
+    "name": "Rice",
+    "startDate": "2026-12-06",
+    "startTime": "",
+    "endDate": "2026-12-06",
+    "endTime": "",
+    "location": "Houston, TX",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/rice/boxscore/17324"
+  },
+  {
+    "name": "Minnesota Invitational",
+    "startDate": "2026-12-06",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-12-06",
+    "endTime": "",
+    "location": "Minneapolis, MN",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/6/swimming-diving-rebels-wrap-up-minnesota-invitational.aspx"
   }
 ]
