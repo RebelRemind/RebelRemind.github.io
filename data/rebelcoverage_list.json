@@ -1,35 +1,5 @@
 [
   {
-    "name": "No. 3 Colorado State",
-    "startDate": "2026-03-09",
-    "startTime": "",
-    "endDate": "2026-03-09",
-    "endTime": "",
-    "location": "Las Vegas Thomas & Mack Center",
-    "sport": "Women's Basketball",
-    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/no-3-colorado-state/boxscore/17824"
-  },
-  {
-    "name": "Juli Inkster at TPC Harding Park",
-    "startDate": "2026-03-09",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-09",
-    "endTime": "",
-    "location": "San Francisco, CA",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/9/womens-golf-rebel-trio-in-top-30-at-tpc-harding-park.aspx"
-  },
-  {
-    "name": "NCAA Zone E Diving Championships",
-    "startDate": "2026-03-09",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-09",
-    "endTime": "",
-    "location": "Flagstaff, AZ",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/3/9/swimming-diving-rebels-complete-day-one-of-ncaa-zone-e-championships.aspx"
-  },
-  {
     "name": "Juli Inkster at TPC Harding Park",
     "startDate": "2026-03-10",
     "startTime": "(ALL DAY)",
@@ -3018,5 +2988,15 @@
     "location": "Minneapolis, MN",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/6/swimming-diving-rebels-wrap-up-minnesota-invitational.aspx"
+  },
+  {
+    "name": "Stanford",
+    "startDate": "2026-12-07",
+    "startTime": "1:00 PM",
+    "endDate": "2026-12-07",
+    "endTime": "",
+    "location": "Palo Alto, California",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/stanford/boxscore/17451"
   }
 ]
