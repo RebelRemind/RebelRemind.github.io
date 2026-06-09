@@ -10541,11 +10541,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -10553,11 +10553,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -16737,7 +16737,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
