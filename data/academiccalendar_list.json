@@ -446,5 +446,21 @@
     "endDate": "2026-06-08",
     "endTime": "",
     "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+  },
+  {
+    "name": "Grades due for summer session I classes.",
+    "startDate": "2026-06-09",
+    "startTime": "",
+    "endDate": "2026-06-09",
+    "endTime": "",
+    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
+  },
+  {
+    "name": "Last day to drop summer session II classes without a W grade.",
+    "startDate": "2026-06-09",
+    "startTime": "",
+    "endDate": "2026-06-09",
+    "endTime": "",
+    "link": "https://catalog.unlv.edu/content.php?catoid=50&navoid=15615"
   }
 ]

@@ -1,5 +1,41 @@
 [
   {
+    "name": "UNLV and Franklin Venture Studio Advance University Research Toward Commercialization",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-06-09",
+    "publishedAt": "2026-06-09T14:46:12-0700",
+    "summary": "Five UNLV-led projects were selected for commercialization and startup support through a collaboration between the UNLV Office of Economic Development, Franklin Venture Studio by Franklin Advisory, and the Nevada Governor's Office of Economic Development's Knowledge Fund. The...",
+    "link": "https://www.unlv.edu/news/unlvtoday/unlv-and-franklin-venture-studio-advance-university-research-toward"
+  },
+  {
+    "name": "Summer Group Swim Lessons & Free Grant Opportunities at Student Recreation & Wellness Center",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-06-09",
+    "publishedAt": "2026-06-09T13:38:19-0700",
+    "summary": "The Student Recreation and Wellness Center (SRWC) is excited to announce Group Swim Lessons for this summer! Lessons will be held every Saturday morning at the SRWC pool. Thanks to a wonderful new partnership with Step Into Swim, we have received a grant to provide free,...",
+    "link": "https://www.unlv.edu/news/unlvtoday/summer-group-swim-lessons-free-grant-opportunities-student-recreation-wellness"
+  },
+  {
+    "name": "EZproxy Server Maintenance June 12",
+    "category": "Announcements",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-06-09",
+    "publishedAt": "2026-06-09T13:27:41-0700",
+    "summary": "The University Libraries' EZproxy server will be unavailable from 9 to 11 p.m. Friday, June 12, due to scheduled maintenance. During this time, access to library databases through the Libraries website will be unavailable. Please plan any database-dependent research...",
+    "link": "https://www.unlv.edu/news/unlvtoday/ezproxy-server-maintenance-june-12"
+  },
+  {
+    "name": "Classified/Academic/Administrative/Postdoctoral Scholar Employment Opportunities",
+    "category": "HR and Employment",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-06-09",
+    "publishedAt": "2026-06-09T12:26:11-0700",
+    "summary": "Each week, Human Resources will inform the campus community about new internal job opportunities. The following is a listing of new UNLV classified job openings for the week: Classified Employment Opportunities",
+    "link": "https://www.unlv.edu/news/unlvtoday/classifiedacademicadministrativepostdoctoral-scholar-employment-opportunities-26"
+  },
+  {
     "name": "Join us for Upcoming UNLV Alumni Nights June 24, July 24 & 28",
     "category": "Save-The-Date",
     "section": "More from the Last Week",
@@ -7,6 +43,15 @@
     "publishedAt": "2026-06-09T10:50:19-0700",
     "summary": "Join the UNLV Alumni Association for one of our UNLV Alumni Nights this summer and enjoy discounted tickets and an evening with fellow Rebels!",
     "link": "https://www.unlv.edu/news/unlvtoday/join-us-upcoming-unlv-alumni-nights-june-24-july-24-28"
+  },
+  {
+    "name": "Juneteenth Celebration at Pearson Community Center June 12",
+    "category": "Save-The-Date",
+    "section": "More from the Last Week",
+    "publishedDate": "2026-06-09",
+    "publishedAt": "2026-06-08T13:21:06-0700",
+    "summary": "The UNLV community is invited to attend the $10 Experience Juneteenth Celebration on Friday, June 12, from 3 p.m. to 9 p.m. at the Pearson Community Center. The event will feature food vendors, games, family-friendly activities, and information about health, educational, and...",
+    "link": "https://www.unlv.edu/news/unlvtoday/juneteenth-celebration-pearson-community-center-june-12"
   },
   {
     "name": "UNLV Writing Center Now Open for Virtual Consultations",
@@ -61,32 +106,5 @@
     "publishedAt": "2026-06-03T11:30:06-0700",
     "summary": "After more than 20 years of dedicated service, Mary Murray, Administrative Assistant IV, will be retiring from the UNLV School of Nursing. Her last day is June 29. Mary has been a constant presence through years of growth and change at the school, always willing to step up,...",
     "link": "https://www.unlv.edu/news/unlvtoday/unlv-nursings-mary-murray-retires-after-more-20-years"
-  },
-  {
-    "name": "Classified Employee of the Month Nominations",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T15:03:12-0700",
-    "summary": "Nomination Process If you know a classified employee who deserves an opportunity at this noteworthy award, please submit your nominations by Friday, June 26.",
-    "link": "https://www.unlv.edu/news/unlvtoday/classified-employee-month-nominations-24"
-  },
-  {
-    "name": "Rebel Grounds Open during Summer 2 & 3",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T15:01:13-0700",
-    "summary": "Spread the word! Rebels Grounds is opening during Summer Session 2 and Summer Session 3 (June 9 - August 13, 2026). Stop by for an ice-cold latte or a delicious summer tea. Rebel Grounds Summer Hours 8 a.m. to 1 p.m. Tuesday, Wednesday, and Thursday",
-    "link": "https://www.unlv.edu/news/unlvtoday/rebel-grounds-open-during-summer-2-3"
-  },
-  {
-    "name": "New UNLV/CSUN Preschool Director",
-    "category": "People (new hires, retirements, etc.)",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-06-02",
-    "publishedAt": "2026-06-02T09:42:18-0700",
-    "summary": "Earlier this week, Chelsie Shurtleff took the helm as the director of the UNLV/CSUN Preschool at the Lynn Bennett Early Childhood Education Center. She is an experienced early childhood education professional and researcher with a bachelor's degree in early childhood...",
-    "link": "https://www.unlv.edu/news/unlvtoday/new-unlvcsun-preschool-director"
   }
 ]
