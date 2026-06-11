@@ -2106,10 +2106,10 @@
     "endDate": "2026-03-17",
     "endTime": "11:00 AM",
     "location": "Shadow Lane Advanced Dental Education\n        School of Dental Medicine Building D Classroom 228",
-    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH, Advisory Committee Chair Dr. Tanya Al-Talib, Committee Member Dr. Charles Hill, Committee Member Arpita Basu, Ph.D., Graduate College Representative",
+    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH Advisory Committee Chair Dr. Tanya Al-Talib, Advisory Committee Member Dr. Charles Hill, Advisory Committee Member Arpita Basu, Ph.D., Graduate College Representative",
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-D-D66257_13.jpg?itok=nR1Opk2Q",
-    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le-0"
+    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le"
   },
   {
     "name": "Cutting Through the Clutter",
@@ -7157,11 +7157,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union First Floor Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
+    "location": "Student Union\n        Student Union Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids-0"
+    "link": "https://www.unlv.edu/event/comics-kids"
   },
   {
     "name": "Comics for Kids",
@@ -7169,11 +7169,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
+    "location": "Student Union\n        Student Union First Floor Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids"
+    "link": "https://www.unlv.edu/event/comics-kids-0"
   },
   {
     "name": "Thesis Defense: Shanika Wickramarachchi",
@@ -10541,11 +10541,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Festival of Communities",
@@ -10553,11 +10553,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Guided Imagery Practice",
@@ -11117,11 +11117,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -11129,11 +11129,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
@@ -14517,7 +14517,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-8"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-10"
   },
   {
     "name": "Dissertation Defense: Anthony Graham",
@@ -16737,7 +16737,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
@@ -22296,6 +22296,18 @@
     "link": "https://www.unlv.edu/event/day-library?delta=21"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-09",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-09",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=1"
+  },
+  {
     "name": "Summer Session I Grades Due",
     "startDate": "2026-06-09",
     "startTime": "(ALL DAY)",
@@ -22488,6 +22500,18 @@
     "link": "https://www.unlv.edu/event/reb-general-member-meetings-0?delta=19"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-10",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-10",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=2"
+  },
+  {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
     "startDate": "2026-06-10",
     "startTime": "(ALL DAY)",
@@ -22644,6 +22668,18 @@
     "link": "https://www.unlv.edu/event/familyparents-meet-and-greet"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-11",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-11",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=3"
+  },
+  {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
     "startDate": "2026-06-11",
     "startTime": "(ALL DAY)",
@@ -22798,6 +22834,18 @@
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/rll-D76637_010-2000x1333.jpg?itok=WX8mCfDU",
     "link": "https://www.unlv.edu/event/dissertation-defense-allison-cicero"
+  },
+  {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-12",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-12",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=4"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
@@ -22980,6 +23028,18 @@
     "link": "https://www.unlv.edu/event/prospective-undergraduate-engineering-spotlight-tour-0?delta=1"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-13",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-13",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=5"
+  },
+  {
     "name": "Hands Only CPR Guinness World Records Record Attempt",
     "startDate": "2026-06-13",
     "startTime": "(ALL DAY)",
@@ -23160,6 +23220,18 @@
     "link": "https://www.unlv.edu/event/live-broadcast-vics-supper-club?delta=4"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-14",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-14",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=6"
+  },
+  {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
     "startDate": "2026-06-14",
     "startTime": "(ALL DAY)",
@@ -23254,6 +23326,18 @@
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/1st-international-online-conference-education-sciences"
+  },
+  {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-15",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-15",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=7"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
@@ -23364,6 +23448,18 @@
     "link": "https://www.unlv.edu/event/getting-involved-unlv-what-impact-do-you-want-make-1"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-16",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-16",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=8"
+  },
+  {
     "name": "A Day at the Library",
     "startDate": "2026-06-16",
     "startTime": "10:00 AM",
@@ -23412,6 +23508,18 @@
     "link": "https://www.unlv.edu/event/reb-general-member-meetings-0?delta=20"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-17",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-17",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=9"
+  },
+  {
     "name": "A Day at the Library",
     "startDate": "2026-06-17",
     "startTime": "10:00 AM",
@@ -23446,6 +23554,18 @@
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/csb-d64277_17.jpg?itok=YOt-T5LK",
     "link": "https://www.unlv.edu/event/meet-tiaa-representative-campus-26"
+  },
+  {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-18",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-18",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=10"
   },
   {
     "name": "A Day at the Library",
@@ -23508,6 +23628,18 @@
     "link": "https://www.unlv.edu/event/915-jazz-and-more-live-broadcast-virgin-hotel-las-vegas?delta=4"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-19",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-19",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=11"
+  },
+  {
     "name": "Juneteenth Day Recess",
     "startDate": "2026-06-19",
     "startTime": "(ALL DAY)",
@@ -23568,6 +23700,18 @@
     "link": "https://www.unlv.edu/event/915-jazz-and-more-live-broadcast-tap-ash?delta=43"
   },
   {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-20",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-20",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=12"
+  },
+  {
     "name": "A Day at the Library",
     "startDate": "2026-06-20",
     "startTime": "10:00 AM",
@@ -23614,6 +23758,18 @@
     "category": "Arts",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/live-broadcast-vics-supper-club?delta=5"
+  },
+  {
+    "name": "Education Alumni Chapter Summer Food Drive",
+    "startDate": "2026-06-21",
+    "startTime": "(ALL DAY)",
+    "endDate": "2026-06-21",
+    "endTime": "",
+    "location": "Virtual",
+    "description": "In support of Nevada Partnership for Homeless Youth, the College of Education Alumni Chapter announces a summer food drive event! Youth experiencing homelessness often do not have consistent access to daily meals when school is out. Food insecurity increases, particularly during the summer months of June and July. You can contribute in two ways:",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Alumni%20Chapter%20-%20TWYN%20-%20UNLV%20Calendar%20%28850%20%C3%97%20566%20px%29.png?itok=ROhXmxH3",
+    "link": "https://www.unlv.edu/event/education-alumni-chapter-summer-food-drive?delta=13"
   },
   {
     "name": "A Day at the Library",
