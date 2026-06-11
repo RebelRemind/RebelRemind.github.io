@@ -777,7 +777,7 @@
     "description": "To ensure a smooth transition, the Graduate Recruitment team is here to answer any questions you may inquire regarding your next steps to completing your application at UNLV.",
     "category": "Culture",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-9"
+    "link": "https://www.unlv.edu/event/virtual-international-student-guide-graduate-school-7"
   },
   {
     "name": "Communication Skills Workshop",
@@ -10541,11 +10541,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -10553,11 +10553,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -10940,8 +10940,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
-    "link": "https://www.unlv.edu/event/coffee-karly-7"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
+    "link": "https://www.unlv.edu/event/coffee-karly-6"
   },
   {
     "name": "Consent is as Simple as Tea",
