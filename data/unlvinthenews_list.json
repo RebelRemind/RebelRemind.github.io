@@ -1,5 +1,50 @@
 [
   {
+    "name": "June 10: Nevada primaries, childcare costs, and the Fallout Fringe Festival returns",
+    "category": "K.N.P.R. News",
+    "section": "In The News",
+    "publishedDate": "2026-06-11",
+    "publishedAt": "2026-06-11T13:12:46-07:00",
+    "summary": "Takeaways from Nevada's 2026 primary election, negotiating childcare availability and costs during summer break, and Vegas' largest fringe festival returns for its second year \u2014 all that and more on the latest episode of KNPR's State of Nevada.",
+    "link": "https://knpr.org/podcast/state-of-nevada/2026-06-10/june-10-nevada-primaries-childcare-costs-fallout-fringe-festival-returns"
+  },
+  {
+    "name": "Las Vegas Strip Casino Income Dropped 80% in 2025: Is Sin City Dying?",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-11",
+    "publishedAt": "2026-06-11T12:20:57-07:00",
+    "summary": "Las Vegas Strip casinos have suffered a fresh financial blow, with regulators reporting an 81% year-on-year drop in net income in 2025.",
+    "link": "https://casinobeats.com/2026/06/11/las-vegas-strip-casino-income-dropped-80-in-2025-is-sin-city-dying/"
+  },
+  {
+    "name": "UNLV doctor details sunscreen significance of FDA approving new UV-blocking ingredient",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-06-11",
+    "publishedAt": "2026-06-11T11:26:55-07:00",
+    "summary": "The Food and Drug Administration has approved a new sunscreen active ingredient for use in over-the-counter products, marking the first time in roughly 20 years that Americans will have access to a new formula.",
+    "link": "https://news3lv.com/news/arc/unlv-doctor-details-sunscreen-significance-of-fda-approves-new-uv-blocking-ingredient"
+  },
+  {
+    "name": "UNLV physicists test X-ray method to regenerate lithium-ion batteries",
+    "category": "K.V.V.U. T.V. Fox 5",
+    "section": "In The News",
+    "publishedDate": "2026-06-10",
+    "publishedAt": "2026-06-10T21:27:00-07:00",
+    "summary": "Researchers aim to extend battery life in electric vehicles, phones and laptops instead of sending packs to landfills",
+    "link": "https://www.fox5vegas.com/2026/06/11/unlv-physicists-test-x-ray-method-regenerate-lithium-ion-batteries/?outputType=amp"
+  },
+  {
+    "name": "Nellis AFB, UNLV collaborate on preserving the base\u2019s history",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-10",
+    "publishedAt": "2026-06-10T17:40:00-07:00",
+    "summary": "The 99th Air Base Wing History Office at Nellis Air Force Base, Nev., has launched a collaboration with University of Nevada, Las Vegas to digitize its collection of more than 50,000 newspaper pages, some articles dating back to the base\u2019s earliest days in World War II.",
+    "link": "https://www.aerotechnews.com/blog/2026/06/10/nellis-afb-unlv-collaborate-on-preserving-the-bases-history/"
+  },
+  {
     "name": "Is Fibermaxxing Safe? Dietitians Support the Trend but Only if You Avoid These Mistakes",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -34,50 +79,5 @@
     "publishedAt": "2026-06-10T12:36:38-07:00",
     "summary": "A case study published in Frontiers in Neuroscience is making big waves in the dementia research community.",
     "link": "https://www.medicalnewstoday.com/articles/psilocybin-helped-a-woman-with-advanced-dementia-but-more-questions-remain"
-  },
-  {
-    "name": "Quantum \u2018Fingerprints\u2019 May Be Shaping Your Decisions\u2014And Ultimately Your Free Will, Scientist Says",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-10",
-    "publishedAt": "2026-06-10T11:39:26-07:00",
-    "summary": "New research suggests that fleeting quantum forces leave lasting imprints on the brain, subtly influencing thought, intuition, and the choices we make.",
-    "link": "https://www.popularmechanics.com/science/a71526194/quantum-pings-brain/"
-  },
-  {
-    "name": "Nevada GOP Gov. Joe Lombardo projected to face Democrat Aaron Ford in one of this year's most competitive races",
-    "category": "C.B.S. News",
-    "section": "In The News",
-    "publishedDate": "2026-06-10",
-    "publishedAt": "2026-06-10T11:26:27-07:00",
-    "summary": "Nevada Attorney General Aaron Ford, a Democrat, and Republican Gov. Joe Lombardo won their parties' primaries in this year's Nevada gubernatorial race, CBS News projects, setting up the November ballot in one of the races Democrats are targeting.",
-    "link": "https://www.cbsnews.com/news/nevada-governor-primary-results-joe-lombardo-aaron-ford/?intcid=CNI-00-10aaa3a"
-  },
-  {
-    "name": "Nevada Primary Election: Ford to face Lombardo in governor's race",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-10",
-    "publishedAt": "2026-06-10T05:57:00-07:00",
-    "summary": "As polls closed across Nevada Tuesday evening, Clark County election officials began processing thousands of ballots delivered to the county\u2019s election headquarters.",
-    "link": "https://www.youtube.com/watch?v=xV0nWs9w1AY"
-  },
-  {
-    "name": "New fossils suggest human evolution was more crowded than scientists thought",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-09",
-    "publishedAt": "2026-06-09T15:29:00-07:00",
-    "summary": "New fossil discoveries are reshaping scientists' understanding of a pivotal chapter in human evolution, revealing that several human ancestor lineages lived side by side nearly 3 million years ago.",
-    "link": "https://www.baltimoresun.com/2026/06/09/human-evolution-crowded/"
-  },
-  {
-    "name": "Scientists Say Whitney Houston and Adele Songs May Be Natural Mosquito Repellent\u2014Here\u2019s Why",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-09",
-    "publishedAt": "2026-06-09T13:48:33-07:00",
-    "summary": "Studies reveal extreme pitch changes in music confuse bugs and reduce biting attempts.",
-    "link": "https://www.womansworld.com/wellness/natural-mosquito-repellent-music-that-keeps-bugs-away"
   }
 ]
