@@ -1,29 +1,5 @@
 [
   {
-    "name": "K-pop Club Dance Team Audition",
-    "startDate": "2026-03-13",
-    "startTime": "3:00 PM",
-    "endDate": "2026-03-13",
-    "endTime": "5:00 PM",
-    "location": "SRWC Room 2015",
-    "organization": "K-pop Club",
-    "description": "K-pop Club is holding auditions on March 13th to create a dance team! You will present 30-60 seconds of any K-pop choreography and have a brief interview with the judges so we can get to know you. The K-pop Club dance team will have opportunities to perform and film dance covers \u2606 If you have any questions, you can either email montav3@unlv.nevada.edu or message us on Instagram @unlvkpop_official!:D The link to sign up for the audition: https://forms.gle/m6wx58WmTrPmN2jS6",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/6dca6dc9-698c-4f6e-8bde-4f19dc3119e7cf874b2f-d518-4a32-a67e-9bf7e3198649.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12308316"
-  },
-  {
-    "name": "Friday kick!",
-    "startDate": "2026-03-13",
-    "startTime": "6:30 PM",
-    "endDate": "2026-03-13",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! We'll meet in the lobby of the Rec. See the latest exact plans on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/048ac95f-e5ce-4cf5-a1ec-47e6503da0723991180e-afb3-4ece-a00f-600320d5560a.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063324"
-  },
-  {
     "name": "Habitat Restoration at Desert National Wildlife Refuge",
     "startDate": "2026-03-15",
     "startTime": "8:00 AM",
@@ -3658,6 +3634,18 @@
     "description": "Join us for guided meditation. No registration needed.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/7929eaab-ea5a-40d5-b9a8-df67c7dbe4d571425b50-4c18-4491-98d4-c74e5e370a69.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12481176"
+  },
+  {
+    "name": "Donuts & Discussion",
+    "startDate": "2026-06-25",
+    "startTime": "6:00 PM",
+    "endDate": "2026-06-25",
+    "endTime": "8:00 PM",
+    "location": "Student Union - Room 219",
+    "organization": "Y-Elements @ UNLV",
+    "description": "Got qualms about life? Curious about hope & faith? Come by and enjoy some sweets & drinks as we answer your biggest questions. Questions can be submitted anonymously using the following link: https://forms.gle/EZHKQ7QpCG4xphdd8",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/d2186c27-ecfe-4117-87c6-3e0ec78326616048ffe4-291b-4383-a6a0-2620cfad6795.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12487523"
   },
   {
     "name": "Summer Food Drive",
