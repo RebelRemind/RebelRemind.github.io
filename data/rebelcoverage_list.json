@@ -1,35 +1,5 @@
 [
   {
-    "name": "San Jose State",
-    "startDate": "2026-03-15",
-    "startTime": "",
-    "endDate": "2026-03-15",
-    "endTime": "",
-    "location": "San Jose, CA",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-jose-state/boxscore/17685"
-  },
-  {
-    "name": "The Michael A. Marino",
-    "startDate": "2026-03-15",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-15",
-    "endTime": "",
-    "location": "Myrtle Beach, SC",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/15/mens-golf-little-lewis-in-top-20-after-day-one-in-myrtle-beach.aspx"
-  },
-  {
-    "name": "Air Force",
-    "startDate": "2026-03-15",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-15",
-    "endTime": "",
-    "location": "Colorado Springs, CO",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/15/womens-tennis-rebel-netters-win-sixth-straight-4-1-at-air-force.aspx"
-  },
-  {
     "name": "Jackrabbits Invitational",
     "startDate": "2026-03-16",
     "startTime": "(ALL DAY)",
@@ -2848,5 +2818,25 @@
     "location": "Palo Alto, California",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/stanford/boxscore/17451"
+  },
+  {
+    "name": "Cincinnati",
+    "startDate": "2026-12-13",
+    "startTime": "",
+    "endDate": "2026-12-13",
+    "endTime": "",
+    "location": "Cincinnati, OH",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/cincinnati/boxscore/17325"
+  },
+  {
+    "name": "Tennessee State",
+    "startDate": "2026-12-13",
+    "startTime": "6:30 PM",
+    "endDate": "2026-12-13",
+    "endTime": "",
+    "location": "Lee's Family Forum, Henderson, Nevada",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/tennessee-state/boxscore/17452"
   }
 ]
