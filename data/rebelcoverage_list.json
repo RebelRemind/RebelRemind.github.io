@@ -1,65 +1,5 @@
 [
   {
-    "name": "Utah Tech",
-    "startDate": "2026-03-17",
-    "startTime": "",
-    "endDate": "2026-03-17",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/utah-tech/boxscore/17818"
-  },
-  {
-    "name": "Jackrabbits Invitational",
-    "startDate": "2026-03-17",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-17",
-    "endTime": "",
-    "location": "Boulder City, NV",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/17/womens-golf-rebels-sweep-team-individual-titles-at-jackrabbits-invitational.aspx"
-  },
-  {
-    "name": "The Michael A. Marino",
-    "startDate": "2026-03-17",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-17",
-    "endTime": "",
-    "location": "Myrtle Beach, SC",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/17/mens-golf-little-comes-away-with-top-15-finish-in-myrtle-beach.aspx"
-  },
-  {
-    "name": "Hawai'i",
-    "startDate": "2026-03-17",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-17",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Men's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/17/mens-tennis-shamrock-bake-rebs-beats-holiday-heat-by-doubling-up-bows.aspx"
-  },
-  {
-    "name": "Cal State Fullerton",
-    "startDate": "2026-03-17",
-    "startTime": "6:07 PM",
-    "endDate": "2026-03-17",
-    "endTime": "9:15 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/cal-state-fullerton/boxscore/17759"
-  },
-  {
-    "name": "UC Irvine",
-    "startDate": "2026-03-17",
-    "startTime": "8:00 PM",
-    "endDate": "2026-03-17",
-    "endTime": "",
-    "location": "Irvine, CA",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/uc-irvine/boxscore/17839"
-  },
-  {
     "name": "NCAA Championships (Women)",
     "startDate": "2026-03-18",
     "startTime": "(ALL DAY)",
@@ -2818,5 +2758,15 @@
     "location": "Lee's Family Forum, Henderson, Nevada",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/tennessee-state/boxscore/17452"
+  },
+  {
+    "name": "UNLV Finis Invitational",
+    "startDate": "2026-12-15",
+    "startTime": "9:30 AM",
+    "endDate": "2026-12-15",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/15/swimming-diving-rebels-win-two-events-on-opening-day-of-unlv-finis-invitational.aspx"
   }
 ]
