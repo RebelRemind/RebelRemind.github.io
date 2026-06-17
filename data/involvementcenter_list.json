@@ -1,17 +1,5 @@
 [
   {
-    "name": "Communication Skills Workshop",
-    "startDate": "2026-03-18",
-    "startTime": "3:00 PM",
-    "endDate": "2026-03-18",
-    "endTime": "4:00 PM",
-    "location": "Online",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "This 4 session workshop series will provide students with a new set of communication skills each week.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12308201"
-  },
-  {
     "name": "Friday kick!",
     "startDate": "2026-03-20",
     "startTime": "6:30 PM",
@@ -3655,7 +3643,7 @@
     "endTime": "8:00 PM",
     "location": "Student Union - Room 219",
     "organization": "Y-Elements @ UNLV",
-    "description": "Got qualms about life? Curious about hope & faith? Come by and enjoy some sweets & drinks as we answer your biggest questions. Questions can be submitted anonymously using the following link: https://forms.gle/EZHKQ7QpCG4xphdd8",
+    "description": "Got qualms about life? Curious about hope & faith? Come by and enjoy some sweets & drinks as we answer your biggest questions. Let us know if you want to come by! https://forms.gle/EZHKQ7QpCG4xphdd8 More questions can be submitted any time using this link: https://forms.gle/xkTvucvjwwqvTQme8",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/d2186c27-ecfe-4117-87c6-3e0ec78326616048ffe4-291b-4383-a6a0-2620cfad6795.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12487523"
   },
@@ -3720,6 +3708,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12481144"
   },
   {
+    "name": "Cat Cafe Cleanup ",
+    "startDate": "2026-07-09",
+    "startTime": "8:00 AM",
+    "endDate": "2026-07-09",
+    "endTime": "11:30 AM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Come join UNLVolunteers to help facilitate service at the cat caf\u00e9, Rescue Treasures Cat Caf\u00e9, by assisting with cleaning and caring for the cats in both the caf\u00e9 and intake areas. Participants will support the organization through general facility upkeep, sanitizing spaces, refreshing supplies, and helping maintain a safe, welcoming environment for the cats and visitors. This opportunity allows volunteers to directly support animal rescue efforts while giving back to the local community. Food and transportation will be provided to you! We will meet at the Student Union Eating Bar at 8:00a m. 8:00am - Start of event; meeting at the SU eating bar 8:05am - 8:10am - Education portion 8:10am - 8:15am - Start to leave for site 8:45am - 9:00am - Arrive to site 9:00am - 11:00am - Service event 11:30am - Arrive back",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/d60201b4-0c08-43e9-af63-e7c4604831f70e6a0a45-1b20-40a2-9cc4-a75ca72251db.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12489211"
+  },
+  {
     "name": "Mindful Moments: Weekly Guided Mediation",
     "startDate": "2026-07-09",
     "startTime": "4:00 PM",
@@ -3730,6 +3730,18 @@
     "description": "Join us for guided meditation. No registration needed.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/7929eaab-ea5a-40d5-b9a8-df67c7dbe4d571425b50-4c18-4491-98d4-c74e5e370a69.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12481178"
+  },
+  {
+    "name": "Rebels Amidst The Green: Mt Charleston Retreat",
+    "startDate": "2026-07-11",
+    "startTime": "10:30 AM",
+    "endDate": "2026-07-11",
+    "endTime": "5:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Join UNLVolunteers for an afternoon escape at Mt Charleston. Take a step away from the city and take a moment to breathe some fresh air and reflect on the beauty of the outdoors. Learn about sustainability and how we can keep sustain the charm of Charleston through \"Leave No Trace\" (LNT). After trekking through the wilderness, we will take a moment of meditation to reflect and discuss health and wellness. Meet in the 3rd floor of the Student Union (SU) in the SLL Quad (lobby across the elevator). Please come dressed comfortably for physical activity. Must wear closed toe shoes. Bring plenty of water and sunscreen.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/3bad3dd1-29f1-48c2-8bfa-17fb0e6049bd990ac15b-58b6-462d-8cb7-a2b6f0d0b9cb.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12489218"
   },
   {
     "name": "Mindful Moments: Weekly Guided Mediation",
@@ -3766,6 +3778,30 @@
     "description": "Join us for guided meditation. No registration needed.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/7929eaab-ea5a-40d5-b9a8-df67c7dbe4d571425b50-4c18-4491-98d4-c74e5e370a69.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12481179"
+  },
+  {
+    "name": "SOTA Summer Social at Lake Las Vegas",
+    "startDate": "2026-07-18",
+    "startTime": "4:00 PM",
+    "endDate": "2026-07-18",
+    "endTime": "8:00 PM",
+    "location": "Lake Las Vegas",
+    "organization": "Student Occupational Therapy Association",
+    "description": "Join the Student Occupational Therapy Association (SOTA) for a summer evening of connection, community, and fun at Lake Las Vegas! This free social outing is open to all UNLV undergraduate, graduate, and professional students. Whether you're looking to meet new people, enjoy the beautiful waterfront scenery, explore the village, grab dinner with friends, or simply relax after a busy semester, this event offers a great opportunity to connect with fellow students outside the classroom. Date: Saturday, July 18, 2026 Time: 4:00 PM \u2013 8:00 PM Location: The Village at Lake Las Vegas 20 Costa Di Lago, Henderson, NV 89011 Professional and Undergraduate Students Welcome Students may choose to participate in a variety of optional recreational activities available through Lake Las Vegas vendors, including paddleboarding, kayaking, aqua cycling, electric boat rentals, and other seasonal water activities. Please Note: Attendance is free; however, participants are responsible for the cost of any food, beverages, recreational activities, parking fees, or other purchases made during the event. Activity options and prices vary by vendor and availability. Last water sport rentals end at 6:30pm. Come enjoy a summer evening with SOTA as we build community, make new connections, and celebrate the UNLV student experience.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/4167d714-f28a-4fe8-8353-87206df1ec282567ddc5-624f-4ead-ba92-b56f215c3b47.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12489212"
+  },
+  {
+    "name": "SOTA Summer Social at Lake Las Vegas",
+    "startDate": "2026-07-18",
+    "startTime": "5:00 PM",
+    "endDate": "2026-07-18",
+    "endTime": "8:00 PM",
+    "location": "The Village at Lake Las Vegas",
+    "organization": "Student Occupational Therapy Association",
+    "description": "SOTA Summer Social at Lake Las Vegas Join the Student Occupational Therapy Association (SOTA) for a summer evening of connection, community, and fun at Lake Las Vegas! This free social outing is open to all UNLV undergraduate, graduate, and professional students. Whether you're looking to meet new people, enjoy the beautiful waterfront scenery, explore the village, grab dinner with friends, or simply relax after a busy semester, this event offers a great opportunity to connect with fellow students outside the classroom. Date: Saturday, July 18, 2026 Time: 5:00 PM \u2013 8:00 PM Location: Lake Las Vegas, Henderson, NV Professional and Undergraduate Students are Welcome Students may choose to participate in a variety of optional recreational activities available through Lake Las Vegas vendors, including paddleboarding, kayaking, aqua cycling, electric boat rentals, and other seasonal water activities. Please Note: Attendance is free; however, participants are responsible for the cost of any food, beverages, recreational activities, or other purchases made during the event. Activity options and prices vary by vendor and availability. Come enjoy a summer evening with SOTA as we build community, make new connections, and celebrate the UNLV student experience.",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/48eca0fd-3341-4dc2-bd16-3267ce45fd7285d32588-bd9a-4d47-8aa3-62daa0b399e1.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12489213"
   },
   {
     "name": "Mindful Moments: Weekly Guided Mediation",
@@ -3958,6 +3994,54 @@
     "description": "What if your emotions were your leadership superpower? Join us for a fun and interactive Leadership Link Up inspired by Inside Out as we explore how emotions shape the way we lead, communicate, and navigate college life. Whether you're feeling Joy, Anxiety, Anger, Sadness, or a little bit of everything, you'll learn how emotional awareness can help you build stronger relationships, make better decisions, and lead with authenticity. Connect with fellow first-generation students, enjoy themed activities, and discover how understanding your emotions can strengthen your leadership journey.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/980e4fd4-e88a-4151-88a1-7f85765d50750eabf844-7945-45ca-914e-5a3f35c75722.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12482471"
+  },
+  {
+    "name": "Fall 2026 Service Day: Project 150",
+    "startDate": "2026-09-25",
+    "startTime": "8:00 AM",
+    "endDate": "2026-09-25",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Date: Friday, September 25, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required ( no exceptions ) About the Site: Project 150 is a nonprofit organization dedicated to supporting homeless, displaced, and disadvantaged high school students in Southern Nevada. The organization provides free resources such as food, clothing, hygiene items, school supplies, and other essential support to help students stay in school and work toward graduation in a stable and dignified way. Service Activities: Volunteers will assist with indoor organization and preparation projects that support Project 150\u2019s daily operations. Tasks may include sorting and organizing clothing and supplies, assembling hygiene kits, stocking shelves, and preparing items for student distribution. Volunteers may work individually or in small groups and will be assigned specific tasks by site staff. Important Information: This is an indoor service site that involves standing, light lifting, and repetitive tasks. Volunteers should be comfortable working in a warehouse-style environment and following all instructions provided by Project 150 staff to ensure safety and efficiency. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12489214"
+  },
+  {
+    "name": "Fall 2026 Service Day: Three Square Food Bank",
+    "startDate": "2026-09-25",
+    "startTime": "8:00 AM",
+    "endDate": "2026-09-25",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Date: Friday, September 25th, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required (no exceptions) About the Site: Three Square Food Bank is Southern Nevada\u2019s only food bank and a vital resource in the fight against hunger in our community. Through food distribution, community partnerships, and advocacy, Three Square works to ensure that individuals and families across the region have consistent access to nutritious food. Service Activities: Volunteers will support warehouse-based food distribution efforts by sorting, packing, and organizing food items. Tasks may include standing for extended periods and light lifting to help prepare food for distribution to community partners. Important Information: This service site is primarily indoors. Volunteers should be comfortable working in a warehouse environment and following food safety guidelines. All volunteers must wear long pants and closed-toe shoes. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12489215"
+  },
+  {
+    "name": "Fall 2026 Service Day: Las Vegas Science and Natural History Museum",
+    "startDate": "2026-09-25",
+    "startTime": "8:00 AM",
+    "endDate": "2026-09-25",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Date: Friday, September 25th, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required (no exceptions) About the Site: The Las Vegas Science & Natural History Museum is on a mission to inspire a better understanding and appreciation of the natural world, the sciences, and ourselves through educational exhibits, programming, and research. Service Activities: Volunteers will assist with preparations for DinoBall: Weird Science After Dark, a fundraising gala taking place on September 26, 2026, at the Las Vegas Science & Natural History Museum. Support is needed with event setup, including arranging gallery spaces, moving and positioning tables and d\u00e9cor, preparing exhibit areas for guests, and general museum cleaning and organization before the event. Volunteers may also assist with light logistical tasks to help ensure the museum is guest-ready for the gala. Important Information: Volunteers should be comfortable standing, walking, and performing light to moderate physical activity. Some tasks may involve lifting, carrying, or moving event materials and furniture. Closed-toe shoes are required. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12489216"
+  },
+  {
+    "name": "Fall 2026 Service Day: Las Vegas - Clark County Library District",
+    "startDate": "2026-09-25",
+    "startTime": "8:00 AM",
+    "endDate": "2026-09-25",
+    "endTime": "3:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Date: Friday, September 25th, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required (no exceptions) About the Site: The talented, dedicated staff of the Las Vegas-Clark County Library District is committed to nurturing and elevating the lives of the diverse individuals and groups that we serve, and supporting their aspirations. Service Activities: Help prepare donated books for distribution by sorting, organizing, and moving materials in our warehouse. Your work helps get great books back into the hands of people across Las Vegas. Important Information: This service site is primarily indoors. Volunteers must wear closed-toe shoes and work-appropriate clothing. Please bring a refillable water bottle. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12489217"
   },
   {
     "name": "Snacks & Skills: Democracy and Donuts (The Simpsons)",

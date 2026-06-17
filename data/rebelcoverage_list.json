@@ -1,16 +1,6 @@
 [
   {
     "name": "NCAA Championships (Women)",
-    "startDate": "2026-03-18",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-18",
-    "endTime": "",
-    "location": "Atlanta, GA",
-    "sport": "Swimming & Diving",
-    "link": "https://unlvrebels.com/news/2026/3/18/swimming-diving-olson-earns-top-25-finish-at-ncaa-championships.aspx"
-  },
-  {
-    "name": "NCAA Championships (Women)",
     "startDate": "2026-03-19",
     "startTime": "(ALL DAY)",
     "endDate": "2026-03-19",
@@ -2768,5 +2758,15 @@
     "location": "Las Vegas, NV",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/15/swimming-diving-rebels-win-two-events-on-opening-day-of-unlv-finis-invitational.aspx"
+  },
+  {
+    "name": "UNLV Finis Invitational",
+    "startDate": "2026-12-16",
+    "startTime": "9:30 AM",
+    "endDate": "2026-12-16",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/16/swimming-diving-rebels-gather-eight-wins-on-night-two-of-unlv-finis-invitational.aspx"
   }
 ]

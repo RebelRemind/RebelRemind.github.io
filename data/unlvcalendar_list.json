@@ -5273,11 +5273,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
+    "location": "Student Union\n        Student Union First Floor Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids"
+    "link": "https://www.unlv.edu/event/comics-kids-0"
   },
   {
     "name": "Comics for Kids",
@@ -5285,11 +5285,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union First Floor Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
+    "location": "Student Union\n        Student Union Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids-0"
+    "link": "https://www.unlv.edu/event/comics-kids"
   },
   {
     "name": "Thesis Defense: Shanika Wickramarachchi",
@@ -9233,11 +9233,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -9245,11 +9245,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
@@ -14841,7 +14841,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
