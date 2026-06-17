@@ -1,5 +1,32 @@
 [
   {
+    "name": "Fury as consumers learn Uber and Lyft charge different prices for the same rides and offer deceptive discounts",
+    "category": "Daily Mail",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T08:51:34-07:00",
+    "summary": "",
+    "link": "https://www.dailymail.com/yourmoney/article-15904267/uber-lyft-riders-price-discounts.html"
+  },
+  {
+    "name": "\u2018A neoliberal nightmare\u2019: my ride on the Vegas Loop \u2013 Elon Musk\u2019s answer to traffic jams",
+    "category": "The Guardian",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T08:42:07-07:00",
+    "summary": "Ten years ago, after complaining that traffic was \u2018driving him nuts\u2019, Musk\u2019s Boring Company began building underground tunnels to ease congestion on the roads. Did he overpromise and underdeliver?",
+    "link": "https://www.theguardian.com/technology/2026/jun/17/neoliberal-nightmare-my-ride-on-vegas-loop-elon-musk-answer-to-traffic-jams"
+  },
+  {
+    "name": "Pilot gives real reason passengers have to turn off mobile phones \u2014 not interference",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T08:28:05-07:00",
+    "summary": "Fear of flying, also known as aviophobia, is widespread and, for those of us who suffer from it, it likely stems from the same fundamental issue of our minds attempting to process an environment where they feel utterly powerless.",
+    "link": "https://www.walesonline.co.uk/whats-on/whats-on-news/pilot-gives-real-reason-passengers-34128513"
+  },
+  {
     "name": "Regents set to vote on new Boring Company tunnel station at UNLV",
     "category": "Las Vegas Sun",
     "section": "In The News",
@@ -45,39 +72,12 @@
     "link": "https://hartfordbusiness.com/article/after-raising-62m-new-haven-biotech-allyx-therapeutics-advances-experimental-alzheimers-drug/"
   },
   {
-    "name": "Recent valley homicides highlight risks of escalating personal disputes",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-15",
-    "publishedAt": "2026-06-15T23:19:00-07:00",
-    "summary": "More than three dozen homicides have been reported across the Las Vegas Valley so far this year, with many stemming from domestic disputes, verbal altercations, and ongoing interpersonal conflicts. While each case has its own circumstance, behavioral health experts and UNLV Associate Psychology Professor Dr. Stephen Benning are weighing in.",
-    "link": "https://news3lv.com/news/local/recent-valley-homicides-highlight-risks-of-escalating-personal-disputes"
-  },
-  {
-    "name": "Woman with Advanced Alzheimer\u2019s Disease Regains Speech, Mobility After Taking Magic Mushrooms: Report",
+    "name": "Different Prices for the Same Ride: How Uber and Lyft Use AI to Get More Money Out of You",
     "category": "UNLV In The News",
     "section": "In The News",
-    "publishedDate": "2026-06-15",
-    "publishedAt": "2026-06-15T17:16:00-07:00",
-    "summary": "A woman with Alzheimer's disease experienced significant improvements after taking magic mushrooms, according to a new case study.",
-    "link": "https://people.com/woman-with-alzheimers-regains-speech-mobility-after-taking-magic-mushrooms-11998828"
-  },
-  {
-    "name": "Nearly two-thirds of Nevada families struggle to pay high childcare costs",
-    "category": "K.N.P.R. News",
-    "section": "In The News",
-    "publishedDate": "2026-06-15",
-    "publishedAt": "2026-06-15T16:34:00-07:00",
-    "summary": "According to the First Five Years Fund, a national early childhood advocacy organization, 28% of working families with young children in the U.S. cannot reasonably access the childcare they want or need.",
-    "link": "https://knpr.org/show/knprs-state-of-nevada/2026-06-15/nearly-two-thirds-of-nevada-families-struggle-to-pay-high-childcare-costs"
-  },
-  {
-    "name": "That rattling was really a reminder: Las Vegas sits in an earthquake zone",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-06-15",
-    "publishedAt": "2026-06-15T13:30:47-07:00",
-    "summary": "UNLV Professor Emeritus of Geology Steve Rowland recently authored a scientific paper about an intriguing, earthquake-caused geological structure \u2014 known as a clastic pipe \u2014 which was identified by avid hiker and geology enthusiast Jeffrey Cuneo near Lake Mead. The paper was published in May in the scientific journal Geology of the Intermountain West.",
-    "link": "https://www.reviewjournal.com/local/local-nevada/that-rattling-was-really-a-reminder-las-vegas-sits-in-an-earthquake-zone-3838497/"
+    "publishedDate": "2026-06-16",
+    "publishedAt": "2026-06-16T08:45:33-07:00",
+    "summary": "A Consumer Reports investigation found that customers see dramatically different prices for the same rides ordered at the same time. The study also raises questions about consumer discounts.",
+    "link": "https://www.consumerreports.org/money/questionable-business-practices/uber-lyft-different-prices-for-same-ride-and-fake-discounts-a1093538909/"
   }
 ]
