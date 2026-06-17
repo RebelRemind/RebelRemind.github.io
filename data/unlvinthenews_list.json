@@ -1,11 +1,29 @@
 [
   {
+    "name": "UNLV outlines plan for downtown Las Vegas hub at Civic Plaza campus",
+    "category": "K.V.V.U. T.V. Fox 5",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T12:53:11-07:00",
+    "summary": "UNLV leaders presented an update Wednesday to the Las Vegas City Council on\u00a0UNLV @ Civic Plaza, a proposed downtown satellite campus at the city\u2019s Civic Center and Plaza.",
+    "link": "https://www.fox5vegas.com/2026/06/17/unlv-outlines-plan-downtown-las-vegas-hub-civic-plaza-campus/"
+  },
+  {
+    "name": "Attorney breaks down responsible artificial intelligence practices in legal guidance",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T10:11:54-07:00",
+    "summary": "Law school students in Las Vegas will soon be schooled on AI. Beginning in the fall, the William S. Boyd School of Law at UNLV will require a new course on the rise of artificial intelligence. School officials say it's designed to prepare law students for one of the biggest shifts currently reshaping the legal profession.",
+    "link": "https://news3lv.com/news/arc/attorney-breaks-down-responsible-artificial-intelligence-practices-in-legal-guidance-ai-sam-mirejovsky"
+  },
+  {
     "name": "Fury as consumers learn Uber and Lyft charge different prices for the same rides and offer deceptive discounts",
     "category": "Daily Mail",
     "section": "In The News",
     "publishedDate": "2026-06-17",
     "publishedAt": "2026-06-17T08:51:34-07:00",
-    "summary": "",
+    "summary": "An analysis by researchers at the University of Nevada, Las Vegas, found that 12 percent of Uber rides and 21 percent of Lyft rides displayed discounts - a significant increase from levels recorded just two years earlier.",
     "link": "https://www.dailymail.com/yourmoney/article-15904267/uber-lyft-riders-price-discounts.html"
   },
   {
@@ -18,13 +36,22 @@
     "link": "https://www.theguardian.com/technology/2026/jun/17/neoliberal-nightmare-my-ride-on-vegas-loop-elon-musk-answer-to-traffic-jams"
   },
   {
-    "name": "Pilot gives real reason passengers have to turn off mobile phones \u2014 not interference",
+    "name": "I'm scared of flying \u2014 I asked a pilot the questions all nervous flyers need answers to",
     "category": "UNLV In The News",
     "section": "In The News",
     "publishedDate": "2026-06-17",
     "publishedAt": "2026-06-17T08:28:05-07:00",
-    "summary": "Fear of flying, also known as aviophobia, is widespread and, for those of us who suffer from it, it likely stems from the same fundamental issue of our minds attempting to process an environment where they feel utterly powerless.",
-    "link": "https://www.walesonline.co.uk/whats-on/whats-on-news/pilot-gives-real-reason-passengers-34128513"
+    "summary": "Aviophobia, or fear of flying, is remarkably widespread and, for those of us who suffer from it, likely stems from the same fundamental issue \u2014 our brains struggling to cope with an environment where we feel utterly powerless.",
+    "link": "https://www.mirror.co.uk/travel/news/im-scared-flying--asked-37302181"
+  },
+  {
+    "name": "Could the UK's social media ban for kids happen in the US? Nevada experts weigh in",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-06-16",
+    "publishedAt": "2026-06-16T12:41:51-07:00",
+    "summary": "A proposed social media ban for children under 16 in the United Kingdom is reigniting conversations about how to protect young people online \u2014 and whether similar measures could eventually gain traction in the United States. The proposal would block children from accessing platforms including Instagram, Facebook, TikTok and YouTube.",
+    "link": "https://news3lv.com/news/local/could-the-uks-social-media-ban-for-kids-happen-in-the-us-nevada-experts-weigh-in"
   },
   {
     "name": "Regents set to vote on new Boring Company tunnel station at UNLV",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-06-16T11:20:28-07:00",
     "summary": "Sellers on TikTok used pricey items to lure bidders to \u201cSurprise Sets\u201d livestreams, but most of the auctions yielded only cheap prizes. Gambling experts are concerned about the potential for harm.",
     "link": "https://www.wired.com/story/tiktok-surprise-sets-iphones-teddy-bears/"
-  },
-  {
-    "name": "Volunteers dig into meaningful work on Catalina",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T11:12:11-07:00",
-    "summary": "UNLV students help remove ice plant at White\u2019s Landing.",
-    "link": "https://thecatalinaislander.com/volunteers-dig-into-meaningful-work-on-catalina/"
-  },
-  {
-    "name": "After raising $62M, New Haven biotech Allyx Therapeutics advances experimental Alzheimer\u2019s drug",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T10:55:32-07:00",
-    "summary": "More than seven years of development, over $60 million in funding and a series of early clinical studies have led to this: Allyx Therapeutics is preparing for what may be the most consequential test in the New Haven-based biotech startup\u2019s history.",
-    "link": "https://hartfordbusiness.com/article/after-raising-62m-new-haven-biotech-allyx-therapeutics-advances-experimental-alzheimers-drug/"
-  },
-  {
-    "name": "Different Prices for the Same Ride: How Uber and Lyft Use AI to Get More Money Out of You",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T08:45:33-07:00",
-    "summary": "A Consumer Reports investigation found that customers see dramatically different prices for the same rides ordered at the same time. The study also raises questions about consumer discounts.",
-    "link": "https://www.consumerreports.org/money/questionable-business-practices/uber-lyft-different-prices-for-same-ride-and-fake-discounts-a1093538909/"
   }
 ]
