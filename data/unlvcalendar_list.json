@@ -21888,6 +21888,18 @@
     "link": "https://www.unlv.edu/event/day-library-0?delta=23"
   },
   {
+    "name": "Family Swim - Sundays",
+    "startDate": "2026-06-21",
+    "startTime": "10:00 AM",
+    "endDate": "2026-06-21",
+    "endTime": "1:00 PM",
+    "location": "Student Recreation & Wellness Center\n        SRWC Pool",
+    "description": "SRWC members may bring up to three guests free of charge on family swim days. Guests do not have to be members to attend. Please note the following:",
+    "category": "Sports",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
+    "link": "https://www.unlv.edu/event/family-swim-sundays"
+  },
+  {
     "name": "Education Alumni Chapter Summer Food Drive",
     "startDate": "2026-06-22",
     "startTime": "(ALL DAY)",
@@ -22308,6 +22320,18 @@
     "link": "https://www.unlv.edu/event/ninth-island-poetics-summer-symposium"
   },
   {
+    "name": "Family Swim - Fridays",
+    "startDate": "2026-06-26",
+    "startTime": "3:00 PM",
+    "endDate": "2026-06-26",
+    "endTime": "6:00 PM",
+    "location": "Student Recreation & Wellness Center",
+    "description": "SRWC members may bring up to three guests free of charge on family swim days. Guests do not have to be members to attend. Please note the following: Youth ages 0-18 are also allowed to swim at the pool during this time. Any guests who are not toilet-trained must wear a swim diaper. The SRWC members must be present and in the water with their guests. Guests are required to stay in the pool area and are not permitted to use the rest of the facility.",
+    "category": "Sports",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
+    "link": "https://www.unlv.edu/event/family-swim-fridays"
+  },
+  {
     "name": "6th Annual Rainbow Relay: Community Collective",
     "startDate": "2026-06-26",
     "startTime": "5:30 PM",
@@ -22402,6 +22426,18 @@
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/A%20Day%20at%20the%20Library_Classroom_0.jpg?itok=BRBM5RLC",
     "link": "https://www.unlv.edu/event/day-library-0?delta=26"
+  },
+  {
+    "name": "Family Swim - Sundays",
+    "startDate": "2026-06-28",
+    "startTime": "10:00 AM",
+    "endDate": "2026-06-28",
+    "endTime": "1:00 PM",
+    "location": "Student Recreation & Wellness Center\n        SRWC Pool",
+    "description": "SRWC members may bring up to three guests free of charge on family swim days. Guests do not have to be members to attend. Please note the following:",
+    "category": "Sports",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/rwc-D72752_058.jpg?itok=IUQ8d_YR",
+    "link": "https://www.unlv.edu/event/family-swim-sundays?delta=1"
   },
   {
     "name": "Las Vegas Men's Chorus: Fun in the Sun",

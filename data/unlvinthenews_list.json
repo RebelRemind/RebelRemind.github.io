@@ -1,5 +1,14 @@
 [
   {
+    "name": "FDA Approves Drug for Alzheimer's Agitation",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-18",
+    "publishedAt": "2026-06-18T10:39:59-07:00",
+    "summary": "The extended-release oral combination of dextromethorphan-bupropion uses a different mechanism of action than antipsychotic medications, which clinicians sometimes prescribe for patients with Alzheimer's disease who also experience agitation. But whether the new medication will be used as a first-line treatment is up for debate.",
+    "link": "https://neurologytoday.aan.com/doi/10.1097/01.wnt.0001205188.96687.89"
+  },
+  {
     "name": "UNLV outlines plan for downtown Las Vegas hub at Civic Plaza campus",
     "category": "K.V.V.U. T.V. Fox 5",
     "section": "In The News",
@@ -7,6 +16,24 @@
     "publishedAt": "2026-06-17T12:53:11-07:00",
     "summary": "UNLV leaders presented an update Wednesday to the Las Vegas City Council on\u00a0UNLV @ Civic Plaza, a proposed downtown satellite campus at the city\u2019s Civic Center and Plaza.",
     "link": "https://www.fox5vegas.com/2026/06/17/unlv-outlines-plan-downtown-las-vegas-hub-civic-plaza-campus/"
+  },
+  {
+    "name": "Anti-Uranium Summit Sheds Light on Toxic Industry",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T12:30:00-07:00",
+    "summary": "Energy Fuels mines uranium-laden limestone found in the area around Red Butte in a process known as breccia pipe mining.\u00a0David Kramer, a hydrogeologist at the University of Nevada Las Vegas, explained the process to a crowd of attendees at the summit.",
+    "link": "https://unicornriot.ninja/2026/anti-uranium-summit-sheds-light-on-toxic-industry/"
+  },
+  {
+    "name": "Elon Musk's Vegas Loop: A Neoliberal Nightmare or Futuristic Transport?",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-17",
+    "publishedAt": "2026-06-17T12:00:00-07:00",
+    "summary": "A ride on Elon Musk's Vegas Loop reveals an underwhelming, slow tunnel system far from original promises. Critics call it a private transit scam benefiting developers, not the public.",
+    "link": "https://britbrief.co.uk/business/transport/musks-vegas-loop-a-neoliberal-nightmare.html"
   },
   {
     "name": "Attorney breaks down responsible artificial intelligence practices in legal guidance",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-06-16T12:41:51-07:00",
     "summary": "A proposed social media ban for children under 16 in the United Kingdom is reigniting conversations about how to protect young people online \u2014 and whether similar measures could eventually gain traction in the United States. The proposal would block children from accessing platforms including Instagram, Facebook, TikTok and YouTube.",
     "link": "https://news3lv.com/news/local/could-the-uks-social-media-ban-for-kids-happen-in-the-us-nevada-experts-weigh-in"
-  },
-  {
-    "name": "Regents set to vote on new Boring Company tunnel station at UNLV",
-    "category": "Las Vegas Sun",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T12:00:09-07:00",
-    "summary": "Months after shelving the idea over parking concerns, UNLV is back on track to host a Vegas Loop station, with the Board of Regents set to decide next week whether to approve a deal with the Boring Company.",
-    "link": "https://lasvegassun.com/news/2026/jun/16/regents-set-to-vote-on-new-boring-company-tunnel-s/"
-  },
-  {
-    "name": "U.S. News & World ranks UNLV strongly in multiple categories",
-    "category": "Las Vegas Sun",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T11:48:35-07:00",
-    "summary": "UNLV appears several times on U.S. News & World\u2019s Report\u2019s new Best Global Universities rankings.",
-    "link": "https://lasvegassun.com/news/2026/jun/16/unlv-places-strongly-in-multiple-categories-by-bes/"
-  },
-  {
-    "name": "TikTok Shoppers Thought They Were Bidding on iPhones. Instead, They Won Teddy Bears",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T11:20:28-07:00",
-    "summary": "Sellers on TikTok used pricey items to lure bidders to \u201cSurprise Sets\u201d livestreams, but most of the auctions yielded only cheap prizes. Gambling experts are concerned about the potential for harm.",
-    "link": "https://www.wired.com/story/tiktok-surprise-sets-iphones-teddy-bears/"
   }
 ]
