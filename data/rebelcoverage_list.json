@@ -1,15 +1,5 @@
 [
   {
-    "name": "NCAA Championships (Women)",
-    "startDate": "2026-03-19",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-19",
-    "endTime": "",
-    "location": "Atlanta, GA",
-    "sport": "Swimming & Diving",
-    "link": ""
-  },
-  {
     "name": "San Diego State",
     "startDate": "2026-03-20",
     "startTime": "",
@@ -2768,5 +2758,25 @@
     "location": "Las Vegas, NV",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/16/swimming-diving-rebels-gather-eight-wins-on-night-two-of-unlv-finis-invitational.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-12-17",
+    "startTime": "",
+    "endDate": "2026-12-17",
+    "endTime": "",
+    "location": "Phoenix, AZ",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/grand-canyon/boxscore/17641"
+  },
+  {
+    "name": "UNLV Finis Invitational",
+    "startDate": "2026-12-17",
+    "startTime": "9:30 AM",
+    "endDate": "2026-12-17",
+    "endTime": "",
+    "location": "Las Vegas, NV",
+    "sport": "Swimming & Diving",
+    "link": "https://unlvrebels.com/news/2025/12/17/swimming-diving-rebel-women-win-annual-unlv-finis-invitational.aspx"
   }
 ]
