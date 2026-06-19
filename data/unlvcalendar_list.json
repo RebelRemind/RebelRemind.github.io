@@ -5273,11 +5273,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union First Floor Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
+    "location": "Student Union\n        Student Union Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids-0"
+    "link": "https://www.unlv.edu/event/comics-kids"
   },
   {
     "name": "Comics for Kids",
@@ -5285,11 +5285,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
+    "location": "Student Union\n        Student Union First Floor Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids"
+    "link": "https://www.unlv.edu/event/comics-kids-0"
   },
   {
     "name": "Thesis Defense: Shanika Wickramarachchi",
@@ -9056,8 +9056,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
-    "link": "https://www.unlv.edu/event/coffee-karly-6"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
+    "link": "https://www.unlv.edu/event/coffee-karly-7"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -17226,10 +17226,10 @@
     "endDate": "2026-05-19",
     "endTime": "",
     "location": "",
-    "description": "Spring 2026 grades are due at the Office of the Registrar by 4 p.m.",
+    "description": "Spring grades are due at the Office of the Registrar by 4 p.m.",
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/spring-grades-due-1"
+    "link": "https://www.unlv.edu/event/spring-grades-due-2"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
