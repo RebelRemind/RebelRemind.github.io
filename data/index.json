@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T15:26:50Z",
+  "generatedAt": "2026-06-20T20:09:36Z",
   "files": [
     "academiccalendar_list.json",
     "buildingimages_list.json",
@@ -23,52 +23,52 @@
     "buildingimages_list.json": {
       "status": "success",
       "itemCount": 119,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "campuswideevents_list.json": {
       "status": "success",
       "itemCount": 1,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "careerevents_list.json": {
       "status": "success",
       "itemCount": 6,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "involvementcenter_list.json": {
       "status": "success",
       "itemCount": 347,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "rebelcoverage_list.json": {
       "status": "success",
       "itemCount": 271,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "scarletandgraynews_list.json": {
       "status": "success",
       "itemCount": 10,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "unlvinthenews_list.json": {
       "status": "success",
       "itemCount": 9,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "unlvcalendar_list.json": {
       "status": "success",
       "itemCount": 1871,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "unlvtoday_list.json": {
       "status": "success",
       "itemCount": 14,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     },
     "organization_list.json": {
       "status": "success",
       "itemCount": 567,
-      "lastSuccessfulAt": "2026-06-20T15:26:50Z"
+      "lastSuccessfulAt": "2026-06-20T20:09:36Z"
     }
   }
 }
