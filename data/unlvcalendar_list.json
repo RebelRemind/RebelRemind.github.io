@@ -222,10 +222,10 @@
     "endDate": "2026-03-17",
     "endTime": "11:00 AM",
     "location": "Shadow Lane Advanced Dental Education\n        School of Dental Medicine Building D Classroom 228",
-    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH Advisory Committee Chair Dr. Tanya Al-Talib, Advisory Committee Member Dr. Charles Hill, Advisory Committee Member Arpita Basu, Ph.D., Graduate College Representative",
+    "description": "Tommy Le, M.S Candidate Department of Orthodontics Clinical Need For Sleep Disorder Screening Among Periodontitis Patients- An Analysis of NHANES 2009-2014 Advisory Committee Members: Linh Nguyen, Ph.D., MPH, Advisory Committee Chair Dr. Tanya Al-Talib, Committee Member Dr. Charles Hill, Committee Member Arpita Basu, Ph.D., Graduate College Representative",
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/SLC-D-D66257_13.jpg?itok=nR1Opk2Q",
-    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le"
+    "link": "https://www.unlv.edu/event/thesis-defense-tommy-le-0"
   },
   {
     "name": "Cutting Through the Clutter",
@@ -5273,11 +5273,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union First Floor Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
+    "location": "Student Union\n        Student Union Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids-0"
+    "link": "https://www.unlv.edu/event/comics-kids"
   },
   {
     "name": "Comics for Kids",
@@ -5285,11 +5285,11 @@
     "startTime": "12:00 PM",
     "endDate": "2026-04-03",
     "endTime": "3:30 PM",
-    "location": "Student Union\n        Student Union Eating Bar",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics.'",
+    "location": "Student Union\n        Student Union First Floor Eating Bar",
+    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12 \u2013 12:15 p.m.: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 \u2013 12:20 p.m.: Wrap-up and prepare for departure. 12:20 \u2013 12:30 p.m.: Leave for the site. 1 p.m.: Arrive at the comic sorting site. 1 \u2013 3 p.m.: Sorting comics.",
     "category": "Health",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/comics-kids"
+    "link": "https://www.unlv.edu/event/comics-kids-0"
   },
   {
     "name": "Thesis Defense: Shanika Wickramarachchi",
@@ -8657,11 +8657,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -8669,11 +8669,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -9056,8 +9056,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
-    "link": "https://www.unlv.edu/event/coffee-karly-7"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
+    "link": "https://www.unlv.edu/event/coffee-karly-6"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -14841,7 +14841,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
