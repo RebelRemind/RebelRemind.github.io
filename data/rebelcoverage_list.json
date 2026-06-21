@@ -1,45 +1,5 @@
 [
   {
-    "name": "San Diego State",
-    "startDate": "2026-03-22",
-    "startTime": "",
-    "endDate": "2026-03-22",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/san-diego-state/boxscore/17689"
-  },
-  {
-    "name": "Wyoming",
-    "startDate": "2026-03-22",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-22",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/22/sunday-heat-womens-tennis-wins-eighth-straight.aspx"
-  },
-  {
-    "name": "Utah Tech",
-    "startDate": "2026-03-22",
-    "startTime": "12:07 PM",
-    "endDate": "2026-03-22",
-    "endTime": "3:38 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/utah-tech/boxscore/17761"
-  },
-  {
-    "name": "Tulsa",
-    "startDate": "2026-03-22",
-    "startTime": "4:00 PM",
-    "endDate": "2026-03-22",
-    "endTime": "",
-    "location": "Tulsa, Oklahoma",
-    "sport": "Men's Basketball",
-    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/tulsa/boxscore/17840"
-  },
-  {
     "name": "#22 Arizona State",
     "startDate": "2026-03-23",
     "startTime": "6:07 PM",
@@ -2708,5 +2668,25 @@
     "location": "Las Vegas, NV",
     "sport": "Swimming & Diving",
     "link": "https://unlvrebels.com/news/2025/12/17/swimming-diving-rebel-women-win-annual-unlv-finis-invitational.aspx"
+  },
+  {
+    "name": "New Mexico",
+    "startDate": "2026-12-20",
+    "startTime": "",
+    "endDate": "2026-12-20",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/new-mexico/boxscore/17642"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-12-20",
+    "startTime": "4:00 PM",
+    "endDate": "2026-12-20",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/fresno-state/boxscore/17611"
   }
 ]
