@@ -1,5 +1,32 @@
 [
   {
+    "name": "Struggling to find a job? Try looking in Nevada",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-19",
+    "publishedAt": "2026-06-19T20:33:00-07:00",
+    "summary": "A sparsely-populated state known for its world-class casinos and dry desert climate has been a bright spot in the tepid U.S. job market.",
+    "link": "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html"
+  },
+  {
+    "name": "Hidden stress burden: 1 in 5 South Asians in America face health challenges, new study finds",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-19",
+    "publishedAt": "2026-06-19T16:21:00-07:00",
+    "summary": "Among all the stressors identified, intergenerational conflict emerged as one of the most significant.",
+    "link": "https://www.newindiaabroad.com/english/news/1-in-5-south-asians-in-america-face-health-challenges-new-study-finds"
+  },
+  {
+    "name": "Eye on Vision: Regenerating Eye Tissue In Frogs And Delay In Web Accessibility Requirements Taking Effect",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-18",
+    "publishedAt": "2026-06-18T12:56:00-07:00",
+    "summary": "Dr. Kelly Tseng a professor in the School Of Life Sciences at the University of Nevada-Las Vegas, discusses how discovering the method in which frogs are able to regenerate eye tissue could lead to finding out how to replicate the process in humans.",
+    "link": "http://eyeonvision.blogspot.com/2026/06/regenerating-eye-tissue-in-frogs-and.html"
+  },
+  {
     "name": "FDA Approves Drug for Alzheimer's Agitation",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -52,32 +79,5 @@
     "publishedAt": "2026-06-17T08:51:34-07:00",
     "summary": "An analysis by researchers at the University of Nevada, Las Vegas, found that 12 percent of Uber rides and 21 percent of Lyft rides displayed discounts - a significant increase from levels recorded just two years earlier.",
     "link": "https://www.dailymail.com/yourmoney/article-15904267/uber-lyft-riders-price-discounts.html"
-  },
-  {
-    "name": "\u2018A neoliberal nightmare\u2019: my ride on the Vegas Loop \u2013 Elon Musk\u2019s answer to traffic jams",
-    "category": "The Guardian",
-    "section": "In The News",
-    "publishedDate": "2026-06-17",
-    "publishedAt": "2026-06-17T08:42:07-07:00",
-    "summary": "Ten years ago, after complaining that traffic was \u2018driving him nuts\u2019, Musk\u2019s Boring Company began building underground tunnels to ease congestion on the roads. Did he overpromise and underdeliver?",
-    "link": "https://www.theguardian.com/technology/2026/jun/17/neoliberal-nightmare-my-ride-on-vegas-loop-elon-musk-answer-to-traffic-jams"
-  },
-  {
-    "name": "I'm scared of flying \u2014 I asked a pilot the questions all nervous flyers need answers to",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-17",
-    "publishedAt": "2026-06-17T08:28:05-07:00",
-    "summary": "Aviophobia, or fear of flying, is remarkably widespread and, for those of us who suffer from it, likely stems from the same fundamental issue \u2014 our brains struggling to cope with an environment where we feel utterly powerless.",
-    "link": "https://www.mirror.co.uk/travel/news/im-scared-flying--asked-37302181"
-  },
-  {
-    "name": "Could the UK's social media ban for kids happen in the US? Nevada experts weigh in",
-    "category": "K.S.N.V. T.V. News 3",
-    "section": "In The News",
-    "publishedDate": "2026-06-16",
-    "publishedAt": "2026-06-16T12:41:51-07:00",
-    "summary": "A proposed social media ban for children under 16 in the United Kingdom is reigniting conversations about how to protect young people online \u2014 and whether similar measures could eventually gain traction in the United States. The proposal would block children from accessing platforms including Instagram, Facebook, TikTok and YouTube.",
-    "link": "https://news3lv.com/news/local/could-the-uks-social-media-ban-for-kids-happen-in-the-us-nevada-experts-weigh-in"
   }
 ]
