@@ -1,5 +1,32 @@
 [
   {
+    "name": "UNLV Vegas Loop station approved, Aces drop home game, and Brandon Flowers announces solo album",
+    "category": "K.N.P.R. News",
+    "section": "In The News",
+    "publishedDate": "2026-06-24",
+    "publishedAt": "2026-06-24T13:00:13-07:00",
+    "summary": "The Boring Co.\u2019s Vegas Loop system is planning to put a station at UNLV following approval on Monday, June 22, by the state Board of Regents. It is slated to be built in the Thomas & Mack Center parking lot, with the Boring Co. paying the construction costs, according to the Las Vegas Review-Journal.",
+    "link": "https://knpr.org/daily-rundown/2026-06-24/unlv-vegas-loop-station-approved-aces-drop-home-game-and-brandon-flowers-announces-solo-album"
+  },
+  {
+    "name": "Loud Budgeting",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-24",
+    "publishedAt": "2026-06-24T10:54:49-07:00",
+    "summary": "Loud budgeting is a personal finance trend that encourages people to be vocal about their budget and speak up when they can\u2019t afford to spend more. It was popularized on TikTok, and it\u2019s a way for people to avoid overspending and reduce peer pressure from friends.WalletHub asked a panel of experts to share their thoughts on loud budgeting.",
+    "link": "https://wallethub.com/edu/b/loud-budgeting/142885#expert=Alexander_Nill"
+  },
+  {
+    "name": "UNLV Medical School Honored",
+    "category": "Las Vegas Review Journal",
+    "section": "In The News",
+    "publishedDate": "2026-06-23",
+    "publishedAt": "2026-06-23T17:09:00-07:00",
+    "summary": "UNLV Kirk Kerkorian School of Medicine is being honored for the design and operation of its main building. The school says its the first academic institution in Nevada to get LEED Platinum certification from the U.S Green Building Council.",
+    "link": "https://www.reviewjournal.com/videos/unlv-medical-school-honored/"
+  },
+  {
     "name": "Why aren\u2019t there more high-rise apartment buildings in Las Vegas?",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -18,6 +45,15 @@
     "link": "https://eltiempolatino.com/2026/06/22/nacionales/mas-de-45-000-demandas-contra-ice-jueces-federales-dicen-que-las-detenciones-son-ilegales/"
   },
   {
+    "name": "Pipeline Review: Alzheimer Disease Therapies by Mechanism of Action",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-23",
+    "publishedAt": "2026-06-23T12:30:00-07:00",
+    "summary": "The 2026 Alzheimer disease drug development landscape highlights a growing shift toward diverse disease-modifying strategies, from amyloid and tau targeting to metabolic and neuroprotective approaches.",
+    "link": "https://www.neurologylive.com/view/pipeline-review-alzheimer-disease-therapies-mechanism-action"
+  },
+  {
     "name": "FINRA settled actions for MSRB rule violations in 2026 so far down year-over-year",
     "category": "UNLV In The News",
     "section": "In The News",
@@ -27,12 +63,12 @@
     "link": "https://www.bondbuyer.com/news/finra-settled-actions-for-msrb-rule-violations-in-2026-so-far-down-year-over-year"
   },
   {
-    "name": "Marketplace Morning Report: An AI-fueled Amazon Prime Day",
+    "name": "Investors are buying up Sunbelt homes. Could a congressional ban help?",
     "category": "N.P.R.",
     "section": "In The News",
     "publishedDate": "2026-06-23",
     "publishedAt": "2026-06-23T11:38:58-07:00",
-    "summary": "Investors and companies bought some 70,000 single family homes over the last decade. In some neighborhoods, corporate landlords now own a quarter of all homes, according to research from the UNLV. The reason investors are so attracted to purchasing housing assets here is because there's a big demand for people to move here, Nicholas Irwin, research director at the Lead Center for Real Estate at the University of Nevada, Las Vegas, says the housing supply has not grown fast enough.",
+    "summary": "In cities like Las Vegas, LA, and Miami, investors are crowding out prospective homebuyers. But it\u2019s not just corporate landlords.",
     "link": "https://www.marketplace.org/story/2026/06/23/investors-are-buying-up-sunbelt-homes-can-a-congressional-ban-help"
   },
   {
@@ -43,41 +79,5 @@
     "publishedAt": "2026-06-23T10:52:51-07:00",
     "summary": "Maybe you have ordered an at-home microbiome test and waited on a report full of unfamiliar bacteria names. Maybe you are just watching friends compare their results. Either way, the gut has become something people study rather than ignore. That attention raises a fair question about which foods and compounds genuinely help. The latest contender is one that nutritionists spent years telling you to limit.",
     "link": "https://www.usmagazine.com/food/news/this-antinutrient-may-protect-your-gut-new-study-says/"
-  },
-  {
-    "name": "Frank Floor Talk: Can players tell you\u2019ve tightened your slots?",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T10:36:26-07:00",
-    "summary": "Some of you remember my long-running disagreement with UNLV professor Dr. Anthony Lucas on whether players can actually feel changes in slot hold. My position: they can over time. His position: proven research says they can\u2019t. And frankly, his data is better than mine. But I still can\u2019t shake the feeling I\u2019m right. Some fresh numbers just gave me a little bit more ammunition.",
-    "link": "https://cdcgaming.com/commentary/frank-floor-talk-can-players-tell-youve-tightened-your-slots/"
-  },
-  {
-    "name": "Vegas Loop approved for UNLV; education leaders not calling it a reversal",
-    "category": "K.L.A.S. T.V. 8 News Now",
-    "section": "In The News",
-    "publishedDate": "2026-06-22",
-    "publishedAt": "2026-06-22T15:00:00-07:00",
-    "summary": "The Nevada System of Higher Education Board of Regents approved a multimillion-dollar Vegas Loop station on the University of Nevada, Las Vegas campus on Monday. The vote follows a Dec. 4, 2025, meeting in which UNLV President Chris Heavey revealed the university previously declined the tech company\u2019s proposal for a station.",
-    "link": "https://www.8newsnow.com/news/local-news/vegas-loop-approved-for-unlv-education-leaders-not-calling-it-a-reversal/"
-  },
-  {
-    "name": "Forced by Trump to retire, a trans airman is \u2018passing the torch\u2019 to a firefighter waiting to serve",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-22",
-    "publishedAt": "2026-06-22T13:27:47-07:00",
-    "summary": "Ending a career he did not want to leave, Master Sgt. Logan Ireland is still fighting to pass on the \"opportunity to succeed\" in military service to his mentee Clayton McCallister.\u00a0A review of 58 empirical studies on transgender military service, published in the International Journal of Transgender Health and led by University of Nevada, Las Vegas professor Kati McNamara, found no evidence supporting the core claims used to justify excluding transgender people from service.",
-    "link": "https://www.advocate.com/news/people/logan-ireland-retirement-clayton-mccallister"
-  },
-  {
-    "name": "Can you say Pioche, Mina and Hiko like a true Nevadan? Take the quiz",
-    "category": "Reno Gazette-Journal",
-    "section": "In The News",
-    "publishedDate": "2026-06-22",
-    "publishedAt": "2026-06-22T13:07:09-07:00",
-    "summary": "If you're new to the state or just visiting, you may have been met with eyerolls whenever you try to say Nevada. Say Nuh-VAH-duh in a crowd of Nevadans and expect weird looks. To locals, the Silver State is pronounced Nuh-V\u0102D-uh. Yet politicians, celebrities and out-of-towners keep getting it wrong.",
-    "link": "https://www.rgj.com/story/life/2026/06/20/am-i-saying-nevada-right-take-the-quiz-on-silver-state-pronunciations/90621358007/"
   }
 ]
