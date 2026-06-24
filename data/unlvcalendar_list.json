@@ -7892,8 +7892,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
-    "link": "https://www.unlv.edu/event/coffee-karly-6"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
+    "link": "https://www.unlv.edu/event/coffee-karly-7"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -8069,11 +8069,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -8081,11 +8081,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
@@ -16062,10 +16062,10 @@
     "endDate": "2026-05-19",
     "endTime": "",
     "location": "",
-    "description": "Spring grades are due at the Office of the Registrar by 4 p.m.",
+    "description": "Spring 2026 grades are due at the Office of the Registrar by 4 p.m.",
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/spring-grades-due-2"
+    "link": "https://www.unlv.edu/event/spring-grades-due-1"
   },
   {
     "name": "UNLV Dance: CFACoLab - That Show About the Hot Dog (Streaming)",
@@ -21610,6 +21610,18 @@
     "category": "Arts",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/media/image/2025-09/Summer%202026%20UNLV%20Calendar%20no%20text.png?itok=PdAipg6C",
     "link": "https://www.unlv.edu/event/las-vegas-mens-chorus-fun-sun-0"
+  },
+  {
+    "name": "Upside Down: Paul Revere Williams in Las Vegas",
+    "startDate": "2026-06-28",
+    "startTime": "2:00 PM",
+    "endDate": "2026-06-28",
+    "endTime": "4:30 PM",
+    "location": "Pearson Community Center\r\n1625 W Carey Ave\r\nNorth Las Vegas, NV 89032",
+    "description": "The Department of Interdisciplinary, Gender, and Ethnic Studies and the School of Nursing are proud to present the first official screening of the documentary film, \"Upside Down: Paul Revere Williams in Las Vegas.\" The premiere takes place at the Pearson Community Center on Sunday, June 28 at 2pm. This documentary explores the dynamic life of the trailblazing African-American architect, Paul Revere Williams, and the imprint he left in the architecture of Las Vegas, NV. The event is free and open to the public.",
+    "category": "Arts",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/upside-down-paul-revere-williams-las-vegas"
   },
   {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
