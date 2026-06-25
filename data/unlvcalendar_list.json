@@ -7493,11 +7493,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Valerie Pida Plaza",
-    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
-    "category": "Academics",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
-    "link": "https://www.unlv.edu/event/festival-communities-10"
+    "location": "Student Union\n        Academic Mall",
+    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
+    "category": "Culture",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/festival-communities-11"
   },
   {
     "name": "Festival of Communities",
@@ -7505,11 +7505,11 @@
     "startTime": "11:00 AM",
     "endDate": "2026-04-15",
     "endTime": "2:00 PM",
-    "location": "Student Union\n        Academic Mall",
-    "description": "Celebrate the diversity of UNLV through one of the largest cultural events of the semester. What to Expect 37 student organizations sharing culture Global food and live performances A campus-wide cultural showcase Every purchase directly supports participating RSOs, making this both an engaging and impactful experience. This event is held in partnership with Student Involvement & Activities",
-    "category": "Culture",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
-    "link": "https://www.unlv.edu/event/festival-communities-11"
+    "location": "Valerie Pida Plaza",
+    "description": "UNLV\u2019s annual Festival of Communities celebrates our rich global community. Enjoy live performances and food and crafts for sale by UNLV student organizations. Event is open to UNLV students, faculty and staff and their families.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Mariachi-Rebelde.JPG?itok=OnmZHQUN",
+    "link": "https://www.unlv.edu/event/festival-communities-10"
   },
   {
     "name": "Guided Imagery Practice",
@@ -8069,11 +8069,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -8081,11 +8081,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
