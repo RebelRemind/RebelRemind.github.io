@@ -1,12 +1,30 @@
 [
   {
     "name": "Premiere Screening of \"Upside Down: Paul Revere Williams in Las Vegas\" June 28",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-06-24T12:36:21-0700",
+    "summary": "The Department of Interdisciplinary, Gender, and Ethnic Studies and the School of Nursing are proud to present the first official screening of the documentary film, \" Upside Down: Paul Revere Williams in Las Vegas ,\" developed and produced by Slicktion Culture Productions....",
+    "link": "https://www.unlv.edu/news/unlvtoday/premiere-screening-upside-down-paul-revere-williams-las-vegas-june-28"
+  },
+  {
+    "name": "Premiere Screening of \"Upside Down: Paul Revere Williams in Las Vegas\" June 28",
     "category": "Save-The-Date",
     "section": "More from the Last Week",
     "publishedDate": "2026-06-24",
     "publishedAt": "2026-06-24T12:36:21-0700",
     "summary": "The Department of Interdisciplinary, Gender, and Ethnic Studies and the School of Nursing are proud to present the first official screening of the documentary film, \" Upside Down: Paul Revere Williams in Las Vegas ,\" developed and produced by Slicktion Culture Productions....",
     "link": "https://www.unlv.edu/news/unlvtoday/premiere-screening-upside-down-paul-revere-williams-las-vegas-june-28"
+  },
+  {
+    "name": "July 2026 Digital Accessibility Training",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-06-24T10:12:48-0700",
+    "summary": "The UNLV Office of Accessibility Resources (OAR) has scheduled the following online training and workshops: For information on the Ally tool in WebCampus, please register for the structured overview workshops. If you are already familiar with Ally and digital accessibility...",
+    "link": "https://www.unlv.edu/news/unlvtoday/july-2026-digital-accessibility-training"
   },
   {
     "name": "July 2026 Digital Accessibility Training",
@@ -19,21 +37,21 @@
   },
   {
     "name": "Financial Wellness Series \u2014 Your Contributions Today Equal Serious Money Later",
+    "category": "Today's Announcements",
+    "section": "Today's Announcements",
+    "publishedDate": "",
+    "publishedAt": "2026-06-23T16:53:04-0700",
+    "summary": "The Nevada System of Higher Education partnered with TIAA to develop a four-part newsletter series focused on building smart money habits, understanding credit and debt, and beginner investing. Please see below for the third edition which includes links to on-demand webinars....",
+    "link": "https://www.unlv.edu/news/unlvtoday/financial-wellness-series-your-contributions-today-equal-serious-money-later"
+  },
+  {
+    "name": "Financial Wellness Series \u2014 Your Contributions Today Equal Serious Money Later",
     "category": "Announcements",
     "section": "More from the Last Week",
     "publishedDate": "2026-06-24",
     "publishedAt": "2026-06-23T16:53:04-0700",
     "summary": "The Nevada System of Higher Education partnered with TIAA to develop a four-part newsletter series focused on building smart money habits, understanding credit and debt, and beginner investing. Please see below for the third edition which includes links to on-demand webinars....",
     "link": "https://www.unlv.edu/news/unlvtoday/financial-wellness-series-your-contributions-today-equal-serious-money-later"
-  },
-  {
-    "name": "Academic/Administrative/Postdoctoral Scholar Employment Opportunities",
-    "category": "Today's Announcements",
-    "section": "Today's Announcements",
-    "publishedDate": "",
-    "publishedAt": "2026-06-23T11:39:25-0700",
-    "summary": "Each week, Human Resources will inform the campus community about new internal job opportunities. The following is a listing of new UNLV academic/administrative/postdoctoral scholar job openings for the week:",
-    "link": "https://www.unlv.edu/news/unlvtoday/academicadministrativepostdoctoral-scholar-employment-opportunities-29"
   },
   {
     "name": "Academic/Administrative/Postdoctoral Scholar Employment Opportunities",
@@ -46,30 +64,12 @@
   },
   {
     "name": "KUNV Free Movie Night July 6",
-    "category": "Today's Announcements",
-    "section": "Today's Announcements",
-    "publishedDate": "",
-    "publishedAt": "2026-06-23T10:56:43-0700",
-    "summary": "91.5 KUNV, UNLV's radio station, is giving away free tickets to the first Las Vegas screening of Gail Daughtry and The Celebrity Sex Pass on Monday, July 6 at AMC Town Square. Reserve your tickets here .",
-    "link": "https://www.unlv.edu/news/unlvtoday/kunv-free-movie-night-july-6"
-  },
-  {
-    "name": "KUNV Free Movie Night July 6",
     "category": "Save-The-Date",
     "section": "More from the Last Week",
     "publishedDate": "2026-06-23",
     "publishedAt": "2026-06-23T10:56:43-0700",
     "summary": "91.5 KUNV, UNLV's radio station, is giving away free tickets to the first Las Vegas screening of Gail Daughtry and The Celebrity Sex Pass on Monday, July 6 at AMC Town Square. Reserve your tickets here .",
     "link": "https://www.unlv.edu/news/unlvtoday/kunv-free-movie-night-july-6"
-  },
-  {
-    "name": "Today at Noon! Money Talks: Getting Your Own Place (Light Lunch Included!)",
-    "category": "Today's Announcements",
-    "section": "Today's Announcements",
-    "publishedDate": "",
-    "publishedAt": "2026-06-23T09:35:36-0700",
-    "summary": "Still thinking about buying a home but don't know where to start? It\u2019s not too late to join the conversation! Today, June 24, from noon to 1 p.m. , join the Institute for Financial Literacy and Wellness and guest experts from Rebel CU for a casual, no-pressure lunch hour...",
-    "link": "https://www.unlv.edu/news/unlvtoday/today-noon-money-talks-getting-your-own-place-light-lunch-included"
   },
   {
     "name": "Today at Noon! Money Talks: Getting Your Own Place (Light Lunch Included!)",
@@ -133,14 +133,5 @@
     "publishedAt": "2026-06-18T10:17:25-0700",
     "summary": "Southern Nevada summers place significant demand on our campus building cooling systems. While Facilities Management works year-round to maintain and repair HVAC equipment, extreme temperatures can occasionally push systems to their limits. During these periods, the actions...",
     "link": "https://www.unlv.edu/news/unlvtoday/small-actions-big-impact-helping-preserve-campus-cooling-during-summer-heat"
-  },
-  {
-    "name": "Alert: Lied Library Closed Today, Virtual Reference Services Available",
-    "category": "Announcements",
-    "section": "More from the Last Week",
-    "publishedDate": "2026-06-18",
-    "publishedAt": "2026-06-18T07:43:46-0700",
-    "summary": "Lied Library will be closed today (June 18) due to an issue with the air conditioning and excessive heat in the building. Facilities is working on a resolution. Phone and virtual reference services remain available during normal operating hours using the Libraries' Ask Us!...",
-    "link": "https://www.unlv.edu/news/unlvtoday/alert-lied-library-closed-today-virtual-reference-services-available"
   }
 ]
