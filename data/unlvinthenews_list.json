@@ -1,5 +1,23 @@
 [
   {
+    "name": "Nevada Week | America at 250: The Indigenous Perspective",
+    "category": "P.B.S.",
+    "section": "In The News",
+    "publishedDate": "2026-06-25",
+    "publishedAt": "2026-06-25T15:15:48-07:00",
+    "summary": "This July 4th marks the 250th anniversary of the signing of the Declaration of Independence. While the country celebrates, what do indigenous communities think of the celebrations?",
+    "link": "https://www.vegaspbs.org/blogs/nevada-week-season-8/america-at-250-the-indigenous-perspective/"
+  },
+  {
+    "name": "Inside The Stacked, Closed-Door DEA Hearing That Will Decide Weed\u2019s Federal Future",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-25",
+    "publishedAt": "2026-06-25T14:54:05-07:00",
+    "summary": "On June 29, the federal government will hold a hearing that will help decide whether all marijuana (not just medical cannabis and FDA-approved products) moves to Schedule III. Seven outside parties got a seat in the room. All seven oppose rescheduling. Not one supporter of reform made the list.",
+    "link": "https://hightimes.com/news/politics/dea-stacked-marijuana-rescheduling-hearing-june-29/"
+  },
+  {
     "name": "UNLV Rebels Forever Affinity Card Programs with Silver State Schools Credit Union",
     "category": "K.L.A.S. T.V. 8 News Now",
     "section": "In The News",
@@ -14,7 +32,7 @@
     "section": "In The News",
     "publishedDate": "2026-06-25",
     "publishedAt": "2026-06-25T11:56:06-07:00",
-    "summary": "Results from a late-stage clinical trial of the pill daraxonrasib offer new hope for a notoriously deadly disease, doctors say.",
+    "summary": "Results from a late-stage clinical trial of the pill daraxonrasib offers new hope for a notoriously deadly disease, doctors say.",
     "link": "https://www.everydayhealth.com/cancer/groundbreaking-drug-may-double-survival-time-for-pancreatic-cancer/?utm_source=outreach&amp;utm_medium=referral&amp;utm_campaign=unlvedu"
   },
   {
@@ -54,30 +72,12 @@
     "link": "https://www.reviewjournal.com/videos/unlv-medical-school-honored/"
   },
   {
-    "name": "Why aren\u2019t there more high-rise apartment buildings in Las Vegas?",
-    "category": "UNLV In The News",
+    "name": "More doctors, transit funds, clean energy \u2014 Southern Nevada's Carson City agenda",
+    "category": "K.T.N.V. T.V. ABC 13",
     "section": "In The News",
     "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T13:51:46-07:00",
-    "summary": "Building more high-rise apartments could help alleviate the Las Vegas Valley\u2019s housing crunch, but don\u2019t expect a boom in taller residential buildings anytime soon, experts say.",
-    "link": "https://www.reviewjournal.com/business/vegas-business/building-las-vegas/why-arent-there-more-high-rise-apartment-buildings-in-las-vegas-3841814/"
-  },
-  {
-    "name": "More than 45,000 lawsuits against ICE: Federal judges say detentions are illegal",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T13:34:39-07:00",
-    "summary": "More than 45,000 habeas corpus petitions have flooded federal courts since ICE expanded mandatory detention. Federal judges order the release of detainees, but immigration judges almost automatically deny bond.",
-    "link": "https://eltiempolatino.com/2026/06/22/nacionales/mas-de-45-000-demandas-contra-ice-jueces-federales-dicen-que-las-detenciones-son-ilegales/"
-  },
-  {
-    "name": "Pipeline Review: Alzheimer Disease Therapies by Mechanism of Action",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T12:30:00-07:00",
-    "summary": "The 2026 Alzheimer disease drug development landscape highlights a growing shift toward diverse disease-modifying strategies, from amyloid and tau targeting to metabolic and neuroprotective approaches.",
-    "link": "https://www.neurologylive.com/view/pipeline-review-alzheimer-disease-therapies-mechanism-action"
+    "publishedAt": "2026-06-23T16:59:08-07:00",
+    "summary": "From training more doctors in Southern Nevada to finding money for transit programs, many of the topics that committees decided need lawmaker attention have been the subject of local coverage here in the valley.",
+    "link": "https://www.ktnv.com/news/more-doctors-transit-funds-clean-energy-southern-nevadas-carson-city-agenda"
   }
 ]
