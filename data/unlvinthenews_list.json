@@ -1,5 +1,41 @@
 [
   {
+    "name": "An 80-year-old woman with advanced Alzheimer\u2019s regained speech and mobility after taking psilocybin",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-26",
+    "publishedAt": "2026-06-26T10:39:42-07:00",
+    "summary": "A recently published case report in Frontiers in Neuroscience details how a high dose of psilocybin mushrooms appeared to temporarily restore specific daily functions and communication abilities in an individual with advanced Alzheimer\u2019s disease. The findings suggest that certain brain networks might retain dormant capacities even in the late stages of neurodegeneration.",
+    "link": "https://www.psypost.org/an-80-year-old-woman-with-advanced-alzheimers-regained-speech-and-mobility-after-taking-psilocybin/"
+  },
+  {
+    "name": "Paxton\u2019s support for IVF highlights broader divide among GOP",
+    "category": "UNLV In The News",
+    "section": "In The News",
+    "publishedDate": "2026-06-26",
+    "publishedAt": "2026-06-26T10:00:27-07:00",
+    "summary": "Texas Attorney General Ken Paxton\u2019s announcement last week that he supports in vitro fertilization (IVF) is putting him on opposite sides of the state\u2019s Republican Party, a declaration highlighting a broader divide among Republicans about how far the party should go in limiting reproductive rights after the Supreme Court ended the right to abortion. Paxton\u2019s announcement comes as he is locked in a neck-and-neck race for U.S. Senate against Democrat James Talarico.",
+    "link": "https://spectrumlocalnews.com/tx/san-antonio/news/2026/06/26/texas-republicans-ken-paxton-ivf"
+  },
+  {
+    "name": "Nevada takes step toward becoming corporate litigation hub with business court pilot program",
+    "category": "Nevada Current",
+    "section": "In The News",
+    "publishedDate": "2026-06-26",
+    "publishedAt": "2026-06-26T09:52:09-07:00",
+    "summary": "The Clark County District Court this week announced it has restructured its departments to include a dedicated business court. The restructuring is expected to bring down case adjudication times, and it could help an ongoing effort to transform Nevada into a premier destination for corporate litigation.",
+    "link": "https://nevadacurrent.com/2026/06/26/nevada-takes-step-toward-becoming-corporate-litigation-hub-with-business-court-pilot-program/"
+  },
+  {
+    "name": "Aspiring teachers stay the course at UNLV despite CCSD budget cuts",
+    "category": "Las Vegas Sun",
+    "section": "In The News",
+    "publishedDate": "2026-06-26",
+    "publishedAt": "2026-06-26T09:45:41-07:00",
+    "summary": "Despite consistently falling enrollment and the staffing cuts that come with it at the Clark County School District, aspiring teacher Chris Nelson feels hopeful about his career prospects.",
+    "link": "https://lasvegassun.com/news/2026/jun/26/aspiring-teachers-stay-the-course-at-unlv-despite/"
+  },
+  {
     "name": "Nevada Week | America at 250: The Indigenous Perspective",
     "category": "P.B.S.",
     "section": "In The News",
@@ -43,41 +79,5 @@
     "publishedAt": "2026-06-25T11:26:23-07:00",
     "summary": "The top DEA administrative law judge will once again hear arguments for and against downgrading marijuana's status under federal law, but marijuana rescheduling is not guaranteed.",
     "link": "https://mjbizdaily.com/news/what-can-the-cannabis-industry-expect-from-the-dea-marijuana-rescheduling-hearings/616614/"
-  },
-  {
-    "name": "UNLV Vegas Loop station approved, Aces drop home game, and Brandon Flowers announces solo album",
-    "category": "K.N.P.R. News",
-    "section": "In The News",
-    "publishedDate": "2026-06-24",
-    "publishedAt": "2026-06-24T13:00:13-07:00",
-    "summary": "The Boring Co.\u2019s Vegas Loop system is planning to put a station at UNLV following approval on Monday, June 22, by the state Board of Regents. It is slated to be built in the Thomas & Mack Center parking lot, with the Boring Co. paying the construction costs, according to the Las Vegas Review-Journal.",
-    "link": "https://knpr.org/daily-rundown/2026-06-24/unlv-vegas-loop-station-approved-aces-drop-home-game-and-brandon-flowers-announces-solo-album"
-  },
-  {
-    "name": "Loud Budgeting",
-    "category": "UNLV In The News",
-    "section": "In The News",
-    "publishedDate": "2026-06-24",
-    "publishedAt": "2026-06-24T10:54:49-07:00",
-    "summary": "Loud budgeting is a personal finance trend that encourages people to be vocal about their budget and speak up when they can\u2019t afford to spend more. It was popularized on TikTok, and it\u2019s a way for people to avoid overspending and reduce peer pressure from friends.WalletHub asked a panel of experts to share their thoughts on loud budgeting.",
-    "link": "https://wallethub.com/edu/b/loud-budgeting/142885#expert=Alexander_Nill"
-  },
-  {
-    "name": "UNLV Medical School Honored",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T17:09:00-07:00",
-    "summary": "UNLV Kirk Kerkorian School of Medicine is being honored for the design and operation of its main building. The school says its the first academic institution in Nevada to get LEED Platinum certification from the U.S Green Building Council.",
-    "link": "https://www.reviewjournal.com/videos/unlv-medical-school-honored/"
-  },
-  {
-    "name": "More doctors, transit funds, clean energy \u2014 Southern Nevada's Carson City agenda",
-    "category": "K.T.N.V. T.V. ABC 13",
-    "section": "In The News",
-    "publishedDate": "2026-06-23",
-    "publishedAt": "2026-06-23T16:59:08-07:00",
-    "summary": "From training more doctors in Southern Nevada to finding money for transit programs, many of the topics that committees decided need lawmaker attention have been the subject of local coverage here in the valley.",
-    "link": "https://www.ktnv.com/news/more-doctors-transit-funds-clean-energy-southern-nevadas-carson-city-agenda"
   }
 ]
