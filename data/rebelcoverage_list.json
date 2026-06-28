@@ -1,35 +1,5 @@
 [
   {
-    "name": "Fresno State",
-    "startDate": "2026-03-29",
-    "startTime": "",
-    "endDate": "2026-03-29",
-    "endTime": "",
-    "location": "Fresno, CA",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/fresno-state/boxscore/17692"
-  },
-  {
-    "name": "#49 Boise State",
-    "startDate": "2026-03-29",
-    "startTime": "10:00 AM",
-    "endDate": "2026-03-29",
-    "endTime": "",
-    "location": "Boise, ID",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/3/29/broc-busting-womens-tennis-takes-control-of-first-place-with-win-in-boise.aspx"
-  },
-  {
-    "name": "San Jos\u00e9 State",
-    "startDate": "2026-03-29",
-    "startTime": "12:06 PM",
-    "endDate": "2026-03-29",
-    "endTime": "3:33 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/san-jos-state/boxscore/17765"
-  },
-  {
     "name": "CSU Bakersfield",
     "startDate": "2026-03-30",
     "startTime": "2:06 PM",
