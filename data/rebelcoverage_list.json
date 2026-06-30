@@ -1,16 +1,6 @@
 [
   {
     "name": "Wyoming Cowboy Classic",
-    "startDate": "2026-03-31",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-03-31",
-    "endTime": "",
-    "location": "Maricopa, AZ",
-    "sport": "Men's Golf",
-    "link": "https://unlvrebels.com/news/2026/3/31/mens-golf-rebels-tied-for-sixth-after-day-one-at-cowboy-classic.aspx"
-  },
-  {
-    "name": "Wyoming Cowboy Classic",
     "startDate": "2026-04-01",
     "startTime": "(ALL DAY)",
     "endDate": "2026-04-01",
@@ -2528,5 +2518,15 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/fresno-state/boxscore/17611"
+  },
+  {
+    "name": "La Sierra University",
+    "startDate": "2026-12-29",
+    "startTime": "7:00 PM",
+    "endDate": "2026-12-29",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/la-sierra-university/boxscore/17453"
   }
 ]

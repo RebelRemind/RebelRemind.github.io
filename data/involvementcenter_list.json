@@ -1,101 +1,5 @@
 [
   {
-    "name": "Be Kind To Your Mind: A Mental Health Panel",
-    "startDate": "2026-03-31",
-    "startTime": "1:00 PM",
-    "endDate": "2026-03-31",
-    "endTime": "2:30 PM",
-    "location": "RLL 101",
-    "organization": "College of Liberal Arts",
-    "description": "We invite you to join us for a mental health panel with real professionals to learn how to take care of yourself and your mind. There will be a portion with pre-determined questions and there will be time for open questions from any curious student. Open to all majors.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12217589"
-  },
-  {
-    "name": "Discovering Me & Self-Care",
-    "startDate": "2026-03-31",
-    "startTime": "3:00 PM",
-    "endDate": "2026-03-31",
-    "endTime": "4:00 PM",
-    "location": "Online",
-    "organization": "The Coaching Spot",
-    "description": "We\u2019re excited to host our upcoming workshop, \u201cDiscovering Me & Self-Care,\u201d focused on helping students better understand themselves, recognize burnout, and build sustainable self-care routines. This session will guide participants through identifying stressors and triggers, learning grounding and breathing techniques, and understanding what self-care truly means beyond surface-level habits. We\u2019ll also cover how to advocate for yourself, set healthy boundaries, and create a personalized self-care routine that supports your physical, emotional, social, financial, intellectual, and spiritual well-being.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/3a9a997c-3ec6-4bfb-ab6d-27397da63e7eae69db90-51fa-445b-936b-e8aa78fb8d8b.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12257294"
-  },
-  {
-    "name": "Workshop: Media Literacy ",
-    "startDate": "2026-03-31",
-    "startTime": "4:00 PM",
-    "endDate": "2026-03-31",
-    "endTime": "5:00 PM",
-    "location": "Online",
-    "organization": "CAEO College Programs",
-    "description": "In this workshop, you'll learn how to navigate the digital world with confidence! Discover how to spot fake news, analyze media messages, and make smarter, more informed decisions in today's media-driven society.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12026127"
-  },
-  {
-    "name": "Mindful Moments: Weekly Guided Meditation",
-    "startDate": "2026-03-31",
-    "startTime": "4:30 PM",
-    "endDate": "2026-03-31",
-    "endTime": "5:30 PM",
-    "location": "Health Education Room, SRWC, Room 1502",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Join us for guided meditation. No registration needed.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/f5fd7d94-e0bf-4082-84ba-bc0ed7c272f6d026bdb7-31d0-4219-bcb0-b8cedf2a2de9.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12131464"
-  },
-  {
-    "name": "FLM Medical Student Panel ",
-    "startDate": "2026-03-31",
-    "startTime": "6:00 PM",
-    "endDate": "2026-03-31",
-    "endTime": "7:30 PM",
-    "location": "CHB C124 ",
-    "organization": "Future Latinos in Medicine",
-    "description": "Join us for a student panel event where we will have MD resident, MD, PT, Nursing, Ultrasound, and Radiology students talk about their journeys into their pre-professional school. Make sure to come to get all your questions answered!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/6787f6a4-8194-42fc-b6d3-53d20ad0cbcdbce51d07-ff71-4ff6-83c7-0793352c085d.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12359742"
-  },
-  {
-    "name": "Women In Sports Panel",
-    "startDate": "2026-03-31",
-    "startTime": "6:00 PM",
-    "endDate": "2026-03-31",
-    "endTime": "8:00 PM",
-    "location": "Philip J. Cohen Theatre @ UNLV Student Union",
-    "organization": "UNLV Formula Racing",
-    "description": "In honor of Women\u2019s History Month, join us for an inspirational and informative evening featuring women in sports! Our panelists bring experience in areas such as fan experience, communications and media, marketing and partnerships, and business and financial operations. They will share insight into their career journeys, their experiences being a woman in sports, and their advice for interested students. Featuring: Demi Lobo Premium Service Manager Las Vegas Raiders Katie Freter Communications and Content Graduate Assistant Las Vegas Golden Knights Adrienne Markham Partnership Marketing Senior Manager Las Vegas Aces Kelleen Rogers Finance Planning and Analysis Senior Manager UFC More Info Here! Don\u2019t miss this opportunity to learn, connect, and be inspired by women making an impact in sports! Date and Time: Tuesday, March 31st, 6pm Place: Philip J. Cohen Theatre @ UNLV Student Union RSVP at: https://forms.gle/HXZTzFUFjxwQvKzM7",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b52123a8-c723-468b-abcc-1e1a32d58a10a69db88a-b1aa-43ce-8af2-99947a7ded59.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12367830"
-  },
-  {
-    "name": "Easter Meeting - HOP and Egg Painting",
-    "startDate": "2026-03-31",
-    "startTime": "5:30 PM",
-    "endDate": "2026-03-31",
-    "endTime": "8:00 PM",
-    "location": "Student Union Room 207",
-    "organization": "Cinefemmes",
-    "description": "Hangout with us on Tuesday, March 31 anytime between 5:30-8pm in Student Union Room 207, watch HOP, and paint some wooden eggs!!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b5b1d525-a7be-4771-92b6-0e2afb3391fa84b567d9-6357-49e8-b7c7-da703b0406ee.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12325319"
-  },
-  {
-    "name": "Tuesday kick!",
-    "startDate": "2026-03-31",
-    "startTime": "6:30 PM",
-    "endDate": "2026-03-31",
-    "endTime": "8:30 PM",
-    "location": "Student Recreation and Wellness Center",
-    "organization": "Rebel Freestyle",
-    "description": "Join us in honing our balance, coordination, dexterity, power, and friendships! On Tuesdays we'll meet in the SRWC, meeting room 1020 (across from the Student Health Center). See all the latest exact plans and updates on our WhatsApp. Come play with us!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/0e1f32de-c566-4e92-be6b-6f76fc0e6b02a96e438a-2326-461d-aeb0-524c90f88e7b.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12063316"
-  },
-  {
     "name": "Rebels Mens Spot ",
     "startDate": "2026-04-01",
     "startTime": "1:00 PM",
@@ -3300,6 +3204,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12482429"
   },
   {
+    "name": "Rebel Variety Show Auditions (Group)",
+    "startDate": "2026-09-16",
+    "startTime": "4:00 PM",
+    "endDate": "2026-09-16",
+    "endTime": "8:00 PM",
+    "location": "SU Theater",
+    "organization": "Rebel Events Board (REB)",
+    "description": "If you have a talent you would like to perform during Homecoming week come on out to the Rebel Variety Show Auditions!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497384"
+  },
+  {
     "name": "Coffee with Karly ",
     "startDate": "2026-09-17",
     "startTime": "12:00 PM",
@@ -3310,6 +3226,30 @@
     "description": "Grab a coffee, tea or treat on us and meet Karly at Rebel Grounds Coffee Shop in the Hospitality Building for an informal conversation about leadership, involvement, and finding your place at UNLV. Whether you're looking for ways to get more engaged on campus, explore leadership opportunities, or simply connect with other students, this space is designed for honest conversation, questions, and personal growth. Leave with new ideas, resources, and a clearer path toward making your impact on campus and in the community.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/6963d8b8-a4d5-4f11-82ca-65a7a890096135cf63b6-de80-439c-8d6e-c80d69f265a3.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12482481"
+  },
+  {
+    "name": "Rebel Variety Show Auditions (Individual)",
+    "startDate": "2026-09-17",
+    "startTime": "4:00 PM",
+    "endDate": "2026-09-17",
+    "endTime": "8:00 PM",
+    "location": "SU Theatre",
+    "organization": "Rebel Events Board (REB)",
+    "description": "If you have a talent you would like to perform during Homecoming week come on out to the Rebel Variety Show Auditions!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497385"
+  },
+  {
+    "name": "Rebels After Dark",
+    "startDate": "2026-09-17",
+    "startTime": "7:00 PM",
+    "endDate": "2026-09-17",
+    "endTime": "10:00 PM",
+    "location": "Pida Plaza",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join REB for our late night event of the semester! Free food and activities for all UNLV students!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497386"
   },
   {
     "name": "Leadership Link Up - Feel It to Lead It, First Gen & In Our Feelings",
@@ -3408,6 +3348,18 @@
     "link": "https://involvementcenter.unlv.edu/event/12489217"
   },
   {
+    "name": "Homecoming Rebel Variety Show",
+    "startDate": "2026-10-06",
+    "startTime": "6:00 PM",
+    "endDate": "2026-10-06",
+    "endTime": "8:00 PM",
+    "location": "SU Ballroom",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join REB for our annual Rebel Variety Show to support your fellow rebels!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497388"
+  },
+  {
     "name": "Snacks & Skills: Democracy and Donuts (The Simpsons)",
     "startDate": "2026-10-07",
     "startTime": "2:00 PM",
@@ -3418,6 +3370,30 @@
     "description": "Grab a donut and join us for a fun, Simpsons -themed exploration of democracy and civic engagement! This interactive program breaks down how democracy works in everyday life\u2014from direct, representative, and constitutional systems to the many ways students can use their voice for change. Through activities, discussion, and connection, you\u2019ll learn how civic engagement shows up on and off campus and how you can take action using the Social Change Wheel to create meaningful impact in your community. Come for the donuts, stay for the democracy!",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/a2e2530e-5bca-4e36-ac5b-7cf0fb662a52396d2354-4d9e-46fe-9528-4e88ffb8a872.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12482496"
+  },
+  {
+    "name": "Homecoming Festival & Parade",
+    "startDate": "2026-10-08",
+    "startTime": "5:00 PM",
+    "endDate": "2026-10-08",
+    "endTime": "9:00 PM",
+    "location": "Pida Plaza/Academic Mall",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join us for one of our biggest events for Homecoming with the Festival and Parade with lots of free food, activities, rides and more!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497389"
+  },
+  {
+    "name": "Homecoming NPHC Yardshow",
+    "startDate": "2026-10-08",
+    "startTime": "7:00 PM",
+    "endDate": "2026-10-08",
+    "endTime": "9:00 PM",
+    "location": "Courtyard",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Come join REB for a fun night at the NPHC Yardshow!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497390"
   },
   {
     "name": "Coffee with Karly ",
@@ -3442,6 +3418,54 @@
     "description": "Suit up in your favorite jersey and join us for a high-energy Leadership Link Up focused on what it really means to bounce back. College life comes with wins, losses, setbacks, and comebacks\u2014and resilient leadership is about learning how to keep going, adapt, and grow stronger through it all. Through interactive activities and reflection, we\u2019ll explore how to stay grounded under pressure, learn from challenges, and show up for yourself and others when it matters most. Whether you're on offense or defense in life right now, this space is built for you.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/237cf430-b239-4485-a7dd-58134baadeff10a71a1f-d921-4afb-a03a-29697388532e.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12482520"
+  },
+  {
+    "name": "Drag Bingo",
+    "startDate": "2026-10-21",
+    "startTime": "5:00 PM",
+    "endDate": "2026-10-21",
+    "endTime": "8:00 PM",
+    "location": "SU Ballrooms",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join REB for our annual Drag Bingo event filled with lots of fun, food, and giveaways!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497392"
+  },
+  {
+    "name": "Rebels After Dark",
+    "startDate": "2026-11-05",
+    "startTime": "7:00 PM",
+    "endDate": "2026-11-05",
+    "endTime": "10:00 PM",
+    "location": "Pida Plaza",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join REB for our late night event of the semester! Free food and activities for all UNLV students!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497393"
+  },
+  {
+    "name": "Open Mic Night",
+    "startDate": "2026-11-18",
+    "startTime": "5:00 PM",
+    "endDate": "2026-11-18",
+    "endTime": "7:00 PM",
+    "location": "Pida Plaza",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Do you have a talent you would like to show off? Come out to REB's Open Mic of the semester where you can perform your talent!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497395"
+  },
+  {
+    "name": "Rebel Wonderland",
+    "startDate": "2026-12-03",
+    "startTime": "6:00 PM",
+    "endDate": "2026-12-03",
+    "endTime": "9:00 PM",
+    "location": "Pida/Academic Mall/Ampitheater/SWRI Lawn",
+    "organization": "Rebel Events Board (REB)",
+    "description": "Join REB for our annual Rebel Wonderland event! Come join us to celebrate the beginning of the holiday season continue this tradition at UNLV with free food, activities, and more!",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12497396"
   },
   {
     "name": "Snacks and Skills : Good Trouble, Necessary Trouble",
