@@ -1,89 +1,5 @@
 [
   {
-    "name": "Rebels Mens Spot ",
-    "startDate": "2026-04-01",
-    "startTime": "1:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "2:00 PM",
-    "location": "The Coaching Spot (SSC-A, Rm 254)",
-    "organization": "The Coaching Spot",
-    "description": "Welcome to the Rebels Mens Spot, a peer accountability community built for Male UNLV students. This is your space to connect, have real conversations, and level up academically and personally. No judgment. Just Growth. Sessions are every Wednesday at 1PM at The Coaching Spot (SSC-A, 2nd floor, Rm 254)",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/eb262d42-5f97-4cd2-9aa1-1e8127718f53340e407a-f948-4b09-a051-54ac2e154e25.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12365348"
-  },
-  {
-    "name": "Speakeasy Series: Speak your SUCCESS",
-    "startDate": "2026-04-01",
-    "startTime": "1:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "2:30 PM",
-    "location": "Student Union Room 228",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Share your successes, wins, and celebrate! Celebrate with sparkling cider and faux champagne drinks! Join us for a drop-in space to eat and share your story. Meet with other students and CAPS staff to speak your story, give and get support, and engage in activities for reflection and growth.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12307998"
-  },
-  {
-    "name": "Spring Mixer",
-    "startDate": "2026-04-01",
-    "startTime": "5:30 PM",
-    "endDate": "2026-04-01",
-    "endTime": "6:30 PM",
-    "location": "BEH104",
-    "organization": "Neuroscience Undergraduate Research Organization ",
-    "description": "We are excited to announce that our third general meeting will be a Spring Mixer! This will be held in collaboration with UNLV Scientistas as well as Nu Rho Psi (UNLV Chapter). Come by to learn about our upcoming events, more about the UNLV chapter of Nu Rho Psi, and information for the fall semester, including E-board openings!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/7819f939-5aae-43d4-bd65-727f52321ff9ba909719-bdf6-4278-a314-15d23cada5fe.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12385535"
-  },
-  {
-    "name": "Stand Out in the Room: Own Your Professionalism",
-    "startDate": "2026-04-01",
-    "startTime": "6:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "7:00 PM",
-    "location": "Online",
-    "organization": "Career Services",
-    "description": "Own Your Story. Show Your Value. Stand Out in the Room: Interview & Professional Communication Workshop You\u2019re qualified. Now let\u2019s make sure you sound like it. In this interactive virtual workshop, you\u2019ll learn how to communicate with clarity, confidence, and authenticity- without freezing, rambling, or sounding scripted. From first impressions to behavioral questions to \u201cTell me about yourself,\u201d we\u2019ll break down how to share your story in a way that feels natural and professional. Plus, get tips for networking messages and follow-up emails that actually sound like you. Perfect for job seekers, internship hunters, and anyone ready to own their story out loud. Register on Handshake: https://unlv.joinhandshake.com/events/1924286/share_preview",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/d4eb83eb-4a91-4001-8eab-345e6257d1fecdc7b7a9-b208-48bc-8239-32bc2b8d6dec.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12330140"
-  },
-  {
-    "name": "Fine Arts Mixer",
-    "startDate": "2026-04-01",
-    "startTime": "6:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "8:00 PM",
-    "location": "FDH 101",
-    "organization": "American Institute of Graphic Arts",
-    "description": "\ud83c\udfa8\ud83c\udfad\ud83c\udfa5 It's time for a Fine Arts Mixer!! The College of Fine Arts Peer Mentors, AIGA, and Cinefemmes is putting together an mixer for all Fine Arts students to socialize and network! Are you a Film student in need of a designer for your poster? An actor looking for future jobs? Or a student simply looking for a space to meet your peers? This is the event just for you! Come enjoy food and drinks while getting to network with your peers! All CFA students welcomed! \ud83d\uddd3\ufe0fMark your calendars for April 1st, at 6 PM inside FDH 101!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/044ffbd0-e499-4786-8179-cc6ddccfecfd8c26dcfd-7a5a-45c9-b0b0-865560f4ba0c.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12371791"
-  },
-  {
-    "name": "Executive Debate ",
-    "startDate": "2026-04-01",
-    "startTime": "5:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "8:00 PM",
-    "location": "SU Ballroom A",
-    "organization": "CSUN Student Government",
-    "description": "Join CSUN for the Executive Debate on April 1st, 2026 from 5:30-7:30pm! Meet and ask questions for your candidates of the next President, Vice-President, and Senate President! The two tickets debating are CSUN Impacts and Renoveau! If you can't make it, the debate will be live-streamed! \ud83d\udccd SU Ballroom A \ud83c\udf55Free Pizza and Soda",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/15a15f09-ae68-4b19-9c2b-0de43fd2f750568b7926-495c-45ac-bd28-54b86e11aa2c.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12360445"
-  },
-  {
-    "name": "April Fools",
-    "startDate": "2026-04-01",
-    "startTime": "6:00 PM",
-    "endDate": "2026-04-01",
-    "endTime": "8:00 PM",
-    "location": "SRWC Room 1020",
-    "organization": "Perfumery Club",
-    "description": "Hey, Hey, Hey! It's Wednesday, and you know what that means - Perfume Club is back with another meeting!! Join us in the SRWC Room 1020 from 6 pm to 8 pm to make your very first stinky perfume in honor of April Fools' Day! We will be making scents with a funny twist, so come ready with your sleeves rolled and your mind open for craziness! *Don't forget to RSVP* Please join the GroupMe through the front page link or the QR code on the event flyer to stay up-to-date with club updates and get further location information.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/11834672"
-  },
-  {
     "name": "Leadership Link Up ~ Leading Through Change - Shinobi Style",
     "startDate": "2026-04-02",
     "startTime": "11:00 AM",
@@ -3406,6 +3322,18 @@
     "description": "Grab a coffee, tea or treat on us and meet Karly at Rebel Grounds Coffee Shop in the Hospitality Building for an informal conversation about leadership, involvement, and finding your place at UNLV. Whether you're looking for ways to get more engaged on campus, explore leadership opportunities, or simply connect with other students, this space is designed for honest conversation, questions, and personal growth. Leave with new ideas, resources, and a clearer path toward making your impact on campus and in the community.",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/6963d8b8-a4d5-4f11-82ca-65a7a890096135cf63b6-de80-439c-8d6e-c80d69f265a3.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12482482"
+  },
+  {
+    "name": "DASH - Meal Prep Shift ONLY",
+    "startDate": "2026-10-16",
+    "startTime": "11:15 AM",
+    "endDate": "2026-10-16",
+    "endTime": "12:45 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "DASH is one of the longest-running, key signature programs here at UNLV. Join UNLVolunteers as we build peanut butter & jelly sandwiches lunch bags to hand out during the community lunch hour at the Salvation Army! We will be meeting at the Student Union 1st floor, near the eating bar at 11:15am to begin our meal prep shift. Volunteers will participate in a short educational activity followed immediately by preparing lunch bags to hand out at the Salvation Army. After the program, we hope participants will take their involvement to the next level by seeking other ways to do service and seeking to provide long-term solutions to social inequalities such as food and housing insecurity. PLEASE NOTE: Meal Prep shift will only prepare the sandwiches and sack lunches. In order to deliver, YOU MUST sign up for the delivery shift for this day's DASH event. ALL volunteers are expected to follow health standards and expectations ( hair net, beard guard and gloves).",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12498334"
   },
   {
     "name": "Leadership Link Up: Bounce Back Season: Built for This ",
