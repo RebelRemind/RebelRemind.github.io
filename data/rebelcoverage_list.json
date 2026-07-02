@@ -1,36 +1,6 @@
 [
   {
     "name": "Colorado State",
-    "startDate": "2026-04-02",
-    "startTime": "",
-    "endDate": "2026-04-02",
-    "endTime": "",
-    "location": "Las Vegas Eller Media Stadium",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/colorado-state/boxscore/17693"
-  },
-  {
-    "name": "#43 San Diego State",
-    "startDate": "2026-04-02",
-    "startTime": "10:00 AM",
-    "endDate": "2026-04-02",
-    "endTime": "",
-    "location": "Las Vegas, NV Fertitta Tennis Complex",
-    "sport": "Women's Tennis",
-    "link": "https://unlvrebels.com/news/2026/4/2/womens-tennis-rebels-suffer-first-conference-loss-of-season.aspx"
-  },
-  {
-    "name": "New Mexico",
-    "startDate": "2026-04-02",
-    "startTime": "6:06 PM",
-    "endDate": "2026-04-02",
-    "endTime": "9:10 PM",
-    "location": "Las Vegas, Nev. / Earl E. Wilson Stadium",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/new-mexico/boxscore/17767"
-  },
-  {
-    "name": "Colorado State",
     "startDate": "2026-04-03",
     "startTime": "",
     "endDate": "2026-04-03",
@@ -2518,5 +2488,15 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/la-sierra-university/boxscore/17453"
+  },
+  {
+    "name": "Fresno State",
+    "startDate": "2026-12-31",
+    "startTime": "",
+    "endDate": "2026-12-31",
+    "endTime": "",
+    "location": "Las Vegas The Pavilion",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/fresno-state/boxscore/17643"
   }
 ]
