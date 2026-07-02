@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T15:57:54Z",
+  "generatedAt": "2026-07-02T20:13:11Z",
   "files": [
     "academiccalendar_list.json",
     "buildingimages_list.json",
@@ -23,52 +23,52 @@
     "buildingimages_list.json": {
       "status": "success",
       "itemCount": 119,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "campuswideevents_list.json": {
       "status": "success",
       "itemCount": 1,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "careerevents_list.json": {
       "status": "success",
       "itemCount": 9,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "involvementcenter_list.json": {
       "status": "success",
-      "itemCount": 279,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "itemCount": 281,
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "rebelcoverage_list.json": {
       "status": "success",
       "itemCount": 250,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "scarletandgraynews_list.json": {
       "status": "success",
       "itemCount": 10,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "unlvinthenews_list.json": {
       "status": "success",
       "itemCount": 9,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "unlvcalendar_list.json": {
       "status": "success",
       "itemCount": 1709,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "unlvtoday_list.json": {
       "status": "success",
       "itemCount": 18,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     },
     "organization_list.json": {
       "status": "success",
       "itemCount": 568,
-      "lastSuccessfulAt": "2026-07-02T15:57:54Z"
+      "lastSuccessfulAt": "2026-07-02T20:13:11Z"
     }
   }
 }
