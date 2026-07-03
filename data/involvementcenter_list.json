@@ -1,77 +1,5 @@
 [
   {
-    "name": "Chapter Meeting",
-    "startDate": "2026-04-03",
-    "startTime": "1:00 PM",
-    "endDate": "2026-04-03",
-    "endTime": "1:30 PM",
-    "location": "ASC Room 146",
-    "organization": "Student Support Club for Academic Success",
-    "description": "Room ASC 146, All free to join!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/fe6eb608-7b5c-47ce-87f9-c0b5ff0f0a910836e614-99e3-4bc0-8e0b-c69971651764.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/11948283"
-  },
-  {
-    "name": "Field Trip: St. Thomas, NV",
-    "startDate": "2026-04-03",
-    "startTime": "8:00 AM",
-    "endDate": "2026-04-03",
-    "endTime": "3:00 PM",
-    "location": "UNLV",
-    "organization": "UNLV Anthropology Society",
-    "description": "Join the Anthropology Society for a fun and educational walk about St. Thomas, a once-thriving community before Lake Mead was created! Enjoy a guided walk through the ruins of the town with Park Rangers who know a thing or two about the history of this unique feature in the Nevada desert. Be prepared to spend hours outdoors - bring plenty of water, good hiking shoes, sunscreen, hats, and a lunch. Rides can be provided by the UNLV Anthropology Department if we have a headcount by March 20, 2026. Cars will leave UNLV no later than 8:15 am, so please be on time!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/2767f93f-15b8-4caf-b769-abea0c4740c82a6bff40-bec2-4dd7-9e7a-1813586bd66f.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12308328"
-  },
-  {
-    "name": "Sikolohiyang Pilipino: Filipino Psychology",
-    "startDate": "2026-04-03",
-    "startTime": "2:00 PM",
-    "endDate": "2026-04-03",
-    "endTime": "3:30 PM",
-    "location": "Online",
-    "organization": "UNLV Wellness Zone and Counseling and Psychological Services (CAPS)",
-    "description": "Have you ever heard of utang na loob? Walang hiya? Kapwa? Sikolohiyang Pilipino, or Filipino Psychology, has concepts rooted in indigenous practices and values that better capture the Filipino experience. Join us this Asian American History Month in an online workshop to learn more about its history and foundational concepts!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/b9a61637-e020-4192-93d2-9bce8108bb0e5492ee1e-bd71-4aa4-ae84-47113d9dd992.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12397551"
-  },
-  {
-    "name": "Comics for Kids",
-    "startDate": "2026-04-03",
-    "startTime": "12:00 PM",
-    "endDate": "2026-04-03",
-    "endTime": "3:30 PM",
-    "location": "Student Union ",
-    "organization": "UNLVolunteers",
-    "description": "Please come and join UNLVolunteers to sort and organize comic books with Critical Care Comics. 12:00 PM \u2013 12:15 PM: Educational session \u2014 learn about the organization, comic sorting process, and how your efforts help the community. 12:15 PM \u2013 12:20 PM: Wrap-up and prepare for departure. 12:20 PM \u2013 12:30 PM: Leave for the site. 1:00 PM: Arrive at the comic sorting site. 1:00 PM \u2013 3:00 PM: Sorting comics. 3:30 PM: Arrive back at the UNLV Student Union.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/9f3eeced-88d2-4678-a131-d2f80dffb4d74f7715bc-df23-40d7-9858-cb16046778c4.pdf?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12318389"
-  },
-  {
-    "name": "Conference Proposal Writing Workshop",
-    "startDate": "2026-04-03",
-    "startTime": "4:00 PM",
-    "endDate": "2026-04-03",
-    "endTime": "5:00 PM",
-    "location": "Online",
-    "organization": "Black Graduate Student Association",
-    "description": "Grad Ready Series: Elevate Your Research: Master the Conference Proposal From Abstract to Podium. Conference proposal submission season is coming up. Navigating the transition from research to presentation is a critical milestone in your academic career. BGSA and the Writing Center invite you to a specialized session focused on the nuances of writing winning conference proposals for graduate-level symposiums and national conferences. Why Attend? The Reviewer\u2019s Perspective: Understand what selection committees look for in a competitive abstract. Strategic Framing: Learn how to articulate your methodology and significance within strict word counts. Disciplinary Clarity: Tailor your pitch to suit both niche and interdisciplinary audiences. \ud83d\udccd Session Details Date: April 3rd, 2026 Time: 4:00pm - 5:00pm Location: Online Target Audience: Current Masters and Doctoral candidates across all disciplines. Pro Tip: Bring a current abstract or a project description you are working on, so that you can ask specific questions.",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/46ae6666-8249-4ae3-968e-d07fb7a71abd3cb0a5f7-eac5-4aa5-8526-ad5c4eb96125.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12355769"
-  },
-  {
-    "name": "Meet The Sigmas",
-    "startDate": "2026-04-03",
-    "startTime": "7:14 PM",
-    "endDate": "2026-04-03",
-    "endTime": "8:30 PM",
-    "location": "SU 218",
-    "organization": "Phi Beta Sigma Fraternity Incorporated",
-    "description": "Meet the Sigmas at UNLV! \ud83d\udd25 Come tap in for a chill kickback! Relax, vibe, and connect while also learning key information about who we are and what we do on campus. Good energy, real conversations, and a welcoming environment \u2014 don\u2019t miss out!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/95c84af7-5da9-4f31-bfe8-9fd9b2bcc0f44badbd3e-fc8c-45a5-bce3-5ad0234eec74.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12385136"
-  },
-  {
     "name": "SOTA 5th Annual Showcase of Meaningful Occupations \u2013 UNLV OTD",
     "startDate": "2026-04-04",
     "startTime": "5:00 PM",
@@ -1464,18 +1392,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12438685"
   },
   {
-    "name": "Wetlands Park 4th Annual BioBlast",
-    "startDate": "2026-04-25",
-    "startTime": "10:00 AM",
-    "endDate": "2026-04-25",
-    "endTime": "1:00 PM",
-    "location": "Clark County Wetlands Park",
-    "organization": "UNLV Birding and Conservation Club",
-    "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
-    "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
-    "link": "https://involvementcenter.unlv.edu/event/12367872"
-  },
-  {
     "name": "The Wildlife Society-Seed Collection at Lake Mead National Recreation Area April 25",
     "startDate": "2026-04-25",
     "startTime": "9:00 AM",
@@ -1486,6 +1402,18 @@
     "description": "Join National Park Service biologists and nursery staff to assist with collecting native seeds that will be used for future restoration and vegetation projects. These efforts directly support habitat restoration, and collected seeds can last for years when properly stored. This is a great opportunity to: Gain hands-on field experience in restoration ecology Work alongside National Park Service professionals Learn about native plant species and seed collection methods Contribute to real conservation efforts in southern Nevada Event Details Date: Saturday, April 25, 2026 Location: Lake Mead National Recreation Area Time & exact meeting location: Will be provided by the National Park Service one week prior to the event",
     "imageUrl": "https://se-images.campuslabs.com/clink/images/2b400ecf-0de9-4c1f-98cb-6face0567996cf3e6872-0805-4bf7-b6c3-35826b49df45.png?preset=med-w",
     "link": "https://involvementcenter.unlv.edu/event/12393455"
+  },
+  {
+    "name": "Wetlands Park 4th Annual BioBlast",
+    "startDate": "2026-04-25",
+    "startTime": "10:00 AM",
+    "endDate": "2026-04-25",
+    "endTime": "1:00 PM",
+    "location": "Clark County Wetlands Park",
+    "organization": "UNLV Birding and Conservation Club",
+    "description": "Come join the Clark County Wetlands Park in their 4th Annual BioBast event! BioBlast is a free, all-ages, whole-family event that encourages the discovery of birds and more! Celebrate World Migratory Bird Day and learn about the plants and animals of Wetlands Park. Visit Science Stations, where guest scientists and naturalists will help you find and identify fish, bugs, plants, birds, and mammals. The Nature Center will feature lots of games and activities, too! UNLV BCC will be hosting a table at the event! Come out and show your support!",
+    "imageUrl": "https://se-images.campuslabs.com/clink/images/68264300-5405-4492-8959-023b581fddacb4fb4cdf-6393-4012-94d4-fcbf4f6a1306.png?preset=med-w",
+    "link": "https://involvementcenter.unlv.edu/event/12367872"
   },
   {
     "name": "Student Dialogue & Brunch",
@@ -3072,18 +3000,6 @@
     "link": "https://involvementcenter.unlv.edu/event/12489214"
   },
   {
-    "name": "Fall 2026 Service Day: Three Square Food Bank",
-    "startDate": "2026-09-25",
-    "startTime": "8:00 AM",
-    "endDate": "2026-09-25",
-    "endTime": "2:00 PM",
-    "location": "UNLV Student Union",
-    "organization": "UNLVolunteers",
-    "description": "Date: Friday, September 25th, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required (no exceptions) About the Site: Three Square Food Bank is Southern Nevada\u2019s only food bank and a vital resource in the fight against hunger in our community. Through food distribution, community partnerships, and advocacy, Three Square works to ensure that individuals and families across the region have consistent access to nutritious food. Service Activities: Volunteers will support warehouse-based food distribution efforts by sorting, packing, and organizing food items. Tasks may include standing for extended periods and light lifting to help prepare food for distribution to community partners. Important Information: This service site is primarily indoors. Volunteers should be comfortable working in a warehouse environment and following food safety guidelines. All volunteers must wear long pants and closed-toe shoes. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
-    "imageUrl": "",
-    "link": "https://involvementcenter.unlv.edu/event/12489215"
-  },
-  {
     "name": "Fall 2026 Service Day: Junior Achievement",
     "startDate": "2026-09-25",
     "startTime": "8:00 AM",
@@ -3094,6 +3010,18 @@
     "description": "Date: Friday, September 25, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required ( no exceptions ) About the Site: Junior Achievement maintains an active vision, front and center, on how we can have a positive impact on the lives of more students \u0096 guided by our core values: Belief in the boundless potential of young people; Commitment to the principles of market-based economics and entrepreneurship; Passion for what we do and honesty, integrity, and excellence in how we do it; Respect for the talents, creativity, perspectives, and backgrounds of all individuals; Belief in the power of partnership and collaboration and; Conviction in the educational and motivational impact of relevant, hands-on learning. Service Activities: \u200bVolunteer Outreach Call Center: Volunteers at this station will be making phone calls to our volunteer network to check their upcoming availability and help us schedule future programs. \u200bEducator Appreciation Station: A space dedicated to creating handwritten thank-you cards for our local educators to recognize and thank them for the incredible work they do. \u200bStorefront Prep & Maintenance: Volunteers will help us set up, organize, and refresh our various storefront spaces to ensure they are ready for upcoming students. \u200bCurriculum & Materials Organization: This group will assist us in reviewing and organizing our student materials and curriculum packets to keep our educational resources streamlined. Important Information: This is an indoor service site that involves standing, light lifting, and repetitive tasks. Volunteers should be comfortable working in a warehouse-style environment and following all instructions provided by Junior Achievement staff to ensure safety and efficiency. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
     "imageUrl": "",
     "link": "https://involvementcenter.unlv.edu/event/12493405"
+  },
+  {
+    "name": "Fall 2026 Service Day: Three Square Food Bank",
+    "startDate": "2026-09-25",
+    "startTime": "8:00 AM",
+    "endDate": "2026-09-25",
+    "endTime": "2:00 PM",
+    "location": "UNLV Student Union",
+    "organization": "UNLVolunteers",
+    "description": "Date: Friday, September 25th, 2026 Time: 8:00 AM (Meet at Student Union 208) Service Duration: Approximately 3 hours Dress Code: Long pants and closed-toe shoes required (no exceptions) About the Site: Three Square Food Bank is Southern Nevada\u2019s only food bank and a vital resource in the fight against hunger in our community. Through food distribution, community partnerships, and advocacy, Three Square works to ensure that individuals and families across the region have consistent access to nutritious food. Service Activities: Volunteers will support warehouse-based food distribution efforts by sorting, packing, and organizing food items. Tasks may include standing for extended periods and light lifting to help prepare food for distribution to community partners. Important Information: This service site is primarily indoors. Volunteers should be comfortable working in a warehouse environment and following food safety guidelines. All volunteers must wear long pants and closed-toe shoes. Transportation: Limited transportation may be available for select sites, with additional details to come. Carpooling is strongly encouraged to help support smooth transportation for all volunteers.",
+    "imageUrl": "",
+    "link": "https://involvementcenter.unlv.edu/event/12489215"
   },
   {
     "name": "Fall 2026 Service Day: Las Vegas Science and Natural History Museum",
