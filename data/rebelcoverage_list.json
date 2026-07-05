@@ -2428,5 +2428,25 @@
     "location": "Las Vegas The Pavilion",
     "sport": "Women's Basketball",
     "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/fresno-state/boxscore/17643"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2027-01-03",
+    "startTime": "",
+    "endDate": "2027-01-03",
+    "endTime": "",
+    "location": "USAF Academy, CO",
+    "sport": "Women's Basketball",
+    "link": "https://unlvrebels.com/sports/womens-basketball/stats/2025-26/air-force/boxscore/17644"
+  },
+  {
+    "name": "Air Force",
+    "startDate": "2027-01-03",
+    "startTime": "2:00 PM",
+    "endDate": "2027-01-03",
+    "endTime": "",
+    "location": "Thomas & Mack Center",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/air-force/boxscore/17612"
   }
 ]
