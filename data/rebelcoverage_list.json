@@ -1112,7 +1112,7 @@
   {
     "name": "UC Davis",
     "startDate": "2026-09-24",
-    "startTime": "(ALL DAY)",
+    "startTime": "6:00 PM",
     "endDate": "2026-09-24",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -1142,7 +1142,7 @@
   {
     "name": "UC Davis",
     "startDate": "2026-09-26",
-    "startTime": "(ALL DAY)",
+    "startTime": "1:00 PM",
     "endDate": "2026-09-26",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -1192,7 +1192,7 @@
   {
     "name": "UTEP",
     "startDate": "2026-10-01",
-    "startTime": "(ALL DAY)",
+    "startTime": "5:00 PM",
     "endDate": "2026-10-01",
     "endTime": "",
     "location": "El Paso, Texas",
@@ -1252,7 +1252,7 @@
   {
     "name": "UTEP",
     "startDate": "2026-10-03",
-    "startTime": "(ALL DAY)",
+    "startTime": "12:00 PM",
     "endDate": "2026-10-03",
     "endTime": "",
     "location": "El Paso, Texas",
@@ -1390,16 +1390,6 @@
     "link": "https://unlvrebels.com/news/2025/10/7/mens-golf-opening-day-wins-put-rebels-in-lead-at-nb3-match-play.aspx"
   },
   {
-    "name": "Grand Canyon",
-    "startDate": "2026-10-08",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-10-08",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
     "name": "ITA Regional",
     "startDate": "2026-10-08",
     "startTime": "(ALL DAY)",
@@ -1418,6 +1408,16 @@
     "location": "Santa Ana Pueblo, NM",
     "sport": "Men's Golf",
     "link": "https://unlvrebels.com/news/2025/10/8/mens-golf-rebels-secure-nb3-match-play-victory.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-08",
+    "startTime": "6:00 PM",
+    "endDate": "2026-10-08",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
+    "link": ""
   },
   {
     "name": "ITA Regional",
@@ -1450,16 +1450,6 @@
     "link": "https://unlvrebels.com/sports/womens-soccer/stats/2025/san-diego-state/boxscore/17302"
   },
   {
-    "name": "Grand Canyon",
-    "startDate": "2026-10-10",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-10-10",
-    "endTime": "",
-    "location": "Phoenix, Ariz.",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
     "name": "ITA Regional",
     "startDate": "2026-10-10",
     "startTime": "(ALL DAY)",
@@ -1468,6 +1458,16 @@
     "location": "Provo, UT",
     "sport": "Women's Tennis",
     "link": "https://unlvrebels.com/news/2025/10/10/womens-tennis-mirchevas-run-ends-in-semfinals.aspx"
+  },
+  {
+    "name": "Grand Canyon",
+    "startDate": "2026-10-10",
+    "startTime": "4:00 PM",
+    "endDate": "2026-10-10",
+    "endTime": "",
+    "location": "Phoenix, Ariz.",
+    "sport": "Women's Volleyball",
+    "link": ""
   },
   {
     "name": "NDSU",
@@ -1512,7 +1512,7 @@
   {
     "name": "UNR",
     "startDate": "2026-10-15",
-    "startTime": "(ALL DAY)",
+    "startTime": "6:00 PM",
     "endDate": "2026-10-15",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -1550,16 +1550,6 @@
     "link": "https://unlvrebels.com/news/2025/10/17/mens-tennis-pair-of-rebs-roll-into-round-of-16.aspx"
   },
   {
-    "name": "UNR",
-    "startDate": "2026-10-17",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-10-17",
-    "endTime": "",
-    "location": "Las Vegas, Nev. / The Pavilion",
-    "sport": "Women's Volleyball",
-    "link": ""
-  },
-  {
     "name": "Air Force",
     "startDate": "2026-10-17",
     "startTime": "12:30 PM",
@@ -1567,6 +1557,16 @@
     "endTime": "",
     "location": "USAF Academy, CO Falcon Stadium",
     "sport": "Football",
+    "link": ""
+  },
+  {
+    "name": "UNR",
+    "startDate": "2026-10-17",
+    "startTime": "1:00 PM",
+    "endDate": "2026-10-17",
+    "endTime": "",
+    "location": "Las Vegas, Nev. / The Pavilion",
+    "sport": "Women's Volleyball",
     "link": ""
   },
   {
@@ -1692,7 +1692,7 @@
   {
     "name": "Hawai\u2018i",
     "startDate": "2026-10-23",
-    "startTime": "(ALL DAY)",
+    "startTime": "10:00 PM",
     "endDate": "2026-10-23",
     "endTime": "",
     "location": "Honolulu, Hawaii",
@@ -1712,7 +1712,7 @@
   {
     "name": "Hawai'i",
     "startDate": "2026-10-24",
-    "startTime": "(ALL DAY)",
+    "startTime": "10:00 PM",
     "endDate": "2026-10-24",
     "endTime": "",
     "location": "Honolulu, Hawaii",
@@ -1782,7 +1782,7 @@
   {
     "name": "Air Force",
     "startDate": "2026-10-29",
-    "startTime": "(ALL DAY)",
+    "startTime": "6:00 PM",
     "endDate": "2026-10-29",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -1802,7 +1802,7 @@
   {
     "name": "Air Force",
     "startDate": "2026-10-31",
-    "startTime": "(ALL DAY)",
+    "startTime": "12:00 PM",
     "endDate": "2026-10-31",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -1892,7 +1892,7 @@
   {
     "name": "Wyoming",
     "startDate": "2026-11-05",
-    "startTime": "(ALL DAY)",
+    "startTime": "6:30 PM",
     "endDate": "2026-11-05",
     "endTime": "",
     "location": "Laramie, Wyo.",
@@ -1922,7 +1922,7 @@
   {
     "name": "Wyoming",
     "startDate": "2026-11-07",
-    "startTime": "(ALL DAY)",
+    "startTime": "3:00 PM",
     "endDate": "2026-11-07",
     "endTime": "",
     "location": "Laramie, Wyo.",
@@ -2012,7 +2012,7 @@
   {
     "name": "New Mexico",
     "startDate": "2026-11-12",
-    "startTime": "(ALL DAY)",
+    "startTime": "6:00 PM",
     "endDate": "2026-11-12",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -2032,7 +2032,7 @@
   {
     "name": "New Mexico",
     "startDate": "2026-11-14",
-    "startTime": "(ALL DAY)",
+    "startTime": "1:00 PM",
     "endDate": "2026-11-14",
     "endTime": "",
     "location": "Las Vegas, Nev. / The Pavilion",
@@ -2092,7 +2092,7 @@
   {
     "name": "San Jos\u00e9 State",
     "startDate": "2026-11-18",
-    "startTime": "(ALL DAY)",
+    "startTime": "3:00 PM",
     "endDate": "2026-11-18",
     "endTime": "",
     "location": "San Jose, Calif.",
@@ -2112,7 +2112,7 @@
   {
     "name": "San Jos\u00e9 State",
     "startDate": "2026-11-19",
-    "startTime": "(ALL DAY)",
+    "startTime": "3:00 PM",
     "endDate": "2026-11-19",
     "endTime": "",
     "location": "San Jose, Calif.",
