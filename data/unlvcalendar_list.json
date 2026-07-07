@@ -8937,7 +8937,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
@@ -18120,6 +18120,18 @@
     "link": "https://www.unlv.edu/event/intro-pre-professional-health-workshop-2"
   },
   {
+    "name": "Meet with a TIAA Representative on Campus",
+    "startDate": "2026-07-15",
+    "startTime": "8:00 AM",
+    "endDate": "2026-07-15",
+    "endTime": "5:00 PM",
+    "location": "Campus Services Building\n        Room 132",
+    "description": "Meet with a TIAA financial consultant to help create a financial plan for your future. Discuss investments, saving and withdrawing from your plan when you retire. All employees are welcome to meet with a consultant.",
+    "category": "Career",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/csb-d64277_17.jpg?itok=YOt-T5LK",
+    "link": "https://www.unlv.edu/event/meet-tiaa-representative-campus-29"
+  },
+  {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
     "startDate": "2026-07-16",
     "startTime": "(ALL DAY)",
@@ -18214,6 +18226,18 @@
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/african-student-alliance-picnic"
+  },
+  {
+    "name": "Meet with a TIAA Representative on Campus",
+    "startDate": "2026-07-17",
+    "startTime": "8:00 AM",
+    "endDate": "2026-07-17",
+    "endTime": "5:00 PM",
+    "location": "Campus Services Building\n        Room 132",
+    "description": "Meet with a TIAA financial consultant to help create a financial plan for your future. Discuss investments, saving and withdrawing from your plan when you retire. All employees are welcome to meet with a consultant.",
+    "category": "Career",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/csb-d64277_17.jpg?itok=YOt-T5LK",
+    "link": "https://www.unlv.edu/event/meet-tiaa-representative-campus-30"
   },
   {
     "name": "91.5 Jazz and More Live Broadcast - Tap & Ash",
