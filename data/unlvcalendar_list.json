@@ -3152,8 +3152,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
-    "link": "https://www.unlv.edu/event/coffee-karly-6"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
+    "link": "https://www.unlv.edu/event/coffee-karly-7"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -3329,11 +3329,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -3341,11 +3341,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
@@ -8937,7 +8937,7 @@
     "description": "It is often said that parents are a child\u2019s first teacher. In recognition of this truth, Vegas PBS developed a pilot program to strengthen science and socioemotional learning for Las Vegas preschoolers by bridging home, school, and media environments as interconnected learning spaces.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships"
+    "link": "https://www.unlv.edu/event/play-along-home-piloting-model-home-school-media-partnerships-0"
   },
   {
     "name": "Arabesque Dance & Fitness Studio: Dancing through the Decades -  Act I Dress Rehearsal",
@@ -17544,6 +17544,18 @@
     "link": "https://www.unlv.edu/event/new-employee-benefits-orientation-12"
   },
   {
+    "name": "Not Bored, Just Disconnected: Reclaiming Emotional Closeness with our Children",
+    "startDate": "2026-07-08",
+    "startTime": "7:00 AM",
+    "endDate": "2026-07-08",
+    "endTime": "8:00 AM",
+    "location": "Virtual",
+    "description": "What are ComPsych\u00ae Huddles? ComPsych Huddles are hour-long interactive online sessions that provide education, skill building, and connection. Other interactive sessions by ComPsych include: Alliances - Support groups for shared communities Webinars \u2013 One-hour educational sessions Practices \u2013 25-minute guided mindfulness and relaxation exercises",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/parentANDCHILDD.jpg?itok=f7z6cCZF",
+    "link": "https://www.unlv.edu/event/not-bored-just-disconnected-reclaiming-emotional-closeness-our-children"
+  },
+  {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
     "startDate": "2026-07-09",
     "startTime": "(ALL DAY)",
@@ -17602,6 +17614,30 @@
     "category": "Career",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/intro-pre-professional-health-workshop-1"
+  },
+  {
+    "name": "Cat Cafe Cleanup",
+    "startDate": "2026-07-09",
+    "startTime": "8:00 AM",
+    "endDate": "2026-07-09",
+    "endTime": "11:30 AM",
+    "location": "Student Union\n        1st Floor Eating Bar",
+    "description": "Come join UNLVolunteers to help facilitate service at the cat caf\u00e9, Rescue Treasures Cat Caf\u00e9, by assisting with cleaning and caring for the cats in both the caf\u00e9 and intake areas. Participants will support the organization through general facility upkeep, sanitizing spaces, refreshing supplies, and helping maintain a safe, welcoming environment for the cats and visitors.",
+    "category": "Community",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/su-D73222_003.jpg?itok=8FNvxl80",
+    "link": "https://www.unlv.edu/event/cat-cafe-cleanup"
+  },
+  {
+    "name": "Support Group for UNLV Faculty & Staff",
+    "startDate": "2026-07-09",
+    "startTime": "9:00 AM",
+    "endDate": "2026-07-09",
+    "endTime": "10:00 AM",
+    "location": "Virtual",
+    "description": "Alice Goldstein, MA, facilitates this online support group for University of Nevada, Las Vegas faculty and staff impacted by the shooting on campus on December 6, 2023. This is a safe space to heal and be supported by others who understand what you\u2019re going through.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Resiliency%20and%20Justice%20Center.jpg?itok=Gz9GT6Jg",
+    "link": "https://www.unlv.edu/event/support-group-unlv-faculty-staff-0"
   },
   {
     "name": "Instruction Ends for Summer Session II",
@@ -17758,6 +17794,18 @@
     "category": "Academics",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2024-05/aeb-D75249_001-2000x1333.jpg?itok=KgS47Uho",
     "link": "https://www.unlv.edu/event/prospective-undergraduate-engineering-spotlight-tour-0?delta=2"
+  },
+  {
+    "name": "Thesis Defense: Raquel Rose Jackson",
+    "startDate": "2026-07-10",
+    "startTime": "9:00 AM",
+    "endDate": "2026-07-10",
+    "endTime": "11:00 AM",
+    "location": "This event is virtual",
+    "description": "Raquel Jackson, M.S. Candidate Department of Civil and Environmental Engineering Impact of Fuel Distribution on Wildfire Outcomes & Burn Severity Advisory Committee Members: Haroon Sahotra, Advisory Committee Chair Sajjad Ahmad, Advisory Committee Member Marie-Odile Fortier, Advisory Committee Member Tina Vo, Graduate College Representative",
+    "category": "Academics",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/thesis-defense-raquel-rose-jackson"
   },
   {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
@@ -17954,9 +18002,9 @@
   {
     "name": "Dissertation Defense: Ginger-Marie Wilkins",
     "startDate": "2026-07-13",
-    "startTime": "2:00 PM",
+    "startTime": "3:30 PM",
     "endDate": "2026-07-13",
-    "endTime": "4:00 PM",
+    "endTime": "4:30 PM",
     "location": "Campus Lab Building 2\n        Room 136 and Virtual",
     "description": "Ginger-Marie Wilkins, Ph.D Candidate Department of Electrical and Computer Engineering Development of a Novel AI Tool for Prediction of Electron Tunneling in Random Arrays of Nanoparticles Advisory Committee Members: Biswajit Das, Advisory Committee Chair Yingtao Jiang, Advisory Committee Member Emma Regentova, Advisory Committee Member Hui Zhao, Graduate College Representative",
     "category": "Academics",
@@ -18024,6 +18072,18 @@
     "link": "https://www.unlv.edu/event/information-session-administrative-faculty-employees-understanding-unlvs-rebel-job-1"
   },
   {
+    "name": "Meditation/Mindfulness",
+    "startDate": "2026-07-14",
+    "startTime": "12:00 PM",
+    "endDate": "2026-07-14",
+    "endTime": "12:30 PM",
+    "location": "Virtual",
+    "description": "Mindfulness is a meditative practice that emphasizes a person\u2019s acceptance of their experience in the present moment, without anxiety, fear, or judgment. This trauma-informed intervention can assist in creating a sense of security or safety and help increase self-awareness and empowerment while reducing stress and anxiety. Elizabeth Flocchini and Catherine Scherwenka offer these weekly sessions via Zoom for trauma survivors throughout Nevada, the Route 91 community, emergency responders in Clark County, and anyone impacted by any mass violence incident nationwide.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Resiliency%20and%20Justice%20Center_0.jpg?itok=7a1r70W5",
+    "link": "https://www.unlv.edu/event/meditationmindfulness-0"
+  },
+  {
     "name": "Paint & DIY: Crafting for a Cooler Summer - Rebels CU",
     "startDate": "2026-07-14",
     "startTime": "12:00 PM",
@@ -18058,6 +18118,18 @@
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/rebel-ready-week-preview"
+  },
+  {
+    "name": "Meditative Art Therapy",
+    "startDate": "2026-07-14",
+    "startTime": "5:30 PM",
+    "endDate": "2026-07-14",
+    "endTime": "6:30 PM",
+    "location": "Virtual",
+    "description": "Whether you are an experienced artist or someone who has never picked up a paintbrush, meditative art therapy is designed for anyone who wants to harness the healing power of art to transform their lives. In these sessions, you will explore methods to help you tap into your subconscious mind, process emotions, and create positive shifts in your life. This practice encourages emotional release, self-discovery, and the creation of new beliefs that support personal empowerment.",
+    "category": "Arts",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Resiliency%20and%20Justice%20Center_1.jpg?itok=oX67fxKH",
+    "link": "https://www.unlv.edu/event/meditative-art-therapy-1"
   },
   {
     "name": "REB General Member Meetings",
@@ -18180,6 +18252,18 @@
     "link": "https://www.unlv.edu/event/psyd-clinical-psychology-virtual-information-session-1"
   },
   {
+    "name": "Support Group for UNLV Faculty & Staff",
+    "startDate": "2026-07-16",
+    "startTime": "9:00 AM",
+    "endDate": "2026-07-16",
+    "endTime": "10:00 AM",
+    "location": "Virtual",
+    "description": "Alice Goldstein, MA, facilitates this online support group for University of Nevada, Las Vegas faculty and staff impacted by the shooting on campus on December 6, 2023. This is a safe space to heal and be supported by others who understand what you\u2019re going through.",
+    "category": "Academics",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Resiliency%20and%20Justice%20Center.jpg?itok=Gz9GT6Jg",
+    "link": "https://www.unlv.edu/event/support-group-unlv-faculty-staff-0?delta=1"
+  },
+  {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
     "startDate": "2026-07-17",
     "startTime": "(ALL DAY)",
@@ -18202,6 +18286,18 @@
     "category": "Arts",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/26cal_dance_motions_0.png?itok=JC9ZaQqr",
     "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=136"
+  },
+  {
+    "name": "Loss After Violence Support Group",
+    "startDate": "2026-07-17",
+    "startTime": "12:00 PM",
+    "endDate": "2026-07-17",
+    "endTime": "1:00 PM",
+    "location": "Virtual",
+    "description": "If you or your family have lost a loved one to a violent act, this support group provides a non-judgmental, safe haven where you can share your feelings, joys, heartaches, challenges, and experiences with others who truly understand.",
+    "category": null,
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/loss-after-violence-support-group"
   },
   {
     "name": "Family Swim - Fridays",
@@ -18276,16 +18372,28 @@
     "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=137"
   },
   {
-    "name": "UNLV Physical Therapy Virtual Admissions Information Session",
+    "name": "Doctor of Physical Therapy Information Session (Virtual)",
     "startDate": "2026-07-18",
     "startTime": "12:00 PM",
     "endDate": "2026-07-18",
     "endTime": "1:00 PM",
-    "location": "Virtual",
-    "description": "Join representatives from the Department of Physical Therapy for a virtual information session and application workshop.",
+    "location": "Online",
+    "description": "Join us for a virtual information session hosted by the UNLV Physical Therapy Department. In this session, we will discuss the entry-level professional program designed to prepare students to enter the profession of physical therapy.",
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
-    "link": "https://www.unlv.edu/event/unlv-physical-therapy-virtual-admissions-information-session"
+    "link": "https://www.unlv.edu/event/doctor-physical-therapy-information-session-virtual"
+  },
+  {
+    "name": "Trauma Recovery Yoga",
+    "startDate": "2026-07-18",
+    "startTime": "7:00 PM",
+    "endDate": "2026-07-18",
+    "endTime": "8:00 PM",
+    "location": "Virtual",
+    "description": "This science-based somatic method integrates many carefully researched and proven techniques in a specific yoga sequence that inspires a sense of safety and connection by regulating the nervous system. It is easily adapted for all levels, ages, and capabilities. It can be done on a mat or chair at the level that is comfortable for you.",
+    "category": "Health",
+    "imageUrl": "/images/UNLV_Logo.png",
+    "link": "https://www.unlv.edu/event/trauma-recovery-yoga-1"
   },
   {
     "name": "91.5 Jazz and More Broadcasting Live: Sunset Jazz Series - Patrick Lamb",

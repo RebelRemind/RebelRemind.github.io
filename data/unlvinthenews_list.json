@@ -1,5 +1,50 @@
 [
   {
+    "name": "UNLV capitalizes on Las Vegas's sports boom with a new bachelor's degree program",
+    "category": "Las Vegas Sun",
+    "section": "In The News",
+    "publishedDate": "2026-07-07",
+    "publishedAt": "2026-07-07T11:20:48-07:00",
+    "summary": "UNLV's William F. Harrah College of Hospitality is introducing the state's first undergraduate degree in sport hospitality management, the college announced Monday.The bachelor's degree program will begin in the fall.",
+    "link": "https://lasvegassun.com/news/2026/jul/07/unlv-capitalizes-on-vegas-sports-boom-with-new-deg/"
+  },
+  {
+    "name": "\u2018Democrats for Lombardo\u2019 might say more about the Dems on the list than Lombardo, expert says",
+    "category": "Nevada Current",
+    "section": "In The News",
+    "publishedDate": "2026-07-07",
+    "publishedAt": "2026-07-07T11:01:45-07:00",
+    "summary": "Republican Gov. Joe Lombardo has the support of a group of Nevada Democrats in his race against Attorney General Aaron Ford, a Democrat, the governor\u2019s campaign announced Monday.",
+    "link": "https://nevadacurrent.com/2026/07/07/democrats-for-lombardo-might-say-more-about-the-dems-on-the-list-than-lombardo-expert-says/"
+  },
+  {
+    "name": "Primm avoids ghost town fears with Terrible's operation deal",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-07-06",
+    "publishedAt": "2026-07-06T19:28:00-07:00",
+    "summary": "Primm, a small oasis community on the California state line, is no longer facing the prospect of becoming a modern-day ghost town after a deal was finalized to shift several local properties to Terrible\u2019s.",
+    "link": "https://news3lv.com/news/local/deal-finalized-to-sell-key-primm-properties-to-terribles-easing-closure-fears"
+  },
+  {
+    "name": "FOX5 Investigates: Nevada data center boom strains energy, water, and land resources",
+    "category": "K.V.V.U. T.V. Fox 5",
+    "section": "In The News",
+    "publishedDate": "2026-07-06",
+    "publishedAt": "2026-07-06T19:25:00-07:00",
+    "summary": "State memo says northern Nevada could become the second-largest data market in the world, but infrastructure questions remain.",
+    "link": "https://www.fox5vegas.com/2026/07/07/fox5-investigates-nevada-data-center-boom-strains-energy-water-land-resources/"
+  },
+  {
+    "name": "New heat law takes effect in Nevada, meant to address heat deaths and illnesses",
+    "category": "K.S.N.V. T.V. News 3",
+    "section": "In The News",
+    "publishedDate": "2026-07-06",
+    "publishedAt": "2026-07-06T19:04:00-07:00",
+    "summary": "The Vegas Valley was experiencing extreme heat on Monday, leading Clark County to activate its cooling stations around town.",
+    "link": "https://news3lv.com/news/local/new-heat-law-takes-effect-in-nevada-meant-to-address-heat-deaths-and-illnesses"
+  },
+  {
     "name": "UNLV now offering degree in sport hospitality management",
     "category": "K.L.A.S. T.V. 8 News Now",
     "section": "In The News",
@@ -18,66 +63,21 @@
     "link": "https://www.thenation.com/article/society/inter-campus-network-healing-together-brown-shooting/"
   },
   {
-    "name": "Las Vegas road construction projects reach key milestones",
-    "category": "Las Vegas Sun",
-    "section": "In The News",
-    "publishedDate": "2026-07-04",
-    "publishedAt": "2026-07-04T02:00:00-07:00",
-    "summary": "After nearly two years of construction, Maryland Parkway is poised to see its biggest change yet: the launch of a new, higher-frequency bus rapid transit line this August, as work across the corridor shifts toward its final phases.",
-    "link": "https://lasvegassun.com/news/2026/jul/04/maryland-parkway-and-boulder-highway-construction/"
-  },
-  {
-    "name": "After helping the US win the Cold War, the all-you-can-eat buffet is fading. Thanks, COVID",
-    "category": "The Nevada Independent",
-    "section": "In The News",
-    "publishedDate": "2026-07-04",
-    "publishedAt": "2026-07-04T02:00:00-07:00",
-    "summary": "At least three Vegas legends claimed inventing the all-you-can-eat buffet.",
-    "link": "https://thenevadaindependent.com/article/after-helping-the-us-win-the-cold-war-the-all-you-can-eat-buffet-is-fading-thanks-covid"
-  },
-  {
-    "name": "Snapshots of Nevada history at UNLV Library",
-    "category": "K.V.V.U. T.V. Fox 5",
-    "section": "In The News",
-    "publishedDate": "2026-07-03",
-    "publishedAt": "2026-07-03T20:57:21-07:00",
-    "summary": "As America celebrates its 250th anniversary, Nevadans can peek at photo snapshots of pivotal moments in state history at the UNLV Special Collections and Archives. Photos in the collection range from the 1830s and beyond, documenting portraits of ancestors of Nevadans, pioneer life in the Old West, work on the Southern Pacific Railroad, and the Hoover Dam.",
-    "link": "https://www.fox5vegas.com/2026/07/04/snapshots-nevada-history-unlv-library/"
-  },
-  {
-    "name": "Schools see huge increase in student-related crashes in Clark County",
-    "category": "Las Vegas Review Journal",
-    "section": "In The News",
-    "publishedDate": "2026-07-03",
-    "publishedAt": "2026-07-03T18:00:00-07:00",
-    "summary": "After an eye-popping 356 percent increase in crashes involving vulnerable school-age road users, Clark County is looking to increase safety for students.",
-    "link": "https://www.reviewjournal.com/local/education/schools-see-huge-increase-in-student-related-crashes-in-clark-county-3846071/"
-  },
-  {
-    "name": "A family steps in to save the dying casino town of Primm, Nevada",
-    "category": "N.P.R.",
-    "section": "In The News",
-    "publishedDate": "2026-07-03",
-    "publishedAt": "2026-07-03T15:55:00-07:00",
-    "summary": "Primm, Nevada, was once a beacon in the desert for travelers driving on Interstate 15 from Southern California to Las Vegas \u2014 a family-friendly destination, and the first place to gamble right over the Nevada border. The proliferation of casinos across America, however, has sent the town on a long decline.",
-    "link": "https://www.npr.org/2026/07/03/nx-s1-5822582/demise-and-possible-resurrection-of-primm-nevada"
-  },
-  {
-    "name": "Syracuse University and University of Nevada, Las Vegas, Join Forces at Sports, Education and Innovation Conference in Las Vegas",
+    "name": "iGaming trends and predictions for 2026",
     "category": "UNLV In The News",
     "section": "In The News",
-    "publishedDate": "2026-07-03",
-    "publishedAt": "2026-07-03T13:00:23-07:00",
-    "summary": "The third edition of the Sports, Entertainment and Innovation Conference (SEICon), which is co- hosted by UNLV and Syracuse University, brought together a broad cross-section of the sports and entertainment industries at the Bellagio.",
-    "link": "https://www.vegasslotsonline.com/news/2026/07/03/what-we-can-learn-from-seicon-iii/"
+    "publishedDate": "2026-07-06",
+    "publishedAt": "2026-07-06T12:30:00-07:00",
+    "summary": "AI is one of the main iGaming industry trends in 2026, but adoption is uneven. A report published by the University of Nevada, Las Vegas (UNLV) International Gaming Institute and KPMG found that 81.5% of gambling companies use generative AI, 66.7% use conversational AI, and 60.5% use predictive AI (2026).",
+    "link": "https://europeangaming.eu/portal/igaming-trends-and-predictions/"
   },
   {
-    "name": "What are data centers? Clark County weighs new regulations",
-    "category": "K.S.N.V. T.V. News 3",
+    "name": "Shoppers keep spending even as inflation hits the pump",
+    "category": "Las Vegas Sun",
     "section": "In The News",
-    "publishedDate": "2026-07-02",
-    "publishedAt": "2026-07-02T18:29:41-07:00",
-    "summary": "As demand for data centers continues to grow across the country, Clark County commissioners are preparing to discuss whether Southern Nevada should adopt new standards for future developments before more projects are proposed.",
-    "link": "https://news3lv.com/news/local/what-are-data-centers-clark-county-weighs-new-regulations"
+    "publishedDate": "2026-07-06",
+    "publishedAt": "2026-07-06T02:00:00-07:00",
+    "summary": "American consumers have remained relatively resilient against high gas prices as a result of the war in Iran, according to David Tinsley, managing director and senior economist at the Bank of America Institute.",
+    "link": "https://vegasinc.lasvegassun.com/business/2026/jul/06/shoppers-keep-spending-even-as-inflation-hits-the/"
   }
 ]
