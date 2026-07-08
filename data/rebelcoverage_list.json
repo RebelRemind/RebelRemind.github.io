@@ -1,35 +1,5 @@
 [
   {
-    "name": "New Mexico (DH)",
-    "startDate": "2026-04-08",
-    "startTime": "",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Albuquerque, NM",
-    "sport": "Softball",
-    "link": "https://unlvrebels.com/sports/softball/stats/2026/new-mexico/boxscore/17718"
-  },
-  {
-    "name": "Wyoming Cowgirl Classic",
-    "startDate": "2026-04-08",
-    "startTime": "(ALL DAY)",
-    "endDate": "2026-04-08",
-    "endTime": "",
-    "location": "Maricopa, AZ",
-    "sport": "Women's Golf",
-    "link": "https://unlvrebels.com/news/2026/4/8/rebels-close-regular-season-top-5-cowgirl-classic.aspx"
-  },
-  {
-    "name": "#20 Arizona State",
-    "startDate": "2026-04-08",
-    "startTime": "6:36 PM",
-    "endDate": "2026-04-08",
-    "endTime": "9:45 PM",
-    "location": "Phoenix, Ariz.",
-    "sport": "Baseball",
-    "link": "https://unlvrebels.com/sports/baseball/stats/2026/-20-arizona-state/boxscore/17770"
-  },
-  {
     "name": "Air Force",
     "startDate": "2026-04-09",
     "startTime": "12:00 PM",
@@ -2438,5 +2408,15 @@
     "location": "Thomas & Mack Center",
     "sport": "Men's Basketball",
     "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/air-force/boxscore/17612"
+  },
+  {
+    "name": "Wyoming",
+    "startDate": "2027-01-06",
+    "startTime": "7:00 PM",
+    "endDate": "2027-01-06",
+    "endTime": "",
+    "location": "Laramie, Wyoming",
+    "sport": "Men's Basketball",
+    "link": "https://unlvrebels.com/sports/mens-basketball/stats/2025-26/wyoming/boxscore/17613"
   }
 ]

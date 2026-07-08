@@ -3152,8 +3152,8 @@
     "location": "Student Union\n        Room 316",
     "description": "Join us for Coffee with Karly, a casual and welcoming space to build authentic connections, reflect on your leadership journey, and explore how relationships and mentorship shape who we are as leaders. These monthly conversations offer the opportunity to engage in meaningful dialogue, ask questions, and share experiences that strengthen your leadership skills and sense of community. Through Coffee with Karly, you will:",
     "category": "Social",
-    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_3.png?itok=cOhGZgNN",
-    "link": "https://www.unlv.edu/event/coffee-karly-7"
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coffee-With-Karly_2.png?itok=CI_HFCtp",
+    "link": "https://www.unlv.edu/event/coffee-karly-6"
   },
   {
     "name": "Consent is as Simple as Tea",
@@ -3329,11 +3329,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
+    "location": "Frank and Estella Beam Hall\n        552 or virtual",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
   },
   {
     "name": "Hiring Internationally: Options, Processes, and Concerns (H1Bs and J-1 Scholars)",
@@ -3341,11 +3341,11 @@
     "startTime": "9:00 AM",
     "endDate": "2026-04-16",
     "endTime": "10:00 AM",
-    "location": "Frank and Estella Beam Hall\n        552 or virtual",
-    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation. Please feel free to share this event with any colleagues who are involved in international hiring at UNLV.",
+    "location": "Frank and Estella Beam Hall\n        552",
+    "description": "Please join us for an event aimed to answer questions or concerns you may have when it comes to hiring internationally. The process can seem daunting at times, but Ware Immigration\u2019s Managing Partner Elaine Kimbrell and her team work with ISSC to make the process smoother for international scholars and hiring departments. She will offer us her expertise and advice during her presentation.",
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/media/image/2026-03/beh-D76637_009-2000x1333.jpg?itok=yQPwRGYL",
-    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars"
+    "link": "https://www.unlv.edu/event/hiring-internationally-options-processes-and-concerns-h1bs-and-j-1-scholars-0"
   },
   {
     "name": "MFA Thesis Exhibition: read the fine print",
@@ -17532,6 +17532,18 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-haojie-cui-0"
   },
   {
+    "name": "Meditation: Restore Your Balance",
+    "startDate": "2026-07-08",
+    "startTime": "10:00 AM",
+    "endDate": "2026-07-08",
+    "endTime": "11:00 AM",
+    "location": "Virtual",
+    "description": "Life moves quickly, and it\u2019s easy to stay in a constant state of doing, thinking, and reacting. This interactive Huddle offers an opportunity to pause, reset, and learn the foundations of meditation in a supportive, guided environment. Together, we\u2019ll explore what meditation is, how it differs from mindfulness, and the research-backed benefits for stress, focus, and emotional well-being. Participants will be guided through a live meditation practice, with space for reflection and shared insights to deepen the experience.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/meditationation.jpg?itok=uzugBddD",
+    "link": "https://www.unlv.edu/event/meditation-restore-your-balance"
+  },
+  {
     "name": "New Employee & Benefits Orientation",
     "startDate": "2026-07-08",
     "startTime": "1:30 PM",
@@ -17550,8 +17562,8 @@
     "endDate": "2026-07-08",
     "endTime": "8:00 AM",
     "location": "Virtual",
-    "description": "What are ComPsych\u00ae Huddles? ComPsych Huddles are hour-long interactive online sessions that provide education, skill building, and connection. Other interactive sessions by ComPsych include: Alliances - Support groups for shared communities Webinars \u2013 One-hour educational sessions Practices \u2013 25-minute guided mindfulness and relaxation exercises",
-    "category": "Health",
+    "description": "Sometimes what looks like boredom in our children is really a silent call for connection. In this huddle, we\u2019ll explore how to recognize emotional disconnection, respond with presence instead of pressure, and rebuild closeness in ways that feel safe, simple, and real. If you\u2019ve ever heard \u201cI\u2019m bored\u201d! and felt stuck, this is the huddle for you. What are ComPsych\u00ae Huddles? ComPsych Huddles are hour-long interactive online sessions that provide education, skill building, and connection. Other interactive sessions by ComPsych include:",
+    "category": null,
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/parentANDCHILDD.jpg?itok=f7z6cCZF",
     "link": "https://www.unlv.edu/event/not-bored-just-disconnected-reclaiming-emotional-closeness-our-children"
   },
@@ -17614,6 +17626,18 @@
     "category": "Career",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/intro-pre-professional-health-workshop-1"
+  },
+  {
+    "name": "Strength Training 101",
+    "startDate": "2026-07-09",
+    "startTime": "7:00 AM",
+    "endDate": "2026-07-09",
+    "endTime": "8:00 AM",
+    "location": "Virtual",
+    "description": "This Huddle discusses the basic principles of strength training and the associated overall health benefits, especially musculoskeletal health! Participants will learn about the various methods of strength training for their specific health goals, as well as how to create a solid foundation for a consistent strength training exercise routine. This Huddle is educational only and does not include physical activity or guided exercise. Please consult your healthcare provider before starting any new fitness program.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/weights.jpg?itok=lhTGuJZc",
+    "link": "https://www.unlv.edu/event/strength-training-101-0"
   },
   {
     "name": "Cat Cafe Cleanup",
@@ -17712,6 +17736,18 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-abigail-wilkins"
   },
   {
+    "name": "Guided Breathing Practice",
+    "startDate": "2026-07-10",
+    "startTime": "10:00 AM",
+    "endDate": "2026-07-10",
+    "endTime": "10:25 AM",
+    "location": "Virtual",
+    "description": "Revitalize your mind and body in just 15 minutes with alternate nostril breathing. This time-honored technique from Northern India is designed to bring your nervous system into balance, helping you maintain a steady, focused energy throughout the day. Studies show it can help lower blood pressure, improve lung capacity and support circulation. Whether you need an energy boost or a grounding practice to center yourself, this session has you covered. What are ComPsych\u00ae Practices? ComPsych Practices are 25-minute long exercises on guided mindfulness and relaxation exercises.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/breathing.jpg?itok=-WLmoko1",
+    "link": "https://www.unlv.edu/event/guided-breathing-practice-3"
+  },
+  {
     "name": "UNLV Women's Council Fellowship Lunch",
     "startDate": "2026-07-10",
     "startTime": "11:00 AM",
@@ -17758,6 +17794,18 @@
     "category": "Career",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/financial-flight-path-deciphering-your-offer-and-planning-your-year-one-budget"
+  },
+  {
+    "name": "Mindfulness 1: Introduction to Mindfulness",
+    "startDate": "2026-07-10",
+    "startTime": "7:00 AM",
+    "endDate": "2026-07-10",
+    "endTime": "8:00 AM",
+    "location": "Virtual",
+    "description": "The Mindfulness 1 Huddle is the first in a series on Mindfulness, providing an introduction about the meaning of mindfulness and some simple practices. We will discuss the role mindfulness plays in overall health and well-being and discover the benefits of regular mindfulness practice. There will be a brief mindfulness practice as part of our introduction. While the Huddles in the mindfulness series can stand alone and do not need to be attended in order, the series does build upon the knowledge gained from earlier Huddles in this series.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/mindfulness.jpg?itok=C-_0Tf95",
+    "link": "https://www.unlv.edu/event/mindfulness-1-introduction-mindfulness-0"
   },
   {
     "name": "91.5 Jazz and More Live Broadcast - Tap & Ash",
@@ -17964,6 +18012,18 @@
     "link": "https://www.unlv.edu/event/dissertation-defense-borna-nemet"
   },
   {
+    "name": "Gratitude Brief Practice",
+    "startDate": "2026-07-13",
+    "startTime": "10:00 AM",
+    "endDate": "2026-07-13",
+    "endTime": "10:25 AM",
+    "location": "Virtual",
+    "description": "Research has shown practicing gratitude leads to a number of mental, physical, and relational benefits; yet it is so easy to be swept up in the seemingly relentless demands of a busy life and feel you don\u2019t have the time to take a moment to consider and appreciate the things you are grateful for. Give yourself the gift of this 10-minute gratitude practice and prioritize your self-care and well-being. Register here for our 10 to 15-minute Gratitude practice!",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Gratitudation.jpg?itok=rbT92sLs",
+    "link": "https://www.unlv.edu/event/gratitude-brief-practice-8"
+  },
+  {
     "name": "Thesis Defense: Mattea Pezza",
     "startDate": "2026-07-13",
     "startTime": "10:00 AM",
@@ -18070,6 +18130,18 @@
     "category": "Academics",
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/information-session-administrative-faculty-employees-understanding-unlvs-rebel-job-1"
+  },
+  {
+    "name": "Mindfulness 3: Mindfulness of Thoughts and Emotions",
+    "startDate": "2026-07-14",
+    "startTime": "11:00 AM",
+    "endDate": "2026-07-14",
+    "endTime": "12:00 PM",
+    "location": "Virtual",
+    "description": "Mindfulness 3: Mindfulness of Thoughts and Emotions is the last Huddle in the Mindfulness series which explores the transformative effects of consistent mindfulness practice. The intention is to deepen the awareness of emotions and thoughts, while promoting more harmonious relationships with ourselves and others. Participants will engage in live mindfulness sessions in which they will practice integrating mindfulness-based attitudes and foundations for application in different life situations.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/mindfulness_0.jpg?itok=mAQ-IVRA",
+    "link": "https://www.unlv.edu/event/mindfulness-3-mindfulness-thoughts-and-emotions"
   },
   {
     "name": "Meditation/Mindfulness",
@@ -18180,6 +18252,18 @@
     "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=134"
   },
   {
+    "name": "Guided Meditation Practice",
+    "startDate": "2026-07-15",
+    "startTime": "11:00 AM",
+    "endDate": "2026-07-15",
+    "endTime": "11:25 AM",
+    "location": "Virtual",
+    "description": "Modern life often keeps us in a constant state of motion\u2014thinking, planning, and responding. Meditation offers a brief but meaningful opportunity to pause, settle the body, and create mental space, even in the middle of a busy day. This Guided Meditation Practice is designed to support relaxation, focus, and emotional balance by gently bringing attention back to the present moment. Through intentional breathing and awareness, participants are invited to release tension, calm the nervous system, and cultivate a sense of steadiness and ease.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/meditationation_0.jpg?itok=R8VAslz0",
+    "link": "https://www.unlv.edu/event/guided-meditation-practice-3"
+  },
+  {
     "name": "Intro to Pre-Professional Health Workshop",
     "startDate": "2026-07-15",
     "startTime": "2:00 PM",
@@ -18202,6 +18286,18 @@
     "category": "Career",
     "imageUrl": "https://www.unlv.edu/sites/default/files/styles/large/public/building_images/csb-d64277_17.jpg?itok=YOt-T5LK",
     "link": "https://www.unlv.edu/event/meet-tiaa-representative-campus-29"
+  },
+  {
+    "name": "Coping with Uncertainty",
+    "startDate": "2026-07-15",
+    "startTime": "9:00 AM",
+    "endDate": "2026-07-15",
+    "endTime": "10:00 AM",
+    "location": "Virtual",
+    "description": "We\u2019ve all experienced the sense of unease and discomfort that comes with unanticipated change and uncertainty. This Huddle aims to normalize this experience and help participants understand why uncertainty feels so challenging. While experiencing uncertainty at one time or another is unavoidable, the good news is there are many practical tools to successfully navigate uncertainty and cope with confidence and calm.",
+    "category": null,
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Coping.jpg?itok=M-eYw5L5",
+    "link": "https://www.unlv.edu/event/coping-uncertainty"
   },
   {
     "name": "UNLV Dance: Elegant Universes (Streaming)",
@@ -18252,6 +18348,18 @@
     "link": "https://www.unlv.edu/event/psyd-clinical-psychology-virtual-information-session-1"
   },
   {
+    "name": "Improving Sleep",
+    "startDate": "2026-07-16",
+    "startTime": "7:00 AM",
+    "endDate": "2026-07-16",
+    "endTime": "8:00 AM",
+    "location": "Virtual",
+    "description": "The Improving Sleep Huddle provides participants a space to discuss and learn lifestyle habits that promote improved sleep quality. Participants will learn how to create a positive environment for sleep and explore skills and interventions that can improve sleep. For example, this Huddle will review what it means to \u2018retrain your sleep brain,\u2019 as well as how to identify and challenge maladaptive thoughts about sleep. What are ComPsych\u00ae Huddles? ComPsych Huddles are hour-long interactive online sessions that provide education, skill building, and connection.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/sleep.jpg?itok=0_-S2YNG",
+    "link": "https://www.unlv.edu/event/improving-sleep"
+  },
+  {
     "name": "Support Group for UNLV Faculty & Staff",
     "startDate": "2026-07-16",
     "startTime": "9:00 AM",
@@ -18288,6 +18396,18 @@
     "link": "https://www.unlv.edu/event/unlv-dance-universal-motions-streaming?delta=136"
   },
   {
+    "name": "Self-Care and Resiliency Building",
+    "startDate": "2026-07-17",
+    "startTime": "10:00 AM",
+    "endDate": "2026-07-17",
+    "endTime": "11:00 AM",
+    "location": "Virtual",
+    "description": "Engaging in regular self-care activities improves your overall wellbeing, your resilience to life\u2019s stressors, and helps you successfully manage life\u2019s challenges. In this ComPsych Huddle you will learn ways to proactively enhance your well-being through various self-care techniques. You will also learn various evidenced-based coping tools you can employ when you are experiencing a difficult situation or stressor. What are ComPsych\u00ae Huddles? ComPsych Huddles are hour-long interactive online sessions that provide education, skill building, and connection.",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/Self-Care.jpg?itok=9TNz3byF",
+    "link": "https://www.unlv.edu/event/self-care-and-resiliency-building"
+  },
+  {
     "name": "Loss After Violence Support Group",
     "startDate": "2026-07-17",
     "startTime": "12:00 PM",
@@ -18322,6 +18442,18 @@
     "category": null,
     "imageUrl": "/images/UNLV_Logo.png",
     "link": "https://www.unlv.edu/event/african-student-alliance-picnic"
+  },
+  {
+    "name": "Guided Stretching Practice",
+    "startDate": "2026-07-17",
+    "startTime": "7:00 AM",
+    "endDate": "2026-07-17",
+    "endTime": "8:00 AM",
+    "location": "Virtual",
+    "description": "This brief guided stretching practice is designed to help participants incorporate simple, effective movements into their workday to reduce stiffness, improve posture, and boost energy levels. Participants will practice different stretches that can be performed at a desk or in a small workspace area, requiring no special equipment. Through gentle movements and conscious breath, participants will relieve common areas of tension caused by prolonged sitting or lack of movement. Other interactive sessions by ComPsych include: Alliances \u2013 Support groups for shared communities",
+    "category": "Health",
+    "imageUrl": "https://www.unlv.edu/sites/default/files/styles/750_width/public/stretchstock_0.jpg?itok=Rtvi1W-u",
+    "link": "https://www.unlv.edu/event/guided-stretching-practice-3"
   },
   {
     "name": "Meet with a TIAA Representative on Campus",
